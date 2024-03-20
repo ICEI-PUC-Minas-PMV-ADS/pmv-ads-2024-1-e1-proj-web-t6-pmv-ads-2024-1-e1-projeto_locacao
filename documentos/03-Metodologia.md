@@ -51,7 +51,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 </ul>
 
 <figure> 
-  <img src="documentos/img/Etiquetas.jpeg"
+  <img src="[documentos/img/Etiquetas.jpeg](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/1f4801b577ebdbcbf75232c6b0fcbe57de17f006/documentos/img/Etiquetas.jpeg)"
     <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
