@@ -42,12 +42,12 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 
 <ul>
-  <li>Bug (Erro no código)</li>
-  <li>Desenvolvimento (Development)</li>
-  <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
-  <li>Testes (Tests)</li>
+  <li>Bug</li>
+  <li>Desenvolvimento</li>
+  <li>Documentação</li>
+  <li>Gerência de Projetos</li>
+  <li>Infraestrutura</li>
+  <li>Testes</li>
 </ul>
 
 <figure> 
