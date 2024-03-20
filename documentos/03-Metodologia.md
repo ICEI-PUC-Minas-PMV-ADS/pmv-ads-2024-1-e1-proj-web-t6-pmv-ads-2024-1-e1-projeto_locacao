@@ -61,8 +61,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Repositório de código fonte         | GitHub                             | http://....                            |
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | Trello                             | http://....                            |
-| Hospedagem                          | GitHub Pages                       | https://trello.com/b/Q8BMQ3Oi/immocontrol |
+| Gerenciamento do Projeto            | Trello                             |https://trello.com/b/Q8BMQ3Oi/immocontrol
+| Hospedagem                          | GitHub Pages                       |                                        |
 
 
 ### Estratégia de Organização de Codificação 
