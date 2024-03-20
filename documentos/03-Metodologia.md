@@ -58,7 +58,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             |                            |
+| Repositório de código fonte         | GitHub                             |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/tree/main/codigo-fonte
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de Interface                | Figma                              | http://....                            |
 | Gerenciamento do Projeto            | Trello                             |https://trello.com/b/Q8BMQ3Oi/immocontrol
