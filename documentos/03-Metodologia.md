@@ -12,10 +12,10 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 ### Divisão de Papéis
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-- Scrum Master: Pedro Francis Maia Coelho.
-- Product Owner: Zander Vasconcelos Pereira.
-- Equipe de Desenvolvimento: Sócratis Gomes da Silva, Ismarlei Magela de Jesus, Pedro Francis Maia Coelho, Zander Vasconcelos Pereira, Thássia Campos e Eduardo Wollinger.
-- Equipe de Design: Thássia Campos e Eduardo Wollinger.
+- **Product Owner:** Zander Vasconcelos Pereira (responsável pela visão do que se vai construir ou entregar no projeto).
+- **Scrum Master:** Pedro Francis Maia Coelho (orienta o restante da equipe em relação à estrutura de processos do Scrum).
+- **Equipe de Desenvolvimento:** Sócratis Gomes da Silva, Ismarlei Magela de Jesus, Pedro Francis Maia Coelho, Zander Vasconcelos Pereira, Thássia Campos e Eduardo Wollinger (Constroem o projeto).
+- **Equipe de Design:** Thássia Campos e Eduardo Wollinger (Constroem a arte gráfica do projeto).
 
 ### Processo
 
