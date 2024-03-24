@@ -54,10 +54,13 @@
 
 [Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
 
-|ID      | Descrição               |Prioridade |
-|--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+|ID        | Descrição               |Prioridade |
+|-----------|-------------------------|----|
+| RNF-01   | O sistema deve implementar mecanismos avançados de criptografia e autenticação, garantindo que informações sensíveis (como dados financeiros e informações de clientes) estejam protegidas contra acessos não autorizados e possíveis ameaças cibernéticas.    | Alta  | 
+| RNF-02   | O sistema deve ser construído de uma maneira que permita acomodar um aumento no volume de dados (como registros de clientes, imóveis, contrato.) sem comprometer o desempenho e a velocidade de acesso.                | Média   | 
+|RNF-03  |A interface do painel de gerenciamento deve ser clara e de fácil compreensão, permitindo que o gerente acesse as funções rapidamente e sem necessidade de treinamento extenso.  |Baixa|
+|RNF-04  |O sistema deve ser compatível com diferentes dispositivos e navegadores (responsividade), permitindo que a recepcionista acesse as informações tanto de um computador desktop quanto de um tablet ou smartphone. |Média|
+|RNF-05  |O site deve ter uma alta disponibilidade, garantindo que os clientes possam acessá-lo a qualquer momento, sem enfrentar períodos de inatividade |Alta|
 
 **Prioridade: Alta / Média / Baixa. 
-
+      
