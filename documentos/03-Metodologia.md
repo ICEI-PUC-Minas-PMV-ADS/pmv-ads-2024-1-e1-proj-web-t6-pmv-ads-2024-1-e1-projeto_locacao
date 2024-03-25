@@ -25,11 +25,10 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+<figure> 
+  <img src="img/kandan.png"
+    <figcaption>Figura 1 - Tela do kandan no Trello utilizado pela equipe</figcaption>
+</figure> 
 
 
 ### Etiquetas
