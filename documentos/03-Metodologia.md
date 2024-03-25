@@ -45,7 +45,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 <figure> 
   <img src="img/Etiquetas.jpeg"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+    <figcaption>Figura 2 - Tela do esquema de cores e categorias</figcaption>
 </figure> 
   
 ### Ferramentas
