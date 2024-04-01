@@ -29,10 +29,7 @@
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>1. Sistema de rápido acesso e intuitivo, 
-<br></p>2. Login de acesso a seção de controle financeiro, 
-<br></p>3. Login de acesso a seção de gestão de contratos, 
-<br></p>4. Login de acesso a seção de cadastros de inquilinos e 
+<td>1. Sistema de rápido acesso e intuitivo, <br>2. Login de acesso a seção de controle financeiro,<br>3. Login de acesso a seção de gestão de contratos, <br>4. Login de acesso a seção de cadastros de inquilinos e 
 imóveis.</td>
 </tr>
 </tbody>
