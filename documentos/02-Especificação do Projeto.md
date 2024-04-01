@@ -5,7 +5,7 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil 01: Proprietário da imobiliária  </th>
+<th colspan="2"><strong>Perfil 01: Proprietário da imobiliária  </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
@@ -21,7 +21,7 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil 02: Colaborador  </th>
+<th colspan="2"><strong>Perfil 02: Colaborador  </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
