@@ -57,7 +57,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Documentos do projeto               | GitHub                             |https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/tree/main/documentos|
 | Projeto de Interface                | Figma                              | [https://www.figma.com/team_invite/redeem/0ETx6KVF93fEeunJGVlMtP](https://www.figma.com/file/zac3bVNn9DumfTtFSRHic0/Untitled?type=design&node-id=0-1&mode=design&t=FSsYY4Mc4fuMjiTW-0) |
 | Gerenciamento do Projeto            | Trello                             |https://trello.com/b/Q8BMQ3Oi/immocontrol
-| Hospedagem                          | GitHub Pages                       |                                        |
+| Hospedagem                          | GitHub Pages                       |      a definir                                  |
 
 
 ### Estratégia de Organização de Codificação 
