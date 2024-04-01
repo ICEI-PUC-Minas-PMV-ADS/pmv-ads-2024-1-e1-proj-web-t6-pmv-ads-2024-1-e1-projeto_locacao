@@ -11,11 +11,12 @@
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Proprietario</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>1. Sistema de baixo custo para gestão do negócio, 
+2. Login de acesso total.</td>
 </tr>
 </tbody>
 </table>
