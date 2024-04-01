@@ -26,7 +26,7 @@ Este link pode ajudar a equipe a formular a justificativa: [Como montar a justif
 
 ## Público-Alvo
 
-As dificuldades relacionadas a esses pequenos empreendedores no ramo imobiliário 
+<text-align: justify>As dificuldades relacionadas a esses pequenos empreendedores no ramo imobiliário 
 são grandes e baseadas na cultura do “jeitinho” brasileiro os desafios ficam ainda 
 maiores, então, o foco desse trabalho está no público de pequenas imobiliárias que, 
 por questões de custos, fazem o controle através de planilhas manuais, forma de 
