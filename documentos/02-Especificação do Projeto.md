@@ -7,7 +7,23 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil 01: Proprietário da imobiliária  </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">...</td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Perfil 02: Colaborador  </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
