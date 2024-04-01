@@ -1,11 +1,10 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+O mercado imobiliário sempre foi tido como uma das melhores opções por investidores, e no ano de 2024 não será diferente. Devidos as suscetíveis quedas da taxa básica de juros (Selic), as taxas de juros de crédito imobiliário têm caído tornando a aquisição de imóveis uma atraente forma de investimento.
 
-## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
+Tal movimento do mercado abre portas para o surgimento de novas imobiliárias com foco em locação de imóveis, pois a intenção da maioria dos investidores do mercado imobiliário é ter retorno através de aluguéis.
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Contudo, o gerenciamento de uma imobiliária é uma tarefa complexa que envolve diversos processos, processos estes que se mal gerenciados podem impactar negativamente a saúde da empresa.
 
 
 ## Objetivos
