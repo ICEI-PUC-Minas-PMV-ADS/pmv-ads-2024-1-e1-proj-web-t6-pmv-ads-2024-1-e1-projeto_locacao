@@ -2,8 +2,6 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
-
 <table>
 <tbody>
 <tr align=center>
@@ -11,7 +9,7 @@
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">Proprietario</td>
+<td width="600px">Proprietário</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
@@ -27,11 +25,15 @@
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Colaboradores</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>1. Sistema de rápido acesso e intuitivo, 
+<p></p>2. Login de acesso a seção de controle financeiro, 
+<p></p>3. Login de acesso a seção de gestão de contratos, 
+<p></p>4. Login de acesso a seção de cadastros de inquilinos e 
+imóveis.</td>
 </tr>
 </tbody>
 </table>
