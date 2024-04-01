@@ -26,12 +26,22 @@ Este link pode ajudar a equipe a formular a justificativa: [Como montar a justif
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
-
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+As dificuldades relacionadas a esses pequenos empreendedores no ramo imobiliário 
+são grandes e baseadas na cultura do “jeitinho” brasileiro os desafios ficam ainda 
+maiores, então, o foco desse trabalho está no público de pequenas imobiliárias que, 
+por questões de custos, fazem o controle através de planilhas manuais, forma de 
+gestão que deixa aquém das expectativas desejadas. 
+4 
+Portanto, pode-se dizer que essas imobiliárias de pequeno porte, enfrentam 
+dificuldades estruturais em controlar com eficácia os bens de sua responsabilidade, 
+receber um bom feedback dos clientes e inquilinos e, sobretudo, com baixo custo. 
+Fazendo uma alusão pertinente ao contexto estudado, Robert Kiyosaki, autor do livro 
+Pai Rico, Pai Pobre é um exemplo de figura que representa bem esse trabalho, pois 
+a sua área de conhecimento, além da financeira, foi o ramo imobiliário e ainda quando 
+pequeno empreendedor traçou projetos diferentes frente aos seus concorrentes, 
+resultando na sua carreira de sucesso percebida na atualidade.  
+Além do empreendedor em si supracitado, o projeto também é voltado para uma 
+pequena equipe de colaboradores que por sua vez encontra diversas dificuldades 
+operacionais, tanto na implementação quanto na gestão dos processos sendo tudo 
+realizado através de planilhas de forma manual.
 
