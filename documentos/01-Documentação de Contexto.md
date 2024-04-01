@@ -6,6 +6,9 @@ Tal movimento do mercado abre portas para o surgimento de novas imobiliárias co
 
 Contudo, o gerenciamento de uma imobiliária é uma tarefa complexa que envolve diversos processos, processos estes que se mal gerenciados podem impactar negativamente a saúde da empresa.
 
+## Problmea
+
+O problema que o projeto busca resolver é que as imobiliárias trabalham com grande volume de dados, dados estes que, em empresas de pequeno porte, costumam ser tratados e organizados em planilhas. Tal método se transforma em um problema quando a empresa ganha mercado e adquire cada vez mais imóveis sobre sua tutela, pois gerenciar os dados passa a ser um processo oneroso e suscetível a erros, como queda no faturamento por deixar de cobrar algum cliente por falha no reconhecimento de pagamento em aberto. 
 
 ## Objetivos
 
