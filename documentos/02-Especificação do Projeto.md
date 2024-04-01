@@ -15,8 +15,8 @@
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>1. Sistema de baixo custo para gestão do negócio, 
-2. Login de acesso total.</td>
+<td>1. Sistema de baixo custo para gestão do negócio, </td>
+<td>2. Login de acesso total.</td>
 </tr>
 </tbody>
 </table>
