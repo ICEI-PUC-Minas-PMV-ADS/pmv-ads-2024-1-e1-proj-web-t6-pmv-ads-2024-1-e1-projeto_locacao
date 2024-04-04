@@ -59,23 +59,15 @@ imóveis.</td>
 |-------|---------------------------------|----|
 | RF-01 | A aplicação deve permitir cadastrar/alterar informações de usuários.| Alta | 
 | RF-02 | A aplicação deve permitir ao usuário fazer o login em sua conta.| Alta |
-| RF-03 | A aplicação deve permitir cadastrar/alterar/pesquisar novos
-imóveis. | Alta |
-| RF-04 | A aplicação deve permitir ao usuário cadastrar/alterar/pesquisar
-informações dos proprietários.| Alta |
-| RF-05 | A aplicação deve permitir cadastrar/alterar/pesquisar dados dos
-inquilinos.| Alta |
-| RF-06 | A aplicação deve permitir ao usuário cadastrar/alterar/consultar os
-contratos.| Alta |
+| RF-03 | A aplicação deve permitir cadastrar/alterar/pesquisar novos imóveis.| Alta |
+| RF-04 | A aplicação deve permitir ao usuário cadastrar/alterar/pesquisar informações dos proprietários.| Alta |
+| RF-05 | A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.| Alta |
+| RF-06 | A aplicação deve permitir ao usuário cadastrar/alterar/consultar os contratos.| Alta |
 | RF-07 | A aplicação deve permitir cadastrar os pagamentos.| Média |
-| RF-08 | A aplicação deve gerar alerta sobre vencimentos próximos e
-atrasos de aluguel.| Baixa |
-| RF-09 | A aplicação deve conter um campo para escrever
-acontecimentos/acordos importantes (solicitação de reparo,
-notificações, reclamações etc.) entre proprietários e inquilinos
-para ajudar no gerenciamento da informação.| Baixa |
-| RF-10 | A aplicação deve apresentar um Dashboard com as principais
-informações sobre os contratos gerenciados pela imobiliária.| Baixa |
+| RF-08 | A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel.| Baixa |
+| RF-09 | A aplicação deve conter um campo para escrever acontecimentos/acordos importantes (solicitação de reparo,
+notificações, reclamações etc.) entre proprietários e inquilinos para ajudar no gerenciamento da informação.| Baixa |
+| RF-10 | A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária.| Baixa |
 
 **Prioridade: Alta / Média / Baixa. 
 
