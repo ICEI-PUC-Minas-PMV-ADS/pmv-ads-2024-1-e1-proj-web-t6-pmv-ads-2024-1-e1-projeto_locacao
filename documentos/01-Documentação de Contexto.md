@@ -27,11 +27,13 @@ Com relação aos objetivos específicos, pode-se destacar:
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+Segundo pesquisa feita pelo IBGE e reportada pela CNN, em 2023 cerca de 20% dos brasileiros vivem em imóveis alugados. Os proprietários, frequentemente, não possuem tempo nem expertise para gerenciar seus ativos, e, por isso, recorrem a imobiliárias. Essas empresas são especializadas no comércio e gestão de imóveis de terceiros. 
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+Como prática de mercado é sabido que as imobiliárias cobram entre 10% e 15% de taxa de gestão. No caso das pequenas imobiliárias, essa taxa representa um fator de risco, pois seu faturamento não é suficiente para contratar um software de gerenciamento de portfólio imobiliário. Como resultado, essas pequenas empresas acabam administrando seus portfólios por meio de planilhas, o que torna o processo moroso, pouco eficiente e suscetível a falhas. 
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O objetivo deste projeto é atender de forma acessível às imobiliárias de pequeno porte que não têm condições financeiras para arcar com o alto custo de um software de gestão de imóveis.  
+
+Portanto, o projeto concentra-se em atender de maneira simples, rápida e eficaz o pequeno empresário do setor imobiliário, aquele que busca controlar toda a gestão e aplicação de seus ativos, mas não dispõe de recursos financeiros para investir em ferramentas digitais de alto custo. 
 
 ## Público-Alvo
 
