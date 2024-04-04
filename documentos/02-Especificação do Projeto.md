@@ -57,8 +57,7 @@ imóveis.</td>
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 | A aplicação deve permitir cadastrar/alterar informações de
-usuários. | Alta | 
+| RF-01 | A aplicação deve permitir cadastrar/alterar informações de usuários.| Alta | 
 | RF-02 | A aplicação deve permitir ao usuário fazer o login em sua conta.| Alta |
 | RF-03 | A aplicação deve permitir cadastrar/alterar/pesquisar novos
 imóveis. | Alta |
