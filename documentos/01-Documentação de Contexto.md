@@ -15,12 +15,16 @@ O problema que se espera resolver com este projeto é que as imobiliárias traba
 O objetivo geral do projeto é desenvolver uma aplicação de fácil uso para controle e
 gerenciamento de aluguéis para pequenas imobiliárias.
 Com relação aos objetivos específicos, pode-se destacar:
+<li>
 • Otimizar o controle e gerenciamento dos dados dos inquilinos,
 • Auxiliar a gestão financeira da imobiliária,
 • Evitar erros no cálculo da divisão das despesas compartilhadas,
 4
 • Facilitar o controle e recebimento de aluguéis,
 • Facilitar a gestão da informação entre inquilinos e proprietários.
+  
+</li>
+
 
 ## Justificativa
 
