@@ -65,8 +65,7 @@ imóveis.</td>
 | RF-06 | A aplicação deve permitir ao usuário cadastrar/alterar/consultar os contratos.| Alta |
 | RF-07 | A aplicação deve permitir cadastrar os pagamentos.| Média |
 | RF-08 | A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel.| Baixa |
-| RF-09 | A aplicação deve conter um campo para escrever acontecimentos/acordos importantes (solicitação de reparo,
-notificações, reclamações etc.) entre proprietários e inquilinos para ajudar no gerenciamento da informação.| Baixa |
+| RF-09 | A aplicação deve conter um campo para escrever acontecimentos/acordos importantes (solicitação de reparo, notificações, reclamações etc.) entre proprietários e inquilinos para ajudar no gerenciamento da informação.| Baixa |
 | RF-10 | A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária.| Baixa |
 
 **Prioridade: Alta / Média / Baixa. 
