@@ -12,9 +12,15 @@ O problema que se espera resolver com este projeto é que as imobiliárias traba
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O objetivo geral do projeto é desenvolver uma aplicação de fácil uso para controle e
+gerenciamento de aluguéis para pequenas imobiliárias.
+Com relação aos objetivos específicos, pode-se destacar:
+• Otimizar o controle e gerenciamento dos dados dos inquilinos,
+• Auxiliar a gestão financeira da imobiliária,
+• Evitar erros no cálculo da divisão das despesas compartilhadas,
+4
+• Facilitar o controle e recebimento de aluguéis,
+• Facilitar a gestão da informação entre inquilinos e proprietários.
 
 ## Justificativa
 
