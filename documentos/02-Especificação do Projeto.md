@@ -71,8 +71,6 @@ imóveis.</td>
 
 ### Requisitos não Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
-
 |ID        | Descrição               |Prioridade |
 |-----------|-------------------------|----|
 | RNF-01   | O sistema deve implementar mecanismos avançados de criptografia e autenticação, garantindo que informações sensíveis (como dados financeiros e informações de clientes) estejam protegidas contra acessos não autorizados e possíveis ameaças cibernéticas.    | Alta  | 
