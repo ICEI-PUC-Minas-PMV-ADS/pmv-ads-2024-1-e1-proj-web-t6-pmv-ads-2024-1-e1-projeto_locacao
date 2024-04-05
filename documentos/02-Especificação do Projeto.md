@@ -47,8 +47,14 @@ imóveis.</td>
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+| Proprietário       | Ver indicadores e informações gerenciais com facilidade |Tomar decisões e agir com mais agilidade |
+|Colaborador – Setor de Gestão de Contratos |Cadastrar imóveis |Disponibilizar para locação   |
+| Colaborador – Setor de Gestão de Contratos | Visualizar os dados dos imóveis | Verificar ou atualizar dados dos imóveis |
+| Colaborador – Setor de Gestão de Contratos | Cadastrar inquilinos  | Vincular o inquilino a um imóvel |
+| Colaborador – Setor de Gestão de Contratos | Visualizar os dados dos inquilinos | Verificar ou atualizar dados dos inquilinos |
+| Colaborador – Setor de Gestão de Contratos | Cadastrar contratos de locação  | Registrar vínculo entre inquilino e imóvel |
+| Colaborador – Setor de Gestão de Contratos | Visualizar os dados dos contratos | Verificar ou atualizar dados dos contratos |
+| Colaborador – Setor Financeiro |Visualizar faturas de locação dos imóveis | Verificar e atualizar status de pagamentos |
 
 ## Requisitos do Projeto
 
