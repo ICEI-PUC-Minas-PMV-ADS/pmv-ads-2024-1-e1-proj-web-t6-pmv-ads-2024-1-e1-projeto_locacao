@@ -1,6 +1,6 @@
 # Referências Bibliográficas
 
-[Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.]
+//[Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.]
 
 FIRPO, Renata. O cenário otimista para o mercado imobiliário em 2024. Veja, 18 de jan. de
 2024.Disponível em: O cenário otimista para o mercado imobiliário em 2024 | VEJA
@@ -19,6 +19,6 @@ Tendências do Mercado Imobiliário 2024: O Que Esperar e Como Investir
 (quintoandar.com.br). Consulta em 07 de mar. de 2024.
 
 
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+//> **Links Úteis**:
+//> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+//> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
