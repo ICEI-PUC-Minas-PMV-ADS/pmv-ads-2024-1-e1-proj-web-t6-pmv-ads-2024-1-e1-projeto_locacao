@@ -54,16 +54,28 @@ A tela de dashboard apresenta informações relevântes e de rápida visualizaç
 Figura 5 - Tela Dashboard
 
 ### Tela - Proprietários (SOCRATIS)
+<figure> 
+  <img src="img/proprietarios.png"
+    <figcaption>Figura 6 - Tela - Proprietários</figcaption>
+</figure> 
 
-Figura 6
+Ao Clicar no botão ...
+<figure> 
+  <img src="popup_proprietario.png"
+    <figcaption>Figura 7 - Pop Up - Proprietário</figcaption>
+</figure> 
 
-### Pop Up - Proprietário (SOCRATIS)
+Ao Clicar no botão ...
+<figure> 
+  <img src="popup_novo_proprietario.png"
+    <figcaption>Figura 8 - Pop Up - Novo Proprietário</figcaption>
+</figure> 
 
-Figura 7
-
-### Pop Up - Novo Proprietário (SOCRATIS)
-
-Figura 8
+Ao clicar no botão filtrar ...
+<figure> 
+  <img src="filtro_proprietario.png"
+    <figcaption>Figura 9 - Pop Up - Filtro Proprietário</figcaption>
+</figure> 
 
 ### Tela - Locatário (EDUARDO)
 
