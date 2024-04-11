@@ -48,7 +48,7 @@ Figura 4 - Tela de atualização da senha de acesso a conta de usuário
 ### Tela - Dashboard (SOCRATIS)
 A tela de dashboard apresenta informações relevântes e de rápida visualização em forma de resumo do faturamento mensal, vacância física e vacância financeira.
 
-Figura 5
+Figura 5 - Tela Dashboard
 
 ### Tela - Proprietários (SOCRATIS)
 
