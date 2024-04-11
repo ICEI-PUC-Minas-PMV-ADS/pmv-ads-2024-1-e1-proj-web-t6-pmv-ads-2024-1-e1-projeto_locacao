@@ -36,8 +36,9 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 >> - [Figma](https://www.figma.com/)
 
 ## Tela - Login (SOCRATIS)
+A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
 
-Figura 3
+Figura 3 - Tela de acesso à conta de usuário
 
 ## Tela - Primeiro Acesso (SOCRATIS)
 
