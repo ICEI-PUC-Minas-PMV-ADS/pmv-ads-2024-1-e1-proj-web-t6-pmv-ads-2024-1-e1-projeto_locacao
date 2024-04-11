@@ -13,12 +13,17 @@ O fluxograma abaixo mostra o fluxo de interação do usuário pelas telas do sis
 
 ### Protótipo de baixa fidelidade
 
-As telas do sistema seguem um único padrão, o qual é constituído pelos blocos abaixo modelo e representado pela figura 2.
+As telas do sistema seguem um único padrão, o qual é representado pela figura 2 e constituído pelos blocos descritos abaixo:
 
+* Cabeçalho - A esquerda encontra-se a logo, ao centro encontra-se o nome da página e a direita encontra-se o nome do usuário autenticado no sistema.
+* Sidebar - Encontra-se os botões responsáveis pelo roteamento das páginas.
+* Conteúdo - Encontra-se o conteúdo da tela em vizualização.
+  
 <figure> 
-  <img src="img/user_flow_immocontrol.png"
-    <figcaption>Figura 1 - User Flow - ImmoControl</figcaption>
-</figure> 
+  <img src="img/padrao.png"
+    <figcaption>Figura 2 - Estrutura Padrão das Páginas</figcaption>
+</figure>
+
 
 ### Tela - Login (SOCRATIS) 
 A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
