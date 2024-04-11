@@ -74,7 +74,7 @@ Figura 11
 
 ### Pop Up - Imóvel (ZANDER)
 <figure> 
-  <img src="img/filtro_imoveis.png"
+  <img src="img/popup_imovel.png"
     <figcaption>Figura 13 - Tela - Pop up Imóvel</figcaption>
 </figure> 
 
