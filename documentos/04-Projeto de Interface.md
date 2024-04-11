@@ -90,16 +90,24 @@ Figura 10
 Figura 11
 
 ### Tela - Imóveis (ZANDER)
-
-Figura 12
+<figure> 
+  <img src="img/imoveis.png"
+    <figcaption>Figura 12 - Tela - Imóveis</figcaption>
+</figure> 
 
 ### Pop Up - Imóvel (ZANDER)
+<figure> 
+  <img src="img/filtro_imoveis.png"
+    <figcaption>Figura 13 - Tela - Pop up Imóvel</figcaption>
+</figure> 
 
-Figura 13
 
 ### Pop Up - Novo Imóvel (ZANDER)
 
-Figura 14
+<figure> 
+  <img src="img/popup_novo_imovel.png"
+    <figcaption>Figura 14 - Tela - Pop up novo imóvel</figcaption>
+</figure> 
 
 ### Tela - Contratos (ZANDER)
 
