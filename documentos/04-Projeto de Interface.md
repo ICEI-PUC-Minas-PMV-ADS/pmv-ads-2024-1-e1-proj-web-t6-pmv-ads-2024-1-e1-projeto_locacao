@@ -61,19 +61,19 @@ Figura 5 - Tela Dashboard
 
 Ao Clicar no botão ...
 <figure> 
-  <img src="popup_proprietario.png"
+  <img src="img/popup_proprietario.png"
     <figcaption>Figura 7 - Pop Up - Proprietário</figcaption>
 </figure> 
 
 Ao Clicar no botão ...
 <figure> 
-  <img src="popup_novo_proprietario.png"
+  <img src="img/popup_novo_proprietario.png"
     <figcaption>Figura 8 - Pop Up - Novo Proprietário</figcaption>
 </figure> 
 
 Ao clicar no botão filtrar ...
 <figure> 
-  <img src="filtro_proprietario.png"
+  <img src="img/filtro_proprietario.png"
     <figcaption>Figura 9 - Pop Up - Filtro Proprietário</figcaption>
 </figure> 
 
