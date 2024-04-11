@@ -1,7 +1,7 @@
 
 # Projeto de Interface
 
-## User Flow (PEDRO)
+### User Flow (PEDRO)
 
 Figura 1
 
@@ -14,11 +14,11 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 > - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
 > - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
-## Protótipo
+### Protótipo
 
 Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
 
-## Protótipo de baixa fidelidade (PEDRO)
+### Protótipo de baixa fidelidade (PEDRO)
 
 Figura 2
 
@@ -35,96 +35,98 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 >> - [MarvelApp](https://marvelapp.com/)
 >> - [Figma](https://www.figma.com/)
 
-## Tela - Login (SOCRATIS) 
+### Tela - Login (SOCRATIS) 
 A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
 
 Figura 3 - Tela de acesso à conta de usuário
 
-## Tela - Primeiro Acesso (SOCRATIS)
+### Tela - Primeiro Acesso (SOCRATIS)
+A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar senha para que seja realizada a alteração da senha originalmente gerada pelo sistema.
 
-Figura 4
+Figura 4 - Tela de atualização da senha de acesso a conta de usuário
 
-## Tela - Dashboard (SOCRATIS)
+### Tela - Dashboard (SOCRATIS)
+A tela de dashboard apresenta informações relevântes e de rápida visualização em forma de resumo do faturamento mensal, vacância física e vacância financeira.
 
 Figura 5
 
-## Tela - Proprietários (SOCRATIS)
+### Tela - Proprietários (SOCRATIS)
 
 Figura 6
 
-## Pop Up - Proprietário (SOCRATIS)
+### Pop Up - Proprietário (SOCRATIS)
 
 Figura 7
 
-## Pop Up - Novo Proprietário (SOCRATIS)
+### Pop Up - Novo Proprietário (SOCRATIS)
 
 Figura 8
 
-## Tela - Locatário (EDUARDO)
+### Tela - Locatário (EDUARDO)
 
 Figura 9
 
-## Pop Up - Locatário (EDUARDO)
+### Pop Up - Locatário (EDUARDO)
 
 Figura 10
 
-## Pop Up - Novo Locatário (EDUARDO)
+### Pop Up - Novo Locatário (EDUARDO)
 
 Figura 11
 
-## Tela - Imóveis (ZANDER)
+### Tela - Imóveis (ZANDER)
 
 Figura 12
 
-## Pop Up - Imóvel (ZANDER)
+### Pop Up - Imóvel (ZANDER)
 
 Figura 13
 
-## Pop Up - Novo Imóvel (ZANDER)
+### Pop Up - Novo Imóvel (ZANDER)
 
 Figura 14
 
-## Tela - Contratos (ZANDER)
+### Tela - Contratos (ZANDER)
 
 Figura 15
 
-## Pop Up - Contrato (ZANDER)
+### Pop Up - Contrato (ZANDER)
 
 Figura 16
 
-## Pop Up - Novo Contrato (ZANDER)
+### Pop Up - Novo Contrato (ZANDER)
 
 Figura 17
 
-## Tela - Faturas (EDUARDO)
+### Tela - Faturas (EDUARDO)
 
 Figura 18
 
-## Pop Up - Fatura (EDUARDO)
+### Pop Up - Fatura (EDUARDO)
 
 Figura 19
 
-## Tela - Requisições (ISMARLEI)
+### Tela - Requisições (ISMARLEI)
 
 Figura 20
 
-## Pop Up - Requisição (ISMARLEI)
+### Pop Up - Requisição (ISMARLEI)
 
 Figura 21
 
-## Pop Up - Nova Requisição (ISMARLEI)
+### Pop Up - Nova Requisição (ISMARLEI)
 
 Figura 22
 
-## Tela - Usuários (THASSIA)
+### Tela - Usuários (THASSIA)
 
 Figura 23
 
-## Pop Up - Usuário (THASSIA)
+### Pop Up - Usuário (THASSIA)
 
 Figura 24
 
-## Pop Up - Novo Usuário (THASSIA)
+### Pop Up - Novo Usuário (THASSIA)
 
 Figura 25
 
