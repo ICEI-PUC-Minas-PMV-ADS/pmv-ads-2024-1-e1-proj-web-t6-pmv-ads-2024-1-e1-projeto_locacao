@@ -1,7 +1,9 @@
 
 # Projeto de Interface
 
-## User Flow
+## User Flow (PEDRO)
+
+Figura 1
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
@@ -16,7 +18,9 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
 
-### Protótipo de baixa fidelidade
+## Protótipo de baixa fidelidade (PEDRO)
+
+Figura 2
 
 Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
 
@@ -30,6 +34,107 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 >> - [Pencil](https://pencil.evolus.vn/)
 >> - [MarvelApp](https://marvelapp.com/)
 >> - [Figma](https://www.figma.com/)
+
+## Tela - Login (SOCRATIS)
+
+Figura 3
+
+## Tela - Primeiro Acesso (SOCRATIS)
+
+Figura 4
+
+## Tela - Dashboard (SOCRATIS)
+
+Figura 5
+
+## Tela - Proprietários (SOCRATIS)
+
+Figura 6
+
+## Pop Up - Proprietário (SOCRATIS)
+
+Figura 7
+
+## Pop Up - Novo Proprietário (SOCRATIS)
+
+Figura 8
+
+## Tela - Locatário (EDUARDO)
+
+Figura 9
+
+## Pop Up - Locatário (EDUARDO)
+
+Figura 10
+
+## Pop Up - Novo Locatário (EDUARDO)
+
+Figura 11
+
+## Tela - Imóveis (ZANDER)
+
+Figura 12
+
+## Pop Up - Imóvel (ZANDER)
+
+Figura 13
+
+## Pop Up - Novo Imóvel (ZANDER)
+
+Figura 14
+
+## Tela - Contratos (ZANDER)
+
+Figura 15
+
+## Pop Up - Contrato (ZANDER)
+
+Figura 16
+
+## Pop Up - Novo Contrato (ZANDER)
+
+Figura 17
+
+## Tela - Faturas (EDUARDO)
+
+Figura 18
+
+## Pop Up - Fatura (EDUARDO)
+
+Figura 19
+
+## Tela - Requisições (ISMARLEI)
+
+Figura 20
+
+## Pop Up - Requisição (ISMARLEI)
+
+Figura 21
+
+## Pop Up - Nova Requisição (ISMARLEI)
+
+Figura 22
+
+## Tela - Usuários (THASSIA)
+
+Figura 23
+
+## Pop Up - Usuário (THASSIA)
+
+Figura 24
+
+## Pop Up - Novo Usuário (THASSIA)
+
+Figura 25
+
+
+
+
+
+
+
+
+
 
 
 
