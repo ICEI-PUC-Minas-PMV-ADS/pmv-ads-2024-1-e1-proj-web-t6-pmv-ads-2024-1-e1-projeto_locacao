@@ -3,7 +3,7 @@
 
 ### User Flow (PEDRO)
 <figure> 
-  <img src="img/user_flow.png"
+  <img src="img/user_flow_immocontrol.png"
     <figcaption>Figura 1 - User Flow - ImmoControl</figcaption>
 </figure> 
 
