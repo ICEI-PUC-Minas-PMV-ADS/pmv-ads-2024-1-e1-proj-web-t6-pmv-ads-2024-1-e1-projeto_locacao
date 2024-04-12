@@ -130,6 +130,7 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
 
 
 ### Tela - Imóveis (ZANDER)
+Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imóveis existentes no sistema, identificando o status de locação e se o cadastro ainda está ativo na imobiliária
 <figure> 
   <img src="img/imoveis.png"
     <figcaption>Figura 14 - Tela - Imóveis</figcaption>
