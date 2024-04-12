@@ -27,18 +27,26 @@ As telas do sistema seguem um único padrão, o qual é representado pela figura
 
 ### Tela - Login (SOCRATIS) 
 A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
-
-Figura 3 - Tela de acesso à conta de usuário
+<figure> 
+  <img src="img/login.png"
+    <figcaption>Figura 3 - Tela - Acesso à conta de usuário</figcaption>
+</figure>
 
 ### Tela - Primeiro Acesso (SOCRATIS)
 A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar senha para que seja realizada a alteração da senha originalmente gerada pelo sistema.
 
-Figura 4 - Tela de atualização da senha de acesso a conta de usuário
+<figure> 
+  <img src="img/primeiro_acesso.png"
+    <figcaption>Figura 4 - Tela - Atualização da senha de acesso</figcaption>
+</figure>
 
 ### Tela - Dashboard (SOCRATIS)
 A tela de dashboard apresenta informações relevântes e de rápida visualização em forma de resumo do faturamento mensal, vacância física e vacância financeira.
 
-Figura 5 - Tela Dashboard
+<figure> 
+  <img src="img/dashboard.png"
+    <figcaption>Figura 5 - Tela - Dashboard</figcaption>
+</figure>
 
 ### Tela - Proprietários (SOCRATIS)
 <figure> 
