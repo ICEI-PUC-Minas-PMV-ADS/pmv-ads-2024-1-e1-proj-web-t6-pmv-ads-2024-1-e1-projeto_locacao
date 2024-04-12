@@ -57,8 +57,7 @@ A tela de proprietários apresenta informações resumidas de todos os propriet�
 <figure> 
   <img src="img/proprietarios.png"
     <figcaption>Figura 6 - Tela - Proprietários</figcaption>
-</figure> 
-
+</figure> \**
 
 Ao clicar no botão do lado direito de cada linha da tabela na tela de proprietários apresenta em seguida um Pop-up das informações pessoais dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 
