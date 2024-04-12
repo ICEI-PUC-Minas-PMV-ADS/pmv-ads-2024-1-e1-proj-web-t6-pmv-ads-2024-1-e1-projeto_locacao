@@ -92,7 +92,7 @@ A tela de locatários apresenta informações resumidas de todos os locatários 
 
 <figure> 
   <img src="img/locatarios.png"
-    <figcaption>Figura 9 - Tela - Locatário</figcaption>
+    <figcaption>Figura 10 - Tela - Locatário</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ A tela de locatários apresenta informações resumidas de todos os locatários 
 Ao clicar no botão do lado direito de cada linha da tabela na tela de locatários apresenta em seguida um Pop-up das informações detalhadas dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/locatario_poupup.png"
-    <figcaption>Figura 10 - Pop-up - Locatário cadastrado</figcaption>
+    <figcaption>Figura 11 - Pop-up - Locatário cadastrado</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -109,21 +109,31 @@ Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um 
 
 <figure> 
   <img src="img/locatario_novo.png"
-    <figcaption>Figura 11 - Pop-up - Locatário Novo</figcaption>
+    <figcaption>Figura 12 - Pop-up - Locatário Novo</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
 
+Ao clicar no botão filtro na tela de Locatários surge um Pop-up com os seguintes para inserção dos filtros possíveis (ID, Nome, CPF, Status - Todos, Ativo, Inativo). 
+
+IMAGEM LOCATARIO FILTRO
+
+Figura 13 - Pop-up - Locatário Filtro
+
+Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando apenas as informações correspondentes aos filtros informados.
+
+
+
 ### Tela - Imóveis (ZANDER)
 <figure> 
   <img src="img/imoveis.png"
-    <figcaption>Figura 12 - Tela - Imóveis</figcaption>
+    <figcaption>Figura 14 - Tela - Imóveis</figcaption>
 </figure> 
 
 ### Pop Up - Imóvel (ZANDER)
 <figure> 
   <img src="img/popup_imovel.png"
-    <figcaption>Figura 13 - Tela - Pop up Imóvel</figcaption>
+    <figcaption>Figura 15 - Tela - Pop up Imóvel</figcaption>
 </figure> 
 
 
@@ -131,52 +141,56 @@ Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um 
 
 <figure> 
   <img src="img/popup_novo_imovel.png"
-    <figcaption>Figura 14 - Tela - Pop up novo imóvel</figcaption>
+    <figcaption>Figura 16 - Tela - Pop up novo imóvel</figcaption>
 </figure> 
 
 ### Tela - Contratos (ZANDER)
 
-Figura 15
+Figura 17
 
 ### Pop Up - Contrato (ZANDER)
 
-Figura 16
+Figura 18
 
 ### Pop Up - Novo Contrato (ZANDER)
 
-Figura 17
+Figura 19
 
 ### Tela - Faturas (EDUARDO)
 
-Figura 18
-
-### Pop Up - Fatura (EDUARDO)
-
-Figura 19
-
-### Tela - Requisições (ISMARLEI)
-
 Figura 20
 
-### Pop Up - Requisição (ISMARLEI)
+### Pop Up - Fatura Detalhes (EDUARDO)
 
 Figura 21
 
-### Pop Up - Nova Requisição (ISMARLEI)
+### Pop Up - Fatura Filtro (EDUARDO)
 
 Figura 22
 
-### Tela - Usuários (THASSIA)
-
-Figura 23
-
-### Pop Up - Usuário (THASSIA)
+### Tela - Requisições (ISMARLEI)
 
 Figura 24
 
-### Pop Up - Novo Usuário (THASSIA)
+### Pop Up - Requisição (ISMARLEI)
 
 Figura 25
+
+### Pop Up - Nova Requisição (ISMARLEI)
+
+Figura 26
+
+### Tela - Usuários (THASSIA)
+
+Figura 27
+
+### Pop Up - Usuário (THASSIA)
+
+Figura 28
+
+### Pop Up - Novo Usuário (THASSIA)
+
+Figura 29
 
 
 
