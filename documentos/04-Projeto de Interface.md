@@ -25,14 +25,14 @@ As telas do sistema seguem um único padrão, o qual é representado pela figura
 </figure>
 
 
-### Tela - Login (SOCRATIS) 
+### Tela - Login
 A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
 <figure> 
   <img src="img/login.png"
     <figcaption>Figura 3 - Tela - Acesso à conta de usuário</figcaption>
 </figure>
 
-### Tela - Primeiro Acesso (SOCRATIS)
+### Tela - Primeiro Acesso
 A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar senha para que seja realizada a alteração da senha originalmente gerada pelo sistema.
 
 <figure> 
@@ -40,7 +40,7 @@ A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar
     <figcaption>Figura 4 - Tela - Atualização da senha de acesso</figcaption>
 </figure>
 
-### Tela - Dashboard (SOCRATIS)
+### Tela - Dashboard
 A tela de dashboard apresenta informações relevântes e de rápida visualização em forma de resumo do faturamento mensal, vacância física e vacância financeira.
 
 <figure> 
@@ -48,25 +48,30 @@ A tela de dashboard apresenta informações relevântes e de rápida visualizaç
     <figcaption>Figura 5 - Tela - Dashboard</figcaption>
 </figure>
 
-### Tela - Proprietários (SOCRATIS)
+### Tela - Proprietários
+A tela de proprietários apresenta informações resumidas de todos os proprietários cadastrados como Id, Nome, Imóveis e Status de cada um deles.
+
 <figure> 
   <img src="img/proprietarios.png"
     <figcaption>Figura 6 - Tela - Proprietários</figcaption>
 </figure> 
 
-Ao Clicar no botão ...
+Ao clicar no botão do lado direito de cada linha da tabela na tela de proprietários apresenta em seguida um Pop-up das informações pessoais dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
+
 <figure> 
   <img src="img/popup_proprietario.png"
     <figcaption>Figura 7 - Pop Up - Proprietário</figcaption>
 </figure> 
 
-Ao Clicar no botão ...
+Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo proprietário como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
+
 <figure> 
   <img src="img/popup_novo_proprietario.png"
     <figcaption>Figura 8 - Pop Up - Novo Proprietário</figcaption>
 </figure> 
 
-Ao clicar no botão filtrar ...
+Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop-up com os campos Id, Nome CPF e Status, afim de filtrar e visualizar as informações de determinado(s) proprietário(s) cadastrado(s).
+
 <figure> 
   <img src="img/filtro_proprietario.png"
     <figcaption>Figura 9 - Pop Up - Filtro Proprietário</figcaption>
