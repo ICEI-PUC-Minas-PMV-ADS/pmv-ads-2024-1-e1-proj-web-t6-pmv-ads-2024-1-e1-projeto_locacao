@@ -87,9 +87,14 @@ Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Tela - Locatário (EDUARDO)
+### Tela - Locatário
+A tela de locatários apresenta informações resumidas de todos os locatários cadastrados como Id, Nome, Imóveis e Status de cada um deles.
 
-Figura 9
+<figure> 
+  <img src="img/locatarios.png"
+    <figcaption>Figura 9 - Tela - Locatário</figcaption>
+</figure>
+
 
 ### Pop Up - Locatário (EDUARDO)
 
