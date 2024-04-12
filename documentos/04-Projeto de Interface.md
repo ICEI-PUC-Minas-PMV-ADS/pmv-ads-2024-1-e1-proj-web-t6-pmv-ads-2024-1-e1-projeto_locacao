@@ -1,8 +1,6 @@
 
 # Projeto de Interface
 
---------------------------------------------------------------------------------------------------------------------
-
 ### User Flow 
 
 O fluxograma abaixo mostra o fluxo de interação do usuário pelas telas do sistema. As telas do sistema são detalhadas na seção de Protótipo de baixa fidelidade.
