@@ -129,7 +129,7 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
 --------------------------------------------------------------------------------------------------------------------
 
 
-### Tela - Imóveis (ZANDER)
+### Tela - Imóveis 
 Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imóveis existentes no sistema, identificando o status de locação e se o cadastro ainda está ativo na imobiliária.
 <figure> 
   <img src="img/imoveis.png"
@@ -138,7 +138,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Imóvel (ZANDER)
+### Pop Up - Imóvel 
 Ao clicar no botão do lado direito em imóveis é possivel fazer a alteração dos dados do imóvel, se necessário atualizar.
 <figure> 
   <img src="img/popup_imovel.png"
@@ -147,7 +147,7 @@ Ao clicar no botão do lado direito em imóveis é possivel fazer a alteração 
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Novo Imóvel (ZANDER)
+### Pop Up - Novo Imóvel 
 Ao clicar no "mais" acima da tela de imóveis, é possível cadastrar um novo imóvel.
 <figure> 
   <img src="img/popup_novo_imovel.png"
@@ -156,7 +156,7 @@ Ao clicar no "mais" acima da tela de imóveis, é possível cadastrar um novo im
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Filtro Imóvel (ZANDER)
+### Pop Up - Filtro Imóvel 
 Ao clicar no "funil" acima da tela de imóveis, é possível filtrar um imóvel dentro dos disponíveis.
 <figure> 
   <img src="img/filtro_imoveis.png"
@@ -166,7 +166,7 @@ Ao clicar no "funil" acima da tela de imóveis, é possível filtrar um imóvel 
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Tela - Contratos (ZANDER)
+### Tela - Contratos 
 Ao clicar no ícone "Contratos" é possível visualizar os contratos ativos, inativos, validade do contrato e mensalidade a ser paga.
 <figure> 
   <img src="img/Contratos.png"
@@ -175,7 +175,7 @@ Ao clicar no ícone "Contratos" é possível visualizar os contratos ativos, ina
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Contrato Detalhes (ZANDER)
+### Pop Up - Contrato Detalhes 
 Ao clicar no botão do lado direito ao lado de algum contrato é possivel fazer a alteração dos dados do Contrato.
 <figure> 
   <img src="img/popup_contrato.png"
@@ -185,7 +185,7 @@ Ao clicar no botão do lado direito ao lado de algum contrato é possivel fazer 
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Novo Contrato (ZANDER)
+### Pop Up - Novo Contrato
 Ao clicar no "mais" acima da tela de Contratos, é possível cadastrar um novo Contrato.
 <figure> 
   <img src="img/popup_novo_contrato.png"
@@ -194,7 +194,7 @@ Ao clicar no "mais" acima da tela de Contratos, é possível cadastrar um novo C
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Contrato Filtro(ZANDER)
+### Pop Up - Contrato Filtro
 Ao clicar no "funil" acima da tela de Contratos, é possível filtrar contrato dentro dos disponíveis.
 <figure> 
   <img src="img/filtro_contratos.png"
