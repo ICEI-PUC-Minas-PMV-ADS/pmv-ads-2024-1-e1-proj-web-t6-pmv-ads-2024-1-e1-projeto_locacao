@@ -130,7 +130,7 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
 
 
 ### Tela - Imóveis (ZANDER)
-Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imóveis existentes no sistema, identificando o status de locação e se o cadastro ainda está ativo na imobiliária
+Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imóveis existentes no sistema, identificando o status de locação e se o cadastro ainda está ativo na imobiliária.
 <figure> 
   <img src="img/imoveis.png"
     <figcaption>Figura 14 - Tela - Imóveis</figcaption>
@@ -139,6 +139,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Imóvel (ZANDER)
+Ao clicar no botão do lado direito em imóveis é possivel fazer a alteração dos dados do imóvel, se necessário atualizar.
 <figure> 
   <img src="img/popup_imovel.png"
     <figcaption>Figura 15 - Tela - Pop up Imóvel Detalhes</figcaption>
@@ -147,7 +148,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Novo Imóvel (ZANDER)
-
+Ao clicar no "mais" acima da tela de imóveis, é possível cadastrar um novo imóvel.
 <figure> 
   <img src="img/popup_novo_imovel.png"
     <figcaption>Figura 16 - Tela - Pop up novo imóvel</figcaption>
@@ -156,7 +157,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Filtro Imóvel (ZANDER)
-
+Ao clicar no "funil" acima da tela de imóveis, é possível filtrar um imóvel dentro dos disponíveis.
 <figure> 
   <img src="img/filtro_imoveis.png"
     <figcaption>Figura 17 - Tela -Filtro Imóveis</figcaption>
@@ -166,7 +167,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Contratos (ZANDER)
-
+Ao clicar no ícone "Contratos" é possível visualizar os contratos ativos, inativos, validade do contrato e mensalidade a ser paga.
 <figure> 
   <img src="img/Contratos.png"
     <figcaption>Figura 18 - Tela - COntratos</figcaption>
@@ -175,6 +176,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Contrato Detalhes (ZANDER)
+Ao clicar no botão do lado direito ao lado de algum contrato é possivel fazer a alteração dos dados do Contrato.
 <figure> 
   <img src="img/popup_contrato.png"
     <figcaption>Figura 19 - Tela - Detalhes de contrato</figcaption>
@@ -184,7 +186,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Novo Contrato (ZANDER)
-
+Ao clicar no "mais" acima da tela de Contratos, é possível cadastrar um novo Contrato.
 <figure> 
   <img src="img/popup_novo_contrato.png"
     <figcaption>Figura 20 - Tela - Novo contrato</figcaption>
@@ -193,7 +195,7 @@ Ao clicar na tela de imóveis é possível ter uma visão geral de todos os imó
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Contrato Filtro(ZANDER)
-
+Ao clicar no "funil" acima da tela de Contratos, é possível filtrar contrato dentro dos disponíveis.
 <figure> 
   <img src="img/filtro_contratos.png"
     <figcaption>Figura 21 - Tela - Filtro de contratos</figcaption>
