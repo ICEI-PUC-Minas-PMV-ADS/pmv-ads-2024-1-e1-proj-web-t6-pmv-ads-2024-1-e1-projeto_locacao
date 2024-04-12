@@ -170,7 +170,7 @@ Ao clicar no "funil" acima da tela de imóveis, é possível filtrar um imóvel 
 Ao clicar no ícone "Contratos" é possível visualizar os contratos ativos, inativos, validade do contrato e mensalidade a ser paga.
 <figure> 
   <img src="img/Contratos.png"
-    <figcaption>Figura 18 - Tela - COntratos</figcaption>
+    <figcaption>Figura 18 - Tela - Contratos</figcaption>
 </figure> 
 
 --------------------------------------------------------------------------------------------------------------------
