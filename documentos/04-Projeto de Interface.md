@@ -66,7 +66,7 @@ A tela de proprietários apresenta informações resumidas de todos os propriet�
 Ao clicar no botão do lado direito de cada linha da tabela na tela de proprietários apresenta em seguida um Pop-up das informações pessoais dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_proprietario.png"
-    <figcaption>Figura 7 - Pop-up - Proprietário cadastrado</figcaption>
+    <figcaption>Figura 7 - Pop-up - Proprietário Detalhes</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ A tela de locatários apresenta informações resumidas de todos os locatários 
 Ao clicar no botão do lado direito de cada linha da tabela na tela de locatários apresenta em seguida um Pop-up das informações detalhadas dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/locatario_poupup.png"
-    <figcaption>Figura 11 - Pop-up - Locatário cadastrado</figcaption>
+    <figcaption>Figura 11 - Pop-up - Locatário Detalhes</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -133,7 +133,7 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
 ### Pop Up - Imóvel (ZANDER)
 <figure> 
   <img src="img/popup_imovel.png"
-    <figcaption>Figura 15 - Tela - Pop up Imóvel</figcaption>
+    <figcaption>Figura 15 - Tela - Pop up Imóvel Detalhes</figcaption>
 </figure> 
 
 
@@ -144,54 +144,68 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
     <figcaption>Figura 16 - Tela - Pop up novo imóvel</figcaption>
 </figure> 
 
-### Tela - Contratos (ZANDER)
-
+### Pop Up - Filtro Imóvel (ZANDER)
 Figura 17
 
-### Pop Up - Contrato (ZANDER)
+### Tela - Contratos (ZANDER)
 
 Figura 18
 
-### Pop Up - Novo Contrato (ZANDER)
+### Pop Up - Contrato Detalhes (ZANDER)
 
 Figura 19
 
-### Tela - Faturas (EDUARDO)
+### Pop Up - Novo Contrato (ZANDER)
 
 Figura 20
 
-### Pop Up - Fatura Detalhes (EDUARDO)
+### Pop Up - Contrato Filtro(ZANDER)
 
 Figura 21
 
-### Pop Up - Fatura Filtro (EDUARDO)
+### Tela - Faturas (EDUARDO)
 
 Figura 22
 
-### Tela - Requisições (ISMARLEI)
+### Pop Up - Fatura Detalhes (EDUARDO)
+
+Figura 23
+
+### Pop Up - Fatura Filtro (EDUARDO)
 
 Figura 24
 
-### Pop Up - Requisição (ISMARLEI)
+### Tela - Requisições (ISMARLEI)
 
 Figura 25
 
-### Pop Up - Nova Requisição (ISMARLEI)
+### Pop Up - Requisição Detalhes (ISMARLEI)
 
 Figura 26
 
-### Tela - Usuários (THASSIA)
+### Pop Up - Nova Requisição (ISMARLEI)
 
 Figura 27
 
-### Pop Up - Usuário (THASSIA)
+### Pop Up - Filtro Requisição (ISMARLEI)
 
 Figura 28
 
-### Pop Up - Novo Usuário (THASSIA)
+### Tela - Usuários (THASSIA)
 
 Figura 29
 
+### Pop Up - Usuário Detalhes (THASSIA)
+
+Figura 30
+
+### Pop Up - Novo Usuário (THASSIA)
+
+Figura 31
+
+### Pop Up - Novo Usuário (THASSIA)
+
+Figura 32
 
 
 
