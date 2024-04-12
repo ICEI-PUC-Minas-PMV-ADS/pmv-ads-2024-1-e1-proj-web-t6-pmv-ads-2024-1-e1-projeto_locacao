@@ -66,7 +66,7 @@ A tela de proprietários apresenta informações resumidas de todos os propriet�
 Ao clicar no botão do lado direito de cada linha da tabela na tela de proprietários apresenta em seguida um Pop-up das informações pessoais dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_proprietario.png"
-    <figcaption>Figura 7 - Pop Up - Proprietário</figcaption>
+    <figcaption>Figura 7 - Pop-up - Proprietário cadastrado</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ Ao clicar no botão do lado direito de cada linha da tabela na tela de propriet�
 Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo proprietário como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_novo_proprietario.png"
-    <figcaption>Figura 8 - Pop Up - Novo Proprietário</figcaption>
+    <figcaption>Figura 8 - Pop-up - Cadastro de Proprietário</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida 
 Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop-up com os campos Id, Nome CPF e Status, afim de filtrar e visualizar as informações de determinado(s) proprietário(s) cadastrado(s).
 <figure> 
   <img src="img/filtro_proprietario.png"
-    <figcaption>Figura 9 - Pop Up - Filtro Proprietário</figcaption>
+    <figcaption>Figura 9 - Pop-up - Filtro de Proprietário(s)</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
