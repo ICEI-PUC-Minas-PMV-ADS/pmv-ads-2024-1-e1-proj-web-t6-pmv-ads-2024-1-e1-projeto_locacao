@@ -88,21 +88,25 @@ Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop
 --------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Locatário
-A tela de locatários apresenta informações resumidas de todos os locatários cadastrados como Id, Nome, Imóveis e Status de cada um deles.
+A tela de locatários apresenta informações resumidas de todos os locatários cadastrados como Id, Telefone, E-mail e Status de cada um deles.
 
 <figure> 
   <img src="img/locatarios.png"
     <figcaption>Figura 9 - Tela - Locatário</figcaption>
 </figure>
 
+Ao clicar no botão do lado direito de cada linha da tabela na tela de locatários apresenta em seguida um Pop-up das informações detalhadas dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
+<figure> 
+  <img src="img/locatario_poupup.png"
+    <figcaption>Figura 10 - Pop-up - Locatário cadastrado</figcaption>
+</figure>
 
-### Pop Up - Locatário (EDUARDO)
+Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo locatários Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 
-Figura 10
-
-### Pop Up - Novo Locatário (EDUARDO)
-
-Figura 11
+<figure> 
+  <img src="img/locatario_novo.png"
+    <figcaption>Figura 11 - Pop-up - Locatário Novo</figcaption>
+</figure>
 
 ### Tela - Imóveis (ZANDER)
 <figure> 
