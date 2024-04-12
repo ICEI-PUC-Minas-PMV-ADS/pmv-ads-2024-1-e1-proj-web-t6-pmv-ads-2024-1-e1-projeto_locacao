@@ -155,31 +155,48 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Filtro Imóvel (ZANDER)
-Figura 17
+
+<figure> 
+  <img src="img/filtro_imoveis.png"
+    <figcaption>Figura 17 - Tela -Filtro Imóveis</figcaption>
+</figure> 
+
 
 --------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Contratos (ZANDER)
 
-Figura 18
+<figure> 
+  <img src="img/Contratos.png"
+    <figcaption>Figura 18 - Tela - COntratos</figcaption>
+</figure> 
 
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Contrato Detalhes (ZANDER)
+<figure> 
+  <img src="img/popup_contrato.png"
+    <figcaption>Figura 19 - Tela - Detalhes de contrato</figcaption>
+</figure> 
 
-Figura 19
 
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Novo Contrato (ZANDER)
 
-Figura 20
+<figure> 
+  <img src="img/popup_novo_contrato.png"
+    <figcaption>Figura 20 - Tela - Novo contrato</figcaption>
+</figure> 
 
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Contrato Filtro(ZANDER)
 
-Figura 21
+<figure> 
+  <img src="img/filtro_contratos.png"
+    <figcaption>Figura 21 - Tela - Filtro de contratos</figcaption>
+</figure> 
 
 --------------------------------------------------------------------------------------------------------------------
 
