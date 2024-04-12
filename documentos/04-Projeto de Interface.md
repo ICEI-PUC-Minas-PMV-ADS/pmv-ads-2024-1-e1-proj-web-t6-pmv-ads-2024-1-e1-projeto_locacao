@@ -8,8 +8,9 @@ O fluxograma abaixo mostra o fluxo de interação do usuário pelas telas do sis
 <figure> 
   <img src="img/user_flow_immocontrol.png"
     <figcaption>Figura 1 - User Flow - ImmoControl</figcaption>
-</figure> 
+</figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Protótipo de baixa fidelidade
 
@@ -24,6 +25,7 @@ As telas do sistema seguem um único padrão, o qual é representado pela figura
     <figcaption>Figura 2 - Estrutura Padrão das Páginas</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Login
 A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
@@ -32,6 +34,7 @@ A tela de Login apresenta campos para a inserção do e-mail e da senha, e a fun
     <figcaption>Figura 3 - Tela - Acesso à conta de usuário</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Primeiro Acesso
 A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar senha para que seja realizada a alteração da senha originalmente gerada pelo sistema.
@@ -40,6 +43,7 @@ A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar
     <figcaption>Figura 4 - Tela - Atualização da senha de acesso</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Dashboard
 A tela de dashboard apresenta informações relevântes e de rápida visualização em forma de resumo do faturamento mensal, vacância física e vacância financeira.
@@ -48,6 +52,7 @@ A tela de dashboard apresenta informações relevântes e de rápida visualizaç
     <figcaption>Figura 5 - Tela - Dashboard</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Proprietários
 A tela de proprietários apresenta informações resumidas de todos os proprietários cadastrados como Id, Nome, Imóveis e Status de cada um deles.
@@ -64,6 +69,7 @@ Ao clicar no botão do lado direito de cada linha da tabela na tela de propriet�
     <figcaption>Figura 7 - Pop Up - Proprietário</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo proprietário como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
@@ -71,6 +77,7 @@ Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida 
     <figcaption>Figura 8 - Pop Up - Novo Proprietário</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop-up com os campos Id, Nome CPF e Status, afim de filtrar e visualizar as informações de determinado(s) proprietário(s) cadastrado(s).
 <figure> 
@@ -78,6 +85,7 @@ Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop
     <figcaption>Figura 9 - Pop Up - Filtro Proprietário</figcaption>
 </figure>
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Locatário (EDUARDO)
 
