@@ -116,12 +116,15 @@ Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um 
 
 Ao clicar no botão filtro na tela de Locatários surge um Pop-up com os seguintes para inserção dos filtros possíveis (ID, Nome, CPF, Status - Todos, Ativo, Inativo). 
 
-IMAGEM LOCATARIO FILTRO
+<figure> 
+  <img src="img/locatario_filtro.png"
+    <figcaption>Figura 13 - Pop-up - Locatário Filtro</figcaption>
+</figure>
 
-Figura 13 - Pop-up - Locatário Filtro
 
 Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando apenas as informações correspondentes aos filtros informados.
 
+--------------------------------------------------------------------------------------------------------------------
 
 
 ### Tela - Imóveis (ZANDER)
@@ -130,12 +133,15 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
     <figcaption>Figura 14 - Tela - Imóveis</figcaption>
 </figure> 
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Imóvel (ZANDER)
 <figure> 
   <img src="img/popup_imovel.png"
     <figcaption>Figura 15 - Tela - Pop up Imóvel Detalhes</figcaption>
 </figure> 
 
+--------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Novo Imóvel (ZANDER)
 
@@ -144,70 +150,113 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando 
     <figcaption>Figura 16 - Tela - Pop up novo imóvel</figcaption>
 </figure> 
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Filtro Imóvel (ZANDER)
 Figura 17
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Contratos (ZANDER)
 
 Figura 18
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Contrato Detalhes (ZANDER)
 
 Figura 19
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Novo Contrato (ZANDER)
 
 Figura 20
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Contrato Filtro(ZANDER)
 
 Figura 21
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Tela - Faturas (EDUARDO)
+A tela de locatários apresenta informações resumidas de todas as faturas geradas como ID, Nome do Locatário, Valor e Status de cada uma.
 
-Figura 22
+<figure> 
+  <img src="img/faturas.png"
+    <figcaption>Figura 22 - Tela - Faturas</figcaption>
+</figure> 
 
+--------------------------------------------------------------------------------------------------------------------
 ### Pop Up - Fatura Detalhes (EDUARDO)
+Ao clicar no botão ao lado direito de cada linha da tabela na tela de faturas é apresenta em seguida uma Pop-up das informações daquela fatura: Nome do Locatário, Endereço de Cobrança, ID do Contrato, Datas de Início e Fim da Vigência do Contrato e de Vencimento e Pagamento.
 
-Figura 23
+<figure> 
+  <img src="img/faturas_poupup.png"
+    <figcaption>Figura 23 - Pop-up - Faturas Detalhes</figcaption>
+</figure> 
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Fatura Filtro (EDUARDO)
+Ao clicar no botão filtro na tela de fatura surge em seguida um Pop-up com os seguintes campos para inserção dos filtros possíveis (ID, Data Vencimento, Nome do Locatário, Status - Todos, Ativo, Inativo).
 
-Figura 24
+<figure> 
+  <img src="img/faturas_pesquisa.png"
+    <figcaption>Figura 24 - Pop-up - Faturas Filtro </figcaption>
+</figure> 
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Requisições (ISMARLEI)
 
 Figura 25
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Requisição Detalhes (ISMARLEI)
 
 Figura 26
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Nova Requisição (ISMARLEI)
 
 Figura 27
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Filtro Requisição (ISMARLEI)
 
 Figura 28
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Usuários (THASSIA)
 
 Figura 29
 
+--------------------------------------------------------------------------------------------------------------------
+
 ### Pop Up - Usuário Detalhes (THASSIA)
 
 Figura 30
+
+--------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Novo Usuário (THASSIA)
 
 Figura 31
 
-### Pop Up - Novo Usuário (THASSIA)
+--------------------------------------------------------------------------------------------------------------------
+
+### Pop Up - Usuário Filtro (THASSIA)
 
 Figura 32
 
-
+--------------------------------------------------------------------------------------------------------------------
 
 
 
