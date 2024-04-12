@@ -96,7 +96,7 @@ A tela de locatários apresenta informações resumidas de todos os locatários 
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
-
+### Pop-up - Locatário Detalhes
 Ao clicar no botão do lado direito de cada linha da tabela na tela de locatários apresenta em seguida um Pop-up das informações detalhadas dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/locatario_poupup.png"
@@ -104,7 +104,7 @@ Ao clicar no botão do lado direito de cada linha da tabela na tela de locatári
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
-
+### Pop-up - Cadastrar Novo Locatário
 Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo locatários Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 
 <figure> 
@@ -114,12 +114,14 @@ Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um 
 
 --------------------------------------------------------------------------------------------------------------------
 
+### Pop-up - Filtro Locatário
 Ao clicar no botão filtro na tela de Locatários surge um Pop-up com os seguintes para inserção dos filtros possíveis (ID, Nome, CPF, Status - Todos, Ativo, Inativo). 
 
 <figure> 
   <img src="img/locatario_filtro.png"
     <figcaption>Figura 13 - Pop-up - Locatário Filtro</figcaption>
 </figure>
+
 
 
 Ao clicar em "Filtrar" retorna-se à tela anterior (Locatários´) apresentando apenas as informações correspondentes aos filtros informados.
@@ -181,8 +183,8 @@ Figura 21
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Tela - Faturas (EDUARDO)
-A tela de locatários apresenta informações resumidas de todas as faturas geradas como ID, Nome do Locatário, Valor e Status de cada uma.
+### Tela - Faturas
+A tela de faturas apresenta informações resumidas de todas as faturas geradas como ID, Nome do Locatário, Valor e Status de cada uma.
 
 <figure> 
   <img src="img/faturas.png"
@@ -190,7 +192,7 @@ A tela de locatários apresenta informações resumidas de todas as faturas gera
 </figure> 
 
 --------------------------------------------------------------------------------------------------------------------
-### Pop Up - Fatura Detalhes (EDUARDO)
+### Pop-Up - Fatura Detalhes
 Ao clicar no botão ao lado direito de cada linha da tabela na tela de faturas é apresenta em seguida uma Pop-up das informações daquela fatura: Nome do Locatário, Endereço de Cobrança, ID do Contrato, Datas de Início e Fim da Vigência do Contrato e de Vencimento e Pagamento.
 
 <figure> 
@@ -200,13 +202,16 @@ Ao clicar no botão ao lado direito de cada linha da tabela na tela de faturas �
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Fatura Filtro (EDUARDO)
+### Pop-Up - Fatura Filtro
 Ao clicar no botão filtro na tela de fatura surge em seguida um Pop-up com os seguintes campos para inserção dos filtros possíveis (ID, Data Vencimento, Nome do Locatário, Status - Todos, Ativo, Inativo).
 
 <figure> 
   <img src="img/faturas_pesquisa.png"
     <figcaption>Figura 24 - Pop-up - Faturas Filtro </figcaption>
 </figure> 
+
+
+Ao clicar em "Filtrar" retorna-se à tela anterior (Faturas) apresentando apenas as informações correspondentes aos filtros informados.
 
 --------------------------------------------------------------------------------------------------------------------
 
