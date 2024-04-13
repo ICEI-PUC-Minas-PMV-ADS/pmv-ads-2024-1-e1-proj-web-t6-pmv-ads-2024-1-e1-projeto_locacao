@@ -259,9 +259,15 @@ Figura 28
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Tela - Usuários (THASSIA)
+### Tela - Usuários 
 
-Figura 29
+A tela de usuários apresenta informações resumidas de todos os usuários, ativos e inativos, da aplicação.
+
+<figure> 
+  <img src="img/usuarios.png"
+    <figcaption>Figura 29 - Tela - Usuários </figcaption>
+</figure> 
+
 
 --------------------------------------------------------------------------------------------------------------------
 
