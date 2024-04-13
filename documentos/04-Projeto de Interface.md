@@ -236,7 +236,7 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Faturas) apresentando apenas
 --------------------------------------------------------------------------------------------------------------------
 
 ### Tela - Requisições
-A tela de Requisições apresenta informações de solicitações em aberto, andamento ou atendida.
+A tela de Requisições apresenta informações de solicitações em aberto ou atendida.
 
 <figure> 
   <img src="img/requisicoes.png"
@@ -246,7 +246,7 @@ A tela de Requisições apresenta informações de solicitações em aberto, and
 --------------------------------------------------------------------------------------------------------------------
 
 ### Pop Up - Requisição Detalhes
-Ao clicar no botão ao lado direito de cada linha da tabela na tela de requisições é apresenta em seguida uma Pop-up das informações daquela requisições: Tipo (locatário ou Proprietário),nome, texto com a requisição e status (Em aberto, Atendida
+Ao clicar no botão ao lado direito de cada linha da tabela na tela de requisições é apresenta em seguida uma Pop-up das informações daquela requisições: Tipo (locatário ou Proprietário),nome, texto com a requisição e status (Em aberto, Atendida)
 
 <figure> 
   <img src="img/popup_requisicao.png"
