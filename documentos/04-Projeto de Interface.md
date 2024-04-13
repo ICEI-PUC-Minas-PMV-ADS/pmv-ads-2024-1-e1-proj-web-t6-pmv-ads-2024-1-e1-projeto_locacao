@@ -66,7 +66,7 @@ A tela de proprietários apresenta informações resumidas de todos os propriet�
 Ao clicar no botão do lado direito de cada linha da tabela na tela de proprietários apresenta em seguida um Pop-up das informações pessoais dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_proprietario.png"
-    <figcaption>Figura 7 - Pop-up - Proprietário Detalhes</figcaption>
+    <figcaption>Figura 7 - Tela - Pop-up - Proprietário Detalhes</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -74,7 +74,7 @@ Ao clicar no botão do lado direito de cada linha da tabela na tela de propriet�
 Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo proprietário como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_novo_proprietario.png"
-    <figcaption>Figura 8 - Pop-up - Cadastro de Proprietário</figcaption>
+    <figcaption>Figura 8 - Tela - Pop-up - Cadastro de Proprietário</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida 
 Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop-up com os campos Id, Nome CPF e Status, afim de filtrar e visualizar as informações de determinado(s) proprietário(s) cadastrado(s).
 <figure> 
   <img src="img/filtro_proprietario.png"
-    <figcaption>Figura 9 - Pop-up - Filtro de Proprietário(s)</figcaption>
+    <figcaption>Figura 9 - Tela - Pop-up - Filtro de Proprietário(s)</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -100,7 +100,7 @@ A tela de locatários apresenta informações resumidas de todos os locatários 
 Ao clicar no botão do lado direito de cada linha da tabela na tela de locatários apresenta em seguida um Pop-up das informações detalhadas dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/locatario_poupup.png"
-    <figcaption>Figura 11 - Pop-up - Locatário Detalhes</figcaption>
+    <figcaption>Figura 11 - Tela - Pop-up - Locatário Detalhes</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -109,7 +109,7 @@ Ao clicar no botão adicionar(+) na tela de locatários apresenta em seguida um 
 
 <figure> 
   <img src="img/locatario_novo.png"
-    <figcaption>Figura 12 - Pop-up - Locatário Novo</figcaption>
+    <figcaption>Figura 12 - Tela - Pop-up - Locatário Novo</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ Ao clicar no botão filtro na tela de Locatários surge um Pop-up com os seguint
 
 <figure> 
   <img src="img/locatario_filtro.png"
-    <figcaption>Figura 13 - Pop-up - Locatário Filtro</figcaption>
+    <figcaption>Figura 13 - Tela - Pop-up - Locatário Filtro</figcaption>
 </figure>
 
 
@@ -160,7 +160,7 @@ Ao clicar no "mais" acima da tela de imóveis, é possível cadastrar um novo im
 Ao clicar no "funil" acima da tela de imóveis, é possível filtrar um imóvel dentro dos disponíveis.
 <figure> 
   <img src="img/filtro_imoveis.png"
-    <figcaption>Figura 17 - Tela -Filtro Imóveis</figcaption>
+    <figcaption>Figura 17 - Tela - Filtro Imóveis</figcaption>
 </figure> 
 
 
@@ -217,7 +217,7 @@ Ao clicar no botão ao lado direito de cada linha da tabela na tela de faturas �
 
 <figure> 
   <img src="img/faturas_poupup.png"
-    <figcaption>Figura 23 - Pop-up - Faturas Detalhes</figcaption>
+    <figcaption>Figura 23 - Tela - Pop-up - Faturas Detalhes</figcaption>
 </figure> 
 
 --------------------------------------------------------------------------------------------------------------------
@@ -227,7 +227,7 @@ Ao clicar no botão filtro na tela de fatura surge em seguida um Pop-up com os s
 
 <figure> 
   <img src="img/faturas_pesquisa.png"
-    <figcaption>Figura 24 - Pop-up - Faturas Filtro </figcaption>
+    <figcaption>Figura 24 - Tela - Pop-up - Faturas Filtro </figcaption>
 </figure> 
 
 
