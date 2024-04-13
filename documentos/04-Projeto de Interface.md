@@ -235,27 +235,44 @@ Ao clicar em "Filtrar" retorna-se à tela anterior (Faturas) apresentando apenas
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Tela - Requisições (ISMARLEI)
+### Tela - Requisições
+A tela de Requisições apresenta informações de solicitações em aberto, andamento ou atendida.
 
-Figura 25
-
---------------------------------------------------------------------------------------------------------------------
-
-### Pop Up - Requisição Detalhes (ISMARLEI)
-
-Figura 26
+<figure> 
+  <img src="img/requisicoes.png"
+    <figcaption>Figura 25 - Tela - Requisições </figcaption>
+</figure> 
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Nova Requisição (ISMARLEI)
+### Pop Up - Requisição Detalhes
+Ao clicar no botão ao lado direito de cada linha da tabela na tela de requisições é apresenta em seguida uma Pop-up das informações daquela requisições: Tipo (locatário ou Proprietário),nome, texto com a requisição e status (Em aberto, Atendida
 
-Figura 27
+<figure> 
+  <img src="img/popup_requisicao.png"
+    <figcaption>Figura 26 - Tela - Pop-up - Requisição Detalhada </figcaption>
+</figure> 
+
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Filtro Requisição (ISMARLEI)
+### Pop Up - Nova Requisição
+Ao clicar no botão adicionar (+) poderá abrir uma nova requisição.
+<figure> 
+  <img src="img/popup_novarequisicao.png"
+    <figcaption>Figura 27 - Tela - Pop-up - Nova Requisição </figcaption>
+</figure>
 
-Figura 28
+
+--------------------------------------------------------------------------------------------------------------------
+
+### Pop Up - Filtro Requisição
+Ao clicar no botão filtro na tela Requisilções surge um Pop-up com os seguintes campos para inserção dos filtros possíveis (ID, Tipo Requisitante, Requisitante). E em Status pode ser selecionado entre as opções disponiveis ( Todos, Atendida, Em Aberto)
+<figure> 
+  <img src="img/filtro_requisicooes.png"
+    <figcaption>Figura 28 - Tela - Pop-up - Filtro Requisição </figcaption>
+</figure>
+
 
 --------------------------------------------------------------------------------------------------------------------
 
