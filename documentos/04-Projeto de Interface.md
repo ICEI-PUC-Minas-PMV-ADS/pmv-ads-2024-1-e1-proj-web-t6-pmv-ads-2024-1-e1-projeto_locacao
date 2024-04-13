@@ -271,21 +271,38 @@ A tela de usuários apresenta informações resumidas de todos os usuários, ati
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Usuário Detalhes (THASSIA)
+### Pop Up - Usuário Detalhes 
 
-Figura 30
+Ao clicar no botão ao lado direito de cada linha da tabela na tela de usuários é apresenta em seguida uma Pop-up das informações daquele usuário: Nome, Email, Perfil e Status. No mesmo Pop-up há três botões: Voltar (para a tela incial de usuários), Alterar (informações dos usuários) e Nova Senha.
+
+<figure> 
+  <img src="img/popup_usuario.png"
+    <figcaption>Figura 30 - Tela - Pop-up - Usuários Detalhes </figcaption>
+</figure> 
+
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Novo Usuário (THASSIA)
+### Pop Up - Novo Usuário 
 
-Figura 31
+Ao clicar no "mais" acima da tela de Usuários, é possível cadastrar um novo Usuário.
+
+<figure> 
+  <img src="img/popup_novo_ usuario.png"
+    <figcaption>Figura 31 - Tela - Pop-up - Novo Usuário </figcaption>
+</figure>
+
 
 --------------------------------------------------------------------------------------------------------------------
 
-### Pop Up - Usuário Filtro (THASSIA)
+### Pop Up - Usuário Filtro
 
-Figura 32
+Ao clicar no "funil" acima da tela de Usuários, é possível filtrar usuários usando as seguintes informações: ID, Perfil, Nome e Status.
+
+<figure> 
+  <img src="img/filtro_usuarios.png"
+    <figcaption>Figura 32 - Tela - Pop-up - Usuário Filtro </figcaption>
+</figure>
 
 --------------------------------------------------------------------------------------------------------------------
 
