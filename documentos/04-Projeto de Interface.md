@@ -31,7 +31,7 @@ As telas do sistema seguem um único padrão, o qual é representado pela figura
 A tela de Login apresenta campos para a inserção do e-mail e da senha, e a funcionalidade de manter-se logado.
 <figure> 
   <img src="img/login.png"
-    <figcaption>Figura 3 - Tela - Acesso à conta de usuário</figcaption>
+    <figcaption>Figura 3 - Tela - Login</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -40,7 +40,7 @@ A tela de Login apresenta campos para a inserção do e-mail e da senha, e a fun
 A tela de Primeiro Acesso apresenta os campos de senha antiga, senha e confirmar senha para que seja realizada a alteração da senha originalmente gerada pelo sistema.
 <figure> 
   <img src="img/primeiro_acesso.png"
-    <figcaption>Figura 4 - Tela - Atualização da senha de acesso</figcaption>
+    <figcaption>Figura 4 - Tela - Primeiro Acesso</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
@@ -61,28 +61,25 @@ A tela de proprietários apresenta informações resumidas de todos os propriet�
     <figcaption>Figura 6 - Tela - Proprietários</figcaption>
 </figure>
 
---------------------------------------------------------------------------------------------------------------------
 
 Ao clicar no botão do lado direito de cada linha da tabela na tela de proprietários apresenta em seguida um Pop-up das informações pessoais dos mesmos já previamente cadastrados no sistema como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_proprietario.png"
-    <figcaption>Figura 7 - Tela - Pop-up - Proprietário Detalhes</figcaption>
+    <figcaption>Figura 7 - Pop-up - Proprietário Detalhes</figcaption>
 </figure>
 
---------------------------------------------------------------------------------------------------------------------
 
 Ao clicar no botão adicionar(+) na tela de proprietários apresenta em seguida um Pop-up com os seguintes campos para inserção das informações pessoais de um novo proprietário como: Nome Completo, CPF, Estado Civil, Endereço, Telefone e E-mail.
 <figure> 
   <img src="img/popup_novo_proprietario.png"
-    <figcaption>Figura 8 - Tela - Pop-up - Cadastro de Proprietário</figcaption>
+    <figcaption>Figura 8 - Pop-up - Cadastro de Proprietário</figcaption>
 </figure>
 
---------------------------------------------------------------------------------------------------------------------
 
 Ao clicar no botão filtro na tela de proprietários apresenta em seguida um Pop-up com os campos Id, Nome CPF e Status, afim de filtrar e visualizar as informações de determinado(s) proprietário(s) cadastrado(s).
 <figure> 
   <img src="img/filtro_proprietario.png"
-    <figcaption>Figura 9 - Tela - Pop-up - Filtro de Proprietário(s)</figcaption>
+    <figcaption>Figura 9 - Pop-up - Filtro de Proprietário(s)</figcaption>
 </figure>
 
 --------------------------------------------------------------------------------------------------------------------
