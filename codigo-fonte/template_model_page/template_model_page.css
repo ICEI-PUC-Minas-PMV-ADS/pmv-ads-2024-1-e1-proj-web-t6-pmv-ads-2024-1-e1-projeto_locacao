@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');
+
+*{
+    margin: 0;
+}
+
+body {
+    background-color: #F8F9FA;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #FFFFFF; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.immo {
+    color: #000000;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.control {
+    color: #5BB800;
+    font-weight:600;
+    font-size: 28px;
+}
+
+.div_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 120px;
+}
+
+.div_titulo {
+    color: #5BB800;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+nav {
+    padding: 0px 20px 10px 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* border: 1px solid black; */
+}
+.sidebar_superior {
+    width: 100%;
+}
+
+hr.divisor {
+    border-top: 1px solid #E0E1E2;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+}
+
+.sidebar_button_selected {
+    padding: 7px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar_button {
+    padding: 7px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 16px;
+    background-color: #F8F9FA;
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+}
+
+
