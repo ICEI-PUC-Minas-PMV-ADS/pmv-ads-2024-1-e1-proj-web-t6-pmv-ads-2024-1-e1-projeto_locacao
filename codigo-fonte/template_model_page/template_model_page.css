@@ -18,7 +18,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 12vh;
     /* border: 1px solid black; */
 }
 
@@ -35,11 +35,12 @@ header {
 }
 
 .div_logo {
+    padding: 0px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 260px;
-    
+    width: 25vh;
+    /* border: 1px solid black; */
 }
 
 .div_titulo {
@@ -48,14 +49,29 @@ header {
     font-weight: 600;
 }
 
+.icon_usuario_logado {
+    height: 40px;
+    width: 40px;
+}
+
+.div_usuario {
+    padding-right: 20px;
+    display: flex;
+    direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #5BB800;
+    font-weight: bold;
+}
+
 nav {
     padding: 0px 20px 10px 20px;
-    width: 260px;
+    width: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 90vh;
+    height: 86vh;
     /* border: 1px solid black; */
 }
 .sidebar_superior {
@@ -63,7 +79,6 @@ nav {
 }
 .sidebar_inferior {
     width: 100%;
-    padding-bottom: 10px;
 }
 
 hr.divisor {
@@ -87,7 +102,8 @@ hr.divisor {
     border: none;
     border-radius: 12px;
     align-items: center;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: #000000;
 }
 
 .sidebar_button {
@@ -103,6 +119,12 @@ hr.divisor {
     border-radius: 12px;
     align-items: center;
     color: #A0AEC0;
+}
+
+.sidebar_button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 
