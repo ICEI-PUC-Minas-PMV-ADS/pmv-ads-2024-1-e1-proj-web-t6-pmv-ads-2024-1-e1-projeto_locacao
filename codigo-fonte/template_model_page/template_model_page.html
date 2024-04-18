@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Página Modelo</title>
+    <title>Proprietários</title>
     <link rel="stylesheet" type="text/css" href="template_model_page.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
@@ -13,7 +13,7 @@
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
         </div>
-        <div class="div_titulo">Dashboard</div>
+        <div class="div_titulo">Proprietários</div>
         <div class="div_usuario">
             <p>Usuário Master</p>
             <img class="icon_usuario_logado" src="../scr/icones/icon_usuario_logado.png" alt="">
@@ -23,12 +23,12 @@
         <nav>
             <div class="sidebar_superior">
                 <hr class="divisor">
-                <button class="sidebar_button_selected" onclick="">
-                    <img class="icon" src="../scr/icones/icon_dashboard_selecionado.png" alt="">
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../scr/icones/icon_dashboard.png" alt="">
                     <p>Dashboard</p>
                 </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../scr/icones/icon_proprietarios.png" alt="">
+                <button class="sidebar_button_selected" onclick="">
+                    <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="">
                     <p>Proprietários</p>
                 </button>
                 <button class="sidebar_button" onclick="">
@@ -61,9 +61,81 @@
             </div>
         </nav>
         <main>
-            
+            <div class="div_table_properties">
+                <p>Proprietários</p>
+                <div class="div_table_properties_group_buttons">
+                    <button class="div_table_properties_button">
+                        <img class="icon" src="../scr/icones/icon_filtrar.png" alt="">
+                    </button>
+                    <button class="div_table_properties_button">
+                        <img class="icon" src="../scr/icones/icon_adicionar.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="div_table_header">
+                <div class="table_icon"></div>
+                <div class="table_id">
+                    ID
+                </div>
+                <div class="table_name">
+                    NOME
+                </div>
+                <div class="table_property">
+                    IMÓVEIS
+                </div>
+                <div class="table_status">
+                    STATUS
+                </div>
+                <div class="table_button"></div>
+            </div>
+            <hr class="divisor">
+            <div class="div_table_row">
+                <div class="table_icon">
+                    <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="">
+                </div>
+                <div class="table_id">
+                    1
+                </div>
+                <div class="table_name">
+                    Pedro Francis
+                </div>
+                <div class="table_property">
+                    2
+                </div>
+                <div class="table_status">
+                    <div class="status_active">
+                        <p>
+                            Ativo
+                        </p>
+                    </div>
+                </div>
+                <div class="table_button">
+                    <img class="icon" src="../scr/icones/icon_ver_dados.png" alt="">
+                </div>
+            </div>
+            <hr class="divisor">
+            <div class="div_table_row">
+                <div class="table_icon">
+                    <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="">
+                </div>
+                <div class="table_id">
+                    000000
+                </div>
+                <div class="table_name">
+                    Pedro Francis Maia Coelho
+                </div>
+                <div class="table_property">
+                    2
+                </div>
+                <div class="table_status">
+                    Inativo
+                </div>
+                <div class="table_button">
+                    <img class="icon" src="../scr/icones/icon_ver_dados.png" alt="">
+                </div>
+            </div>
+            <hr class="divisor">
         </main>
     </div>
 </body>
-
 </html>
