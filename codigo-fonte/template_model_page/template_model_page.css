@@ -8,6 +8,7 @@
     --green: #5BB800;
     --white: #FFFFFF;
     --black: #000000;
+    --light-black: rgb(0 0 0 / .5);
     --light-grey: #F8F9FA;
     --grey: #E0E1E2;
     --dark-grey: #A0AEC0;
@@ -285,4 +286,101 @@ main {
 
 .open_button:hover{
     background-color: var(--grey);
+}
+
+.popup {    
+    justify-self: center;
+    align-self: center;
+    background-color: var(--light-grey);
+    color: var(--green);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+}
+
+.popup div{
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+}
+
+.popup hr{
+    margin-bottom: 10px;
+    border-top: 1px solid var(--green);
+    margin: 10;
+}
+
+.popup p,label{
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.popup h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 0px 20px 0px;
+}
+
+.popup input[type=text] {
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+}
+
+.popup .status{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.popup .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.popup .icon{
+    height: 20px;
+    width: 20px;
+}
+
+.buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    gap: 10px;
+}
+.buttons button:hover {
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+input[type="checkbox"]{
+    border: 1px solid #5BB800;
+}
+
+.status div{
+    display: flex;
+    flex-direction: row;
+}
+
+.popup::backdrop {
+    background-color: var(--light-black);
 }

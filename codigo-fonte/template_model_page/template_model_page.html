@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body onload="teste()">
+<body onload="proprietarios_init()">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -64,11 +64,11 @@
             <div class="div_table_properties">
                 <p>Proprietários</p>
                 <div class="div_table_properties_group_buttons">
-                    <button class="div_table_properties_button">
-                        <img class="icon" src="../scr/icones/icon_filtrar.png" alt="">
+                    <button class="div_table_properties_button" onclick="abrir_popup_filtrar_proprietario()">
+                        <img class="icon" src="../scr/icones/icon_button_filtrar.png" alt="">
                     </button>
                     <button class="div_table_properties_button">
-                        <img class="icon" src="../scr/icones/icon_adicionar.png" alt="">
+                        <img class="icon" src="../scr/icones/icon_button_adicionar.png" alt="">
                     </button>
                 </div>
             </div>
@@ -89,63 +89,48 @@
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
-            <!-- <div class="div_table_row">
-                <div class="table_icon">
-                    <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="">
-                </div>
-                <div class="table_id">
-                    1
-                </div>
-                <div class="table_name">
-                    Pedro Francis
-                </div>
-                <div class="table_property">
-                    2
-                </div>
-                <div class="table_status">
-                    <div class="status_active">
-                        <p>
-                            Ativo
-                        </p>
-                    </div>
-                </div>
-                <div class="table_button">
-                    <button class="open_button">
-                        <img class="open_icon" src="../scr/icones/icon_ver_dados.png" alt="">
-                    </button>
-                </div>
-            </div>
-            <hr class="divisor">
-            <div class="div_table_row">
-                <div class="table_icon">
-                    <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="">
-                </div>
-                <div class="table_id">
-                    000000
-                </div>
-                <div class="table_name">
-                    Pedro Francis Maia Coelho
-                </div>
-                <div class="table_property">
-                    2
-                </div>
-                <div class="table_status">
-                    <div class="status_inactive">
-                        <p>
-                            Inativo
-                        </p>
-                    </div>
-                    
-                </div>
-                <div class="table_button">
-                    <button class="open_button">
-                        <img class="open_icon" src="../scr/icones/icon_ver_dados.png" alt="">
-                    </button>
-                </div>
-            </div>
-            <hr class="divisor"> -->
         </main>
     </div>
+    <dialog id="popup_filtrar" class="popup">
+        <div>
+            <h1>Filtros</h1>
+            <p>DADOS PESSOAIS</p>
+            <hr>
+            <label for="id">ID</label>
+            <input type="text" name="id" id="">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="">
+            <p>STATUS</p>
+            <hr>
+            <div class="status">
+                <div>
+                    <input type="checkbox" name="todos" id="">
+                    <label for="todos">TODOS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ativo" id="">
+                    <label for="ativo">ATIVO</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="inativo" id="">
+                    <label for="inativo">INATIVO</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="fechar_popup_filtrar_proprietario()">
+                    <img class="icon" src="../scr/icones/icon_voltar.png" alt="">
+                    VOLTAR
+                </button>
+                <button onclick="fechar_popup_filtrar_proprietario()">
+                    <img class="icon" src="../scr/icones/icon_filtrar.png" alt="">
+                    FILTRAR
+                </button>
+            </div>
+
+        </div>
+    </dialog>
     <script src="template_model_page.js"></script>
 </body>
 </html>
