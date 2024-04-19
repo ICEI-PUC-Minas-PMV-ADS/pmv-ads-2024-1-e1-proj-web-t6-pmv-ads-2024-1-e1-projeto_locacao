@@ -6,14 +6,18 @@ async function coletar_proprietarios() {
     return result
 }
 
-async function proprietarios_init() {
+async function proprietarios_init(filtro) {
 
-    let table = document.getElementById('table_owners')
+    let table = document.getElementById('table_list')
 
     let proprietarios = await coletar_proprietarios()
 
+    let filtrado = proprietarios.filter((proprietario) => !proprietario.status)
+
+    console.log(filtrado)
+
     proprietarios.map((proprietario) => {
-        if(proprietario.status) {
+        if(proprietario.status == filtro) {
             table.innerHTML += `
                 <div class="div_table_row">
                     <div class="table_icon">
@@ -57,4 +61,12 @@ function fechar_popup_filtrar_proprietario() {
     let popup = document.getElementById('popup_filtrar')
 
     popup.close()
+}
+
+function filtrar_proprietarios() {
+    var node = document.getElementById('table_list')
+    node.innerHTML = ""
+
+    proprietarios_init(false)
+
 }

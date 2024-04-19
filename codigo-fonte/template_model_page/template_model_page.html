@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body onload="proprietarios_init()">
+<body onload="proprietarios_init(true)">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -89,6 +89,7 @@
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
+            <div id="table_list"></div>
         </main>
     </div>
     <dialog id="popup_filtrar" class="popup">
@@ -123,7 +124,7 @@
                     <img class="icon" src="../scr/icones/icon_voltar.png" alt="">
                     VOLTAR
                 </button>
-                <button onclick="fechar_popup_filtrar_proprietario()">
+                <button onclick="filtrar_proprietarios()">
                     <img class="icon" src="../scr/icones/icon_filtrar.png" alt="">
                     FILTRAR
                 </button>
