@@ -67,6 +67,210 @@
                 "uf": "SC"
             },
             "status": false
+        },
+        {
+            "id": 1,
+            "nome": "Pedro Francis Maia Coelho",
+            "cpf": "99999999999",
+            "estado_civil": "Casado",
+            "telefone": "31999999999",
+            "email": "pedro@exemplo.com",
+            "imoveis": [
+                1,
+                2
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena",
+                "numero": "1",
+                "complemento": "A",
+                "bairro": "Centro",
+                "cidade": "Belo Horizonte",
+                "cep": "00000000",
+                "uf": "MG"
+            },
+            "status": true
+        },
+        {
+            "id": 2,
+            "nome": "Sócratis Gomes da Silva",
+            "cpf": "11111111111",
+            "estado_civil": "Solteiro",
+            "telefone": "31911111111",
+            "email": "socratis@exemplo.com",
+            "imoveis": [
+                3
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena 2",
+                "numero": "2",
+                "complemento": "B",
+                "bairro": "Centro 2",
+                "cidade": "Porto Alegre",
+                "cep": "11111111",
+                "uf": "SC"
+            },
+            "status": true
+        },
+        {
+            "id": 3,
+            "nome": "Sócratis Gomes da Silva 2",
+            "cpf": "11111111111",
+            "estado_civil": "Solteiro",
+            "telefone": "31911111111",
+            "email": "socratis@exemplo.com",
+            "imoveis": [
+                4,
+                5
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena 2",
+                "numero": "2",
+                "complemento": "B",
+                "bairro": "Centro 2",
+                "cidade": "Porto Alegre",
+                "cep": "11111111",
+                "uf": "SC"
+            },
+            "status": false
+        },
+        {
+            "id": 1,
+            "nome": "Pedro Francis Maia Coelho",
+            "cpf": "99999999999",
+            "estado_civil": "Casado",
+            "telefone": "31999999999",
+            "email": "pedro@exemplo.com",
+            "imoveis": [
+                1,
+                2
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena",
+                "numero": "1",
+                "complemento": "A",
+                "bairro": "Centro",
+                "cidade": "Belo Horizonte",
+                "cep": "00000000",
+                "uf": "MG"
+            },
+            "status": true
+        },
+        {
+            "id": 2,
+            "nome": "Sócratis Gomes da Silva",
+            "cpf": "11111111111",
+            "estado_civil": "Solteiro",
+            "telefone": "31911111111",
+            "email": "socratis@exemplo.com",
+            "imoveis": [
+                3
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena 2",
+                "numero": "2",
+                "complemento": "B",
+                "bairro": "Centro 2",
+                "cidade": "Porto Alegre",
+                "cep": "11111111",
+                "uf": "SC"
+            },
+            "status": true
+        },
+        {
+            "id": 3,
+            "nome": "Sócratis Gomes da Silva 2",
+            "cpf": "11111111111",
+            "estado_civil": "Solteiro",
+            "telefone": "31911111111",
+            "email": "socratis@exemplo.com",
+            "imoveis": [
+                4,
+                5
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena 2",
+                "numero": "2",
+                "complemento": "B",
+                "bairro": "Centro 2",
+                "cidade": "Porto Alegre",
+                "cep": "11111111",
+                "uf": "SC"
+            },
+            "status": false
+        },
+        {
+            "id": 1,
+            "nome": "Pedro Francis Maia Coelho",
+            "cpf": "99999999999",
+            "estado_civil": "Casado",
+            "telefone": "31999999999",
+            "email": "pedro@exemplo.com",
+            "imoveis": [
+                1,
+                2
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena",
+                "numero": "1",
+                "complemento": "A",
+                "bairro": "Centro",
+                "cidade": "Belo Horizonte",
+                "cep": "00000000",
+                "uf": "MG"
+            },
+            "status": true
+        },
+        {
+            "id": 2,
+            "nome": "Sócratis Gomes da Silva",
+            "cpf": "11111111111",
+            "estado_civil": "Solteiro",
+            "telefone": "31911111111",
+            "email": "socratis@exemplo.com",
+            "imoveis": [
+                3
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena 2",
+                "numero": "2",
+                "complemento": "B",
+                "bairro": "Centro 2",
+                "cidade": "Porto Alegre",
+                "cep": "11111111",
+                "uf": "SC"
+            },
+            "status": true
+        },
+        {
+            "id": 3,
+            "nome": "Sócratis Gomes da Silva 2",
+            "cpf": "11111111111",
+            "estado_civil": "Solteiro",
+            "telefone": "31911111111",
+            "email": "socratis@exemplo.com",
+            "imoveis": [
+                4,
+                5
+            ],
+            "endereco": {
+                "tipo_logradouro": "Rua",
+                "logradouro": "Afonço Pena 2",
+                "numero": "2",
+                "complemento": "B",
+                "bairro": "Centro 2",
+                "cidade": "Porto Alegre",
+                "cep": "11111111",
+                "uf": "SC"
+            },
+            "status": false
         }
     ]
 }

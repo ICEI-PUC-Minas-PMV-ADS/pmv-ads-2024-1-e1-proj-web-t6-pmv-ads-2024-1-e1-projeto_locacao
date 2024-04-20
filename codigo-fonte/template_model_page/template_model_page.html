@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body onload="proprietarios_init(true)">
+<body onload="proprietarios_init(null, null, null, true)">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -98,24 +98,24 @@
             <p>DADOS PESSOAIS</p>
             <hr>
             <label for="id">ID</label>
-            <input type="text" name="id" id="">
+            <input type="text" name="id" id="id">
             <label for="nome">NOME</label>
-            <input type="text" name="nome" id="">
+            <input type="text" name="nome" id="nome">
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="">
+            <input type="text" name="cpf" id="cpf">
             <p>STATUS</p>
             <hr>
             <div class="status">
                 <div>
-                    <input type="checkbox" name="todos" id="">
+                    <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
                     <label for="todos">TODOS</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="ativo" id="">
+                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
                     <label for="ativo">ATIVO</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="inativo" id="">
+                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
                     <label for="inativo">INATIVO</label>
                 </div>
             </div>
@@ -129,7 +129,6 @@
                     FILTRAR
                 </button>
             </div>
-
         </div>
     </dialog>
     <script src="template_model_page.js"></script>

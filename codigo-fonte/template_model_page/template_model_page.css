@@ -6,7 +6,7 @@
 
 :root {
     --green: #5BB800;
-    --white: #FFFFFF;
+    --white: #ffffff;
     --black: #000000;
     --light-black: rgb(0 0 0 / .5);
     --light-grey: #F8F9FA;
@@ -156,6 +156,7 @@ hr.divisor {
 main {
     background-color: var(--white);
     width: 100%;
+    max-height: 88vh;
     padding: 15px;
     margin: 0 10px 10px 0;
     /* border: 1px solid black; */
@@ -368,6 +369,7 @@ main {
     font-weight: bold;
     gap: 10px;
 }
+
 .buttons button:hover {
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
@@ -383,4 +385,9 @@ input[type="checkbox"]{
 
 .popup::backdrop {
     background-color: var(--light-black);
+}
+
+#table_list{
+    overflow-y: auto;
+    max-height: 555px;
 }
