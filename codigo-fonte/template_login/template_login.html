@@ -13,7 +13,7 @@
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
         </div><br><br>        
         <div class="bem_vindo">
-            <h1>SEJA BEM VINDO</h1><br>
+            <h1>SEJA BEM VINDO</h1><br><br><br>
             <p>INSIRA SUAS CREDENCIAIS PARA ACESSA A PLATAFORMA</p><br>
             <div>           
                 <label for="email">E-MAIL</label><br>
@@ -21,11 +21,26 @@
                 <label for="senha">SENHA</label><br>
                 <input type="password" name="senha" id="senha"> <br><br><br>
             </div>
-            
-            <a href="template_esqueceu_senha.html">ESQUECEU A SENHA?</a><br><br>
+           
+            <!-- <button id="esqueceu_senha" onclick="esqueceu_senha()">ESQUECEU SENHA</button> -->
+             <a href="template_login.js" id="link_esqueceu_senha">ESQUECEU A SENHA?</a>
+                <br><br>
             <button class="logar" onclick="">ENTRAR</button>
         </div>
+        
            
     </div>
+    
+    
+       <dialog>
+            <div id="popup_esqueceu_senha" class="popup_senha">
+                <div class="conteudo">                   
+                    <p class="msg">ENVIAMOS A SENHA PARA UM E-MAIL CADASTRADO</p><br>
+                    <input type="button" class="volta" value="VOLTAR">         
+                </div>
+         </div>
+        </dialog>
+  
+     <!-- <script src="template_login.js"></script> -->
 </body>
 </html>

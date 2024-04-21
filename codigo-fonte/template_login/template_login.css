@@ -80,11 +80,79 @@ input{
     font-weight: bold;
 }
  
-    .logar:hover{
+.logar:hover{
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     color: var(--black);
     background-color: var(--grey);
 }
+
 a{
     color: var(--green);
+}
+
+.div_logo {
+    padding: 0px 22px;
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+    max-width: fit-content;
+    justify-content: center;
+}
+
+.div_titulo {
+    color: var(--green);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.popup_senha{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5) ;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+
+}
+
+.conteudo{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: var(--white);
+    width: 60%;
+    height: 200px;
+    min-width: 300px;
+    padding: 40px;
+    border: 2px solid var(--green)
+
+}
+.msg{
+   top: 0;
+    border: 0;
+    width: 50%;
+    height: 45px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.volta{
+    
+    background-color: var(--green);
+    border: 0;
+    width: 50%;
+    height: 45px;
+    padding: 10px;
+    
+    border-radius: 12px;
+    color: var(--white);
+    font-weight: bold;
+   
+    
 }
