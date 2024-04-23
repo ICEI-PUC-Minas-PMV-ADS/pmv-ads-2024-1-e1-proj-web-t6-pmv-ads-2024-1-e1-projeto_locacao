@@ -289,6 +289,14 @@ main {
     background-color: var(--grey);
 }
 
+#popup_filtrar{
+    width: 30%;
+}
+
+#popup_dados_proprietario{
+    width: 50%;
+}
+
 .popup {    
     justify-self: center;
     align-self: center;
@@ -297,7 +305,11 @@ main {
     border: none;
     border-radius: 10px;
     padding: 15px;
-    width: 30%;
+    min-width: fit-content;
+}
+
+.popup::backdrop {
+    background-color: var(--light-black);
 }
 
 .popup div{
@@ -331,6 +343,7 @@ main {
     color: var(--black);
     border-radius: 10px;
     border: 2px solid var(--green);
+    padding-left: 10px;
 }
 
 .popup .status{
@@ -347,6 +360,7 @@ main {
     flex-direction: row;
     gap: 15px;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .popup .icon{
@@ -383,11 +397,120 @@ input[type="checkbox"]{
     flex-direction: row;
 }
 
-.popup::backdrop {
-    background-color: var(--light-black);
-}
-
 #table_list{
     overflow-y: auto;
     max-height: 555px;
 }
+
+.popup .dados_pessoais{
+    display: grid;
+    grid-template-areas: 
+    "nome nome"
+    "cpf estado_civil";
+    column-gap: 15px;
+}
+
+.popup .div_nome{
+    display: flex;
+    flex-direction: column;
+    grid-area: nome;
+}
+
+.popup .div_cpf{
+    display: flex;
+    flex-direction: column;
+    grid-area: cpf;
+}
+
+.popup .div_estado_civil{
+    display: flex;
+    flex-direction: column;
+    grid-area: estado_civil;
+}
+
+.popup .endereco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tipo_logradouro logradouro logradouro logradouro numero"
+    "complemento bairro bairro cidade cidade"
+    "cep uf . . .";
+    column-gap: 15px;
+}
+
+.popup .div_tipo_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: tipo_logradouro;
+}
+
+.popup .div_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: logradouro;
+}
+
+.popup .div_numero{
+    display: flex;
+    flex-direction: column;
+    grid-area: numero;
+}
+
+.popup .div_complemento{
+    display: flex;
+    flex-direction: column;
+    grid-area: complemento;
+}
+
+.popup .div_bairro{
+    display: flex;
+    flex-direction: column;
+    grid-area: bairro;
+}
+
+.popup .div_cidade{
+    display: flex;
+    flex-direction: column;
+    grid-area: cidade;
+}
+
+.popup .div_cep{
+    display: flex;
+    flex-direction: column;
+    grid-area: cep;
+}
+
+.popup .div_uf{
+    display: flex;
+    flex-direction: column;
+    grid-area: uf;
+}
+
+.popup .contato{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "telefone email";
+    column-gap: 15px;
+}
+
+.popup .div_telefone{
+    display: flex;
+    flex-direction: column;
+    grid-area: telefone;
+}
+
+.popup .div_email{
+    display: flex;
+    flex-direction: column;
+    grid-area: email;
+}
+
+select {
+    height: 36px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    padding-left: 10px;
+}
+
