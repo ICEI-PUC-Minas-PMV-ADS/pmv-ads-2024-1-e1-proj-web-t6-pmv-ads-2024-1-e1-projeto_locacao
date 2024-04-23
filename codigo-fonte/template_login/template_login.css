@@ -105,19 +105,38 @@ a{
     font-weight: 600;
 }
 
-.popup_senha{
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0,0,0,.5) ;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 2000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* display: none; */
+.popup_esqueceu_senha{
+    width: 50%;
+    min-width: 300px;   
+    justify-self: center;
+    align-self: center;
+    background-color: var(--light-grey);
+    color: var(--green);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;  
 
+}
+
+.botao_esqueci_senha{
+    border:none;
+    color: var(--green);
+    }
+
+.botao_esqueci_senha:hover{
+    color: var(--black);
+}
+
+.popup_esqueceu_senha::backdrop{
+    background-color: var(--light-black);
+}
+
+.popup_esqueceu_senha div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
 }
 
 .conteudo{
@@ -132,7 +151,7 @@ a{
     border: 2px solid var(--green)
 
 }
-.msg{
+/* .msg{
    top: 0;
     border: 0;
     width: 50%;
@@ -140,19 +159,18 @@ a{
     padding: 10px;
     font-weight: bold;
 
-}
+} */
 
-.volta{
+/* .volta{
     
     background-color: var(--green);
     border: 0;
     width: 50%;
     height: 45px;
-    padding: 10px;
-    
+    padding: 10px;    
     border-radius: 12px;
     color: var(--white);
     font-weight: bold;
    
     
-}
+} */
