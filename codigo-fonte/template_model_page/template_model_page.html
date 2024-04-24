@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
-<body onload="proprietarios_init(null, null, null, true)">
+<body onload="proprietarios_init()">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -67,7 +67,7 @@
                     <button class="div_table_properties_button" onclick="abrir_popup_filtrar_proprietario()">
                         <img class="icon" src="../scr/icones/icon_button_filtrar.png" alt="">
                     </button>
-                    <button class="div_table_properties_button">
+                    <button class="div_table_properties_button" onclick="abrir_popup_novo_proprietario()">
                         <img class="icon" src="../scr/icones/icon_button_adicionar.png" alt="">
                     </button>
                 </div>

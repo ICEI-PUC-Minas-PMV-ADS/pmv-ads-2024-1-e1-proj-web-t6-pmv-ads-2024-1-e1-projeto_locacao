@@ -1,26 +1,11 @@
-async function coletar_proprietarios() {
-    let result
-    const response = await fetch("../repositories/proprietarios.json")
-    const proprietarios = await response.json().then(response => result = response.proprietarios)
+function proprietarios_init() {
+    proprietarios(null, null, null, true)
 
-    return result
+    iniciar_banco()
+
 }
 
-function cria_banco() {
-    let proprietarios = [
-        {
-            id: "1",
-            nome: "Pedro Francis",
-            cpf: "99999999999"
-        }
-    ]
-
-    localStorage.setItem("proprietarios", JSON.stringify(proprietarios))
-}
-
-async function proprietarios_init(id, nome, cpf, status) {
-    cria_banco()
-
+function proprietarios(id, nome, cpf, status) {
     let id_value = id
     let nome_value = nome
     let cpf_value = cpf
@@ -39,7 +24,7 @@ async function proprietarios_init(id, nome, cpf, status) {
 
     let table = document.getElementById('table_list')
 
-    let proprietarios = await coletar_proprietarios()
+    let proprietarios = JSON.parse(localStorage.getItem("proprietarios"))
 
     if (id_value != null) {
         proprietarios = proprietarios.filter((proprietario) => proprietario.id == parseInt(id))
@@ -94,8 +79,6 @@ async function proprietarios_init(id, nome, cpf, status) {
             `
         table.innerHTML += '<hr class="divisor"></hr>'
     })
-
-    console.log(localStorage.getItem("proprietarios"))
 }
 
 function abrir_popup_filtrar_proprietario() {
@@ -135,7 +118,7 @@ function filtrar_proprietarios() {
         }
     }
 
-    proprietarios_init(id, nome, cpf, status)
+    proprietarios(id, nome, cpf, status)
     popup.close()
 }
 
@@ -189,8 +172,6 @@ function abrir_popup_dados_proprietario(e) {
     let dados = JSON.parse(e.dataset.button)
 
     let body = document.querySelector("body")
-
-    
 
     let verifica_popups = document.querySelectorAll("#popup_dados_proprietario")
 
@@ -305,6 +286,7 @@ function fechar_popup_dados_proprietario() {
 function alterar_dados_proprietario() {
 
     let buttons = document.querySelector("#popup_dados_proprietario .buttons")
+    
     buttons.removeChild(buttons.children[1])
 
     buttons.innerHTML += `
@@ -367,4 +349,234 @@ function salvar_dados_proprietario(){
     uf.readOnly = true
     telefone.readOnly = true
     email.readOnly = true
+}
+
+function abrir_popup_novo_proprietario() {
+    let body = document.querySelector("body")
+
+    let verifica_popups = document.querySelectorAll("#popup_novo_proprietario")
+
+    if(verifica_popups.length > 0) {
+        for(var i = 0; i < verifica_popups.length; i++) {
+            verifica_popups[i].outerHTML = ""
+        }
+    }
+
+    body.innerHTML += `
+        <dialog id="popup_novo_proprietario" class="popup">
+            <div>
+                <h1>Novo Proprietário</h1>
+                <p>DADOS PESSOAIS</p>
+                <hr>
+                <div class="dados_pessoais">
+                    <div class="div_nome">
+                        <label for="nome">NOME</label>
+                        <input type="text" name="nome" id="nome_prop_novo">
+                    </div>
+                    <div class="div_cpf">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf_prop_novo">
+                    </div>
+                    <div class="div_estado_civil">
+                        <label for="estado_civil">ESTADO CIVIL</label>
+                        <select name="estado_civil" id="estado_civil_prop_novo">
+                            <option value="vazio">-</option>
+                            <option value="casado">Casado</option>
+                            <option value="solteiro">Solteiro</option>
+                        </select>
+                    </div>
+                </div>
+                <p>ENDEREÇO</p>
+                <hr>
+                <div class="endereco">
+                    <div class="div_tipo_logradouro">
+                        <label for="tipo_logradouro">TIPO LOGRADOURO</label>
+                        <input type="text" name="tipo_logradouro" id="tipo_logradouro_prop_novo">
+                    </div>
+                    <div class="div_logradouro">
+                        <label for="logradouro">LOGRADOURO</label>
+                        <input type="text" name="logradouro" id="logradouro_prop_novo">
+                    </div>
+                    <div class="div_numero">
+                        <label for="numero">NÚMERO</label>
+                        <input type="text" name="numero" id="numero_prop_novo">
+                    </div>
+                    <div class="div_complemento">
+                        <label for="complemento">COMPLEMENTO</label>
+                        <input type="text" name="complemento" id="complemento_prop_novo">
+                    </div>
+                    <div class="div_bairro">
+                        <label for="bairro">BAIRRO</label>
+                        <input type="text" name="bairro" id="bairro_prop_novo">
+                    </div>
+                    <div class="div_cidade">
+                        <label for="cidade">CIDADE</label>
+                        <input type="text" name="cidade" id="cidade_prop_novo">
+                    </div>
+                    <div class="div_cep">
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep_prop_novo">
+                    </div>
+                    <div class="div_uf">
+                        <label for="uf">UF</label>
+                        <input type="text" name="uf" id="uf_prop_novo">
+                    </div>
+                </div>
+                <p>CONTATO</p>
+                <hr>
+                <div class="contato">
+                    <div class="div_telefone">
+                        <label for="telefone">TELEFONE</label>
+                        <input type="text" name="telefone" id="telefone_prop_novo">
+                    </div>
+                    <div class="div_email">
+                        <label for="email">E-MAIL</label>
+                        <input type="text" name="email" id="email_prop_novo">
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <button onclick="fechar_popup_novo_proprietario()">
+                        <img class="icon" src="../scr/icones/icon_voltar.png" alt="">
+                        VOLTAR
+                    </button>
+                    <button onclick="salvar_novo_proprietario()">
+                        <img class="icon" src="../scr/icones/icon_salvar.png" alt="">
+                        SALVAR
+                    </button>
+                </div>
+            </div>
+        </dialog>
+    `
+
+    let popup = document.getElementById("popup_novo_proprietario")
+
+    popup.showModal()
+}
+
+function fechar_popup_novo_proprietario() {
+    let popup = document.getElementById('popup_novo_proprietario')
+
+    popup.close()
+}
+
+function salvar_novo_proprietario(){
+    let nome = document.getElementById("nome_prop_novo").value
+    let cpf = document.getElementById("cpf_prop_novo").value
+    let estado_civil = document.getElementById("estado_civil_prop_novo").value
+    let tipo_logradouro = document.getElementById("tipo_logradouro_prop_novo").value
+    let logradouro = document.getElementById("logradouro_prop_novo").value
+    let numero = document.getElementById("numero_prop_novo").value
+    let complemento = document.getElementById("complemento_prop_novo").value
+    let bairro = document.getElementById("bairro_prop_novo").value
+    let cidade = document.getElementById("cidade_prop_novo").value
+    let cep = document.getElementById("cep_prop_novo").value
+    let uf = document.getElementById("uf_prop_novo").value
+    let telefone = document.getElementById("telefone_prop_novo").value
+    let email = document.getElementById("email_prop_novo").value
+
+    let json = {
+        id: "teste",
+        nome: nome,
+        cpf: cpf,
+        estado_civil: estado_civil,
+        endereco: {
+            tipo_logradouro: tipo_logradouro,
+            logradouro: logradouro,
+            numero: numero,
+            complemento: complemento,
+            bairro: bairro,
+            cidade: cidade,
+            cep: cep,
+            uf: uf
+        },
+        telefone: telefone,
+        email: email
+    }
+
+    console.log(JSON.stringify(json))
+}
+
+function iniciar_banco_proprietarios() {
+    let proprietarios = [
+        {
+            id: 1,
+            nome: "Pedro Francis Maia Coelho",
+            cpf: "99999999999",
+            estado_civil: "Casado",
+            telefone: "31999999999",
+            email: "pedro@exemplo.com",
+            imoveis: [
+                1,
+                2
+            ],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena",
+                numero: "1",
+                complemento: "A",
+                bairro: "Centro",
+                cidade: "Belo Horizonte",
+                cep: "00000000",
+                uf: "MG"
+            },
+            status: true
+        },
+        {
+            id: 2,
+            nome: "Sócratis Gomes da Silva",
+            cpf: "11111111111",
+            estado_civil: "Solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [
+                3
+            ],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: true
+        },
+        {
+            id: 3,
+            nome: "Sócratis Gomes da Silva 2",
+            cpf: "11111111111",
+            estado_civil: "Solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [
+                4,
+                5
+            ],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        }
+    ]
+
+    localStorage.setItem("proprietarios", JSON.stringify(proprietarios))
+}
+
+function iniciar_banco() {
+
+    iniciar_banco_proprietarios()
+    prop = JSON.parse(localStorage.getItem("proprietarios"))
+    
+    console.log(prop)
+
 }
