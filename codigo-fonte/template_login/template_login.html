@@ -20,32 +20,25 @@
                 <input type="text" name="email" id="email"> <br><br>
                 <label for="senha">SENHA</label><br>
                 <input type="password" name="senha" id="senha"> <br><br><br>
-            </div>
-           
-            <button class="botao_esqueci_senha" id="esqueceu_senha" onclick="abrir_popup_esqueceu_senha()">ESQUECEU SENHA</button>
+            </div>    
+            <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECI MINHA SENHA</button>       
             <br><br>
             <button class="logar" onclick="">ENTRAR</button>
-        </div>
-        
-           
+        </div>          
     </div>    
-    
     <dialog id="popup_esqueceu_senha" class="popup_esqueceu_senha">
-        <div>            
-            <p class="msg">INFORME SEU E-MAIL</p>
+        <div class="primeiro_popup">         
+            <p class="msg">INFORME O E-MAIL CADASTRADO:</p>
             <label for="email_cadastrado">E-MAIL</label>
             <input type="text" name="email_cadastrado">
-            <button class="enviar_senha" id="enviar_senha" onclick="abrir_popup_esqueceu_senha_dois()">ENVIAR SENHA</button>
-            <!-- <button class="fechar_popup" id="fechar_popup" onclick="fechar_popup()">FECHAR</button> -->
-            </div>
-    </dialog>
-    <dialog id="enviar_senha" class="enviar-senha">
+            <button id="btn_enviar_senha" class="btn_enviar_senha">ENVIAR SENHA</button>            
+        </div>
+    <dialog id="enviar_senha" class="enviar_senha">
         <div>            
             <p>SENHA PADRÃO ENVIADA COM SUCESSO PARA O E-MAIL INFOMRADO</p>
             <button class="button_voltar">VOLTAR</button>
-            </div>
-    </dialog>
-  
+        </div>
+    </dialog>       
     <script src="template_login.js"></script>
 </body>
 </html>

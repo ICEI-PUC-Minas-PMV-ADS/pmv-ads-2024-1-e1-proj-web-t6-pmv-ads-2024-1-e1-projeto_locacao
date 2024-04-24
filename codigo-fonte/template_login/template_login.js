@@ -1,33 +1,10 @@
-function abrir_popup_esqueceu_senha(){
-    let popup_dialog=document.getElementById("popup_esqueceu_senha")
-
-    popup_dialog.showModal()
-}
-function abrir_popup_esqueceu_senha_dois(){
-    let popup_dialogdois=document.getElementById("enviar_senha")
-    let popup_dialog=document.getElementById("popup_esqueceu_senha")
-    popup_dialog.close()
-    popup_dialogdois.showModal()
-
-}
-
-// function fechar_popup(){
-//     let fechar_popup_dialog=document.getElementById("popup_esqueceu_senha")
-
-//     fechar_dialog.close()
-// }
-
-
-// function abrir_popup_filtrar_proprietario() {
-//     let popup = document.getElementById('popup_filtrar')
-
-//     popup.showModal()
-// }
-
-// function fechar_popup_filtrar_proprietario() {
-//     let popup = document.getElementById('popup_filtrar')
-
-//     popup.close()
-// }
-
-
+let open_primeiro_popup = document.getElementById("btn_popup_esqueceu_senha")
+    open_primeiro_popup.addEventListener('click', function(){
+        let chama_popup=document.getElementById("popup_esqueceu_senha")
+            chama_popup.showModal()          
+    })
+let open_segundo_popup = document.getElementById("btn_enviar_senha")
+    open_segundo_popup.addEventListener('click', function(){
+        let recebe_popup_popup=document.getElementById("enviar_senha")
+            recebe_popup_popup.showModal()
+    })

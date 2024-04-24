@@ -86,10 +86,6 @@ input{
     background-color: var(--grey);
 }
 
-a{
-    color: var(--green);
-}
-
 .div_logo {
     padding: 0px 22px;
     display: flex;
@@ -106,7 +102,8 @@ a{
 }
 
 .popup_esqueceu_senha{
-    width: 50%;
+    width: 30%;
+    height: 300px;
     min-width: 300px;   
     justify-self: center;
     align-self: center;
@@ -114,30 +111,71 @@ a{
     color: var(--green);
     border: none;
     border-radius: 10px;
-    padding: 15px;  
-
+    padding: 15px; 
 }
 
-.botao_esqueci_senha{
+.primeiro_popup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* MEXER!!! */
+.msg{
+     width: 100%;
+     padding: 40px;
+     font-weight: bold;
+     font-size: large;
+     background-color: #000000;
+     text-align: center;   
+         
+ }
+
+ /* MEXER!! */
+ .primeiro_popup button{
+    width: 50%;
+    text-align: center;
+    border:none;
+    color: var(--green);
+    background-color: #000000;
+    padding: 10px;
+ }
+
+ .btn_enviar_senha:hover{
+    color: var(--black) ;
+ }
+
+ .btn_esqueci_senha{
     border:none;
     color: var(--green);
     }
 
-.botao_esqueci_senha:hover{
+.btn_esqueci_senha:hover{
     color: var(--black);
 }
+
+.enviar_senha{
+    width: 800px;  
+    height: 300px;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--light-grey);
+    color: var(--green);
+    border: none;
+    border-radius: 10px;
+    padding: 15px; 
+}
+
+
 
 .popup_esqueceu_senha::backdrop{
     background-color: var(--light-black);
 }
 
-.popup_esqueceu_senha div{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 15px;
-}
+
 
 .conteudo{
     /* display: flex;
@@ -151,15 +189,7 @@ a{
     border: 2px solid var(--green)
 
 }
-/* .msg{
-   top: 0;
-    border: 0;
-    width: 50%;
-    height: 45px;
-    padding: 10px;
-    font-weight: bold;
 
-} */
 
 /* .volta{
     
