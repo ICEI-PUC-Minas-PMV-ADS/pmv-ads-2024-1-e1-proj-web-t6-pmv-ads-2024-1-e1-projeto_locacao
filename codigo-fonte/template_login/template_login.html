@@ -8,20 +8,20 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div id="teste" class="login">
+    <div class="login">
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
-        </div><br><br>        
+        </div>       
         <div class="bem_vindo">
-            <h1>SEJA BEM VINDO</h1><br><br><br>
-            <p>INSIRA SUAS CREDENCIAIS PARA ACESSA A PLATAFORMA</p><br>
+            <h1>SEJA BEM VINDO</h1>
+            <p>INSIRA SUAS CREDENCIAIS PARA ACESSA A<BR>PLATAFORMA</p><br>
             <div>           
-                <label for="email">E-MAIL</label><br>
-                <input type="text" name="email" id="email"> <br><br>
-                <label for="senha">SENHA</label><br>
-                <input type="password" name="senha" id="senha"> <br><br><br>
+                <label for="email">E-MAIL</label>
+                <input type="text" name="email" id="email">
+                <label for="senha">SENHA</label>
+                <input type="password" name="senha" id="senha"> 
             </div>    
-            <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECI MINHA SENHA</button>       
+            <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECEU A SENHA?</button>       
             <br><br>
             <button class="logar" onclick="">ENTRAR</button>
         </div>          
@@ -36,7 +36,7 @@
     <dialog id="enviar_senha" class="enviar_senha">
         <div>            
             <p>SENHA PADRÃO ENVIADA COM SUCESSO PARA O E-MAIL INFOMRADO</p>
-            <button class="button_voltar">VOLTAR</button>
+            <button id="btn_voltar" class="button_voltar">VOLTAR</button>
         </div>
     </dialog>       
     <script src="template_login.js"></script>
