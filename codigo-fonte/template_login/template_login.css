@@ -68,6 +68,7 @@ body {
     border: 2px solid var(--green);
     border-radius: 12px;
     padding-left: 10px;
+    margin: 10px 0;
 }
 
 .logar{
@@ -163,9 +164,11 @@ body {
  }
 
  .btn_esqueci_senha{
+    width: 40%;
+    height: 30px;
     border:none;
     color: var(--green);
-    
+        
     }
 
 .btn_esqueci_senha:hover{
