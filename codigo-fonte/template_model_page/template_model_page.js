@@ -575,12 +575,5 @@ function iniciar_banco_proprietarios() {
 function iniciar_banco() {
 
     iniciar_banco_proprietarios()
-    prop = JSON.parse(localStorage.getItem("proprietarios"))
-    
-    console.log(prop)
 
-}
-
-function verica_usuario(){
-    let pega_usuario = document.getElementById("email").value
 }
