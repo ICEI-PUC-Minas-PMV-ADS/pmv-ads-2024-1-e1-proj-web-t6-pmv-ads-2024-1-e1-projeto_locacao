@@ -14,33 +14,35 @@
         </div>       
         <div class="bem_vindo">
             <h1>SEJA BEM VINDO</h1>
-            <p>INSIRA SUAS CREDENCIAIS PARA ACESSA A<BR>PLATAFORMA</p><br>
+            <p>INSIRA SUAS CREDENCIAIS PARA ACESSA A PLATAFORMA</p>
             <div>           
                 <label for="email">E-MAIL</label>
                 <input type="text" name="email" id="email">
+            </div>
+            <div>
                 <label for="senha">SENHA</label>
                 <input type="password" name="senha" id="senha"> 
             </div>    
             <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECEU A SENHA?</button>       
-            <br><br>
             <button class="logar" onclick="verica_usuario()">ENTRAR</button>
         </div>          
     </div>    
-    <dialog id="popup_esqueceu_senha" class="popup_esqueceu_senha">
+    <dialog id="popup_esqueceu_senha" class="popup">
         <div class="primeiro_popup">         
             <p class="msg">INFORME O E-MAIL CADASTRADO:</p>
             <label for="email_cadastrado">E-MAIL</label>
             <input type="text" name="email_cadastrado">
             <button id="btn_enviar_senha" class="btn_enviar_senha">ENVIAR SENHA</button>            
         </div>
-    <dialog id="enviar_senha" class="popup_esqueceu_senha">
+    </dialog>
+    <dialog id="enviar_senha" class="popup">
         <div>            
             <p>SENHA PADRÃO ENVIADA COM SUCESSO PARA O E-MAIL INFOMRADO</p>
             <button id="btn_voltar" class="button_voltar">VOLTAR</button>
         </div>
     </dialog>   
-    <dialog id="popup_primeiro_acesso" class="popup_esqueceu_senha">
-        <!-- <div id="teste" class="primeiro_acesso">
+    <dialog id="popup_primeiro_acesso" class="popup">
+        <div id="teste" class="primeiro_acesso">
         
             <div class="div_logo">
                 <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -60,7 +62,7 @@
                 <a href="login_page.html"><button class="confirmar" onclick="">CONFIRMAR</button>
             </div>
                
-        </div> -->
+        </div>
     </dialog>     
     <script src="login_page.js"></script>
 </body>

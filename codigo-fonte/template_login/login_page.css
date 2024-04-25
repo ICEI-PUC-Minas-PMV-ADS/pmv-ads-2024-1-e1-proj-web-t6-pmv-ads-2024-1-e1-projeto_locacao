@@ -46,14 +46,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--light-grey);
-    
-    border-radius: 20px;
-    padding: 120px;
-    box-shadow: 0px 5px 5px 0px var(--grey);     */
+    box-shadow: 0px 5px 5px 0px var(--grey); 
          
 }
 
@@ -68,7 +65,7 @@ body {
     border: 2px solid var(--green);
     border-radius: 12px;
     padding-left: 10px;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 .logar{
@@ -113,10 +110,10 @@ body {
     color: var(--green);
     font-size: 10px;
     font-weight: bold;
-       
+    gap: 10px;
 }
 
-.popup_esqueceu_senha{
+.popup{
     width: 30%;
     height: 300px;
     min-width: 300px;   
@@ -127,6 +124,10 @@ body {
     border: none;
     border-radius: 10px;
     padding: 15px; 
+}
+
+.popup::backdrop{
+    background-color: var(--light-black);
 }
 
 .primeiro_popup{
@@ -189,9 +190,7 @@ body {
 
 
 
-.popup_esqueceu_senha::backdrop{
-    background-color: var(--light-black);
-}
+
 
 
 

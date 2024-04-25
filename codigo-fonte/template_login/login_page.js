@@ -52,6 +52,7 @@ function iniciar_banco_usuarios(){
             primeiro_acesso: false
         }
     ]
+
     localStorage.setItem("usuarios", JSON.stringify(usuarios))    
 }
 
@@ -78,7 +79,7 @@ function verica_usuario(){
     if(autenticado && primeiro_acesso){
         let popup_primeiro_acesso = document.getElementById("popup_primeiro_acesso")
         // alert("PRIMEIRO ACESSO")
-        popup_primeiro_acesso.show()
+        popup_primeiro_acesso.showModal()
         console.log(popup_primeiro_acesso)
         
     }else if(autenticado && !primeiro_acesso){
