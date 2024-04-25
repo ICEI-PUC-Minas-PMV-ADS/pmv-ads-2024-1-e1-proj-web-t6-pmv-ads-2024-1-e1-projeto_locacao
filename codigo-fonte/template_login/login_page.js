@@ -48,7 +48,7 @@ function iniciar_banco_usuarios(){
             tipo: "Comum",
             email: "socratis@immocontrol.com.br",
             senha: "123",
-            status: true,
+            status: false,
             primeiro_acesso: false
         }
     ]
@@ -65,11 +65,26 @@ function verica_usuario(){
     let pega_usuario = document.getElementById("email").value
     let pega_senha = document.getElementById("senha").value
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))
-
+    let autenticado = false
+    let primeiro_acesso = false
     for(let i = 0; i < usuarios.length; i++){
-        
-        console.log(usuarios[i].email)
 
+        if(pega_usuario==usuarios[i].email && pega_senha==usuarios[i].senha && usuarios[i].status){
+            autenticado = true
+            primeiro_acesso = usuarios[i].primeiro_acesso
+        }
+        
+    }
+    if(autenticado && primeiro_acesso){
+        let popup_primeiro_acesso = document.getElementById("popup_primeiro_acesso")
+        // alert("PRIMEIRO ACESSO")
+        popup_primeiro_acesso.show()
+        console.log(popup_primeiro_acesso)
+        
+    }else if(autenticado && !primeiro_acesso){
+        alert("SUCESSO")
+    }else{
+        alert("USUÁRIO OU SENHA INVÁLIDOS")
     }
      
 }
