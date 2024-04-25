@@ -36,7 +36,6 @@ body {
     background-color: var(--light-grey);
     max-width: 500px;
     width: 60%;
-
     position: absolute;
     top: 50%;   
     left: 50%;
@@ -45,7 +44,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--light-grey);
     box-shadow: 0px 7px 7px 0px var(--grey);          
 }
 
@@ -138,29 +136,21 @@ body {
 } */
 
 .popup{
-    width: 30%;
-    height: 300px;
-    min-width: 300px;   
-    justify-self: center;
+    width: 60%;
+    max-width: 500px;
+     
     align-self: center;
     background-color: var(--light-grey);
     color: var(--green);
-    border: none;
-    border-radius: 10px;
-    padding: 15px; 
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+
+
 }
 
 .popup::backdrop{
     background-color: var(--light-black);
-}
-
-.primeiro_popup{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    justify-content: center;
-    gap: 15px;
 }
 
 /* MEXER!!! */
@@ -174,21 +164,7 @@ body {
          
  }
 
- /* MEXER!! */
- .primeiro_popup button{
-    width: 50%;
-    text-align: center;
-    border:none;
-    color: var(--green);
-    background-color: #000000;
-    padding: 10px;
- }
-
- .btn_enviar_senha:hover{
-    color: var(--black) ;
- }
-
- .btn_esqueci_senha{
+.btn_esqueci_senha{
     font-size:small;
     font-weight: bold;
     width: 45%;
@@ -203,23 +179,6 @@ body {
 .btn_esqueci_senha:hover{
     color: var(--black);
 }
-
-.enviar_senha{
-    width: 800px;  
-    height: 300px;
-    justify-self: center;
-    align-self: center;
-    background-color: var(--light-grey);
-    color: var(--green);
-    border: none;
-    border-radius: 10px;
-    padding: 15px; 
-}
-
-
-
-
-
 
 
 .conteudo{
