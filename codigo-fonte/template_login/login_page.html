@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-	<link rel="stylesheet" type="text/css" href="template_login.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="login_page.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body onload="iniciar_banco()">
     <div class="login">
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -23,7 +23,7 @@
             </div>    
             <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECEU A SENHA?</button>       
             <br><br>
-            <button class="logar" onclick="">ENTRAR</button>
+            <button class="logar" onclick="verica_usuario()">ENTRAR</button>
         </div>          
     </div>    
     <dialog id="popup_esqueceu_senha" class="popup_esqueceu_senha">
@@ -39,6 +39,6 @@
             <button id="btn_voltar" class="button_voltar">VOLTAR</button>
         </div>
     </dialog>       
-    <script src="template_login.js"></script>
+    <script src="login_page.js"></script>
 </body>
 </html>

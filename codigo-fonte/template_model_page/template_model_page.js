@@ -580,3 +580,7 @@ function iniciar_banco() {
     console.log(prop)
 
 }
+
+function verica_usuario(){
+    let pega_usuario = document.getElementById("email").value
+}
