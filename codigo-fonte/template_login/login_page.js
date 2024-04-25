@@ -65,16 +65,12 @@ function verica_usuario(){
     let pega_usuario = document.getElementById("email").value
     let pega_senha = document.getElementById("senha").value
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))
-    for(let i; i < usuarios.length; i++){
+
+    for(let i = 0; i < usuarios.length; i++){
         
         console.log(usuarios[i].email)
-        // if(pega_usuario==usuario.email){
-        //     console.log("OK")
-        // }
-
 
     }
-    
      
 }
 
