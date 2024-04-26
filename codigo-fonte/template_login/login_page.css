@@ -208,3 +208,10 @@ label{
     margin: 20px auto 20px auto;
 }
 
+.senha_antiga_nova label{
+    margin: 10px;
+    font-size:small;
+    font-weight: bold;
+
+}
+
