@@ -24,18 +24,19 @@ body {
     color: var(--black);
     font-weight: normal;
     font-size: 40px;
+    float: left;
 }
 
-.control {    
+.control {   
     color: var(--green);
     font-weight:600;
     font-size: 40px;
-}
+ }
 
 .login{
     background-color: var(--light-grey);
     max-width: 500px;
-    width: 60%;
+    width: 70%;
     position: absolute;
     top: 50%;   
     left: 50%;
@@ -100,7 +101,7 @@ label{
     align-items: center;
     width: 100%;   
     height: 50px;
-    margin: 50px 0px 30px;    
+    margin: 40px auto 30px auto;    
 }
 
 .content{
@@ -112,7 +113,7 @@ label{
 }
 
 .popup{
-    width: 60%;
+    width: 70%;
     max-width: 500px;     
     align-self: center;
     background-color: var(--light-grey);
@@ -130,23 +131,46 @@ label{
 .conteudo_popup{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-   
+    width: 65%;
+    gap: 15px; 
+    margin:  0 auto 0 auto;
 }
 
-.msg{
-     width: 100%;
-     padding: 40px;
-     font-weight: bold;
-     font-size: large;
-     text-align: center;   
-         
- }
+.informe_email{
+    display: flex;
+    margin: 60px 0 90px 0;
+}
+
+.envia_senha_com_sucesso{
+    display: flex;
+    margin: 70px 0 0 0;
+}
+
+.conteudo_popup p{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.conteudo_popup h1{
+    font-size: large;
+}
+
+.conteudo_popup label{
+    margin: 25px 0 -15px 0;
+}
+
+.primeiro_acesso_conta h1{
+    margin: -15 0 15px 0;
+}
+
+.primeiro_acesso_conta p{
+    font-size: medium;
+}
 
 .btn_esqueci_senha{
     font-size:small;
     font-weight: bold;
-    width: 45%;
+    width: 50%;
     height: 20px;
     border:none;
     color: var(--green);
@@ -173,9 +197,14 @@ label{
 }
 
 .senha_padrao_enviada{
-    padding: 80px 10px 80px 10px;
+    padding: 85px 10px 80px 10px;
     font-weight: bold;
     font-size: x-large;
     text-align: center;
+}
+
+.confirmar .btn_popup{
+    width: 100%;
+    margin: 20px auto 20px auto;
 }
 
