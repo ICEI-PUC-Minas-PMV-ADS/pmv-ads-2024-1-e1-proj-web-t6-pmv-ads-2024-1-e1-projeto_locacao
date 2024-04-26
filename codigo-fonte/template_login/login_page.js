@@ -48,7 +48,7 @@ function iniciar_banco_usuarios(){
             tipo: "Comum",
             email: "socratis@immocontrol.com.br",
             senha: "123",
-            status: true,
+            status: false,
             primeiro_acesso: true
         }
     ]

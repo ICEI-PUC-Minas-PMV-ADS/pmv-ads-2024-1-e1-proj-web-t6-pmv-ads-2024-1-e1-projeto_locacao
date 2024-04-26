@@ -47,7 +47,7 @@ body {
     box-shadow: 0px 7px 7px 0px var(--grey);          
 }
 
-.login input{    
+input{    
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -56,6 +56,8 @@ body {
     border-radius: 12px;
     margin: 4px auto; 
     align-items: center;
+    padding-left: 10px;
+    
 }
 
 .bem_vindo h1{
@@ -72,14 +74,14 @@ body {
     background-color: blue;
 } */
 
-.input_email label{
-      margin: 5px;
+/* .input_email label{
+      margin: 10px;
       font-size: small;
       font-weight: bold;
-}
+} */
 
-.input_senha label{
-    margin: 5px;
+label{
+    margin: 10px;
     font-size:small;
     font-weight: bold;
 }
@@ -137,20 +139,24 @@ body {
 
 .popup{
     width: 60%;
-    max-width: 500px;
-     
+    max-width: 500px;     
     align-self: center;
     background-color: var(--light-grey);
     color: var(--green);
-    display: flex;
     border-radius: 20px;
     flex-direction: column;
-
-
+    justify-self: center;
 }
 
 .popup::backdrop{
     background-color: var(--light-black);
+}
+
+.conteudo_popup{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
 }
 
 /* MEXER!!! */
