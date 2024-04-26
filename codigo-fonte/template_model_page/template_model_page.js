@@ -1,11 +1,15 @@
 function proprietarios_init() {
-    proprietarios(null, null, null, true)
+    localStorage.clear()
 
     iniciar_banco()
 
+    proprietarios(null, null, null, true)
 }
 
 function proprietarios(id, nome, cpf, status) {
+    var node = document.getElementById('table_list')
+    node.innerHTML = ""
+
     let id_value = id
     let nome_value = nome
     let cpf_value = cpf
@@ -95,8 +99,7 @@ function fechar_popup_filtrar_proprietario() {
 
 function filtrar_proprietarios() {
     let popup = document.getElementById('popup_filtrar')
-    var node = document.getElementById('table_list')
-    node.innerHTML = ""
+    
 
     let id = document.getElementById("id").value
     let nome = document.getElementById("nome").value
@@ -180,8 +183,6 @@ function abrir_popup_dados_proprietario(e) {
             verifica_popups[i].outerHTML = ""
         }
     }
-
-    // console.log(verifica.length)
 
     body.innerHTML += `
         <dialog id="popup_dados_proprietario" class="popup">
@@ -273,8 +274,6 @@ function abrir_popup_dados_proprietario(e) {
     let popup = document.getElementById("popup_dados_proprietario")
 
     popup.showModal()
-
-    console.log(dados)
 }
 
 function fechar_popup_dados_proprietario() {
@@ -321,7 +320,7 @@ function salvar_dados_proprietario(){
             ALTERAR
         </button>
     `
-
+    let id = parseInt(document.querySelector("#popup_dados_proprietario h1").innerHTML.split(" - ")[1])
     let nome = document.getElementById("nome_prop")
     let cpf = document.getElementById("cpf_prop")
     let estado_civil = document.getElementById("estado_civil_prop")
@@ -349,6 +348,34 @@ function salvar_dados_proprietario(){
     uf.readOnly = true
     telefone.readOnly = true
     email.readOnly = true
+
+    proprietariosList = JSON.parse(localStorage.getItem("proprietarios"))
+
+    proprietariosList = proprietariosList.map((proprietario) => {
+        if(proprietario.id == id) {
+            proprietario.nome = nome.value
+            proprietario.cpf = cpf.value
+            proprietario.estado_civil = estado_civil.value
+            proprietario.telefone = telefone.value
+            proprietario.email = email.value
+            proprietario.endereco.tipo_logradouro = tipo_logradouro.value
+            proprietario.endereco.logradouro = logradouro.value
+            proprietario.endereco.numero = numero.value
+            proprietario.endereco.complemento = complemento.value
+            proprietario.endereco.bairro = bairro.value
+            proprietario.endereco.cidade = cidade.value
+            proprietario.endereco.cep = cep.value
+            proprietario.endereco.uf = uf.value
+
+            return proprietario
+        }
+
+        return proprietario
+    })
+
+    localStorage.setItem("proprietarios", JSON.stringify(proprietariosList))
+
+    filtrar_proprietarios()
 }
 
 function abrir_popup_novo_proprietario() {
@@ -459,6 +486,12 @@ function fechar_popup_novo_proprietario() {
 
     popup.close()
 }
+function novo_id(){
+    let list_id = JSON.parse(localStorage.getItem("proprietarios")).map((proprietario) => proprietario.id)
+    let max_id = Math.max(...list_id)
+
+    return max_id + 1
+}
 
 function salvar_novo_proprietario(){
     let nome = document.getElementById("nome_prop_novo").value
@@ -475,11 +508,14 @@ function salvar_novo_proprietario(){
     let telefone = document.getElementById("telefone_prop_novo").value
     let email = document.getElementById("email_prop_novo").value
 
-    let json = {
-        id: "teste",
+    let jsonNovoProprietario = {
+        id: novo_id(),
         nome: nome,
         cpf: cpf,
         estado_civil: estado_civil,
+        telefone: telefone,
+        email: email,
+        imoveis: [],
         endereco: {
             tipo_logradouro: tipo_logradouro,
             logradouro: logradouro,
@@ -490,11 +526,17 @@ function salvar_novo_proprietario(){
             cep: cep,
             uf: uf
         },
-        telefone: telefone,
-        email: email
+        status: false
     }
 
-    console.log(JSON.stringify(json))
+    let proprietariosList = JSON.parse(localStorage.getItem("proprietarios"))
+    proprietariosList.push(jsonNovoProprietario)
+
+    localStorage.setItem("proprietarios", JSON.stringify(proprietariosList))
+    
+    proprietarios(novo_id() - 1, null, null, null)
+
+    fechar_popup_novo_proprietario()
 }
 
 function iniciar_banco_proprietarios() {
@@ -551,10 +593,7 @@ function iniciar_banco_proprietarios() {
             estado_civil: "Solteiro",
             telefone: "31911111111",
             email: "socratis@exemplo.com",
-            imoveis: [
-                4,
-                5
-            ],
+            imoveis: [],
             endereco: {
                 tipo_logradouro: "Rua",
                 logradouro: "Afonço Pena 2",
@@ -573,7 +612,5 @@ function iniciar_banco_proprietarios() {
 }
 
 function iniciar_banco() {
-
     iniciar_banco_proprietarios()
-
 }
