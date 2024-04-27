@@ -80,26 +80,44 @@ function verica_usuario(){
         alert("SUCESSO")
     }else{
         alert("USUÁRIO OU SENHA INVÁLIDOS")
-    }     
-}
+    }  
+   
+} 
 
 function alterar_senha(){
     let senha_antiga = document.getElementById("senha_antiga").value
     let nova_senha = document.getElementById("senha_nova").value
-    let confirmar_senha = document.getElementById("senha_confirmada").value
+    let confirmar_senha = document.getElementById("senha_confirmada").value    
     let senha_alterada = null
-    
+    // let senha_atual = localStorage.getItem("usuarios")
+
+    let usuarios = JSON.parse(localStorage.getItem("usuarios"))
+
+    console.log(senha_alterada)
+
         if(senha_antiga==123 && nova_senha==confirmar_senha){
-            location.href = "login_page.html"
-            senha_alterada = nova_senha
-            console.log(senha_alterada)
+            alert("login")
+            // location.href = "login_page.html"
+            senha_alterada = nova_senha                              
         } 
-        else if(nova_senha!==confirmar_senha){
-            alert("NOVAS SENHAS NÃO CONFEREM")
-        }else{
-            alert("SENHA ANTIGA INCORRETA")
-        }                        
-}   
-                   
-        
-        
+            else if(nova_senha!==confirmar_senha){
+                alert("NOVAS SENHAS NÃO CONFEREM")
+            }else{
+                alert("SENHA ANTIGA INCORRETA")
+            } 
+
+        usuarios.push(senha_alterada)       
+        localStorage.setItem("usuarios", JSON.stringify(usuarios))
+        console.log(usuarios)
+        // // function iniciar_banco(){
+        //     let textHTML = ''
+        //     for (let x = 0; x < senha_atual.length; x++){
+        //         textHTML += 'nome ${usuarios[x].nome}'\n
+        //     // }
+        //     console.log(textHTML)
+}
+
+
+              
+
+
