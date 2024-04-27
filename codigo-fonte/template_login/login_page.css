@@ -161,6 +161,7 @@ label{
 
 .primeiro_acesso_conta h1{
     margin: -15 0 15px 0;
+    padding: 0 0 20px 0
 }
 
 .primeiro_acesso_conta p{
@@ -206,6 +207,12 @@ label{
 .confirmar .btn_popup{
     width: 100%;
     margin: 20px auto 20px auto;
+}
+
+.confirmar button:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--black);
+    background-color: var(--grey);
 }
 
 .senha_antiga_nova label{

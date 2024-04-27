@@ -18,9 +18,8 @@ var btn_voltar = document.getElementById("btn_voltar")
         var chama_popup=document.getElementById("popup_esqueceu_senha")
         var recebe_popup_popup=document.getElementById("enviar_senha")
             chama_popup.close()
-            recebe_popup_popup.close()
-                
-    })  
+            recebe_popup_popup.close()                
+    })           
     
 function iniciar_banco_usuarios(){
     let usuarios = [
@@ -58,8 +57,7 @@ function iniciar_banco_usuarios(){
 
 function iniciar_banco() {
 
-    iniciar_banco_usuarios()  
-
+    iniciar_banco_usuarios()
 }
 
 function verica_usuario(){
@@ -73,20 +71,35 @@ function verica_usuario(){
         if(pega_usuario==usuarios[i].email && pega_senha==usuarios[i].senha && usuarios[i].status){
             autenticado = true
             primeiro_acesso = usuarios[i].primeiro_acesso
-        }
-        
+        }        
     }
     if(autenticado && primeiro_acesso){
         let popup_primeiro_acesso = document.getElementById("popup_primeiro_acesso")
-        // alert("PRIMEIRO ACESSO")
-        popup_primeiro_acesso.showModal()
-        console.log(popup_primeiro_acesso)
-        
+            popup_primeiro_acesso.showModal()
     }else if(autenticado && !primeiro_acesso){
         alert("SUCESSO")
     }else{
         alert("USUÁRIO OU SENHA INVÁLIDOS")
-    }
-     
+    }     
 }
 
+function alterar_senha(){
+    let senha_antiga = document.getElementById("senha_antiga").value
+    let nova_senha = document.getElementById("senha_nova").value
+    let confirmar_senha = document.getElementById("senha_confirmada").value
+    let senha_alterada = null
+    
+        if(senha_antiga==123 && nova_senha==confirmar_senha){
+            location.href = "login_page.html"
+            senha_alterada = nova_senha
+            console.log(senha_alterada)
+        } 
+        else if(nova_senha!==confirmar_senha){
+            alert("NOVAS SENHAS NÃO CONFEREM")
+        }else{
+            alert("SENHA ANTIGA INCORRETA")
+        }                        
+}   
+                   
+        
+        

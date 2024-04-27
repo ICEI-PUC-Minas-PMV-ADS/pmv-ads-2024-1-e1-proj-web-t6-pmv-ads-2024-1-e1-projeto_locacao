@@ -58,14 +58,14 @@
                 </div>
                 <div class="senha_antiga_nova">               
                     <label for="senha_antiga">SENHA ANTIGA</label>
-                    <input type="text" name="senha_antiga" id="senha_antiga">                        
-                    <label for="nova_senha">NOVA SENHA</label><br>
-                    <input type="password" name="nova_senha" id="nova_senha">               
-                    <label for="confirmar_senha">CONFIRMAR NOVA SENHA</label><br>
-                    <input type="password" name="confirmar_senha" id="confirmar_senha">
+                    <input type="password" id="senha_antiga">                        
+                    <label id="nova_senha">NOVA SENHA</label><br>
+                    <input type="password" id="senha_nova">               
+                    <label id="confirmar_senha">CONFIRMAR NOVA SENHA</label><br>
+                    <input type="password" id="senha_confirmada">
                 </div>
                 <div class="confirmar">
-                    <a href="login_page.html"><button class="btn_popup" onclick="">CONFIRMAR</button>
+                    <button class="btn_popup" id="btn_confirmar" onclick="alterar_senha()">CONFIRMAR</button>
                 </div>               
                 
             </div>               
