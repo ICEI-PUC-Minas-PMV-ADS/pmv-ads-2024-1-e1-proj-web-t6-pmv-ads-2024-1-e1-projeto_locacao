@@ -17,13 +17,16 @@ var btn_voltar = document.getElementById("btn_voltar")
     btn_voltar.addEventListener('click', function(){
         var chama_popup=document.getElementById("popup_esqueceu_senha")
         var recebe_popup_popup=document.getElementById("enviar_senha")
+        // chama_popup.close()
+        // recebe_popup_popup.close()
         location.href = "login_page.html"            
     })    
     
-    // FUNÇÃO PARA SAIR DO SISTEMA
 function btn_sair(){
-    let sair = document.getElementById("sair")
-    location.href = "login_page.html"
+    // let sair = document.getElementById("sair")
+    // let tela_login = document.getElementById('tela_login')
+    //     tela_login.showModal()
+    alert('SAIU')
 }
 
 function iniciar_banco_usuarios(){
@@ -42,7 +45,7 @@ function iniciar_banco_usuarios(){
             nome: "Usuario Ativo",
             tipo: "Comum",
             email: "usuarioativo@immocontrol.com.br",
-            senha: "123456789",
+            senha: "123",
             status: true,
             primeiro_acesso: true
         },
@@ -60,11 +63,12 @@ function iniciar_banco_usuarios(){
     localStorage.setItem("usuarios", JSON.stringify(usuarios))     
 }
 
-function iniciar_banco() {
+function iniciar_banco(){   
 
     iniciar_banco_usuarios()
+   localStorage.clear
+    
 }
-
 
 function verica_usuario(){
     let pega_usuario = document.getElementById("email").value
@@ -83,35 +87,30 @@ function verica_usuario(){
     if(autenticado && primeiro_acesso){
         let popup_primeiro_acesso = document.getElementById("popup_primeiro_acesso")
             popup_primeiro_acesso.showModal() 
-                   
-
-            }else if(autenticado && !primeiro_acesso){
-            location.href ="home_page_teste.html"         
-            }else{
-                alert("USUÁRIO OU SENHA INVÁLIDOS")
-            }  
-   
+        }else if(autenticado && !primeiro_acesso){
+            location.href ='../dashboard_page/dashboard_page.html'         
+        }else{alert("USUÁRIO OU SENHA INVÁLIDOS")}  
 } 
+
 
 function alterar_senha(){
     let senha_antiga = document.getElementById("senha_antiga").value
     let nova_senha = document.getElementById("senha_nova").value
     let confirmar_senha = document.getElementById("senha_confirmada").value    
-    let senha_alterada = null
+    var fecha_popup = document.getElementById('popup_primeiro_acesso') 
+    
     let usuario_autenticado = JSON.parse(localStorage.getItem("usuario_autenticado"))
     console.log(usuario_autenticado)
 
           if(senha_antiga==usuario_autenticado.senha && nova_senha==confirmar_senha){
-            alert("login")
-            // location.href = "../template_model_page/template_model_page.html"
+            // alert("login")
             usuario_autenticado.senha = nova_senha 
             usuario_autenticado.primeiro_acesso = false
-            console.log(usuario_autenticado)                            
-        }else if(nova_senha!==confirmar_senha && senha_antiga==123){
-                alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA") 
-        }else if(senha_antiga!==123 && nova_senha==confirmar_senha){
-            alert("SENHA ANTIGA INCORRETA")
-        }else{alert("SENHAS INCORRETAS")}
+                }else if(nova_senha!==confirmar_senha && senha_antiga==123){
+                    alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA") 
+                }else if(senha_antiga!==123 && nova_senha==confirmar_senha){
+                    alert("SENHA ANTIGA INCORRETA")
+                }else{alert("SENHAS INCORRETAS")}
 
         let usuarios = JSON.parse(localStorage.getItem("usuarios"))
         
@@ -121,14 +120,14 @@ function alterar_senha(){
             }else{return usuario}
         })
         localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))
-        console.log(novos_usuarios)       
-        // usuarios_senha_atualizada.push(senha_alterada)
+        console.log(novos_usuarios)   
+
+        fecha_popup.close()
 
 }
 
 // FUNÇÃO ENVIAR EMAIL PARA ALTERAR SENHA
 function enviar_email(){
-    // FAZER A LOGICA PARA ENVIAR SOMENTE PARA O EMAIL CADASTRADO
     let enviar_email = document.getElementById("email_cadastrado").value
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))
         
@@ -137,16 +136,11 @@ function enviar_email(){
             usuario.senha='123'
             usuario.primeiro_acesso = true
             return usuario
-        }else{return usuario}
+        }else{return usuarios}                
     })
     localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))
-    console.log(novos_usuarios)
-
-
-
+    // console.log(novos_usuarios)
     let emailEnviado = document.getElementById("email_enviado")
         emailEnviado.innerHTML += enviar_email
-
 }
 
- 
