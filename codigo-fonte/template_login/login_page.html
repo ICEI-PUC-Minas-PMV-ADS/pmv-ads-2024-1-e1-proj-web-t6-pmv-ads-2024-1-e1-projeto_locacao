@@ -23,7 +23,7 @@
                 <label for="senha">SENHA</label>
                 <input type="password" name="senha" id="senha"> 
             </div>    
-            <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECEU A SENHA?</button>       
+            <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECI MINHA SENHA</button>       
             <button class="logar" onclick="verica_usuario()">ENTRAR</button>
         </div>          
     </div>    
@@ -33,15 +33,15 @@
                 <h1 >INFORME O E-MAIL CADASTRADO:</h1>
             </div>                
             <label for="email_cadastrado">E-MAIL</label>
-            <input type="text" name="email_cadastrado">        
-            <button id="btn_enviar_senha" class="btn_popup">ENVIAR SENHA</button>  
+            <input type="text" id="email_cadastrado">        
+            <button id="btn_enviar_senha" class="btn_popup" onclick="enviar_email()">ENVIAR SENHA</button>  
         </div>          
         
     </dialog>
     <dialog id="enviar_senha" class="popup">
         <div class="conteudo_popup"> 
             <div class="envia_senha_com_sucesso">
-                <p class="senha_padrao_enviada">SENHA ENVIADA COM SUCESSO PARA O E-MAIL INFORMADO</p>
+                <p id="email_enviado" class="senha_padrao_enviada">SENHA ENVIADA COM SUCESSO PARA O E-MAIL: </p>
             </div>            
             <button id="btn_voltar" class="btn_popup">VOLTAR</button>
         </div>

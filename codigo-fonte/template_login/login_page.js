@@ -17,10 +17,15 @@ var btn_voltar = document.getElementById("btn_voltar")
     btn_voltar.addEventListener('click', function(){
         var chama_popup=document.getElementById("popup_esqueceu_senha")
         var recebe_popup_popup=document.getElementById("enviar_senha")
-            chama_popup.close()
-            recebe_popup_popup.close()                
-    })           
+        location.href = "login_page.html"            
+    })    
     
+    // FUNÇÃO PARA SAIR DO SISTEMA
+function btn_sair(){
+    let sair = document.getElementById("sair")
+    location.href = "login_page.html"
+}
+
 function iniciar_banco_usuarios(){
     let usuarios = [
         {
@@ -77,7 +82,7 @@ function verica_usuario(){
         let popup_primeiro_acesso = document.getElementById("popup_primeiro_acesso")
             popup_primeiro_acesso.showModal()
     }else if(autenticado && !primeiro_acesso){
-        alert("SUCESSO")
+            location.href ="home_page_teste.html"         
     }else{
         alert("USUÁRIO OU SENHA INVÁLIDOS")
     }  
@@ -89,35 +94,34 @@ function alterar_senha(){
     let nova_senha = document.getElementById("senha_nova").value
     let confirmar_senha = document.getElementById("senha_confirmada").value    
     let senha_alterada = null
-    // let senha_atual = localStorage.getItem("usuarios")
+    let usuarios_senha_atualizada = JSON.parse(localStorage.getItem("usuarios"))
+    console.log(usuarios_senha_atualizada)
 
-    let usuarios = JSON.parse(localStorage.getItem("usuarios"))
-
-    console.log(usuarios)
 
         if(senha_antiga==123 && nova_senha==confirmar_senha){
             alert("login")
             // location.href = "login_page.html"
             senha_alterada = nova_senha                              
-        } 
-            else if(nova_senha!==confirmar_senha){
-                alert("NOVAS SENHAS NÃO CONFEREM")
-            }else{
-                alert("SENHA ANTIGA INCORRETA")
-            } 
+        }else if(nova_senha!==confirmar_senha && senha_antiga==123){
+                alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA") 
+        }else if(senha_antiga!==123 && nova_senha==confirmar_senha){
+            alert("SENHA ANTIGA INCORRETA")
+        }else{alert("SENHAS INCORRETAS")}
+        usuarios_senha_atualizada.push(senha_alterada)
+        localStorage.setItem("teste", JSON.stringify(usuarios_senha_atualizada))    
+        
+        console.log(usuarios_senha_atualizada)
+        // console.log(usuarios_senha_atualizada.map((aux)=>aux.senha))
 
-        usuarios.push(senha_alterada)       
-        localStorage.setItem("usuarios", JSON.stringify(usuarios))
-        console.log(usuarios)
-        // // function iniciar_banco(){
-        //     let textHTML = ''
-        //     for (let x = 0; x < senha_atual.length; x++){
-        //         textHTML += 'nome ${usuarios[x].nome}'\n
-        //     // }
-        //     console.log(textHTML)
+
 }
 
+// FUNÇÃO ENVIAR EMAIL PARA ALTERAR SENHA
+function enviar_email(){
+    // FAZER A LOGICA PARA ENVIAR SOMENTE PARA O EMAIL CADASTRADO
+    let enviar_email = document.getElementById("email_cadastrado").value
+    let emailEnviado = document.getElementById("email_enviado")
+        emailEnviado.innerHTML += enviar_email
+}
 
-              
-
-
+ 
