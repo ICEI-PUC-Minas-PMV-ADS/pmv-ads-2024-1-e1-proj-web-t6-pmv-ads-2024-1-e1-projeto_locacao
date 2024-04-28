@@ -93,7 +93,7 @@ function alterar_senha(){
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
-    console.log(senha_alterada)
+    console.log(usuarios)
 
         if(senha_antiga==123 && nova_senha==confirmar_senha){
             alert("login")
