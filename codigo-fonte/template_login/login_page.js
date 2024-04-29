@@ -27,15 +27,19 @@ function btn_sair(){
     // let tela_login = document.getElementById('tela_login')
     //     tela_login.showModal()
     alert('SAIU')
+
+// let novos_usuarios = JSON.parse(localStorage.getItem('usuarios'))
+
 }
 
 function iniciar_banco_usuarios(){
+    let novos_usuarios = JSON.parse(localStorage.getItem('usuarios'))
     let usuarios = [
         {
             id: 1,
             nome: "Master",
             tipo: "Administrador",
-            email: "usuariomaster@immocontrol.com.br",
+            email: "master@immocontrol.com.br",
             senha: "123",
             status: true,
             primeiro_acesso: false
@@ -44,7 +48,7 @@ function iniciar_banco_usuarios(){
             id: 2,
             nome: "Usuario Ativo",
             tipo: "Comum",
-            email: "usuarioativo@immocontrol.com.br",
+            email: "ativo@immocontrol.com.br",
             senha: "123",
             status: true,
             primeiro_acesso: true
@@ -53,22 +57,31 @@ function iniciar_banco_usuarios(){
             id: 3,
             nome: "Usuario Inativo",
             tipo: "Comum",
-            email: "usuarioinativo@immocontrol.com.br",
+            email: "inativo@immocontrol.com.br",
             senha: "123",
             status: false,
             primeiro_acesso: true
         }
     ]
-
-    localStorage.setItem("usuarios", JSON.stringify(usuarios))     
+    localStorage.setItem("usuarios", JSON.stringify(usuarios))  
+    localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))   
 }
 
-function iniciar_banco(){   
-
-    iniciar_banco_usuarios()
-   localStorage.clear
-    
+function iniciar_banco(){
+    // let banco_aux   
+    // banco_aux = JSON.parse(localStorage.getItem('usuarios')) 
+    // localStorage.clear() 
+    iniciar_banco_usuarios() 
+    // localStorage.clear()
+     
 }
+
+// function iniciar_banco(){
+
+//     iniciar_banco_usuarios()     
+// }
+
+
 
 function verica_usuario(){
     let pega_usuario = document.getElementById("email").value
@@ -100,7 +113,7 @@ function alterar_senha(){
     var fecha_popup = document.getElementById('popup_primeiro_acesso') 
     
     let usuario_autenticado = JSON.parse(localStorage.getItem("usuario_autenticado"))
-    console.log(usuario_autenticado)
+    // console.log(usuario_autenticado)
 
           if(senha_antiga==usuario_autenticado.senha && nova_senha==confirmar_senha){
             // alert("login")
@@ -120,11 +133,10 @@ function alterar_senha(){
             }else{return usuario}
         })
         localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))
-        console.log(novos_usuarios)   
-
+        // console.log(novos_usuarios)  
         fecha_popup.close()
-
 }
+// console.log(novos_usuarios)
 
 // FUNÇÃO ENVIAR EMAIL PARA ALTERAR SENHA
 function enviar_email(){
@@ -143,4 +155,6 @@ function enviar_email(){
     let emailEnviado = document.getElementById("email_enviado")
         emailEnviado.innerHTML += enviar_email
 }
+let bancoAtual = JSON.parse(localStorage.getItem('usuarios'))
+// console.log(bancoAtual)
 
