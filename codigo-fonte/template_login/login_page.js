@@ -114,18 +114,26 @@ function alterar_senha(){
 function enviar_email(){
     let enviar_email = document.getElementById("email_cadastrado").value
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))
-       
+    console.log(usuarios)
+      
     let  novos_usuarios = usuarios.map((usuario)=>{
         if(usuario.email==enviar_email){
             usuario.senha='123'
             usuario.primeiro_acesso = true
             return usuario
+           
         }else{return usuario}                
     }) 
         
     localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))
     let emailEnviado = document.getElementById("email_enviado")
-        emailEnviado.innerHTML +=enviar_email
+    
+    usuarios.map((usuario)=>{
+        if(usuario==enviar_email){
+            return emailEnviado.innerHTML = 'SENHA ENVIADA COM SUCESSO PARA O E-MAIL: '+enviar_email            
+        }else{return emailEnviado.innerHTML ='E-MAIL INFORMADO NÃO É UM E-MAIL VÁLIDO, FAVOR O E-MAIL CADASTRADO'}                
+    })  
+    
 }
 
 

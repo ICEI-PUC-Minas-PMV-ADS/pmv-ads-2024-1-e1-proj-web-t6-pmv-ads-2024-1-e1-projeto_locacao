@@ -175,10 +175,9 @@ label{
     height: 20px;
     border:none;
     color: var(--green);
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 5px;
     background-color: var(--light-grey);
-           
-    }
+}
 
 .btn_esqueci_senha:hover{
     color: var(--black);
@@ -202,7 +201,18 @@ label{
     font-weight: bold;
     font-size: x-large;
     text-align: center;
+    line-height: 30px;
 }
+
+.email_invalido{
+    padding: 85px 10px 80px 10px;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    line-height: 30px;
+    color: red;
+}
+
 
 .confirmar .btn_popup{
     width: 100%;
