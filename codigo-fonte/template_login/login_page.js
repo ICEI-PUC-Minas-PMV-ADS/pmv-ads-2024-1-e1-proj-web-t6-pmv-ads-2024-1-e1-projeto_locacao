@@ -81,7 +81,7 @@ function verica_usuario(){
             popup_primeiro_acesso.showModal() 
     }else if(autenticado && !primeiro_acesso){
             location.href ='../dashboard_page/dashboard_page.html'         
-            }else{alert("USUÁRIO OU SENHA INVÁLIDOS")}  
+            }else{alert("E-MAIL OU SENHA INVÁLIDOS")}  
 } 
 
 function alterar_senha(){
@@ -95,10 +95,10 @@ function alterar_senha(){
         usuario_autenticado.senha = nova_senha 
         usuario_autenticado.primeiro_acesso = false
     }else if(nova_senha!==confirmar_senha && senha_antiga==123){
-            alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA") 
-           }else if(senha_antiga!==123 && nova_senha==confirmar_senha){
-                    alert("SENHA ANTIGA INCORRETA")
-                  }else{alert("SENHAS INCORRETAS")}
+                alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA") 
+            }else if(senha_antiga!==123 && nova_senha==confirmar_senha){
+                       alert("SENHA ANTIGA INCORRETA")
+                   }else{alert("SENHAS INCORRETAS")}
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))        
     let novos_usuarios = usuarios.map((usuario)=>{
@@ -114,25 +114,23 @@ function alterar_senha(){
 function enviar_email(){
     let enviar_email = document.getElementById("email_cadastrado").value
     let usuarios = JSON.parse(localStorage.getItem("usuarios"))
-    console.log(usuarios)
-      
+    let emailEnviado = document.getElementById("email_enviado")
+    let email_valido = false 
+     
     let  novos_usuarios = usuarios.map((usuario)=>{
         if(usuario.email==enviar_email){
             usuario.senha='123'
             usuario.primeiro_acesso = true
-            return usuario
-           
+            email_valido = true
+            return usuario           
         }else{return usuario}                
     }) 
         
     localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))
-    let emailEnviado = document.getElementById("email_enviado")
     
-    usuarios.map((usuario)=>{
-        if(usuario==enviar_email){
-            return emailEnviado.innerHTML = 'SENHA ENVIADA COM SUCESSO PARA O E-MAIL: '+enviar_email            
-        }else{return emailEnviado.innerHTML ='E-MAIL INFORMADO NÃO É UM E-MAIL VÁLIDO, FAVOR O E-MAIL CADASTRADO'}                
-    })  
+    if(email_valido){
+        emailEnviado.innerHTML = `SENHA ENVIADA COM SUCESSO PARA O E-MAIL: <span class="email">${enviar_email}</span> `            
+     }else{emailEnviado.innerHTML ='<span class="atencao">ATENÇÃO!</span><br><span class="email_erro">NÃO É UM E-MAIL VÁLIDO, FAVOR INFORMAR O E-MAIL CADASTRADO</span>'}
     
 }
 

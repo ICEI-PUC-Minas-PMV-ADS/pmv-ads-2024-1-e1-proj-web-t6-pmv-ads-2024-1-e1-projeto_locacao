@@ -201,7 +201,7 @@ label{
     font-weight: bold;
     font-size: x-large;
     text-align: center;
-    line-height: 30px;
+    line-height: 50px;
 }
 
 .email_invalido{
@@ -210,9 +210,30 @@ label{
     font-size: x-large;
     text-align: center;
     line-height: 30px;
-    color: red;
+    color: var(--black);
 }
 
+.atencao{
+    padding: 85px 10px 80px 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100px;
+    color:red;
+}
+
+.email_erro{
+    padding: 85px auto 80px auto;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    line-height: 60px;
+    color:var(--black);
+}
+
+.email{
+    color: var(--black);
+}
 
 .confirmar .btn_popup{
     width: 100%;
