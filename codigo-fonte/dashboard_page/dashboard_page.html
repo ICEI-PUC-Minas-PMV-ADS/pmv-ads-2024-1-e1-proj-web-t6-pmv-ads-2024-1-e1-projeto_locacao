@@ -6,9 +6,11 @@
     <title>Página Modelo</title>
     <link rel="stylesheet" type="text/css" href="dashboard_page.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard_page.js"></script>
 </head>
 
-<body>
+<body onload="iniciar_dashboard()">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -61,7 +63,17 @@
             </div>
         </nav>
         <main>
+            <div id="bar_chart" class="contentMain">
+                <p>Faturamento</p>
+                <canvas id="myChart" style="max-height: 90%;"></canvas>
+            </div>
+            <div id="doughnut_chart" class="contentMain">
+                
+                <canvas id="myChart2" style="max-height: 90%;"></canvas>
+            </div>
+            <div id="table_faturas" class="contentMain">
 
+            </div>
         </main>
     </div>
 </body>
