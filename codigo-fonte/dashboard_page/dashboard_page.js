@@ -23,6 +23,9 @@ function my_bar_chart() {
                     display: false
                 },
                 x: {
+                    ticks: {
+                        color: '#A0AEC0'
+                    },
                     grid: {
                         display: false
                     }
@@ -57,5 +60,12 @@ function my_doughnut_chart() {
     new Chart("myChart2", {
         type: 'doughnut',
         data: data,
+        options: {
+            legend: {
+                fontColor: '#5BB800'
+               
+            }
+         },
+        
     })
 }
