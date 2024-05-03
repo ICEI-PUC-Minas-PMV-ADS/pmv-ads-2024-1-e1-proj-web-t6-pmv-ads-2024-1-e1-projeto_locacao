@@ -7,71 +7,68 @@ function iniciar_dashboard() {
 
 
 function my_bar_chart() {
-    
+
     const barColors = '#5BB800'
     const faturas = JSON.parse(localStorage.getItem('faturas'))
     let meses = {
         janeiro: {
-            value:0,
+            value: 0,
             text: '01'
-        }, 
-        feveiro:{
-            value:0,
+        },
+        feveiro: {
+            value: 0,
             text: '02'
-        }, 
-        março:{
-            value:0,
+        },
+        março: {
+            value: 0,
             text: '03'
-        }, 
-        abril:{
-            value:0,
+        },
+        abril: {
+            value: 0,
             text: '04'
-        }, 
-        maio:{
-            value:0,
+        },
+        maio: {
+            value: 0,
             text: '05'
-        },  
-        junho:{
-            value:0,
+        },
+        junho: {
+            value: 0,
             text: '06'
-        }, 
-        julho:{
-            value:0,
+        },
+        julho: {
+            value: 0,
             text: '07'
-        }, 
-        agosto:{
-            value:0,
+        },
+        agosto: {
+            value: 0,
             text: '08'
-        }, 
-        setembro:{
-            value:0,
+        },
+        setembro: {
+            value: 0,
             text: '09'
-        }, 
-        outubro:{
-            value:0,
+        },
+        outubro: {
+            value: 0,
             text: '10'
-        }, 
-        novembro:{
-            value:0,
+        },
+        novembro: {
+            value: 0,
             text: '11'
-        }, 
+        },
         dezembro: {
-            value:0,
+            value: 0,
             text: '12'
-        }, 
+        },
     }
- 
 
-    faturas.map((fatura)=>{
-        if(fatura.status_pgto){
-            Object.keys(meses).map((mes)=>{
 
-                if(meses[mes].text == fatura.data_pgto.split('/')[1]){
+    faturas.map((fatura) => {
+        if (fatura.status_pgto) {
+            Object.keys(meses).map((mes) => {
+                if (meses[mes].text == fatura.data_pgto.split('/')[1]) {
                     meses[mes].value += fatura.valor
-                    console.log(meses[mes].value)
                 }
             })
-            // console.log(fatura.data_pgto.split('/')[1])
         }
     })
 
@@ -89,7 +86,7 @@ function my_bar_chart() {
         meses.novembro.value,
         meses.dezembro.value
     ]
-  
+
 
 
     new Chart("myChart", {
@@ -131,8 +128,8 @@ function my_doughnut_chart() {
 
     dados_imoveis.map((imovel) => {
         if (imovel.statusLocacao) {
-            locado ++
-        } else { vago ++}
+            locado++
+        } else { vago++ }
     })
 
     const data = {
@@ -156,64 +153,74 @@ function my_doughnut_chart() {
         options: {
             legend: {
                 fontColor: '#5BB800'
-               
+
             }
-         },
-        
+        },
+
     })
 }
 
-function iniciar_banco_faturas(){
+function iniciar_banco_faturas() {
     let valid_faturas = JSON.parse(localStorage.getItem('faturas'))
     let faturas = [
-        {            
+        {
             id: 1,
             data_pgto: '05/01/2024',
             valor: 1500,
             status_pgto: true
         },
-        {            
+        {
             id: 2,
             data_pgto: '05/01/2024',
             valor: 1500,
             status_pgto: false
         },
-        {            
+        {
             id: 3,
             data_pgto: '05/02/2024',
             valor: 1500,
             status_pgto: true
         },
-        {            
+        {
             id: 4,
             data_pgto: '05/02/2024',
             valor: 1500,
             status_pgto: true
         },
-        {            
+        {
             id: 5,
             data_pgto: '05/03/2024',
             valor: 1500,
             status_pgto: false
         },
-        {            
+        {
             id: 6,
             data_pgto: '05/03/2024',
             valor: 1500,
             status_pgto: false
         },
-        {            
+        {
             id: 7,
             data_pgto: '05/04/2024',
             valor: 1000,
             status_pgto: true
         },
+        {
+            id: 6,
+            data_pgto: '05/12/2024',
+            valor: 1300,
+            status_pgto: true
+        },
+        {
+            id: 7,
+            data_pgto: '05/11/2024',
+            valor: 500,
+            status_pgto: true
+        },
     ]
-
     if (valid_faturas == null) {
         localStorage.setItem('faturas', JSON.stringify(faturas))
     }
-
 }
 
 function iniciar_banco_imoveis() {
