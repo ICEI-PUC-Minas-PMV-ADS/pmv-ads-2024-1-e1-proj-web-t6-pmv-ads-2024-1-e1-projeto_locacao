@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Locatarios</title>
-    <link rel="stylesheet" href="template_locatarios_page.css">
+    <link rel="stylesheet" href="locatarios_page.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="locatarios_page.js"></script>
 
 </head>
-<!-- TITULO SUPERIOR -->
+<!-- BARRA SUPERIOR -->
 <header>
     <div class="div_logo">
         <p><span class="immo">Immo</span><span class="control">Control</span></p></div>
@@ -65,13 +66,13 @@
     </nav>  
     <!-- TELA PRINCIPAL -->
     <main id="table_owners"> 
-        <div class="div_table_properties">
-            <p>Proprietários</p>
-            <div class="div_table_properties_group_buttons">
-                <button class="div_table_properties_button" onclick="abrir_popup_filtrar_proprietario()">
+        <div class="div_table_locatarios">
+            <p>Locatários</p>
+            <div class="div_table_locatarios_group_buttons">
+                <button class="div_table_locatarios_button" onclick="">
                     <img class="icon" src="../scr/icones/icon_button_filtrar.png" alt="">
                 </button>
-                <button class="div_table_properties_button">
+                <button class="div_table_locatarios_button" onclick="abrir_popup_novo_locatario()">
                     <img class="icon" src="../scr/icones/icon_button_adicionar.png" alt="">
                 </button>
             </div>
@@ -84,7 +85,7 @@
             <div class="table_name">
                 NOME
             </div>
-            <div class="table_property">
+            <div class="table_locatario">
                 TELEFONE
             </div>
             <div class="table_status">
