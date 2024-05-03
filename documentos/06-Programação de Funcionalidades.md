@@ -6,7 +6,7 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-01 USUÁRIOS
+### RF-01 USUÁRIOS (THÁSSIA)
 
 #### Requisito atendido
 
@@ -18,10 +18,10 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 #### Responsável
 
-Thássia
+
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-02 LOGIN/PRIMEIRO ACESSO
+### RF-02 LOGIN/PRIMEIRO ACESSO (SÓCRATIS/PEDRO)
 
 #### Requisito atendido
 
@@ -33,10 +33,10 @@ Thássia
 
 #### Responsável
 
-Sócratis/Pedro
+
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-03 IMÓVEIS
+### RF-03 IMÓVEIS (ZANDER)
 
 #### Requisito atendido
 
@@ -48,10 +48,10 @@ Sócratis/Pedro
 
 #### Responsável
 
-Zander
+
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-04 PROPRIETÁRIOS 
+### RF-04 PROPRIETÁRIOS (PEDRO)
 
 #### Requisito atendido
 
@@ -63,7 +63,7 @@ Zander
 
 #### Responsável
 
-Pedro
+
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-05 LOCATÁRIOS
@@ -77,7 +77,8 @@ Exemplo da Tela principal "Locatários"
     <figcaption>Figura 10 - Tela - Locatário</figcaption>
 </figure>
 
-<br>
+
+
 #### Requisito atendido
 
 RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.
@@ -107,7 +108,7 @@ Eduardo Wollinger
 
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-06 CONTRATOS 
+### RF-06 CONTRATOS (ZANDER)
 
 #### Requisito atendido
 
@@ -119,11 +120,10 @@ Eduardo Wollinger
 
 #### Responsável
 
-Zander
 
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-09 REQUISIÇÕES
+### RF-09 REQUISIÇÕES (ISMARLEI)
 
 #### Requisito atendido
 
@@ -135,7 +135,6 @@ Zander
 
 #### Responsável
 
-Ismarlei
 
 --------------------------------------------------------------------------------------------------------------------
 
