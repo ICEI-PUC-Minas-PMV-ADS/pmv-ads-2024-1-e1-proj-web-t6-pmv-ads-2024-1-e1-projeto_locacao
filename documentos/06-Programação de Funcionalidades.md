@@ -21,18 +21,32 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-02 LOGIN/PRIMEIRO ACESSO (SÓCRATIS/PEDRO)
+### RF-02 LOGIN/PRIMEIRO ACESSO
+
+O acesso a tela de login e primeiro acesso poderá ser feito através do menu “Entrar”. Com a inserção do e-mail e senha padrão, será encaminhado para tela de primeiro acesso para que seja feita a alteração da senha.As estruturas de dados foram baseadas em HTML, CSS e JS.
+Exemplo da tela de login: 
+<figure> 
+  <img src="img/login.png"
+    <figcaption>Figura 3 - Tela - Login</figcaption>
+</figure>
 
 #### Requisito atendido
+RF-002: A aplicação deve permitir ao usuário fazer o login em sua conta.
 
 #### Artefatos da funcionalidade
+.login_page.html
+.login_page.css
+.login_page.js
 
 #### Estrutura de Dados
 
 #### Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html
+
+Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
 
 #### Responsável
-
+Socratis Gomes da Silva
 
 --------------------------------------------------------------------------------------------------------------------
 
