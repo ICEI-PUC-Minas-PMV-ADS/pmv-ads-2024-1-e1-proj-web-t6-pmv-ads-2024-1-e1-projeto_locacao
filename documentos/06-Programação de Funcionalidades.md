@@ -39,9 +39,10 @@ RF-002: A aplicação deve permitir ao usuário fazer o login em sua conta.
 .login_page.js
 
 #### Estrutura de Dados
+login_page.html
 
 #### Instruções de acesso
-Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-1-e1-proj-web-t3-vida-de-estudante/src/paginaHome/index.html
+Abra um navegador de Internet e informe a seguinte URL: 
 
 Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
 
