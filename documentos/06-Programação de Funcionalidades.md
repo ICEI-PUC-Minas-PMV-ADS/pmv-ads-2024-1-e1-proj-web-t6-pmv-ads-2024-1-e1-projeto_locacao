@@ -1,39 +1,48 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
+Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/documentos/02-Especificação%20do%20Projeto.md), [Metodologia](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/documentos/03-Metodologia.md), [Projeto de Interface](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/documentos/04-Projeto%20de%20Interface.md), [Template Padrão da Solução](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/documentos/05-Template%20padrão%20da%20Aplicação.md)
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+### RF-05 LOCATÁRIOS
 
-### Título da funcionalidade
+Após o login o acesso a tela de gestão de inquilinos é apresentada através do menu lateral esquerdo na opção "Locatários" mostrando dados dos inquilinos.
 
-[Adicione imagem da funcionalidade/tela]
+Exemplo da Tela principal "Locatários"
+
+<figure> 
+  <img src="img/locatarios.png"
+    <figcaption>Figura 10 - Tela - Locatário</figcaption>
+</figure>
+
 
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
-
+RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.
+ 
 
 #### Artefatos da funcionalidade
+Na pasta "locatarios_page" dentro de [codigo-fonte](), foram criados os seguintes artefatos:
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+- locatarios_page.jtml
+- locatarios_page.css
+- locatarios_page.js
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+*PENDENTE*
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+*PENDENTE*
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Eduardo Wollinger
 
-
+<br>
 
 
 > **Links Úteis**:
