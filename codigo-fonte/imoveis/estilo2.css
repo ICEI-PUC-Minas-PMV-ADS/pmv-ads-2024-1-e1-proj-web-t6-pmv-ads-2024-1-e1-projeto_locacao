@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');
+
+
+body{
+    
+    color: #5bb800;
+    border-radius: 10px;
+    border-color: #5bb800;
+    border-width: 0px;
+    margin: 10%;
+    font-family: "Roboto";
+
+
+
+}
+
+.proprietario input{
+    width: 75%;
+
+
+
+}
+
+.a {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /* Cada div ocupará uma fração igual do espaço disponível */
+    grid-gap: 20px; /* Espaçamento entre as divs */
+    margin-right: 10px;
+}
+
+#Logradouro{
+    width:100%
+}
+
+#tipoLogradouro{
+    width: 20%;
+}
+
+
+
+
+.b{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cada div ocupará uma fração igual do espaço disponível */
+    grid-gap: 5px; /* Espaçamento entre as divs */
+
+}
+
+.c{
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* Cada div ocupará uma fração igual do espaço disponível */
+    grid-gap: 5px; /* Espaçamento entre as divs */
+
+
+}
+
+.c input{
+    width: 100px;
+
+}
+
+.d{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* Cada div ocupará uma fração igual do espaço disponível */
+    grid-gap: 0px; /* Espaçamento entre as divs */
+    margin-right: 20%;
+
+
+}
+
+header{
+    margin-left: 45%;
+
+}
+
+input{
+    border-radius: 6px;
+    height: 25px; 
+    border: solid #5bb800 2px;
+    font-family: "Roboto";
+}
+
+hr{
+    color: #5bb800;
+    border-color: #5bb800;
+    border-color: 3px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 0px;
+}
+
+select{
+    width: 20%;
+    border-radius: 6px;
+    height: 25px; 
+    border: solid #5bb800 2px;
+    padding: 2px;
+    height: 35px;
+    margin-right: 15%;
+    margin-top: 0px;
+}
+
+.a .a1 #numero{
+    width: 60px;
+
+
+}
+
+
+.a .a1 #Logradouro{
+    
+    margin-right: 0px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    margin-top: 0px
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #5bb800;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5bb800;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(30px);
+    transform: translateX(35px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {   
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    margin-top: 0px;
+  }
+
+  .espacamento{
+    display: flex;
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+    align-self: auto;
+  }
+.espacamento h4{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+  
+ button {
+    border-radius: 5px;
+    width: 200px;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 0%;
+    background-color: #5bb800; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .alinhar_botoes{
+    margin-left: 35%;
+  }
+
+  .alinhar_botoes img{
+    width: 50%;
+  }
+
+  button:hover {
+    background: #69D303; /* Green */
+    color: white;
+  }
+
+  button:active {
+    background-color: #69D303;
+    box-shadow: 0 3px gainsboro;
+    transform: translateY(4px);
+  }
+
+
