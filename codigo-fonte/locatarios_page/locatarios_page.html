@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locatarios</title>
+    <link rel="stylesheet" href="locatarios_page.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="locatarios_page.js"></script>
+
+</head>
+<!-- BARRA SUPERIOR -->
+<header>
+    <div class="div_logo">
+        <p><span class="immo">Immo</span><span class="control">Control</span></p></div>
+    <div class="div_titulo"><p>Locatários</p></div>
+    <div class="div_usuario">
+        <!-- Temporário: Usuário logado -->
+        <p>Eduardo Wollinger</p> 
+        <img src="../scr/icones/icon_usuario_logado.png" alt="Usuário Logado" class="icon_usuario_logado">
+    </div>
+</header>
+<!-- DELIMITAÇÃO DA TELA -->
+<div class="content">
+    <!-- MENU LATERAL -->
+    <nav>
+        <div class="sidebar_superior">
+            <hr class="divisor">
+            <button class="sidebar_button" onclick=""> <!-- Temporário: Dashboard -->
+                <img class="icon" src="../scr/icones/icon_dashboard.png" alt="Dashboard">
+                <p>Dashboard</p>
+            </button>
+            <button class="sidebar_button" onclick=""> <!-- Temporário:Proprietários -->
+                <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="Proprietários">
+                <p>Proprietários</p>
+            </button>
+            <button class="sidebar_button_selected" onclick=""> <!-- Temporário: Locarários -->
+                <img class="icon" src="../scr/icones/icon_locatarios.png" alt="Locatarios">
+                <p>Locatários</p>
+            </button>
+            <button class="sidebar_button" onclick=""> <!-- Temporário: Imóveis -->
+                <img class="icon" src="../scr/icones/icon_imoveis.png" alt="Imóveis">
+                <p>Imóveis</p>
+            </button>
+            <button class="sidebar_button" onclick="">
+                <img class="icon" src="../scr/icones/icon_contratos.png" alt="Contratos">
+                <p>Contratos</p>
+            </button>
+            <button class="sidebar_button" onclick=""> <!-- Temporário: Faturas -->
+                <img class="icon" src="../scr/icones/icon_faturas.png" alt="Faturas">
+                <p>Faturas</p>
+            </button>
+            <button class="sidebar_button" onclick=""> <!-- Temporário: Requisições -->
+                <img class="icon" src="../scr/icones/icon_requisicoes.png" alt="">
+                <p>Requisições</p>
+            </button>
+            <hr class="divisor">
+        </div>
+        <div class="sidebar_inferior">
+            <hr class="divisor">
+            <button class="sidebar_button" onclick=""> <!-- Temporário: Usuários -->
+                <img class="icon" src="../scr/icones/icon_usuarios.png" alt="Usuário">
+                <p>Usuários</p>
+            </button>
+        </div>
+    </nav>  
+    <!-- TELA PRINCIPAL -->
+    <main id="table_owners"> 
+        <div class="div_table_locatarios">
+            <p>Locatários</p>
+            <div class="div_table_locatarios_group_buttons">
+                <button class="div_table_locatarios_button" onclick="">
+                    <img class="icon" src="../scr/icones/icon_button_filtrar.png" alt="">
+                </button>
+                <button class="div_table_locatarios_button" onclick="abrir_popup_novo_locatario()">
+                    <img class="icon" src="../scr/icones/icon_button_adicionar.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="div_table_header">
+            <div class="table_icon"></div>
+            <div class="table_id">
+                ID
+            </div>
+            <div class="table_name">
+                NOME
+            </div>
+            <div class="table_locatario">
+                TELEFONE
+            </div>
+            <div class="table_status">
+                E-MAIL
+            </div>
+            <div class="table_status">
+                STATUS
+            </div>
+            <div class="table_button"></div>
+        </div>
+        <hr class="divisor">
+        <div id="table_list"></div>
+    </main>
+</div>
+
+
+</html>

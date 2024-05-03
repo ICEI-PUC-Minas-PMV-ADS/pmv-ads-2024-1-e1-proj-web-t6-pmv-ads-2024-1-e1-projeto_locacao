@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login_page.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
+</head>
+
+<body onload="iniciar_banco()">
+    <div id="tela_login" class="login">
+        <div class="div_logo">
+            <p><span class="immo">Immo</span><span class="control">Control</span></p>
+        </div>
+        <div class="content">
+            <h1>SEJA BEM VINDO</h1>
+            <p>INSIRA SUAS CREDENCIAIS PARA ACESSA A PLATAFORMA</p>
+            <div class="input_email">
+                <label for="email">E-MAIL</label>
+                <input type="text" name="email" id="email" class="inputSuccess" onblur="return set_input_success(this)">
+            </div>
+            <div class="input_senha">
+                <label for="senha">SENHA</label>
+                <input type="password" name="senha" id="senha" class="inputSuccess"
+                    onblur="return set_input_success(this)">
+            </div>
+            <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECI MINHA SENHA</button>
+            <button class="logar" onclick="verica_usuario()">ENTRAR</button>
+        </div>
+    </div>
+    <div id="snackbar_success" class="snackbar"></div>
+    <div id="snackbar_error" class="snackbar"></div>
+    <dialog id="popup_esqueceu_senha" class="popup">
+        <div class="conteudo_popup">
+            <div class="informe_email">
+                <h1>INFORME O E-MAIL CADASTRADO:</h1>
+            </div>
+            <label for="email_cadastrado">E-MAIL</label>
+            <input type="text" id="email_cadastrado" class="inputSuccess" onblur="return set_input_success(this)">
+            <button id="btn_enviar_senha" class="btn_popup" onclick="enviar_email()">ENVIAR SENHA</button>
+        </div>
+        <div id="snackbar_error" class="snackbar"></div>
+    </dialog>
+    <dialog id="enviar_senha" class="popup">
+        <div class="conteudo_popup">
+            <div class="envia_senha_com_sucesso">
+                <p id="email_enviado" class="senha_padrao_enviada"></p>
+            </div>
+            <button id="btn_voltar" class="btn_popup">VOLTAR</button>
+        </div>
+    </dialog>
+    <dialog id="popup_primeiro_acesso" class="popup">
+        <div class="conteudo_popup">
+            <div class="div_logo">
+                <p><span class="immo">Immo</span><span class="control">Control</span></p>
+            </div>
+            <div class="conteudo_popup">
+                <div class="primeiro_acesso_conta">
+                    <h1>PRIMEIRO ACESSO</h1>
+                    <p>CRIE SUA NOVA SENHA DE ACESSO</p>
+                </div>
+
+                <div>
+                    <label for="senha_antiga">SENHA ANTIGA</label>
+                    <input type="password" id="senha_antiga" class="inputSuccess" onblur="return set_input_success(this)">
+                </div>
+                <div>
+                    <label id="nova_senha">NOVA SENHA</label>
+                    <input type="password" id="senha_nova" class="inputSuccess" onblur="return set_input_success(this)">
+                </div>
+                <div>
+                    <label id="confirmar_senha">CONFIRMAR NOVA SENHA</label>
+                    <input type="password" id="senha_confirmada" class="inputSuccess"
+                        onblur="return set_input_success(this)">
+                </div>
+
+                <div class="confirmar">
+                    <button class="btn_popup" id="btn_confirmar" onclick="alterar_senha()">CONFIRMAR</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="snackbar_error" class="snackbar"></div>
+    </dialog>
+    
+    <script src="login_page.js"></script>
+
+</body>
+
+</html>

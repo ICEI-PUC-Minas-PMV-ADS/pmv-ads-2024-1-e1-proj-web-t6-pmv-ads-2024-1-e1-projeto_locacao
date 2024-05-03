@@ -1,0 +1,270 @@
+*{
+    margin: 0; padding: 0px; box-sizing:border-box;
+}
+:root {
+    --green: #5BB800;
+    --white: #ffffff;
+    --black: #000000;
+    --light-black: rgb(0 0 0 / .5);
+    --light-grey: #F8F9FA;
+    --grey: #E0E1E2;
+    --dark-grey: #A0AEC0;
+    --font-size-button: 16px;
+    --red: #B83700;
+
+}
+
+body {
+    background-color: var(--white);
+    font-family: 'Roboto', sans-serif;
+     width: 100%;
+     height: 100%; 
+}
+
+.immo {
+    align-items: center;
+    color: var(--black);
+    font-weight: normal;
+    font-size: 40px;
+    float: left;
+}
+
+.control {   
+    color: var(--green);
+    font-weight:600;
+    font-size: 40px;
+ }
+
+.login{
+    background-color: var(--light-grey);
+    max-width: 500px;
+    width: 70%;
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 7px 7px 0px var(--grey);          
+}
+
+
+.content h1{
+    font-size: large;   
+}
+
+.content p{    
+    font-size: medium;
+    font-weight: bold;
+}
+
+label{
+    margin-left: 10px;
+    font-size:small;
+    font-weight: bold;
+}
+
+.logar{
+    background-color: var(--green);
+    border: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    border-radius: 12px;
+    color: var(--white);
+    font-weight: bold;
+    margin: 0px 0px 50px;
+}
+ 
+.logar:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--black);
+    background-color: var(--grey);
+}
+
+.div_logo {
+    display: flex;
+    min-width: fit-content;
+    max-width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;   
+    height: 50px;
+    margin: 40px auto 30px auto;    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 65%;
+    color: var(--green)
+}
+
+.popup{
+    width: 70%;
+    max-width: 500px;     
+    align-self: center;
+    background-color: var(--light-grey);
+    color: var(--green);
+    border-radius: 20px;
+    flex-direction: column;
+    justify-self: center;
+    border: none;
+}
+
+.popup::backdrop{
+    background-color: var(--light-black);
+}
+
+.conteudo_popup{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 15px; 
+    margin:  0 auto 0 auto;
+}
+
+.informe_email{
+    display: flex;
+    margin: 60px 0 90px 0;
+}
+
+.envia_senha_com_sucesso{
+    display: flex;
+    margin: 70px 0 0 0;
+}
+
+.conteudo_popup p{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.conteudo_popup h1{
+    font-size: large;
+}
+
+.conteudo_popup label{
+    margin: 25px 0 -15px 0;
+}
+
+.primeiro_acesso_conta h1{
+    margin: -15 0 15px 0;
+    padding: 0 0 20px 0
+}
+
+.primeiro_acesso_conta p{
+    font-size: medium;
+}
+
+.btn_esqueci_senha{
+    font-size:small;
+    font-weight: bold;
+    width: 50%;
+    height: 20px;
+    border:none;
+    color: var(--green);
+    margin: 0px 0px 0px 5px;
+    background-color: var(--light-grey);
+}
+
+.btn_esqueci_senha:hover{
+    color: var(--black);
+}
+
+.btn_popup{
+    background-color: var(--green);
+    border: 0;
+    width: 70%;
+    height: 40px;
+    border-radius: 12px;
+    padding: 10px;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    margin: 40px auto;
+}
+
+.senha_padrao_enviada{
+    padding: 85px 10px 80px 10px;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    line-height: 50px;
+}
+
+.email_invalido{
+    padding: 85px 10px 80px 10px;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.atencao{
+    padding: 85px 10px 80px 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 100px;
+    color: var(--red)
+}
+
+.email_erro{
+    padding: 85px auto 80px auto;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    line-height: 60px;
+    color:var(--black);
+}
+
+.email{
+    color: var(--black);
+}
+
+.confirmar .btn_popup{
+    width: 100%;
+    margin: 20px auto 20px auto;
+}
+
+.confirmar button:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--black);
+    background-color: var(--grey);
+}
+
+.senha_antiga_nova label{
+    margin: 10px;
+    font-size:small;
+    font-weight: bold;
+
+}
+
+.inputSuccess {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--green);
+    border-radius: 12px;
+    margin: 4px auto; 
+    align-items: center;
+    padding-left: 10px;  
+}
+
+.inputError{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--red);
+    border-radius: 12px;
+    margin: 4px auto; 
+    align-items: center;
+    padding-left: 10px;  
+}
+

@@ -1,0 +1,16 @@
+Atalhos
+- Envelopar = CTRL + Shif + P
+- Comentários = CTRL + ;
+
+
+OBSERVAÇÕES SOBRE O CÓDIGO
+- No HTML identificar a linguagem: <html lang="pt-br">
+- NO HTML idenfificar a codificação padrão: <meta charset="UTF-8">
+- Colocar sempre UTF-8
+
+CODIFICAR CLASSES
+- em HTML é id = em CSS é #
+- em HTML é class = em CSS é .
+
+EXEMPLO DE CRUD
+https://replit.com/@eduardowollinge/Cadastro-de-Contatos-localStorage-1#lista_contatos.html
