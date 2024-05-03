@@ -128,7 +128,7 @@ function my_doughnut_chart() {
     const dados_imoveis = JSON.parse(localStorage.getItem('imoveis'))
     let locado = 0
     let vago = 0
-
+    
     dados_imoveis.map((imovel) => {
         if (imovel.statusLocacao) {
             locado ++
@@ -155,7 +155,7 @@ function my_doughnut_chart() {
         data: data,
         options: {
             legend: {
-                fontColor: '#5BB800'
+                fontColor: '#5BB800' //VERIFICAR PORQUE NÃO ESTÁ ALTERANDO A COR DA FONTE DA LEGENDA DO GRAFICO DE PIZZA
                
             }
          },
