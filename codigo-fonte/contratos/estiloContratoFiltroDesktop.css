@@ -1,0 +1,115 @@
+
+
+
+* {
+    font-family: "Roboto";
+    color: #5BB800;
+   
+
+}
+
+hr{
+    border:none;
+    height: 2px;
+    background-color: #5BB800;
+    
+}
+
+body{
+    margin-right:  30px;
+    margin-left:  30px;
+}
+
+.alinhamento{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.alinhamento > label {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.alinhamento > label > input{
+    width: 100%;
+    color: #5BB800;
+   
+}
+h5{
+    margin: 0px;
+}
+
+.checar > label{
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checar > label > input{
+    color: #5BB800;
+}
+
+input{
+    height: 20px;
+    border-radius: 4px;
+    border-color: #5BB800;
+    border: solid;
+}
+
+
+
+/* botoes*/
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;/*
+    margin-left: 35%;
+    margin-right: 25%;*/
+    button {
+        column-gap: 30px;
+        border-radius: 7px;
+        width: 150px;
+        display: flex;
+        background-color: #5bb800;
+        border: none;
+        color: white;
+        padding-bottom: 10px;
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        height: 35px;
+        align-items: center;
+
+    }
+
+    .flutuar {
+        float: right;
+    }
+
+    button:hover {
+        background: #69D303;
+        /* Green */
+        color: white;
+    }
+
+    button:active {
+        background-color: #69D303;
+        box-shadow: 0 3px gainsboro;
+        transform: translateY(4px);
+    }
+
+
+
+    img {
+        margin-top: 5px;
+        height: 25px;
+    }
+
+
+    
+}
