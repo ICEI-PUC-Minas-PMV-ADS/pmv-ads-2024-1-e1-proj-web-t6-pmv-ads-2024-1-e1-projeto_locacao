@@ -574,5 +574,19 @@ input[type="checkbox"]{
     grid-area: email;
 }
 
+hr.divisor {
+    border-top: 1px solid var(--grey);
+}
+
+.div_table_header {
+    margin: 20px 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    font-size: 12px;
+    font-weight: bold;
+}
+
 
 

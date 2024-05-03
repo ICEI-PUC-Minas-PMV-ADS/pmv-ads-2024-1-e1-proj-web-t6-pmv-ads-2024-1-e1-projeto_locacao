@@ -31,6 +31,8 @@
             <button class="logar" onclick="verica_usuario()">ENTRAR</button>
         </div>
     </div>
+    <div id="snackbar_success" class="snackbar"></div>
+    <div id="snackbar_error" class="snackbar"></div>
     <dialog id="popup_esqueceu_senha" class="popup">
         <div class="conteudo_popup">
             <div class="informe_email">
@@ -40,6 +42,7 @@
             <input type="text" id="email_cadastrado" class="inputSuccess" onblur="return set_input_success(this)">
             <button id="btn_enviar_senha" class="btn_popup" onclick="enviar_email()">ENVIAR SENHA</button>
         </div>
+        <div id="snackbar_error" class="snackbar"></div>
     </dialog>
     <dialog id="enviar_senha" class="popup">
         <div class="conteudo_popup">
@@ -62,8 +65,7 @@
 
                 <div>
                     <label for="senha_antiga">SENHA ANTIGA</label>
-                    <input type="password" id="senha_antiga" class="inputSuccess"
-                        onblur="return set_input_success(this)">
+                    <input type="password" id="senha_antiga" class="inputSuccess" onblur="return set_input_success(this)">
                 </div>
                 <div>
                     <label id="nova_senha">NOVA SENHA</label>
@@ -81,9 +83,9 @@
 
             </div>
         </div>
+        <div id="snackbar_error" class="snackbar"></div>
     </dialog>
-    <div id="snackbar_success" class="snackbar"></div>
-    <div id="snackbar_error" class="snackbar"></div>
+    
     <script src="login_page.js"></script>
 
 </body>

@@ -14,8 +14,6 @@ btn_volta.addEventListener('click', function () {
     voltar_login.close()
 })
 
-
-
 function iniciar_banco_usuarios() {
     let valid_usuario = JSON.parse(localStorage.getItem('usuarios'))
     console.log(valid_usuario)
@@ -58,7 +56,6 @@ function iniciar_banco_usuarios() {
 function iniciar_banco() {
 
     iniciar_banco_usuarios()
-
 }
 
 //Função de autenticação do usuario (ativo, inativo)
@@ -86,6 +83,7 @@ function verica_usuario() {
         show_snackbar('body #snackbar_error', 'E-MAIL OU SENHA INVÁLIDOS')
         pega_usuario.className = 'inputError'
         pega_senha.className = 'inputError'
+        
     }
 }
 
@@ -95,22 +93,29 @@ function alterar_senha() {
     let confirmar_senha = document.getElementById("senha_confirmada")
     let fecha_popup = document.getElementById('popup_primeiro_acesso')
     let usuario_autenticado = JSON.parse(localStorage.getItem("usuario_autenticado"))
+    
 
     if (senha_antiga.value == usuario_autenticado.senha && nova_senha.value == confirmar_senha.value) {
-        usuario_autenticado.senha = nova_senha.value
-        usuario_autenticado.primeiro_acesso = false
-        fecha_popup.close()
+        if(nova_senha.value != "" && confirmar_senha != ""){
+            usuario_autenticado.senha = nova_senha.value
+            usuario_autenticado.primeiro_acesso = false
+            fecha_popup.close()
+        }else{
+            show_snackbar('#popup_primeiro_acesso #snackbar_error', 'INFORME E CONFIRME NOVA SENHA')
+            nova_senha.className = 'inputError'
+            confirmar_senha.className = 'inputError'
+        } 
         
     } else if (nova_senha.value !== confirmar_senha.value && senha_antiga.value == 123) {
-        show_snackbar('body #snackbar_error', 'NOVA SENHA DIFERENTE DA SENHA CONFIRMADA')
+        show_snackbar('#popup_primeiro_acesso #snackbar_error', 'NOVA SENHA DIFERENTE DA SENHA CONFIRMADA')
         nova_senha.className = 'inputError'
         confirmar_senha.className = 'inputError'
         // alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA")
     } else if (senha_antiga.value !== 123 && nova_senha.value == confirmar_senha.value) {
-        show_snackbar('body #snackbar_error', 'SENHA ANTIGA INCORRETA')
+        show_snackbar('#popup_primeiro_acesso #snackbar_error', 'SENHA ANTIGA INCORRETA')
         senha_antiga.className = 'inputError'
     } else {
-        show_snackbar('body #snackbar_error', 'SENHAS INCORRETAS')
+        show_snackbar('#popup_primeiro_acesso #snackbar_error', 'SENHAS INCORRETAS')
         nova_senha.className = 'inputError'
         confirmar_senha.className = 'inputError'
         senha_antiga.className = 'inputError'
@@ -123,8 +128,6 @@ function alterar_senha() {
         } else { return usuario }
     })
     localStorage.setItem('usuarios', JSON.stringify(novos_usuarios))
-    
-    
 }
 
 //Função apra Enviar senha padrão para o e-mail informado
@@ -150,7 +153,7 @@ function enviar_email() {
         open_enviar_senha.showModal()
         emailEnviado.innerHTML = `SENHA ENVIADA COM SUCESSO PARA O E-MAIL: <span class="email">${enviar_email.value}</span> `
     } else {
-        show_snackbar('body #snackbar_error', 'INFORME O E-MAIL CADASTRADO')
+        show_snackbar('#popup_esqueceu_senha #snackbar_error', 'INFORME O E-MAIL CADASTRADO')
         enviar_email.className = 'inputError'
     }
 
