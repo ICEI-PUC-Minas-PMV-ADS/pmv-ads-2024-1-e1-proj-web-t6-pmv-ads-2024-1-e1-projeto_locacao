@@ -1,0 +1,115 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="filtro.css">
+    <link rel="import" href="url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');">
+    
+</head>
+
+<body>
+
+        <h1>Filtro</h1>
+
+        <h4>DADOS DO IMÓVEL</h4>
+        <hr>
+
+        <div class="id_tipo">
+            <div class="id">
+                <label for="id">ID</label><br>
+                <input type="text" id="id" name="id">
+            </div>
+
+
+            <div class="tipo">
+                <label for="tipo">TIPO</label><br>
+                <input type="text" name="tipo" id="tipo">
+            </div>
+
+        </div>
+
+        <div class="Logradouro">
+            <label for="Logradouro">LOGRADOURO</label><br>
+            <input type="text" id="Logradouro" name="Logradouro">
+
+        </div>
+
+        <div class="cidade_cep">
+            <div class="cidade">
+                <label for="cidade">CIDADE</label><br>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+
+            <div class="cep">
+                <label for="cep">CEP</label><br>
+                <input type="text" name="cep" id="cep">
+            </div>
+
+
+        </div>
+
+        <div class="status_vacancia">
+
+            <div class="status">
+                <h4>STATUS</h4>
+                <hr>
+
+                <label class="container">Todos
+                    <input type="radio" checked="checked" name="radio1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Adimplente
+                    <input type="radio" name="radio1">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Inadimplente
+                    <input type="radio" name="radio1">
+                    <span class="checkmark"></span>
+                </label>
+
+
+            </div>
+
+
+            <div class="vacancia">
+                <h4>VACÂNCIA</h4>
+                <hr>
+
+                <label class="container">Todos
+                    <input type="radio" checked="checked" name="radio2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Locado
+                    <input type="radio" name="radio2">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Vago
+                    <input type="radio" name="radio2">
+                    <span class="checkmark"></span>
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="alinhar_botoes">
+            <button id="voltar_principal"> <img src="/codigo-fonte/scr/icones/voltar.png" alt=""> </button>
+            <button id="filtrar_imoveis"> <img src="/codigo-fonte/scr/icones/filtrar.png" alt=""> </button>
+        </div>
+        
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

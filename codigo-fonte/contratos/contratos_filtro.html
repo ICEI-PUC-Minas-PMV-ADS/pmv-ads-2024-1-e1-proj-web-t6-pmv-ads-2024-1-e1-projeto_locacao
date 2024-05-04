@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"   media="(min-width: 501px)" href="estiloContratoFiltroDesktop.css">
+    <link rel="stylesheet"   media="(max-width: 501px)" href="estiloContratoFiltroDesktop.css">
+    <title>Filtro de contratos</title>
+</head>
+
+<body>
+
+
+    <h1>Filtros</h1>
+    <h4 class="titulos">Dados do Contrato
+        <hr>
+    </h4>
+
+
+    <div class="alinhamento" >
+        <label class="titulos" for="id">ID<br>
+            <input type="text" name="id" id="id">
+
+        </label>
+        
+        <label class="titulos" for="proprietario">Proprietário <br>
+            <input type="text" name="proprietario" id="proprietario">
+        </label>
+
+        <label class="titulos" for="locatario">Locatário <br>
+            <input type="text" name="locatario" id="locatario">
+        </label>
+    </div>
+
+        <h4 class="titulos">Status
+            <hr>
+        </h4>
+
+
+    <div class="checar">
+        
+        <label class="switch">
+            <input type="radio" name="escolha" value="todos"><h5>TODOS</h5>
+        </label>
+        <label class="switch">
+            <input type="radio" name="escolha" value="ativo"><h5>ATIVO</h5>
+        </label>
+        <label class="switch">
+            <input type="radio" name="escolha" value="inativo"><h5>INATIVO</h5>
+        </label>  
+          
+    </div>
+
+
+    <div class="botoes">
+        <button><img src="/codigo-fonte/scr/icones/voltar.png" alt=""></button>
+        <button class="flutuar"><img src="/codigo-fonte/scr/icones/filtrar.png" alt=""></button>
+    </div>
+    
+
+
+</body>
+
+</html>
