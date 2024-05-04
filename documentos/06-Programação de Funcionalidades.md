@@ -102,9 +102,9 @@ RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquili
 #### Artefatos da funcionalidade
 Na pasta "locatarios_page" dentro de [codigo-fonte](), foram criados os seguintes artefatos:
 
-● locatarios_page.jtml
-● locatarios_page.css
-● locatarios_page.js
+● locatarios_page.jtml <br>
+● locatarios_page.css <br>
+● locatarios_page.js <br>
 
 
 #### Estrutura de Dados
