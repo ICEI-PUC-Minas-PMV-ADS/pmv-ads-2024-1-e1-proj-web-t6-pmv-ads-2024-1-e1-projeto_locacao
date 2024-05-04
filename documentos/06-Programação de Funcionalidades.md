@@ -21,18 +21,33 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 --------------------------------------------------------------------------------------------------------------------
 
-### RF-02 LOGIN/PRIMEIRO ACESSO (SÓCRATIS/PEDRO)
+### RF-02 LOGIN / PRIMEIRO ACESSO
+
+O acesso a tela de login e primeiro acesso poderá ser feito através do menu “Entrar”. Com a inserção do e-mail cadastrado e senha padrão que será fornecida previamente. As estruturas de dados foram baseadas em HTML, CSS e JS.
+Exemplo da tela de login: 
+<figure> 
+  <img src="img/login.png"
+    <figcaption>Figura 2 - Tela - Login</figcaption>
+</figure>
 
 #### Requisito atendido
+RF-02: A aplicação deve permitir ao usuário fazer o login em sua conta.
 
 #### Artefatos da funcionalidade
+● login_page.html <br>
+● login_page.css<br>
+● login_page.js<br>
 
 #### Estrutura de Dados
+● [login_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/a936b66e6ee5f9aa713dc2ea084a9a78b23a7fef/codigo-fonte/template_login/login_page.html)
 
 #### Instruções de acesso
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/template_login/login_page.html
+
+Ao clicar em “ENTRAR” na parte inferior, será direcionado para a tela de primeiro acesso sendo necessário a alteração da senha padrão e, portanto, a liberação de login ao sistema.
 
 #### Responsável
-
+Socratis Gomes da Silva
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -87,9 +102,9 @@ RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquili
 #### Artefatos da funcionalidade
 Na pasta "locatarios_page" dentro de [codigo-fonte](), foram criados os seguintes artefatos:
 
-- locatarios_page.jtml
-- locatarios_page.css
-- locatarios_page.js
+● locatarios_page.jtml <br>
+● locatarios_page.css <br>
+● locatarios_page.js <br>
 
 
 #### Estrutura de Dados

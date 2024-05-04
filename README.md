@@ -41,7 +41,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 # Código-Fonte
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+* <a href="/README.md">Código Fonte</a>
 
 # Apresentação
 
