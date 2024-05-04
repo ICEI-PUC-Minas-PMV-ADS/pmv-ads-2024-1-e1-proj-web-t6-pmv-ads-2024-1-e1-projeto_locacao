@@ -34,12 +34,12 @@ Exemplo da tela de login:
 RF-002: A aplicação deve permitir ao usuário fazer o login em sua conta.
 
 #### Artefatos da funcionalidade
-.login_page.html
-.login_page.css
-.login_page.js
+-login_page.html <br>
+-login_page.css<br>
+-login_page.js<br>
 
 #### Estrutura de Dados
-![login_page.html](pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/template_login/login_page.html at main · ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao · GitHub)
+![login_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao.git/codigo-fonte/template_login/login_page.html))
 
 #### Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: 
