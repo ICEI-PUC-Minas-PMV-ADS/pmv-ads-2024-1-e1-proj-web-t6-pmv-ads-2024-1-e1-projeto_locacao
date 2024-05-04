@@ -793,7 +793,7 @@ function iniciar_banco_proprietarios() {
     let proprietarios = [
         {
             id: 1,
-            nome: "Pedro Francis Maia Coelho",
+            nome: "Proprietario 1",
             cpf: "99999999999",
             estado_civil: "casado",
             telefone: "31999999999",
@@ -816,7 +816,7 @@ function iniciar_banco_proprietarios() {
         },
         {
             id: 2,
-            nome: "Sócratis Gomes da Silva",
+            nome: "Proprietario 2",
             cpf: "11111111111",
             estado_civil: "solteiro",
             telefone: "31911111111",
@@ -838,7 +838,7 @@ function iniciar_banco_proprietarios() {
         },
         {
             id: 3,
-            nome: "Sócratis Gomes da Silva 2",
+            nome: "Proprietario 3",
             cpf: "11111111111",
             estado_civil: "solteiro",
             telefone: "31911111111",
