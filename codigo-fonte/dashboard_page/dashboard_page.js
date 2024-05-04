@@ -10,7 +10,7 @@ function my_bar_chart() {
 
     const barColors = '#5BB800'
     const faturas = JSON.parse(localStorage.getItem('faturas'))
-    console.log(faturas)
+    
     let meses = {
         janeiro: {
             value: 0,
@@ -71,7 +71,7 @@ function my_bar_chart() {
             })
         }
     })
-    console.log(meses)
+    
     let valores = [
         meses.janeiro.value,
         meses.feveiro.value,
@@ -86,7 +86,7 @@ function my_bar_chart() {
         meses.novembro.value,
         meses.dezembro.value
     ]
-    console.log(valores)
+    
 
 
 
@@ -207,30 +207,30 @@ function iniciar_banco_faturas() {
             status_pgto: true
         },
         {
-            id: 6,
+            id: 8,
             data_pgto: '05/08/2024',
             valor: 5000,
             status_pgto: true
         },
         {
-            id: 7,
+            id: 9,
             data_pgto: '05/09/2024',
             valor: 4000,
             status_pgto: true
         },
         {
-            id: 7,
+            id: 10,
             data_pgto: '05/10/2024',
             valor: 4500,
             status_pgto: true
         },
         {
-            id: 7,
+            id: 11,
             data_pgto: '05/11/2024',
             valor: 3000,
             status_pgto: true
         },{
-            id: 7,
+            id: 12,
             data_pgto: '05/12/2024',
             valor: 4500,
             status_pgto: true
@@ -239,9 +239,8 @@ function iniciar_banco_faturas() {
     
     if (valid_faturas == null) {
         localStorage.setItem('faturas', JSON.stringify(faturas))
-    }
-
-    
+    }    
+       
 }
 
 function iniciar_banco_imoveis() {
@@ -313,3 +312,44 @@ function iniciar_banco_imoveis() {
         localStorage.setItem('imoveis', JSON.stringify(imoveis))
     }
 }
+
+let dataAtual = Date()
+console.log(dataAtual)
+
+
+
+
+
+// function vencimento(id, periodo, valor, status) {
+//     var node = document.getElementById('table_list')
+//     node.innerHTML = ""
+
+//     console.log(node)
+
+//     let id_value = id
+//     let periodo_value = nome
+//     let valor_value = cpf
+
+//     if (id_value == "") {
+//         id_value = null
+//     }
+//     console.log(id)
+
+//     if (periodo_value == "") {
+//         periodo_value = null
+//     }
+
+//     if (valor_value == "") {
+//         valor_value = null
+//     }
+
+//     let table = document.getElementById('table_list')
+//     let faturas = JSON.parse(localStorage.getItem('faturas'))
+
+//     if (id_value != null) {
+//         console.log(alert("vazio"))
+//     }else{alert("outra coisa")}
+
+    
+// }
+
