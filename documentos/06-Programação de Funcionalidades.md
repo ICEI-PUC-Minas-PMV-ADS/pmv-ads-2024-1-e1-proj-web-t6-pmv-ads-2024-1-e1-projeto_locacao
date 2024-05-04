@@ -100,7 +100,7 @@ RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquili
  
 
 #### Artefatos da funcionalidade
-Na pasta "locatarios_page" dentro de [codigo-fonte](), foram criados os seguintes artefatos:
+Foram criados os seguintes artefatos:
 
 ● locatarios_page.jtml <br>
 ● locatarios_page.css <br>
@@ -108,13 +108,12 @@ Na pasta "locatarios_page" dentro de [codigo-fonte](), foram criados os seguinte
 
 
 #### Estrutura de Dados
-
-*PENDENTE*
+A Estrutura de dados está localizada em: [locatarios_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/tree/main/codigo-fonte/locatarios_page)
 
 
 #### Instruções de acesso
 
-*PENDENTE*
+Após acessar o sistema clicar no menu lateral esquerdo clicar em "Locatários"
 
 
 #### Responsável
