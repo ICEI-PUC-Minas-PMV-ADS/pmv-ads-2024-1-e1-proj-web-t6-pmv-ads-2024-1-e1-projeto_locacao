@@ -57,7 +57,7 @@ function proprietarios(id, nome, cpf, status) {
             table.innerHTML += `
                     <div class="div_table_row">
                         <div class="table_icon">
-                            <img class="icon" src="../scr/icones/icon_proprietarios_selecionado.png" alt="">
+                            <img class="icon" src="../src/icones/icon_proprietarios_selecionado.png" alt="">
                         </div>
                         <div class="table_id">
                             ${proprietario.id}
@@ -77,7 +77,7 @@ function proprietarios(id, nome, cpf, status) {
                         </div>
                         <div class="table_button">
                             <button class="open_button" data-button='${dados}' onclick="return abrir_popup_dados_proprietario(this)">
-                                <img class="open_icon" src="../scr/icones/icon_ver_dados.png" alt="">
+                                <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
                             </button>
                         </div>
                     </div>
@@ -85,7 +85,6 @@ function proprietarios(id, nome, cpf, status) {
             table.innerHTML += '<hr class="divisor"></hr>'
         })
 
-        show_snackbar('body #snackbar_success', proprietarios.length == 1 ? "Um proprietário foi encontrado!" : `Foram encontrados ${proprietarios.length} proprietários!`)
     } else {
         show_snackbar('body #snackbar_error', 'Nenhum proprietário foi encontrado!')
     }
@@ -270,11 +269,11 @@ function abrir_popup_dados_proprietario(e) {
                 
                 <div class="buttons">
                     <button onclick="fechar_popup_dados_proprietario()">
-                        <img class="icon" src="../scr/icones/icon_voltar.png" alt="">
+                        <img class="icon" src="../src/icones/icon_voltar.png" alt="">
                         VOLTAR
                     </button>
                     <button onclick="alterar_dados_proprietario()">
-                        <img class="icon" src="../scr/icones/icon_alterar.png" alt="">
+                        <img class="icon" src="../src/icones/icon_alterar.png" alt="">
                         ALTERAR
                     </button>
                 </div>
@@ -303,7 +302,7 @@ function alterar_dados_proprietario() {
 
     buttons.innerHTML += `
         <button onclick="salvar_dados_proprietario()">
-            <img class="icon" src="../scr/icones/icon_salvar.png" alt="">
+            <img class="icon" src="../src/icones/icon_salvar.png" alt="">
             SALVAR
         </button>
     `
@@ -456,7 +455,7 @@ function salvar_dados_proprietario() {
 
         buttons.innerHTML += `
             <button onclick="alterar_dados_proprietario()">
-                <img class="icon" src="../scr/icones/icon_alterar.png" alt="">
+                <img class="icon" src="../src/icones/icon_alterar.png" alt="">
                 ALTERAR
             </button>
         `
@@ -596,11 +595,11 @@ function abrir_popup_novo_proprietario() {
                 
                 <div class="buttons">
                     <button onclick="fechar_popup_novo_proprietario()">
-                        <img class="icon" src="../scr/icones/icon_voltar.png" alt="">
+                        <img class="icon" src="../src/icones/icon_voltar.png" alt="">
                         VOLTAR
                     </button>
                     <button onclick="salvar_novo_proprietario()">
-                        <img class="icon" src="../scr/icones/icon_salvar.png" alt="">
+                        <img class="icon" src="../src/icones/icon_salvar.png" alt="">
                         SALVAR
                     </button>
                 </div>
