@@ -23,7 +23,7 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 ### RF-02 LOGIN / PRIMEIRO ACESSO
 
-O acesso a tela de login e primeiro acesso poderá ser feito através do menu “Entrar”. Com a inserção do e-mail e senha padrão que será fornecida previamente, após esse procedimento será direcionado para tela de primeiro acesso sendo necessário a alteração da senha. As estruturas de dados foram baseadas em HTML, CSS e JS.
+O acesso a tela de login e primeiro acesso poderá ser feito através do menu “Entrar”. Com a inserção do e-mail cadastrado e senha padrão que será fornecida previamente. As estruturas de dados foram baseadas em HTML, CSS e JS.
 Exemplo da tela de login: 
 <figure> 
   <img src="img/login.png"
@@ -44,7 +44,7 @@ RF-02: A aplicação deve permitir ao usuário fazer o login em sua conta.
 #### Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/template_login/login_page.html
 
-Ao clicar em “ENTRAR” na parte inferior da tela, terá acesso a página de primeiro acesso.
+Ao clicar em “ENTRAR” na parte inferior da tela, será direcionado para tela de primeiro acesso sendo necessário a alteração da senha padrão.
 
 #### Responsável
 Socratis Gomes da Silva
