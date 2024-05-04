@@ -44,7 +44,7 @@ RF-02: A aplicação deve permitir ao usuário fazer o login em sua conta.
 #### Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/template_login/login_page.html
 
-Ao clicar em “ENTRAR” na parte inferior da tela, será direcionado para tela de primeiro acesso sendo necessário a alteração da senha padrão.
+Ao clicar em “ENTRAR” na parte inferior, será direcionado para a tela de primeiro acesso sendo necessário a alteração da senha padrão e, portanto, a liberação de login ao sistema.
 
 #### Responsável
 Socratis Gomes da Silva
