@@ -31,7 +31,7 @@ Exemplo da tela de login:
 </figure>
 
 #### Requisito atendido
-RF-002: A aplicação deve permitir ao usuário fazer o login em sua conta.
+RF-02: A aplicação deve permitir ao usuário fazer o login em sua conta.
 
 #### Artefatos da funcionalidade
 ● login_page.html <br>
