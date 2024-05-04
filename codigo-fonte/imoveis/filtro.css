@@ -173,7 +173,6 @@ input{
 
   /* botoes de filtrar e voltar*/
 
-
   button {
     border-radius: 5px;
     width: 200px;
@@ -198,8 +197,8 @@ input{
 
   }
 
-  .alinhar_botoes img{
-    width: 50%;
+  .alinhar_botoes button img{
+    width: 70%;
   }
 
   button:hover {
@@ -231,8 +230,6 @@ input{
     font-size: 16px;
     margin-right: 20px;
   }
-
- 
 
   .alinhar_botoes img{
     width: 50%;
