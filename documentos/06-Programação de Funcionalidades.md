@@ -68,15 +68,34 @@ Socratis Gomes da Silva
 
 ### RF-04 PROPRIETÁRIOS (PEDRO)
 
+Responsável: Pedro Francis Maia Coelho
+
+O acesso a tela de proprietários poderá ser feito através da opção "Proproetários" no menu lateral a esquerda de qualquer página após o login.
+
+Exemplo da tela de proprietários:
+<figure> 
+  <img src="img/tela_de_proprietarios.png"
+    <figcaption>Figura 4 - Tela de Proprietários</figcaption>
+</figure>
+
 #### Requisito atendido
+
+RF-04: A aplicação deve permitir ao usuário cadastrar/alterar/pesquisar informações dos proprietários.
 
 #### Artefatos da funcionalidade
 
+* proprietarios_page.css
+* proprietarios_page.html
+* proprietarios_page.js
+
 #### Estrutura de Dados
+
+[proprietarios_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/proprietarios_page/proprietarios_page.html)
 
 #### Instruções de acesso
 
-#### Responsável
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/proprietarios_page/proprietarios_page.html
+
 
 
 --------------------------------------------------------------------------------------------------------------------
