@@ -6,22 +6,17 @@
     <meta charset="UTF-8">
     <title>Imoveis</title>
     <link rel="stylesheet" href="estilos.css">
-    <title>Imóveis</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="imoveis.js" defer></script>
+
+    
 </head>
 
 <body style="background-color: #F5F5F5; font-family: Roboto;">
-
-    
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide">
-        <iframe src="imoveis_filtro.html" frameborder="0" width="400px" height="600px"></iframe>
-    </div>
-    
+    <div id="fade"></div>
     <div class="container" style="background-color: #F5F5F5;">
 
         <header style="background-color: #F5F5F5;">
@@ -29,7 +24,7 @@
             <h5 class="col-sm-4 col-md-3" style="color: #5BB800">Imóveis</h5>
             <div class="col-sm-4  col-md-3 logado">
                 <h5 style="color: #5BB800;">Usuário Master</h5>
-                <img id="grande" src="/codigo-fonte/scr/icones/icon_usuario_logado.png" alt="">
+                <img id="grande" src="/codigo-fonte/src/icones/icon_usuario_logado.png" alt="">
             </div>
         </header>
 
@@ -39,8 +34,8 @@
                 <div class="cabecalho_tabela">
                     <h4 style="color: #5BB800;">Imóveis</h4>
                     <div class="float-end lado-a-lado">
-                        <img id="button_filter" class="ad" type="button" src="/codigo-fonte/scr/icones/filtrar2.png" alt="">
-                        <img id="buttun_addition" class="ad" type="button" src="/codigo-fonte/scr/icones/adicionar.png" alt="">
+                        <img id="button_filter" class="ad" type="button" onclick="abrirModalFiltro()" src="/codigo-fonte/src/icones/filtrar2.png" alt="">
+                        <img id="buttun_addition" class="ad" type="button" onclick="abrirModalAdicao()" src="/codigo-fonte/src/icones/adicionar.png" alt="">
                     </div>
                 </div>
 
@@ -55,54 +50,43 @@
                 </tr>
 
                 <tr>
-                    <td><img src="/codigo-fonte/scr/images/icone_imoveis.png" alt=""></td>
+                    <td><img src="/codigo-fonte/src/images/icone_imoveis.png" alt=""></td>
                     <td id="1">01</td>
                     <td id="tipo">comercial</td>
                     <td id="Logradouro">rua Waldir leite pena</td>
                     <td class="status">vago</td>
                     <td class="status">ativo</td>
-                    <td><img class="ad" type="button" id src="/codigo-fonte/scr/icones/seta_alterar.png" alt=""></td>
+                    <td><img class="ad" type="button" onclick="abrirModalAlteracao()" src="/codigo-fonte/src/icones/seta_alterar.png" alt=""></td>
                 </tr>
 
             </table>
         </main>
+       
+        <dialog id="modal1">
+            <iframe src="imoveis_filtro.html" id="meuIframeFiltrar" frameborder="1" width="500" height="700"></iframe>
+        </dialog>
+        
+        <dialog id="modal2">
+            <iframe src="novo_imovel.html" id="meuIframeadicionar" frameborder="0" width="500" height="750"></iframe>
+        </dialog>
+        <dialog id="modal3">
+            <iframe src="alterar_imoveis.html" id="meuIframeAlterar" frameborder="0" width="500" height="760"></iframe>
+        </dialog>
 
         <aside>
 
             <hr style="color: gray;">
-            <p><img src="/codigo-fonte/scr/icones/dashboard.png" alt=""><span>Dashboard</span></p>
-            <p><img src="/codigo-fonte/scr/icones/icon_proprietarios.png" alt=""><span>Proprietários</span></p>
-            <p><img src="/codigo-fonte/scr/icones/icon_locatarios.png" alt=""><span>Locatários</span></p>
-            <p class="selecionado"><img src="/codigo-fonte/scr/icones/imoveis_selecionado.png"
+            <p><img src="/codigo-fonte/src/icones/dashboard.png" alt=""><span>Dashboard</span></p>
+            <p><img src="/codigo-fonte/src/icones/icon_proprietarios.png" alt=""><span>Proprietários</span></p>
+            <p><img src="/codigo-fonte/src/icones/icon_locatarios.png" alt=""><span>Locatários</span></p>
+            <p class="selecionado"><img src="/codigo-fonte/src/icones/imoveis_selecionado.png"
                     alt=""><span>Imóveis</span></p>
-            <p><img src="/codigo-fonte/scr/icones/icon_contratos.png" alt=""><span>Contratos</span></p>
-            <p><img src="/codigo-fonte/scr/icones/icon_faturas.png" alt=""><span>Faturas</span></p>
-            <p><img src="/codigo-fonte/scr/icones/icon_requisicoes.png" alt=""><span>Requisições</span></p>
+            <p><img src="/codigo-fonte/src/icones/icon_contratos.png" alt=""><span>Contratos</span></p>
+            <p><img src="/codigo-fonte/src/icones/icon_faturas.png" alt=""><span>Faturas</span></p>
+            <p><img src="/codigo-fonte/src/icones/icon_requisicoes.png" alt=""><span>Requisições</span></p>
 
         </aside>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
 
 </body>
 

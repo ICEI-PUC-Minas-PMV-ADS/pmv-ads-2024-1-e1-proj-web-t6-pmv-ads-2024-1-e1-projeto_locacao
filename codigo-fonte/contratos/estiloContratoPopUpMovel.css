@@ -35,9 +35,8 @@ h1 {
 
 input {
 
-    height: 20px;
-    border-radius: 4px;
-    border-color: #5BB800;
+    height: 30px;
+    border-radius: 7px;
     border: solid;
 }
 
@@ -89,7 +88,8 @@ hr {
 .botoes {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    
     button {
         column-gap: 30px;
         border-radius: 7px;

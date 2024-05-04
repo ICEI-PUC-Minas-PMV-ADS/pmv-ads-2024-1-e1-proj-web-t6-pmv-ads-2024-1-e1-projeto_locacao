@@ -86,8 +86,8 @@ label {
 
 input {
 
-    height: 20px;
-    border-radius: 4px;
+    height: 30px;
+    border-radius: 7px;
     border: solid;
 }
 
@@ -136,7 +136,7 @@ hr {
     margin-left: 25%;
     margin-right: 25%;
     gap: 50px;
-
+    
 
 
     button {
