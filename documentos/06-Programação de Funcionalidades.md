@@ -27,7 +27,7 @@ O acesso a tela de login e primeiro acesso poderá ser feito através do menu �
 Exemplo da tela de login: 
 <figure> 
   <img src="img/login.png"
-    <figcaption>Figura 3 - Tela - Login</figcaption>
+    <figcaption>Figura 2 - Tela - Login</figcaption>
 </figure>
 
 #### Requisito atendido
