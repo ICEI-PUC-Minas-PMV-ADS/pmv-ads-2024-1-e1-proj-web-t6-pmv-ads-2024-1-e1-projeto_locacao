@@ -41,7 +41,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 # Código-Fonte
 
-* <a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/">Código Fonte</a>
+* <a href="/README.md">Código Fonte</a>
 
 # Apresentação
 
