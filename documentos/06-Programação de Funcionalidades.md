@@ -42,7 +42,7 @@ RF-002: A aplicação deve permitir ao usuário fazer o login em sua conta.
 ● [login_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/a936b66e6ee5f9aa713dc2ea084a9a78b23a7fef/codigo-fonte/template_login/login_page.html)
 
 #### Instruções de acesso
-Abra um navegador de Internet e informe a seguinte URL: 
+Abra um navegador de Internet e informe a seguinte URL: codigo-fonte/template_login/login_page.html
 
 Ao clicar em “Cadastre-se” no canto superior direito da tela, terá acesso a página de cadastro.
 
