@@ -3,6 +3,7 @@ function iniciar_dashboard() {
     iniciar_banco_faturas()
     my_bar_chart()
     my_doughnut_chart()
+    vencimento()
 }
 
 
@@ -313,16 +314,71 @@ function iniciar_banco_imoveis() {
     }
 }
 
-// let dataAtual = Date()
-// console.log(dataAtual)
 
-let alert_vencimento = JSON.parse(localStorage.getItem('faturas'))
-alert_vencimento.map((vencimento) =>{
-    // if(vencimento.data_pgto < Date){
-    //     alert("VENCIDA")
-    // }else{ alert("vai vencer em breve")}
 
-})
+function vencimento(){
+
+    // let hoje = new Date().getTime()
+    // // console.log(hoje.getDate())
+    // console.log(hoje)
+
+    let future = new Date()
+    future.setDate(future.getDate()+3)
+    console.log(future)
+
+    let intervalo = future - Date.now()
+    console.log(intervalo)
+
+
+    // future.setMinutes(future.getMinutes() + 30);
+    // let h = future.getHours().toString().padStart(2, '0');
+    // let m = future.getMinutes().toString().padStart(2, '0');
+    // let s = future.getSeconds().toString().padStart(2, '0');
+    // console.log(s)
+    
+    // let interval = future.getTime() - Date.now();
+    // setTimeout(() => {
+    //   alert('30 minutos se passaram.');
+
+    // let hoje = new Date();
+    // hoje.setTime()
+    //     console.log(hoje)
+
+    
+    let alert_vencimento = JSON.parse(localStorage.getItem('faturas'))
+
+
+    alert_vencimento.map((data) => {
+        if (data.data_pgto.value < hoje) {
+            console.log(alert_vencimento)
+        }else{  }
+    })
+            
+
+
+    //                 faturas.map((fatura) => {
+    //                     if (fatura.status_pgto) {
+    //                         Object.keys(dias).map((dia) => {
+    //                             if (dias[mes].text == fatura.data_pgto.split('/')[1]) {
+    //                                 meses[mes].value += fatura.valor
+
+    // alert_vencimento.map((faturas) =>{
+    // if(alert_vencimento.data_pgto < hoje.getDate()){
+    //     console.log(faturas.data_pgto)
+    // }else{ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
