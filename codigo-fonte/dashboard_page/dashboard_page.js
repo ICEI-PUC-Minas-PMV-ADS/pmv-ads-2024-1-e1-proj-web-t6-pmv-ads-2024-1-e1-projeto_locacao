@@ -313,8 +313,16 @@ function iniciar_banco_imoveis() {
     }
 }
 
-let dataAtual = Date()
-console.log(dataAtual)
+// let dataAtual = Date()
+// console.log(dataAtual)
+
+let alert_vencimento = JSON.parse(localStorage.getItem('faturas'))
+alert_vencimento.map((vencimento) =>{
+    // if(vencimento.data_pgto < Date){
+    //     alert("VENCIDA")
+    // }else{ alert("vai vencer em breve")}
+
+})
 
 
 
