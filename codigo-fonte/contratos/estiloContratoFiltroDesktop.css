@@ -1,24 +1,32 @@
-
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');*/
 
 
 * {
     font-family: "Roboto";
+    margin-left: 10px;
+    margin-right: 20px;
     color: #5BB800;
-   
 
 }
 
-hr{
-    border:none;
+.fil{
+    color: #5BB800;
+}
+
+hr.hr{
+    width: 100%;
     height: 2px;
-    background-color: #5BB800;
-    
+    background-color:#5BB800;
+    background: #5BB800;
+    opacity: 1;
 }
 
-body{
-    margin-right:  30px;
-    margin-left:  30px;
+h1{
+    display: flex;
+    justify-content: center;
+    color: #5BB800;
 }
+
 
 .alinhamento{
    
@@ -29,7 +37,8 @@ body{
 
 .alinhamento > label {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    
 }
 
 .alinhamento > label > input{
@@ -37,8 +46,16 @@ body{
     color: #5BB800;
    
 }
-h5{
-    margin: 0px;
+
+h5.titulos{
+    margin-bottom: 0px;
+    color: #5BB800;
+}
+
+h4.titulos{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #5BB800; 
 }
 
 .checar > label{
@@ -53,14 +70,18 @@ h5{
     color: #5BB800;
 }
 
+
 input{
-    height: 20px;
-    border-radius: 4px;
+    height: 30px;
+    border-radius: 7px;
     border-color: #5BB800;
     border: solid;
+    margin-bottom: 1rem;
 }
 
-
+#id{
+    width: 40%;
+}
 
 /* botoes*/
 .botoes {

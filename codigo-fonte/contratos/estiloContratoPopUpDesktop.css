@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');
 
-body {
-    margin: 1%;
-}
+
+
 
 
 * {
     font-family: "Roboto";
     color: #5BB800;
-    
+
 }
 
+body{
+    margin: 0px 5%;
+}
 
 h1 {
-    display: block;
-    margin: 5% 20% 0%;
-    color: #5BB800;
-    padding-left: 13%;
+    display: flex;
+    justify-content:center;
+    color:#5BB800 
+    
 
 }
 
 .titulos {
-    font-size: small;
+    font-size: medium;
+    color: #5BB800;
 }
 
 .alinhamento {
@@ -86,9 +89,10 @@ label {
 
 input {
 
-    height: 30px;
+    height: 50px;
     border-radius: 7px;
     border: solid;
+    border: #5BB800 solid;
 }
 
 .centro {
