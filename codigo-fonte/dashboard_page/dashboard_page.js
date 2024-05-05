@@ -169,7 +169,7 @@ function iniciar_banco_faturas() {
             id: 1,
             data_pgto: '05/01/2024',
             valor: 1000,
-            status_pgto: true
+            status_pgto: false
         },
         {
             id: 2,
@@ -181,7 +181,7 @@ function iniciar_banco_faturas() {
             id: 3,
             data_pgto: '05/03/2024',
             valor: 3000,
-            status_pgto: true
+            status_pgto: false
         },
         {
             id: 4,
@@ -197,7 +197,7 @@ function iniciar_banco_faturas() {
         },
         {
             id: 6,
-            data_pgto: '05/06/2024',
+            data_pgto: '08/05/2024',
             valor: 2500,
             status_pgto: true
         },
@@ -314,20 +314,189 @@ function iniciar_banco_imoveis() {
     }
 }
 
+//Retorna data de hoje no formato dd/mm/aa
+// let data = new Date()
+// function formata_data(data){
+//     let hoje = new Date
+// }
+// let hoje = new Date()
+// function data_padrao(){
+//     // let newDate = new Date(data)
+//     // return `${newDate.getDate()}/${newDate.getMonth()}/${newDate.getFullYear()}`
+//     let data_formatada = new Date() 
+//     hoje = new Date(data_formatada)
+//     hoje = hoje.toLocaleDateString('pt-BR')
 
+// }
+
+//RETORNA A FORMATAÇÃO PADRAO dd/mm/aa
+function formatData(hoje){
+    let newDate = new Date(hoje)
+
+    // let dia_m = newDate.getDate()
+    // dia_m = dia_m < 10? "0"+dia_m:dia_m
+
+    return `${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()}`
+    }
+
+// function VencAux(){
+//     retur
+    
+// }
+
+
+// console.log(data_padrao())
 
 function vencimento(){
+
+    let alert_vencimento = JSON.parse(localStorage.getItem('faturas'))
+    let vencimento = 5
+    let hoje = new Date()
+    // console.log(hoje)
+
+//    hoje.setDate(hoje.getDate()+vencimento)
+   console.log(formatData(hoje))
+   
+
+    alert_vencimento.map((alerta) => {        
+        
+        if(alerta.data_pgto < formatData(hoje) && !alerta.status_pgto){
+             console.log(`VENCIDA EM: ${alerta.data_pgto}`)               
+        }  
+        else if(alerta.data_pgto > formatData(hoje)){
+            console.log(`VENCE EM: ${alerta.data_pgto}`)
+        
+        }else{ "erro"}
+            
+        // && alerta.data_pgto < formatData(hoje)+vencimento
+        
+    })
+
+
+ //Retorna adição de 5 dias da data de hoje
+//  let add_dias = new Date()
+
+
+ // add_dias.setDate(add_dias.getDate() + 5);
+ // console.log(add_dias.getDate()); 
+
+ // let add_cinco_dias = add_dias
+ // data = new Date(add_cinco_dias)
+ // cincoDias_futuro = data.toLocaleDateString('pt-BR')
+ // console.log(cincoDias_futuro)
+
+
+ // hoje.setDate(hoje.getDate()+5)
+ // console.log(hoje)
+    // }else if(hoje.getDate() = hoje.setDate()+5){
+    //     console.log(hoje) 
+    // }
+
+        // if(alerta.data_pgto < hoje + add){
+        //     console.log(alerta.data_pgto)
+        // }
+
+        // console.log(alerta.data_pgto)
+    // })
+     
+        
+
+    // alert_vencimento.map((alerta) => {        
+        
+    //     if(alerta.data_pgto < hoje){
+    //         if(status_pgto = alerta.status_pgto){
+    //             // console.log(alerta.data_pgto) 
+    //             console.log("VENCIDA")
+    //         }
+                       
+    //     }else{
+    //         console.log(alerta.status_pgto) 
+    //     }
+
+        
+    // })
+
+
+
+    //DIMINUINDO DATA FUTURA COM A DATA DE HOJE
+    //  let diferenca = parseInt('10/05/2024') - parseInt(data_formatada)
+    //  console.log(diferenca)
+    
+    
+   
+
+    // let data = '10/05/2024'    
+    // // console.log(data)
+
+    // data = parseInt('10/05/2024')
+    // // console.log(data)
+
+    // // let hoje = new Date()
+    // // console.log(hoje)
+    // hoje.toLocaleDateString('pt-br')
+    // // console.log(hoje)
+
+    // console.log(hoje.toISOString().substr(0,10).split('-').reverse().join('/'))
+
+
+    // hoje.toLocaleDateString()
+    // console.log(hoje)
+
+   
+    // function formatDate(){
+        // var dataInput = '2020-02-06';
+
+        // data = new Date(dataInput);
+        // dataFormatada = data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
+        // console.log(dataFormatada)
+
+        
+           
+           
+           
+        
+        // function formatar(){
+
+        // }
+
+
+
+
+
+    // console.log(hoje).val(formatDate)
+    // let dataU = '10/05/2024'
+    // let hoje = '05/05/2024'
+    // let diferenca = parseInt(dataU)-parseInt(hoje)
+    // console.log(diferenca)
+    // function dataFuturo(){
+    //     let futuro = new Date(10/05/2024)
+    //     console.log(futuro)
+    // }
+    // console.log(dataFuturo)
+
+
+    // let dataFut = ('09/05/2024')
+    // console.log(dataFut)
+
+    // let agora = new Date('05/05/2024')
+    // // agora.toLocaleDateString()
+    // console.log(agora)
+    // let diferenca = parseInt(dataFut)-parseInt(agora)
+    // console.log(diferenca)
+
+
+   
 
     // let hoje = new Date().getTime()
     // // console.log(hoje.getDate())
     // console.log(hoje)
 
-    let future = new Date()
-    future.setDate(future.getDate()+3)
-    console.log(future)
+    // let hoje = new Date()
+    // hoje.getDate()
+    // console.log(hoje)
 
-    let intervalo = future - Date.now()
-    console.log(intervalo)
+    // let intervalo = Date.now()
+    //  console.log(intervalo)
 
 
     // future.setMinutes(future.getMinutes() + 30);
@@ -345,14 +514,7 @@ function vencimento(){
     //     console.log(hoje)
 
     
-    let alert_vencimento = JSON.parse(localStorage.getItem('faturas'))
-
-
-    alert_vencimento.map((data) => {
-        if (data.data_pgto.value < hoje) {
-            console.log(alert_vencimento)
-        }else{  }
-    })
+    
             
 
 
