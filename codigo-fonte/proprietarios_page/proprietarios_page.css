@@ -441,6 +441,7 @@ input[type="checkbox"]{
 
 .popup .dados_pessoais{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "nome nome"
     "cpf estado_civil";
