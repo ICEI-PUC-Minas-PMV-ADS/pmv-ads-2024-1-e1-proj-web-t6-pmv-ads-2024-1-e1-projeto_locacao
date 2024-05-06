@@ -16,7 +16,7 @@ btn_volta.addEventListener('click', function () {
 
 function iniciar_banco_usuarios() {
     let valid_usuario = JSON.parse(localStorage.getItem('usuarios'))
-    console.log(valid_usuario)
+    
     let usuarios = [
         {
             id: 1,
