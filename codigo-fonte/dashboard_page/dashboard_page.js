@@ -3,7 +3,6 @@ function iniciar_dashboard() {
     iniciar_banco_faturas()
     my_bar_chart()
     my_doughnut_chart()
-    vencimento()
 }
 
 
@@ -314,63 +313,66 @@ function iniciar_banco_imoveis() {
     }
 }
 
-//Retorna data de hoje no formato dd/mm/aa
-// let data = new Date()
-// function formata_data(data){
-//     let hoje = new Date
-// }
-// let hoje = new Date()
-// function data_padrao(){
-//     // let newDate = new Date(data)
-//     // return `${newDate.getDate()}/${newDate.getMonth()}/${newDate.getFullYear()}`
-//     let data_formatada = new Date() 
-//     hoje = new Date(data_formatada)
-//     hoje = hoje.toLocaleDateString('pt-BR')
-
-// }
-
 //RETORNA A FORMATAÇÃO PADRAO dd/mm/aa
-function formatData(hoje){
-    let newDate = new Date(hoje)
-
-    // let dia_m = newDate.getDate()
-    // dia_m = dia_m < 10? "0"+dia_m:dia_m
-
+let data = new Date()
+function formatarData(data){
+    let newDate = new Date(data)
     return `${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()}`
-    }
-
-// function VencAux(){
-//     retur
-    
-// }
-
-
-// console.log(data_padrao())
-
-function vencimento(){
-
+}
+console.log(formatarData(data))
+    // formatarData(data)
     let alert_vencimento = JSON.parse(localStorage.getItem('faturas'))
-    let vencimento = 5
-    let hoje = new Date()
-    // console.log(hoje)
+    
+      alert_vencimento.map((alerta) => { 
 
-//    hoje.setDate(hoje.getDate()+vencimento)
-   console.log(formatData(hoje))
+        if(alerta.data_pgto < formatarData(data) && !alerta.status_pgto){
+            console.log(`VENCIDA EM: ${alerta.data_pgto}`)                      
+       } else if(alerta.data_pgto > formatarData(data)){
+            console.log(`EM ABERTO ${alerta.data_pgto}`)
+       }else{alerta.data_pgto}   
+                
+    })
+    //vencimento em 5 dias em milisegundos
+
+    // let vencimento = 432000000
+    // let dia_atual = new Date()
+    // let data_convert = Math.abs(dia_atual.getTime() + vencimento)
+    // console.log(data_convert)
+    // let dias_diferença = Math.ceil((data_convert - dia_atual)  / (1000*60*60*24))
+    // console.log(`FATURA VENCE EM: ${dias_diferença}`)
+
+    // let hoje = new Date()
+    // console.log(hoje)
+    // // hoje.getMilliseconds()
+    // console.log(hoje.getTime())
+
+
+
+    // let hoje_d = data.getDate()
+    // hoje_d = hoje_d < 10?"0"+hoje_d:hoje_d
+    // let hoje_m = data.getMonth()
+    // hoje_m = hoje_m < 10?"0"+hoje_m:hoje_m
+
+    // let hoje = hoje_d+"/"+hoje_m+"/"+data.getFullYear()
+
+    
+
+//    console.log(formatData(hoje))
+//    let novaData=formatData(hoje) - vencimento
+//    console.log(novaData)
    
 
-    alert_vencimento.map((alerta) => {        
-        
-        if(alerta.data_pgto < formatData(hoje) && !alerta.status_pgto){
-             console.log(`VENCIDA EM: ${alerta.data_pgto}`)               
-        }  
-        else if(alerta.data_pgto > formatData(hoje)){
-            console.log(`VENCE EM: ${alerta.data_pgto}`)
-        
-        }else{ "erro"}
-            
-        // && alerta.data_pgto < formatData(hoje)+vencimento
-        
-    })
+    
+
+//     if(alerta.data_pgto <= formatData(hoje) && !alerta.status_pgto){
+//         console.log(`VENCIDA EM: ${alerta.data_pgto}`)               
+//    }  
+//    else if(alerta.data_pgto > formatData(hoje)){
+//        console.log(`VENCE EM: ${alerta.data_pgto}`)
+   
+//    }else{
+//        console.log(alerta.data_pgto)
+//    }
 
 
  //Retorna adição de 5 dias da data de hoje
@@ -529,7 +531,7 @@ function vencimento(){
     //     console.log(faturas.data_pgto)
     // }else{ }
 
-}
+
 
 
 
