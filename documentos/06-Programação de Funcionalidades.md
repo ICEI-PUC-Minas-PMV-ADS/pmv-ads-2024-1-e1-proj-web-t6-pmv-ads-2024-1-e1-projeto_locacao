@@ -163,16 +163,28 @@ Eduardo Wollinger
   <img src="img/Contratos.png">
     <figcaption>Figura 3 - Tela - Imóveis</figcaption>
 </figure>
+
 #### Requisito atendido
-
+ RF-06	A aplicação deve permitir ao usuário cadastrar/alterar/consultar os contratos.
 #### Artefatos da funcionalidade
-
+* alterar_contratos.html
+* contratos.html
+* contratos.js
+* contratos_filtro.html
+* contratos_page.css
+* estiloContratoFiltroDesktop.css
+* estiloContratoPopUpDesktop.css
+* estiloContratoPopupMovel.css
+* estiloFiltroContrato.css
+* novo_contrato.html
 #### Estrutura de Dados
+[contratos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/contratos/contratos.html)
 
 #### Instruções de acesso
-
+Abrir o navegador em https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/contratos/contratos.html <br>
+Na parte superior direita escontram-se os botões para pesquisar algum contrato através do filtro e adicionar novo contrato através do botão "mais". o ícone seta do lado direito de cada contrato permite alterações no mesmo.
 #### Responsável
-
+Zander Vasconcelos Pereira
 
 --------------------------------------------------------------------------------------------------------------------
 
