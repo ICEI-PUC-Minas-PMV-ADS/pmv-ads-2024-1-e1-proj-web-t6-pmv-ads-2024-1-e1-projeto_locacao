@@ -34,15 +34,15 @@ Exemplo da tela de login:
 RF-02: A aplicação deve permitir ao usuário fazer o login em sua conta.
 
 #### Artefatos da funcionalidade
-● login_page.html <br>
-● login_page.css<br>
-● login_page.js<br>
+* login_page.html <br>
+* login_page.css<br>
+* login_page.js<br>
 
 #### Estrutura de Dados
-● [login_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/a936b66e6ee5f9aa713dc2ea084a9a78b23a7fef/codigo-fonte/template_login/login_page.html)
+* [login_page.html](pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/login_page)
 
 #### Instruções de acesso
-Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/template_login/login_page.html
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/login_page/login_page.html
 
 Ao clicar em “ENTRAR” na parte inferior, será direcionado para a tela de primeiro acesso sendo necessário a alteração da senha padrão e, portanto, a liberação de login ao sistema.
 
@@ -121,9 +121,9 @@ RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquili
 #### Artefatos da funcionalidade
 Foram criados os seguintes artefatos:
 
-● locatarios_page.jtml <br>
-● locatarios_page.css <br>
-● locatarios_page.js <br>
+* locatarios_page.jtml <br>
+* locatarios_page.css <br>
+* locatarios_page.js <br>
 
 
 #### Estrutura de Dados

@@ -264,7 +264,7 @@ main {
     justify-content: end;
 }
 
-/* POPUP CADASTRAR USUÁRIO */
+/* DESTAQUE BOTÃO AO PASSAR MOUSE */
 
 .open_button{
     display: flex;
@@ -278,8 +278,10 @@ main {
     background-color: var(--grey);
 }
 
+/* POPUP CADASTRAR USUÁRIO */
+
 #popup_cadastrar{
-    width: 50%;
+    width: 40%;
 }
 
 /* Estilo da Popup */
@@ -304,12 +306,29 @@ main {
     align-items:normal;
 }
 
-/* .popup aside{
-    display: flex;
-    flex-direction: row;
-    align-items:normal;
+/* .popup div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    
+    
+    https://developer.mozilla.org/en-US/play
+
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
+    
+
+
 
 } */
+
+
+.popup section {
+    display: grid;
+    
+}
+
+
 
 .popup hr{
     margin-bottom: 10px;
