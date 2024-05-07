@@ -14,7 +14,7 @@ O código utilizado para a construção dos elementos citados, incluindo a respo
 
 Exibe o título, o tipo de usuário logado e o sidebar com os respectivos botões.
 <figure> 
-  <img src="documentos/imges/template_page.png"
+  <img src="pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/src/images/template_page.png"
     <figcaption>Tela - Padrão</figcaption>
 </figure>
 
