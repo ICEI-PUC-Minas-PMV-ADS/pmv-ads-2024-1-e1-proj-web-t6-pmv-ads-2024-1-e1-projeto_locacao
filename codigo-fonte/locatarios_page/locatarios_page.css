@@ -281,7 +281,7 @@ main {
 /* POPUP CADASTRAR USUÁRIO */
 
 #popup_cadastrar{
-    width: 40%;
+    width: 30%;
 }
 
 /* Estilo da Popup */
@@ -306,30 +306,127 @@ main {
     align-items:normal;
 }
 
-/* .popup div {
+/* Seção Dados Pessoais */
+.section_dados_pessoais {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 10px;
-    
-    
-    https://developer.mozilla.org/en-US/play
+    grid-template-areas: 
+    "nome nome"
+    "cpf estado_civil";
+    column-gap: 15px;
+}
 
-    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
-    
+.popup .div_nome{
+    display: flex;
+    flex-direction: column;
+    grid-area: nome;
+}
 
+.popup .div_cpf{
+    display: flex;
+    flex-direction: column;
+    grid-area: cpf;
+}
 
+.popup .div_estado_civil{
+    display: flex;
+    flex-direction: column;
+    grid-area: estado_civil;
+}
 
-} */
-
-
-.popup section {
+/* Seção Endereço */
+.section_endereco{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tipo_logradouro logradouro logradouro logradouro numero"
+    "complemento bairro bairro cidade cidade"
+    "cep uf . . .";
+    column-gap: 15px;
     
 }
 
+.popup .div_tipo_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: tipo_logradouro;
+}
+
+.popup .div_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: logradouro;
+}
+
+.popup .div_numero{
+    display: flex;
+    flex-direction: column;
+    grid-area: numero;
+}
+
+.popup .div_complemento{
+    display: flex;
+    flex-direction: column;
+    grid-area: complemento;
+}
+
+.popup .div_bairro{
+    display: flex;
+    flex-direction: column;
+    grid-area: bairro;
+}
+
+.popup .div_cidade{
+    display: flex;
+    flex-direction: column;
+    grid-area: cidade;
+}
+
+.popup .div_cep{
+    display: flex;
+    flex-direction: column;
+    grid-area: cep;
+}
+
+.popup .div_uf{
+    display: flex;
+    flex-direction: column;
+    grid-area: uf;
+}
+
+/* Seção Endereço */
+.section_contato{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "telefone email";
+    column-gap: 15px;
+    
+}
+
+/* POPUP FILTRAR*/
+#popup_filtrar{
+    width: 20%;
+}
+
+/* Seção Status */
+.status div{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"]{
+    border: 1px solid #5BB800;
+}
 
 
+#table_list{
+    overflow-y: auto;
+    height: 85%;
+
+}
+
+
+/* Formatações gerais da Popup */
 .popup hr{
     margin-bottom: 10px;
     border-top: 1px solid var(--green);
@@ -416,21 +513,6 @@ main {
 
 .buttons button:hover {
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
-}
-
-input[type="checkbox"]{
-    border: 1px solid #5BB800;
-}
-
-.status div{
-    display: flex;
-    flex-direction: row;
-}
-
-#table_list{
-    overflow-y: auto;
-    height: 85%;
-
 }
 
 
