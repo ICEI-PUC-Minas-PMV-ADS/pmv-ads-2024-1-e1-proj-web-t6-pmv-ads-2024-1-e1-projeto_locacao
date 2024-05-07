@@ -17,10 +17,10 @@ Exibe a logomarca, título da página, o tipo de usuário logado e o sidebar com
   <img src="img/template_padrao.png"
     <figcaption>Tela - Padrão</figcaption>
 </figure><br><br>
-Foi usado um tom de verde mais chamativo em detrimento ao fundo base claro em alguns ícones ou links da página, estratégia usada justamente para chamar mais atenção do usuário no conteúdo em si, bem como na logomarca, por exemplo. 
+<p align="Justify">AFoi usado um tom de verde mais chamativo em detrimento ao fundo base claro em alguns ícones ou links da página, estratégia usada justamente para chamar mais atenção do usuário no conteúdo em si, bem como na logomarca, por exemplo. 
 
 <figure> 
-  <img src="img/logomarca.png"
+  <img src="img/logomarca.PNG"
     <figcaption>Logomarca</figcaption>
 </figure>
 
