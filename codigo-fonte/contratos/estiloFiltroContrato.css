@@ -8,14 +8,9 @@ body{
     margin: 5%;
 }
 
-.titulos{
-
-}
-
 h1{
     display: flex;
     justify-content: center;
-
 }
 
 h4{
