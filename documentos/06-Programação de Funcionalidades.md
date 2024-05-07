@@ -53,6 +53,12 @@ Socratis Gomes da Silva
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-03 IMÓVEIS (ZANDER)
+ Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
+ <figure> 
+  <img src="img/imoveis.png">
+    <figcaption>Figura 2 - Tela - Login</figcaption>
+</figure>
+
   
 #### Requisito atendido
    RF-03	A aplicação deve permitir cadastrar/alterar/pesquisar imóveis.
@@ -80,7 +86,7 @@ Socratis Gomes da Silva
 
 Responsável: Pedro Francis Maia Coelho
 
-O acesso a tela de proprietários poderá ser feito através da opção "Proproetários" no menu lateral a esquerda de qualquer página após o login.
+O acesso a tela de proprietários poderá ser feito através da opção "Proprietários" no menu lateral a esquerda de qualquer página após o login.
 
 Exemplo da tela de proprietários:
 <figure> 
