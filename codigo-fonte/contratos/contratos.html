@@ -1,103 +1,128 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Contratos</title>
-    <link rel="stylesheet" href="/codigo-fonte/imoveis/estilos.css">
-    <title>Imóveis</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200">
+    <link rel="stylesheet" type="text/css" href="contratos_page.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="contratos.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
 </head>
 
-<body style="background-color: #F5F5F5; font-family: Roboto;">
+<body>
     <div id="fade"></div>
-    <div class="container" style="background-color: #F5F5F5;">
-
-        <header style="background-color: #F5F5F5;">
-            <h1 class="col-sm-4  col-md-6">Immo<span style="color: #5BB800;">Control</span></h1>
-            <h5 class="col-sm-4 col-md-3" style="color: #5BB800">Contratos</h5>
-            <div class="col-sm-4  col-md-3 logado">
-                <h5 style="color: #5BB800;">Usuário Master</h5>
-                <img id="grande" src="/codigo-fonte/src/icones/icon_usuario_logado.png" alt="">
+    <header>
+        <div class="div_logo">
+            <p><span class="immo">Immo</span><span class="control">Control</span></p>
+        </div>
+        <div class="div_titulo">Contratos</div>
+        <div class="div_usuario">
+            <p>Usuário Master</p>
+            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="">
+        </div>
+    </header>
+    <div class="content">
+        <nav>
+            <div class="sidebar_superior">
+                <hr class="divisor">
+                <button class="sidebar_button" onclick="location.href = '../dashboard_page/dashboard_page.html'">
+                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="">
+                    <p>Dashboard</p>
+                </button>
+                <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
+                    <img class="icon" src="../src/icones/icon_proprietarios_selecionado.png" alt="">
+                    <p>Proprietários</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="">
+                    <p>Locatários</p>
+                </button>
+                <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
+                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="">
+                    <p>Imóveis</p>
+                </button>
+                <button class="sidebar_button_selected" onclick = "">
+                    <img class="icon" src="../src/icones/icon_contratos.png" alt="">
+                    <p>Contratos</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_faturas.png" alt="">
+                    <p>Faturas</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_requisicoes.png" alt="">
+                    <p>Requisições</p>
+                </button>
             </div>
-        </header>
-    
-        <main style="background-color: #F5F5F5;">
-            <table class="table table-hover">
-                <div class="cabecalho_tabela">
-                    <h4 style="color: #5BB800;">Contratos</h4>
-                    <div>
-                        <img id="ad" type="button" onclick="abrirModalFiltro()" src="/codigo-fonte/src/icones/filtrar2.png" alt="">
-                        <img id="ad" type="button" onclick="abrirModalAdicao()" src="/codigo-fonte/src/icones/adicionar.png" alt="">
-                       
-                    </div>
-                </div>
-                <tr> 
-                    <th></th>    
-                    <th style="color: #A0AEC0;">ID</th>
-                    <th style="color: #A0AEC0;">LOCATÁRIO</th>
-                    <th style="color: #A0AEC0;">PERÍODO</th>
-                    <th style="color: #A0AEC0;">MENSALIDADE</th>
-                    <th style="color: #A0AEC0;">STATUS</th>
-                    <th></th>
-                </tr>
-                
-                <tr>
-                    <td><img src="/codigo-fonte/src/icones/icon_contrato_ativo.png" alt=""></td>
-                    <td>01</td>
-                    <td>Pedro da silva</td>
-                    <td>1 ano</td>
-                    <td class="status">600,00</td>
-                    <td class="status">Ativo</td>
-                    <td><img id="ad" type="button" onclick="abrirModalAlteracao()" src="/codigo-fonte/src/icones/seta_alterar.png" alt=""></td>
-                </tr>
-    
-            </table>
-        </main>
+            <div class="sidebar_inferior">
+                <hr class="divisor">
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_usuarios.png" alt="">
+                    <p>Usuários</p>
+                </button>
+            </div>
+        </nav>
+
         <dialog id="modal1">
-            <iframe src="contratos_filtro.html" id="meuIframeFiltrar" frameborder="1" width="500" height="650"></iframe>
+            <iframe src="contratos_filtro.html" id="meuIframeFiltrar" frameborder="1" width="500" height="700"></iframe>
         </dialog>
+        
         <dialog id="modal2">
             <iframe src="novo_contrato.html" id="meuIframeadicionar" frameborder="0" width="500" height="750"></iframe>
         </dialog>
         <dialog id="modal3">
             <iframe src="alterar_contratos.html" id="meuIframeAlterar" frameborder="0" width="500" height="760"></iframe>
         </dialog>
-        
-        <aside>
-            
-            <hr style="color: gray;">
-            <p><img src="/codigo-fonte/src/icones/dashboard.png" alt=""><span>Dashboard</span></p>
-            <p><img src="/codigo-fonte/src/icones/icon_proprietarios.png" alt=""><span>Proprietários</span></p>
-            <p><img src="/codigo-fonte/src/icones/icon_locatarios.png" alt=""><span>Locatários</span></p>
-            <p><img src="/codigo-fonte/src/icones/icon_imoveis.png" alt=""><span>Imóveis</span></p>
-            <p class="selecionado"><img src="/codigo-fonte/src/icones/icon_contrato_ativo.png" alt=""><span>Contratos</span></p>
-            <p><img src="/codigo-fonte/src/icones/icon_faturas.png" alt=""><span>Faturas</span></p>
-            <p><img src="/codigo-fonte/src/icones/icon_requisicoes.png" alt=""><span>Requisições</span></p>
-            
 
-              
-        </aside>
-        
-        
-            
-        
-        
 
+        <main id="table_owners">
+            <div class="div_table_properties">
+                <p>Contratos</p>
+                <div class="div_table_properties_group_buttons">
+                    <button class="div_table_properties_button" onclick="abrirModalFiltro()">
+                        <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="">
+                    </button>
+                    <button class="div_table_properties_button" onclick="abrirModalAdicao()">
+                        <img class="icon" src="../src/icones/icon_button_adicionar.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="div_table_header">
+                <div class="table_icon"></div>
+                <div class="table_id">
+                    ID
+                </div>
+                <div class="table_name">
+                    LOCATÁRIO
+                </div>
+                <div class="table_property">
+                    PERÍODO
+                </div>
+
+                <div class="table_status">
+                    MENSALIDADE
+                </div>
+
+                <div class="table_status">
+                    STATUS
+                </div>
+
+                <div class="table_button"></div>
+            </div>
+
+            <hr class="divisor">
+            <div id="table_list">
+                
+            </div>
+
+            
+         
+        </main>
 
     </div>
     
-
-
 </body>
-
-
-
-
 </html>
-

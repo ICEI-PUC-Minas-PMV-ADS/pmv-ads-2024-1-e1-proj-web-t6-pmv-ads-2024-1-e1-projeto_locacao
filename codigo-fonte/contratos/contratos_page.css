@@ -1,7 +1,9 @@
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');
 
-/* Cores padrão de todas as telas */
+*{
+    margin: 0;
+}
+
 :root {
     --green: #5BB800;
     --white: #ffffff;
@@ -11,38 +13,51 @@
     --grey: #E0E1E2;
     --dark-grey: #A0AEC0;
     --font-size-button: 16px;
+    --red: #B83700;
 }
 
-/* PADRÃO GERAL */
-/* Margem */
-*{
-    margin: 0;
-}
-
-/* Fonte e Fundo */
 body {
     background-color: var(--light-grey);
     font-family: 'Roboto', sans-serif;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* LINHAS DE DIVISÃO */
-hr.divisor {
-    border-top: 1px solid var(--grey);
+#modal1,#modal2,#modal3{
+    
+    border-color: #f8f9fb;
+    border-radius: 25px;
+    z-index: 30;
+    justify-self: center;
+    align-self: top;
+    size: 200px;
+    padding: 5px;
+    
 }
 
-.sidebar_superior {
+#modal1,#modal2,#modal3 > iframe{
+    border-radius: 25px;
+    
+}
+iframe{
+    border: none;
+}
+
+#fade.escuro{
+    position: fixed;
     width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: black;
+    z-index: 25;
+    border: none;
 }
 
-.sidebar_inferior {
-    width: 100%;
-    margin-bottom: 10px;
-}
 
-
-/* DIVISÃO DE TÍTULO */
 header {
     width: 100%;
     display: flex;
@@ -50,17 +65,9 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 12vh;
+    /* border: 1px solid black; */
 }
 
-/* Logo */
-.div_logo {
-    padding: 0px 22px;
-    display: flex;
-    align-items: center;
-    min-width: fit-content;
-    max-width: fit-content;
-    justify-content: center;
-}
 .immo {
     color: var(--black);
     font-weight: normal;
@@ -73,14 +80,21 @@ header {
     font-size: 25px;
 }
 
-/* Título Central */
+.div_logo {
+    padding: 0px 22px;
+    display: flex;
+    align-items: center;
+    min-width: fit-content;
+    max-width: fit-content;
+    justify-content: center;
+}
+
 .div_titulo {
     color: var(--green);
     font-size: 25px;
     font-weight: 600;
 }
 
-/* Usuário Logado */
 .icon_usuario_logado {
     height: 40px;
     width: 40px;
@@ -96,19 +110,12 @@ header {
     font-weight: bold;
 }
 
-/* DIVISÃO MENU (CONTENT) */
-.content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-}
-
 nav {
     padding: 0px 20px 0px 10px;
     width: 20%;
     min-width: fit-content;
     max-width: fit-content;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,31 +123,29 @@ nav {
     height: 88vh;
     /* border: 1px solid black; */
 }
+.sidebar_superior {
 
-/* BOTÕES MENU */
-/* Botão Inativo */
-.sidebar_button {
-    padding: 7px 35px 7px 7px;
-    margin-top: 10px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: var(--font-size-button);
-    background-color: var(--light-grey);
-    border: none;
-    border-radius: 12px;
-    align-items: center;
-    color: var(--dark-grey);
 }
-/* Destaque  de botões clicáveis ao passar o mouse */
-.sidebar_button:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    color: var(--black);
-    background-color: var(--white);
+.sidebar_inferior {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-/* Botão selecionado */
+hr.divisor {
+    border-top: 1px solid var(--grey);
+}
+
+.icon {
+    height: 35px;
+    width: 35px;
+}
+
+.open_icon{
+    height: 20px;
+    width: 20px;
+}
+
 .sidebar_button_selected {
     padding: 7px 35px 7px 7px;
     margin-top: 10px;
@@ -157,22 +162,39 @@ nav {
     color: var(--black);
 }
 
-.icon {
-    height: 35px;
-    width: 35px;
+.sidebar_button {
+    padding: 7px 35px 7px 7px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: var(--font-size-button);
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+    color: var(--dark-grey);
 }
 
-.open_icon{
-    height: 20px;
-    width: 20px;
+.sidebar_button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--black);
+    background-color: var(--white);
 }
-/* 
 
-/* TELA PRINCIPAL */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    height: 88vh;
+}
 
 main {
     background-color: var(--white);
     width: 100%;
+    min-width: fit-content;
     max-height: 88vh;
     padding: 15px;
     margin: 0 10px 10px 0;
@@ -181,7 +203,7 @@ main {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.div_table_locatarios {
+.div_table_properties {
     display: flex;
     color: var(--green);
     font-weight: bold;
@@ -190,20 +212,20 @@ main {
     align-items: center;
 }
 
-.div_table_locatarios_group_buttons{
+.div_table_properties_group_buttons{
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
-.div_table_locatarios_button{
+.div_table_properties_button{
     display: flex;
     padding: 0px;
     border-radius: 10px;
     border: none;
 }
 
-.div_table_locatarios_button:hover {
+.div_table_properties_button:hover {
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -223,13 +245,14 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    min-width: fit-content;
 }
 
-.table_icon{
+.table_icon > img{
     display: flex;
-    min-width: fit-content;
+    width: 35px;
     /* border: 1px solid black; */
-    width: 3%;
+    
 }
 
 .table_id{
@@ -244,7 +267,7 @@ main {
     width: 25%;
 }
 
-.table_locatario{
+.table_property{
     min-width: fit-content;
     /* border: 1px solid black; */
     width: 25%;
@@ -264,7 +287,35 @@ main {
     justify-content: end;
 }
 
-/* DESTAQUE BOTÃO AO PASSAR MOUSE */
+.status_active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: fit-content;
+    width: 40%;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.status_inactive{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: fit-content;
+    width: 40%;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
 
 .open_button{
     display: flex;
@@ -278,13 +329,14 @@ main {
     background-color: var(--grey);
 }
 
-/* POPUP CADASTRAR USUÁRIO */
-
-#popup_cadastrar{
+#popup_filtrar{
     width: 30%;
 }
 
-/* Estilo da Popup */
+#popup_dados_proprietario{
+    width: 50%;
+}
+
 .popup {    
     justify-self: center;
     align-self: center;
@@ -306,9 +358,121 @@ main {
     align-items:normal;
 }
 
-/* Seção Dados Pessoais */
-.section_dados_pessoais {
+.popup hr{
+    margin-bottom: 10px;
+    border-top: 1px solid var(--green);
+    margin: 10;
+}
+
+.popup p,label{
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.popup h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 0px 20px 0px;
+}
+
+.popup .selectSuccess {
+    height: 36px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    padding-left: 10px;
+}
+
+.popup .selectError {
+    height: 36px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    padding-left: 10px;
+}
+
+.popup .inputSuccess {
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    padding-left: 10px;
+}
+
+.popup .inputError{
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    padding-left: 10px;
+}
+
+.popup .status{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.popup .buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.popup .icon{
+    height: 20px;
+    width: 20px;
+}
+
+.buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.buttons button:hover {
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+input[type="checkbox"]{
+    border: 1px solid #5BB800;
+}
+
+.status div{
+    display: flex;
+    flex-direction: row;
+}
+
+#table_list{
+    overflow-y: auto;
+    height: 85%;
+
+}
+
+.popup .dados_pessoais{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "nome nome"
     "cpf estado_civil";
@@ -333,8 +497,7 @@ main {
     grid-area: estado_civil;
 }
 
-/* Seção Endereço */
-.section_endereco{
+.popup .endereco{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
@@ -393,126 +556,24 @@ main {
     grid-area: uf;
 }
 
-/* Seção Endereço */
-.section_contato{
+.popup .contato{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
-    "telefone email";
+    grid-template-areas: "telefone email";
     column-gap: 15px;
-    
 }
 
-/* POPUP FILTRAR*/
-#popup_filtrar{
-    width: 20%;
-}
-
-/* Seção Status */
-.status div{
+.popup .div_telefone{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    grid-area: telefone;
 }
 
-input[type="checkbox"]{
-    border: 1px solid #5BB800;
-}
-
-
-#table_list{
-    overflow-y: auto;
-    height: 85%;
-
-}
-
-
-/* Formatações gerais da Popup */
-.popup hr{
-    margin-bottom: 10px;
-    border-top: 1px solid var(--green);
-    margin: 10;
-}
-
-.popup p,label{
-    font-size: 12px;
-    font-weight: bold;
-    padding-left: 10px;
-}
-
-.popup h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 0px 0px 20px 0px;
-}
-
-.popup .selectSuccess {
-    height: 36px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--green);
-    padding-left: 10px;
-}
-
-.popup .selectError {
-    height: 36px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--red);
-    padding-left: 10px;
-}
-
-.popup .inputSuccess {
-    height: 30px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--green);
-    padding-left: 10px;
-}
-
-.popup .inputError{
-    height: 30px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--red);
-    padding-left: 10px;
-}
-
-.popup .buttons{
+.popup .div_email{
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
+    flex-direction: column;
+    grid-area: email;
 }
 
-.popup .icon{
-    height: 20px;
-    width: 20px;
-}
-
-.buttons button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--green);
-    color: var(--white);
-    font-size: 12px;
-    font-weight: bold;
-    gap: 10px;
-}
-
-.buttons button:hover {
-    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
-}
 
 
