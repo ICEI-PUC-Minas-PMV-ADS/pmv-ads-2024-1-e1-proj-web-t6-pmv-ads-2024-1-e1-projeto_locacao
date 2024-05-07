@@ -158,10 +158,10 @@ Eduardo Wollinger
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-06 CONTRATOS (ZANDER)
- Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
+ Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
  <figure> 
   <img src="img/Contratos.png">
-    <figcaption>Figura 3 - Tela - Imóveis</figcaption>
+    <figcaption>Figura 6 - Tela - Contratos</figcaption>
 </figure>
 
 #### Requisito atendido
