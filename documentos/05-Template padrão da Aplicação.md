@@ -1,6 +1,6 @@
 # Template padrão da Aplicação
 
-O template padrão da aplicação foi construído com as linguagens de marcação HTML e CSS e linguagem de programação Javascript.
+O template padrão da aplicação foi construído com as linguagens de marcação HTML e CSS.
 
 As telas terão como elementos padrões o menu de navegação, o header e o nav, além dos elementos de identidade visual citados abaixo:
 
