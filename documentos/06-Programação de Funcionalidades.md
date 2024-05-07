@@ -158,7 +158,7 @@ Eduardo Wollinger
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-06 CONTRATOS (ZANDER)
-
+ Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
 #### Requisito atendido
 
 #### Artefatos da funcionalidade
