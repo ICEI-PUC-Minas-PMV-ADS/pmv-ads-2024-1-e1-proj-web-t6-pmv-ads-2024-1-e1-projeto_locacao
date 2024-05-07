@@ -1,6 +1,6 @@
 # Template padrão da Aplicação
 
-O template padrão da aplicação foi construído com as linguagens de marcação HTML e CSS.
+O template padrão da aplicação foi construído com as linguagens de marcação HTML e CSS e linguagem de programação Javascript.
 
 As telas terão como elementos padrões o menu de navegação, o header e o nav, além dos elementos de identidade visual citados abaixo:
 
@@ -12,7 +12,7 @@ O código utilizado para a construção dos elementos citados, incluindo a respo
 
 # Tela Padrão
 
-Exibe o título, o tipo de usuário logado e o sidebar com os respectivos botões.
+Exibe a logomarca, título da página, o tipo de usuário logado e o sidebar com os respectivos botões.
 <figure> 
   <img src="img/template_padrao.png"
     <figcaption>Tela - Padrão</figcaption>
