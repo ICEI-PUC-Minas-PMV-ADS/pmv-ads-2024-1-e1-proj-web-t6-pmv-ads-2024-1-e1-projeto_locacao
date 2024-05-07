@@ -9,15 +9,16 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 ### RF-01 USUÁRIOS (THÁSSIA)
 
 #### Requisito atendido
+ 
 
 #### Artefatos da funcionalidade
-
+  
 #### Estrutura de Dados
-
+  
 #### Instruções de acesso
 
 #### Responsável
-
+ 
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -34,12 +35,12 @@ Exemplo da tela de login:
 RF-02: A aplicação deve permitir ao usuário fazer o login em sua conta.
 
 #### Artefatos da funcionalidade
-● login_page.html <br>
-● login_page.css<br>
-● login_page.js<br>
+* login_page.html <br>
+* login_page.css<br>
+* login_page.js<br>
 
 #### Estrutura de Dados
-● [login_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/a936b66e6ee5f9aa713dc2ea084a9a78b23a7fef/codigo-fonte/login_page/login_page.html)
+* [login_page.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/login_page/login_page.html)     
 
 #### Instruções de acesso
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/login_page/login_page.html
@@ -52,17 +53,32 @@ Socratis Gomes da Silva
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-03 IMÓVEIS (ZANDER)
+ Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
+ <figure> 
+  <img src="img/imoveis.png">
+    <figcaption>Figura 3 - Tela - Imóveis</figcaption>
+</figure>
 
+  
 #### Requisito atendido
-
+   RF-03	A aplicação deve permitir cadastrar/alterar/pesquisar imóveis.
 #### Artefatos da funcionalidade
-
+   * imoveis.html
+   * imoveis_page.css
+   * alterar_imoveis.html
+   * estilo2.css
+   * estilo.css
+   * filtro.css
+   * imoveis.js
+   * imoveis_filtro.html
+   * novo_imovel-html
 #### Estrutura de Dados
-
+  https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/imoveis/imoveis.html.
 #### Instruções de acesso
-
+  Abrir o navegador em https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/imoveis/imoveis.html. <br>
+  Na parte superior direita escontram-se os botões para pesquisar algum imóvel através do filtro e adicionar novo imóvel através do botão "mais". o ícone seta do lado direito de cada imóvel permite alterações no mesmo.
 #### Responsável
-
+   Zander Vasconcelos Pereira
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -70,7 +86,7 @@ Socratis Gomes da Silva
 
 Responsável: Pedro Francis Maia Coelho
 
-O acesso a tela de proprietários poderá ser feito através da opção "Proproetários" no menu lateral a esquerda de qualquer página após o login.
+O acesso a tela de proprietários poderá ser feito através da opção "Proprietários" no menu lateral a esquerda de qualquer página após o login.
 
 Exemplo da tela de proprietários:
 <figure> 
@@ -121,9 +137,9 @@ RF-05: A aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquili
 #### Artefatos da funcionalidade
 Foram criados os seguintes artefatos:
 
-● locatarios_page.jtml <br>
-● locatarios_page.css <br>
-● locatarios_page.js <br>
+* locatarios_page.jtml <br>
+* locatarios_page.css <br>
+* locatarios_page.js <br>
 
 
 #### Estrutura de Dados

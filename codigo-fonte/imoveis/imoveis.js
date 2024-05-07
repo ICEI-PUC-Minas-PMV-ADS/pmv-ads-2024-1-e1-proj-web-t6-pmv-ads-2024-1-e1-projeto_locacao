@@ -19,10 +19,12 @@ const iframe3 = document.getElementById('meuIframeAlterar')
 // Ações dos botões:
 
 function abrirModalFiltro(){
+    
     ElementoFade.classList.add("escuro");
     dialog3.removeAttribute('open');
     dialog2.removeAttribute('open');
     dialog1.setAttribute('open', 'true');
+    
 }
 
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="proprietarios_page.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script src="proprietarios_page.js"></script>
+    <script src="proprietarios_page.js" defer></script>
 </head>
 
 <body onload="proprietarios_init()">
@@ -37,7 +37,7 @@
                     <img class="icon" src="../src/icones/icon_locatarios.png" alt="">
                     <p>Locatários</p>
                 </button>
-                <button class="sidebar_button" onclick="">
+                <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
                     <img class="icon" src="../src/icones/icon_imoveis.png" alt="">
                     <p>Imóveis</p>
                 </button>
@@ -91,7 +91,9 @@
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
-            <div id="table_list"></div>
+            <div id="table_list">
+                
+            </div>
         </main>
     </div>
     <dialog id="popup_filtrar" class="popup">
