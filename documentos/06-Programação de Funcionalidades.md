@@ -76,7 +76,7 @@ Socratis Gomes da Silva
   https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/imoveis/imoveis.html.
 #### Instruções de acesso
   Abrir o navegador em https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/imoveis/imoveis.html. <br>
-  Na parte superior esquerda escontram-se os botões para pesquisar algum imóvel através do filtro e adicionar novo imóvel através do botão "mais". o ícone seta do lado direito de cada imóvel permite alterações no mesmo.
+  Na parte superior direita escontram-se os botões para pesquisar algum imóvel através do filtro e adicionar novo imóvel através do botão "mais". o ícone seta do lado direito de cada imóvel permite alterações no mesmo.
 #### Responsável
    Zander Vasconcelos Pereira
 
