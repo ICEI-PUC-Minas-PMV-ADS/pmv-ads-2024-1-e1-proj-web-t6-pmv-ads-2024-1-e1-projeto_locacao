@@ -9,15 +9,16 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 ### RF-01 USUÁRIOS (THÁSSIA)
 
 #### Requisito atendido
+ 
 
 #### Artefatos da funcionalidade
-
+  
 #### Estrutura de Dados
-
+  
 #### Instruções de acesso
 
 #### Responsável
-
+ 
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -52,17 +53,32 @@ Socratis Gomes da Silva
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-03 IMÓVEIS (ZANDER)
+ Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
+ <figure> 
+  <img src="img/imoveis.png">
+    <figcaption>Figura 3 - Tela - Imóveis</figcaption>
+</figure>
 
+  
 #### Requisito atendido
-
+   RF-03	A aplicação deve permitir cadastrar/alterar/pesquisar imóveis.
 #### Artefatos da funcionalidade
-
+   * imoveis.html
+   * imoveis_page.css
+   * alterar_imoveis.html
+   * estilo2.css
+   * estilo.css
+   * filtro.css
+   * imoveis.js
+   * imoveis_filtro.html
+   * novo_imovel-html
 #### Estrutura de Dados
-
+  https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/imoveis/imoveis.html.
 #### Instruções de acesso
-
+  Abrir o navegador em https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/imoveis/imoveis.html. <br>
+  Na parte superior direita escontram-se os botões para pesquisar algum imóvel através do filtro e adicionar novo imóvel através do botão "mais". o ícone seta do lado direito de cada imóvel permite alterações no mesmo.
 #### Responsável
-
+   Zander Vasconcelos Pereira
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -70,7 +86,7 @@ Socratis Gomes da Silva
 
 Responsável: Pedro Francis Maia Coelho
 
-O acesso a tela de proprietários poderá ser feito através da opção "Proproetários" no menu lateral a esquerda de qualquer página após o login.
+O acesso a tela de proprietários poderá ser feito através da opção "Proprietários" no menu lateral a esquerda de qualquer página após o login.
 
 Exemplo da tela de proprietários:
 <figure> 
@@ -142,17 +158,33 @@ Eduardo Wollinger
 --------------------------------------------------------------------------------------------------------------------
 
 ### RF-06 CONTRATOS (ZANDER)
+ Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
+ <figure> 
+  <img src="img/Contratos.png">
+    <figcaption>Figura 6 - Tela - Contratos</figcaption>
+</figure>
 
 #### Requisito atendido
-
+ RF-06	A aplicação deve permitir ao usuário cadastrar/alterar/consultar os contratos.
 #### Artefatos da funcionalidade
-
+* alterar_contratos.html
+* contratos.html
+* contratos.js
+* contratos_filtro.html
+* contratos_page.css
+* estiloContratoFiltroDesktop.css
+* estiloContratoPopUpDesktop.css
+* estiloContratoPopupMovel.css
+* estiloFiltroContrato.css
+* novo_contrato.html
 #### Estrutura de Dados
+[contratos.html](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/contratos/contratos.html)
 
 #### Instruções de acesso
-
+Abrir o navegador em https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/contratos/contratos.html <br>
+Na parte superior direita escontram-se os botões para pesquisar algum contrato através do filtro e adicionar novo contrato através do botão "mais". o ícone seta do lado direito de cada contrato permite alterações no mesmo.
 #### Responsável
-
+Zander Vasconcelos Pereira
 
 --------------------------------------------------------------------------------------------------------------------
 
