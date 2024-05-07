@@ -4,7 +4,7 @@ O template padrão da aplicação foi construído com as linguagens de marcaçã
 
 As telas terão como elementos padrões o menu de navegação, o header e o nav, além dos elementos de identidade visual citados abaixo:
 
-* Cores: green, grey, light-grey, dark-grey, black e white;                        
+* Cores: green (#5BB800), grey (#E0E1E2), light-gre (#F8F9FA), dark-grey (#A0AEC0), black (#000000) e white (#ffffff);                        
 * Font-family: Roboto, sans-serif;
 * Font-size: 25px e 16px.
 
