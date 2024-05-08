@@ -96,6 +96,7 @@ function requisicoes(id, requisitante, tipo, status) {
     } else {
         show_snackbar('body #snackbar_error', 'Nenhuma requisição foi encontrada!')
     }
+    
 }
 
 function abrir_popup_filtrar_proprietario() {
