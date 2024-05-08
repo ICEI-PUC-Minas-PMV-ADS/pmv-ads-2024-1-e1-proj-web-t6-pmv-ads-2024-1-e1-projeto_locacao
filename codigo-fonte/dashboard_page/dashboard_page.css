@@ -187,12 +187,26 @@ hr.divisor {
     gap: 15px;
 }
 
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: var(--black);
+    font-weight: normal;
+    /* gap: 10px; */
+    border-radius: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--white); 
+    padding: 15px;  
+}
+
 main {
     display: grid;
     grid-template-areas: 
         "bar bar"
         "doughnut faturas";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 50%;
     background-color: var(--light-grey);
     width: 100%;
@@ -208,8 +222,9 @@ main {
     color: var(--green);
     font-weight: bold;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .div_table_properties_group_buttons{
@@ -237,6 +252,8 @@ main {
     color: var(--dark-grey);
     font-size: 12px;
     font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .div_table_row{
@@ -245,7 +262,8 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-width: fit-content;
+    /* min-width: fit-content; */
+    width: 100%;
 }
 
 .table_icon{
@@ -292,7 +310,7 @@ main {
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 40%;
+    width: 80%;
     background-color: var(--green);
     color: var(--white);
     font-weight: 600;
@@ -307,8 +325,8 @@ main {
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 40%;
-    background-color: var(--dark-grey);
+    width: 80%;
+    background-color: var(--red);
     color: var(--white);
     font-weight: 600;
     height: 35px;
@@ -464,12 +482,6 @@ input[type="checkbox"]{
     flex-direction: row;
 }
 
-#table_list{
-    overflow-y: auto;
-    height: 85%;
-
-}
-
 .popup .dados_pessoais{
     display: grid;
     grid-template-areas: 
@@ -585,7 +597,7 @@ input[type="checkbox"]{
 }
 
 .table_id{
-    min-width: flex;
+    min-width: fit-content;
     width: 10%;
    
   
@@ -612,7 +624,14 @@ input[type="checkbox"]{
 .table_status{
     min-width: fit-content;
    
-    width: auto;
+    width: 20%;
+}
+
+#table_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .divisor {
