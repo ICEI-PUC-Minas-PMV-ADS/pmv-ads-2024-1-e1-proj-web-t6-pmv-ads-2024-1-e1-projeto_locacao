@@ -96,6 +96,7 @@ function requisicoes(id, requisitante, tipo, status) {
     } else {
         show_snackbar('body #snackbar_error', 'Nenhuma requisição foi encontrada!')
     }
+    
 }
 
 function abrir_popup_filtrar_proprietario() {
@@ -359,17 +360,17 @@ function salvar_dados_requisicao() {
        
         list = JSON.parse(localStorage.getItem("requisicoes"))
 
-       list = list.map((requisicao) => {
-            if (requisicao.id == id) {
-                requisicao.tipo = tipo
-                requisicao.requisitante = requisitante
-                requisicao.requisicao = requisicao
+       list = list.map((dadosRequisicao) => {
+            if (dadosRequisicao.id == id) {
+                dadosRequisicao.tipo = tipo
+                dadosRequisicao.requisitante = requisitante
+                dadosRequisicao.requisicao = requisicao
                 console.log("alterar")
 
-                return requisicao
+                return dadosRequisicao
             }
 
-            return requisicao
+            return dadosRequisicao
         })
 
         localStorage.setItem("requisicoes", JSON.stringify(list))
