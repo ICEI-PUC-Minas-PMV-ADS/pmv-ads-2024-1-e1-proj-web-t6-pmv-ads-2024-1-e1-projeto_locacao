@@ -4,7 +4,7 @@ O template padrão da aplicação foi construído com as linguagens de marcaçã
 
 As telas terão como elementos padrões o menu de navegação, o header e o nav, além dos elementos de identidade visual citados abaixo:
 
-* Cores: green, grey, light-grey, dark-grey, black e white;                        
+* Cores: green (#5BB800), grey (#E0E1E2), light-grey (#F8F9FA), dark-grey (#A0AEC0), black (#000000) e white (#ffffff);                        
 * Font-family: Roboto, sans-serif;
 * Font-size: 25px e 16px.
 
@@ -12,14 +12,17 @@ O código utilizado para a construção dos elementos citados, incluindo a respo
 
 # Tela Padrão
 
-Exibe o título, o tipo de usuário logado e o sidebar com os respectivos botões.
+Exibe a logomarca, título da página, o tipo de usuário logado e o sidebar com os respectivos botões.
 <figure> 
   <img src="img/template_padrao.png"
-    <figcaption>Tela - Padrão</figcaption>
+    <figcaption>Figura 1 - Tela Padrão</figcaption>
+</figure><br><br>
+<p align="Justify">Foi usado um tom de verde mais chamativo em detrimento ao fundo claro em alguns ícones ou links da página, estratégia usada justamente para chamar atenção e foco do usuário nos conteúdos abordados ali, bem como na logomarca, por exemplo. 
+
+<figure> 
+  <img src="img/logomarca.png"
+    <figcaption>Figura 2 - Logomarca</figcaption>
 </figure>
-
-
-
 
 
 
