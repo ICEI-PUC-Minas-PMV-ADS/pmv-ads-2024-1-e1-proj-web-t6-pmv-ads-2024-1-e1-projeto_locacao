@@ -201,13 +201,13 @@ function abrir_popup_dados_requisicao(e) {
     body.innerHTML += `
         <dialog id="popup_dados_requisicao" class="popup">
             <div>
-                <h1>Requisição</h1>
+                <h1>Requisição - ${dados.id}</h1>
                 <p>REQUISITANTE</p>
                 <hr>
                 <div class="dados_pessoais">
                     <div class="div_tipo">
                         <label for="tipo">TIPO REQUISITANTE*</label>
-                        <select name="tipo" id="tipo_novo" class="selectSuccess" onblur="return set_input_success(this)">
+                        <select name="tipo" id="tipo_dados_requisicao" class="selectSuccess" onblur="return set_input_success(this)" disabled="true" >
                             <option value="vazio" >-</option>
                             <option value="Locatário" ${dados.tipo == "Locatário"? "selected":""}>Locatário</option>
                             <option value="Proprietário"${dados.tipo == "Proprietário"? "selected":""}>Proprietário</option>
@@ -216,13 +216,13 @@ function abrir_popup_dados_requisicao(e) {
                 
                     <div class="div_requisitante">
                         <label for="requisitante">REQUISITANTE*</label>
-                        <input type="text" name="requisitante" id="requisitante_novo" class="inputSuccess" onblur="return set_input_success(this)">
+                        <input type="text" value="${dados.requisitante}" name="requisitante" id="requisitante_dados_requisicao" class="inputSuccess" onblur="return set_input_success(this)" readonly>
                     </div>
                                     
                 </div>
                 <p>REQUISIÇÃO</p>
                 <hr>
-                <textarea class="textareaSuccess" id="requisicao_novo" onblur="return set_input_success(this)"></textarea>
+                <textarea class="textareaSuccess" id="requisicao_dados_requisicao" onblur="return set_input_success(this)" disabled="true">${dados.requisicao}</textarea >
                 
                 
                 <div class="buttons">
@@ -230,9 +230,9 @@ function abrir_popup_dados_requisicao(e) {
                         <img class="icon" src="../src/icones/icon_voltar.png" alt="">
                         VOLTAR
                     </button>
-                    <button onclick="salvar_nova_requisicao()">
-                        <img class="icon" src="../src/icones/icon_salvar.png" alt="">
-                        SALVAR
+                    <button onclick="alterar_dados_requisicao()">
+                        <img class="icon" src="../src/icones/icon_alterar.png" alt="">
+                        ALTERAR
                     </button>
                 </div>
             </div>
@@ -252,149 +252,85 @@ function fechar_popup_dados_requisicao() {
     popup.close()
 }
 
-function alterar_dados_proprietario() {
+function alterar_dados_requisicao() {
 
-    let buttons = document.querySelector("#popup_dados_proprietario .buttons")
+    let buttons = document.querySelector("#popup_dados_requisicao .buttons")
 
     buttons.removeChild(buttons.children[1])
 
     buttons.innerHTML += `
-        <button onclick="salvar_dados_proprietario()">
+        <button onclick="salvar_dados_requisicao()">
             <img class="icon" src="../src/icones/icon_salvar.png" alt="">
             SALVAR
         </button>
     `
 
-    document.getElementById("nome_prop").readOnly = false
-    document.getElementById("cpf_prop").readOnly = false
-    document.getElementById("estado_civil_prop").disabled = false
-    document.getElementById("tipo_logradouro_prop").disabled = false
-    document.getElementById("logradouro_prop").readOnly = false
-    document.getElementById("numero_prop").readOnly = false
-    document.getElementById("complemento_prop").readOnly = false
-    document.getElementById("bairro_prop").readOnly = false
-    document.getElementById("cidade_prop").readOnly = false
-    document.getElementById("cep_prop").readOnly = false
-    document.getElementById("uf_prop").readOnly = false
-    document.getElementById("telefone_prop").readOnly = false
-    document.getElementById("email_prop").readOnly = false
+    document.getElementById("tipo_dados_requisicao").disabled = false
+    document.getElementById("requisitante_dados_requisicao").readOnly = false
+    document.getElementById("requisicao_dados_requisicao").disabled = false
+    
 }
 
-function salvar_dados_proprietario() {
+function salvar_dados_requisicao() {
     
-    let id = parseInt(document.querySelector("#popup_dados_proprietario h1").innerHTML.split(" - ")[1])
-    let nome_element = document.getElementById("nome_prop")
-    let cpf_element = document.getElementById("cpf_prop")
-    let estado_civil_element = document.getElementById("estado_civil_prop")
-    let tipo_logradouro_element = document.getElementById("tipo_logradouro_prop")
-    let logradouro_element = document.getElementById("logradouro_prop")
-    let numero_element = document.getElementById("numero_prop")
-    let complemento_element = document.getElementById("complemento_prop")
-    let bairro_element = document.getElementById("bairro_prop")
-    let cidade_element = document.getElementById("cidade_prop")
-    let cep_element = document.getElementById("cep_prop")
-    let uf_element = document.getElementById("uf_prop")
-    let telefone_element = document.getElementById("telefone_prop")
-    let email_element = document.getElementById("email_prop")
+    let id = parseInt(document.querySelector("#popup_dados_requisicao h1").innerHTML.split(" - ")[1])
+    let tipo_element = document.getElementById("tipo_dados_requisicao")
+    let requisitante_element = document.getElementById("requisitante_dados_requisicao")
+    let requisicao_element = document.getElementById("requisicao_dados_requisicao")
+    
 
-    let nome = nome_element.value == "" ? null : nome_element.value
-    let cpf = cpf_element.value == "" || cpf_element.value.length < 14 ? null : cpf_element.value.replace(/\D/g, '')
-    let estado_civil = estado_civil_element.value == "vazio" ? null : estado_civil_element.value
-    let tipo_logradouro = tipo_logradouro_element.value == "vazio" ? null : tipo_logradouro_element.value
-    let logradouro = logradouro_element.value == "" ? null : logradouro_element.value
-    let numero = numero_element.value == "" ? null : numero_element.value
-    let complemento = complemento_element.value
-    let bairro = bairro_element.value == "" ? null : bairro_element.value
-    let cidade = cidade_element.value == "" ? null : cidade_element.value
-    let cep = cep_element.value == "" ? null : cep_element.value
-    let uf = uf_element.value == "" ? null : uf_element.value
-    let telefone = telefone_element.value == "" ? null : telefone_element.value
-    let email = email_element.value == "" ? null : email_element.value
+    let tipo = tipo_element.value == "vazio" ? null : tipo_element.value
+    let requisitante = requisitante_element.value == "" ? null : requisitante_element.value
+    let requisicao = requisicao_element.value == "" ? null : requisicao_element.value
+    
+
+    console.log(tipo)
+    console.log(requisitante)
+    console.log(requisicao)
+
 
     let vericacao = [
         {
-            value: nome,
-            element: nome_element,
-            messageError: "O nome não foi informado.",
+            value: tipo,
+            element: tipo_element,
+            messageError: "O tipo não foi informado.",
             status: false
         },
         {
-            value: cpf,
-            element: cpf_element,
-            messageError: "O CPF não foi informado.",
+            value: requisitante,
+            element: requisitante_element,
+            messageError: "O requisitante não foi informado.",
             status: false
         },
         {
-            value: estado_civil,
-            element: estado_civil_element,
-            messageError: "O estado civil não foi informado.",
+            value: requisicao,
+            element: requisicao_element,
+            messageError: "A requisição não foi informada.",
             status: false
         },
-        {
-            value: tipo_logradouro,
-            element: tipo_logradouro_element,
-            messageError: "O tipo de logradouro não foi informado.",
-            status: false
-        },
-        {
-            value: logradouro,
-            element: logradouro_element,
-            messageError: "O logradouro não foi informado.",
-            status: false
-        },
-        {
-            value: numero,
-            element: numero_element,
-            messageError: "O número não foi informado.",
-            status: false
-        },
-        {
-            value: bairro,
-            element: bairro_element,
-            messageError: "O bairro não foi informado.",
-            status: false
-        },
-        {
-            value: cidade,
-            element: cidade_element,
-            messageError: "A cidade não foi informado.",
-            status: false
-        },
-        {
-            value: cep,
-            element: cep_element,
-            messageError: "O CEP não foi informado.",
-            status: false
-        },
-        {
-            value: uf,
-            element: uf_element,
-            messageError: "A UF não foi informado.",
-            status: false
-        },
-        {
-            value: telefone,
-            element: telefone_element,
-            messageError: "O telefone não foi informado.",
-            status: false
-        },
-        {
-            value: email,
-            element: email_element,
-            messageError: "O e-mail não foi informado.",
-            status: false
-        },
+        
     ]
 
     for (let i = 0; i < vericacao.length; i++) {
         if (vericacao[i].value == null) {
+            if (vericacao[i].element.tagName == "INPUT"){
+                vericacao[i].element.className = "inputError"    
+            } else if(vericacao[i].element.tagName == "SELECT"){
+                vericacao[i].element.className = "selectError"
+            } else if(vericacao[i].element.tagName == "TEXTAREA"){
+                vericacao[i].element.className = "textareaError"
+            }
             vericacao[i].element.className = vericacao[i].element.tagName == "INPUT" ? "inputError" : "selectError"
-            show_snackbar("#popup_dados_proprietario #snackbar_error", vericacao[i].messageError)
+            show_snackbar("#popup_nova_requisicao #snackbar_error", vericacao[i].messageError)
             break
         } else {
             vericacao[i].status = true
         }
     }
+    
+    
+ 
+    
 
     let pode_salvar = false
 
@@ -408,57 +344,37 @@ function salvar_dados_proprietario() {
     }
 
     if(pode_salvar){
-        let buttons = document.querySelector("#popup_dados_proprietario .buttons")
+        let buttons = document.querySelector("#popup_dados_requisicao .buttons")
         buttons.removeChild(buttons.children[1])
 
         buttons.innerHTML += `
-            <button onclick="alterar_dados_proprietario()">
+            <button onclick="alterar_dados_requisicao()">
                 <img class="icon" src="../src/icones/icon_alterar.png" alt="">
                 ALTERAR
             </button>
         `
+        document.getElementById("tipo_dados_requisicao").disabled = true
+        document.getElementById("requisitante_dados_requisicao").readOnly = true
+        document.getElementById("requisicao_dados_requisicao").disabled = true
+       
+        list = JSON.parse(localStorage.getItem("requisicoes"))
 
-        nome_element.readOnly = true
-        cpf_element.readOnly = true
-        estado_civil.disabled = true
-        tipo_logradouro_element.readOnly = true
-        logradouro_element.readOnly = true
-        numero_element.readOnly = true
-        complemento_element.readOnly = true
-        bairro_element.readOnly = true
-        cidade_element.readOnly = true
-        cep_element.readOnly = true
-        uf_element.readOnly = true
-        telefone_element.readOnly = true
-        email_element.readOnly = true
+       list = list.map((requisicao) => {
+            if (requisicao.id == id) {
+                requisicao.tipo = tipo
+                requisicao.requisitante = requisitante
+                requisicao.requisicao = requisicao
+                console.log("alterar")
 
-        proprietariosList = JSON.parse(localStorage.getItem("proprietarios"))
-
-        proprietariosList = proprietariosList.map((proprietario) => {
-            if (proprietario.id == id) {
-                proprietario.nome = nome
-                proprietario.cpf = cpf
-                proprietario.estado_civil = estado_civil
-                proprietario.telefone = telefone
-                proprietario.email = email
-                proprietario.endereco.tipo_logradouro = tipo_logradouro
-                proprietario.endereco.logradouro = logradouro
-                proprietario.endereco.numero = numero
-                proprietario.endereco.complemento = complemento
-                proprietario.endereco.bairro = bairro
-                proprietario.endereco.cidade = cidade
-                proprietario.endereco.cep = cep
-                proprietario.endereco.uf = uf
-
-                return proprietario
+                return requisicao
             }
 
-            return proprietario
+            return requisicao
         })
 
-        localStorage.setItem("proprietarios", JSON.stringify(proprietariosList))
+        localStorage.setItem("requisicoes", JSON.stringify(list))
 
-        filtrar_proprietarios()
+        filtrar_requisicoes()
     }
 }
 
@@ -611,10 +527,11 @@ function salvar_nova_requisicao() {
             status_atendimento: true,
             requisicao: requisicao
         }
+        console.log(jsonNovaRequisicao)
 
         let requisicoesList = JSON.parse(localStorage.getItem("requisicoes"))
         requisicoesList.push(jsonNovaRequisicao)
-
+console.log(requisicoesList)
         localStorage.setItem("requisicoes", JSON.stringify(requisicoesList))
 
         requisicoes(novo_id() - 1, null, null, null)
