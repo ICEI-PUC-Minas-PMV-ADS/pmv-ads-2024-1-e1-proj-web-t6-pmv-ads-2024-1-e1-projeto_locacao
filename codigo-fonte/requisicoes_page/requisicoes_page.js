@@ -196,6 +196,7 @@ function abrir_popup_dados_requisicao(e) {
             verifica_popups[i].outerHTML = ""
         }
     }
+    console.log(dados)
 
     body.innerHTML += `
         <dialog id="popup_dados_requisicao" class="popup">
@@ -208,8 +209,8 @@ function abrir_popup_dados_requisicao(e) {
                         <label for="tipo">TIPO REQUISITANTE*</label>
                         <select name="tipo" id="tipo_novo" class="selectSuccess" onblur="return set_input_success(this)">
                             <option value="vazio" >-</option>
-                            <option value="Locatário" ${dados.tipo == "Locatário"? "select":""}>Locatário</option>
-                            <option value="Proprietário"${dados.tipo == "Proprietário"? "select":""}>Proprietário</option>
+                            <option value="Locatário" ${dados.tipo == "Locatário"? "selected":""}>Locatário</option>
+                            <option value="Proprietário"${dados.tipo == "Proprietário"? "selected":""}>Proprietário</option>
                         </select>
                     </div>   
                 
