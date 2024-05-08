@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Proprietários</title>
+    <link rel="stylesheet" type="text/css" href="requisicoes_page.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="requisicoes_page.js"></script>
+</head>
+
+<body onload="requisicao_init()">
+    <header>
+        <div class="div_logo">
+            <p><span class="immo">Immo</span><span class="control">Control</span></p>
+        </div>
+        <div class="div_titulo">Requisições</div>
+        <div class="div_usuario">
+            <p>Usuário Master</p>
+            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="">
+        </div>
+    </header>
+    <div class="content">
+        <nav>
+            <div class="sidebar_superior">
+                <hr class="divisor">
+                <button class="sidebar_button" onclick="location.href = '../dashboard_page/dashboard_page.html'">
+                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="">
+                    <p>Dashboard</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_proprietarios.png" alt="">
+                    <p>Proprietários</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="">
+                    <p>Locatários</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="">
+                    <p>Imóveis</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_contratos.png" alt="">
+                    <p>Contratos</p>
+                </button>
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_faturas.png" alt="">
+                    <p>Faturas</p>
+                </button>
+                <button class="sidebar_button_selected" onclick="">
+                    <img class="icon" src="../src/icones/icon_requisicoes_selecionado.png" alt="">
+                    <p>Requisições</p>
+                </button>
+            </div>
+            <div class="sidebar_inferior">
+                <hr class="divisor">
+                <button class="sidebar_button" onclick="">
+                    <img class="icon" src="../src/icones/icon_usuarios.png" alt="">
+                    <p>Usuários</p>
+                </button>
+            </div>
+        </nav>
+        <main id="table_owners">
+            <div class="div_table_properties">
+                <p>Requisições</p>
+                <div class="div_table_properties_group_buttons">
+                    <button class="div_table_properties_button" onclick="abrir_popup_filtrar_proprietario()">
+                        <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="">
+                    </button>
+                    <button class="div_table_properties_button" onclick="abrir_popup_nova_requisicao()">
+                        <img class="icon" src="../src/icones/icon_button_adicionar.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="div_table_header">
+                <div class="table_icon"></div>
+                <div class="table_id">
+                    ID
+                </div>
+                <div class="table_requisitante">
+                    REQUISITANTE
+                </div>
+                <div class="table_tipo">
+                    TIPO
+                </div>
+                <div class="table_data">
+                    DATA
+                </div>
+                <div class="table_status">
+                    STATUS
+                </div>
+                <div class="table_button"></div>
+            </div>
+            <hr class="divisor">
+            <div id="table_list"></div>
+        </main>
+    </div>
+    <dialog id="popup_filtrar" class="popup">
+        <div>
+            <h1>Filtros</h1>
+            <p>DADOS DA REQUISIÇÃO</p>
+            <hr>
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" class="inputSuccess">
+            <label for="tipo">TIPO REQUISITANTE</label>
+            <select name="tipo" id="tipo" class="selectSuccess">
+                <option value="Todos">Todos</option>
+                <option value="Locatário" >Locatário</option>
+                <option value="Proprietário" >Proprietário</option>
+            </select>
+            <label for="requisitante">REQUISITANTE</label>
+            <input type="text" name="requisitante" id="requisitante" class="inputSuccess">
+            <p>STATUS</p>
+            <hr>
+            <div class="status">
+                <div>
+                    <input type="checkbox" name="todos" id="status_todos" value="Todos" onchange="status_todos()">
+                    <label for="todos">TODOS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ativo" id="status_ativo" value="Atendida" onchange="status_ativo()">
+                    <label for="ativo">ATENDIDA</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="inativo" id="status_inativo" value="Em Aberto" onchange="status_inativo()">
+                    <label for="inativo">EM ABERTO</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="fechar_popup_filtrar_proprietario()">
+                    <img class="icon" src="../src/icones/icon_voltar.png" alt="">
+                    VOLTAR
+                </button>
+                <button onclick="filtrar_requisicoes()">
+                    <img class="icon" src="../src/icones/icon_filtrar.png" alt="">
+                    FILTRAR
+                </button>
+            </div>
+        </div>
+    </dialog>
+    <div id="snackbar_success" class="snackbar"></div>
+    <div id="snackbar_error" class="snackbar"></div>
+</body>
+</html>
