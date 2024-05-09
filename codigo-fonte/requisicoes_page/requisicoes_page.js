@@ -3,7 +3,7 @@ function requisicao_init() {
 
     iniciar_banco()
 
-    requisicoes(null, null, null, true)
+    requisicoes(null, null, null, false)
 }
 
 function requisicoes(id, requisitante, tipo, status) {
@@ -225,10 +225,11 @@ function abrir_popup_dados_requisicao(e) {
                 <hr>
                 <textarea class="textareaSuccess" id="requisicao_dados_requisicao" onblur="return set_input_success(this)" disabled="true">${dados.requisicao}</textarea >
                 
-                <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
+                <div>
+                    <input class="tog" id="demo" type="checkbox" ${!dados.status_atendimento ? 'checked="checked"' : ""}>
+                    <label class="tog" for="demo"></label>
+                </div>
+
                 <div class="buttons">
                     <button onclick="fechar_popup_dados_requisicao()">
                         <img class="icon" src="../src/icones/icon_voltar.png" alt="">
