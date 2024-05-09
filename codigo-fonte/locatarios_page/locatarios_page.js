@@ -18,7 +18,26 @@ function cadastrar_locatario() {
 }
 
 
-// POPUP FILTRAR
+// POPUP CADASTRAR dados LOCATÁRIO
+function abrir_popup_dados_locatario() {
+    let popup = document.getElementById('popup_dados_locatario')
+
+    popup.showModal()
+}
+
+function fechar_popup_dados_locatario() {
+    let popup = document.getElementById('popup_dados_locatario')
+
+    popup.close()
+}
+
+function alterar_locatario() {
+    let popup = document.getElementById('popup_dados_locatario')
+    popup.close()
+}
+
+
+// POPUP FILTRAR LOCATÁRIO
 function abrir_popup_filtrar_locatario() {
     let popup = document.getElementById('popup_filtrar')
 

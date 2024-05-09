@@ -217,12 +217,19 @@ main {
     font-weight: bold;
 }
 
+#table_list{
+    overflow-y: auto;
+    height: 3%;
+
+}
+
 .div_table_row{
     margin: 10px 0 10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    min-width: fit-content;
 }
 
 .table_icon{
@@ -241,28 +248,69 @@ main {
 .table_name{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 25%;
+    width: 20%;
 }
 
-.table_locatario{
+.table_telefone{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 25%;
+    width: 20%;
+}
+
+.table_email{
+    min-width: fit-content;
+    /* border: 1px solid black; */
+    width: 20%;
 }
 
 .table_status{
     min-width: fit-content;
     /*border: 1px solid black;*/
-    width: 25%;
+    width: 5%;
 }
 
 .table_button{
     display: flex;
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 4%;
+    width: 5%;
     justify-content: end;
 }
+
+/* DESTAQUE STATUS  (FALTA O JAVA SCRIPT) */
+
+.status_active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: fit-content;
+    width: 7%;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+
+}
+
+.status_inactive{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: fit-content;
+    width: 7%;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+
+
 
 /* DESTAQUE BOTÃO AO PASSAR MOUSE */
 
@@ -278,9 +326,13 @@ main {
     background-color: var(--grey);
 }
 
-/* POPUP CADASTRAR USUÁRIO */
+/* POPUP CADASTRAR/DADOS LOCATÁRIO */
 
 #popup_cadastrar{
+    width: 30%;
+}
+
+#popup_dados_locatario{
     width: 30%;
 }
 
@@ -415,14 +467,8 @@ main {
 }
 
 input[type="checkbox"]{
-    border: 1px solid #5BB800;
-}
-
-
-#table_list{
-    overflow-y: auto;
-    height: 85%;
-
+    border: px solid #5BB800;
+    margin-bottom: 2PX;
 }
 
 
