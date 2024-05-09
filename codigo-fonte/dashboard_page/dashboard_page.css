@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 header {
@@ -199,6 +200,8 @@ hr.divisor {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--white); 
     padding: 15px;  
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 main {

@@ -327,6 +327,7 @@ function alerta_vencimento() {
       addLinhaNaTabela(alerta)
       console.log(alerta.data_pgto);
     }
+       
   });
 }
 
@@ -353,10 +354,10 @@ function addLinhaNaTabela(alerta) {
                 ${alerta.status_pgto ? "Em Aberto" : "Vencida"}
               </p>
             </div>
-          </div>
-
-          
+          </div>          
       </div>
     `;
   table.innerHTML += '<hr class="divisor"></hr>';
 }
+
+
