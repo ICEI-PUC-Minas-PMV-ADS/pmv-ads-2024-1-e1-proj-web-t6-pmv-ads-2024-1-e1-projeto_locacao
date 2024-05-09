@@ -123,20 +123,6 @@ nav {
     margin-bottom: 10px;
 }
 
-.botao_menu_lateral{
-    padding: 7px 35px 7px 7px;
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: var(--font-size-button);
-    background-color: var(--light-grey);
-    border: none;
-    border-radius: 12px;
-    align-items: center;
-    color: var(--dark-grey);
-}
 
 hr.divisor {
     border-top: 1px solid var(--grey);
@@ -191,16 +177,9 @@ main{
     height: 85%;
 }
 
-.lista_tabela{
-    margin: 10px 0 10px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    min-width: fit-content;
-}
 
-.primeira_linha_tabel{
+
+.linha_tabela{
     margin: 10px 0px 10px 0px;
     display: flex;
     flex-direction: row;
@@ -208,3 +187,107 @@ main{
     justify-content: space-between;
     min-width: fit-content;
 }
+
+.item_id_tabela {
+    width: 10%;
+
+}
+
+.item_nome_tabela{
+    width: 30%;
+}
+       
+.item_perfil_tabela{
+    width: 20%;
+}
+
+.item_status_tabela{
+    width: 20%;
+}
+
+.item_icone_tabela{
+    width: 10%;
+}
+
+.item_botao_tabela {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.botao_tabela{
+    background-color: #ffffff;
+    border: none;
+}
+
+.ativo{
+    background-color: #5BB800;
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    height: 35px;
+    align-items: center;
+    font-weight: 600;
+    
+}
+
+.inativo{
+    background-color: #A0AEC0;
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    height: 35px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.botao_menu_lateral_selecionado {
+    padding: 7px 35px 7px 7px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: var(--font-size-button);
+    background-color: var(--white);
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--black);
+}
+
+.botao_menu_lateral {
+    padding: 7px 35px 7px 7px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: var(--font-size-button);
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 12px;
+    align-items: center;
+    color: var(--dark-grey);
+}
+
+.botao_menu_lateral:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--black);
+    background-color: var(--white);
+}
+
+
+
+
+
+
+
