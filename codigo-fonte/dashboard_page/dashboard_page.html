@@ -1,102 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Página Modelo</title>
-    <link rel="stylesheet" type="text/css" href="dashboard_page.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dashboard_page.css"
+      media="screen"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="dashboard_page.js"></script>
-</head>
+  </head>
 
-<body onload="iniciar_dashboard()">
+  <body onload="iniciar_dashboard()">
     <header>
-        <div class="div_logo">
-            <p><span class="immo">Immo</span><span class="control">Control</span></p>
-        </div>
-        <div class="div_titulo">Dashboard</div>
-        <div class="div_usuario">
-            <p>Usuário Master</p>
-            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="">
-        </div>
+      <div class="div_logo">
+        <p>
+          <span class="immo">Immo</span><span class="control">Control</span>
+        </p>
+      </div>
+      <div class="div_titulo">Dashboard</div>
+      <div class="div_usuario">
+        <p>Usuário Master</p>
+        <img
+          class="icon_usuario_logado"
+          src="../src/icones/icon_usuario_logado.png"
+          alt=""
+        />
+      </div>
     </header>
     <div class="content">
-        <nav>
-            <div class="sidebar_superior">
-                <hr class="divisor">
-                <button class="sidebar_button_selected" onclick="">
-                    <img class="icon" src="../src/icones/icon_dashboard_selecionado.png" alt="">
-                    <p>Dashboard</p>
-                </button>
-                <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
-                    <img class="icon" src="../src/icones/icon_proprietarios.png" alt="">
-                    <p>Proprietários</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="">
-                    <p>Locatários</p>
-                </button>
-                <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
-                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="">
-                    <p>Imóveis</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_contratos.png" alt="">
-                    <p>Contratos</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_faturas.png" alt="">
-                    <p>Faturas</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_requisicoes.png" alt="">
-                    <p>Requisições</p>
-                </button>
+      <nav>
+        <div class="sidebar_superior">
+          <hr class="divisor" />
+          <button class="sidebar_button_selected" onclick="">
+            <img
+              class="icon"
+              src="../src/icones/icon_dashboard_selecionado.png"
+              alt=""
+            />
+            <p>Dashboard</p>
+          </button>
+          <button
+            class="sidebar_button"
+            onclick="location.href = '../proprietarios_page/proprietarios_page.html'"
+          >
+            <img
+              class="icon"
+              src="../src/icones/icon_proprietarios.png"
+              alt=""
+            />
+            <p>Proprietários</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
+            <p>Locatários</p>
+          </button>
+          <button
+            class="sidebar_button"
+            onclick="location.href = '../imoveis/imoveis.html'"
+          >
+            <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
+            <p>Imóveis</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
+            <p>Contratos</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
+            <p>Faturas</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
+            <p>Requisições</p>
+          </button>
+        </div>
+        <div class="sidebar_inferior">
+          <hr class="divisor" />
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
+            <p>Usuários</p>
+          </button>
+        </div>
+      </nav>
+      <main>
+        <div id="bar_chart" class="contentMain">
+          <p>Faturamento</p>
+          <canvas id="myChart" style="max-height: 90%"></canvas>
+        </div>
+        <div id="doughnut_chart" class="contentMain">
+          <p>Vacância</p>
+          <canvas id="myChart2" style="max-height: 80%"></canvas>
+        </div>
+        <div id="table_faturas" class="table">
+          <div class="div_table_properties">
+            <p>Faturas Vencidas ou a Vencer na Próxima Semana</p>
+          </div>
+         
+            <div class="div_table_header">
+              <div class="table_id">ID</div>
+              <div class="table_locatario">LOCATÁRIO</div>
+              <div class="table_periodo">VENCIMENTO</div>
+              <div class="table_valor">VALOR</div>
+              <div class="table_status">STATUS</div>
             </div>
-            <div class="sidebar_inferior">
-                <hr class="divisor">
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_usuarios.png" alt="">
-                    <p>Usuários</p>
-                </button>
-            </div>
-        </nav>
-        <main>
-            <div id="bar_chart" class="contentMain">
-                <p>Faturamento</p>
-                <canvas id="myChart" style="max-height: 90%;"></canvas>
-            </div>
-            <div id="doughnut_chart" class="contentMain">
-                <p>Vacância</p>
-                <canvas id="myChart2" style="max-height: 80%;"></canvas>
-            </div>
-            <div id="table_faturas" class="contentMain">
-                <p>Faturas Vencidas ou a Vencer na Próxima Semana</p>  
-                <div class="table_dashboard">
-                    <div class="table_id">
-                        ID
-                    </div>
-                    <div class="table_locatario">
-                        LOCATÁRIO
-                    </div>
-                    <div class="table_periodo">
-                        PERÍODO
-                    </div>
-                    <div class="table_valor">
-                        VALOR
-                    </div>
-                    <div class="table_status">
-                        STATUS
-                    </div>                    
-                </div>
-                <hr class="divisor">
+            <hr class="divisor" />
 
-                <!-- RECEBE A LISTA DE ALERTA DE PAGAMENTOS -->
-                <div id="table_list"></div>                
-            </div>
-            
-        </main>
+            <!-- RECEBE A LISTA DE ALERTA DE PAGAMENTOS -->
+            <div id="table_list"></div>
+          
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>

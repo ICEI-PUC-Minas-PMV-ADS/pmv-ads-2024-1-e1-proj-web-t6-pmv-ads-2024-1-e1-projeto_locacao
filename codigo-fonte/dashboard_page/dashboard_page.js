@@ -160,72 +160,84 @@ function iniciar_banco_faturas() {
   let faturas = [
     {
       id: 1,
+      locatario: 'Locatário 1',
       data_pgto: "05/01/2024",
       valor: 1000,
       status_pgto: false,
     },
     {
       id: 2,
+      locatario: 'Locatário 2',
       data_pgto: "05/02/2024",
       valor: 2000,
       status_pgto: true,
     },
     {
       id: 3,
+      locatario: 'Locatário 3',
       data_pgto: "05/03/2024",
       valor: 3000,
       status_pgto: false,
     },
     {
       id: 4,
+      locatario: 'Locatário 4',
       data_pgto: "05/04/2024",
       valor: 4000,
       status_pgto: true,
     },
     {
       id: 5,
+      locatario: 'Locatário 5',
       data_pgto: "05/05/2024",
       valor: 3500,
       status_pgto: true,
     },
     {
       id: 6,
+      locatario: 'Locatário 6',
       data_pgto: "08/05/2024",
       valor: 2500,
       status_pgto: true,
     },
     {
       id: 7,
+      locatario: 'Locatário 7',
       data_pgto: "05/07/2024",
       valor: 5500,
       status_pgto: true,
     },
     {
       id: 8,
-      data_pgto: "05/08/2024",
+      locatario: 'Locatário 8',
+      data_pgto: "13/05/2024",
       valor: 5000,
       status_pgto: true,
     },
     {
       id: 9,
-      data_pgto: "05/09/2024",
+      locatario: 'Locatário 9',
+      data_pgto: "11/05/2024",
       valor: 4000,
       status_pgto: true,
     },
     {
       id: 10,
-      data_pgto: "05/10/2024",
+      locatario: 'Locatário 10',
+      data_pgto: "12/05/2024",
       valor: 4500,
       status_pgto: true,
     },
     {
       id: 11,
+      locatario: 'Locatário 11',
       data_pgto: "05/11/2024",
       valor: 3000,
       status_pgto: true,
     },
     {
       id: 12,
+      locatario: 'Locatário 12',
       data_pgto: "05/12/2024",
       valor: 4500,
       status_pgto: true,
@@ -309,9 +321,43 @@ function alerta_vencimento() {
     emAberto.setDate(emAberto.getDate() + 5);
 
     if (data < hoje && !alerta.status_pgto) {
+      addLinhaNaTabela(alerta)
       console.log(alerta.data_pgto);
     } else if (data > hoje && data < emAberto) {
+      addLinhaNaTabela(alerta)
       console.log(alerta.data_pgto);
     }
+       
   });
 }
+
+function addLinhaNaTabela(alerta) {
+  let table = document.getElementById('table_list')
+  table.innerHTML += `
+      <div class="div_table_row"> 
+
+          <div class="table_id">
+              ${alerta.id}
+          </div>
+          <div class="table_locatario">
+            ${alerta.locatario}
+          </div>
+          <div class="table_periodo">
+            ${alerta.data_pgto}
+          </div>
+          <div class="table_valor">
+            ${alerta.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}
+          </div>
+          <div class="table_status">
+            <div class=${alerta.status_pgto ? "status_active" : "status_inactive"}>
+              <p>
+                ${alerta.status_pgto ? "Em Aberto" : "Vencida"}
+              </p>
+            </div>
+          </div>          
+      </div>
+    `;
+  table.innerHTML += '<hr class="divisor"></hr>';
+}
+
+
