@@ -1,3 +1,15 @@
+:root {
+    --green: #5BB800;
+    --white: #ffffff;
+    --black: #000000;
+    --light-black: rgb(0 0 0 / .5);
+    --light-grey: #F8F9FA;
+    --grey: #E0E1E2;
+    --dark-grey: #A0AEC0;
+    --font-size-button: 16px;
+    --red: #B83700;
+}
+
 input.tog {
     display: none;
 }
@@ -6,10 +18,11 @@ input.tog {
 label.tog {
     display: block;
     width: 50px;
-    height: 30px;
+    height: 25px;
     padding: 5px;
-    background: #cacaca;
+    background: var(--dark-grey);
     cursor: pointer;
+    border-radius: 25px;
 }
 
 
@@ -18,7 +31,8 @@ label.tog::before {
     display: block;
     width: 50%;
     height: 100%;
-    background: #fff;
+    background: var(--white);
+    border-radius: 25px;
 }
 
 
@@ -28,7 +42,7 @@ label.tog::before {
 }
 
 input.tog:checked+label.tog {
-    background: #2285f5;
+    background: var(--green);
 }
 
 input.tog:checked+label.tog::before {

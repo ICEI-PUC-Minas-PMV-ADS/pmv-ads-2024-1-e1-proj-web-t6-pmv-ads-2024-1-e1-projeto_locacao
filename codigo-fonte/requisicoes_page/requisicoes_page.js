@@ -26,10 +26,10 @@ function requisicoes(id, requisitante, tipo, status) {
         tipo_value = null
     }
 
-    console.log(id_value)
-    console.log(requisitante_value)
-    console.log(tipo_value)
-    console.log(status)
+    
+    
+    
+    
 
     let table = document.getElementById('table_list')
 
@@ -197,7 +197,7 @@ function abrir_popup_dados_requisicao(e) {
             verifica_popups[i].outerHTML = ""
         }
     }
-    console.log(dados)
+    
 
     body.innerHTML += `
         <dialog id="popup_dados_requisicao" class="popup">
@@ -224,10 +224,11 @@ function abrir_popup_dados_requisicao(e) {
                 <p>REQUISIÇÃO</p>
                 <hr>
                 <textarea class="textareaSuccess" id="requisicao_dados_requisicao" onblur="return set_input_success(this)" disabled="true">${dados.requisicao}</textarea >
-                
+                <p>STATUS</p>
+                <hr>
                 <div>
-                    <input class="tog" id="demo" type="checkbox" ${!dados.status_atendimento ? 'checked="checked"' : ""}>
-                    <label class="tog" for="demo"></label>
+                    <input class="tog" id="status_dados_requisicao" type="checkbox" ${!dados.status_atendimento ? 'checked="checked"' : ""} disabled="true"> 
+                    <label class="tog" for="status_dados_requisicao"></label>
                 </div>
 
                 <div class="buttons">
@@ -273,7 +274,7 @@ function alterar_dados_requisicao() {
     document.getElementById("tipo_dados_requisicao").disabled = false
     document.getElementById("requisitante_dados_requisicao").readOnly = false
     document.getElementById("requisicao_dados_requisicao").disabled = false
-    
+    document.getElementById("status_dados_requisicao").disabled = false
 }
 
 function salvar_dados_requisicao() {
@@ -282,16 +283,19 @@ function salvar_dados_requisicao() {
     let tipo_element = document.getElementById("tipo_dados_requisicao")
     let requisitante_element = document.getElementById("requisitante_dados_requisicao")
     let requisicao_element = document.getElementById("requisicao_dados_requisicao")
+    let status_element = document.getElementById("status_dados_requisicao")
+
     
 
     let tipo = tipo_element.value == "vazio" ? null : tipo_element.value
     let requisitante = requisitante_element.value == "" ? null : requisitante_element.value
     let requisicao = requisicao_element.value == "" ? null : requisicao_element.value
-    
+    let status = status_element.checked
 
-    console.log(tipo)
-    console.log(requisitante)
-    console.log(requisicao)
+    
+    
+    
+    
 
 
     let vericacao = [
@@ -361,6 +365,7 @@ function salvar_dados_requisicao() {
         document.getElementById("tipo_dados_requisicao").disabled = true
         document.getElementById("requisitante_dados_requisicao").readOnly = true
         document.getElementById("requisicao_dados_requisicao").disabled = true
+        document.getElementById("status_dados_requisicao").disabled = true
        
         list = JSON.parse(localStorage.getItem("requisicoes"))
 
@@ -369,7 +374,9 @@ function salvar_dados_requisicao() {
                 dadosRequisicao.tipo = tipo
                 dadosRequisicao.requisitante = requisitante
                 dadosRequisicao.requisicao = requisicao
-                console.log("alterar")
+                dadosRequisicao.status_atendimento = !status
+                
+
 
                 return dadosRequisicao
             }
@@ -465,9 +472,9 @@ function salvar_nova_requisicao() {
     let requisicao = requisicao_element.value == "" ? null : requisicao_element.value
     
 
-    console.log(tipo)
-    console.log(requisitante)
-    console.log(requisicao)
+    
+    
+    
 
 
     let vericacao = [
@@ -531,11 +538,11 @@ function salvar_nova_requisicao() {
             status_atendimento: true,
             requisicao: requisicao
         }
-        console.log(jsonNovaRequisicao)
+        
 
         let requisicoesList = JSON.parse(localStorage.getItem("requisicoes"))
         requisicoesList.push(jsonNovaRequisicao)
-console.log(requisicoesList)
+
         localStorage.setItem("requisicoes", JSON.stringify(requisicoesList))
 
         requisicoes(novo_id() - 1, null, null, null)
