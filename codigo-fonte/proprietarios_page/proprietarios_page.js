@@ -855,7 +855,307 @@ function iniciar_banco_proprietarios() {
                 uf: "SC"
             },
             status: false
-        }
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
+        {
+            id: 3,
+            nome: "Proprietario 3",
+            cpf: "11111111111",
+            estado_civil: "solteiro",
+            telefone: "31911111111",
+            email: "socratis@exemplo.com",
+            imoveis: [],
+            endereco: {
+                tipo_logradouro: "Rua",
+                logradouro: "Afonço Pena 2",
+                numero: "2",
+                complemento: "B",
+                bairro: "Centro 2",
+                cidade: "Porto Alegre",
+                cep: "11111111",
+                uf: "SC"
+            },
+            status: false
+        },
     ]
 
     localStorage.setItem("proprietarios", JSON.stringify(proprietarios))
