@@ -55,7 +55,6 @@
                     <img class="icon" src="../src/icones/icon_requisicoes.png" alt="">
                     <p>Requisições</p>
                 </button>
-                <hr class="divisor">
             </div>
             <div class="sidebar_inferior">
                 <hr class="divisor">
@@ -78,30 +77,141 @@
                     </button>
                 </div>
             </div>
-            <div class="div_table_header">
+            <!-- Cabeçalho da Tabela -->
+            <div class="div_table_header"> 
                 <div class="table_icon"></div>
-                <div class="table_id">
-                    ID
-                </div>
-                <div class="table_name">
-                    NOME
-                </div>
-                <div class="table_locatario">
-                    TELEFONE
-                </div>
-                <div class="table_status">
-                    E-MAIL
-                </div>
-                <div class="table_status">
-                    STATUS
-                </div>
+                <div class="table_id">ID</div>
+                <div class="table_name">NOME</div>
+                <div class="table_telefone">TELEFONE</div>
+                <div class="table_email">E-MAIL</div>
+                <div class="table_status">STATUS</div>
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
+            <!-- LOCATÁRIOS (VISUALIZAÇÃO PARA TESTE) -->   
             <div id="table_list"></div>
+                <div class="div_table_row"> 
+                    <div class="table_icon">
+                        <img src="../src/icones/icon_locatarios_selecionado.png" alt="" class="icon">
+                    </div>
+                    <div class="table_id">01</div>
+                    <div class="table_name">LOCATÁRIO 01</div>
+                    <div class="table_telefone">65 9 9999-9999</div>
+                    <div class="table_email">email@teste.com.br</div>
+                    <div class="status_active"><p>Ativo</p></div>
+                    <div class="table_button">
+                        <buttom class="open_button" onclick="abrir_popup_dados_locatario()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
+                    </div>
+                </div>    
+                <hr class="divisor">                
+                <div id="table_list"></div>
+                    <div class="div_table_row"> 
+                        <div class="table_icon">
+                            <img src="../src/icones/icon_locatarios_selecionado.png" alt="" class="icon">
+                        </div>
+                        <div class="table_id">02</div>
+                        <div class="table_name">LOCATÁRIO 02</div>
+                        <div class="table_telefone">65 1 1234-5678</div>
+                        <div class="table_email">email@testezim.com.br</div>
+                        <div class="status_inactive"><p>Inativo</p></div>
+                        <div class="table_button">
+                            <buttom class="open_button" onclick="abrir_popup_dados_locatario()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                </div>
+            </div>
         </main>
     </div>
 
+    
+    <!-- POPUP DADOS LOCATÁRIO -->
+    <dialog id="popup_dados_locatario" class="popup">
+        <div>
+            <h1>Dados Locatario - 1 (Teste)</h1>
+            <p><br>DADOS PESSOAIS</p>
+            <hr>
+            <section class="section_dados_pessoais">
+                <div class="div_nome">
+                    <label for="nome">NOME</label>
+                    <input type="text" name="nome" id="nome" class="inputSuccess" value="LOCATARIO 1 (2)">
+                </div>
+                <div class="div_cpf">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="inputSuccess" value="999.999.999-99">
+                </div>
+                <div class="div_estado_civil">
+                    <label for="estado_civil">ESTADO CIVIL</label>
+                    <input type="text" name="estado_civil" id="cpf" class="inputSuccess" value="Casado">
+                </div>
+            </section>
+            <p><br>ENDEREÇO</p>
+            <hr>
+            <section class="section_endereco">
+                <div class="div_tipo_logradouro">
+                    <label for="tipo_logradouro">TIPO LOGRADOURO</label>
+                    <input type="text" name="tipo_logradouro" id="tipo_logradouro" class="inputSuccess" value="Alameda">
+                </div>
+                <div class="div_logradouro">
+                    <label for="logradouro">LOGRADOURO</label>
+                    <input type="text" name="logradouro" id="logradouro" class="inputSuccess" value="Lirio da Paz">
+                </div>
+                <div class="div_numero">
+                    <label for="numero">NÚMERO</label>
+                    <input type="text" name="numero" id="numero" class="inputSuccess" value="123">
+                </div>
+                <div class="div_complemento">
+                    <label for="complemento">COMPLEMENTO</label>
+                    <input type="text" name="complemento" id="complemento" class="inputSuccess" value="Prox. da Praça É Nossa">
+                </div>
+                <div class="div_bairro">
+                    <label for="bairro">BAIRRO</label>
+                    <input type="text" name="bairro" id="bairro" class="inputSuccess" value="Vento fez a Curva">
+                </div>
+                <div class="div_cidade">
+                    <label for="cidade">CIDADE</label>
+                    <input type="text" name="cidade" id="cidade" class="inputSuccess" value="Salgadinho">
+                </div>
+                <div class="div_cep">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep" class="inputSuccess" value="78.123.456">
+                </div>
+                <div class="div_uf">
+                    <label for="uf">UF</label>
+                    <input type="text" name="uf" id="uf" class="inputSuccess" value="MT">
+                </div>
+            </section>
+            <p><br>CONTATO</p>
+            <hr>
+            <section class="section_contato">
+                <div class="div_telefone">
+                    <label for="telefone">TELEFONE</label>
+                    <input type="text" name="telefone" id="telefone" class="inputSuccess" value="65 9 9999-9999">
+                </div>
+                <div class="div_email">
+                    <label for="email">E-MAIL</label>
+                    <input type="text" name="email" id="email" class="inputSuccess" value="email@teste.com.br">
+                </div>
+            </section>
+            <div class="buttons">
+                <button onclick="fechar_popup_dados_locatario()">
+                    <img class="icon" src="../src/icones/icon_voltar.png" alt="">
+                    VOLTAR
+                </button>
+                <button onclick="alterar_locatario()">
+                    <img class="icon" src="../src/icones/icon_alterar.png" alt="">
+                    ALTERAR
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    
+    
+    
+    
+    
+    
     <!-- POPUP CADASTRAR LOCATÁRIO -->
     <dialog id="popup_cadastrar" class="popup">
         <div>
@@ -213,13 +323,6 @@
                     <label for="inativo">INATIVO</label>
                 </div>
             </div>
-
-
-
-
-
-
-
 
             <div class="buttons">
                 <button onclick="fechar_popup_filtrar()">

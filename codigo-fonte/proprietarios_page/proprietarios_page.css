@@ -434,9 +434,10 @@ input[type="checkbox"]{
 }
 
 #table_list{
-    overflow-y: auto;
+    overflow: scroll;
     height: 85%;
-
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .popup .dados_pessoais{

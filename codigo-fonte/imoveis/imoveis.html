@@ -1,87 +1,125 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Proprietários</title>
     <link rel="stylesheet" type="text/css" href="imoveis_page.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script src="imoveis.js" defer></script>
+   
 </head>
 
-<body>
+  <body>
     <div id="fade"></div>
     <header>
-        <div class="div_logo">
-            <p><span class="immo">Immo</span><span class="control">Control</span></p>
-        </div>
-        <div class="div_titulo">Imóveis</div>
-        <div class="div_usuario">
-            <p>Usuário Master</p>
-            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="">
-        </div>
+      <div class="div_logo">
+        <p>
+          <span class="immo">Immo</span><span class="control">Control</span>
+        </p>
+      </div>
+      <div class="div_titulo">Imóveis</div>
+      <div class="div_usuario">
+        <p>Usuário Master</p>
+        <img
+          class="icon_usuario_logado"
+          src="../src/icones/icon_usuario_logado.png"
+          alt=""
+        />
+      </div>
     </header>
     <div class="content">
-        <nav>
-            <div class="sidebar_superior">
-                <hr class="divisor">
-                <button class="sidebar_button" onclick="location.href = '../dashboard_page/dashboard_page.html'">
-                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="">
-                    <p>Dashboard</p>
-                </button>
-                <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
-                    <img class="icon" src="../src/icones/icon_proprietarios_selecionado.png" alt="">
-                    <p>Proprietários</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="">
-                    <p>Locatários</p>
-                </button>
-                <button class="sidebar_button_selected" onclick="location.href = '../imoveis/imoveis.html'">
-                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="">
-                    <p>Imóveis</p>
-                </button>
-                <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
-                    <img class="icon" src="../src/icones/icon_contratos.png" alt="">
-                    <p>Contratos</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_faturas.png" alt="">
-                    <p>Faturas</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_requisicoes.png" alt="">
-                    <p>Requisições</p>
-                </button>
-            </div>
-            <div class="sidebar_inferior">
-                <hr class="divisor">
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_usuarios.png" alt="">
-                    <p>Usuários</p>
-                </button>
-            </div>
-        </nav>
+      <nav>
+        <div class="sidebar_superior">
+          <hr class="divisor" />
+          <button
+            class="sidebar_button"
+            onclick="location.href = '../dashboard_page/dashboard_page.html'"
+          >
+            <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
+            <p>Dashboard</p>
+          </button>
+          <button
+            class="sidebar_button"
+            onclick="location.href = '../proprietarios_page/proprietarios_page.html'"
+          >
+            <img
+              class="icon"
+              src="../src/icones/icon_proprietarios_selecionado.png"
+              alt=""
+            />
+            <p>Proprietários</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
+            <p>Locatários</p>
+          </button>
+          <button
+            class="sidebar_button_selected"
+            onclick="location.href = '../imoveis/imoveis.html'"
+          >
+            <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
+            <p>Imóveis</p>
+          </button>
+          <button
+            class="sidebar_button"
+            onclick="location.href = '../contratos/contratos.html'"
+          >
+            <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
+            <p>Contratos</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
+            <p>Faturas</p>
+          </button>
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
+            <p>Requisições</p>
+          </button>
+        </div>
+        <div class="sidebar_inferior">
+          <hr class="divisor" />
+          <button class="sidebar_button" onclick="">
+            <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
+            <p>Usuários</p>
+          </button>
+        </div>
+      </nav>
 
-        <dialog id="modal1">
-            <iframe src="imoveis_filtro.html" id="meuIframeFiltrar" frameborder="1" width="500" height="700"></iframe>
-        </dialog>
-        
-        <dialog id="modal2">
-            <iframe src="novo_imovel.html" id="meuIframeadicionar" frameborder="0" width="500" height="750"></iframe>
-        </dialog>
-        <dialog id="modal3">
-            <iframe src="alterar_imoveis.html" id="meuIframeAlterar" frameborder="0" width="500" height="760"></iframe>
-        </dialog>
+      <dialog id="modal1">
+        <iframe
+          src="imoveis_filtro.html"
+          id="meuIframeFiltrar"
+          frameborder="1"
+          width="500"
+          height="700"
+        ></iframe>
+      </dialog>
 
+      <dialog id="modal2">
+        <iframe
+          src="novo_imovel.html"
+          id="meuIframeadicionar"
+          frameborder="0"
+          width="500"
+          height="750"
+        ></iframe>
+      </dialog>
+      <dialog id="modal3">
+        <iframe
+          src="alterar_imoveis.html"
+          id="meuIframeAlterar"
+          frameborder="0"
+          width="500"
+          height="760"
+        ></iframe>
+      </dialog>
 
         <main id="table_owners">
             <div class="div_table_properties">
                 <p>Imóveis</p>
                 <div class="div_table_properties_group_buttons">
                     <button class="div_table_properties_button" onclick="abrirModalFiltro()">
-                        <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="">   
+                        <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="">
                     </button>
                     <button class="div_table_properties_button" onclick="abrirModalAdicao()">
                         <img class="icon" src="../src/icones/icon_button_adicionar.png" alt="">
@@ -90,128 +128,75 @@
             </div>
 
             <div class="div_table_header">
-
-                <div class="table_icon1">  
-                    
-                </div>
-
+                <div class="table_icon"></div>
                 <div class="table_id">
                     ID
                 </div>
-
                 <div class="table_name">
                     TIPO
                 </div>
-
                 <div class="table_property">
                     ENDEREÇO
                 </div>
 
-                <div class="table_status">
-                    VACÂNCIA
-                </div>
+          <div class="table_status">VACÂNCIA</div>
 
-                <div class="table_status">
-                    STATUS
-                </div>
+          <div class="table_status">STATUS</div>
 
-                <div class="table_button"></div>
-            </div>
+          <div class="table_button"></div>
+        </div>
 
             <hr class="divisor">
             <div id="table_list">
-                <div class="div_table_row">
-
-                    <div class="table_icon">
-                        <img class="icon" src="../src/icones/icon_imoveis_selecionado.png" alt="">
-                    </div>
-
-                    <div class="table_id">
-                        01
-                    </div>
-
-                    <div class="table_name">
-                        Comercial
-                    </div>  
-
-                    <div class="table_property">
-                        Rua josé de castro, 650
-                    </div>
-
-                    <div class="table_status">
-                        vago
-                    </div>
-                    <div class="table_status">
-                        ativo
-                    </div>
-
-                    <div class="table_button">
-                        <button class="open_button" data-button='${dados}' onclick="abrirModalAlteracao()">
-                            <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
-                        </button>
-                    </div>
-
-                </div>  
-
-                <div class="div_table_row">
-
-                    <div class="table_icon">
-                        <img class="icon" src="../src/icones/icon_imoveis_selecionado.png" alt="">
-                    </div>
-
-                    <div class="table_id">
-                        02
-                    </div>
-
-                    <div class="table_name">
-                        Residencial
-                    </div>  
-
-                    <div class="table_property">
-                        Avenida barão do rio brano, 60
-                    </div>
-
-                    <div class="table_status">
-                        vago
-                    </div>
-                    <div class="table_status">
-                        ativo
-                    </div>
-
-                    <div class="table_button">
-                        <button class="open_button" data-button='${dados}' onclick="abrirModalAlteracao()">
-                            <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
-                        </button>
-                    </div>
-
-                </div>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
             </div>
 
+            
          
         </main>
-        
 
     </div>
-
+    <dialog id="popup_filtrar" class="popup">
+        <div>
+            <h1>Filtros</h1>
+            <p>DADOS PESSOAIS</p>
+            <hr>
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" class="inputSuccess">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome" class="inputSuccess">
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" class="inputSuccess">
+            <p>STATUS</p>
+            <hr>
+            <div class="status">
+                <div>
+                    <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
+                    <label for="todos">TODOS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
+                    <label for="ativo">ATIVO</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
+                    <label for="inativo">INATIVO</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button onclick="fechar_popup_filtrar_proprietario()">
+                    <img class="icon" src="../src/icones/icon_voltar.png" alt="">
+                    VOLTAR
+                </button>
+                <button onclick="filtrar_proprietarios()">
+                    <img class="icon" src="../src/icones/icon_filtrar.png" alt="">
+                    FILTRAR
+                </button>
+            </div>
+        </div>
+    </dialog>
     <div id="snackbar_success" class="snackbar"></div>
     <div id="snackbar_error" class="snackbar"></div>
-
-    
+    <script src="imoveis.js"></script>
 </body>
 </html>

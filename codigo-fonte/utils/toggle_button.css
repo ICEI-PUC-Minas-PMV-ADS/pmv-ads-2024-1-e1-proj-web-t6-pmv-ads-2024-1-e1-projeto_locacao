@@ -1,0 +1,50 @@
+:root {
+    --green: #5BB800;
+    --white: #ffffff;
+    --black: #000000;
+    --light-black: rgb(0 0 0 / .5);
+    --light-grey: #F8F9FA;
+    --grey: #E0E1E2;
+    --dark-grey: #A0AEC0;
+    --font-size-button: 16px;
+    --red: #B83700;
+}
+
+input.tog {
+    display: none;
+}
+
+
+label.tog {
+    display: block;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    background: var(--dark-grey);
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+
+label.tog::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: var(--white);
+    border-radius: 25px;
+}
+
+
+label.tog,
+label.tog::before {
+    transition: all 0.3s;
+}
+
+input.tog:checked+label.tog {
+    background: var(--green);
+}
+
+input.tog:checked+label.tog::before {
+    transform: translateX(100%);
+}
