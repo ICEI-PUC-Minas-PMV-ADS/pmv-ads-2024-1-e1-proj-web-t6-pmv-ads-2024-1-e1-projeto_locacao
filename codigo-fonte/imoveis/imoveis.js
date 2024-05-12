@@ -1,7 +1,8 @@
 //coletando elemento fade:
 var ElementoFade = document.getElementById("fade")
 
-
+//coletando body:
+var bodyy =document.querySelector("body");
 
 // coletando os dialogs:
 var dialog1 = document.getElementById("modal1");
@@ -92,6 +93,158 @@ iframe3.onload = function() {
     });
 };
 
+function imoveis_init(){
+    localStorage.clear()
+    iniciar_banco_imoveis()
+   
+    
+}
+
+
+function iniciar_banco_imoveis(){
+
+    let imoveis = [
+        {
+            id: 1,
+            tipo_imovel: "Comercial",
+            tipo_logradouro: "Avendida",
+            logradouro: "beatriz alvarenga",
+            numero: "319",
+            complemento: "apto 208",
+            bairro:"centro",
+            cidade:"belo horizonte",
+            estado:"MG",
+            cep:"31140258",
+            vacancia:"locado",
+            status:"ativo"
+        },
+
+        {
+            id: 2,
+            tipo_imovel: "residencial",
+            tipo_logradouro: "rua",
+            logradouro: "são joao",
+            numero: "39",
+            complemento: "casa",
+            bairro:"sagrda famila",
+            cidade:"belo horizonte",
+            estado:"MG",
+            cep:"31140258",
+            vacancia:"locado",
+            status:"ativo"
+        },
+        
+        {
+            id: 3,
+            tipo_imovel: "residencial",
+            tipo_logradouro: "rua",
+            logradouro: "são josé",
+            numero: "500",
+            complemento: "casa",
+            bairro:"centro",
+            cidade:"franca",
+            estado:"SP",
+            cep:"31140222",
+            vacancia:"locado",
+            status:"ativo"
+        }
+        
+        
+            
+    ]
+
+    localStorage.setItem("imoveis", JSON.stringify(imoveis));
+    
+}
 
 
 
+function imoveis(id, tipo_imovel, tipo_logradouro,logradouro,numero,vacancia, status) {
+
+    var node = document.getElementById('table_list');
+    node.innerHTML = ""
+
+    let id_a = id;
+    let tipo_imovel_a = tipo_imovel;
+    let tipo_logradouro_a = tipo_logradouro;
+    let logradouro_a = logradouro;
+    let numero_a = numero;
+    let vacancia_a = vacancia;
+    let status_a = status;
+
+    let table = document.getElementById('table_list');
+
+    let imoveis = JSON.parse(localStorage.getItem("imoveis"));
+
+    if (id_a != null) {
+        imoveis = imoveis.filter((imoveis) => imoveis.id == parseInt(id));
+    }
+
+    if (tipo_imovel_a != null) {
+        imoveis = imoveis.filter((imoveis) => imoveis.tipo_imovel_a.toUpperCase().includes(tipo_imovel_a.toUpperCase()));
+    }
+
+    if (tipo_logradouro_a != null) {
+        imoveis = imoveis.filter((imoveis) => imoveis.tipo_logradouro_a.toUpperCase().includes(tipo_logradouro_a.toUpperCase()));
+    }
+
+    if (logradouro_a != null) {
+        imoveis = imoveis.filter((imoveis) => imoveis.logradouro_a.toUpperCase().includes(logradouro_a.toUpperCase()));
+    }
+
+    if (numero_a != null) {
+        imoveis = imoveis.filter((imoveis) => imoveis.numero_a.toUpperCase().includes(numero_a.toUpperCase()));
+    }
+
+    if (vacancia_a != null) {
+        imoveis = imoveis.filter((imoveis) => imoveis.vacancia_a.toUpperCase().includes(vacancia_a.toUpperCase()));
+    }
+
+
+    if (status_a != null) {
+        if (status_a) {
+            imoveis = imoveis.filter((imoveis) => imoveis.status_a == status);
+        } else {
+            imoveis = imoveis.filter((imoveis) => imoveis.status_a == status_a);
+        }
+    }
+
+    if (imoveis.length >0) {
+        imoveis.map((imoveis) => {
+            dados = JSON.stringify(imoveis)
+
+            table.innerHTML += `
+                    <div class="div_table_row">
+                        <div class="table_icon">
+                            <img class="icon" src="../src/icones/icon_imoveis_selecionado.png" alt="">
+                        </div>
+                        <div class="table_id">
+                            ${imoveis.id_a}
+                        </div>
+                        <div class="table_name">
+                            ${imoveis.tipo_imovel_a}
+                        </div>
+                        <div class="table_property">
+                            ${imoveis.tipo_logradouro_a},${imoveis.logradouro_a},${imoveis.numero_a},${imoveis.complemento_a}
+                        </div>
+                        <div class="table_status">
+                            <div class=${imoveis.status_a ? "status_active" : "status_inactive"}>
+                                <p>
+                                    ${imoveis.status_a ? "Ativo" : "Inativo"}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="table_button">
+                            <button class="open_button" data-button='${dados}'>
+                                <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                `
+            table.innerHTML += '<hr class="divisor"></hr>'
+            }
+            )
+
+    } 
+    
+}
