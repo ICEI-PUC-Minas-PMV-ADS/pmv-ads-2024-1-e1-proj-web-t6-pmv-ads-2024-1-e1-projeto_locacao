@@ -187,8 +187,8 @@ Eduardo Wollinger
 Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
 
  <figure> 
-  <img src="img/Contratos.png">
-    <figcaption>Figura 6 - Tela - Contratos</figcaption>
+  <img src="img/Requisicoes.png">
+    <figcaption>Figura 6 - Tela - Requisicoes</figcaption>
 </figure>
 
 #### Requisito atendido
@@ -234,7 +234,7 @@ Acesso para a tela Requisições através da barra lateral esquerda:
 
 #### Requisito atendido
 
-RF-06: A aplicação deve permitir cadastrar/alterar informações de requisições
+RF-06: A aplicação deve permitir cadastrar/alterar requisições
 
 #### Artefatos da funcionalidade
 
@@ -243,11 +243,12 @@ RF-06: A aplicação deve permitir cadastrar/alterar informações de requisiç�
 
 #### Estrutura de Dados
 
-[[[requisicoes_page.html] https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/usuarios_page/usuarios_page.html]](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html)
+[requisicoes_page.htmlhttps://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html
+
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: 
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/requisicoes_page/requisicoes_page.html
 
 #### Responsável
 
