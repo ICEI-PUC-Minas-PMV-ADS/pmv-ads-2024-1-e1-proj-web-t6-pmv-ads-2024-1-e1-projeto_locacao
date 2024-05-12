@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Proprietários</title>
-    <link rel="stylesheet" type="text/css" href="imoveis_page.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="imoveis_page.css">
     <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
    
@@ -183,7 +183,7 @@
                   </div>
               </div>
 
-              
+
               <div class="div_table_row">
 
                 <div class="table_icon1">
@@ -231,45 +231,7 @@
         </main>
 
     </div>
-    <dialog id="popup_filtrar" class="popup">
-        <div>
-            <h1>Filtros</h1>
-            <p>DADOS PESSOAIS</p>
-            <hr>
-            <label for="id">ID</label>
-            <input type="text" name="id" id="id" class="inputSuccess">
-            <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess">
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" class="inputSuccess">
-            <p>STATUS</p>
-            <hr>
-            <div class="status">
-                <div>
-                    <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
-                    <label for="todos">TODOS</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
-                    <label for="ativo">ATIVO</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
-                    <label for="inativo">INATIVO</label>
-                </div>
-            </div>
-            <div class="buttons">
-                <button onclick="fechar_popup_filtrar_proprietario()">
-                    <img class="icon" src="../src/icones/icon_voltar.png" alt="">
-                    VOLTAR
-                </button>
-                <button onclick="filtrar_proprietarios()">
-                    <img class="icon" src="../src/icones/icon_filtrar.png" alt="">
-                    FILTRAR
-                </button>
-            </div>
-        </div>
-    </dialog>
+    
     <div id="snackbar_success" class="snackbar"></div>
     <div id="snackbar_error" class="snackbar"></div>
     <script src="imoveis.js"></script>
