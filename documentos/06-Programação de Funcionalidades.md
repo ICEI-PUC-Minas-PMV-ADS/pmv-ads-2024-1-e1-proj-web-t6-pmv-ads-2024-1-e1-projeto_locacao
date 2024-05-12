@@ -228,8 +228,8 @@ Zander Vasconcelos Pereira
 Acesso para a tela Requisições através da barra lateral esquerda:
 
 <figure> 
-  <img src="img/requisicoes_tela.png"
-    <figcaption>Figura 6 - Tela - REquisições</figcaption>
+  <img src="img/tela_de_proprietarios.png"
+    <figcaption>Figura 4 - Tela de Proprietários</figcaption>
 </figure>
 
 #### Requisito atendido
