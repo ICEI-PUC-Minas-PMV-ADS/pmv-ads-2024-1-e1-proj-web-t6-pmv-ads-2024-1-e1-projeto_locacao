@@ -243,11 +243,11 @@ RF-06: A aplicação deve permitir cadastrar/alterar informações de requisiç�
 
 #### Estrutura de Dados
 
-[[[usuarios_page.html] https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/usuarios_page/usuarios_page.html]]
+[[[requisicoes_page.html] https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/usuarios_page/usuarios_page.html]](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html)
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: (https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html)
+Abra um navegador de Internet e informe a seguinte URL: 
 
 #### Responsável
 
