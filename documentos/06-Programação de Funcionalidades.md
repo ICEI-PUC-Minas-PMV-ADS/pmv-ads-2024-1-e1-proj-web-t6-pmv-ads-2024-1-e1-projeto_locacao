@@ -225,16 +225,33 @@ Zander Vasconcelos Pereira
 
 ### RF-09 REQUISIÇÕES (ISMARLEI)
 
+Acesso para a tela Requisições através da barra lateral esquerda:
+
+<figure> 
+  <img src="img/requisicoes_tela.png"
+    <figcaption>Figura 6 - Tela - REquisições</figcaption>
+</figure>
+
 #### Requisito atendido
+
+RF-06: A aplicação deve permitir cadastrar/alterar informações de requisições
 
 #### Artefatos da funcionalidade
 
+- requisicoes_page.html <br>
+- requisicoes_page.css <br>
+
 #### Estrutura de Dados
+
+[[[usuarios_page.html] https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/usuarios_page/usuarios_page.html]]
 
 #### Instruções de acesso
 
+Abra um navegador de Internet e informe a seguinte URL: (https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html)
+
 #### Responsável
 
+Ismarlei Magela de Jesus
 ---
 
 ### RF-PRÓXIMA ETAPA
