@@ -223,7 +223,7 @@ Zander Vasconcelos Pereira
 
 ---
 
-### RF-06 REQUISIÇÕES (ISMARLEI)
+### RF-09 REQUISIÇÕES (ISMARLEI)
 
 Acesso para a tela Requisições através da barra lateral esquerda:
 
@@ -234,7 +234,7 @@ Acesso para a tela Requisições através da barra lateral esquerda:
 
 #### Requisito atendido
 
-RF-06: A aplicação deve permitir cadastrar/alterar requisições
+RF-09: A aplicação deve permitir cadastrar/alterar requisições
 
 #### Artefatos da funcionalidade
 
