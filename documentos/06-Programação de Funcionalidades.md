@@ -223,7 +223,7 @@ Zander Vasconcelos Pereira
 
 ---
 
-### RF-09 REQUISIÇÕES (ISMARLEI)
+### RF-06 REQUISIÇÕES (ISMARLEI)
 
 Acesso para a tela Requisições através da barra lateral esquerda:
 
@@ -243,7 +243,7 @@ RF-06: A aplicação deve permitir cadastrar/alterar requisições
 
 #### Estrutura de Dados
 
-[requisicoes_page.htmlhttps://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html
+[requisicoes_page.htm]lhttps://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html
 
 
 #### Instruções de acesso
