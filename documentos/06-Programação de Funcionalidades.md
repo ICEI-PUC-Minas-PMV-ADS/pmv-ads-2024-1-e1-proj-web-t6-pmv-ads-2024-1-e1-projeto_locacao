@@ -187,7 +187,7 @@ Eduardo Wollinger
 Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
 
  <figure> 
-  <img src="img/Requisicoes.png">
+  <img src="img/contratos.png">
     <figcaption>Figura 6 - Tela - Requisicoes</figcaption>
 </figure>
 
@@ -228,7 +228,7 @@ Zander Vasconcelos Pereira
 Acesso para a tela Requisições através da barra lateral esquerda:
 
 <figure> 
-  <img src="documentos/img/requisicoes_page.png"
+  <img src="/img/requisicoes_page.png"
     <figcaption>Figura 25 - Tela de Requisições</figcaption>
 </figure>
 
