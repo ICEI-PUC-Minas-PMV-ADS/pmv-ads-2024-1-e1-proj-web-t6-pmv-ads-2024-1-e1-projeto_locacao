@@ -89,6 +89,8 @@ header {
     justify-content: center;
 }
 
+
+
 .div_titulo {
     color: var(--green);
     font-size: 25px;
@@ -240,12 +242,10 @@ main {
 }
 
 .div_table_row{
-    margin: 10px 0 10px 0;
+    margin: 5px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    min-width: fit-content;
+  
 }
 
 .table_icon > img{
@@ -267,10 +267,16 @@ main {
     width: 25%;
 }
 
+.table_icon1{
+    width: 70px
+}
+
+
+
 .table_property{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 25%;
+    width: 20%;
 }
 
 .table_status{
