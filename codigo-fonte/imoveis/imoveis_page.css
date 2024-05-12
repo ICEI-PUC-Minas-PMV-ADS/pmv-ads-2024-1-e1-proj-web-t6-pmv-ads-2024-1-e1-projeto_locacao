@@ -240,7 +240,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 5px;
     min-width: fit-content;
     justify-content: space-between
     

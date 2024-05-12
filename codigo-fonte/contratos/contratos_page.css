@@ -243,9 +243,8 @@ main {
 
 .div_table_row{
     margin: 5px;
-    display: flex;
+    display: flex;  
     align-items: center;
-  
 }
 
 .table_icon > img{
