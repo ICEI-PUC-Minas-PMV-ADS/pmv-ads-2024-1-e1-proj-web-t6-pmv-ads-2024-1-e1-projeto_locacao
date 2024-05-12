@@ -228,7 +228,7 @@ Zander Vasconcelos Pereira
 Acesso para a tela Requisições através da barra lateral esquerda:
 
 <figure> 
-  <img src="img/requisicao_page.png"
+  <img src="documentos/img/requisicoes_page.png"
     <figcaption>Figura 25 - Tela de Requisições</figcaption>
 </figure>
 
