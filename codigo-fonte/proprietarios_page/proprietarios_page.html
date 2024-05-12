@@ -1,188 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Proprietários</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="proprietarios_page.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../utils/snackbar.css"
-      media="screen"
-    />
-    <script src="proprietarios_page.js" defer></script>
-  </head>
 
-  <body onload="proprietarios_init()">
-    <header>
-      <div class="div_logo">
-        <p>
-          <span class="immo">Immo</span><span class="control">Control</span>
-        </p>
-      </div>
-      <div class="div_titulo">Proprietários</div>
-      <div class="div_usuario">
-        <p>Usuário Master</p>
-        <img
-          class="icon_usuario_logado"
-          src="../src/icones/icon_usuario_logado.png"
-          alt=""
-        />
-      </div>
-    </header>
-    <div class="content">
-      <nav>
-        <div class="sidebar_superior">
-          <hr class="divisor" />
-          <button
-            class="sidebar_button"
-            onclick="location.href = '../dashboard_page/dashboard_page.html'"
-          >
-            <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
-            <p>Dashboard</p>
-          </button>
-          <button class="sidebar_button_selected" onclick="">
-            <img
-              class="icon"
-              src="../src/icones/icon_proprietarios_selecionado.png"
-              alt=""
-            />
-            <p>Proprietários</p>
-          </button>
-          <button class="sidebar_button" onclick="">
-            <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
-            <p>Locatários</p>
-          </button>
-          <button
-            class="sidebar_button"
-            onclick="location.href = '../imoveis/imoveis.html'"
-          >
-            <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
-            <p>Imóveis</p>
-          </button>
-          <button class="sidebar_button" onclick="">
-            <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
-            <p>Contratos</p>
-          </button>
-          <button class="sidebar_button" onclick="">
-            <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
-            <p>Faturas</p>
-          </button>
-          <button class="sidebar_button" onclick="">
-            <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
-            <p>Requisições</p>
-          </button>
-        </div>
-        <div class="sidebar_inferior">
-          <hr class="divisor" />
-          <button class="sidebar_button" onclick="">
-            <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
-            <p>Usuários</p>
-          </button>
-        </div>
-      </nav>
-      <main id="table_owners">
-        <div class="div_table_properties">
-          <p>Proprietários</p>
-          <div class="div_table_properties_group_buttons">
-            <button
-              class="div_table_properties_button"
-              onclick="abrir_popup_filtrar_proprietario()"
-            >
-              <img
-                class="icon"
-                src="../src/icones/icon_button_filtrar.png"
-                alt=""
-              />
-            </button>
-            <button
-              class="div_table_properties_button"
-              onclick="abrir_popup_novo_proprietario()"
-            >
-              <img
-                class="icon"
-                src="../src/icones/icon_button_adicionar.png"
-                alt=""
-              />
-            </button>
-          </div>
-        </div>
-        <div class="div_table_header">
-          <div class="table_icon"></div>
-          <div class="table_id">ID</div>
-          <div class="table_name">NOME</div>
-          <div class="table_property">IMÓVEIS</div>
-          <div class="table_status">STATUS</div>
-          <div class="table_button"></div>
-        </div>
-        <hr class="divisor" />
-        <div id="table_list"></div>
-        
-      </main>
+<head>
+  <meta charset="UTF-8" />
+  <title>Proprietários</title>
+  <link rel="stylesheet" type="text/css" href="proprietarios_page.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="proprietarios_page.js" defer></script>
+</head>
+
+<body onload="proprietarios_init()">
+  <header>
+    <div class="div_logo">
+      <p>
+        <span class="immo">Immo</span><span class="control">Control</span>
+      </p>
     </div>
-    <dialog id="popup_filtrar" class="popup">
-      <div>
-        <h1>Filtros</h1>
-        <p>DADOS PESSOAIS</p>
-        <hr />
-        <label for="id">ID</label>
-        <input type="text" name="id" id="id" class="inputSuccess" />
-        <label for="nome">NOME</label>
-        <input type="text" name="nome" id="nome" class="inputSuccess" />
-        <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" class="inputSuccess" />
-        <p>STATUS</p>
-        <hr />
-        <div class="status">
+    <div class="div_titulo">Proprietários</div>
+    <div class="div_usuario">
+      <div class="dropdown" style="float: right;">
+        <button class="dropbtn">Usuário Master</button>
+        <div class="dropdown-content">
           <div>
-            <input
-              type="checkbox"
-              name="todos"
-              id="status_todos"
-              value="todos"
-              onchange="status_todos()"
-            />
-            <label for="todos">TODOS</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="ativo"
-              id="status_ativo"
-              value="ativo"
-              onchange="status_ativo()"
-            />
-            <label for="ativo">ATIVO</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              name="inativo"
-              id="status_inativo"
-              value="inativo"
-              onchange="status_inativo()"
-            />
-            <label for="inativo">INATIVO</label>
+            <a href="../login_page/login_page.html">Sair</a>
+            <i class="material-icons">logout</i>
           </div>
         </div>
-        <div class="buttons">
-          <button onclick="fechar_popup_filtrar_proprietario()">
-            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
-            VOLTAR
+      </div>
+      <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="" />
+    </div>
+  </header>
+  <div class="content">
+    <nav>
+      <div class="sidebar_superior">
+        <hr class="divisor" />
+        <button class="sidebar_button" onclick="location.href = '../dashboard_page/dashboard_page.html'">
+          <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
+          <p>Dashboard</p>
+        </button>
+        <button class="sidebar_button_selected" onclick="">
+          <img class="icon" src="../src/icones/icon_proprietarios_selecionado.png" alt="" />
+          <p>Proprietários</p>
+        </button>
+        <button class="sidebar_button" onclick="">
+          <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
+          <p>Locatários</p>
+        </button>
+        <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
+          <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
+          <p>Imóveis</p>
+        </button>
+        <button class="sidebar_button" onclick="">
+          <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
+          <p>Contratos</p>
+        </button>
+        <button class="sidebar_button" onclick="">
+          <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
+          <p>Faturas</p>
+        </button>
+        <button class="sidebar_button" onclick="">
+          <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
+          <p>Requisições</p>
+        </button>
+      </div>
+      <div class="sidebar_inferior">
+        <hr class="divisor" />
+        <button class="sidebar_button" onclick="">
+          <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
+          <p>Usuários</p>
+        </button>
+      </div>
+    </nav>
+    <main id="table_owners">
+      <div class="div_table_properties">
+        <p>Proprietários</p>
+        <div class="div_table_properties_group_buttons">
+          <button class="div_table_properties_button" onclick="abrir_popup_filtrar_proprietario()">
+            <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="" />
           </button>
-          <button onclick="filtrar_proprietarios()">
-            <img class="icon" src="../src/icones/icon_filtrar.png" alt="" />
-            FILTRAR
+          <button class="div_table_properties_button" onclick="abrir_popup_novo_proprietario()">
+            <img class="icon" src="../src/icones/icon_button_adicionar.png" alt="" />
           </button>
         </div>
       </div>
-    </dialog>
-    <div id="snackbar_success" class="snackbar"></div>
-    <div id="snackbar_error" class="snackbar"></div>
-  </body>
+      <div class="div_table_header">
+        <div class="table_icon"></div>
+        <div class="table_id">ID</div>
+        <div class="table_name">NOME</div>
+        <div class="table_property">IMÓVEIS</div>
+        <div class="table_status">STATUS</div>
+        <div class="table_button"></div>
+      </div>
+      <hr class="divisor" />
+      <div id="table_list"></div>
+    </main>
+  </div>
+  <dialog id="popup_filtrar" class="popup">
+    <div>
+      <h1>Filtros</h1>
+      <p>DADOS PESSOAIS</p>
+      <hr />
+      <label for="id">ID</label>
+      <input type="text" name="id" id="id" class="inputSuccess" />
+      <label for="nome">NOME</label>
+      <input type="text" name="nome" id="nome" class="inputSuccess" />
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" class="inputSuccess" />
+      <p>STATUS</p>
+      <hr />
+      <div class="status">
+        <div>
+          <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()" />
+          <label for="todos">TODOS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()" />
+          <label for="ativo">ATIVO</label>
+        </div>
+        <div>
+          <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()" />
+          <label for="inativo">INATIVO</label>
+        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="fechar_popup_filtrar_proprietario()">
+          <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+          VOLTAR
+        </button>
+        <button onclick="filtrar_proprietarios()">
+          <img class="icon" src="../src/icones/icon_filtrar.png" alt="" />
+          FILTRAR
+        </button>
+      </div>
+    </div>
+  </dialog>
+  <div id="snackbar_success" class="snackbar"></div>
+  <div id="snackbar_error" class="snackbar"></div>
+</body>
+
 </html>
