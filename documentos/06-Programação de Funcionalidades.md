@@ -187,7 +187,7 @@ Eduardo Wollinger
 Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
 
  <figure> 
-  <img src="img/contratos.png">
+  <img src="img/Contratos.png">
     <figcaption>Figura 6 - Tela - Requisicoes</figcaption>
 </figure>
 
