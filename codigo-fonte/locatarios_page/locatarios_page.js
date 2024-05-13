@@ -18,7 +18,7 @@ function cadastrar_locatario() {
 }
 
 
-// POPUP CADASTRAR dados LOCATÁRIO
+// POPUP CADASTRAR DADOS LOCATÁRIO
 function abrir_popup_dados_locatario() {
     let popup = document.getElementById('popup_dados_locatario')
 

@@ -1,0 +1,1 @@
+- Retirar o ícone "+" da tela inicial (as faturas serão cadastradas automaticamente ao gerar o contrato)

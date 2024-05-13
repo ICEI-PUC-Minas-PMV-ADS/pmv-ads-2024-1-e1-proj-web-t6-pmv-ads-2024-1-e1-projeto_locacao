@@ -1,3 +1,14 @@
+----------------------------------------------------------------------------
+PRÓXIMA FASE
+- Incluir a informação "STATUS" na popup dados do locatário;
+- Colocar a cor de destaque de "STATUS" forma dinâmica;
+- Efetivar o CRUD no JS;
+- Incluir barra de rolagem lateral
+- Corrigir tela de consulta (está como campo de preenchimento)
+
+
+----------------------------------------------------------------------------
+
 Atalhos
 - Envelopar = CTRL + Shif + P
 - Comentários = CTRL + ;
@@ -5,7 +16,7 @@ Atalhos
 
 OBSERVAÇÕES SOBRE O CÓDIGO
 - No HTML identificar a linguagem: <html lang="pt-br">
-- NO HTML idenfificar a codificação padrão: <meta charset="UTF-8">
+- No HTML idenfificar a codificação padrão: <meta charset="UTF-8">
 - Colocar sempre UTF-8
 
 CODIFICAR CLASSES
