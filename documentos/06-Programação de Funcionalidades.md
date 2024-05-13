@@ -77,7 +77,7 @@ Socratis Gomes da Silva
 Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
 
  <figure> 
-  <img src="img/imoveis.png">
+  <img src="img/tela_imoveis.png">
     <figcaption>Figura 3 - Tela - Imóveis</figcaption>
 </figure>
 
