@@ -72,7 +72,7 @@ Socratis Gomes da Silva
 
 ---
 
-### RF-03 IMÓVEIS (ZANDER)
+### RF-03 IMÓVEIS 
 
 Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
 
@@ -184,7 +184,7 @@ Eduardo Wollinger
 
 ---
 
-### RF-06 CONTRATOS (ZANDER)
+### RF-06 CONTRATOS 
 
 Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
 
