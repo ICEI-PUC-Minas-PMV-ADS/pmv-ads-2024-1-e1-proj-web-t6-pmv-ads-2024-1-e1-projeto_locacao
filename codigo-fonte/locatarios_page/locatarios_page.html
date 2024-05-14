@@ -10,7 +10,7 @@
 
 </head>
 <!-- BARRA SUPERIOR -->
-<body>
+<body onload="locatarios_init()">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p></div>
@@ -86,12 +86,13 @@
                 <div class="table_telefone">TELEFONE</div>
                 <div class="table_email">E-MAIL</div>
                 <div class="table_status">STATUS</div>
+                <div class="table_status">SITUAÇÃO</div>
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
             <!-- LOCATÁRIOS (VISUALIZAÇÃO PARA TESTE) -->   
             <div id="table_list"></div>
-                <div class="div_table_row"> 
+                <!-- <div class="div_table_row"> 
                     <div class="table_icon">
                         <img src="../src/icones/icon_locatarios_selecionado.png" alt="" class="icon">
                     </div>
@@ -120,7 +121,7 @@
                         </div>
                     </div>
                     <hr class="divisor">
-                </div>
+                </div> -->
             </div>
         </main>
     </div>

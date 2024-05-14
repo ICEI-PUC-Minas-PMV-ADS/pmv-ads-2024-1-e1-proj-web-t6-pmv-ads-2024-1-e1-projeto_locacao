@@ -345,6 +345,13 @@ main {
     background-color: var(--grey);
 }
 
+
+/* POPUP DADOS FATURA */
+/* #popup_dados_fatura{
+    width: 50%;
+} */
+
+
 /* POPUP ESTILO GERAL */
 .popup {    
     justify-self: center;
@@ -367,12 +374,16 @@ main {
     align-items:normal;
 }
 
-
-
-/* POPUP DADOS FATURA */
-#popup_dados_fatura{
-    width: 30%;
+.popup .inputSuccess {
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    padding-left: 10px;
 }
+
+
 
 .section_locatario {
     display: grid;
@@ -384,4 +395,16 @@ main {
     display: flex;
     flex-direction: column;
     grid-area: nome;
+}
+
+.section_imovel {
+    display: grid;
+    grid-template-areas: 
+    "imovel" "imovel" "imovel" "id"
+}
+
+.popup .div_imovel{
+    display: flex;
+    flex-direction: column;
+    grid-area: imovel;
 }
