@@ -473,6 +473,12 @@ input[type="checkbox"]{
     margin-bottom: 2PX;
 }
 
+.section_status {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
 
 /* Formatações gerais da Popup */
 .popup hr{

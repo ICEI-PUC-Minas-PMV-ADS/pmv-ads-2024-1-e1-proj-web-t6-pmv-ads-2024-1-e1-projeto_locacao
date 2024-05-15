@@ -25,3 +25,15 @@ CODIFICAR CLASSES
 
 EXEMPLO DE CRUD
 https://replit.com/@eduardowollinge/Cadastro-de-Contatos-localStorage-1#lista_contatos.html
+
+
+
+- POPUP NOVO LOCATARIO
+- excluir 
+    - readonly
+    - botão alterar > salvar (somente salvar)
+    - disable do select
+    - função alterar dados locatário
+    - popup no HTML
+- crar
+    - criar função para gerar novo número de id
