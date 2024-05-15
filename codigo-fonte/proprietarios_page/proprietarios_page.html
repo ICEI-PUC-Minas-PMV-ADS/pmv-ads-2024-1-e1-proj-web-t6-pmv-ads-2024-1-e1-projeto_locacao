@@ -20,14 +20,14 @@
     </div>
     <div class="div_titulo">Proprietários</div>
     <div class="div_usuario">
-      <div class="dropdown" style="float: right;">
-        <button class="dropbtn">Usuário Master</button>
-        <div class="dropdown-content">
+      <div class="dropdown">
+        <button id="usuario_autenticado" class="dropbtn"></button>
+        <button class="dropdown-content" onclick="location.href = '../login_page/login_page.html'">
           <div>
-            <a href="../login_page/login_page.html">Sair</a>
-            <i class="material-icons">logout</i>
+            <i class="material-icons icon_color">logout</i>
+            <p>Sair</p>
           </div>
-        </div>
+        </button>
       </div>
       <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="" />
     </div>
