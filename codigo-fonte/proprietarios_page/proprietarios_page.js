@@ -3,7 +3,7 @@ function proprietarios_init() {
 
     iniciar_banco()
 
-    usuario()
+    // usuario()
 
     proprietarios(null, null, null, true)
 }

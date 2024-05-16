@@ -1,7 +1,7 @@
 function iniciar_dashboard() {
   iniciar_banco_imoveis();
   iniciar_banco_faturas();
-  usuario()
+  // usuario()
   my_bar_chart();
   my_doughnut_chart();
   alerta_vencimento();
