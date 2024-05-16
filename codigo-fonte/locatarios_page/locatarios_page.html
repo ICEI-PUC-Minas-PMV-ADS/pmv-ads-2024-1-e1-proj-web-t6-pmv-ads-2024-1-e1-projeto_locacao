@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="locatarios_page.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="locatarios_page.js"></script>
+    <link rel="stylesheet" href="../utils/snackbar.css">
 
 </head>
 <!-- BARRA SUPERIOR -->
-<body>
+<body onload="locatarios_init()">
     <header>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p></div>
@@ -27,45 +28,46 @@
         <nav>
             <div class="sidebar_superior">
                 <hr class="divisor">
-                <button class="sidebar_button" onclick=""> <!-- Temporário: Dashboard -->
-                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="Dashboard">
+                <button class="sidebar_button" onclick = "location.href ='../dashboard_page/dashboard_page.html'">
+                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
                     <p>Dashboard</p>
-                </button>
-                <button class="sidebar_button" onclick=""> <!-- Temporário:Proprietários -->
-                    <img class="icon" src="../src/icones/icon_proprietarios_selecionado.png" alt="Proprietários">
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
+                    <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
                     <p>Proprietários</p>
-                </button>
-                <button class="sidebar_button_selected" onclick=""> <!-- Temporário: Locarários -->
-                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="Locatarios">
+                  </button>
+                  <button class="sidebar_button_selected" onclick="location.href = '../locatarios_page/locatarios_page.html'">
+                    <img class="icon" src="../src/icones/icon_locatarios_selecionado.png" alt="" />
                     <p>Locatários</p>
-                </button>
-                <button class="sidebar_button" onclick=""> <!-- Temporário: Imóveis -->
-                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="Imóveis">
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
+                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
                     <p>Imóveis</p>
-                </button>
-                <button class="sidebar_button" onclick="">
-                    <img class="icon" src="../src/icones/icon_contratos.png" alt="Contratos">
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
+                    <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
                     <p>Contratos</p>
-                </button>
-                <button class="sidebar_button" onclick=""> <!-- Temporário: Faturas -->
-                    <img class="icon" src="../src/icones/icon_faturas.png" alt="Faturas">
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
+                    <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
                     <p>Faturas</p>
-                </button>
-                <button class="sidebar_button" onclick=""> <!-- Temporário: Requisições -->
-                    <img class="icon" src="../src/icones/icon_requisicoes.png" alt="">
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
+                    <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
                     <p>Requisições</p>
-                </button>
+                  </button>
             </div>
             <div class="sidebar_inferior">
                 <hr class="divisor">
-                <button class="sidebar_button" onclick=""> <!-- Temporário: Usuários -->
+                <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> <!-- Temporário: Usuários -->
                     <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
                     <p>Usuários</p>
                 </button>
             </div>
         </nav>  
         <!-- TELA PRINCIPAL MAIN -->
-        <main id="table_owners"> 
+        <!-- <main id="table_owners">  -->
+        <main> 
             <div class="div_table_locatarios">
                 <p>Locatários</p>
                 <div class="div_table_locatarios_group_buttons">
@@ -85,48 +87,19 @@
                 <div class="table_telefone">TELEFONE</div>
                 <div class="table_email">E-MAIL</div>
                 <div class="table_status">STATUS</div>
+                <div class="table_status">SITUAÇÃO</div>
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
             <!-- LOCATÁRIOS (VISUALIZAÇÃO PARA TESTE) -->   
             <div id="table_list"></div>
-                <div class="div_table_row"> 
-                    <div class="table_icon">
-                        <img src="../src/icones/icon_locatarios_selecionado.png" alt="" class="icon">
-                    </div>
-                    <div class="table_id">01</div>
-                    <div class="table_name">LOCATÁRIO 01</div>
-                    <div class="table_telefone">65 9 9999-9999</div>
-                    <div class="table_email">email@teste.com.br</div>
-                    <div class="status_active"><p>Ativo</p></div>
-                    <div class="table_button">
-                        <buttom class="open_button" onclick="abrir_popup_dados_locatario()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
-                    </div>
-                </div>    
-                <hr class="divisor">                
-                <div id="table_list"></div>
-                    <div class="div_table_row"> 
-                        <div class="table_icon">
-                            <img src="../src/icones/icon_locatarios_selecionado.png" alt="" class="icon">
-                        </div>
-                        <div class="table_id">02</div>
-                        <div class="table_name">LOCATÁRIO 02</div>
-                        <div class="table_telefone">65 1 1234-5678</div>
-                        <div class="table_email">email@testezim.com.br</div>
-                        <div class="status_inactive"><p>Inativo</p></div>
-                        <div class="table_button">
-                            <buttom class="open_button" onclick="abrir_popup_dados_locatario()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
-                        </div>
-                    </div>
-                    <hr class="divisor">
-                </div>
             </div>
         </main>
     </div>
 
     
     <!-- POPUP DADOS LOCATÁRIO -->
-    <dialog id="popup_dados_locatario" class="popup">
+    <!-- <dialog id="popup_dados_locatario" class="popup">
         <div>
             <h1>Dados Locatario - 1 (Teste)</h1>
             <p><br>DADOS PESSOAIS</p>
@@ -204,7 +177,7 @@
                 </button>
             </div>
         </div>
-    </dialog>
+    </dialog> -->
 
     
     
@@ -301,28 +274,52 @@
             <p><br>DADOS PESSOAIS</p>
             <hr>
             <label for="nome">ID</label>
-            <input type="text" name="id" id="id" class="inputSuccess">
+            <input type="text" name="id" id="id_filtro" class="inputSuccess">
             <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess">
+            <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" class="inputSuccess">
-            <p><br>STATUS</p>
-            <hr>
+            <input type="text" name="cpf" id="cpf_filtro" class="inputSuccess">
+            
+            <!-- Status  -->
+            <section class="section_status">
+                
+                <div class="status">
+                    <p><br>STATUS</p>
+                    <hr>
 
-            <div class="status">
-                <div>
-                    <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
-                    <label for="todos">TODOS</label>
+                    <div>
+                        <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
+                        <label for="todos">TODOS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
+                        <label for="ativo">ATIVO</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
+                        <label for="inativo">INATIVO</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
-                    <label for="ativo">ATIVO</label>
+
+            <!-- Situação -->
+                <div class="status">
+                    <p><br>SITUAÇÃO</p>
+                    <hr>
+
+                    <div>
+                        <input type="checkbox" name="todos" id="situacao_todos" value="todos" onchange="situacao_todos()">
+                        <label for="todos">TODOS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="adimplente" id="situacao_adimplente" value="adimplente" onchange="situacao_adimplente()">
+                        <label for="adimplante">ADIMPLENTE</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="inadimplente" id="situacao_inadimplente" value="inadimplente" onchange="situacao_inadimplente()">
+                        <label for="inadimplente">INADIMPLENTE</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
-                    <label for="inativo">INATIVO</label>
-                </div>
-            </div>
+            </section>
 
             <div class="buttons">
                 <button onclick="fechar_popup_filtrar()">
@@ -336,10 +333,9 @@
             </div>
         </div>
     </dialog>
-
-
-
-
+    <!-- Mensgens de erro -->
+    <div id="snackbar_success" class="snackbar"></div>
+    <div id="snackbar_error" class="snackbar"></div>
 </body>
 
 </html>

@@ -1,7 +1,10 @@
 @charset "UTF-8";
+/* Fontes Padrão */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');
 
-/* Cores padrão de todas as telas */
+
+/* VARIÁVEIS GERAIS */
+/* Cores e Fontes */
 :root {
     --green: #5BB800;
     --white: #ffffff;
@@ -10,8 +13,12 @@
     --light-grey: #F8F9FA;
     --grey: #E0E1E2;
     --dark-grey: #A0AEC0;
+    --red: #B83700;
+    
     --font-size-button: 16px;
+    --font-family: 'Roboto', sans-serif;
 }
+
 
 /* PADRÃO GERAL */
 /* Margem */
@@ -41,8 +48,7 @@ hr.divisor {
     margin-bottom: 10px;
 }
 
-
-/* DIVISÃO DE TÍTULO */
+/* CABEÇALHO (header)*/
 header {
     width: 100%;
     display: flex;
@@ -52,7 +58,7 @@ header {
     height: 12vh;
 }
 
-/* Logo */
+/* div Icone ImmoControl */
 .div_logo {
     padding: 0px 22px;
     display: flex;
@@ -73,18 +79,12 @@ header {
     font-size: 25px;
 }
 
-/* Título Central */
 .div_titulo {
     color: var(--green);
     font-size: 25px;
     font-weight: 600;
 }
 
-/* Usuário Logado */
-.icon_usuario_logado {
-    height: 40px;
-    width: 40px;
-}
 
 .div_usuario {
     padding-right: 20px;
@@ -96,7 +96,7 @@ header {
     font-weight: bold;
 }
 
-/* DIVISÃO MENU (CONTENT) */
+/* SIDEBAR (content) */
 .content {
     width: 100%;
     display: flex;
@@ -167,9 +167,7 @@ nav {
     width: 20px;
 }
 
-
 /* CONTEÚDO */
-
 main {
     background-color: var(--white);
     width: 100%;
@@ -181,48 +179,48 @@ main {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+#table_list{
+    overflow-y: auto;
+    height: 3%;
 
-.div_table_locatarios {
+}
+
+.div_table_faturas {
     display: flex;
     color: var(--green);
     font-weight: bold;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.5em;
 }
 
-.div_table_locatarios_group_buttons{
+.div_table_faturas_group_buttons{
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
-.div_table_locatarios_button{
+.div_table_faturas_button{
     display: flex;
     padding: 0px;
     border-radius: 10px;
     border: none;
 }
 
-.div_table_locatarios_button:hover {
+.div_table_faturas_button:hover {
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
+/* Cabeçalho da Tabela */
 .div_table_header {
     margin: 20px 0 5px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     color: var(--dark-grey);
-    font-size: 12px;
+    font-size: 1em;
     font-weight: bold;
-}
-
-#table_list{
-    overflow: scroll;
-    height: 87%;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 .div_table_row{
@@ -230,8 +228,9 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
     min-width: fit-content;
+    font-weight: bold;
 }
 
 .table_icon{
@@ -244,49 +243,56 @@ main {
 .table_id{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 5%;
+    width: 10%;
 }
 
-.table_name{
+.table_locatario{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 20%;
+    width: 25%;
 }
 
-.table_telefone{
+.table_periodo{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 13%;
+    width: 15%;
 }
 
-.table_email{
+.table_vencimento{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 20%;
+    width: 15%;
+}
+
+.table_valor{
+    min-width: fit-content;
+    /* border: 1px solid black; */
+    width: 10%;
 }
 
 .table_status{
     min-width: fit-content;
     /*border: 1px solid black;*/
-    width: 13%;
+    width: 5%;
 }
 
 .table_button{
     display: flex;
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 5%;
+    width: 15%;
     justify-content: end;
 }
 
+
 /* DESTAQUE STATUS  (FALTA O JAVA SCRIPT) */
 
-.status_active {
+.status_open {
     display: flex;
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 90%;
+    width: 7%;
     background-color: var(--green);
     color: var(--white);
     font-weight: 600;
@@ -296,12 +302,12 @@ main {
 
 }
 
-.status_inactive{
+.status_quitado{
     display: flex;
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 90%;
+    width: 7%;
     background-color: var(--dark-grey);
     color: var(--white);
     font-weight: 600;
@@ -311,11 +317,22 @@ main {
     
 }
 
-
-
+.status_vencido{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: fit-content;
+    width: 7%;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
 
 /* DESTAQUE BOTÃO AO PASSAR MOUSE */
-
 .open_button{
     display: flex;
     padding: 10px;
@@ -328,17 +345,14 @@ main {
     background-color: var(--grey);
 }
 
-/* POPUP CADASTRAR/DADOS LOCATÁRIO */
 
-#popup_cadastrar{
-    width: 30%;
-}
+/* POPUP DADOS FATURA */
+/* #popup_dados_fatura{
+    width: 50%;
+} */
 
-#popup_dados_locatario{
-    width: 30%;
-}
 
-/* Estilo da Popup */
+/* POPUP ESTILO GERAL */
 .popup {    
     justify-self: center;
     align-self: center;
@@ -360,164 +374,6 @@ main {
     align-items:normal;
 }
 
-/* Seção Dados Pessoais */
-.section_dados_pessoais {
-    display: grid;
-    grid-template-areas: 
-    "nome nome"
-    "cpf estado_civil";
-    column-gap: 15px;
-}
-
-.popup .div_nome{
-    display: flex;
-    flex-direction: column;
-    grid-area: nome;
-}
-
-.popup .div_cpf{
-    display: flex;
-    flex-direction: column;
-    grid-area: cpf;
-}
-
-.popup .div_estado_civil{
-    display: flex;
-    flex-direction: column;
-    grid-area: estado_civil;
-}
-
-/* Seção Endereço */
-.section_endereco{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "tipo_logradouro logradouro logradouro logradouro numero"
-    "complemento bairro bairro cidade cidade"
-    "cep uf . . .";
-    column-gap: 15px;
-    
-}
-
-.popup .div_tipo_logradouro{
-    display: flex;
-    flex-direction: column;
-    grid-area: tipo_logradouro;
-}
-
-.popup .div_logradouro{
-    display: flex;
-    flex-direction: column;
-    grid-area: logradouro;
-}
-
-.popup .div_numero{
-    display: flex;
-    flex-direction: column;
-    grid-area: numero;
-}
-
-.popup .div_complemento{
-    display: flex;
-    flex-direction: column;
-    grid-area: complemento;
-}
-
-.popup .div_bairro{
-    display: flex;
-    flex-direction: column;
-    grid-area: bairro;
-}
-
-.popup .div_cidade{
-    display: flex;
-    flex-direction: column;
-    grid-area: cidade;
-}
-
-.popup .div_cep{
-    display: flex;
-    flex-direction: column;
-    grid-area: cep;
-}
-
-.popup .div_uf{
-    display: flex;
-    flex-direction: column;
-    grid-area: uf;
-}
-
-/* Seção Endereço */
-.section_contato{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
-    "telefone email";
-    column-gap: 15px;
-    
-}
-
-/* POPUP FILTRAR*/
-#popup_filtrar{
-    width: 20%;
-}
-
-/* Seção Status */
-.status div{
-    display: flex;
-    flex-direction: row;
-}
-
-input[type="checkbox"]{
-    border: px solid #5BB800;
-    margin-bottom: 2PX;
-}
-
-.section_status {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-
-
-/* Formatações gerais da Popup */
-.popup hr{
-    margin-bottom: 10px;
-    border-top: 1px solid var(--green);
-    margin: 10;
-}
-
-.popup p,label{
-    font-size: 12px;
-    font-weight: bold;
-    padding-left: 10px;
-}
-
-.popup h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 0px 0px 20px 0px;
-}
-
-.popup .selectSuccess {
-    height: 36px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--green);
-    padding-left: 10px;
-}
-
-.popup .selectError {
-    height: 36px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--red);
-    padding-left: 10px;
-}
-
 .popup .inputSuccess {
     height: 30px;
     margin-bottom: 10px;
@@ -527,46 +383,28 @@ input[type="checkbox"]{
     padding-left: 10px;
 }
 
-.popup .inputError{
-    height: 30px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--red);
-    padding-left: 10px;
+
+
+.section_locatario {
+    display: grid;
+    grid-template-areas: 
+    "nome"
 }
 
-.popup .buttons{
+.popup .div_nome{
     display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
+    flex-direction: column;
+    grid-area: nome;
 }
 
-.popup .icon{
-    height: 20px;
-    width: 20px;
+.section_imovel {
+    display: grid;
+    grid-template-areas: 
+    "imovel" "imovel" "imovel" "id"
 }
 
-.buttons button {
+.popup .div_imovel{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--green);
-    color: var(--white);
-    font-size: 12px;
-    font-weight: bold;
-    gap: 10px;
+    flex-direction: column;
+    grid-area: imovel;
 }
-
-.buttons button:hover {
-    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
-}
-
-

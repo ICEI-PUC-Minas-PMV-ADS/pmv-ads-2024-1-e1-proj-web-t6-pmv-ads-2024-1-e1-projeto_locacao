@@ -72,12 +72,12 @@ Socratis Gomes da Silva
 
 ---
 
-### RF-03 IMÓVEIS (ZANDER)
+### RF-03 IMÓVEIS 
 
 Acesso à tela inicial de imóveis através da barra de navegação lateral esquerda:
 
  <figure> 
-  <img src="img/imoveis.png">
+  <img src="img/tela_imoveis.PNG">
     <figcaption>Figura 3 - Tela - Imóveis</figcaption>
 </figure>
 
@@ -114,8 +114,6 @@ Zander Vasconcelos Pereira
 
 ### RF-04 PROPRIETÁRIOS (PEDRO)
 
-Responsável: Pedro Francis Maia Coelho
-
 O acesso a tela de proprietários poderá ser feito através da opção "Proprietários" no menu lateral a esquerda de qualquer página após o login.
 
 Exemplo da tela de proprietários:
@@ -142,6 +140,10 @@ RF-04: A aplicação deve permitir ao usuário cadastrar/alterar/pesquisar infor
 #### Instruções de acesso
 
 Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/proprietarios_page/proprietarios_page.html
+
+#### Responsável
+
+Pedro Francis Maia Coelho
 
 ---
 
@@ -182,12 +184,12 @@ Eduardo Wollinger
 
 ---
 
-### RF-06 CONTRATOS (ZANDER)
+### RF-06 CONTRATOS 
 
 Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
 
  <figure> 
-  <img src="img/Contratos.png">
+  <img src="img/tela_contrato.PNG">
     <figcaption>Figura 6 - Tela - Requisicoes</figcaption>
 </figure>
 
@@ -228,7 +230,7 @@ Zander Vasconcelos Pereira
 Acesso para a tela Requisições através da barra lateral esquerda:
 
 <figure> 
-  <img src="/img/requisicoes_page.png"
+  <img src="img/requisicoes_page.png"
     <figcaption>Figura 25 - Tela de Requisições</figcaption>
 </figure>
 
@@ -243,7 +245,7 @@ RF-09: A aplicação deve permitir cadastrar/alterar requisições
 
 #### Estrutura de Dados
 
-A Estrutura de dados está localizada em: [requisicoes_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html))
+A Estrutura de dados está localizada em: [requisicoes_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/requisicoes_page/requisicoes_page.html)
 
 #### Instruções de acesso
 

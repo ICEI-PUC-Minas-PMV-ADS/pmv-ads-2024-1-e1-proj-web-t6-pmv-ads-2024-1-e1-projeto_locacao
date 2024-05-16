@@ -435,7 +435,7 @@ input[type="checkbox"]{
 
 #table_list{
     overflow: scroll;
-    height: 85%;
+    height: 87%;
     overflow-y: auto;
     overflow-x: hidden;
 }

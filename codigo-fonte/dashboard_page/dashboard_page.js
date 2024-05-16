@@ -1,9 +1,17 @@
 function iniciar_dashboard() {
   iniciar_banco_imoveis();
   iniciar_banco_faturas();
+  // usuario()
   my_bar_chart();
   my_doughnut_chart();
   alerta_vencimento();
+}
+
+function usuario() {
+  let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
+
+  let usuario_autenticado = document.getElementById("usuario_autenticado")
+  usuario_autenticado.innerHTML = usuario.nome
 }
 
 function my_bar_chart() {

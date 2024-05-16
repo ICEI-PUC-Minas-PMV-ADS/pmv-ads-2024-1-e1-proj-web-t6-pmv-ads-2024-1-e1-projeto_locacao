@@ -1,9 +1,18 @@
 function proprietarios_init() {
-    localStorage.clear()
+    // localStorage.clear()
 
     iniciar_banco()
 
+    // usuario()
+
     proprietarios(null, null, null, true)
+}
+
+function usuario() {
+    let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
+
+    let usuario_autenticado = document.getElementById("usuario_autenticado")
+    usuario_autenticado.innerHTML = usuario.nome
 }
 
 function proprietarios(id, nome, cpf, status) {

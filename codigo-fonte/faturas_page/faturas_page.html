@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faturas</title>
+    <link rel="stylesheet" href="faturas_page.css">
+    <link rel="stylesheet" href=http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="faturas_page.js"></script>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header>
+    <!-- Icone ImmoControl -->
+    <div class="div_logo">
+        <p><span class="immo">Immo</span><span class="control">Control</span></p>
+    </div>
+    <!-- Título da Página -->
+    <div class="div_titulo">
+        <p>Faturas</p>
+    </div>
+    <!-- Usuário Logado -->
+    <div class="div_usuario">
+        <!-- Temporário: Usuário logado -->
+        <p>Eduardo Wollinger</p> 
+        <img src="../src/icones/icon_usuario_logado.png" alt="Usuário Logado" class="icon_usuario_logado">
+    </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="content">
+        <nav>
+            <div class="sidebar_superior">
+                <hr class="divisor">
+                <button class="sidebar_button" onclick = "location.href ='../dashboard_page/dashboard_page.html'">
+                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
+                    <p>Dashboard</p>
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
+                    <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
+                    <p>Proprietários</p>
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
+                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
+                    <p>Locatários</p>
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
+                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
+                    <p>Imóveis</p>
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
+                    <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
+                    <p>Contratos</p>
+                  </button>
+                  <button class="sidebar_button_selected" onclick="location.href = '../faturas_page/faturas_page.html'">
+                    <img class="icon" src="../src/icones/icon_faturas_selecionado.png" alt="" />
+                    <p>Faturas</p>
+                  </button>
+                  <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
+                    <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
+                    <p>Requisições</p>
+                  </button>
+            </div>
+            <div class="sidebar_inferior">
+                <hr class="divisor">
+                <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> 
+                    <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
+                    <p>Usuários</p>
+                </button>
+            </div>
+        </nav>
+    
+        <!-- CONTEÚDO -->
+        <main>
+            <!-- Cabeçalho do Conteúdo -->
+            <div class="div_table_faturas">
+                <p>Faturas</p>
+                <div class="div_table_faturas_group_buttons">
+                    <button class="div_table_faturas_button" onclick="abrir_popup_filtrar_faturas()">
+                        <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="">
+                    </button>
+                    <!-- <button class="div_table_faturas_button" onclick="abrir_popup_cadastrar_faturas()">
+                        <img class="icon" src="../src/icones/icon_button_adicionar.png" alt="">
+                    </button> -->
+                </div>
+            </div>
+            <div class="div_table_header"> 
+                <div class="table_icon"></div>
+                <div class="table_id">ID</div>
+                <div class="table_locatario">LOCATÁRIO</div>
+                <div class="table_periodo">PERÍODO</div>
+                <div class="table_vencimento">VENCIMENTO</div>
+                <div class="table_valor">VALOR</div>
+                <div class="table_status">STATUS</div>
+                <div class="table_button"></div>
+            </div>
+            <hr class="divisor">
+            <!-- FATURAS (VISUALIZAÇÃO PARA TESTE) -->   
+            <div id="table_list"></div>
+                <div class="div_table_row"> 
+                    <div class="table_icon">
+                        <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
+                    </div>
+                    <div class="table_id">1</div>
+                    <div class="table_locatario">Andreia Oliveira Dias</div>
+                    <div class="table_periodo">06/2024</div>
+                    <div class="table_vencimento">01/06/2024</div>
+                    <div class="table_valor">R$ 1.000,00</div>
+                    <div class="status_open">Em Aberto</div>
+                    <div class="table_button">
+                        <buttom class="open_button" onclick="abrir_popup_dados_fatura()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
+                    </div>
+                </div>
+            <hr class="divisor">
+            <div class="div_table_row"> 
+                <div class="table_icon">
+                    <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
+                </div>
+                <div class="table_id">2</div>
+                <div class="table_locatario">Arthur Castro</div>
+                <div class="table_periodo">03/2024</div>
+                <div class="table_vencimento">01/04/2024</div>
+                <div class="table_valor">R$ 650,00</div>
+                <div class="status_quitado">Quitado</div>
+                <div class="table_button">
+                    <buttom class="open_button" onclick="abrir_popup_dados_fatura()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
+                </div>
+            </div>
+            <hr class="divisor">
+            <div class="div_table_row"> 
+                <div class="table_icon">
+                    <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
+                </div>
+                <div class="table_id">3</div>
+                <div class="table_locatario">Naiara Fernandes</div>
+                <div class="table_periodo">03/2024</div>
+                <div class="table_vencimento">01/04/2024</div>
+                <div class="table_valor">R$ 700,00</div>
+                <div class="status_vencido">Vencida</div>
+                <div class="table_button">
+                    <buttom class="open_button" onclick="abrir_popup_dados_fatura()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
+                </div>
+            </div>
+            <hr class="divisor">    
+        </main>
+    </div>
+    <!-- POPUP DADOS FATURA -->
+    <dialog id="popup_dados_fatura" class="popup">
+        <div>
+            <h1>Dados da Fatura 1/2/3</h1>
+            <p><br>LOCATÁRIO</p>
+        </div>
+        <hr>
+        <Section class="section_locatario">
+            <div class="div_name">
+                <label for="nome">NOME</label>
+                <input type="text" name="nome" id="nome" class="inputSuccess" value="LOCATARIO 1/2/3">
+            </div>
+        </Section>
+        <Section class="section_imovel">
+            <div class="div_imovel">
+                <label for="imovel">IMÓVEL</label>
+                <input type="text" name="imovel" id="imovel" class="inputSuccess" value="Rua Riograndense, 2 - Jardins - Ouro Preto - MG">
+            </div>
+            <hr>
+        </Section>
+
+
+
+    </dialog>
+
+
+    
+</body>
+</html>
