@@ -1,20 +1,26 @@
-//coletando elemento fade:
-var ElementoFade = document.getElementById("fade")
 
-//coletando body:
-var bodyy =document.querySelector("body");
 
-// coletando os dialogs:
-var dialog1 = document.getElementById("modal1");
-var dialog2 = document.getElementById("modal2");
-var dialog3 = document.getElementById("modal3");
-//---------------------------------------------
 
-//coletando os iframes dos dialog:
-const iframe1 = document.getElementById("meuIframeFiltrar");
-const iframe2 = document.getElementById("meuIframeadicionar");
-const iframe3 = document.getElementById('meuIframeAlterar')
-//-------------------------------------------------------------
+    //coletando elemento fade:
+    var ElementoFade = document.getElementById("fade")
+
+    //coletando body:
+    var bodyy =document.querySelector("body");
+
+    // coletando os dialogs:
+    var dialog1 = document.getElementById("modal1");
+    var dialog2 = document.getElementById("modal2");
+    var dialog3 = document.getElementById("modal3");
+    //---------------------------------------------
+
+    //coletando os iframes dos dialog:
+    const iframe1 = document.getElementById("meuIframeFiltrar");
+    const iframe2 = document.getElementById("meuIframeadicionar");
+    const iframe3 = document.getElementById('meuIframeAlterar')
+    //-------------------------------------------------------------
+
+
+
 
 
 // Ações dos botões:
@@ -105,9 +111,9 @@ function iniciar_banco_imoveis(){
 
     let imoveis = [
         {
-            id: 1,
+            id: 0,
             tipo_imovel: "Comercial",
-            tipo_logradouro: "Avendida",
+            tipo_logradouro: "Avenida",
             logradouro: "beatriz alvarenga",
             numero: "319",
             complemento: "apto 208",
@@ -120,7 +126,7 @@ function iniciar_banco_imoveis(){
         },
 
         {
-            id: 2,
+            id: 1,
             tipo_imovel: "residencial",
             tipo_logradouro: "rua",
             logradouro: "são joao",
@@ -135,7 +141,7 @@ function iniciar_banco_imoveis(){
         },
         
         {
-            id: 3,
+            id: 2,
             tipo_imovel: "residencial",
             tipo_logradouro: "rua",
             logradouro: "são josé",
@@ -152,99 +158,70 @@ function iniciar_banco_imoveis(){
         
             
     ]
-
+    
     localStorage.setItem("imoveis", JSON.stringify(imoveis));
+    
+    var elemento = document.getElementById('table_list')
+    var texto = '';
+    for ( let i = 0;i <imoveis.length;i++){
+
+        texto += `<div class="div_table_row"> \n
+        <div class="table_icon1">
+          <img 
+            class="icon"
+            src="../src/icones/icon_imoveis_selecionado.png"
+            alt=""
+          />
+        </div>
+
+        <div class="table_id">${imoveis[i].id}</div>
+
+        <div class="table_name">${imoveis[i].tipo_imovel}</div>
+
+        <div class="table_property">${imoveis[i].tipo_logradouro} ${imoveis[i].logradouro}, ${imoveis[i].numero}, ${imoveis[i].complemento}</div>
+
+        <div class="table_status">${imoveis[i].vacancia}</div>
+
+        <div class="table_status">${imoveis[i].status}</div>
+
+        <div class="table_button">
+          <button
+            class="open_button"
+            onclick="abrirModalAlteracao()"
+          >
+            <img
+              class="open_icon"
+              src="../src/icones/icon_ver_dados.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>`
+
+    }
+    elemento.innerHTML = texto;
     
 }
 
+function FiltrarImoveis(){
 
-
-function imoveis(id, tipo_imovel, tipo_logradouro,logradouro,numero,vacancia, status) {
-
-    var node = document.getElementById('table_list');
-    node.innerHTML = ""
-
-    let id_a = id;
-    let tipo_imovel_a = tipo_imovel;
-    let tipo_logradouro_a = tipo_logradouro;
-    let logradouro_a = logradouro;
-    let numero_a = numero;
-    let vacancia_a = vacancia;
-    let status_a = status;
-
-    let table = document.getElementById('table_list');
-
-    let imoveis = JSON.parse(localStorage.getItem("imoveis"));
-
-    if (id_a != null) {
-        imoveis = imoveis.filter((imoveis) => imoveis.id == parseInt(id));
-    }
-
-    if (tipo_imovel_a != null) {
-        imoveis = imoveis.filter((imoveis) => imoveis.tipo_imovel_a.toUpperCase().includes(tipo_imovel_a.toUpperCase()));
-    }
-
-    if (tipo_logradouro_a != null) {
-        imoveis = imoveis.filter((imoveis) => imoveis.tipo_logradouro_a.toUpperCase().includes(tipo_logradouro_a.toUpperCase()));
-    }
-
-    if (logradouro_a != null) {
-        imoveis = imoveis.filter((imoveis) => imoveis.logradouro_a.toUpperCase().includes(logradouro_a.toUpperCase()));
-    }
-
-    if (numero_a != null) {
-        imoveis = imoveis.filter((imoveis) => imoveis.numero_a.toUpperCase().includes(numero_a.toUpperCase()));
-    }
-
-    if (vacancia_a != null) {
-        imoveis = imoveis.filter((imoveis) => imoveis.vacancia_a.toUpperCase().includes(vacancia_a.toUpperCase()));
-    }
-
-
-    if (status_a != null) {
-        if (status_a) {
-            imoveis = imoveis.filter((imoveis) => imoveis.status_a == status);
-        } else {
-            imoveis = imoveis.filter((imoveis) => imoveis.status_a == status_a);
+    // coletando os elementos do filtro de imóveis:
+    let id_imovel = document.getElementById('id')
+    let filtro_tipo_imovel = document.getElementById('tipo')
+    let filtro_logradouro = document.getElementById('Logradouro')
+    let filtro_cidade = document.getElementById('cidade')
+    let filtro_cep = document.getElementById('cep')
+    //--------------------------------------------------//
+    for ( let i = 0;i <imoveis.length;i++){
+        if(id_imovel == imoveis[i]){
+            
         }
+
+
+
+
     }
 
-    if (imoveis.length >0) {
-        imoveis.map((imoveis) => {
-            dados = JSON.stringify(imoveis)
 
-            table.innerHTML += `
-                    <div class="div_table_row">
-                        <div class="table_icon">
-                            <img class="icon" src="../src/icones/icon_imoveis_selecionado.png" alt="">
-                        </div>
-                        <div class="table_id">
-                            ${imoveis.id_a}
-                        </div>
-                        <div class="table_name">
-                            ${imoveis.tipo_imovel_a}
-                        </div>
-                        <div class="table_property">
-                            ${imoveis.tipo_logradouro_a},${imoveis.logradouro_a},${imoveis.numero_a},${imoveis.complemento_a}
-                        </div>
-                        <div class="table_status">
-                            <div class=${imoveis.status_a ? "status_active" : "status_inactive"}>
-                                <p>
-                                    ${imoveis.status_a ? "Ativo" : "Inativo"}
-                                </p>
-                            </div>
-                        </div>
-                        <div class="table_button">
-                            <button class="open_button" data-button='${dados}'>
-                                <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
-                            </button>
-                        </div>
-                    </div>
-                `
-            table.innerHTML += '<hr class="divisor"></hr>'
-            }
-            )
 
-    } 
-    
 }
