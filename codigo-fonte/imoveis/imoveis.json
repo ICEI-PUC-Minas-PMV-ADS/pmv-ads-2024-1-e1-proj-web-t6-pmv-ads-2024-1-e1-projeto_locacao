@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "tipo_imovel": "Comercial",
+        "tipo_logradouro": "Avenida",
+        "logradouro": "beatriz alvarenga",
+        "numero": "319",
+        "complemento": "apto 208",
+        "bairro":"centro",
+        "cidade":"belo horizonte",
+        "estado":"MG",
+        "cep":"31140258",
+        "vacancia":"locado",
+        "status":"ativo"
+    },
+
+    {
+        "id": 2,
+        "tipo_imovel": "residencial",
+        "tipo_logradouro": "Rua",
+        "logradouro": "são joao",
+        "numero": "39",
+        "complemento": "casa",
+        "bairro":"sagrda famila",
+        "cidade":"belo horizonte",
+        "estado":"MG",
+        "cep":"31140258",
+        "vacancia":"locado",
+        "status":"ativo"
+    },
+    
+    {
+        "id": 3,
+        "tipo_imovel": "residencial",
+        "tipo_logradouro": "Rua",
+        "logradouro": "são josé",
+        "numero": "500",
+        "complemento": "casa",
+        "bairro":"centro",
+        "cidade":"franca",
+        "estado":"SP",
+        "cep":"31140222",
+        "vacancia":"locado",
+        "status":"ativo"
+    }
+    
+]
+        

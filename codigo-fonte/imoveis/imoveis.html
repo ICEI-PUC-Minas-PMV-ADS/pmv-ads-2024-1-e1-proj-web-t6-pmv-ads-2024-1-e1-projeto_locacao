@@ -67,17 +67,19 @@
             <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
             <p>Requisições</p>
           </button>
-    </div>
-    <div class="sidebar_inferior">
-        <hr class="divisor">
-        <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> 
-            <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
-            <p>Usuários</p>
-        </button>
+
+          </div>
+
+          <div class="sidebar_inferior">
+          <hr class="divisor">
+          <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> 
+              <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
+              <p>Usuários</p>
+          </button>
         </div>
       </nav>
 
-      <dialog id="modal1">
+      <dialog id="modal1" onload="pegarDialog1()">
         <iframe
           src="imoveis_filtro.html"
           id="meuIframeFiltrar"
@@ -153,7 +155,7 @@
         <div id="table_list">
           
         </div>
-        
+
       </main>
     </div>
 

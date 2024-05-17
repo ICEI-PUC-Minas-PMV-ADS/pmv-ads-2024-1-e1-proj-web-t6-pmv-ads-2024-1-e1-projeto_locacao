@@ -1,26 +1,21 @@
 
+//coletando elemento fade:
+var ElementoFade = document.getElementById("fade")
 
+//coletando body:
+var bodyy =document.querySelector("body");
 
-    //coletando elemento fade:
-    var ElementoFade = document.getElementById("fade")
+// coletando os dialogs:
+var dialog1 = document.getElementById("modal1");
+var dialog2 = document.getElementById("modal2");
+var dialog3 = document.getElementById("modal3");
+//---------------------------------------------
 
-    //coletando body:
-    var bodyy =document.querySelector("body");
-
-    // coletando os dialogs:
-    var dialog1 = document.getElementById("modal1");
-    var dialog2 = document.getElementById("modal2");
-    var dialog3 = document.getElementById("modal3");
-    //---------------------------------------------
-
-    //coletando os iframes dos dialog:
-    const iframe1 = document.getElementById("meuIframeFiltrar");
-    const iframe2 = document.getElementById("meuIframeadicionar");
-    const iframe3 = document.getElementById('meuIframeAlterar')
-    //-------------------------------------------------------------
-
-
-
+//coletando os iframes dos dialog:
+const iframe1 = document.getElementById("meuIframeFiltrar");
+const iframe2 = document.getElementById("meuIframeadicionar");
+const iframe3 = document.getElementById('meuIframeAlterar')
+//-------------------------------------------------------------
 
 
 // Ações dos botões:
@@ -55,26 +50,29 @@ function abrirModalAlteracao(){
 
 iframe1.onload = function() {
     // Obtém o conteúdo do iframe
-    var iframeConteudo = iframe1.contentWindow;
-
+    let iframeConteudo = iframe1.contentWindow;
+    
 
     // Obtém o botão do iframe
-    var botaoDoIframe = iframeConteudo.document.getElementById("voltar_principal");
+    let botaoDoIframe = iframeConteudo.document.getElementById("voltar_principal");
 
     // Adiciona um evento de clique ao botão do iframe
     botaoDoIframe.addEventListener("click", function() {
         dialog1.removeAttribute('open');
         ElementoFade.classList.remove('escuro');
     });
+
+
+    
 };
 
 iframe2.onload = function() {
     // Obtém o conteúdo do iframe
-    var iframeConteudo = iframe2.contentWindow;
+    let iframeConteudo = iframe2.contentWindow;
 
 
     // Obtém o botão do iframe
-    var botaoDoIframe = iframeConteudo.document.getElementById("voltar_principal");
+    let botaoDoIframe = iframeConteudo.document.getElementById("voltar_principal");
 
     // Adiciona um evento de clique ao botão do iframe
     botaoDoIframe.addEventListener("click", function() {
@@ -86,11 +84,11 @@ iframe2.onload = function() {
 
 iframe3.onload = function() {
     // Obtém o conteúdo do iframe
-    var iframeConteudo = iframe3.contentWindow;
+    let iframeConteudo = iframe3.contentWindow;
 
 
     // Obtém o botão do iframe
-    var botaoDoIframe = iframeConteudo.document.getElementById("voltar_principal");
+    let botaoDoIframe = iframeConteudo.document.getElementById("voltar_principal");
 
     // Adiciona um evento de clique ao botão do iframe
     botaoDoIframe.addEventListener("click", function() {
@@ -99,68 +97,17 @@ iframe3.onload = function() {
     });
 };
 
-function imoveis_init(){
-    localStorage.clear()
-    iniciar_banco_imoveis()
-   
-    
-}
 
+async function iniciar_banco_imoveis(){
 
-function iniciar_banco_imoveis(){
+    const resposta = await fetch('imoveis.json');
+    const imoveis = await resposta.json()
 
-    let imoveis = [
-        {
-            id: 0,
-            tipo_imovel: "Comercial",
-            tipo_logradouro: "Avenida",
-            logradouro: "beatriz alvarenga",
-            numero: "319",
-            complemento: "apto 208",
-            bairro:"centro",
-            cidade:"belo horizonte",
-            estado:"MG",
-            cep:"31140258",
-            vacancia:"locado",
-            status:"ativo"
-        },
-
-        {
-            id: 1,
-            tipo_imovel: "residencial",
-            tipo_logradouro: "rua",
-            logradouro: "são joao",
-            numero: "39",
-            complemento: "casa",
-            bairro:"sagrda famila",
-            cidade:"belo horizonte",
-            estado:"MG",
-            cep:"31140258",
-            vacancia:"locado",
-            status:"ativo"
-        },
-        
-        {
-            id: 2,
-            tipo_imovel: "residencial",
-            tipo_logradouro: "rua",
-            logradouro: "são josé",
-            numero: "500",
-            complemento: "casa",
-            bairro:"centro",
-            cidade:"franca",
-            estado:"SP",
-            cep:"31140222",
-            vacancia:"locado",
-            status:"ativo"
-        }
-        
-        
-            
-    ]
-    
     localStorage.setItem("imoveis", JSON.stringify(imoveis));
     
+
+
+
     var elemento = document.getElementById('table_list')
     var texto = '';
     for ( let i = 0;i <imoveis.length;i++){
@@ -203,24 +150,29 @@ function iniciar_banco_imoveis(){
     
 }
 
-function FiltrarImoveis(){
-
-    // coletando os elementos do filtro de imóveis:
-    let id_imovel = document.getElementById('id')
-    let filtro_tipo_imovel = document.getElementById('tipo')
-    let filtro_logradouro = document.getElementById('Logradouro')
-    let filtro_cidade = document.getElementById('cidade')
-    let filtro_cep = document.getElementById('cep')
-    //--------------------------------------------------//
-    for ( let i = 0;i <imoveis.length;i++){
-        if(id_imovel == imoveis[i]){
-            
-        }
 
 
+ async function FiltrarImoveis(){
 
-
+    const resposta = await fetch('imoveis.json');
+    var imoveis = await resposta.json()
+    var id = document.getElementById('id')
+    var tipo = document.getElementById('tipo')
+    var logradouro = document.getElementById('Logradouro')
+    var cidade = document.getElementById('cidade')
+    var cep = document.getElementById('cep')
+    
+    if(id.nodeValue==null && tipo.nodeValue==null && logradouro.nodeValue==null && cidade.nodeValue==null && cep.nodeValue==null){
+        iniciar_banco_imoveis()
     }
+
+
+
+
+
+
+
+
 
 
 
