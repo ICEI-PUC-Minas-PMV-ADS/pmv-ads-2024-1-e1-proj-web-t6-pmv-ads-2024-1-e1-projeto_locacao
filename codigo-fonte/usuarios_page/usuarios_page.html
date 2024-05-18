@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Usuários</title>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="usuario_page.css" type="text/css" />
-  <script defer src="usuario_page.js"></script>
+  <link rel="stylesheet" href="usuarios_page.css" type="text/css" />
+  <script defer src="usuarios_page.js"></script>
 </head>
+
 <body>
   <header class="menu_superior">
     <div class="logo">
@@ -29,7 +30,7 @@
     <nav>
       <div class="divisao_menu_superior">
         <hr class="divisor" />
-        <button class="botao_menu_lateral" onclick = "location.href ='../dashboard_page/dashboard_page.html'">
+        <button class="botao_menu_lateral" onclick="location.href ='../dashboard_page/dashboard_page.html'">
           <img class="icon" src="../src/icones/icon_dashboard.png" alt="ícone com desenho de uma casa" />
           <p>Dashboard</p>
         </button>
@@ -79,28 +80,13 @@
       <div class="propriedades_tabela">
         <h2>Todos os Usuários<h2>
             <div class="espaco_botao_tabela">
-              <button class="botao_tabela">
-                <img class="icon" src="../src/icones/icon_button_filtrar.png"
-                  alt="ícone de desenho de um filtro" />
+              <button class="botao_tabela" onclick="abrir_popup_filtrar_usuarios()">
+                <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="ícone de desenho de um filtro" />
               </button>
               <button class="botao_tabela" id="botaoAd">
                 <img class="icon" src="../src/icones/icon_button_adicionar.png"
                   alt="ícone de desenho do símbolo de adição" />
               </button>
-              <!--
-                Pop up Novo Usuário 
-
-                <div class="popup_usuario" id="popup_usuario"> 
-                  <h1> Novo Usuário </h1>
-                  <p> USUÁRIO </p>
-                  <hr>
-                  
-
-
-                </div>
-
-              
-              -->
             </div>
       </div>
       <div class="titulos_tabela">
@@ -116,7 +102,7 @@
       <hr class="divisor" />
       <div id="lista_tabela">
         <div class="linha_tabela">
-          <div class="item_icone_tabela">            
+          <div class="item_icone_tabela">
             <img class="icon" src="../src/icones/icon_usuario_logado.png"
               alt="ícone com desenho da silueta de um boneco" />
           </div>
@@ -125,14 +111,14 @@
           <div class="item_perfil_tabela">Mater</div>
           <div class="item_status_tabela">
             <div class="ativo">Ativo</div>
-            </div>
+          </div>
           <div class="item_botao_tabela">
-          <button class="botao_tabela">
+            <button class="botao_tabela">
 
-          <img class="icon" src="../src/icones/icon_ver_dados.png"
-            alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-          </button>
-        </div>
+              <img class="icon" src="../src/icones/icon_ver_dados.png"
+                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
+            </button>
+          </div>
         </div>
         <hr class="divisor" />
 
@@ -146,15 +132,15 @@
           <div class="item_perfil_tabela">Comum</div>
           <div class="item_status_tabela">
             <div class="inativo">Inativo</div>
-            </div>
+          </div>
           <div class="item_botao_tabela">
             <button class="botao_tabela">
-  
-            <img class="icon" src="../src/icones/icon_ver_dados.png"
-              alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
+
+              <img class="icon" src="../src/icones/icon_ver_dados.png"
+                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
             </button>
           </div>
-          </div>
+        </div>
         <hr class="divisor" />
         <div class="linha_tabela">
           <div class="item_icone_tabela">
@@ -168,20 +154,68 @@
             <div class="ativo">
               Ativo
             </div>
-            </div>
+          </div>
           <div class="item_botao_tabela">
-            <button class="botao_tabela">  
-            <img class="icon" src="../src/icones/icon_ver_dados.png"
-              alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
+            <button class="botao_tabela">
+              <img class="icon" src="../src/icones/icon_ver_dados.png"
+                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
             </button>
           </div>
         </div>
         <hr class="divisor" />
-
       </div>
-
     </main>
+    <dialog id="popup_filtrar" class="popup">
+      <div>
+        <h1>Filtros</h1>
+        <p>DADOS DO USUÁRIO</p>
+        <hr />
+        <div id="div_dados_usuarios">
+          <div id="div_id">
+            <label for="id">ID</label>
+            <input type="text" name="id" id="id" class="inputSuccess" />
+          </div>
+          <div id="div_perfil">
+            <label for="perfil">PERFIL</label>
+            <select name="perfil" id="perfil" class="selectSuccess">
+              <option value="todos">Todos</option>
+              <option value="comum">Comum</option>
+              <option value="master">Master</option>
+            </select>
+          </div>
+          <div id="div_nome">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome" class="inputSuccess" />
+          </div>
+        </div>
+        <p>STATUS</p>
+        <hr />
+        <div class="status">
+          <div>
+            <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()" />
+            <label for="todos">TODOS</label>
+          </div>
+          <div>
+            <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()" />
+            <label for="ativo">ATIVO</label>
+          </div>
+          <div>
+            <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()" />
+            <label for="inativo">INATIVO</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button onclick="fechar_popup_filtrar_usuarios()">
+            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+            VOLTAR
+          </button>
+          <button onclick="filtrar_usuarios()">
+            <img class="icon" src="../src/icones/icon_filtrar.png" alt="" />
+            FILTRAR
+          </button>
+        </div>
+      </div>
+    </dialog>
   </div>
 </body>
-
 </html>
