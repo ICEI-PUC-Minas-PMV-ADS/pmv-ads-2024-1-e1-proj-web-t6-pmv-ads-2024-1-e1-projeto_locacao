@@ -83,7 +83,7 @@
               <button class="botao_tabela" onclick="abrir_popup_filtrar_usuarios()">
                 <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="ícone de desenho de um filtro" />
               </button>
-              <button class="botao_tabela" id="botaoAd">
+              <button class="botao_tabela" onclick="abrir_popup_add_usuarios()">
                 <img class="icon" src="../src/icones/icon_button_adicionar.png"
                   alt="ícone de desenho do símbolo de adição" />
               </button>
@@ -113,8 +113,7 @@
             <div class="ativo">Ativo</div>
           </div>
           <div class="item_botao_tabela">
-            <button class="botao_tabela">
-
+            <button class="botao_tabela" onclick="abrir_popup_dados_usuarios()">
               <img class="icon" src="../src/icones/icon_ver_dados.png"
                 alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
             </button>
@@ -216,6 +215,121 @@
         </div>
       </div>
     </dialog>
+    <dialog id="popup_add" class="popup">
+      <div>
+        <h1>Novo Usuário</h1>
+        <p>USUÁRIO</p>
+        <hr />
+        <div id="div_novo_usuarios">
+          <div id="div_nome">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome" class="inputSuccess" />
+          </div>
+          <div id="div_email">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" id="email" class="inputSuccess" />
+          </div>
+          <div id="div_perfil">
+            <label for="perfil">PERFIL</label>
+            <select name="perfil" id="perfil" class="selectSuccess">
+              <option value="comum">Comum</option>
+              <option value="master">Master</option>
+            </select>
+          </div>
+        </div>
+        <div class="buttons">
+          <button onclick="fechar_popup_novo_usuarios()">
+            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+            VOLTAR
+          </button>
+          <button onclick="salvar_usuarios()">
+            <img class="icon" src="../src/icones/icon_salvar.png" alt="" />
+            SALVAR
+          </button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="popup_dados_usuarios" class="popup">
+      <div>
+        <h1>Dados do Usuário - 1</h1>
+        <p>USUÁRIO</p>
+        <hr />
+        <div id="div_novo_usuarios">
+          <div id="div_nome">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome" class="inputSuccess" />
+          </div>
+          <div id="div_email">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" id="email" class="inputSuccess" />
+          </div>
+          <div id="div_perfil">
+            <label for="perfil">PERFIL</label>
+            <select name="perfil" id="perfil" class="selectSuccess">
+              <option value="comum">Comum</option>
+              <option value="master">Master</option>
+            </select>
+            <p>STATUS</p>
+            <hr />
+            <div class="status_switch">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round">
+                </span>
+                <label for="span"></label>
+              </label>
+              <h5>ATIVO</h5>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button onclick="fechar_popup_dados_usuarios()">
+            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+            VOLTAR
+          </button>
+          <button onclick="alterar_usuarios()">
+            <img class="icon" src="../src/icones/icon_alterar.png" alt="" />
+            ALTERAR
+          </button>
+
+          <!--NÃO ACHEI ICON NOVA SENHA
+          <button onclick="nova_senha_usuarios()">
+            <img class="icon" src="" alt="" />
+            NOVA SENHA
+          </button>
+          -->
+
+        </div>
+      </div>
+    </dialog>
+  </div>
+  <p>STATUS</p>
+  <hr />
+  <div class="status">
+    <div>
+      <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()" />
+      <label for="todos">TODOS</label>
+    </div>
+    <div>
+      <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()" />
+      <label for="ativo">ATIVO</label>
+    </div>
+    <div>
+      <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()" />
+      <label for="inativo">INATIVO</label>
+    </div>
+  </div>
+  <div class="buttons">
+    <button onclick="fechar_popup_filtrar_usuarios()">
+      <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+      VOLTAR
+    </button>
+    <button onclick="filtrar_usuarios()">
+      <img class="icon" src="../src/icones/icon_filtrar.png" alt="" />
+      FILTRAR
+    </button>
+  </div>
   </div>
 </body>
+
 </html>

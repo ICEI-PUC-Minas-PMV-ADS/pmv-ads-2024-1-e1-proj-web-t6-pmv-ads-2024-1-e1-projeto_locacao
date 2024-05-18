@@ -63,4 +63,32 @@ function status_inativo() {
 }
 
 
+//Mostrar pop up adicionar usuário//
 
+function abrir_popup_add_usuarios(){
+    let popup = document.getElementById("popup_add")
+    popup.showModal()
+
+}
+
+
+//Fechar pop up adicionar usuário//
+
+function fechar_popup_novo_usuarios(){
+    let popup = document.getElementById("popup_add")
+    popup.close()
+}
+
+//Mostrar pop up dados usuários//
+
+function abrir_popup_dados_usuarios(){
+    let popup = document.getElementById("popup_dados_usuarios")
+    popup.showModal()
+}
+
+//Fechar pop up dados usuários//
+
+function fechar_popup_dados_usuarios(){
+    let popup = document.getElementById("popup_dados_usuarios")
+    popup.close()
+}
