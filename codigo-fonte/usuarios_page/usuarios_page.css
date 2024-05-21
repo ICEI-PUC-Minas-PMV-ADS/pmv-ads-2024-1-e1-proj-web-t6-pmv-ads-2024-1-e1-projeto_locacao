@@ -172,7 +172,7 @@ main{
     font-weight: bold;
 }
 
-#lista_tabela {
+#table_list {
     overflow-y: auto;
     height: 85%;
 }
@@ -221,31 +221,34 @@ main{
     border: none;
 }
 
-.ativo{
-    background-color: #5BB800;
-    color: #ffffff;
-    border-radius: 10px;
+.status_active {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    min-width: fit-content;
     width: 40%;
-    height: 35px;
-    align-items: center;
+    background-color: var(--green);
+    color: var(--white);
     font-weight: 600;
-    
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+
 }
 
-.inativo{
-    background-color: #A0AEC0;
-    color: #ffffff;
-    border-radius: 10px;
+.status_inactive{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    min-width: fit-content;
     width: 40%;
-    height: 35px;
-    align-items: center;
+    background-color: var(--dark-grey);
+    color: var(--white);
     font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
+    align-items: center;
+    
 }
 
 .botao_menu_lateral_selecionado {

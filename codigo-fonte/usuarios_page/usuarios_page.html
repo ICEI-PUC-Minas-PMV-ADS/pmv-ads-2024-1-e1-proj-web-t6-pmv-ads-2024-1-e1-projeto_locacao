@@ -7,10 +7,10 @@
   <title>Usuários</title>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="usuarios_page.css" type="text/css" />
+  <link rel="stylesheet" href="../utils/toggle_button.css">
   <script defer src="usuarios_page.js"></script>
 </head>
-
-<body>
+<body onload="usuarios_init()">
   <header class="menu_superior">
     <div class="logo">
       <p>
@@ -100,68 +100,7 @@
 
       </div>
       <hr class="divisor" />
-      <div id="lista_tabela">
-        <div class="linha_tabela">
-          <div class="item_icone_tabela">
-            <img class="icon" src="../src/icones/icon_usuario_logado.png"
-              alt="ícone com desenho da silueta de um boneco" />
-          </div>
-          <div class="item_id_tabela">1</div>
-          <div class="item_nome_tabela">Refael Santos</div>
-          <div class="item_perfil_tabela">Mater</div>
-          <div class="item_status_tabela">
-            <div class="ativo">Ativo</div>
-          </div>
-          <div class="item_botao_tabela">
-            <button class="botao_tabela" onclick="abrir_popup_dados_usuarios()">
-              <img class="icon" src="../src/icones/icon_ver_dados.png"
-                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-            </button>
-          </div>
-        </div>
-        <hr class="divisor" />
-
-        <div class="linha_tabela">
-          <div class="item_icone_tabela">
-            <img class="icon" src="../src/icones/icon_usuario_logado.png"
-              alt="ícone com desenho da silueta de um boneco" />
-          </div>
-          <div class="item_id_tabela">2</div>
-          <div class="item_nome_tabela">Gabriela Diniz</div>
-          <div class="item_perfil_tabela">Comum</div>
-          <div class="item_status_tabela">
-            <div class="inativo">Inativo</div>
-          </div>
-          <div class="item_botao_tabela">
-            <button class="botao_tabela">
-
-              <img class="icon" src="../src/icones/icon_ver_dados.png"
-                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-            </button>
-          </div>
-        </div>
-        <hr class="divisor" />
-        <div class="linha_tabela">
-          <div class="item_icone_tabela">
-            <img class="icon" src="../src/icones/icon_usuario_logado.png"
-              alt="ícone com desenho da silueta de um boneco" />
-          </div>
-          <div class="item_id_tabela">3</div>
-          <div class="item_nome_tabela">André Silva</div>
-          <div class="item_perfil_tabela">Comum</div>
-          <div class="item_status_tabela">
-            <div class="ativo">
-              Ativo
-            </div>
-          </div>
-          <div class="item_botao_tabela">
-            <button class="botao_tabela">
-              <img class="icon" src="../src/icones/icon_ver_dados.png"
-                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-            </button>
-          </div>
-        </div>
-        <hr class="divisor" />
+      <div id="table_list">      
       </div>
     </main>
     <dialog id="popup_filtrar" class="popup">
@@ -172,11 +111,11 @@
         <div id="div_dados_usuarios">
           <div id="div_id">
             <label for="id">ID</label>
-            <input type="text" name="id" id="id" class="inputSuccess" />
+            <input type="text" name="id" id="id_filtrar" class="inputSuccess" />
           </div>
           <div id="div_perfil">
             <label for="perfil">PERFIL</label>
-            <select name="perfil" id="perfil" class="selectSuccess">
+            <select name="perfil" id="perfil_filtrar" class="selectSuccess">
               <option value="todos">Todos</option>
               <option value="comum">Comum</option>
               <option value="master">Master</option>
@@ -184,7 +123,7 @@
           </div>
           <div id="div_nome">
             <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess" />
+            <input type="text" name="nome" id="nome_filtrar" class="inputSuccess" />
           </div>
         </div>
         <p>STATUS</p>
@@ -271,37 +210,31 @@
             </select>
             <p>STATUS</p>
             <hr />
-            <div class="status_switch">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round">
-                </span>
-                <label for="span"></label>
-              </label>
-              <h5>ATIVO</h5>
-            </div>
+            <div>
+              <input class="tog" id="status_dados_requisicao" type="checkbox">
+              <label class="tog" for="status_dados_requisicao"></label>
+            </div>          
           </div>
         </div>
-        <div class="buttons">
-          <button onclick="fechar_popup_dados_usuarios()">
-            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
-            VOLTAR
-          </button>
-          <button onclick="alterar_usuarios()">
-            <img class="icon" src="../src/icones/icon_alterar.png" alt="" />
-            ALTERAR
-          </button>
+      </div>
+      <div class="buttons">
+        <button onclick="fechar_popup_dados_usuarios()">
+          <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+          VOLTAR
+        </button>
+        <button onclick="alterar_usuarios()">
+          <img class="icon" src="../src/icones/icon_alterar.png" alt="" />
+          ALTERAR
+        </button>
 
-          <!--NÃO ACHEI ICON NOVA SENHA
-          <button onclick="nova_senha_usuarios()">
-            <img class="icon" src="" alt="" />
+         <button onclick="nova_senha_usuarios()">
+            <img class="icon" src="../src/icones/nova_senha.png" alt="" />
             NOVA SENHA
           </button>
-          -->
-
-        </div>
+          
       </div>
-    </dialog>
+  </div>
+  </dialog>
   </div>
   <p>STATUS</p>
   <hr />
