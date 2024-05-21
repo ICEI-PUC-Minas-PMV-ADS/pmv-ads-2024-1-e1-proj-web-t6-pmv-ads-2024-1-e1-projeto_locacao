@@ -230,7 +230,7 @@ main {
     align-items: center;
     justify-content: left;
     min-width: fit-content;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .table_icon{
