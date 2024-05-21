@@ -180,8 +180,10 @@ main {
 }
 
 #table_list{
+   overflow: scroll;
+    height: 87%;
     overflow-y: auto;
-    height: 3%;
+    overflow-x: hidden;
 
 }
 
@@ -240,7 +242,7 @@ main {
     width: 5%;
 }
 
-.table_id{
+.table_id_locatario{
     min-width: fit-content;
     /* border: 1px solid black; */
     width: 10%;
@@ -249,19 +251,31 @@ main {
 .table_locatario{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 25%;
+    width: 20%;
 }
 
-.table_periodo{
+.table_id_fatura{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 15%;
+    width: 10%;
+}
+
+.table_periodo_inicio{
+    min-width: fit-content;
+    /* border: 1px solid black; */
+    width: 10%;
+}
+
+.table_periodo_fim{
+    min-width: fit-content;
+    /* border: 1px solid black; */
+    width: 10%;
 }
 
 .table_vencimento{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 15%;
+    width: 10%;
 }
 
 .table_valor{
@@ -280,7 +294,7 @@ main {
     display: flex;
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 15%;
+    width: 10%;
     justify-content: end;
 }
 
