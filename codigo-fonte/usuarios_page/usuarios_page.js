@@ -77,7 +77,7 @@ function usuarios(id, nome, tipo, status){
             </div>
             </div>
             <div class="item_botao_tabela">
-              <button class="botao_tabela" onclick="abrir_popup_dados_usuarios()">
+              <button class="botao_tabela" onclick="return abrir_popup_dados_usuarios(this)" data-button='${dados}'>
                 <img class="icon" src="../src/icones/icon_ver_dados.png"
                   alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
               </button>
@@ -88,7 +88,7 @@ function usuarios(id, nome, tipo, status){
         })
 
     } else {
-        //show_snackbar('body #snackbar_error', 'Nenhum proprietário foi encontrado!')
+        show_snackbar('body #snackbar_error', 'Nenhum usuário foi encontrado!')
     }
 }
 
@@ -192,10 +192,147 @@ function status_inativo() {
 //Mostrar pop up adicionar usuário//
 
 function abrir_popup_add_usuarios(){
+    let body = document.querySelector("body")
+
+    let verifica_popups = document.querySelectorAll("#popup_add")
+
+    if (verifica_popups.length > 0) {
+        for (var i = 0; i < verifica_popups.length; i++) {
+            verifica_popups[i].outerHTML = ""
+        }
+    }
+
+    body.innerHTML += `
+    <dialog id="popup_add" class="popup">
+      <div>
+        <h1>Novo Usuário</h1>
+        <p>USUÁRIO</p>
+        <hr />
+        <div id="div_novo_usuarios">
+          <div id="div_nome">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome_novo" class="inputSuccess" onblur="return set_input_success(this)" />
+          </div>
+          <div id="div_email">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" id="email_novo" class="inputSuccess" onblur="return set_input_success(this)"/>
+          </div>
+          <div id="div_perfil">
+            <label for="perfil">PERFIL</label>
+            <select name="perfil" id="tipo_novo" class="selectSuccess">
+              <option value="Comum">Comum</option>
+              <option value="Master">Master</option>
+            </select>
+          </div>
+        </div>
+        <div class="buttons">
+          <button onclick="fechar_popup_novo_usuarios()">
+            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+            VOLTAR
+          </button>
+          <button onclick="salvar_usuario()">
+            <img class="icon" src="../src/icones/icon_salvar.png" alt="" />
+            SALVAR
+          </button>
+        </div>
+      </div>
+      <div id="snackbar_success" class="snackbar"></div>
+    <div id="snackbar_error" class="snackbar"></div>
+    </dialog>   
+    
+    `
+
     let popup = document.getElementById("popup_add")
     popup.showModal()
 
 }
+
+// adicionar novo id
+
+function novo_id() {
+    let list_id = JSON.parse(localStorage.getItem("usuarios")).map((usuario) => usuario.id)
+    let max_id = Math.max(...list_id)
+
+    return max_id + 1
+    
+}
+
+// salvar usuários
+
+function salvar_usuario(){
+    let nome_element = document.getElementById("nome_novo")
+    let email_element = document.getElementById("email_novo")
+    let tipo_element = document.getElementById("tipo_novo")
+
+    let nome = nome_element.value == "" ? null : nome_element.value
+    let email = email_element.value.includes("@") ? email_element.value : null
+    let tipo = tipo_element.value
+
+
+    let vericacao = [
+        {
+            value: nome,
+            element: nome_element,
+            messageError: "O nome não foi informado.",
+            status: false
+        },
+        {
+            value: email,
+            element: email_element,
+            messageError: "O e-mail não foi informado.",
+            status: false
+        }   
+
+    ]
+
+    for (let i = 0; i < vericacao.length; i++) {
+        if (vericacao[i].value == null) {
+            vericacao[i].element.className = vericacao[i].element.tagName == "INPUT" ? "inputError" : "selectError"
+            show_snackbar("#popup_add #snackbar_error", vericacao[i].messageError)
+            break
+        } else {
+            vericacao[i].status = true
+        }
+    }
+
+    let pode_salvar = false
+
+    for (let i = 0; i < vericacao.length; i++) {
+        if (!vericacao[i].status) {
+            pode_salvar = false
+            break
+        } else {
+            pode_salvar = true
+        }
+    }
+    console.log(pode_salvar)
+
+    if (pode_salvar) {
+        
+        let jsonNovoUsuario = {
+            id: novo_id(),
+            nome: nome,
+            tipo: tipo,
+            email: email,
+            senha: "123",
+            status: true,
+            primeiro_acesso: true,
+        }
+
+        let usuariosList = JSON.parse(localStorage.getItem("usuarios"))
+        usuariosList.push(jsonNovoUsuario)
+
+        localStorage.setItem("usuarios", JSON.stringify(usuariosList))
+
+        usuarios(novo_id() - 1, null, null, null)
+
+        fechar_popup_novo_usuarios()
+    }
+
+
+}
+
+
 
 
 //Fechar pop up adicionar usuário//
@@ -205,12 +342,228 @@ function fechar_popup_novo_usuarios(){
     popup.close()
 }
 
-//Mostrar pop up dados usuários//
 
-function abrir_popup_dados_usuarios(){
+
+// mostrar pop up dados usuário
+
+function abrir_popup_dados_usuarios(e){
+    let dados = JSON.parse(e.dataset.button)
+    let body = document.querySelector("body")
+
+    let verifica_popups = document.querySelectorAll("#popup_dados_usuarios")
+
+    if (verifica_popups.length > 0) {
+        for (var i = 0; i < verifica_popups.length; i++) {
+            verifica_popups[i].outerHTML = ""
+        }
+    }
+
+    body.innerHTML += `
+    <dialog id="popup_dados_usuarios" class="popup">
+      <div>
+        <h1>Dados do Usuário - ${dados.id}</h1>
+        <p>USUÁRIO</p>
+        <hr />
+        <div id="div_novo_usuarios">
+          <div id="div_nome">
+            <label for="nome">NOME</label>
+            <input type="text" name="nome" id="nome_dados" value="${dados.nome}" class="inputSuccess" onblur="return set_input_success(this)" readonly/>
+          </div>
+          <div id="div_email">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" id="email_dados" class="inputSuccess" value="${dados.email}" onblur="return set_input_success(this)"readonly/>
+          </div>
+          <div id="div_perfil">
+            <label for="perfil">PERFIL</label>
+            <select name="perfil" id="tipo_dados" class="selectSuccess" disabled>
+              <option value="Comum" ${dados.tipo == "Comum" ? "selected" : ""} >Comum</option>
+              <option value="Master" ${dados.tipo == "Master" ? "selected" : ""}>Master</option>
+            </select>
+            <p>STATUS</p>
+            <hr />
+            <div>
+              <input class="tog" id="status_dados" type="checkbox" ${dados.status ? "checked='checked'" : ""} disabled>
+              <label class="tog" for="status_dados"></label>
+            </div>   
+          </div>
+        </div>
+        <div class="buttons">
+        <button onclick="fechar_popup_dados_usuarios()">
+          <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
+          VOLTAR
+        </button>
+        <button onclick="alterar_usuarios()">
+          <img class="icon" src="../src/icones/icon_alterar.png" alt="" />
+          ALTERAR
+        </button>
+         <button onclick="nova_senha()">
+            <img class="icon" src="../src/icones/nova_senha.png" alt="" />
+            NOVA SENHA
+          </button>          
+      </div>
+      </div>
+      <div id="snackbar_success" class="snackbar"></div>
+    <div id="snackbar_error" class="snackbar"></div>
+    </dialog>   
+    
+    `
+
     let popup = document.getElementById("popup_dados_usuarios")
     popup.showModal()
+
 }
+
+// alterar dados usuários
+
+function alterar_usuarios() {
+
+    let buttons = document.querySelector("#popup_dados_usuarios .buttons")
+
+    buttons.removeChild(buttons.children[2])
+    buttons.removeChild(buttons.children[1])
+
+    buttons.innerHTML += `
+        <button onclick="alterar_dados_usuario()">
+            <img class="icon" src="../src/icones/icon_salvar.png" alt="">
+            SALVAR
+        </button>
+        <button onclick="nova_senha()">
+            <img class="icon" src="../src/icones/nova_senha.png" alt="" />
+            NOVA SENHA
+          </button>  
+    `
+
+    document.getElementById("nome_dados").readOnly = false
+    document.getElementById("email_dados").readOnly = false
+    document.getElementById("tipo_dados").disabled = false
+    document.getElementById("status_dados").disabled = false
+        
+}
+
+// salvar alteração usuário
+
+function alterar_dados_usuario(){
+    let id = parseInt(document.querySelector("#popup_dados_usuarios h1").innerHTML.split(" - ")[1])
+    let nome_element = document.getElementById("nome_dados")
+    let email_element = document.getElementById("email_dados")
+    let tipo_element = document.getElementById("tipo_dados")
+    let status_element = document.getElementById("status_dados")
+
+    let nome = nome_element.value == "" ? null : nome_element.value
+    let email = email_element.value.includes("@") ? email_element.value : null
+    let tipo = tipo_element.value
+    let status = status_element.checked
+    
+
+    let vericacao = [
+        {
+            value: nome,
+            element: nome_element,
+            messageError: "O nome não foi informado.",
+            status: false
+        },
+        {
+            value: email,
+            element: email_element,
+            messageError: "O e-mail não foi informado.",
+            status: false
+        }   
+
+    ]
+
+    for (let i = 0; i < vericacao.length; i++) {
+        if (vericacao[i].value == null) {
+            vericacao[i].element.className = vericacao[i].element.tagName == "INPUT" ? "inputError" : "selectError"
+            show_snackbar("#popup_dados_usuarios #snackbar_error", vericacao[i].messageError)
+            break
+        } else {
+            vericacao[i].status = true
+        }
+    }
+
+    let pode_salvar = false
+
+    for (let i = 0; i < vericacao.length; i++) {
+        if (!vericacao[i].status) {
+            pode_salvar = false
+            break
+        } else {
+            pode_salvar = true
+        }
+    }
+   
+
+    if (pode_salvar) {
+
+        let buttons = document.querySelector("#popup_dados_usuarios .buttons")
+
+        buttons.removeChild(buttons.children[2])
+        buttons.removeChild(buttons.children[1])
+    
+        buttons.innerHTML += `
+        <button onclick="alterar_usuarios()">
+        <img class="icon" src="../src/icones/icon_alterar.png" alt="" />
+        ALTERAR
+      </button>
+            <button onclick="nova_senha()">
+                <img class="icon" src="../src/icones/nova_senha.png" alt="" />
+                NOVA SENHA
+              </button>  
+        `
+    
+        document.getElementById("nome_dados").readOnly = true
+        document.getElementById("email_dados").readOnly = true
+        document.getElementById("tipo_dados").disabled = true
+        document.getElementById("status_dados").disabled = true
+        
+        
+        let usuariosList = JSON.parse(localStorage.getItem("usuarios"))
+
+        usuariosList = usuariosList.map((usuario) => {
+            if (usuario.id == id) {
+                usuario.nome = nome
+                usuario.email = email
+                usuario.tipo = tipo
+                usuario.status = status
+              
+                return usuario
+            }
+
+            return usuario
+        })
+
+        localStorage.setItem("usuarios", JSON.stringify(usuariosList))
+
+        usuarios(id, null, null, null)
+
+    }
+
+
+}
+
+// Nova senha
+
+function nova_senha(){
+    let id = parseInt(document.querySelector("#popup_dados_usuarios h1").innerHTML.split(" - ")[1])
+    let usuariosList = JSON.parse(localStorage.getItem("usuarios"))
+
+        usuariosList = usuariosList.map((usuario) => {
+            if (usuario.id == id) {
+                usuario.senha = "123"
+                usuario.primeiro_acesso = true
+                              
+                return usuario
+            }
+
+            return usuario
+        })
+
+        localStorage.setItem("usuarios", JSON.stringify(usuariosList))
+        show_snackbar("#popup_dados_usuarios #snackbar_success" ,"Senha alterada com sucesso!")
+
+}
+
+
 
 //Fechar pop up dados usuários//
 
@@ -255,3 +608,20 @@ function iniciar_banco_usuarios(){
     localStorage.setItem("usuarios", JSON.stringify(usuarios))
 }
 
+// mensagem de erro e sucesso 
+
+function show_snackbar(element, message) {
+    var snackbar = document.querySelector(element);
+    snackbar.innerHTML = ""
+    snackbar.innerHTML += `<p>${message}</p>`
+    snackbar.className = "snackbar show";
+
+    setTimeout(function () { snackbar.className = snackbar.className.replace("show", ""); }, 5000);
+}
+
+
+// voltar borda para verde quando adiciona o dado certo no pop up
+
+function set_input_success(e) {
+    e.className = e.tagName == "INPUT" ? "inputSuccess" : "selectSuccess"
+}

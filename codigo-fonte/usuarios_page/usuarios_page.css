@@ -53,7 +53,7 @@ header {
     font-size: 25px;
 }
 
-.logo {
+.div_logo {
     padding: 0px 22px;
     display: flex;
     align-items: center;
@@ -86,6 +86,11 @@ header {
 
 /*menu lateral*/
 
+.sidebar_superior {
+
+    width: 100%;
+}
+
 nav {
     padding: 0px 20px 0px 10px;
     width: 20%;
@@ -114,9 +119,6 @@ nav {
 }
 
 
-.divisao_menu_superior{
-    width: 100%;
-}
 
 .divisao_inferior_menu{
     width: 100%;
@@ -454,3 +456,10 @@ input[type="checkbox"]{
 }
 
 
+/* heading */
+
+.div_titulo {
+    color: var(--green);
+    font-size: 25px;
+    font-weight: 600;
+}

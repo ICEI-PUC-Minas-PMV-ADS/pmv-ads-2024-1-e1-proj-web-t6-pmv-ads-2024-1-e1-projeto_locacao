@@ -7,20 +7,21 @@
   <title>Usuários</title>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="usuarios_page.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
   <link rel="stylesheet" href="../utils/toggle_button.css">
   <script defer src="usuarios_page.js"></script>
 </head>
 <body onload="usuarios_init()">
-  <header class="menu_superior">
-    <div class="logo">
+  <header class="sidebar_superior">
+    <div class="div_logo">
       <p>
         <span class="immo">Immo</span><span class="control">Control</span>
       </p>
     </div>
-    <h1 class="titulo_pagina">Usuários</h1>
+    <div class="div_titulo">Usuários</div>
     <div class="usuario_logado">
       <p>Thássia</p>
-
       <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png"
         alt="ícone com desenho da silueta de um boneco" />
       </p>
@@ -28,7 +29,7 @@
   </header>
   <div class="menu_e_tabela">
     <nav>
-      <div class="divisao_menu_superior">
+      <div class="sidebar_superior">
         <hr class="divisor" />
         <button class="botao_menu_lateral" onclick="location.href ='../dashboard_page/dashboard_page.html'">
           <img class="icon" src="../src/icones/icon_dashboard.png" alt="ícone com desenho de uma casa" />
@@ -154,41 +155,7 @@
         </div>
       </div>
     </dialog>
-    <dialog id="popup_add" class="popup">
-      <div>
-        <h1>Novo Usuário</h1>
-        <p>USUÁRIO</p>
-        <hr />
-        <div id="div_novo_usuarios">
-          <div id="div_nome">
-            <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess" />
-          </div>
-          <div id="div_email">
-            <label for="email">EMAIL</label>
-            <input type="text" name="email" id="email" class="inputSuccess" />
-          </div>
-          <div id="div_perfil">
-            <label for="perfil">PERFIL</label>
-            <select name="perfil" id="perfil" class="selectSuccess">
-              <option value="comum">Comum</option>
-              <option value="master">Master</option>
-            </select>
-          </div>
-        </div>
-        <div class="buttons">
-          <button onclick="fechar_popup_novo_usuarios()">
-            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
-            VOLTAR
-          </button>
-          <button onclick="salvar_usuarios()">
-            <img class="icon" src="../src/icones/icon_salvar.png" alt="" />
-            SALVAR
-          </button>
-        </div>
-      </div>
-    </dialog>
-    <dialog id="popup_dados_usuarios" class="popup">
+    <!-- <dialog id="popup_dados_usuarios" class="popup">
       <div>
         <h1>Dados do Usuário - 1</h1>
         <p>USUÁRIO</p>
@@ -234,7 +201,7 @@
           
       </div>
   </div>
-  </dialog>
+  </dialog> -->
   </div>
   <p>STATUS</p>
   <hr />
@@ -263,6 +230,7 @@
     </button>
   </div>
   </div>
+  <div id="snackbar_success" class="snackbar"></div>
+  <div id="snackbar_error" class="snackbar"></div>
 </body>
-
 </html>
