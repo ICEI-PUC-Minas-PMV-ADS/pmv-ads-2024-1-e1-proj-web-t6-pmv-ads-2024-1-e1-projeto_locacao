@@ -9,6 +9,10 @@
     --font-size-button: 16px;
     --red: #B83700;
 }
+.div_tog {
+    display:flex;
+    flex-direction:row;
+}
 
 input.tog {
     display: none;

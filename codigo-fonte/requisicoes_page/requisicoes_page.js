@@ -1,10 +1,22 @@
-function requisicao_init() {
+function requisicao_init() { 
+    usuario()
     localStorage.clear()
 
     iniciar_banco()
 
     requisicoes(null, null, null, false)
 }
+
+function usuario() {
+    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario_autenticado = document.querySelector("#usuario_autenticado p")
+  
+    if(usuario == null) {
+        usuario_autenticado.innerHTML = "Usuário não identificado"
+    } else {
+        usuario_autenticado.innerHTML = usuario.nome
+    }
+  }
 
 function requisicoes(id, requisitante, tipo, status) {
     var node = document.getElementById('table_list')
@@ -226,9 +238,13 @@ function abrir_popup_dados_requisicao(e) {
                 <textarea class="textareaSuccess" id="requisicao_dados_requisicao" onblur="return set_input_success(this)" disabled="true">${dados.requisicao}</textarea >
                 <p>STATUS</p>
                 <hr>
+                <div class="div_tog"> 
                 <div>
                     <input class="tog" id="status_dados_requisicao" type="checkbox" ${!dados.status_atendimento ? 'checked="checked"' : ""} disabled="true"> 
                     <label class="tog" for="status_dados_requisicao"></label>
+                    
+                </div> 
+                <p> Em Atendimento</p>
                 </div>
 
                 <div class="buttons">
