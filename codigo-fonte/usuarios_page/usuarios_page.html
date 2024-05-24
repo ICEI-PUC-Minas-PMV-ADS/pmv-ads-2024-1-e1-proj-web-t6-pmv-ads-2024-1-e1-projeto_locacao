@@ -7,68 +7,77 @@
   <title>Usuários</title>
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="usuarios_page.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
+  <link rel="stylesheet" href="../utils/toggle_button.css">
   <script defer src="usuarios_page.js"></script>
 </head>
-
-<body>
-  <header class="menu_superior">
-    <div class="logo">
+<body onload="usuarios_init()">
+  <header>
+    <div class="div_logo">
       <p>
         <span class="immo">Immo</span><span class="control">Control</span>
       </p>
     </div>
-    <h1 class="titulo_pagina">Usuários</h1>
-    <div class="usuario_logado">
-      <p>Thássia</p>
-
-      <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png"
-        alt="ícone com desenho da silueta de um boneco" />
-      </p>
-    </div>
+    <div class="div_titulo">Usuários</div>
+    <div class="div_usuario">
+      <div class="dropdown">
+        <button id="usuario_autenticado" class="dropbtn">
+          <p>Usuário Master</p>
+        </button>
+        <button class="dropdown-content" onclick="location.href = '../login_page/login_page.html'">
+          <div>
+            <i class="material-icons icon_color">logout</i>
+            <p>Sair</p>
+          </div>
+        </button>
+      </div>
+      <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="" />
+    </div> 
   </header>
-  <div class="menu_e_tabela">
+  <div class="content">
     <nav>
-      <div class="divisao_menu_superior">
+      <div class="sidebar_superior">
         <hr class="divisor" />
-        <button class="botao_menu_lateral" onclick="location.href ='../dashboard_page/dashboard_page.html'">
+        <button class="sidebar_button" onclick="location.href ='../dashboard_page/dashboard_page.html'">
           <img class="icon" src="../src/icones/icon_dashboard.png" alt="ícone com desenho de uma casa" />
           <p>Dashboard</p>
         </button>
-        <button class="botao_menu_lateral" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
+        <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
           <img class="icon" src="../src/icones/icon_proprietarios.png"
             alt="ícone com desenho de uma mão sendo estendida" />
           <p>Proprietários</p>
         </button>
-        <button class="botao_menu_lateral" onclick="location.href = '../locatarios_page/locatarios_page.html'">
+        <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
           <img class="icon" src="../src/icones/icon_locatarios.png"
             alt="ícone com desenho de uma casa e um boneco, representando uma pessoa, a frente da casa" />
           <p>Locatários</p>
         </button>
-        <button class="botao_menu_lateral" onclick="location.href = '../imoveis/imoveis.html'">
+        <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
           <img class="icon" src="../src/icones/icon_imoveis.png"
             alt="ícone com desenho de uma casa e um papel, que parece representar um contrato" />
           <p>Imóveis</p>
         </button>
-        <button class="botao_menu_lateral" onclick="location.href = '../contratos/contratos.html'">
+        <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
           <img class="icon" src="../src/icones/icon_contratos.png"
             alt="ícone com desenho de um papel, que parece representar um contrato" />
           <p>Contratos</p>
         </button>
-        <button class="botao_menu_lateral" onclick="location.href = '../faturas_page/faturas_page.html'">
+        <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
           <img class="icon" src="../src/icones/icon_faturas.png"
             alt="ícone com desenho de um papel com cifrão no meio" />
           <p>Faturas</p>
         </button>
-        <button class="botao_menu_lateral" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
+        <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
           <img class="icon" src="../src/icones/icon_requisicoes.png"
             alt="ícone com desenho de um papel com formulário" />
           <p>Requisições</p>
         </button>
       </div>
-      <div class="divisao_inferior_menu">
+      <div class="sidebar_inferior">
         <hr class="divisor" />
 
-        <button class="botao_menu_lateral_selecionado">
+        <button class="sidebar_button_selected">
           <img class="icon" src="../src/icones/icon_usuarios_selecionado.png"
             alt="ícone com desenho da silueta de um boneco" />
 
@@ -76,92 +85,31 @@
         </button>
       </div>
     </nav>
-    <main id="tabela_usuarios">
-      <div class="propriedades_tabela">
+    <main id="table_owners">
+      <div class="div_table_properties">
         <h2>Todos os Usuários<h2>
-            <div class="espaco_botao_tabela">
-              <button class="botao_tabela" onclick="abrir_popup_filtrar_usuarios()">
+            <div class="div_table_properties_group_buttons">
+              <button class="div_table_properties_button" onclick="abrir_popup_filtrar_usuarios()">
                 <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="ícone de desenho de um filtro" />
               </button>
-              <button class="botao_tabela" onclick="abrir_popup_add_usuarios()">
+              <button class="div_table_properties_button" onclick="abrir_popup_add_usuarios()">
                 <img class="icon" src="../src/icones/icon_button_adicionar.png"
                   alt="ícone de desenho do símbolo de adição" />
               </button>
             </div>
       </div>
-      <div class="titulos_tabela">
+      <div class="div_table_header">
 
-        <div class="item_icone_tabela"></div>
-        <div class="item_id_tabela">ID</div>
-        <div class="item_nome_tabela">NOME</div>
-        <div class="item_perfil_tabela">PERFIL</div>
-        <div class="item_status_tabela">STATUS</div>
-        <div class="item_botao_tabela"></div>
+        <div class="table_icon"></div>
+        <div class="table_id">ID</div>
+        <div class="table_name">NOME</div>
+        <div class="table_property">PERFIL</div>
+        <div class="table_status">STATUS</div>
+        <div class="table_button"></div>
 
       </div>
       <hr class="divisor" />
-      <div id="lista_tabela">
-        <div class="linha_tabela">
-          <div class="item_icone_tabela">
-            <img class="icon" src="../src/icones/icon_usuario_logado.png"
-              alt="ícone com desenho da silueta de um boneco" />
-          </div>
-          <div class="item_id_tabela">1</div>
-          <div class="item_nome_tabela">Refael Santos</div>
-          <div class="item_perfil_tabela">Mater</div>
-          <div class="item_status_tabela">
-            <div class="ativo">Ativo</div>
-          </div>
-          <div class="item_botao_tabela">
-            <button class="botao_tabela" onclick="abrir_popup_dados_usuarios()">
-              <img class="icon" src="../src/icones/icon_ver_dados.png"
-                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-            </button>
-          </div>
-        </div>
-        <hr class="divisor" />
-
-        <div class="linha_tabela">
-          <div class="item_icone_tabela">
-            <img class="icon" src="../src/icones/icon_usuario_logado.png"
-              alt="ícone com desenho da silueta de um boneco" />
-          </div>
-          <div class="item_id_tabela">2</div>
-          <div class="item_nome_tabela">Gabriela Diniz</div>
-          <div class="item_perfil_tabela">Comum</div>
-          <div class="item_status_tabela">
-            <div class="inativo">Inativo</div>
-          </div>
-          <div class="item_botao_tabela">
-            <button class="botao_tabela">
-
-              <img class="icon" src="../src/icones/icon_ver_dados.png"
-                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-            </button>
-          </div>
-        </div>
-        <hr class="divisor" />
-        <div class="linha_tabela">
-          <div class="item_icone_tabela">
-            <img class="icon" src="../src/icones/icon_usuario_logado.png"
-              alt="ícone com desenho da silueta de um boneco" />
-          </div>
-          <div class="item_id_tabela">3</div>
-          <div class="item_nome_tabela">André Silva</div>
-          <div class="item_perfil_tabela">Comum</div>
-          <div class="item_status_tabela">
-            <div class="ativo">
-              Ativo
-            </div>
-          </div>
-          <div class="item_botao_tabela">
-            <button class="botao_tabela">
-              <img class="icon" src="../src/icones/icon_ver_dados.png"
-                alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
-            </button>
-          </div>
-        </div>
-        <hr class="divisor" />
+      <div id="table_list">      
       </div>
     </main>
     <dialog id="popup_filtrar" class="popup">
@@ -169,22 +117,22 @@
         <h1>Filtros</h1>
         <p>DADOS DO USUÁRIO</p>
         <hr />
-        <div id="div_dados_usuarios">
-          <div id="div_id">
+        <div id="div_dados_usuarios"> <!--POSSO TIRAR ISSO?-->
+          <div id="div_id">  <!--POSSO TIRAR ISSO?-->
             <label for="id">ID</label>
-            <input type="text" name="id" id="id" class="inputSuccess" />
+            <input type="text" name="id" id="id_filtrar" class="inputSuccess" />
           </div>
-          <div id="div_perfil">
+          <div id="div_perfil"><!--POSSO TIRAR ISSO?-->
             <label for="perfil">PERFIL</label>
-            <select name="perfil" id="perfil" class="selectSuccess">
+            <select name="perfil" id="perfil_filtrar" class="selectSuccess">
               <option value="todos">Todos</option>
               <option value="comum">Comum</option>
               <option value="master">Master</option>
             </select>
           </div>
-          <div id="div_nome">
+          <div id="div_nome"><!--POSSO TIRAR ISSO?-->
             <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess" />
+            <input type="text" name="nome" id="nome_filtrar" class="inputSuccess" />
           </div>
         </div>
         <p>STATUS</p>
@@ -215,121 +163,8 @@
         </div>
       </div>
     </dialog>
-    <dialog id="popup_add" class="popup">
-      <div>
-        <h1>Novo Usuário</h1>
-        <p>USUÁRIO</p>
-        <hr />
-        <div id="div_novo_usuarios">
-          <div id="div_nome">
-            <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess" />
-          </div>
-          <div id="div_email">
-            <label for="email">EMAIL</label>
-            <input type="text" name="email" id="email" class="inputSuccess" />
-          </div>
-          <div id="div_perfil">
-            <label for="perfil">PERFIL</label>
-            <select name="perfil" id="perfil" class="selectSuccess">
-              <option value="comum">Comum</option>
-              <option value="master">Master</option>
-            </select>
-          </div>
-        </div>
-        <div class="buttons">
-          <button onclick="fechar_popup_novo_usuarios()">
-            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
-            VOLTAR
-          </button>
-          <button onclick="salvar_usuarios()">
-            <img class="icon" src="../src/icones/icon_salvar.png" alt="" />
-            SALVAR
-          </button>
-        </div>
-      </div>
-    </dialog>
-    <dialog id="popup_dados_usuarios" class="popup">
-      <div>
-        <h1>Dados do Usuário - 1</h1>
-        <p>USUÁRIO</p>
-        <hr />
-        <div id="div_novo_usuarios">
-          <div id="div_nome">
-            <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome" class="inputSuccess" />
-          </div>
-          <div id="div_email">
-            <label for="email">EMAIL</label>
-            <input type="text" name="email" id="email" class="inputSuccess" />
-          </div>
-          <div id="div_perfil">
-            <label for="perfil">PERFIL</label>
-            <select name="perfil" id="perfil" class="selectSuccess">
-              <option value="comum">Comum</option>
-              <option value="master">Master</option>
-            </select>
-            <p>STATUS</p>
-            <hr />
-            <div class="status_switch">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round">
-                </span>
-                <label for="span"></label>
-              </label>
-              <h5>ATIVO</h5>
-            </div>
-          </div>
-        </div>
-        <div class="buttons">
-          <button onclick="fechar_popup_dados_usuarios()">
-            <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
-            VOLTAR
-          </button>
-          <button onclick="alterar_usuarios()">
-            <img class="icon" src="../src/icones/icon_alterar.png" alt="" />
-            ALTERAR
-          </button>
-
-          <!--NÃO ACHEI ICON NOVA SENHA
-          <button onclick="nova_senha_usuarios()">
-            <img class="icon" src="" alt="" />
-            NOVA SENHA
-          </button>
-          -->
-
-        </div>
-      </div>
-    </dialog>
-  </div>
-  <p>STATUS</p>
-  <hr />
-  <div class="status">
-    <div>
-      <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()" />
-      <label for="todos">TODOS</label>
     </div>
-    <div>
-      <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()" />
-      <label for="ativo">ATIVO</label>
-    </div>
-    <div>
-      <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()" />
-      <label for="inativo">INATIVO</label>
-    </div>
-  </div>
-  <div class="buttons">
-    <button onclick="fechar_popup_filtrar_usuarios()">
-      <img class="icon" src="../src/icones/icon_voltar.png" alt="" />
-      VOLTAR
-    </button>
-    <button onclick="filtrar_usuarios()">
-      <img class="icon" src="../src/icones/icon_filtrar.png" alt="" />
-      FILTRAR
-    </button>
-  </div>
-  </div>
+  <div id="snackbar_success" class="snackbar"></div>
+  <div id="snackbar_error" class="snackbar"></div>
 </body>
-
 </html>

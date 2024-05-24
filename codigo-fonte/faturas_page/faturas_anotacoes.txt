@@ -1,1 +1,12 @@
 - Retirar o ícone "+" da tela inicial (as faturas serão cadastradas automaticamente ao gerar o contrato)
+
+
+- Na Visualização da tela tive que incluir os seguintes campos:
+    - ID LOCATÁRIO (RENOMEADA)
+    - ID FATURA (INCLUSÃO)
+    - PERÍODO INÍCIO (INCLUSÃO)
+    - PERÍODO FIM (RENOMEADA)
+    
+
+- NO BANCO DE DADOS
+- 

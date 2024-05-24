@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="filtro.css">
     <link rel="import" href="url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');">
-    <script src="imoveis.js"></script>
+    <script src="imoveis.js" defer></script>
 
 </head>
 
@@ -57,16 +57,16 @@
                 <h4>STATUS</h4>
                 <hr>
 
-                <label class="container">Todos
-                    <input type="radio" checked="checked" name="radio1" value="todos">
+                <label class="container">TODOS
+                    <input type="radio" checked="checked" id="radio1" name="radio1" value="TODOS">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Adimplente
-                    <input type="radio" name="radio1" value="adimplente">
+                <label class="container">ATIVO
+                    <input type="radio" id="radio1" name="radio1" value="ATIVO">
                     <span class="checkmark"></span>
                 </label>
-                <label class="container">Inadimplente
-                    <input type="radio" name="radio1" value="inadimplente">
+                <label class="container">INATIVO
+                    <input type="radio" id="radio1" name='radio1' value="INATIVO">
                     <span class="checkmark"></span>
                 </label>
 
@@ -79,15 +79,15 @@
                 <hr>
 
                 <label class="container">Todos
-                    <input type="radio" checked="checked" name="radio2">
+                    <input type="radio" checked="checked" name="radio2" id="radio2" value="todos">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">Locado
-                    <input type="radio" name="radio2">
+                    <input type="radio" name="radio2" id="radio2" value="locado">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">Vago
-                    <input type="radio" name="radio2">
+                    <input type="radio" name="radio2" id="radio2" value="vago">
                     <span class="checkmark"></span>
                 </label>
 
@@ -96,8 +96,8 @@
         </div>
 
         <div class="alinhar_botoes">
-            <button id="voltar_principal"> <img src="../src/icones/voltar.png" alt=""></button>
-            <button id="filtrar_imoveis" onclick="FiltrarImoveis()"> <img src="../src/icones/filtrar.png" alt=""></button>
+            <button id="voltar_principal" onclick="imoveis_filtro_voltar()"> <img src="../src/icones/voltar.png" alt=""></button>
+            <button id="filtrar_imoveis"onclick="filtrarImoveis()"><img src="../src/icones/filtrar.png" alt=""></button>
         </div>
         
 

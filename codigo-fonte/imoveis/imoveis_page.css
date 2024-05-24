@@ -27,7 +27,8 @@ body {
     justify-content: center;
 }
 
-#modal1,#modal2,#modal3{
+
+dialog{
     
     border-color: #f8f9fb;
     border-radius: 25px;
@@ -35,9 +36,14 @@ body {
     justify-self: center;
     align-self: top;
     size: 200px;
+    width: 600px;
     padding: 0PX;
-    margin: 0PX;
+    margin: 15px;
+    border: none;
+    margin: 10px;
+    padding: none;
 }
+
 #modal1,#modal2,#modal3 > iframe{
     border: none;
     margin: 10px;
@@ -62,6 +68,15 @@ header {
     justify-content: space-between;
     height: 12vh;
     /* border: 1px solid black; */
+}
+
+.oculto{
+
+    background-color: red;
+    color: #F8F9FA;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
 }
 
 .immo {
@@ -578,3 +593,477 @@ input[type="checkbox"]{
 
 
 
+/*-------------------------------------------------------*/
+/*MODAl*/
+
+
+
+
+
+dialog *{
+    font-family:'Roboto';
+    
+}
+dialog{
+    
+    padding: 25px;
+    height: 600px;
+}
+
+
+
+dialog h1{
+    display: flex;
+    font-family:'Roboto';
+    color: #5bb800;
+    justify-content: center;
+    justify-items: center;
+    
+}
+ dialog h4{
+    font-family:'Roboto';
+    display: block;
+    color: #5bb800;
+    margin-bottom: 0px;
+}
+
+ dialog hr{
+
+    color: #5bb800;
+    height: 1px;
+    background-color: #5bb800;   
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    
+}
+
+dialog label{
+    color: #5bb800;
+    font-size: small;
+    font-style:normal;
+    font-family: 'Roboto';
+}
+
+dialog .id_tipo{
+    display: flex;
+    width: 50%;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+dialog .Logradouro{
+    display: flexbox;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+dialog .Logradouro input{
+    width: 100%;
+}
+
+dialog input{
+    height: 35px;
+    border-radius: 7px;
+    border: solid;
+    color: #5bb800;
+}
+
+dialog .cidade_cep{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+dialog .status_vacancia{
+    margin-top: 50PX;
+    display: flex;
+    width: 100%;
+    gap: 20%;
+    margin:0px;
+    justify-content: center;
+    
+
+}
+
+dialog .status,.vacancia{
+    width: 200px;
+}
+
+dialog .status_vacancia .status div{
+    display: flex;
+    
+}
+dialog .status_vacancia .status div label{
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+dialog .status_vacancia .vacancia div{
+    display: flex;
+}
+
+dialog .status_vacancia .vacancia div label{
+    margin-left: 10px;
+    margin-top: 14px;
+}
+
+/* Customize the label (the container) */
+dialog .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+ dialog .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+ dialog .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+ dialog .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  dialog .container input:checked ~ .checkmark {
+    background-color: #5bb800;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  dialog .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  dialog .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  dialog .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  /* botoes de filtrar e voltar*/
+
+  dialog > button {
+    border-radius: 5px;
+    width: 200px;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 0%;
+    background-color: #5bb800; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  dialog .alinhar_botoes{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+
+  }
+
+  dialog .alinhar_botoes button img{
+    width: 70%;
+  }
+
+  dialog button:hover {
+    background: #69D303; /* Green */
+    color: white;
+  }
+
+  dialog button:active {
+    background-color: #69D303;
+    box-shadow: 0 3px rgb(202, 200, 200);
+    transform: translateY(4px);
+    transform: translateX(4px);
+  }
+
+  /* estilizando botões*/
+ dialog button {
+    border-radius: 5px;
+    width: 200px;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 0%;
+    background-color: #5bb800; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .alinhar_botoes img{
+    width: 50%;
+  }
+
+ dialog button:hover {
+    background: #69D303; /* Green */
+    color: white;
+  }
+
+  button:active {
+    background-color: #69D303;
+    box-shadow: 0 3px gainsboro;
+    transform: translateY(4px);
+  }
+
+  /***********************************************************************
+  ************************************************************************
+  **********************************************************************
+  **************************************************************************/
+  /* ADIÇÃO-------------------------------------------------*/
+
+
+
+  
+.adicao .proprietario input{
+    width: 75%;
+
+}
+
+.adicao .a {
+    display:flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+  
+}
+
+.adicao .a .a1 label input{
+  width: 80px;
+}
+
+.adicao .a .a2 label input{
+  width: 290px;
+}
+
+.adicao .a .a3 label input{
+  width: 40px;
+}
+
+.adicao .b{
+  
+  display:flex;
+  width: 100%;
+  column-gap: 15px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+
+}
+
+
+.adicao .c{
+  display:flex;
+  column-gap: 15%;
+  margin-right: 10px;
+   
+}
+
+.adicao .c input{
+    width: 100px;
+
+}
+
+.adicao .d{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    
+  
+}
+
+.adicao .d h4{
+  width: 100%;
+}
+
+.adicao header{
+    display: flex;
+    justify-content: center;
+
+}
+
+.adicao input{
+    border-radius: 6px;
+    height: 25px; 
+    border: solid #5bb800 2px;
+    font-family: "Roboto";
+    margin: 5px;
+}
+
+.adicao hr{
+    color: #5bb800;
+    border-color: #5bb800;
+    border-color: 3px;
+    
+}
+
+.adicao select{
+    width: 50%;  
+    border-radius: 6px;
+    height: 25px; 
+    border: solid #5bb800 2px;
+    padding: 2px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.adicao .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 0px
+  }
+  
+  /* Hide default HTML checkbox */
+.adicao .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+  }
+  
+  /* The slider */
+.adicao .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+ .adicao .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+ .adicao input:checked + .slider {
+    background-color: #5bb800;
+  }
+  
+ .adicao input:focus + .slider { 
+    box-shadow: 0 0 1px #5bb800;
+  }
+  
+  .adicao input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(30px);
+    transform: translateX(35px);
+  }
+  
+  /* Rounded sliders */
+  .adicao .slider.round {   
+    border-radius: 34px;
+  }
+  
+  .adicao .slider.round:before {
+    border-radius: 50%;
+    margin-top: 0px;
+  }
+
+ .adicao .espacamento{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    
+  }
+.adicao .espacamento h4{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+  
+.adicao button {
+    border-radius: 5px;
+    width: 200px;
+    display: grid;
+    margin-top: 20px;
+    margin-left: 0%;
+    background-color: #5bb800; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 20px;
+    
+  }
+
+.adicao .alinhar_botoes{
+    display: flex;
+    justify-content: center;
+  }
+
+.adicao  .alinhar_botoes img{
+    width: 50%;
+  }
+
+.adicao  button:hover {
+    background: #69D303; /* Green */
+    color: white;
+  }
+
+.adicao button:active {
+    background-color: #69D303;
+    box-shadow: 0 3px gainsboro;
+    transform: translateY(4px);
+  }
+
+.adicao header{
+    color: #5BB800;
+}

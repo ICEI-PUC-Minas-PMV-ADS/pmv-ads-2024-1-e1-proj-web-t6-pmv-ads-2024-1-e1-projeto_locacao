@@ -15,6 +15,7 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script src="imoveis.js" defer></script>
   </head>
 
   <body onload="iniciar_banco_imoveis()">
@@ -79,36 +80,13 @@
         </div>
       </nav>
 
-      <dialog id="modal1" onload="pegarDialog1()">
-        <iframe
-          src="imoveis_filtro.html"
-          id="meuIframeFiltrar"
-          frameborder="1"
-          width="500"
-          height="700"
-        ></iframe>
+      <dialog id="modal">
+        
       </dialog>
 
-      <dialog id="modal2">
-        <iframe
-          src="novo_imovel.html"
-          id="meuIframeadicionar"
-          frameborder="0"
-          width="500"
-          height="750"
-        ></iframe>
-      </dialog>
-      <dialog id="modal3">
-        <iframe
-          src="alterar_imoveis.html"
-          id="meuIframeAlterar"
-          frameborder="0"
-          width="500"
-          height="760"
-        ></iframe>
-      </dialog>
 
       <main id="table_owners">
+        <h1 id="alert"></h1>
         <div class="div_table_properties">
           <p>Imóveis</p>
           <div class="div_table_properties_group_buttons">
@@ -151,16 +129,17 @@
         </div>
 
         <hr class="divisor" />
-
+        
         <div id="table_list">
           
         </div>
 
+     
       </main>
     </div>
 
     <div id="snackbar_success" class="snackbar"></div>
     <div id="snackbar_error" class="snackbar"></div>
-    <script src="imoveis.js"></script>
+   
   </body>
 </html>
