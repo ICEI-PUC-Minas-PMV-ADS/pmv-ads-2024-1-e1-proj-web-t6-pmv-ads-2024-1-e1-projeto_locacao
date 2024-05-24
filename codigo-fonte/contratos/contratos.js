@@ -332,7 +332,7 @@ function abrirModalAlteracaoContratos(identifier) {
         <label class="titulos descer" for="valor_mensal">Status <hr>
             <div class="centro">
                 <label class="switch" id="label">
-                    <input type="checkbox" id="checkbox" onclick="verificarCheckbox() value="">
+                    <input type="checkbox" id="checkbox" onclick="verificarCheckbox(${identifier})" value="">
                     <span class="slider round"></span>
                     <label for="span"></label>
                 </label>
@@ -355,9 +355,11 @@ function abrirModalAlteracaoContratos(identifier) {
         checkbox.checked = true;
         h5 = document.querySelector('h5')
         h5.innerHTML = "ATIVO"
+        
 
     }
     else {
+        checkbox.checked = false;
         h5 = document.querySelector('h5')
         h5.innerHTML = "INATIVO"
     }
@@ -365,7 +367,7 @@ function abrirModalAlteracaoContratos(identifier) {
 
 }
 
-function verificarCheckbox() {
+function verificarCheckbox(identifier) {
     verificacao = document.getElementById('checkbox').checked
     if (verificacao) {
         console.log(verificacao)
@@ -374,33 +376,38 @@ function verificarCheckbox() {
         checkbox.checked = true;
         h5 = document.querySelector('h5')
         h5.innerHTML = "ATIVO"
+        contratos[identifier-1].status="ativo"
     }
 
     else {
         h5 = document.querySelector('h5')
         h5.innerHTML = "INATIVO"
+        contratos[identifier-1].status="inativo"
     }
 
 
 }
 
 function alterarContrato(identifier) {
-    console.log("a")
+    console.log(identifier)
     let locatario = document.getElementById('locatario').value.toLowerCase()
     let endereco = document.getElementById('endereco').value.toLowerCase()
     let periodo = document.getElementById('periodo').value.toLowerCase()
     let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
     let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
     let status = document.getElementById('checkbox').checked
-    var identifier;
-    identifier = 1;
+    
     contratos[identifier - 1].locatario = locatario
     contratos[identifier - 1].endereco = endereco
     contratos[identifier - 1].periodo = periodo
     contratos[identifier - 1].valor_mensal = valor_mensal
     contratos[identifier - 1].data_inicio = data_inicio
-    if (status == true) { contratos[identifier - 1].status = "ativo" }
-    else { contratos[identifier - 1].status = "inativo" }
+    if (status) {
+        contratos[identifier - 1].status = "ativo" 
+    }
+    else {
+        contratos[identifier - 1].status = "inativo"
+    }
 
     console.log(locatario)
     console.log(endereco)
