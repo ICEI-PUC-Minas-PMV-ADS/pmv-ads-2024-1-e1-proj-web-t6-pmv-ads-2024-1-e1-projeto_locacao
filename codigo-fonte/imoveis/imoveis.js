@@ -1,47 +1,47 @@
 var imoveis = [
   {
-    "id": 1,
-    "tipo_imovel": "comercial",
-    "tipo_logradouro": "avenida",
-    "logradouro": "beatriz alvarenga",
-    "numero": "319",
-    "complemento": "APTO 208",
-    "bairro": "centro",
-    "cidade": "belo horizonte",
-    "uf": "mg",
-    "cep": "31140259",
-    "vacancia": "locado",
-    "status": "ativo"
+    id: 1,
+    tipo_imovel: "comercial",
+    tipo_logradouro: "avenida",
+    logradouro: "beatriz alvarenga",
+    numero: "319",
+    complemento: "APTO 208",
+    bairro: "centro",
+    cidade: "belo horizonte",
+    uf: "mg",
+    cep: "31140259",
+    vacancia: "locado",
+    status: "ativo"
   },
 
   {
-    "id": 2,
-    "tipo_imovel": "residencial",
-    "tipo_logradouro": "rua",
-    "logradouro": "SÃO JOÃO",
-    "numero": "39",
-    "complemento": "apto",
-    "bairro": "SAGRADA FAMILIA",
-    "cidade": "belo horizonte",
-    "uf": "MG",
-    "cep": "31140258",
-    "vacancia": "locado",
-    "status": "inativo"
+    id: 2,
+    tipo_imovel: "residencial",
+    tipo_logradouro: "rua",
+    logradouro: "SÃO JOÃO",
+    numero: "39",
+    complemento: "apto",
+    bairro: "SAGRADA FAMILIA",
+    cidade: "belo horizonte",
+    uf: "MG",
+    cep: "31140258",
+    vacancia: "locado",
+    status: "inativo"
   },
 
   {
-    "id": 3,
-    "tipo_imovel": "residencial",
-    "tipo_logradouro": "rua",
-    "logradouro": "ipiranga",
-    "numero": "500",
-    "complemento": "casa",
-    "bairro": "centro",
-    "cidade": "franca",
-    "uf": "SP",
-    "cep": "31140420",
-    "vacancia": "locado",
-    "status": "ativo"
+    id: 3,
+    tipo_imovel: "residencial",
+    tipo_logradouro: "rua",
+    logradouro: "ipiranga",
+    numero: "500",
+    complemento: "casa",
+    bairro: "centro",
+    cidade: "franca",
+    uf: "SP",
+    cep: "31140420",
+    vacancia: "locado",
+    status: "ativo"
   }
 
 ]
@@ -403,7 +403,7 @@ function novoImovel() {
 
 
 function abrirModalAlteracao(identifier) {
-
+  dialog.innerHTML=""
   ElementoFade.classList.add("escuro");
   dialog.setAttribute('open', 'true');
   dialog.classList.add('adicao');
@@ -427,31 +427,32 @@ function abrirModalAlteracao(identifier) {
     </h4>
     <div class="a">
         <div class="a1">
-            <label for="tipoLogradouro" id="label1">Tipo Logradouro</label><br>
-            <input type="text" ,id="tipoLogradouro", value="${imoveis[identifier - 1].tipo_logradouro}">
+            <label for="tipoLogradouroo">Tipo Logradouro</label>
+            <br>
+            <input type="text" id="tipoLogradouro" value="${imoveis[identifier-1].tipo_logradouro}">
         </div>
         <div class="a2">
             <label for="Logradouro" id="label2">Logradouro</label><br>
-            <input type="text" , id="Logradouro", value="${imoveis[identifier - 1].logradouro}">
+            <input type="text"  id="Logradouro" value="${imoveis[identifier-1].logradouro}">
         </div>
         <div class="a3">
             <label for="numero" id="label3">Número</label><br>
-            <input type="text" , id="numero", value ="${imoveis[identifier - 1].numero}">
+            <input type="text"  id="numero" value ="${imoveis[identifier - 1].numero}">
         </div>
     </div>
 
     <div class="b">
         <div>
             <label for="complemento">complemento</label><br>
-            <input type="text" , id="complemento", value="${imoveis[identifier - 1].complemento}">
+            <input type="text"  id="complemento" value="${imoveis[identifier - 1].complemento}">
         </div>
         <div>
             <label for="bairro">Bairro</label><br>
-            <input type="text" , id="bairro" value="${imoveis[identifier - 1].bairro}">
+            <input type="text"  id="bairro" value="${imoveis[identifier - 1].bairro}">
         </div>
         <div>
             <label for="Cidade">Cidade</label><br>
-            <input type="text" , id="cidade" value="${imoveis[identifier - 1].cidade}">
+            <input type="text"  id="cidade" value="${imoveis[identifier - 1].cidade}">
         </div>
 
 
@@ -460,11 +461,11 @@ function abrirModalAlteracao(identifier) {
     <div class="c">
         <div>
             <label for="cep">CEP</label><br>
-            <input type="text" , id="cep" value="${imoveis[identifier - 1].cep}">
+            <input type="text"  id="cep" value="${imoveis[identifier - 1].cep}">
         </div>
         <div>
             <label for="uf">UF</label><br>
-            <input type="text" , id="uf" value="${imoveis[identifier - 1].uf}">
+            <input type="text"  id="uf" value="${imoveis[identifier - 1].uf}">
         </div>
 
     </div>
@@ -547,19 +548,24 @@ function valorSlider(identifier) {
 function salvarAlteracaoImovel(identifier) {
 
   console.log("entrou em salvar")
-  //var label1 = document.getElementById('label1');
-  //var tipoLogradouro = label1.querySelector('input').innerHTML;
+  
+  var tipoLogradouro = document.getElementById('tipoLogradouro').value;
+  var logradouro = document.getElementById('Logradouro').value
   var tipo_imovel = document.getElementById('tipo').value;
   var complemento = document.getElementById('complemento').value;
+  var numero = document.getElementById('numero').value
   var bairro = document.getElementById('bairro').value;
   var cidade = document.getElementById('cidade').value;
   var cep = document.getElementById('cep').value;
   var uf = document.getElementById('uf').value;
-  var status = document.getElementById('status').value;
- 
+  var status = document.getElementById('slider').checked;
+  console.log(tipoLogradouro)
+  console.log(status)
+  console.log(complemento)
+  
   imoveis[identifier-1].tipo_imovel = tipo_imovel;
   imoveis[identifier-1].tipo_logradouro = tipoLogradouro;
-  imoveis[identifier-1].logradouro= Logradouro;
+  imoveis[identifier-1].logradouro= logradouro;
   imoveis[identifier-1].numero = numero;
   imoveis[identifier-1].complemento = complemento;
   imoveis[identifier-1].bairro = bairro;
@@ -567,7 +573,7 @@ function salvarAlteracaoImovel(identifier) {
   imoveis[identifier-1].cep = cep;
   imoveis[identifier-1].uf = uf;
   imoveis[identifier-1].status = status;
-
+  fecharModal()
   iniciar_banco_imoveis()
 
  
