@@ -95,6 +95,7 @@ function alterar_senha() {
   let nova_senha = document.getElementById("senha_nova");
   let confirmar_senha = document.getElementById("senha_confirmada");
   let fecha_popup = document.getElementById("popup_primeiro_acesso");
+  let text = document.getElementById("validacao");
   let usuario_autenticado = JSON.parse(
     localStorage.getItem("usuario_autenticado")
   );
@@ -125,7 +126,6 @@ function alterar_senha() {
     );
     nova_senha.className = "inputError";
     confirmar_senha.className = "inputError";
-    
   } else if (
     senha_antiga.value !== 123 &&
     nova_senha.value == confirmar_senha.value
@@ -154,6 +154,10 @@ function alterar_senha() {
     }
   });
   localStorage.setItem("usuarios", JSON.stringify(novos_usuarios));
+  senha_antiga.value = "";
+  nova_senha.value = "";
+  confirmar_senha.value = "";
+  text.textContent = "";
 }
 
 //Função apra Enviar senha padrão para o e-mail informado
@@ -204,6 +208,7 @@ function set_input_success(e) {
   e.className = e.tagName == "INPUT" ? "inputSuccess" : "selectSuccess";
 }
 
+//Função de validação de segurança da senha
 function conferencia() {
   let confereSenha = document.getElementById("senha_nova");
   let text = document.getElementById("validacao");
@@ -224,14 +229,14 @@ function conferencia() {
       confereSenha.value.length <= minCaractereFacil &&
       (inputFacil || inputMedia || inputForte)
     ) {
-      text.style.color = '#B83700'
+      text.style.color = "#B83700";
       text.textContent = "Sua senha é muito fraca";
     }
     if (
       confereSenha.value.length >= minCaractereMedia &&
       ((inputFacil && inputMedia) || (inputMedia && inputForte))
     ) {
-      text.style.color = '#c2b60c'
+      text.style.color = "#c2b60c";
       text.textContent = "Sua senha é média";
     }
     if (
@@ -240,9 +245,8 @@ function conferencia() {
       inputMedia &&
       inputForte
     ) {
-      text.style.color = '#5BB800'
+      text.style.color = "#5BB800";
       text.textContent = "Sua senha é forte";
     }
-   
   }
 }
