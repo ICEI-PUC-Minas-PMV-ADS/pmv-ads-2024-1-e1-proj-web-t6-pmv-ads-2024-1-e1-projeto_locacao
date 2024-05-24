@@ -55,18 +55,18 @@ function usuarios(id, nome, tipo, status){
             dados = JSON.stringify(usuario)
 
             tabela.innerHTML += `
-            <div class="linha_tabela">
-            <div class="item_icone_tabela">
+            <div class="div_table_row">
+            <div class="table_icon">
               <img class="icon" src="../src/icones/icon_usuario_logado.png"
                 alt="ícone com desenho da silueta de um boneco" />
             </div>
-            <div class="item_id_tabela">
+            <div class="table_id">
             ${usuario.id}
             </div>
-            <div class="item_nome_tabela">
+            <div class="table_name">
             ${usuario.nome}            
             </div>
-            <div class="item_perfil_tabela">
+            <div class="table_property">
             ${usuario.tipo}
             </div>
             <div class="table_status">
@@ -76,9 +76,9 @@ function usuarios(id, nome, tipo, status){
                 </p>
             </div>
             </div>
-            <div class="item_botao_tabela">
-              <button class="botao_tabela" onclick="return abrir_popup_dados_usuarios(this)" data-button='${dados}'>
-                <img class="icon" src="../src/icones/icon_ver_dados.png"
+            <div class="table_button">
+              <button class="open_button" onclick="return abrir_popup_dados_usuarios(this)" data-button='${dados}'>
+                <img class="open_icon" src="../src/icones/icon_ver_dados.png"
                   alt="ícone com desenho de um quadrado com uma seta apontando para fora dele">
               </button>
             </div>

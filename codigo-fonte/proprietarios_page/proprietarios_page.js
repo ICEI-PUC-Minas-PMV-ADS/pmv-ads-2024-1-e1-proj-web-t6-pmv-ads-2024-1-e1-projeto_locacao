@@ -3,17 +3,21 @@ function proprietarios_init() {
 
     iniciar_banco()
 
-    // usuario()
+    usuario()
 
     proprietarios(null, null, null, true)
 }
 
 function usuario() {
-    let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
-
-    let usuario_autenticado = document.getElementById("usuario_autenticado")
-    usuario_autenticado.innerHTML = usuario.nome
-}
+    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario_autenticado = document.querySelector("#usuario_autenticado p")
+  
+    if(usuario == null) {
+        usuario_autenticado.innerHTML = "Usuário não identificado"
+    } else {
+        usuario_autenticado.innerHTML = usuario.nome
+    }
+  }
 
 function proprietarios(id, nome, cpf, status) {
     var node = document.getElementById('table_list')

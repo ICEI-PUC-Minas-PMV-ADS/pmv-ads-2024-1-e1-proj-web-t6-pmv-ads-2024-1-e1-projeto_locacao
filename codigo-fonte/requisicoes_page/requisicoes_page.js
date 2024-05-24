@@ -1,10 +1,22 @@
-function requisicao_init() {
+function requisicao_init() { 
+    usuario()
     localStorage.clear()
 
     iniciar_banco()
 
     requisicoes(null, null, null, false)
 }
+
+function usuario() {
+    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario_autenticado = document.querySelector("#usuario_autenticado p")
+  
+    if(usuario == null) {
+        usuario_autenticado.innerHTML = "Usuário não identificado"
+    } else {
+        usuario_autenticado.innerHTML = usuario.nome
+    }
+  }
 
 function requisicoes(id, requisitante, tipo, status) {
     var node = document.getElementById('table_list')
@@ -201,7 +213,7 @@ function abrir_popup_dados_requisicao(e) {
 
     body.innerHTML += `
         <dialog id="popup_dados_requisicao" class="popup">
-            <div>
+            <div class="areas">
                 <h1>Requisição - ${dados.id}</h1>
                 <p>REQUISITANTE</p>
                 <hr>
@@ -224,12 +236,13 @@ function abrir_popup_dados_requisicao(e) {
                 <p>REQUISIÇÃO</p>
                 <hr>
                 <textarea class="textareaSuccess" id="requisicao_dados_requisicao" onblur="return set_input_success(this)" disabled="true">${dados.requisicao}</textarea >
-                <p>STATUS</p>
+                <p>STATUS DE ATENDIMENTO</p>
                 <hr>
-                <div>
-                    <input class="tog" id="status_dados_requisicao" type="checkbox" ${!dados.status_atendimento ? 'checked="checked"' : ""} disabled="true"> 
-                    <label class="tog" for="status_dados_requisicao"></label>
+                <div class="checkbox">
+                    <input type="checkbox" id="status_dados_requisicao" onchange="troca_texto_requisicoes()" ${!dados.status_atendimento ? 'checked="checked"' : ""} disabled="true">
+                    <label for="" class="text">${!dados.status_atendimento ? 'ATENDIDA' : "EM ABERTO"}</label>
                 </div>
+            
 
                 <div class="buttons">
                     <button onclick="fechar_popup_dados_requisicao()">
@@ -403,7 +416,7 @@ function abrir_popup_nova_requisicao() {
 
     body.innerHTML += `
         <dialog id="popup_nova_requisicao" class="popup">
-            <div>
+            <div class="areas">
                 <h1>Nova Requisição</h1>
                 <p>REQUISITANTE</p>
                 <hr>

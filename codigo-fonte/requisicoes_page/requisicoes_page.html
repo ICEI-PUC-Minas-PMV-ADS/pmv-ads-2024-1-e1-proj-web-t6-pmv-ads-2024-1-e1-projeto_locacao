@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../utils/toggle_button.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="requisicoes_page.js"></script>
+    <script src="../utils/toggle_button.js"></script>
+    <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body onload="requisicao_init()">
@@ -18,9 +21,19 @@
         </div>
         <div class="div_titulo">Requisições</div>
         <div class="div_usuario">
-            <p>Usuário Master</p>
-            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="">
-        </div>
+            <div class="dropdown">
+              <button id="usuario_autenticado" class="dropbtn">
+                <p></p>
+              </button>
+              <button class="dropdown-content" onclick="location.href = '../login_page/login_page.html'">
+                <div>
+                  <i class="material-icons icon_color">logout</i>
+                  <p>Sair</p>
+                </div>
+              <!-- </button> -->
+            </div>
+            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="" />
+          </div>
     </header>
     <div class="content">
         <nav>
@@ -99,7 +112,7 @@
         </main>
     </div>
     <dialog id="popup_filtrar" class="popup">
-        <div>
+        <div class="areas">
             <h1>Filtros</h1>
             <p>DADOS DA REQUISIÇÃO</p>
             <hr>
