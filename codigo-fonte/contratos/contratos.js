@@ -146,17 +146,38 @@ function abrirModalAdicao() {
     
     
     `
-    
+
 
 }
 
-function adicionarContrato(){
-    var data = document.getElementById('data_inicio').value
-    console.log(data)
+function adicionarContrato() {
+    let locatario = document.getElementById('locatario').value.toLowerCase()
+    let endereco = document.getElementById('endereco').value.toLowerCase()
+    let periodo = document.getElementById('periodo').value.toLowerCase()
+    let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
+    let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
+    tamanho = contratos.length
+
+    contratos.push(
+        {
+            "id": tamanho + 1,
+            "locatario": locatario,
+            "endereco": endereco,
+            "periodo": periodo,
+            "valor_mensal": valor_mensal,
+            "data_inicio":data_inicio,
+            "status":"ativo"
+        }
+    )
+    fecharModal()
+    carregarBancoContratos()
+    console.log(contratos)
+
+
 }
 
 function abrirModalAlteracao() {
-    
+
 }
 
 function filtrarContratos() {
@@ -213,7 +234,7 @@ function filtrarContratos() {
       </div>
   
       <div class="table_button">
-          <button class="open_button" onclick="abrirModalAlteracao()">
+          <button class="open_button" onclick="abrirModalAlteracaoContratos(${i})">
               <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
           </button>
       </div>
@@ -222,9 +243,10 @@ function filtrarContratos() {
 
     }
 
+
 }
 
-function carregarBancoContratos(){
+function carregarBancoContratos() {
 
     localStorage.setItem("contratos", JSON.stringify(contratos));
     elementoLista.innerHTML = ""
@@ -269,34 +291,34 @@ function carregarBancoContratos(){
 
 }
 
-function abrirModalAlteracaoContratos(identifier){
+function abrirModalAlteracaoContratos(identifier) {
 
-    var status = contratos[identifier-1].status
+    var status = contratos[identifier - 1].status
     ElementoFade.classList.add("escuro");
     dialog.setAttribute('open', 'true');
     dialog.classList.add('PopUpAlterar')
-    dialog.innerHTML=`
+    dialog.innerHTML = `
     <h1>Dados do Contrato</h1>
     <h4 class="titulos">LOCATÁRIO
         <hr>
     </h4>
     <label for="locatario">Nome</label>
-    <input class="longo" type="text" name="locatario" id="locatario" value="${contratos[identifier-1].locatario}">
+    <input class="longo" type="text" name="locatario" id="locatario" value="${contratos[identifier - 1].locatario}">
     <h4 class="titulos">IMÓVEL
         <hr>
     </h4>
 
     <div class="alinhamento">
         <label class="titulos" for="endereco">ID - ENDEREÇO <br></label>
-        <input class="longo" type="text" name="endereco" id="endereco" value="${contratos[identifier-1].endereco}">
+        <input class="longo" type="text" name="endereco" id="endereco" value="${contratos[identifier - 1].endereco}">
     </div>
 
     <div class="alinhamento-a">
         <label class="titulos" for="endereco">Período <br>
-            <input type="text" name="periodo" id="periodo" value="${contratos[identifier-1].periodo}">
+            <input type="text" name="periodo" id="periodo" value="${contratos[identifier - 1].periodo}">
         </label>
         <label class="titulos" for="valor_mensal">Valor Mensal <br>
-            <input type="text" name="valor_mensal" id="valor_mensal" value="${contratos[identifier-1].valor_mensal}">
+            <input type="text" name="valor_mensal" id="valor_mensal" value="${contratos[identifier - 1].valor_mensal}">
         </label>
     </div>
 
@@ -304,13 +326,13 @@ function abrirModalAlteracaoContratos(identifier){
     <div class="alinhamento-a">
         
         <label class="titulos" for="data_inicio">Data de início <hr>
-            <input type="date" name="data_inicio" id="data_inicio" value="${contratos[identifier-1].data_inicio}">
+            <input type="date" name="data_inicio" id="data_inicio" value="${contratos[identifier - 1].data_inicio}">
         </label>
         
         <label class="titulos descer" for="valor_mensal">Status <hr>
             <div class="centro">
                 <label class="switch" id="label">
-                    <input type="checkbox" id="checkbox" onclick="verificarCheckbox()">
+                    <input type="checkbox" id="checkbox" onclick="verificarCheckbox() value="">
                     <span class="slider round"></span>
                     <label for="span"></label>
                 </label>
@@ -323,49 +345,70 @@ function abrirModalAlteracaoContratos(identifier){
 
     <div class="botoes">
         <button id="voltar_principal" onclick='fecharModal()'><img src="../src/icones/voltar.png" alt=""></button>
-        <button class="flutuar"><img src="../src/icones/alterar.png" alt=""></button>
+        <button class="flutuar" onclick="alterarContrato(${identifier})"><img src="../src/icones/alterar.png" alt=""></button>
     </div>
     `
-    if(status == "ativo"){
+    if (status == "ativo") {
         console.log(status)
         label = document.getElementById('label')
         checkbox = document.getElementById('checkbox')
         checkbox.checked = true;
         h5 = document.querySelector('h5')
-        h5.innerHTML="ATIVO"
+        h5.innerHTML = "ATIVO"
+
     }
-    else{
+    else {
         h5 = document.querySelector('h5')
-        h5.innerHTML="INATIVO"
+        h5.innerHTML = "INATIVO"
     }
-    
+
 
 }
 
-function verificarCheckbox(){
+function verificarCheckbox() {
     verificacao = document.getElementById('checkbox').checked
-    if(verificacao){
+    if (verificacao) {
         console.log(verificacao)
         label = document.getElementById('label')
         checkbox = document.getElementById('checkbox')
         checkbox.checked = true;
         h5 = document.querySelector('h5')
-        h5.innerHTML="ATIVO"
+        h5.innerHTML = "ATIVO"
     }
 
-    else{
+    else {
         h5 = document.querySelector('h5')
-        h5.innerHTML="INATIVO"
+        h5.innerHTML = "INATIVO"
     }
-    
+
 
 }
 
-function formatarData(data){
-    const dia = String(data.getDate()).padStart(2, '0');
-    const mes = String(data.getMonth() + 1).padStart(2, '0');
-    const ano = data.getFullYear();
-    
-    return `${dia}/${mes}/${ano}`;
+function alterarContrato(identifier) {
+    console.log("a")
+    let locatario = document.getElementById('locatario').value.toLowerCase()
+    let endereco = document.getElementById('endereco').value.toLowerCase()
+    let periodo = document.getElementById('periodo').value.toLowerCase()
+    let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
+    let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
+    let status = document.getElementById('checkbox').checked
+    var identifier;
+    identifier = 1;
+    contratos[identifier - 1].locatario = locatario
+    contratos[identifier - 1].endereco = endereco
+    contratos[identifier - 1].periodo = periodo
+    contratos[identifier - 1].valor_mensal = valor_mensal
+    contratos[identifier - 1].data_inicio = data_inicio
+    if (status == true) { contratos[identifier - 1].status = "ativo" }
+    else { contratos[identifier - 1].status = "inativo" }
+
+    console.log(locatario)
+    console.log(endereco)
+    console.log(periodo)
+    console.log(valor_mensal)
+    console.log(data_inicio)
+    console.log(status)
+    fecharModal()
+    carregarBancoContratos()
 
 }
