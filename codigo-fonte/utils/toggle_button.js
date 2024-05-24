@@ -14,8 +14,8 @@ function troca_texto_usuarios() {
     let texto = document.querySelector(".checkbox label")
     
     if(toggle.checked) {
-        texto.innerHTML = "ATENDIDA"
+        texto.innerHTML = "ATIVO"
     } else {
-        texto.innerHTML = "EM ATENDIMENTO"
+        texto.innerHTML = "INATIVO"
     }
 }
