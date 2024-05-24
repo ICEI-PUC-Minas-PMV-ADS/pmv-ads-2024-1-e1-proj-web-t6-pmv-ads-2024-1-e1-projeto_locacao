@@ -969,6 +969,7 @@ input[type="checkbox"] {
     padding: 35px;
     height: 600px;
     color: #5BB800;
+    
 
     * {
         font-family: "Roboto";
@@ -1016,7 +1017,13 @@ input[type="checkbox"] {
     
     .centro h5 {
         font-size: medium;
-        margin-top: none;
+        margin-top: 10px;
+
+
+
+    }
+    h4.titulos{
+        margin-top: 10px;
     }
     
     .longo {
@@ -1050,6 +1057,8 @@ input[type="checkbox"] {
         background-color: #5BB800;
         height: 1px;
         margin-bottom: 10px;
+        
+        
     }
     
     

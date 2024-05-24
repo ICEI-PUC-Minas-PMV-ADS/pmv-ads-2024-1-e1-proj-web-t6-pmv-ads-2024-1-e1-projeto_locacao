@@ -228,6 +228,7 @@ function carregarBancoContratos(){
     localStorage.setItem("contratos", JSON.stringify(contratos));
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratos.length; i++) {
+        var identifier = contratos[i].id
         elementoLista.innerHTML += `
     <div class="div_table_row">
   
@@ -255,7 +256,7 @@ function carregarBancoContratos(){
       </div>
   
       <div class="table_button">
-          <button class="open_button" onclick="abrirModalAlteracaoContratos()">
+          <button class="open_button" onclick="abrirModalAlteracaoContratos(${identifier})">
               <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
           </button>
       </div>
@@ -266,8 +267,8 @@ function carregarBancoContratos(){
 
 
 }
-function abrirModalAlteracaoContratos(){
-
+function abrirModalAlteracaoContratos(identifier){
+    var status = contratos[identifier-1].status
     ElementoFade.classList.add("escuro");
     dialog.setAttribute('open', 'true');
     dialog.classList.add('PopUpAlterar')
@@ -277,22 +278,22 @@ function abrirModalAlteracaoContratos(){
         <hr>
     </h4>
     <label for="locatario">Nome</label>
-    <input class="longo" type="text" name="locatario" id="locatario">
+    <input class="longo" type="text" name="locatario" id="locatario" value="${contratos[identifier-1].locatario}">
     <h4 class="titulos">IMÓVEL
         <hr>
     </h4>
 
     <div class="alinhamento">
         <label class="titulos" for="endereco">ID - ENDEREÇO <br></label>
-        <input class="longo" type="text" name="endereco" id="endereco">
+        <input class="longo" type="text" name="endereco" id="endereco" value="${contratos[identifier-1].endereco}">
     </div>
 
     <div class="alinhamento-a">
         <label class="titulos" for="endereco">Período <br>
-            <input type="text" name="periodo" id="periodo">
+            <input type="text" name="periodo" id="periodo" value="${contratos[identifier-1].periodo}">
         </label>
         <label class="titulos" for="valor_mensal">Valor Mensal <br>
-            <input type="text" name="valor_mensal" id="valor_mensal">
+            <input type="text" name="valor_mensal" id="valor_mensal" value="${contratos[identifier-1].valor_mensal}">
         </label>
     </div>
 
@@ -300,13 +301,13 @@ function abrirModalAlteracaoContratos(){
     <div class="alinhamento-a">
         
         <label class="titulos" for="data_inicio">Data de início <hr>
-            <input type="text" name="data_inicio" id="data_inicio">
+            <input type="text" name="data_inicio" id="data_inicio" value="${contratos[identifier-1].data_inicio}">
         </label>
         
         <label class="titulos descer" for="valor_mensal">Status <hr>
             <div class="centro">
-                <label class="switch">
-                    <input type="checkbox">
+                <label class="switch" id="label">
+                    <input type="checkbox" id="checkbox" onclick="verificarCheckbox()">
                     <span class="slider round"></span>
                     <label for="span"></label>
                 </label>
@@ -321,9 +322,38 @@ function abrirModalAlteracaoContratos(){
         <button id="voltar_principal" onclick='fecharModal()'><img src="../src/icones/voltar.png" alt=""></button>
         <button class="flutuar"><img src="../src/icones/alterar.png" alt=""></button>
     </div>
+    `
+    if(status == "ativo"){
+        console.log(status)
+        label = document.getElementById('label')
+        checkbox = document.getElementById('checkbox')
+        checkbox.checked = true;
+        h5 = document.querySelector('h5')
+        h5.innerHTML="ATIVO"
+    }
+    else{
+        h5 = document.querySelector('h5')
+        h5.innerHTML="INATIVO"
+    }
     
 
+}
+
+function verificarCheckbox(){
+    verificacao = document.getElementById('checkbox').checked
+    if(verificacao){
+        console.log(verificacao)
+        label = document.getElementById('label')
+        checkbox = document.getElementById('checkbox')
+        checkbox.checked = true;
+        h5 = document.querySelector('h5')
+        h5.innerHTML="ATIVO"
+    }
+
+    else{
+        h5 = document.querySelector('h5')
+        h5.innerHTML="INATIVO"
+    }
     
-    `
 
 }
