@@ -44,11 +44,7 @@ dialog{
     padding: none;
 }
 
-#modal1,#modal2,#modal3 > iframe{
-    border: none;
-    margin: 10px;
-    padding: none;
-}
+
 
 #fade.escuro{
     position: fixed;
