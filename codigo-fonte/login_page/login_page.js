@@ -125,7 +125,7 @@ function alterar_senha() {
     );
     nova_senha.className = "inputError";
     confirmar_senha.className = "inputError";
-    // alert("NOVA SENHA DIFERENTE DA SENHA CONFIRMADA")
+    
   } else if (
     senha_antiga.value !== 123 &&
     nova_senha.value == confirmar_senha.value
@@ -204,47 +204,45 @@ function set_input_success(e) {
   e.className = e.tagName == "INPUT" ? "inputSuccess" : "selectSuccess";
 }
 
-//VALIDAÇÃO DA SENHA
-let confereSenha = document.getElementById('senha_nova');
-let text = document.getElementById("validacao");
+function conferencia() {
+  let confereSenha = document.getElementById("senha_nova");
+  let text = document.getElementById("validacao");
 
-confereSenha.addEventListener('confereSenha',validSenha);
+  let senhaFraca = /[a-z]/;
+  let senhaMedia = /\d+/;
+  let senhaForte = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,),]/;
 
-let senhaFraca = /[a-z]/;
-let senhaMedia = /\d+/;
-let senhaForte = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,),]/;
-
-let minCaractereFacil = 3;
-let minCaractereMedia = 6;
-let minCaractereForte = 6;  
-
-function validSenha() { 
-
+  let minCaractereFacil = 3;
+  let minCaractereMedia = 6;
+  let minCaractereForte = 6;
   let inputFacil = confereSenha.value.match(senhaFraca);
   let inputMedia = confereSenha.value.match(senhaMedia);
   let inputForte = confereSenha.value.match(senhaForte);
 
   if (confereSenha.value) {
     if (
-        confereSenha.value.length <= minCaractereFacil &&
+      confereSenha.value.length <= minCaractereFacil &&
       (inputFacil || inputMedia || inputForte)
     ) {
-        console.log(input)
+      text.style.color = '#B83700'
       text.textContent = "Sua senha é muito fraca";
     }
     if (
-        confereSenha.value.length >= minCaractereMedia &&
+      confereSenha.value.length >= minCaractereMedia &&
       ((inputFacil && inputMedia) || (inputMedia && inputForte))
     ) {
+      text.style.color = '#c2b60c'
       text.textContent = "Sua senha é média";
     }
     if (
-        confereSenha.value.length >= minCaractereForte &&
+      confereSenha.value.length >= minCaractereForte &&
       inputFacil &&
       inputMedia &&
       inputForte
     ) {
+      text.style.color = '#5BB800'
       text.textContent = "Sua senha é forte";
     }
+   
   }
 }
