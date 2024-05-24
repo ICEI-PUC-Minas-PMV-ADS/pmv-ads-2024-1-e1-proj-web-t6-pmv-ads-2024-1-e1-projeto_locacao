@@ -267,6 +267,7 @@ function carregarBancoContratos(){
 
 }
 function abrirModalAlteracaoContratos(){
+
     ElementoFade.classList.add("escuro");
     dialog.setAttribute('open', 'true');
     dialog.classList.add('PopUpAlterar')
@@ -317,16 +318,11 @@ function abrirModalAlteracaoContratos(){
     </div>
 
     <div class="botoes">
-        <button id="voltar_principal"><img src="../src/icones/voltar.png" alt=""></button>
+        <button id="voltar_principal" onclick='fecharModal()'><img src="../src/icones/voltar.png" alt=""></button>
         <button class="flutuar"><img src="../src/icones/alterar.png" alt=""></button>
     </div>
     
-    
-    
-    
-    
-    
-    
+
     
     `
 
