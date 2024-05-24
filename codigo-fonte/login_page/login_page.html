@@ -70,7 +70,8 @@
                 </div>
                 <div>
                     <label id="nova_senha">NOVA SENHA</label>
-                    <input type="password" id="senha_nova" class="inputSuccess" onblur="return set_input_success(this)">
+                    <input onkeyup="conferencia()" type="password" id="senha_nova" class="inputSuccess" onblur="return set_input_success(this)">
+                    <span id="validacao"></span>
                 </div>
                 <div>
                     <label id="confirmar_senha">CONFIRMAR NOVA SENHA</label>
