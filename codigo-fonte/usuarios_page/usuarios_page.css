@@ -307,13 +307,11 @@ main{
 
 /*pop up*/
 
-#popup_filtrar{
-    width: 30%;
+#popup_filtrar, #popup_dados_usuarios, #popup_add  {
+    width: 25%;
 }
 
-#popup_dados_usuarios{
-    width: 50%;
-}
+
 
 .popup {    
     justify-self: center;
@@ -330,11 +328,13 @@ main{
     background-color: var(--light-black);
 }
 
-.popup div{
+.popup .areas{
     display: flex;
     flex-direction: column;
     align-items:normal;
+    width: 100%;
 }
+
 
 .popup hr{
     margin-bottom: 10px;

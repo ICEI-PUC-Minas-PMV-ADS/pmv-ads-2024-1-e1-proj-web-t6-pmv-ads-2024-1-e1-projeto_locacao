@@ -5,13 +5,12 @@
     <meta charset="UTF-8" />
     <title>Contratos</title>
     <link rel="stylesheet" type="text/css" href="contratos_page.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="contratos.js" defer></script>
    
 </head>
 
-<body>
+<body onload="carregarBancoContratos()">
     <div id="fade"></div>
     <header>
         <div class="div_logo">
@@ -65,19 +64,12 @@
             </div>
         </nav>
 
-        <dialog id="modal1">
-            <iframe src="contratos_filtro.html" id="meuIframeFiltrar" frameborder="1" width="500" height="700"></iframe>
+        <dialog id="modal" >
+            
         </dialog>
         
-        <dialog id="modal2">
-            <iframe src="novo_contrato.html" id="meuIframeadicionar" frameborder="0" width="500" height="750"></iframe>
-        </dialog>
-        <dialog id="modal3">
-            <iframe src="alterar_contratos.html" id="meuIframeAlterar" frameborder="0" width="490" height="760"></iframe>
-        </dialog>
 
-
-        <main id="table_owners">
+        <main id="table_owners" >
             <div class="div_table_properties">
                 <p>Contratos</p>
                 <div class="div_table_properties_group_buttons">
@@ -118,77 +110,6 @@
             <hr class="divisor">
 
             <div id="table_list">
-                <div class="div_table_row">
-
-                    <div class="table_icon1">
-                        <img class="icon" src="../src/icones/icon_contratos_selecionado.png" alt="">
-                    </div>
-
-                    <div class="table_id">
-                        01
-                    </div>
-
-                    <div class="table_name">
-                        João paulo da silva
-                    </div>  
-
-                    <div class="table_property">
-                        1 ano
-                    </div>
-
-                    <div class="table_status">
-                        600,00
-                    </div>
-                    <div class="table_status">
-                        Ativo
-                    </div>
-
-                    <div class="table_button">
-                        <button class="open_button" data-button='${dados}' onclick="abrirModalAlteracao()">
-                            <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
-                        </button>
-                    </div>
-
-                </div>  
-               
-                <div class="div_table_row">
-
-                    <div class="table_icon1">
-                        <img class="icon" src="../src/icones/icon_contratos_selecionado.png" alt="">
-                    </div>
-
-                    <div class="table_id">
-                        02
-                    </div>
-
-                    <div class="table_name">
-                        maria da graça pereira
-                    </div>  
-
-                    <div class="table_property">
-                        2 anos
-                    </div>
-
-                    <div class="table_status">
-                        1500,00
-                    </div>
-                    <div class="table_status">
-                        Ativo
-                    </div>
-
-                    <div class="table_button">
-                        <button class="open_button" data-button='${dados}' onclick="abrirModalAlteracao()">
-                            <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
-                        </button>
-                    </div>
-
-                </div>  
-
-
-
-
-
-
             </div>
 
             
