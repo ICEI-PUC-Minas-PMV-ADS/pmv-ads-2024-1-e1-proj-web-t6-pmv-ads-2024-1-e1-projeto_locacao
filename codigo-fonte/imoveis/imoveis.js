@@ -572,7 +572,14 @@ function salvarAlteracaoImovel(identifier) {
   imoveis[identifier-1].cidade = cidade;
   imoveis[identifier-1].cep = cep;
   imoveis[identifier-1].uf = uf;
-  imoveis[identifier-1].status = status;
+
+  if(status){
+    imoveis[identifier-1].status = "ativo";
+  }
+  else{
+    imoveis[identifier-1].status = "inativo";
+  }
+
   fecharModal()
   iniciar_banco_imoveis()
 
