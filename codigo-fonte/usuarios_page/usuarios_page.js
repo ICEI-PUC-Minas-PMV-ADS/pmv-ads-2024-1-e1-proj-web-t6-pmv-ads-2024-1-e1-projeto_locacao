@@ -204,20 +204,20 @@ function abrir_popup_add_usuarios(){
 
     body.innerHTML += `
     <dialog id="popup_add" class="popup">
-      <div>
+      <div class="areas">
         <h1>Novo Usuário</h1>
         <p>USUÁRIO</p>
         <hr />
-        <div id="div_novo_usuarios">
-          <div id="div_nome">
+        <div id="div_novo_usuarios" >
+          <div id="div_nome" class="areas">
             <label for="nome">NOME</label>
             <input type="text" name="nome" id="nome_novo" class="inputSuccess" onblur="return set_input_success(this)" />
           </div>
-          <div id="div_email">
+          <div id="div_email" class="areas">
             <label for="email">EMAIL</label>
             <input type="text" name="email" id="email_novo" class="inputSuccess" onblur="return set_input_success(this)"/>
           </div>
-          <div id="div_perfil">
+          <div id="div_perfil" class="areas">
             <label for="perfil">PERFIL</label>
             <select name="perfil" id="tipo_novo" class="selectSuccess">
               <option value="Comum">Comum</option>
@@ -360,20 +360,20 @@ function abrir_popup_dados_usuarios(e){
 
     body.innerHTML += `
     <dialog id="popup_dados_usuarios" class="popup">
-      <div>
+      <div class="areas">
         <h1>Dados do Usuário - ${dados.id}</h1>
         <p>USUÁRIO</p>
-        <hr />
-        <div id="div_novo_usuarios">
-          <div id="div_nome">
+        <hr/>
+        <div id="div_novo_usuarios" class="areas" >
+          <div id="div_nome" class="areas">
             <label for="nome">NOME</label>
             <input type="text" name="nome" id="nome_dados" value="${dados.nome}" class="inputSuccess" onblur="return set_input_success(this)" readonly/>
           </div>
-          <div id="div_email">
+          <div id="div_email" class="areas">
             <label for="email">EMAIL</label>
             <input type="text" name="email" id="email_dados" class="inputSuccess" value="${dados.email}" onblur="return set_input_success(this)"readonly/>
           </div>
-          <div id="div_perfil">
+          <div id="div_perfil" class="areas" >
             <label for="perfil">PERFIL</label>
             <select name="perfil" id="tipo_dados" class="selectSuccess" disabled>
               <option value="Comum" ${dados.tipo == "Comum" ? "selected" : ""} >Comum</option>
@@ -381,10 +381,10 @@ function abrir_popup_dados_usuarios(e){
             </select>
             <p>STATUS</p>
             <hr />
-            <div>
-              <input class="tog" id="status_dados" type="checkbox" ${dados.status ? "checked='checked'" : ""} disabled>
-              <label class="tog" for="status_dados"></label>
-            </div>   
+            <div class="checkbox">
+                    <input type="checkbox" id="status_dados" onchange="troca_texto_usuarios()" ${dados.status ? 'checked="checked"' : ""} disabled="true">
+                    <label for="" class="text">${dados.status ? 'ATIVO' : "INATIVO"}</label>
+                </div>              
           </div>
         </div>
         <div class="buttons">
