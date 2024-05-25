@@ -75,7 +75,7 @@ function faturas_init() {
 
     iniciar_banco_fat()
 
-    faturas(null, null, null, true)
+    faturas(null, null, null, null)
     // faturas(ID, Dt_Vencimento, Locatário, Status)
 }
 
@@ -90,12 +90,11 @@ function iniciar_banco_faturas() {
             nome_locatario: "Locatário 01",
             periodo_inicio: "10/01/2024",
             periodo_fim: "10/02/2024",
-            data_vencimento: "20/02/2024",
+            data_vencimento: "20/06/2024",
             data_pagamento: null,
             valor: 400.00,
-            status: true,
-            situacao_fatura: false
-            // Situação (Em Aberto, Pago, Vencida)      
+            status_pagamento: false,
+            // EM ABERTO
         },
         {
             id_fatura: 2,
@@ -108,8 +107,8 @@ function iniciar_banco_faturas() {
             data_vencimento: "25/03/2024",
             data_pagamento: null,
             valor: 1650.00,
-            status: false,
-            situacao_fatura: false    
+            status_pagamento: false,
+            // VENCIDO
         },
         {
             id_fatura: 3,
@@ -120,10 +119,10 @@ function iniciar_banco_faturas() {
             periodo_inicio: "25/04/2024",
             periodo_fim: "25/05/2024",
             data_vencimento: "30/05/2024",
-            data_pagamento: null,
+            data_pagamento: "25/05/2024",
             valor: 1000.00,
-            status: true,
-            situacao_fatura: false  
+            status_pagamento: true,
+            // PAGO
         }
     ]
     localStorage.setItem("faturas", JSON.stringify(faturas))
@@ -172,9 +171,9 @@ function faturas(id_fatura, data_vencimento, nome_locatario, status){
 
     if (status != null) {
         if (status) {
-            faturas = faturas.filter((fatura) => fatura.status == status)
+            faturas = faturas.filter((fatura) => fatura.status_pagamento == status)
         } else {
-            faturas = faturas.filter((fatura) => fatura.status == status)
+            faturas = faturas.filter((fatura) => fatura.status_pagamento == status)
         }
     }
 
@@ -189,24 +188,44 @@ function faturas(id_fatura, data_vencimento, nome_locatario, status){
     // Para cada fatura inclui a respectiva div na tela principal
     if(faturas.length > 0) {
         faturas.map((fatura) => {
-            dados_fatura = JSON.stringify(fatura) 
+            let classe = ""
+            let texto = ""
+            
+            dados_fatura = JSON.stringify(fatura)
+            if (!fatura.status_pagamento) {
+                let splitData = fatura.data_vencimento.split("/");
+                let newDate = [splitData[1], splitData[0], splitData[2]];
+
+                let data = new Date(newDate.join("/"));
+                let hoje = new Date();
+
+                
+                if (data < hoje) {
+                    classe = "status_vencido"
+                    texto = "Vencida"
+                  } else {
+                    classe = "status_aberto"
+                    texto = "Em Aberto"
+                  }
+                        
+            } else {
+                classe = "status_quitado"
+                    texto = "Paga"
+            }
+
 
             table_faturas.innerHTML += `
             <div class="div_table_row"> 
                 <div class="table_icon">
                     <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
                 </div>
-                <div class="table_id_locatario">${fatura.id_locatario}</div>
                 <div class="table_locatario">${fatura.nome_locatario}</div>
-                <div class="table_id_fatura">${fatura.id_fatura}</div>
-                <div class="table_periodo_inicio">${fatura.periodo_inicio}</div>
-                <div class="table_periodo_fim">${fatura.periodo_fim}</div>
-                <div class="table_vencimento">${fatura.vencimento}</div>
+                <div class="table_vencimento">${fatura.data_vencimento}</div>
                 <div class="table_valor">${fatura.valor}</div>
                 <div class="table_status">
-                    <div class=${locatario.status ? "status_active" : "status_inactive"}>
+                    <div class="${classe}">
                         <p>
-                            ${locatario.status ? "Ativo" : "Inativo"}
+                            ${texto}
                         </p>
                     </div>
                 </div>
@@ -223,3 +242,18 @@ function faturas(id_fatura, data_vencimento, nome_locatario, status){
 }
 
 
+// POPUP FILTRAR FATURAS
+function abrir_popup_filtrar_fatura() {
+    let popup = document.getElementById('popup_filtrar')
+
+    popup.showModal()
+}
+
+function fechar_popup_filtrar_fatura() {
+    let popup = document.getElementById('popup_filtrar')
+
+    popup.close()
+}
+
+
+// FUNÇÃO STATUS PAGAMENTO

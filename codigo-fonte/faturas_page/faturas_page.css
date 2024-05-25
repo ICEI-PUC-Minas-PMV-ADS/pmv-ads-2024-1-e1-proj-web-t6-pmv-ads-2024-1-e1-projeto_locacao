@@ -181,7 +181,7 @@ main {
 
 #table_list{
    overflow: scroll;
-    height: 87%;
+    height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -242,71 +242,47 @@ main {
     width: 5%;
 }
 
-.table_id_locatario{
-    min-width: fit-content;
-    /* border: 1px solid black; */
-    width: 10%;
-}
-
 .table_locatario{
     min-width: fit-content;
     /* border: 1px solid black; */
     width: 20%;
 }
 
-.table_id_fatura{
-    min-width: fit-content;
-    /* border: 1px solid black; */
-    width: 10%;
-}
-
-.table_periodo_inicio{
-    min-width: fit-content;
-    /* border: 1px solid black; */
-    width: 10%;
-}
-
-.table_periodo_fim{
-    min-width: fit-content;
-    /* border: 1px solid black; */
-    width: 10%;
-}
-
 .table_vencimento{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 10%;
+    width: 20%;
 }
 
 .table_valor{
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 10%;
+    width: 20%;
 }
 
 .table_status{
     min-width: fit-content;
     /*border: 1px solid black;*/
-    width: 5%;
+    width: 20%;
 }
 
 .table_button{
     display: flex;
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 10%;
+    width: 20%;
     justify-content: end;
 }
 
 
 /* DESTAQUE STATUS  (FALTA O JAVA SCRIPT) */
 
-.status_open {
+.status_aberto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 7%;
+    width: 35%;
     background-color: var(--green);
     color: var(--white);
     font-weight: 600;
@@ -321,7 +297,7 @@ main {
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 7%;
+    width: 35%;
     background-color: var(--dark-grey);
     color: var(--white);
     font-weight: 600;
@@ -336,7 +312,7 @@ main {
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 7%;
+    width: 35%;
     background-color: var(--red);
     color: var(--white);
     font-weight: 600;
@@ -360,13 +336,7 @@ main {
 }
 
 
-/* POPUP DADOS FATURA */
-/* #popup_dados_fatura{
-    width: 50%;
-} */
-
-
-/* POPUP ESTILO GERAL */
+/* Estilo da Popup */
 .popup {    
     justify-self: center;
     align-self: center;
@@ -388,6 +358,49 @@ main {
     align-items:normal;
 }
 
+.popup .div_nome{
+    display: flex;
+    flex-direction: column;
+    grid-area: nome;
+}
+
+.popup hr{
+    margin-bottom: 10px;
+    border-top: 1px solid var(--green);
+    margin: 10;
+}
+
+.popup p,label{
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.popup h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0px 0px 20px 0px;
+}
+
+.popup .selectSuccess {
+    height: 36px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    padding-left: 10px;
+}
+
+.popup .selectError {
+    height: 36px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    padding-left: 10px;
+}
+
 .popup .inputSuccess {
     height: 30px;
     margin-bottom: 10px;
@@ -397,28 +410,85 @@ main {
     padding-left: 10px;
 }
 
-
-
-.section_locatario {
-    display: grid;
-    grid-template-areas: 
-    "nome"
+.popup .inputError{
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    padding-left: 10px;
 }
 
-.popup .div_nome{
+.popup .buttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.popup .icon{
+    height: 20px;
+    width: 20px;
+}
+
+.buttons button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.buttons button:hover {
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+/* POPUP FILTRAR*/
+#popup_filtrar{
+    width: 20%;
+}
+
+
+/* Seção Status */
+.status div{
+    display: flex;
+    flex-direction: row;
+}
+
+.section_status {
+    display: grid;
+    grid-template-columns: 
+    "id vencimento";   
+}
+
+.popup .div_identificacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    grid-template-areas: 
+    "id vencimento"
+    "nome nome";
+}
+
+.popup #div_id{
+    grid-area: id;
+}
+
+.popup #div_vencimento {
+    grid-area: vencimento;
+}
+
+.popup #div_nome {
     grid-area: nome;
 }
 
-.section_imovel {
-    display: grid;
-    grid-template-areas: 
-    "imovel" "imovel" "imovel" "id"
-}
-
-.popup .div_imovel{
-    display: flex;
-    flex-direction: column;
-    grid-area: imovel;
-}

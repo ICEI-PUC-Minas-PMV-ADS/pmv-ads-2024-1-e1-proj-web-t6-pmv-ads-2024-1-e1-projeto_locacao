@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="faturas_page.css">
     <link rel="stylesheet" href=http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="faturas_page.js"></script>
+    <link rel="stylesheet" href="../utils/snackbar.css">
 </head>
-<body>
+<body onload="faturas_init()">
     <!-- CABEÇALHO -->
     <header>
     <!-- Icone ImmoControl -->
@@ -76,7 +77,7 @@
             <div class="div_table_faturas">
                 <p>Faturas</p>
                 <div class="div_table_faturas_group_buttons">
-                    <button class="div_table_faturas_button" onclick="abrir_popup_filtrar_faturas()">
+                    <button class="div_table_faturas_button" onclick="abrir_popup_filtrar_fatura()">
                         <img class="icon" src="../src/icones/icon_button_filtrar.png" alt="">
                     </button>
                     <!-- <button class="div_table_faturas_button" onclick="abrir_popup_cadastrar_faturas()">
@@ -87,21 +88,16 @@
             <!-- Cabeçalho da Tabela -->
             <div class="div_table_header"> 
                 <div class="table_icon"></div>
-                <div class="table_id_locatario">ID LOCATÁRIO</div>
                 <div class="table_locatario">LOCATÁRIO</div>
-                <div class="table_id_fatura">ID FATURA</div>
-                <div class="table_periodo_inicio">PERÍODO INÍCIO</div>
-                <div class="table_periodo_fim">PERÍODO FIM</div>
                 <div class="table_vencimento">VENCIMENTO</div>
                 <div class="table_valor">VALOR</div>
                 <div class="table_status">STATUS</div>
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
+
             <!-- FATURAS (VISUALIZAÇÃO PARA TESTE) -->   
             <div id="table_list"></div>
-        </main>
-    </div>
             <!-- <div class="div_table_row"> 
                     <div class="table_icon">
                         <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
@@ -147,6 +143,10 @@
                 </div>
             </div>
             <hr class="divisor">  -->
+        </main>
+    </div>
+
+
     <!-- POPUP DADOS FATURA -->
     <!-- <dialog id="popup_dados_fatura" class="popup">
         <div>
@@ -171,7 +171,65 @@
     </div> -->
 <!-- </dialog> -->
 
+<!-- POPUP FILTRAR FATURAS -->
+<dialog id="popup_filtrar" class="popup">
+    <div>
+        <h1>Filtros</h1>
+        <p><br>DADOS PESSOAIS</p>
+        <hr>
+       
+            
+        <div class="div_identificacao">
+            <div id="div_id">
+                <label for="nome">ID</label>
+                <input type="text" name="id" id="id_filtro" class="inputSuccess">
+            </div>
+            <div id="div_vencimento">
+                <label for="nome">VENCIMENTO</label>
+                <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
+            </div>
+            <div id="div_nome">
+                <label for="nome">NOME</label>
+                <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
+            </div>
+        </div>
+    
+            
+        <!-- Status  -->
+        <section class="section_status">           
+            <div class="status">
+                <p><br>STATUS</p>
+                <hr>
+                <div>
+                    <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
+                    <label for="todos">TODOS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
+                    <label for="ativo">ATIVO</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
+                    <label for="inativo">INATIVO</label>
+                </div>
+            </div>
+        </section>
 
+        <div class="buttons">
+            <button onclick="fechar_popup_filtrar_fatura()">
+                <img class="icon" src="../src/icones/icon_voltar.png" alt="">
+                VOLTAR
+            </button>
+            <button onclick="filtrar_locatario()">
+                <img class="icon" src="../src/icones/filtrar2.png" alt="">
+                FILTRAR
+            </button>
+        </div>
+    </div>
+</dialog>
+<!-- Mensgens de erro -->
+<div id="snackbar_success" class="snackbar"></div>
+<div id="snackbar_error" class="snackbar"></div>
     
 </body>
 </html>

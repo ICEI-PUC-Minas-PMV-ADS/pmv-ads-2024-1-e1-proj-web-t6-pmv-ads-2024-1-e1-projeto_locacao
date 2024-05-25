@@ -1030,7 +1030,7 @@ function salvar_novo_locatario() {
     }
 
     if(pode_salvar){
-        show_snackbar("#popup_cadastrar #snackbar_success", "Novo locatário salvo com sucesso!")
+        show_snackbar("body #snackbar_success", "Novo locatário salvo com sucesso!")
         let jsonNovoLocatario = {
             id: novo_id(),
             nome: nome,
