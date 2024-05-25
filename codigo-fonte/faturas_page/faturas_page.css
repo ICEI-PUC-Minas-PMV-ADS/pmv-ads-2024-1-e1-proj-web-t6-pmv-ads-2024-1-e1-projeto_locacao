@@ -492,3 +492,90 @@ main {
     grid-area: nome;
 }
 
+/* POPUP DADOS/ALTERAR FATURA */
+#popup_dados_fatura{
+    width: 30%;
+}
+
+
+.popup #section_imovel_contrato {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    grid-template-areas: 
+    "imov imov imov contr";
+}
+
+
+.popup #div_imov{
+    grid-area: imov;
+}
+
+.popup #div_contr{
+    grid-area: contr;
+}
+
+
+.popup .section_dados_fatura {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    grid-template-areas: 
+    "nome nome nome id";
+}
+
+.popup .div_end_imovel{
+    grid-area: nome;
+}
+
+.popup .div_id_imovel{
+    grid-area: id;
+}
+
+.popup .div_inicio{
+    grid-area: inicio;
+}
+
+.popup .div_fim{
+    grid-area: fim;
+}
+
+.popup .div_vencimento{
+    grid-area: vencimento;
+}
+
+.popup .div_pagamento{
+    grid-area: pagamento;
+}
+
+
+
+.popup #section_datas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    grid-template-areas: 
+    "inicio fim"
+    "vencimento pagamento";
+}
+
+
+.popup .div_inicio{
+    grid-area: inicio;
+}
+
+.popup .div_fim{
+    grid-area: fim;
+}
+
+.popup .div_vencimento{
+    grid-area: vencimento;
+}
+
+.popup .div_pagamento{
+    grid-area: pagamento;
+}
+
+
+
+

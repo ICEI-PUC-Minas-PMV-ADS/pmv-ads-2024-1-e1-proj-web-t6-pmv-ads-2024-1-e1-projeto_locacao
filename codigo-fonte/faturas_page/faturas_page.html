@@ -91,58 +91,14 @@
                 <div class="table_locatario">LOCATÁRIO</div>
                 <div class="table_vencimento">VENCIMENTO</div>
                 <div class="table_valor">VALOR</div>
-                <div class="table_status">STATUS</div>
+                <div class="table_status">STATUS FATURA</div>
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
 
-            <!-- FATURAS (VISUALIZAÇÃO PARA TESTE) -->   
+            <!-- FATURAS (POPULAÇÃO TELA PRINCIPAL) -->   
             <div id="table_list"></div>
-            <!-- <div class="div_table_row"> 
-                    <div class="table_icon">
-                        <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
-                    </div>
-                    <div class="table_id">1</div>
-                    <div class="table_locatario">Andreia Oliveira Dias</div>
-                    <div class="table_periodo">06/2024</div>
-                    <div class="table_vencimento">01/06/2024</div>
-                    <div class="table_valor">R$ 1.000,00</div>
-                    <div class="status_open">Em Aberto</div>
-                    <div class="table_button">
-                        <buttom class="open_button" onclick="abrir_popup_dados_fatura()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
-                    </div>
-                </div>
-            <hr class="divisor">
-            <div class="div_table_row"> 
-                <div class="table_icon">
-                    <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
-                </div>
-                <div class="table_id">2</div>
-                <div class="table_locatario">Arthur Castro</div>
-                <div class="table_periodo">03/2024</div>
-                <div class="table_vencimento">01/04/2024</div>
-                <div class="table_valor">R$ 650,00</div>
-                <div class="status_quitado">Quitado</div>
-                <div class="table_button">
-                    <buttom class="open_button" onclick="abrir_popup_dados_fatura()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
-                </div>
-            </div>
-            <hr class="divisor">
-            <div class="div_table_row"> 
-                <div class="table_icon">
-                    <img src="../src/icones/icon_faturas_selecionado.png" alt="" class="icon">
-                </div>
-                <div class="table_id">3</div>
-                <div class="table_locatario">Naiara Fernandes</div>
-                <div class="table_periodo">03/2024</div>
-                <div class="table_vencimento">01/04/2024</div>
-                <div class="table_valor">R$ 700,00</div>
-                <div class="status_vencido">Vencida</div>
-                <div class="table_button">
-                    <buttom class="open_button" onclick="abrir_popup_dados_fatura()"><img src="../src/icones/icon_ver_dados.png" alt="" class="open_icon"></buttom>
-                </div>
-            </div>
-            <hr class="divisor">  -->
+            <!-- o HTML está no javascript -->
         </main>
     </div>
 
@@ -155,9 +111,9 @@
         </div>
         <hr>
         <Section class="section_locatario">
-            <div class="div_name">
+            <div class="div_nome">
                 <label for="nome">NOME</label>
-                <input type="text" name="nome" id="nome" class="inputSuccess" value="LOCATARIO 1/2/3">
+                <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="${dados_locatario.nome}" onblur="return set_input_success(this)" readonly>
             </div>
         </Section>
         <Section class="section_imovel">
@@ -167,30 +123,26 @@
             </div>
             <hr>
         </Section>
-     </main>
-    </div> -->
-<!-- </dialog> -->
+    </dialog> -->
 
 <!-- POPUP FILTRAR FATURAS -->
 <dialog id="popup_filtrar" class="popup">
     <div>
         <h1>Filtros</h1>
         <p><br>DADOS PESSOAIS</p>
-        <hr>
-       
-            
+        <hr>    
         <div class="div_identificacao">
             <div id="div_id">
                 <label for="nome">ID</label>
-                <input type="text" name="id" id="id_filtro" class="inputSuccess">
+                <input type="text" name="id_fatura" id="id_filtro" class="inputSuccess">
             </div>
             <div id="div_vencimento">
                 <label for="nome">VENCIMENTO</label>
-                <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
+                <input type="text" name="data_vencimento" id="vencimento_filtro" class="inputSuccess">
             </div>
             <div id="div_nome">
                 <label for="nome">NOME</label>
-                <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
+                <input type="text" name="nome_locatario" id="nome_filtro" class="inputSuccess">
             </div>
         </div>
     
@@ -198,19 +150,23 @@
         <!-- Status  -->
         <section class="section_status">           
             <div class="status">
-                <p><br>STATUS</p>
+                <p><br>STATUS FATURA</p>
                 <hr>
                 <div>
                     <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
                     <label for="todos">TODOS</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
-                    <label for="ativo">ATIVO</label>
+                <input type="checkbox" name="em_aberto" id="status_aberto" value="aberto" onchange="status_aberto()">
+                    <label for="aberto">EM ABERTO</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
-                    <label for="inativo">INATIVO</label>
+                    <input type="checkbox" name="vencido" id="status_vencido" value="vencido" onchange="status_vencido()">
+                    <label for="vencido">VENCIDA</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="quitado" id="status_quitado" value="quitado" onchange="status_quitado()">
+                    <label for="quitado">QUITADA</label>
                 </div>
             </div>
         </section>
@@ -220,13 +176,16 @@
                 <img class="icon" src="../src/icones/icon_voltar.png" alt="">
                 VOLTAR
             </button>
-            <button onclick="filtrar_locatario()">
+            <button onclick="filtrar_fatura()">
                 <img class="icon" src="../src/icones/filtrar2.png" alt="">
                 FILTRAR
             </button>
         </div>
     </div>
 </dialog>
+
+
+
 <!-- Mensgens de erro -->
 <div id="snackbar_success" class="snackbar"></div>
 <div id="snackbar_error" class="snackbar"></div>

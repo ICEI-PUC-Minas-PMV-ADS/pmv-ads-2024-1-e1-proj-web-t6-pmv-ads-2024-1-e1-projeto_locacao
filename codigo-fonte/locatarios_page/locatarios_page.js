@@ -871,7 +871,7 @@ function abrir_popup_cadastrar_locatario() {
                     </div>
                 </section>
                 <div class="buttons">
-                    <button onclick="fechar_popup_dados_locatario()">
+                    <button onclick="fechar_popup_dados_cadastrar()">
                         <img class="icon" src="../src/icones/icon_voltar.png" alt="">
                         VOLTAR
                     </button>
@@ -893,6 +893,12 @@ function abrir_popup_cadastrar_locatario() {
 
 }
 
+
+function fechar_popup_dados_cadastrar() {
+    let popup = document.getElementById('popup_cadastrar')
+
+    popup.close()
+}
 
 
 // CRIAR NOVO ID
