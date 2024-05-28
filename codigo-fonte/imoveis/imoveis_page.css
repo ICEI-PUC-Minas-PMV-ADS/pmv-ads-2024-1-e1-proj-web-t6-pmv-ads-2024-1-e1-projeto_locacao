@@ -30,18 +30,17 @@ body {
 
 dialog{
     
-    border-color: #f8f9fb;
+    border-color: white;
     border-radius: 25px;
     z-index: 30;
     justify-self: center;
     align-self: top;
-    size: 200px;
-    width: 600px;
-    padding: 0PX;
-    margin: 15px;
-    border: none;
-    margin: 10px;
-    padding: none;
+    width: 70%;
+    margin: 5px;
+    max-width: fit-content;
+    justify-items: center;
+    margin-bottom: 10px;
+   
 }
 
 
@@ -603,7 +602,8 @@ dialog *{
 dialog{
     
     padding: 25px;
-    height: 600px;
+    height: 600px
+    fit-content
 }
 
 

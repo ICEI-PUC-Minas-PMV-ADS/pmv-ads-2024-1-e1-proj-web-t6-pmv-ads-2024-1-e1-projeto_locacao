@@ -157,6 +157,8 @@ function adicionarContrato() {
     let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
     let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
     tamanho = contratos.length
+    if (locatario=""){vazio("locatario")}
+
 
     contratos.push(
         {
@@ -175,6 +177,13 @@ function adicionarContrato() {
 
 
 }
+
+function vazio(nome){
+    alert("O "+ nome +" está vazio")
+}
+
+
+
 
 function abrirModalAlteracao() {
 
