@@ -917,7 +917,7 @@ dialog .container {
 .adicao header{
     display: flex;
     justify-content: center;
-
+    height: 40px;
 }
 
 .adicao input{
