@@ -34,7 +34,10 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 12vh;
-    /* border: 1px solid black; */
+}
+
+header .button_menu {
+    display: none;
 }
 
 .immo {
@@ -127,8 +130,7 @@ hr.divisor {
 }
 
 .open_nav .descricao {
-    display: block;
-    
+    display: block; 
 }
 
 .sidebar_button_selected {
@@ -207,7 +209,7 @@ main {
     background-color: var(--white);
     width: calc(100% - 109px);
     min-width: fit-content;
-    height: calc(84vh - 10px);
+    height: calc(84vh - 9px);
     padding: 15px;
     margin: 0px 10px 10px 69px;
     /* border: 1px solid black; */
@@ -518,7 +520,6 @@ input[type="checkbox"]{
     "complemento bairro bairro cidade cidade"
     "cep uf . . .";
     column-gap: 15px;
-    
 }
 
 .popup .div_tipo_logradouro{
@@ -588,5 +589,58 @@ input[type="checkbox"]{
     grid-area: email;
 }
 
+@media only screen and (max-device-width: 480px) {
+ 
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 6vh;
+    }
+
+    main {
+        background-color: var(--white);
+        width: calc(100% - 50px);
+        min-width: fit-content;
+        padding: 15px;
+        margin: 0px 10px 10px 10px;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        height: calc(92vh - 9px);
+    }
+
+    .div_logo {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    .open_nav {
+        display: block;
+        height: 100vh;
+    }
+
+    header .button_menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 7px 7px 7px 7px;
+        margin-left: 10px;
+        width: fit-content;
+        border: none;
+        border-radius: 12px;
+        background-color: var(--light-grey);
+        color: var(--green);
+    }
+
+    nav .button_menu {
+        display: none;
+    }
+} 
 
 
