@@ -53,11 +53,11 @@ body {
 }
 
 
-.content h1{
+.content_login h1{
     font-size: large;   
 }
 
-.content p{    
+.content_login p{    
     font-size: medium;
     font-weight: bold;
     min-width: 200px;
@@ -98,7 +98,7 @@ label{
     margin: 40px auto 30px auto;    
 }
 
-.content{
+.content_login{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -191,6 +191,10 @@ label{
     margin: 40px auto;
 }
 
+.btn_popup:disabled {
+    background-color: var(--grey);
+}
+
 .senha_padrao_enviada{
     padding: 85px 10px 80px 10px;
     font-weight: bold;
@@ -270,5 +274,45 @@ label{
     margin: 4px auto; 
     align-items: center;
     padding-left: 10px;  
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    color: var(--green);
+    padding: 0 40px;
+}
+
+.content .content_children {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.criterios {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+.criterios i {
+    display: none;
+    font-size: 15px;    
+    font-weight: bold;
+}
+
+.material-icons.erro {
+    color: var(--red);
+}
+
+.material-icons.success {
+    color: var(--green);
 }
 

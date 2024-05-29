@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="login_page.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="login_page.js"></script>
 </head>
 
@@ -16,7 +17,7 @@
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
         </div>
-        <div class="content">
+        <div class="content_login">
             <h1>SEJA BEM VINDO</h1>
             <p>INSIRA SUAS CREDENCIAIS PARA ACESSAR A PLATAFORMA</p>
             <div class="input_email">
@@ -29,7 +30,7 @@
                     onblur="return set_input_success(this)">
             </div>
             <button id="btn_popup_esqueceu_senha" class="btn_esqueci_senha">ESQUECI MINHA SENHA</button>
-            <button class="logar" onclick="verica_usuario()">ENTRAR</button>
+            <button class="logar" onclick="verifica_usuario()">ENTRAR</button>
         </div>
     </div>
     <div id="snackbar_success" class="snackbar"></div>
@@ -53,7 +54,7 @@
             <button id="btn_voltar" class="btn_popup">VOLTAR</button>
         </div>
     </dialog>
-    <dialog id="popup_primeiro_acesso" class="popup">
+    <!-- <dialog id="popup_primeiro_acesso" class="popup">
         <div class="conteudo_popup">
             <div class="div_logo">
                 <p><span class="immo">Immo</span><span class="control">Control</span></p>
@@ -86,7 +87,7 @@
             </div>
         </div>
         <div id="snackbar_error" class="snackbar"></div>
-    </dialog>
+    </dialog> -->
     
     
 
