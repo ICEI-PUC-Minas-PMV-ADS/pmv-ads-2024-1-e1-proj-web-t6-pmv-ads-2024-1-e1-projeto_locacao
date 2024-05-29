@@ -49,7 +49,6 @@ function iniciar_banco_usuarios() {
 
   if (valid_usuario == null) {
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    console.log("banco_resetado");
   }
 }
 
