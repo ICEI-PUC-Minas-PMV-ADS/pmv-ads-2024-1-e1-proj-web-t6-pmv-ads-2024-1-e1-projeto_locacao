@@ -4,15 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <title>Proprietários</title>
-  <link rel="stylesheet" type="text/css" href="proprietarios_page.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="responsivo_page.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="proprietarios_page.js" defer></script>
+  <script src="responsivo_page.js" defer></script>
 </head>
 
 <body onload="proprietarios_init()">
   <header>
+    <button class="button_menu" onclick="abrir_sidebar()">
+      <div class="icon">
+        <i id="sanduiche" class="material-icons">menu</i>
+      </div>
+    </button>
     <div class="div_logo">
       <p>
         <span class="immo">Immo</span><span class="control">Control</span>

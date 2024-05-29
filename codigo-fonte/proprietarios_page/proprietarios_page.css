@@ -80,8 +80,8 @@ header {
 }
 
 nav {
-    padding: 0px 20px 0px 10px;
-    width: 20%;
+    padding: 0px 10px 0px 10px;
+    /* width: 20%; */
     min-width: fit-content;
     max-width: fit-content;
     min-height: fit-content;
@@ -91,6 +91,8 @@ nav {
     justify-content: space-between;
     height: 88vh;
     /* border: 1px solid black; */
+    z-index: 2;
+    background-color: var(--light-grey);
 }
 .sidebar_superior {
 
@@ -106,6 +108,10 @@ hr.divisor {
 }
 
 .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 35px;
     width: 35px;
 }
@@ -115,8 +121,18 @@ hr.divisor {
     width: 20px;
 }
 
+.descricao {
+    display: none;
+    padding-right: 7px;
+}
+
+.open_nav .descricao {
+    display: block;
+    
+}
+
 .sidebar_button_selected {
-    padding: 7px 35px 7px 7px;
+    padding: 7px 7px 7px 7px;
     margin-top: 10px;
     width: 100%;
     display: flex;
@@ -132,7 +148,7 @@ hr.divisor {
 }
 
 .sidebar_button {
-    padding: 7px 35px 7px 7px;
+    padding: 7px 7px 7px 7px;
     margin-top: 10px;
     width: 100%;
     display: flex;
@@ -152,6 +168,31 @@ hr.divisor {
     background-color: var(--white);
 }
 
+.button_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 7px 7px 7px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--light-grey);
+    color: var(--green);
+}
+
+.button_menu .icon {
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+.button_menu:hover .icon{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    color: var(--white);
+    border-radius: 12px;
+    background-color: var(--green);
+}
+
 .content {
     width: 100%;
     display: flex;
@@ -161,12 +202,14 @@ hr.divisor {
 }
 
 main {
+    position: fixed;
+    z-index: 1;
     background-color: var(--white);
-    width: 100%;
+    width: calc(100% - 109px);
     min-width: fit-content;
-    max-height: 88vh;
+    height: calc(84vh - 10px);
     padding: 15px;
-    margin: 0 10px 10px 0;
+    margin: 0px 10px 10px 69px;
     /* border: 1px solid black; */
     border-radius: 12px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
@@ -544,6 +587,9 @@ input[type="checkbox"]{
     flex-direction: column;
     grid-area: email;
 }
+
+
+
 
 
 
