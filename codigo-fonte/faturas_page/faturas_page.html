@@ -5,68 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faturas</title>
     <link rel="stylesheet" href="faturas_page.css">
-    <link rel="stylesheet" href=http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <script src="faturas_page.js"></script>
     <link rel="stylesheet" href="../utils/snackbar.css">
+    <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="faturas_page.js"></script>
 </head>
 <body onload="faturas_init()">
     <!-- CABEÇALHO -->
     <header>
-    <!-- Icone ImmoControl -->
-    <div class="div_logo">
-        <p><span class="immo">Immo</span><span class="control">Control</span></p>
-    </div>
-    <!-- Título da Página -->
-    <div class="div_titulo">
-        <p>Faturas</p>
-    </div>
-    <!-- Usuário Logado -->
-    <div class="div_usuario">
-        <!-- Temporário: Usuário logado -->
-        <p>Eduardo Wollinger</p> 
-        <img src="../src/icones/icon_usuario_logado.png" alt="Usuário Logado" class="icon_usuario_logado">
-    </div>
+        <button class="button_menu" onclick="abrir_sidebar()">
+            <div class="icon">
+            <i id="sanduiche" class="material-icons">menu</i>
+            </div>
+        </button>
+        <div class="div_logo">
+            <p>
+            <span class="immo">Immo</span><span class="control">Control</span>
+            </p>
+        </div>
+        <div class="div_titulo">Faturas</div>
+        <div class="div_usuario">
+            <div class="dropdown">
+            <button id="usuario_autenticado" class="dropbtn">
+                <p></p>
+            </button>
+            <button class="dropdown-content" onclick="location.href = '../login_page/login_page.html'">
+                <div>
+                <i class="material-icons icon_color">logout</i>
+                <p>Sair</p>
+                </div>
+            </button>
+            </div>
+            <img class="icon_usuario_logado" src="../src/icones/icon_usuario_logado.png" alt="" />
+        </div>
     </header>
 
     <!-- SIDEBAR -->
     <div class="content">
-        <nav>
+        <nav id="sibebar">
             <div class="sidebar_superior">
+                <button class="button_menu" onclick="abrir_sidebar()">
+                    <div class="icon">
+                      <i id="sanduiche" class="material-icons">menu</i>
+                    </div>
+                  </button>
                 <hr class="divisor">
                 <button class="sidebar_button" onclick = "location.href ='../dashboard_page/dashboard_page.html'">
                     <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
-                    <p>Dashboard</p>
+                    <p class="descricao">Dashboard</p>
                   </button>
                   <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
                     <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
-                    <p>Proprietários</p>
+                    <p class="descricao">Proprietários</p>
                   </button>
                   <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
                     <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
-                    <p>Locatários</p>
+                    <p class="descricao">Locatários</p>
                   </button>
                   <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
                     <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
-                    <p>Imóveis</p>
+                    <p class="descricao">Imóveis</p>
                   </button>
                   <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
                     <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
-                    <p>Contratos</p>
+                    <p class="descricao">Contratos</p>
                   </button>
                   <button class="sidebar_button_selected" onclick="location.href = '../faturas_page/faturas_page.html'">
                     <img class="icon" src="../src/icones/icon_faturas_selecionado.png" alt="" />
-                    <p>Faturas</p>
+                    <p class="descricao">Faturas</p>
                   </button>
                   <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
                     <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
-                    <p>Requisições</p>
+                    <p class="descricao">Requisições</p>
                   </button>
             </div>
             <div class="sidebar_inferior">
                 <hr class="divisor">
                 <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> 
                     <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
-                    <p>Usuários</p>
+                    <p class="descricao">Usuários</p>
                 </button>
             </div>
         </nav>

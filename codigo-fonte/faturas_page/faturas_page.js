@@ -83,6 +83,8 @@ function faturas_init() {
     localStorage.clear()
 
     iniciar_banco_fat()
+    // USUÁRIO
+    usuario()
 
     faturas(null, null, null, null)
     // faturas(id_fatura, data_vencimento, nome_locatario, status)
@@ -322,7 +324,7 @@ function abrir_popup_dados_fatura(e) {
     body.innerHTML += `
     <dialog id="popup_dados_fatura" class="popup">
         <div>
-            <h1>Dados da Fatura ${dados_fatura.id_fatura}</h1>
+            <h1>Dados da Fatura - ${dados_fatura.id_fatura}</h1>
             <p><br>LOCATÁRIO</p>
             <hr>
             <div class="div_nome">
@@ -406,15 +408,17 @@ function informar_pagamento() {
             SALVAR
         </button>    
     `
-    document.getElementById("pagamento").readOnly = false   
+    document.getElementById("pagamento").readOnly = false
+
 }
 
 
 // PAREI AQUI EM 25/05/2024
 function salvar_data_pagamento() {
+    
     let id_fatura_alterar = parseInt(document.querySelector("#popup_dados_fatura h1").innerHTML.split(" - ")[1])
     
-    let data_pagamento_informado = document.getElementById("pagamento")
+    let data_pagamento_informado = document.getElementById("pagamento").value
 
     let buttons = document.querySelector("#popup_dados_fatura .buttons")
         buttons.removeChild(buttons.children[1])
@@ -438,7 +442,34 @@ function salvar_data_pagamento() {
 
 }
 
-
 function set_input_success(e) {
     e.className = e.tagName == "INPUT" ? "inputSuccess" : "selectSuccess"
 }
+
+
+// RESPONSIVIDADE
+function abrir_sidebar() {
+    let sanduiche = document.getElementById("sanduiche")
+    let nav = document.querySelector("nav")
+
+    if(sanduiche.innerHTML == "menu") {
+        nav.className = "open_nav"
+        sanduiche.innerHTML = "close"
+    } else {
+        nav.className = ""
+        sanduiche.innerHTML = "menu"
+    }
+}
+
+
+// USUÁRIO
+function usuario() {
+    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario_autenticado = document.querySelector("#usuario_autenticado p")
+  
+    if(usuario == null) {
+        usuario_autenticado.innerHTML = "Usuário não identificado"
+    } else {
+        usuario_autenticado.innerHTML = usuario.nome
+    }
+  }

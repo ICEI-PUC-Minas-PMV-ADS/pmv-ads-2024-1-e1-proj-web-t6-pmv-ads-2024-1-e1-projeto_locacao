@@ -273,7 +273,8 @@
             <label for="nome">NOME</label>
             <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
             <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf_filtro" class="inputSuccess">
+            <input type="text" name="cpf" id="cpf_filtro" class="inputSuccess" maxlength="14" onkeyup="return mascara_cpf(this)" placeholder="xxx.xxx.xxx-xx">
+
             
             <!-- Status  -->
             <section class="section_status">
