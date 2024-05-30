@@ -39,42 +39,47 @@
     </div> 
   </header>
   <div class="content">
-    <nav>
+    <nav id="sidebar">
       <div class="sidebar_superior">
+        <button class="button_menu" onclick="abrir_sidebar()">
+          <div class="icon">
+            <i id="sanduiche" class="material-icons">menu</i>
+          </div>
+        </button>
         <hr class="divisor" />
         <button class="sidebar_button" onclick="location.href ='../dashboard_page/dashboard_page.html'">
           <img class="icon" src="../src/icones/icon_dashboard.png" alt="ícone com desenho de uma casa" />
-          <p>Dashboard</p>
+          <p class="descricao">Dashboard</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
           <img class="icon" src="../src/icones/icon_proprietarios.png"
             alt="ícone com desenho de uma mão sendo estendida" />
-          <p>Proprietários</p>
+          <p class="descricao">Proprietários</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
           <img class="icon" src="../src/icones/icon_locatarios.png"
             alt="ícone com desenho de uma casa e um boneco, representando uma pessoa, a frente da casa" />
-          <p>Locatários</p>
+          <p class="descricao">Locatários</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
           <img class="icon" src="../src/icones/icon_imoveis.png"
             alt="ícone com desenho de uma casa e um papel, que parece representar um contrato" />
-          <p>Imóveis</p>
+          <p class="descricao">Imóveis</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
           <img class="icon" src="../src/icones/icon_contratos.png"
             alt="ícone com desenho de um papel, que parece representar um contrato" />
-          <p>Contratos</p>
+          <p class="descricao">Contratos</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
           <img class="icon" src="../src/icones/icon_faturas.png"
             alt="ícone com desenho de um papel com cifrão no meio" />
-          <p>Faturas</p>
+          <p class="descricao">Faturas</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
           <img class="icon" src="../src/icones/icon_requisicoes.png"
             alt="ícone com desenho de um papel com formulário" />
-          <p>Requisições</p>
+          <p class="descricao">Requisições</p>
         </button>
       </div>
       <div class="sidebar_inferior">
@@ -84,7 +89,7 @@
           <img class="icon" src="../src/icones/icon_usuarios_selecionado.png"
             alt="ícone com desenho da silueta de um boneco" />
 
-          <p>Usuários</p>
+          <p class="descricao">Usuários</p>
         </button>
       </div>
     </nav>
@@ -133,7 +138,7 @@
               <option value="master">Master</option>
             </select>
           </div>
-          <div id="div_nome" class="areas"><!--POSSO TIRAR ISSO?-->
+          <div id="div_nome" class="areas">
             <label for="nome">NOME</label>
             <input type="text" name="nome" id="nome_filtrar" class="inputSuccess" />
           </div>

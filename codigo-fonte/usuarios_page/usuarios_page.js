@@ -625,3 +625,17 @@ function show_snackbar(element, message) {
 function set_input_success(e) {
     e.className = e.tagName == "INPUT" ? "inputSuccess" : "selectSuccess"
 }
+
+// abrir e fechar menu lateral
+function abrir_sidebar() {
+    let sanduiche = document.getElementById("sanduiche")
+    let nav = document.querySelector("nav")
+
+    if(sanduiche.innerHTML == "menu") {
+        nav.className = "open_nav"
+        sanduiche.innerHTML = "close"
+    } else {
+        nav.className = ""
+        sanduiche.innerHTML = "menu"
+    }
+}
