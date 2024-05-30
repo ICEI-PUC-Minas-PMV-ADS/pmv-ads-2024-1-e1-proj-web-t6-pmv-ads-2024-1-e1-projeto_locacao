@@ -314,7 +314,10 @@ function filtrar_locatario() {
     console.log(id)
     let nome = document.getElementById("nome_filtro").value
     console.log(nome)
-    let cpf = document.getElementById("cpf_filtro").value
+    let cpf = document.getElementById("cpf_filtro").value.replace(/\D/g, '')
+
+
+
     console.log(cpf)    
     let status_todos = document.getElementById("status_todos").checked ? document.getElementById("status_todos").value : null
         let status_ativo = document.getElementById("status_ativo").checked ? document.getElementById("status_ativo").value : null
@@ -689,9 +692,9 @@ function salvar_dados_locatario() {
         })
 
         localStorage.setItem("locatarios", JSON.stringify(locatariosList))
-
         filtrar_locatario()
     }
+    show_snackbar("#popup_dados_locatario #snackbar_success", "Cadastro de locatário atualizado com sucesso!")
 }
 
 
@@ -770,11 +773,13 @@ function verifica_cpf(e) {
         show_snackbar(`#${id_popup} #snackbar_error`, 'O CPF informado não é válido!')
     } else {
         e.className = 'inputSuccess'
+        
     }
 }
 
 function set_input_success(e) {
     e.className = e.tagName == "INPUT" ? "inputSuccess" : "selectSuccess"
+    
 }
 
 

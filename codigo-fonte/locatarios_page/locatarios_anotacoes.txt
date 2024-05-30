@@ -1,10 +1,8 @@
 ----------------------------------------------------------------------------
 PRÓXIMA FASE
-- Incluir a informação "STATUS" na popup dados do locatário;
-- Colocar a cor de destaque de "STATUS" forma dinâmica;
-- Efetivar o CRUD no JS;
 - Incluir barra de rolagem lateral
-- Corrigir tela de consulta (está como campo de preenchimento)
+- Quando altera o locatário não aparece mensagem de confirmação nem volta para a tela anterior.
+    Inclui na linha 694.
 
 
 ----------------------------------------------------------------------------
@@ -28,12 +26,10 @@ https://replit.com/@eduardowollinge/Cadastro-de-Contatos-localStorage-1#lista_co
 
 
 
-- POPUP NOVO LOCATARIO
-- excluir 
-    - readonly
-    - botão alterar > salvar (somente salvar)
-    - disable do select
-    - função alterar dados locatário
-    - popup no HTML
-- crar
-    - criar função para gerar novo número de id
+- LOCATARIOS
+- Bug nos filtros
+    - Não encontra pelo nome;
+    - Não encontra pelo CPF
+
+
+

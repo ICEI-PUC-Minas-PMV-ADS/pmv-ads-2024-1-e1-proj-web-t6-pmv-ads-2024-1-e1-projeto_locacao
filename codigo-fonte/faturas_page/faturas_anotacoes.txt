@@ -2,11 +2,6 @@
 
 
 - Na Visualização da tela tive que incluir os seguintes campos:
-    - ID LOCATÁRIO (RENOMEADA)
-    - ID FATURA (INCLUSÃO)
-    - PERÍODO INÍCIO (INCLUSÃO)
-    - PERÍODO FIM (RENOMEADA)
-    
 
 - NO BANCO DE DADOS
-- 
+    -  Não estou conseguindo alterar o banco de dados para incluir a data de pagamento
