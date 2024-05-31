@@ -76,13 +76,13 @@ function abrirModalFiltro() {
 
     <div class="checar">
         
-        <label class="switch">
+        <label  >
             <input type="radio" name="escolha" value="todos" checked ><h7>TODOS</h7>
         </label>
-        <label class="switch">
+        <label  >
             <input type="radio" name="escolha" value="ativo"><h7>ATIVO</h7>
         </label>
-        <label class="switch">
+        <label  >
             <input type="radio" name="escolha" value="inativo"><h7>INATIVO</h7>
         </label>  
           
@@ -123,10 +123,10 @@ function abrirModalAdicao() {
 
     <div class="alinhamento-a">
         <label class="titulos" for="endereco">Período <hr> 
-            <input type="text" name="periodo" id="periodo">
+            <input type="number" name="periodo" id="periodo" placeholder="Período em meses">
         </label>
         <label class="titulos" for="valor_mensal">Valor Mensal <hr> 
-            <input type="text" name="valor_mensal" id="valor_mensal">
+            <input type="number"  name="valor_mensal" id="valor_mensal" step=".01">
         </label>
     </div>
 
@@ -157,23 +157,29 @@ function adicionarContrato() {
     let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
     let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
     tamanho = contratos.length
-    if (locatario=""){vazio("locatario")}
 
+    if (locatario=="" || endereco=="" ||periodo=="" || valor_mensal=="" || data_inicio==""){
+        var a =1
+        alert("falta preencher algum campo")
+    }
 
-    contratos.push(
-        {
-            "id": tamanho + 1,
-            "locatario": locatario,
-            "endereco": endereco,
-            "periodo": periodo,
-            "valor_mensal": valor_mensal,
-            "data_inicio":data_inicio,
-            "status":"ativo"
-        }
-    )
-    fecharModal()
-    carregarBancoContratos()
-    console.log(contratos)
+    else {
+        contratos.push(
+            {
+                "id": tamanho + 1,
+                "locatario": locatario,
+                "endereco": endereco,   
+                "periodo": periodo,
+                "valor_mensal": valor_mensal,
+                "data_inicio":data_inicio,
+                "status":"ativo"
+            }
+        )
+        fecharModal()
+        carregarBancoContratos()
+        console.log(contratos)
+    }
+    
 
 
 }
@@ -251,6 +257,7 @@ function filtrarContratos() {
   </div>`
 
     }
+    fecharModal()
 
 
 }
@@ -277,7 +284,7 @@ function carregarBancoContratos() {
       </div>  
   
       <div class="table_property" id="tempo">
-          ${contratos[i].periodo}
+          ${contratos[i].periodo} Meses
       </div>
   
       <div class="table_status" id="mensalidade">

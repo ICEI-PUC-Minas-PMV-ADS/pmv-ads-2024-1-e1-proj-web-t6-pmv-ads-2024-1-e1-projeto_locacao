@@ -328,7 +328,7 @@ function abrirModalAdicao() {
         <div class="c">
             <div>
                 <label for="cep" id="label7">CEP</label><br>
-                <input type="text" , id="cep">
+                <input type="text" , id="cep", type="number", onchange="cepMascara()">
             </div>
             <div>
                 <label for="uf" id="label8">UF</label><br>
@@ -357,8 +357,20 @@ function abrirModalAdicao() {
             <button id="voltar_principal" onclick="fecharModal()"> <img src="../src/icones/voltar.png" alt=""> </button>
             <button onclick="novoImovel()"> <img src="../src/icones/salvar.png" alt=""> </button>
         </div>`
+        
 
 }
+
+function cepMascara() {
+  cep = document.getElementById("cep")
+  if (cep.value.length == 5) {
+      cep.value = cep.value + '-' 
+  }
+}
+
+
+
+
 
 function novoImovel() {
   var lenghtImoveis = imoveis.length
