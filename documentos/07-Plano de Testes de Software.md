@@ -9,6 +9,17 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ---
 
 ### RF-02 LOGIN / PRIMEIRO ACESSO (SOCRÁTIS)
+|Caso de Teste    | CT-X - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário |
+|:-----------------| :------------|
+|Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
+|Passos   | Seguir os seguintes passos:|
+|         | 01 - Acessar o navegador.|
+|         | 02 - Informar o endereço da aplicação|
+|         | 03 - Informar o e-mail do usuário cadastrado e senha padrão (123)|
+|         | 04 - Clicar no botão ENTRAR para acessar a tela de Primeiro Acesso|
+|         | 05 - Informar a senha padrão novamente e cadastrar a senha personalizada conforme os critérios de segurança|
+|Critérios de êxito | Todos os links das páginas (Login/Primeiro Acesso/Dashboard) devem encaminhar os usuários para as páginas descritas e o cadastramento de nova senha deve ser salva com êxito no banco de dados.|
+|Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva|
 ---
 
 ### RF-03 IMÓVEIS (ZANDER)
