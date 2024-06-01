@@ -97,7 +97,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ### RF-07 FATURAS (EDUARDO)
 ---
 
-RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (SÓCRATIS/PEDRO)
+### RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (SÓCRATIS/PEDRO)
 |Caso de Teste    | CT-X - Verificar a geração de alertas das faturas com vencimentos próximos e faturas vencidas|
 |:-----------------| :------------|
 |Requisitos Associados | RF-08 - A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel.|
