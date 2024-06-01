@@ -8,30 +8,30 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ### RF-01 USUÁRIOS (THÁSSIA)
 ---
 
-### RF-02 LOGIN / PRIMEIRO ACESSO (SOCRÁTIS)
-|### Caso de Teste    | CT-X - Verificar Funcionamento do link ESQUECI MINHA SENHA na tela de Login|
+####  RF-02 LOGIN / PRIMEIRO ACESSO (SOCRÁTIS)
+|Caso de Teste    | CT-X - Verificar Funcionamento do link ESQUECI MINHA SENHA na tela de Login|
 |:-----------------| :------------|
-|### Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
-|### Passos   | Seguir os seguintes passos:|
+|Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
+|Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o navegador.|
 |         | 02 - Informar o endereço da aplicação|
 |         | 03 - Informar o e-mail do usuário cadastrado|
 |         | 04 - Clicar no link ESQUECI MINHA SENHA|
 |         | 05 - Informar o e-mail cadastrado novamente e clicar em ENVIAR SENHA|
-|### Critérios de êxito | Ao informar que esqueceu a senha e clicar em ENVIAR SENHA, a senha esquecida será resetada e enviada a senha padrão (123) para o e-mail cadastrado.|
-|### Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva|
+|Critérios de êxito | Ao informar que esqueceu a senha e clicar em ENVIAR SENHA, a senha esquecida será resetada e enviada a senha padrão (123) para o e-mail cadastrado.|
+|Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva|
 
-|### Caso de Teste    | CT-X - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário |
+|Caso de Teste    | CT-X - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário |
 |:-----------------| :------------|
-|### Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
-|### Passos   | Seguir os seguintes passos:|
+|Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
+|Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o navegador.|
 |         | 02 - Informar o endereço da aplicação|
 |         | 03 - Informar o e-mail do usuário cadastrado e senha padrão (123)|
 |         | 04 - Clicar no botão ENTRAR para acessar a tela de Primeiro Acesso|
 |         | 05 - Informar a senha padrão novamente e cadastrar a senha personalizada conforme os critérios de segurança|
-|### Critérios de êxito | Após o cadastramento da nova senha, o usuário poderá acessar a tela de Dashboard da aplicação.|
-|### Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva|
+|Critérios de êxito | Após o cadastramento da nova senha, o usuário poderá acessar a tela de Dashboard da aplicação.|
+|Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva|
 ---
 
 ### RF-03 IMÓVEIS (ZANDER)
@@ -97,26 +97,26 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ### RF-07 FATURAS (EDUARDO)
 ---
 
-### RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (SÓCRATIS/PEDRO)
-|### Requisitos Associados | RF-08 - A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel.|
-|### Passos   | Seguir os seguintes passos:|
+RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (SÓCRATIS/PEDRO)
+|Requisitos Associados | RF-08 - A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel.|
+|Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o aplicativo ImmoControl.|
 |         | 02 - Verificar no campo inferior direito os alertas de vencimentos e faturas vencidas|
-|### Critérios de êxito | Após a visualização dos alertas de vencimentos ou vencidas no Dashboard, as mesmas podem ser confirmadas ou conferidas clicando no botão Faturas no sidebar localizado à direita da tela.|
-|### Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva e Pedro Francis|
+|Critérios de êxito | Após a visualização dos alertas de vencimentos ou vencidas no Dashboard, as mesmas podem ser confirmadas ou conferidas clicando no botão Faturas no sidebar localizado à direita da tela.|
+|Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva e Pedro Francis|
 ---
 
 ### RF-09 REQUISIÇÕES (ISMARLEI)
 ---
 
 ### RF-10 DASHBOARD (SÓCRATIS/PEDRO)
-|### Requisitos Associados | RF-02 -  A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária e verificar se osbotões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente.|
-|### Passos   | Seguir os seguintes passos:|
+|Requisitos Associados | RF-02 -  A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária e verificar se osbotões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente.|
+|Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o aplicativo ImmoControl.|
 |         | 02 - Analisar o gráfico de faturamento mês a mês no campo superior do Dashboard, verificar o gráfico de vacância física de imóveis no campo inferior direito e visualizar os alertas de vencimentos e faturas vencidas no campo inferior direito da tela.|
 |         | 03 - Clicar nos botões do Sidebar do Dashboard.|
-|### Critérios de êxito |  Após a visualização  das informações gráficas no Dashboard, as mesmas podem ser confirmadas ou conferidas clicando nos botões do Sidebar, que por sua vez deve encaminhar os usuários para as telas descritas.|
-|### Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva e Pedro Francis|
+|Critérios de êxito |  Após a visualização  das informações gráficas no Dashboard, as mesmas podem ser confirmadas ou conferidas clicando nos botões do Sidebar, que por sua vez deve encaminhar os usuários para as telas descritas.|
+|Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva e Pedro Francis|
 ---
 
 ---
