@@ -18,16 +18,53 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ---
 
 ### RF-05 LOCATÁRIOS (EDUARDO)
-|Caso de Teste    | CT-X - Verificar Funcionamento Módulo Locatários|
+|Caso de Teste    | CT-X - Verificar Funcionamento dos Links do Módulo Locatários|
 |:-----------------| :------------|
 |Requisitos Associados | RF-05 -  aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.|
 |Passos   | Seguir os seguintes passos:|
-|         | 01 - Acessar o aplicativo ImmoControl.|
+|         | 01 - Acessar o aplicativo ImmoControl|
+|         | 02 - No Menu lateral esquero clicar na opção "Locatários|
 |         | 03 - Clicar no botão para visualizar os dados de cada locatário|
 |         | 04 - Clicar no botão para filtrar os dados de locatário|
 |         | 05 - Clicar no botão para cadastrar novo locatário|
-|Critérios de êxito | Todos os links da página Home devem encaminhar os usuários para as páginas descritas.|
+|Critérios de êxito | Todos os links da página devem encaminhar os usuários para as páginas descritas.|
 |Responsável pela elaboração do caso de Teste | Eduardo Wollinger|
+
+|Caso de Teste    | CT-X - Verificar Funcionamento Módulo Locatários: Função Filtrar|
+|:-----------------| :------------|
+|Requisitos Associados | RF-05 -  aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.|
+|Passos   | Seguir os seguintes passos:|
+|         | 01 - A partir da tela inicial do Módulo Locatários|
+|         | 02 - Clicar no botão para filtrar os dados de locatário|
+|         | 03 - Digitar no filtro de pesquisa algum(ns) dado(s) presente(s) na página de filtros e verificar se o resultado é exibido na página.|
+|         | 04 - Clicar em Filtrar|
+|Critérios de êxito | Os dados inseridos no filtro de pesquisa devem apresentar na tela pincipal os locatários que correspondem aos dados inseridos.|
+|Responsável pela elaboração do caso de Teste | Eduardo Wollinger|
+
+|Caso de Teste    | CT-X - Verificar Funcionamento Módulo Locatários: Função Cadastrar|
+|:-----------------| :------------|
+|Requisitos Associados | RF-05 -  aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.|
+|Passos   | Seguir os seguintes passos:|
+|         | 01 - A partir da tela inicial do Módulo Locatários|
+|         | 02 - Clicar no botão para cadastrar novo locatário|
+|         | 03 - Preencher todos os campos com os respectivos dados de um locatário fictício|
+|         | 04 - Clicar em Cadastrar|
+|Critérios de êxito | O sistema deverá apresentar na tela principal linha contendo o locatário recém cadastrado|
+|Responsável pela elaboração do caso de Teste | Eduardo Wollinger|
+
+|Caso de Teste    | CT-X - Verificar Funcionamento Módulo Locatários: Função Alterar|
+|:-----------------| :------------|
+|Requisitos Associados | RF-05 -  aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.|
+|Passos   | Seguir os seguintes passos:|
+|         | 01 - A partir da tela inicial do Módulo Locatários|
+|         | 02 - Clicar no botão para visualizar dados de locatário|
+|         | 03 - Clicar em Alterar|
+|         | 03 - Alterar alguns campos com os dados do locatário |
+|         | 04 - Clicar em Salvar|
+|Critérios de êxito | O sistema deverá apresentar uma popup informando que os dados foram alterados com sucesso|
+|Responsável pela elaboração do caso de Teste | Eduardo Wollinger|
+
+
  
 ---
 
