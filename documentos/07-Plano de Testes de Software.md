@@ -18,18 +18,18 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ---
 
 ### RF-05 LOCATÁRIOS (EDUARDO)
-|Caso de Teste    | CT-X - Verificar Funcionamento Módulo Locatários|
-|:---|:---|
-| Requisitos Associados | RF-05 -  aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.|
-| Objetivo do Teste | Verificar se os links da página estão encaminhando para as respectivas páginas corretamente |
-| Passos   | Seguir os seguintes passos:|
-| Passo 01 | Acessar o aplicativo ImmoControl.|
-| Passo 02 | No Menu lateral esquero clicar na opção "Locatários|
-| Passo 03 | Clicar no botão para visualizar os dados de cada locatário|
-| Passo 04 | Clicar no botão para filtrar os dados de locatário|
-| Passo 03 | Clicar no botão para cadastrar novo locatário|
-| Critérios de êxito | Todos os links da página Home devem encaminhar os usuários para as páginas descritas.|
-| Responsável pela elaboração do caso de Teste | Eduardo Wollinger|
+Caso de Teste    | CT-X - Verificar Funcionamento Módulo Locatários
+-----------------| ------------
+Requisitos Associados | RF-05 -  aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.
+Objetivo do Teste | Verificar se os links da página estão encaminhando para as respectivas páginas corretamente
+Passos   | Seguir os seguintes passos:
+         | 01 - Acessar o aplicativo ImmoControl.
+         | 02 - No Menu lateral esquero clicar na opção "Locatários
+         | 03 - Clicar no botão para visualizar os dados de cada locatário
+         | 04 - Clicar no botão para filtrar os dados de locatário
+         | 05 - Clicar no botão para cadastrar novo locatário
+Critérios de êxito | Todos os links da página Home devem encaminhar os usuários para as páginas descritas.
+Responsável pela elaboração do caso de Teste | Eduardo Wollinger
  
 ---
 
