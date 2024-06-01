@@ -98,6 +98,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ---
 
 RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (SÓCRATIS/PEDRO)
+|Caso de Teste    | CT-X - Verificar a geração de alertas das faturas com vencimentos próximos e faturas vencidas|
+|:-----------------| :------------|
 |Requisitos Associados | RF-08 - A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel.|
 |Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o aplicativo ImmoControl.|
@@ -110,7 +112,9 @@ RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (SÓCRATIS/PEDRO)
 ---
 
 ### RF-10 DASHBOARD (SÓCRATIS/PEDRO)
-|Requisitos Associados | RF-02 -  A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária e verificar se osbotões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente.|
+|Caso de Teste    | CT-X - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente.|
+|:-----------------| :------------|
+|Requisitos Associados | RF-02 -  A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária|
 |Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o aplicativo ImmoControl.|
 |         | 02 - Analisar o gráfico de faturamento mês a mês no campo superior do Dashboard, verificar o gráfico de vacância física de imóveis no campo inferior direito e visualizar os alertas de vencimentos e faturas vencidas no campo inferior direito da tela.|
