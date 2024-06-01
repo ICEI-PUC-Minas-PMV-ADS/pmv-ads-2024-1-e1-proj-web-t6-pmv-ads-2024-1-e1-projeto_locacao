@@ -9,7 +9,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ---
 
 ####  RF-02 LOGIN / PRIMEIRO ACESSO (SOCRÁTIS)
-|Caso de Teste    | CT-X - Verificar Funcionamento do link Esqueci Minha Senha na tela de Login|
+|Caso de Teste    | CT-X - Verificar funcionamento do link Esqueci Minha Senha na tela de Login|
 |:-----------------| :------------|
 |Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
 |Passos   | Seguir os seguintes passos:|
