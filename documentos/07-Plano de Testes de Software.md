@@ -9,16 +9,16 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 ---
 
 ####  RF-02 LOGIN / PRIMEIRO ACESSO (SOCRÁTIS)
-|Caso de Teste    | CT-X - Verificar Funcionamento do link ESQUECI MINHA SENHA na tela de Login|
+|Caso de Teste    | CT-X - Verificar Funcionamento do link Esqueci Minha Senha na tela de Login|
 |:-----------------| :------------|
 |Requisitos Associados | RF-02 -  A aplicação deve permitir ao usuário fazer o login em sua conta.|
 |Passos   | Seguir os seguintes passos:|
 |         | 01 - Acessar o navegador.|
 |         | 02 - Informar o endereço da aplicação|
 |         | 03 - Informar o e-mail do usuário cadastrado|
-|         | 04 - Clicar no link ESQUECI MINHA SENHA|
-|         | 05 - Informar o e-mail cadastrado novamente e clicar em ENVIAR SENHA|
-|Critérios de êxito | Ao informar que esqueceu a senha e clicar em ENVIAR SENHA, a senha esquecida será resetada e enviada a senha padrão (123) para o e-mail cadastrado.|
+|         | 04 - Clicar no link Esqueci Minha Senha|
+|         | 05 - Informar o e-mail cadastrado novamente e clicar em Enviar Senha|
+|Critérios de êxito | Ao informar que esqueceu a senha e clicar em Enviar Senha, a senha esquecida será resetada e enviada a senha padrão (123) para o e-mail cadastrado.|
 |Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva|
 
 |Caso de Teste    | CT-X - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário |
