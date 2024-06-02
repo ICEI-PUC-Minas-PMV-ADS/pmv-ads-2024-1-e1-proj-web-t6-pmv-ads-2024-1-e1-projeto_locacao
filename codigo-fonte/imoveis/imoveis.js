@@ -74,7 +74,7 @@ function fecharModal() {
 }
 
 function abrirModalFiltro() {
-  
+
   ElementoFade.classList.add("escuro");
   dialog.setAttribute('open', 'true');
   dialog.innerHTML = `
@@ -87,7 +87,7 @@ function abrirModalFiltro() {
   <div class="id_tipo">
       <div class="id">
           <label for="id">ID</label><br>
-          <input type="text" id="id" name="id">
+          <input type="number" id="id" name="id">
       </div>
 
 
@@ -112,7 +112,7 @@ function abrirModalFiltro() {
 
       <div class="cep">
           <label for="cep">CEP</label><br>
-          <input type="text" name="cep" id="cep">
+          <input type="text" name="cep" maxlength="9" onkeyup="handleZipCode(event)" id="cep">
       </div>
 
 
@@ -172,7 +172,7 @@ function abrirModalFiltro() {
 function filtrarImoveis() {
 
   var elementoLista = document.getElementById('table_list');
-  elementoLista.innerHTML=""
+  elementoLista.innerHTML = ""
   var filtrado = imoveis;
   var identifier;
   //var texto = '';
@@ -204,61 +204,70 @@ function filtrarImoveis() {
   }
 
   if (cidade != "") {
-    filtrado = filtrado.filter((imovel) => imovel.cidade.includes( cidade));
+    filtrado = filtrado.filter((imovel) => imovel.cidade.includes(cidade));
   }
 
   if (cep != "") {
     filtrado = filtrado.filter((imovel) => imovel.cep == cep);
   }
   console.log(status)
-  if (status == "ativo" || status=="inativo") {
+  if (status == "ativo" || status == "inativo") {
 
     filtrado = filtrado.filter((imovel) => imovel.status == status);
   }
-  if (vacancia == "locado" || vacancia=="vago") {
+  if (vacancia == "locado" || vacancia == "vago") {
     filtrado = filtrado.filter((imovel) => imovel.vacancia == vacancia);
   }
-  
-  
+
+
   //localStorage.setItem("imoveiss", JSON.stringify(imoveiss));
+  if (filtrado.length == 0) {
+    fecharModal()
+    alert('imóveis não encontrados')
+    iniciar_banco_imoveis()
+  }
 
-  for (let i = 0; i < filtrado.length; i++) {
-    identifier = filtrado[i].id
-    elementoLista.innerHTML += `<div class="div_table_row"> 
-      <div class="table_icon1">
-        <img 
-          class="icon"
-          src="../src/icones/icon_imoveis_selecionado.png"
-          alt=""
-        />
-      </div>
-
-      <div class="table_id">${filtrado[i].id}</div>
-
-      <div class="table_name">${filtrado[i].tipo_imovel}</div>
-
-      <div class="table_property">${filtrado[i].tipo_logradouro} ${filtrado[i].logradouro}, ${filtrado[i].numero}, ${filtrado[i].complemento}</div>
-
-      <div class="table_status">${filtrado[i].vacancia}</div>
-
-      <div class="table_status">${filtrado[i].status}</div>
-
-      <div class="table_button">
-        <button
-          class="open_button"
-          onclick="abrirModalAlteracao(${identifier})"
-        >
-          <img
-            class="open_icon"
-            src="../src/icones/icon_ver_dados.png"
+  else {
+    for (let i = 0; i < filtrado.length; i++) {
+      identifier = filtrado[i].id
+      elementoLista.innerHTML += `<div class="div_table_row"> 
+        <div class="table_icon1">
+          <img 
+            class="icon"
+            src="../src/icones/icon_imoveis_selecionado.png"
             alt=""
           />
-        </button>
-      </div>
-      </div>`
+        </div>
+  
+        <div class="table_id">${filtrado[i].id}</div>
+  
+        <div class="table_name">${filtrado[i].tipo_imovel}</div>
+  
+        <div class="table_property">${filtrado[i].tipo_logradouro} ${filtrado[i].logradouro}, ${filtrado[i].numero}, ${filtrado[i].complemento}</div>
+  
+        <div class="table_status">${filtrado[i].vacancia}</div>
+  
+        <div class="table_status">${filtrado[i].status}</div>
+  
+        <div class="table_button">
+          <button
+            class="open_button"
+            onclick="abrirModalAlteracao(${identifier})"
+          >
+            <img
+              class="open_icon"
+              src="../src/icones/icon_ver_dados.png"
+              alt=""
+            />
+          </button>
+        </div>
+        </div>`
 
+    }
+    fecharModal()
   }
-  fecharModal( )
+
+
 
 
 }
@@ -357,7 +366,7 @@ function abrirModalAdicao() {
             <button id="voltar_principal" onclick="fecharModal()"> <img src="../src/icones/voltar.png" alt=""> </button>
             <button onclick="novoImovel()"> <img src="../src/icones/salvar.png" alt=""> </button>
         </div>`
-        
+
 
 }
 
@@ -368,8 +377,8 @@ const handleZipCode = (event) => {
 
 const zipCodeMask = (value) => {
   if (!value) return ""
-  value = value.replace(/\D/g,'')
-  value = value.replace(/(\d{5})(\d)/,'$1-$2')
+  value = value.replace(/\D/g, '')
+  value = value.replace(/(\d{5})(\d)/, '$1-$2')
   return value
 }
 
@@ -419,7 +428,7 @@ function novoImovel() {
 
 
 function abrirModalAlteracao(identifier) {
-  dialog.innerHTML=""
+  dialog.innerHTML = ""
   ElementoFade.classList.add("escuro");
   dialog.setAttribute('open', 'true');
   dialog.classList.add('adicao');
@@ -445,11 +454,11 @@ function abrirModalAlteracao(identifier) {
         <div class="a1">
             <label for="tipoLogradouroo">Tipo Logradouro</label>
             <br>
-            <input type="text" id="tipoLogradouro" value="${imoveis[identifier-1].tipo_logradouro}">
+            <input type="text" id="tipoLogradouro" value="${imoveis[identifier - 1].tipo_logradouro}">
         </div>
         <div class="a2">
             <label for="Logradouro" id="label2">Logradouro</label><br>
-            <input type="text"  id="Logradouro" value="${imoveis[identifier-1].logradouro}">
+            <input type="text"  id="Logradouro" value="${imoveis[identifier - 1].logradouro}">
         </div>
         <div class="a3">
             <label for="numero" id="label3">Número</label><br>
@@ -530,13 +539,13 @@ function abrirModalAlteracao(identifier) {
 
   }
 
-  
+
   var selectComecial = document.getElementById('comercial');
   var selectResidencial = document.getElementById('residencial')
-  if(imoveis[identifier - 1].tipo_imovel=="comercial"){
-    selectComecial.selected=true
+  if (imoveis[identifier - 1].tipo_imovel == "comercial") {
+    selectComecial.selected = true
   }
-  else{ selectResidencial.selected=true}
+  else { selectResidencial.selected = true }
 
 
 }
@@ -553,7 +562,7 @@ function valorSlider(identifier) {
   }
 
   else {
-    
+
     h4.textContent = "inativo"
     imoveis[identifier - 1].status = "inativo"
   }
@@ -564,7 +573,7 @@ function valorSlider(identifier) {
 function salvarAlteracaoImovel(identifier) {
 
   console.log("entrou em salvar")
-  
+
   var tipoLogradouro = document.getElementById('tipoLogradouro').value;
   var logradouro = document.getElementById('Logradouro').value
   var tipo_imovel = document.getElementById('tipo').value;
@@ -578,28 +587,28 @@ function salvarAlteracaoImovel(identifier) {
   console.log(tipoLogradouro)
   console.log(status)
   console.log(complemento)
-  
-  imoveis[identifier-1].tipo_imovel = tipo_imovel;
-  imoveis[identifier-1].tipo_logradouro = tipoLogradouro;
-  imoveis[identifier-1].logradouro= logradouro;
-  imoveis[identifier-1].numero = numero;
-  imoveis[identifier-1].complemento = complemento;
-  imoveis[identifier-1].bairro = bairro;
-  imoveis[identifier-1].cidade = cidade;
-  imoveis[identifier-1].cep = cep;
-  imoveis[identifier-1].uf = uf;
 
-  if(status){
-    imoveis[identifier-1].status = "ativo";
+  imoveis[identifier - 1].tipo_imovel = tipo_imovel;
+  imoveis[identifier - 1].tipo_logradouro = tipoLogradouro;
+  imoveis[identifier - 1].logradouro = logradouro;
+  imoveis[identifier - 1].numero = numero;
+  imoveis[identifier - 1].complemento = complemento;
+  imoveis[identifier - 1].bairro = bairro;
+  imoveis[identifier - 1].cidade = cidade;
+  imoveis[identifier - 1].cep = cep;
+  imoveis[identifier - 1].uf = uf;
+
+  if (status) {
+    imoveis[identifier - 1].status = "ativo";
   }
-  else{
-    imoveis[identifier-1].status = "inativo";
+  else {
+    imoveis[identifier - 1].status = "inativo";
   }
 
   fecharModal()
   iniciar_banco_imoveis()
 
- 
+
 }
 
 
