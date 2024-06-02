@@ -149,6 +149,49 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 ### RF-04 PROPRIETÁRIOS (PEDRO)
 
+| Caso de Teste                                | CT-X - Verificar Funcionamento dos botões na Página de Proprietários                     |
+| :------------------------------------------- | :-------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-04 - A aplicação deve permitir ao usuário cadastrar/alterar/pesquisar informações dos proprietários. |
+| Passos                                       | Seguir os seguintes passos:                                                       |
+|                                              | 01 - Clicar nos botões do sidebar a fim de verificar se todos encaminham para as páginas referenciadas.                                            |
+|                                              | 02 - Clicar no botão para visualizar os dados de cada proprietário e verificar se o popup abrirá.                   |
+|                                              | 03 - Clicar no botão para filtrar os proprietários e verificar se o popup abrirá.                           |
+|                                              | 04 - Clicar no botão para cadastrar um novo proprietário e verificar se o popup abrirá.                                |
+| Critérios de êxito                           | Todos os botões do sidebar devem encaminhar o usuárioa para a página referenciada e os botões de ação devem abrir os popups corretos.  |
+| Responsável pela elaboração do caso de Teste | Pedro Francis Maia Coelho                                                                |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento do Filtro de Proprietários|
+| :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| Requisitos Associados                        | RF-05 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.|
+| Passos                                       | Seguir os seguintes passos:|
+|                                              | 01 - Na tela de Proprieários|
+|                                              | 02 - Clicar no botão para abrir o popup de filtros.|
+|                                              | 03 - Preencher os campos de filtros existentes. |
+|                                              | 04 - Clicar no botão filtrar.|
+| Critérios de êxito                           | A tabela drecarregará atendendo os filtros informados ou aparecerá mensagem de erro caso não tenha sido encontrado proprietário correspondente aos filtros informados.|
+| Responsável pela elaboração do caso de Teste | Pedro Francis Maia Coelho|
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento do Cadastro de Proprietários                     |
+| :------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-05 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.         |
+| Passos                                       | Seguir os seguintes passos:                                                               |
+|                                              | 01 - Clicar no botão para cadastrar novo proprietário                                        |
+|                                              | 02 - Preencher todos os campos com os respectivos dados de um proprietário fictício          |
+|                                              | 03 - Clicar em Cadastrar                                                                  |
+| Critérios de êxito                           | A tabela recarregará mostrando o proprietário recém cadastrado ou aparecerá mensagem de erro infomando ao usuário alguma falha ao preencher os campos.|
+| Responsável pela elaboração do caso de Teste | Pedro Francis Maia Coelho                                                                         |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento da Alteração de Proprietários                          |
+| :------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-05 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos.         |
+| Passos                                       | Seguir os seguintes passos:                                                               |
+|                                              | 01 - Clicar no botão para visualizar dados de algum proprietário                                        |
+|                                              | 02 - Clicar em Alterar                                    |
+|                                              | 03 - Alterar alguns campos com os dados diferentes. |
+|                                              | 04 - Clicar em Salvar                                                                     |
+| Critérios de êxito                           | Se o salvamento tiver êxito uma mensagem de sucesso aparecerá na tela. Caso caso contrário aparecerá mensagem de erro infomando ao usuário alguma falha ao preencher os campos. |
+| Responsável pela elaboração do caso de Teste | Pedro Francis Maia Coelho                                                                      |
+
 ---
 
 ### RF-05 LOCATÁRIOS (EDUARDO)
@@ -218,7 +261,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 |                                              | 01 - Acessar o aplicativo ImmoControl.                                                                                                                                                    |
 |                                              | 02 - Verificar no campo inferior direito os alertas de vencimentos e faturas vencidas                                                                                                     |
 | Critérios de êxito                           | Após a visualização dos alertas de vencimentos ou vencidas no Dashboard, as mesmas podem ser confirmadas ou conferidas clicando no botão Faturas no sidebar localizado à direita da tela. |
-| Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva e Pedro Francis                                                                                                                                                   |
+| Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva e Pedro Francis Maia Coelho                                                                                                                                                   |
 
 ---
 
@@ -242,10 +285,3 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 ---
 
-> **Links Úteis (devemos excluir este item?)**:
->
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
