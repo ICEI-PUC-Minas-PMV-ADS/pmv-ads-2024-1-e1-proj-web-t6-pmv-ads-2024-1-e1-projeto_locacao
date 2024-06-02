@@ -4,8 +4,8 @@ contratos = [
         id: 1,
         locatario: "josé da silva",
         endereco: "rua são josé, centro",
-        periodo: "12 meses",
-        valor_mensal: "600,00",
+        periodo: "12",
+        valor_mensal: 600.00,
         data_inicio: "2024-03-23",
         status: "ativo",
         proprietario: "marcos"
@@ -14,8 +14,8 @@ contratos = [
         id: 2,
         locatario: "fernando abreu",
         endereco: "rua das nações, observatorio",
-        periodo: "6 meses",
-        valor_mensal: "1600,00",
+        periodo: "6",
+        valor_mensal: 1600.00,
         data_inicio: "2020-05-06",
         status: "inativo",
         proprietario: "vinicius"
@@ -24,8 +24,8 @@ contratos = [
         id: 3,
         locatario: "Mariilia pereira",
         endereco: "rua laranjal, paulista",
-        periodo: "24 meses",
-        valor_mensal: "600,00",
+        periodo: "24",
+        valor_mensal: 600.00,
         data_inicio: "2018-09-08",
         status: "ativo",
         proprietario: "joana"
@@ -158,8 +158,8 @@ function adicionarContrato() {
     let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
     tamanho = contratos.length
 
-    if (locatario=="" || endereco=="" ||periodo=="" || valor_mensal=="" || data_inicio==""){
-        var a =1
+    if (locatario == "" || endereco == "" || periodo == "" || valor_mensal == "" || data_inicio == "") {
+        var a = 1
         alert("falta preencher algum campo")
     }
 
@@ -168,24 +168,24 @@ function adicionarContrato() {
             {
                 "id": tamanho + 1,
                 "locatario": locatario,
-                "endereco": endereco,   
+                "endereco": endereco,
                 "periodo": periodo,
                 "valor_mensal": valor_mensal,
-                "data_inicio":data_inicio,
-                "status":"ativo"
+                "data_inicio": data_inicio,
+                "status": "ativo"
             }
         )
         fecharModal()
         carregarBancoContratos()
         console.log(contratos)
     }
-    
+
 
 
 }
 
-function vazio(nome){
-    alert("O "+ nome +" está vazio")
+function vazio(nome) {
+    alert("O " + nome + " está vazio")
 }
 
 
@@ -331,10 +331,10 @@ function abrirModalAlteracaoContratos(identifier) {
 
     <div class="alinhamento-a">
         <label class="titulos" for="endereco">Período <br>
-            <input type="text" name="periodo" id="periodo" value="${contratos[identifier - 1].periodo}">
+            <input type="number" name="periodo" id="periodo" placeholder="Período em meses" value="${contratos[identifier - 1].periodo}">
         </label>
         <label class="titulos" for="valor_mensal">Valor Mensal <br>
-            <input type="text" name="valor_mensal" id="valor_mensal" value="${contratos[identifier - 1].valor_mensal}">
+            <input type="number" name="valor_mensal" id="valor_mensal" value="${contratos[identifier - 1].valor_mensal}">
         </label>
     </div>
 
@@ -371,7 +371,7 @@ function abrirModalAlteracaoContratos(identifier) {
         checkbox.checked = true;
         h5 = document.querySelector('h5')
         h5.innerHTML = "ATIVO"
-        
+
 
     }
     else {
@@ -392,19 +392,20 @@ function verificarCheckbox(identifier) {
         checkbox.checked = true;
         h5 = document.querySelector('h5')
         h5.innerHTML = "ATIVO"
-        contratos[identifier-1].status="ativo"
+        contratos[identifier - 1].status = "ativo"
     }
 
     else {
         h5 = document.querySelector('h5')
         h5.innerHTML = "INATIVO"
-        contratos[identifier-1].status="inativo"
+        contratos[identifier - 1].status = "inativo"
     }
 
 
 }
 
 function alterarContrato(identifier) {
+
     console.log(identifier)
     let locatario = document.getElementById('locatario').value.toLowerCase()
     let endereco = document.getElementById('endereco').value.toLowerCase()
@@ -412,26 +413,29 @@ function alterarContrato(identifier) {
     let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
     let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
     let status = document.getElementById('checkbox').checked
-    
-    contratos[identifier - 1].locatario = locatario
-    contratos[identifier - 1].endereco = endereco
-    contratos[identifier - 1].periodo = periodo
-    contratos[identifier - 1].valor_mensal = valor_mensal
-    contratos[identifier - 1].data_inicio = data_inicio
-    if (status) {
-        contratos[identifier - 1].status = "ativo" 
+
+
+    if (locatario == "" || endereco == "" || periodo == "" || valor_mensal == "" || data_inicio == "" || status == "") {
+        alert("Existem um ou mais campos vazios")
     }
     else {
-        contratos[identifier - 1].status = "inativo"
+        contratos[identifier - 1].locatario = locatario
+        contratos[identifier - 1].endereco = endereco
+        contratos[identifier - 1].periodo = periodo
+        contratos[identifier - 1].valor_mensal = valor_mensal
+        contratos[identifier - 1].data_inicio = data_inicio
+        if (status) {
+            contratos[identifier - 1].status = "ativo"
+        }
+        else {
+            contratos[identifier - 1].status = "inativo"
+        }
+        fecharModal()
+        carregarBancoContratos()
     }
 
-    console.log(locatario)
-    console.log(endereco)
-    console.log(periodo)
-    console.log(valor_mensal)
-    console.log(data_inicio)
-    console.log(status)
-    fecharModal()
-    carregarBancoContratos()
+
+
+
 
 }
