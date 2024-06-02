@@ -9,7 +9,7 @@ var imoveis = [
     bairro: "centro",
     cidade: "belo horizonte",
     uf: "mg",
-    cep: "31140259",
+    cep: "31140-259",
     vacancia: "locado",
     status: "ativo"
   },
@@ -24,7 +24,7 @@ var imoveis = [
     bairro: "SAGRADA FAMILIA",
     cidade: "belo horizonte",
     uf: "MG",
-    cep: "31140258",
+    cep: "31140-258",
     vacancia: "locado",
     status: "inativo"
   },
@@ -39,7 +39,7 @@ var imoveis = [
     bairro: "centro",
     cidade: "franca",
     uf: "SP",
-    cep: "31140420",
+    cep: "31140-420",
     vacancia: "locado",
     status: "ativo"
   }
@@ -328,7 +328,7 @@ function abrirModalAdicao() {
         <div class="c">
             <div>
                 <label for="cep" id="label7">CEP</label><br>
-                <input type="text" , id="cep", type="number", onchange="cepMascara()">
+                <input type="text" , id="cep", type="number" maxlength="9" onkeyup="handleZipCode(event)">
             </div>
             <div>
                 <label for="uf" id="label8">UF</label><br>
@@ -361,13 +361,17 @@ function abrirModalAdicao() {
 
 }
 
-function cepMascara() {
-  cep = document.getElementById("cep")
-  if (cep.value.length == 5) {
-      cep.value = cep.value + '-' 
-  }
+const handleZipCode = (event) => {
+  let input = event.target
+  input.value = zipCodeMask(input.value)
 }
 
+const zipCodeMask = (value) => {
+  if (!value) return ""
+  value = value.replace(/\D/g,'')
+  value = value.replace(/(\d{5})(\d)/,'$1-$2')
+  return value
+}
 
 
 
@@ -473,7 +477,7 @@ function abrirModalAlteracao(identifier) {
     <div class="c">
         <div>
             <label for="cep">CEP</label><br>
-            <input type="text"  id="cep" value="${imoveis[identifier - 1].cep}">
+            <input type="text"  id="cep" maxlength="9" onkeyup="handleZipCode(event)" value="${imoveis[identifier - 1].cep}">
         </div>
         <div>
             <label for="uf">UF</label><br>
