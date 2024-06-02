@@ -10,7 +10,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento dos Links do Módulo Usuários                       |
 | :------------------------------------------- | :-------------------------------------------------------------------------------- |
-| Requisitos Associados                        | RF-05 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos inquilinos. |
+| Requisitos Associados                        | RF-01 - A aplicação deve permitir cadastrar/alterar informações de usuários. |
 | Passos                                       | Seguir os seguintes passos:                                                       |
 |                                              | 01 - Acessar o aplicativo ImmoControl                                             |
 |                                              | 02 - No Menu lateral esquero clicar na opção "Usuários"                           |
