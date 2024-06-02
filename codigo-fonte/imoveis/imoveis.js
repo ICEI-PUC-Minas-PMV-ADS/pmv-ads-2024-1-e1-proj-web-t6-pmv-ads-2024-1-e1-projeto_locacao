@@ -572,8 +572,6 @@ function valorSlider(identifier) {
 
 function salvarAlteracaoImovel(identifier) {
 
-  console.log("entrou em salvar")
-
   var tipoLogradouro = document.getElementById('tipoLogradouro').value;
   var logradouro = document.getElementById('Logradouro').value
   var tipo_imovel = document.getElementById('tipo').value;
@@ -584,29 +582,33 @@ function salvarAlteracaoImovel(identifier) {
   var cep = document.getElementById('cep').value;
   var uf = document.getElementById('uf').value;
   var status = document.getElementById('slider').checked;
-  console.log(tipoLogradouro)
-  console.log(status)
-  console.log(complemento)
 
-  imoveis[identifier - 1].tipo_imovel = tipo_imovel;
-  imoveis[identifier - 1].tipo_logradouro = tipoLogradouro;
-  imoveis[identifier - 1].logradouro = logradouro;
-  imoveis[identifier - 1].numero = numero;
-  imoveis[identifier - 1].complemento = complemento;
-  imoveis[identifier - 1].bairro = bairro;
-  imoveis[identifier - 1].cidade = cidade;
-  imoveis[identifier - 1].cep = cep;
-  imoveis[identifier - 1].uf = uf;
-
-  if (status) {
-    imoveis[identifier - 1].status = "ativo";
+  if (tipoLogradouro == "" || logradouro == "" || tipo_imovel == "" || complemento == "" || numero == "" || bairro == "" || cidade == "" || cep == "" || uf == "") {
+    alert("Um ou mais campos estão vazios")
   }
   else {
-    imoveis[identifier - 1].status = "inativo";
+    imoveis[identifier - 1].tipo_imovel = tipo_imovel;
+    imoveis[identifier - 1].tipo_logradouro = tipoLogradouro;
+    imoveis[identifier - 1].logradouro = logradouro;
+    imoveis[identifier - 1].numero = numero;
+    imoveis[identifier - 1].complemento = complemento;
+    imoveis[identifier - 1].bairro = bairro;
+    imoveis[identifier - 1].cidade = cidade;
+    imoveis[identifier - 1].cep = cep;
+    imoveis[identifier - 1].uf = uf;
+
+    if (status) {
+      imoveis[identifier - 1].status = "ativo";
+    }
+    else {
+      imoveis[identifier - 1].status = "inativo";
+    }
+
+    fecharModal()
+    iniciar_banco_imoveis()
+    alert('Alteração realizada com sucesso!')
   }
 
-  fecharModal()
-  iniciar_banco_imoveis()
 
 
 }
