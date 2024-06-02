@@ -15,11 +15,11 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 |                                              | 01 - Acessar o aplicativo ImmoControl                                             |
 |                                              | 02 - No Menu lateral esquero clicar na opção "Usuários"                           |
 |                                              | 03 - Clicar no botão para visualizar os dados de cada usuário                     |
-|                                              | 04 - Clicar no botão "Voltar" para retornar a página principal do Módulo Usuários |
+|                                              | 04 - Clicar no botão "Voltar" para retornar à página principal do Módulo Usuários |
 |                                              | 05 - Clicar no botão para filtrar os dados de usuário                             |
-|                                              | 06 - Clicar no botão "Voltar" para retornar a página principal do Módulo Usuários |
+|                                              | 06 - Clicar no botão "Voltar" para retornar à página principal do Módulo Usuários |
 |                                              | 07 - Clicar no botão para cadastrar novo usuário                                  |
-|                                              | 08 - Clicar no botão "Voltar" para retornar a página principal do Módulo Usuários |
+|                                              | 08 - Clicar no botão "Voltar" para retornar à página principal do Módulo Usuários |
 | Critérios de êxito                           | Todos os links da página devem encaminhar os usuários para as páginas descritas.  |
 | Responsável pela elaboração do caso de Teste | Thássia Campos                                                                    |
 
