@@ -173,7 +173,7 @@ function filtrarImoveis() {
 
   var elementoLista = document.getElementById('table_list');
   elementoLista.innerHTML = ""
-  var filtrado = imoveis;
+  var filtrado = JSON.parse(localStorage.getItem("imoveis"));
   var identifier;
   //var texto = '';
   //const resposta = await fetch('imoveis.json');
@@ -381,8 +381,6 @@ const zipCodeMask = (value) => {
   value = value.replace(/(\d{5})(\d)/, '$1-$2')
   return value
 }
-
-
 
 
 function novoImovel() {
@@ -611,7 +609,6 @@ function salvarAlteracaoImovel(identifier) {
   }
 
 
-
 }
 
 
@@ -619,8 +616,7 @@ function iniciar_banco_imoveis() {
 
   //const resposta = await fetch('imoveis.json');
   //const imoveis = await resposta.json()
-  // localStorage.setItem("imoveis", JSON.stringify(imoveis));
-  let imoveis = JSON.parse(localStorage.getItem("imoveis"))
+  localStorage.setItem("imoveis", JSON.stringify(imoveis));
   let elemento = document.getElementById('table_list');
   let texto = '';
 
