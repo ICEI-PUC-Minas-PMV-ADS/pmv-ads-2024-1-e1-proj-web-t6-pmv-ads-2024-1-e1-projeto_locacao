@@ -329,7 +329,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaboração do caso de Teste | Ismarlei Magela                                                                      |
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Filtrar                                                                        |
-| :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------... |
+| :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
 | Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisições.                                                          |
 | Passos                                       | Seguir os seguintes passos:                                                                                                              |
 |                                              | 01 - A partir da tela inicial do Módulo Requisições                                                                                      |
@@ -340,7 +340,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaboração do caso de Teste | Ismarlei Magela                                                                                                                          |
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Cadastrar                        |
-| :------------------------------------------- | :--------------------------------------------------------------------------------------.-- |
+| :------------------------------------------- | :----------------------------------------------------------------------------------------- |
 | Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisição.             |
 | Passos                                       | Seguir os seguintes passos:                                                                |
 |                                              | 01 - A partir da tela inicial do Módulo Requisições                                        |
