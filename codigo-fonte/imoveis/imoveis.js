@@ -418,6 +418,7 @@ function novoImovel() {
 
       }
     );
+    localStorage.setItem("imoveis", JSON.stringify(imoveis));
     fecharModal();
     iniciar_banco_imoveis();
   }
