@@ -313,6 +313,56 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 ### RF-09 REQUISIÇÕES (ISMARLEI)
 
+|  Caso de Teste                               | CT-X - Verificar Funcionamento dos Links do Módulo Requisições
+| :------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar Requisições.                     |
+| Passos                                       | Seguir os seguintes passos:                                                          |
+|                                              | 01 - Acessar o aplicativo ImmoControl                                                |
+|                                              | 02 - No Menu lateral esquero clicar na opção "Requisições"                           |
+|                                              | 03 - Clicar no botão para visualizar os dados de cada Requisição                     |
+|                                              | 04 - Clicar no botão "Voltar" para retornar à página principal do Módulo Requisição  |
+|                                              | 05 - Clicar no botão para filtrar os dados de Requisições                            |
+|                                              | 06 - Clicar no botão "Voltar" para retornar à página principal do Módulo Requisições |
+|                                              | 07 - Clicar no botão para cadastrar nova Requisição                                  |
+|                                              | 08 - Clicar no botão "Voltar" para retornar à página principal do Módulo Requisição  |
+| Critérios de êxito                           | Todos os links da página devem encaminhar os usuários para as páginas descritas.     |
+| Responsável pela elaboração do caso de Teste | Ismarlei Magela                                                                      |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Filtrar                                                                        |
+| :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------... |
+| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisições.                                                          |
+| Passos                                       | Seguir os seguintes passos:                                                                                                              |
+|                                              | 01 - A partir da tela inicial do Módulo Requisições                                                                                      |
+|                                              | 02 - Clicar no botão para filtrar os dados das Requisições                                                                               |
+|                                              | 03 - Digitar no filtro de pesquisa algum(ns) dado(s) presente(s) na página de filtros e verificar se o resultado é exibido na página.    |
+|                                              | 04 - Clicar em Filtrar                                                                                                                   |
+| Critérios de êxito                           | Os dados inseridos no filtro de pesquisa devem apresentar na tela pincipal as requisições que correspondem aos dados inseridos.          |
+| Responsável pela elaboração do caso de Teste | Ismarlei Magela                                                                                                                          |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Cadastrar                        |
+| :------------------------------------------- | :--------------------------------------------------------------------------------------.-- |
+| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisição.             |
+| Passos                                       | Seguir os seguintes passos:                                                                |
+|                                              | 01 - A partir da tela inicial do Módulo Requisições                                        |
+|                                              | 02 - Clicar no botão para cadastrar nova Requisição                                        |
+|                                              | 03 - Preencher todos os campos com os respectivos dados de uma Requisição fictício         |
+|                                              | 04 - Clicar em Cadastrar                                                                   |
+| Critérios de êxito                           | O sistema deverá apresentar na tela principal linha contendo o usuário recém cadastrado    |
+| Responsável pela elaboração do caso de Teste | Ismarlei MAgela                                                                            |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Alterar                         |
+| :------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de usuários.              |
+| Passos                                       | Seguir os seguintes passos:                                                               |
+|                                              | 01 - A partir da tela inicial do Módulo REquisições                                       |
+|                                              | 02 - Clicar no botão para visualizar dados de requisição                                  |
+|                                              | 03 - Clicar em Alterar                                                                    |
+|                                              | 03 - Alterar alguns campos com os dados de requisição                                     |
+|                                              | 04 - Clicar em Salvar                                                                     |
+| Critérios de êxito                           | O sistema deverá apresentar uma popup informando que os dados foram alterados com sucesso |
+| Responsável pela elaboração do caso de Teste | Ismarlei Magela                                                                           |
+
+
 ---
 
 ### RF-10 DASHBOARD (SÓCRATIS/PEDRO)
