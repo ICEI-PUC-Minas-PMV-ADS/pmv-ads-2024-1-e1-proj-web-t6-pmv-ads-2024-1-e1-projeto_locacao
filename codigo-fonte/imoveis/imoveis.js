@@ -619,7 +619,8 @@ function iniciar_banco_imoveis() {
 
   //const resposta = await fetch('imoveis.json');
   //const imoveis = await resposta.json()
-  localStorage.setItem("imoveis", JSON.stringify(imoveis));
+  // localStorage.setItem("imoveis", JSON.stringify(imoveis));
+  let imoveis = JSON.parse(localStorage.getItem("imoveis"))
   let elemento = document.getElementById('table_list');
   let texto = '';
 
