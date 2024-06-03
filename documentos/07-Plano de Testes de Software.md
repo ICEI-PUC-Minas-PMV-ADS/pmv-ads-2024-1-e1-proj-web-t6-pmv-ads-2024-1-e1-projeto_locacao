@@ -341,20 +341,20 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Cadastrar                        |
 | :------------------------------------------- | :----------------------------------------------------------------------------------------- |
-| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisição.             |
+| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisições.            |
 | Passos                                       | Seguir os seguintes passos:                                                                |
 |                                              | 01 - A partir da tela inicial do Módulo Requisições                                        |
-|                                              | 02 - Clicar no botão para cadastrar nova Requisição                                        |
-|                                              | 03 - Preencher todos os campos com os respectivos dados de uma Requisição fictício         |
+|                                              | 02 - Clicar no botão para cadastrar nova requisição                                        |
+|                                              | 03 - Preencher todos os campos com os respectivos dados de uma requisição fictícia         |
 |                                              | 04 - Clicar em Cadastrar                                                                   |
-| Critérios de êxito                           | O sistema deverá apresentar na tela principal linha contendo o usuário recém cadastrado    |
+| Critérios de êxito                           | O sistema deverá apresentar na tela principal linha contendo a requisição recém cadastrada |
 | Responsável pela elaboração do caso de Teste | Ismarlei MAgela                                                                            |
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento Módulo Requisições: Função Alterar                         |
 | :------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de usuários.              |
+| Requisitos Associados                        | RF-09 - A aplicação deve permitir cadastrar/alterar informações de Requisições.           |
 | Passos                                       | Seguir os seguintes passos:                                                               |
-|                                              | 01 - A partir da tela inicial do Módulo REquisições                                       |
+|                                              | 01 - A partir da tela inicial do Módulo Requisições                                       |
 |                                              | 02 - Clicar no botão para visualizar dados de requisição                                  |
 |                                              | 03 - Clicar em Alterar                                                                    |
 |                                              | 03 - Alterar alguns campos com os dados de requisição                                     |
