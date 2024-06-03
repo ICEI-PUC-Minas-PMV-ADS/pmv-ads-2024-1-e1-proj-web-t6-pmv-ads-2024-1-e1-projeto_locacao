@@ -98,7 +98,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 ---
 
-### RF-03 IMÓVEIS (ZANDER)
+### RF-03 IMÓVEIS
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento dos Links do Módulo Imóveis                     |
 | :------------------------------------------- | :-------------------------------------------------------------------------------- |
@@ -125,7 +125,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento Módulo imóveis: Função Cadastrar                        |
 | :------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| Requisitos Associados                        | RF-05 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos imóveis.         |
+| Requisitos Associados                        | RF-03 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos imóveis.         |
 | Passos                                       | Seguir os seguintes passos:                                                               |
 |                                              | 01 - A partir da tela inicial do Módulo imóveis                                        |
 |                                              | 02 - Clicar no botão para cadastrar novo imóvel                                      |
@@ -136,7 +136,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 | Caso de Teste                                | CT-X - Verificar Funcionamento Módulo imóveis: Função Alterar                          |
 | :------------------------------------------- | :---------------------------------------------------------------------------------------- |
-| Requisitos Associados                        | RF-05 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos imóveis.         |
+| Requisitos Associados                        | RF-03 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos imóveis.         |
 | Passos                                       | Seguir os seguintes passos:                                                               |
 |                                              | 01 - A partir da tela inicial do Módulo imóveis                                        |
 |                                              | 02 - Clicar no botão para visualizar dados de imóvel                                   |
@@ -244,7 +244,53 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 ---
 
-### RF-06 CONTRATOS (ZANDER)
+### RF-06 CONTRATOS 
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento dos Links do Módulo Contratos                    |
+| :------------------------------------------- | :-------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-06 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos Contratos. |
+| Passos                                       | Seguir os seguintes passos:                                                       |
+|                                              | 01 - Acessar o aplicativo ImmoControl                                             |
+|                                              | 02 - No Menu lateral esquerdo clicar na opção "Contratos"                           |
+|                                              | 03 - Clicar no botão do lado direito de cada contrato para visualizar os dados      |
+|                                              | 04 - Clicar no botão para filtrar os dados do contrato                           |
+|                                              | 05 - Clicar no botão para cadastrar novo contrato                                   |
+| Critérios de êxito                           | Todos os links da página devem encaminhar os usuários para as páginas descritas.  |
+| Responsável pela elaboração do caso de Teste | Zander Vasconcelos      |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento Módulo imóveis: Função Filtrar                                                                      |
+| :------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| Requisitos Associados                        | RF-06 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos contratos.                                                     |
+| Passos                                       | Seguir os seguintes passos:                                                                                                           |
+|                                              | 01 - A partir da tela inicial do Módulo contratos                                                                                    |
+|                                              | 02 - Clicar no botão para filtrar os dados de contrato                                                                              |
+|                                              | 03 - Digitar no filtro de pesquisa algum(ns) dado(s) presente(s) na página de filtros e verificar se o resultado é exibido na página. |
+|                                              | 04 - Clicar em Filtrar                                                                                                                |
+| Critérios de êxito                           | Os dados inseridos no filtro de pesquisa devem apresentar na tela pincipal os contratos que correspondem aos dados inseridos.        |
+| Responsável pela elaboração do caso de Teste | Zander Vasconcelos     | 
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento Módulo imóveis: Função Cadastrar                        |
+| :------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-06 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos imóveis.         |
+| Passos                                       | Seguir os seguintes passos:                                                               |
+|                                              | 01 - A partir da tela inicial do Módulo imóveis                                        |
+|                                              | 02 - Clicar no botão para cadastrar novo imóvel                                      |
+|                                              | 03 - Preencher todos os campos com os respectivos dados de um imóvel fictício          |
+|                                              | 04 - Clicar em Cadastrar                                                                  |
+| Critérios de êxito                           | O sistema deverá apresentar na tela principal linha contendo o imóvel recém cadastrado |
+| Responsável pela elaboração do caso de Teste | Zander Vasconcelos                                                                         |
+
+| Caso de Teste                                | CT-X - Verificar Funcionamento Módulo imóveis: Função Alterar                          |
+| :------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Requisitos Associados                        | RF-06 - aplicação deve permitir cadastrar/alterar/pesquisar dados dos contratos.         |
+| Passos                                       | Seguir os seguintes passos:                                                               |
+|                                              | 01 - A partir da tela inicial do Módulo contratos                                        |
+|                                              | 02 - Clicar no botão para visualizar dados de contrato                                  |
+|                                              | 03 - Clicar em Alterar                                                                    |
+|                                              | 03 - Alterar alguns campos com os dados do contrato                                     |
+|                                              | 04 - Clicar em Salvar                                                                     |
+| Critérios de êxito                           | O sistema deverá apresentar uma popup informando que os dados foram alterados com sucesso |
+| Responsável pela elaboração do caso de Teste | Zander Vasconcelos                                                                         |
 
 ---
 
