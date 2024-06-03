@@ -173,7 +173,7 @@ function filtrarImoveis() {
 
   var elementoLista = document.getElementById('table_list');
   elementoLista.innerHTML = ""
-  var filtrado = imoveis;
+  var filtrado = JSON.parse(localStorage.getItem("imoveis"));
   var identifier;
   //var texto = '';
   //const resposta = await fetch('imoveis.json');
@@ -383,8 +383,6 @@ const zipCodeMask = (value) => {
 }
 
 
-
-
 function novoImovel() {
   var lenghtImoveis = imoveis.length
   var label1 = document.getElementById('label1');
@@ -418,6 +416,7 @@ function novoImovel() {
 
       }
     );
+    localStorage.setItem("imoveis", JSON.stringify(imoveis));
     fecharModal();
     iniciar_banco_imoveis();
   }
@@ -608,7 +607,6 @@ function salvarAlteracaoImovel(identifier) {
     iniciar_banco_imoveis()
     alert('Alteração realizada com sucesso!')
   }
-
 
 
 }

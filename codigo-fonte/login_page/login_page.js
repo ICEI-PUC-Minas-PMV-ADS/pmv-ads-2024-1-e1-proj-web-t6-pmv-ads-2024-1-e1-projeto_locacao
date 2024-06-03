@@ -1,3 +1,5 @@
+
+
 //Função para abrir popup Esqueci Minha Senha
 var open_primeiro_popup = document.getElementById("btn_popup_esqueceu_senha");
 open_primeiro_popup.addEventListener("click", function () {
@@ -13,48 +15,6 @@ btn_volta.addEventListener("click", function () {
   chama_popup.close();
   voltar_login.close();
 });
-
-function iniciar_banco_usuarios() {
-  let valid_usuario = JSON.parse(localStorage.getItem("usuarios"));
-
-  let usuarios = [
-    {
-      id: 1,
-      nome: "Master",
-      tipo: "Administrador",
-      email: "master@immocontrol.com.br",
-      senha: "123",
-      status: true,
-      primeiro_acesso: true,
-    },
-    {
-      id: 2,
-      nome: "Usuario Ativo",
-      tipo: "Comum",
-      email: "ativo@immocontrol.com.br",
-      senha: "123",
-      status: true,
-      primeiro_acesso: true,
-    },
-    {
-      id: 3,
-      nome: "Usuario Inativo",
-      tipo: "Comum",
-      email: "inativo@immocontrol.com.br",
-      senha: "123",
-      status: false,
-      primeiro_acesso: true,
-    },
-  ];
-
-  if (valid_usuario == null) {
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-  }
-}
-
-function iniciar_banco() {
-  iniciar_banco_usuarios();
-}
 
 //Função de autenticação do usuario (ativo, inativo)
 function verifica_usuario() {
@@ -370,7 +330,7 @@ function enviar_email() {
 
   let novos_usuarios = usuarios.map((usuario) => {
     if (usuario.email == enviar_email.value) {
-      usuario.senha = "123";
+      usuario.senha = "123456";
       usuario.primeiro_acesso = true;
       email_valido = true;
       return usuario;
