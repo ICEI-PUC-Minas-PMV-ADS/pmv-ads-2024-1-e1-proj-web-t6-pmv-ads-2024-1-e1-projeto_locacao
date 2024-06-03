@@ -238,7 +238,7 @@ function filtrarContratos() {
       </div>  
   
       <div class="table_property" id="tempo">
-          ${contratosfiltrados[i].periodo}
+          ${contratosfiltrados[i].periodo} Meses
       </div>
   
       <div class="table_status" id="mensalidade">
@@ -375,6 +375,7 @@ function abrirModalAlteracaoContratos(identifier) {
 
     }
     else {
+        console.log(status)
         checkbox.checked = false;
         h5 = document.querySelector('h5')
         h5.innerHTML = "INATIVO"
@@ -396,6 +397,7 @@ function verificarCheckbox(identifier) {
     }
 
     else {
+        console.log(verificacao)
         h5 = document.querySelector('h5')
         h5.innerHTML = "INATIVO"
         contratos[identifier - 1].status = "inativo"
@@ -415,7 +417,7 @@ function alterarContrato(identifier) {
     let status = document.getElementById('checkbox').checked
 
 
-    if (locatario == "" || endereco == "" || periodo == "" || valor_mensal == "" || data_inicio == "" || status == "") {
+    if (locatario == "" || endereco == "" || periodo == "" || valor_mensal == null || data_inicio == "") {
         alert("Existem um ou mais campos vazios")
     }
     else {
