@@ -86,7 +86,7 @@ function faturas_init() {
     // USUÁRIO
     usuario()
 
-    faturas(null, null, null, null)
+    faturas(null, null, null, [])
     // faturas(id_fatura, data_vencimento, nome_locatario, status)
 }
 
@@ -129,6 +129,48 @@ function iniciar_banco_faturas() {
             nome_locatario: "Locatário 03",
             periodo_inicio: "25/04/2024",
             periodo_fim: "25/05/2024",
+            data_vencimento: "30/05/2024",
+            data_pagamento: "25/05/2024",
+            valor: "1000,00",
+            status_pagamento: true,
+            // PAGO
+        },
+        {
+            id_fatura: 4,
+            id_locatario: 4,
+            id_contrato:1,
+            id_imovel: 1,
+            nome_locatario: "Locatário 04",
+            periodo_inicio: "10/01/2024",
+            periodo_fim: "10/02/2024",
+            data_vencimento: "20/06/2024",
+            data_pagamento: null,
+            valor: "400,00",
+            status_pagamento: false,
+            // EM ABERTO
+        },
+        {
+            id_fatura: 5,
+            id_locatario: 2,
+            id_contrato:2,
+            id_imovel: 2,
+            nome_locatario: "Locatário 05",
+            periodo_inicio: "15/02/2024",
+            periodo_fim: "15/03/2024",
+            data_vencimento: "25/03/2024",
+            data_pagamento: null,
+            valor: "1650,00",
+            status_pagamento: false,
+            // VENCIDO
+        },
+        {
+            id_fatura: 6,
+            id_locatario: 3,
+            id_contrato:3,
+            id_imovel: 3,
+            nome_locatario: "Locatário 06",
+            periodo_inicio: "20/04/2024",
+            periodo_fim: "29/05/2024",
             data_vencimento: "30/05/2024",
             data_pagamento: "25/05/2024",
             valor: "1000,00",
@@ -180,15 +222,68 @@ function faturas(id_fatura, data_vencimento, nome_locatario, status){
         faturas = faturas.filter((fatura) => fatura.data_vencimento == data_vencimento)
     }
 
-// ACHO QUE O ERRO DE FILTRO ESTÁ AQUI!!!!!!!!
+// FILTRAR STATUS
+    let faturas_filtrar = []
+    if (status != []) { 
+            status.map((situacao) => {
+                if(situacao == 'quitado') {
+                    faturas_filtrar.push(faturas.filter((fatura) => fatura.status_pagamento))
+                }
+                else if(situacao == 'vencido') {
+                    faturas_filtrar.push(faturas.filter((fatura) => {
+                        if(!fatura.status_pagamento) {
+                            let splitData = fatura.data_vencimento.split("/");
+                            let newDate = [splitData[1], splitData[0], splitData[2]];
+                            let data = new Date(newDate.join("/"));
+                            let hoje = new Date();
 
-    if (status != null) {
-        if (status) {
-            faturas = faturas.filter((fatura) => fatura.status_pagamento == status)
+                            if (data < hoje) {
+                                return true
+                            } else 
+                                return false     
+                        }    
+                    }))
+                }
+                else if(situacao == 'aberto') {
+                    faturas_filtrar.push(faturas.filter((fatura) => {
+                        if(!fatura.status_pagamento) {
+                            let splitData = fatura.data_vencimento.split("/");
+                            let newDate = [splitData[1], splitData[0], splitData[2]];
+                            let data = new Date(newDate.join("/"));
+                            let hoje = new Date();
+
+                            if (data >= hoje) {
+                                return true
+                            } else 
+                                return false     
+                        }    
+                    }))
+                }
+            })
+        }
+    // console.log(faturas_filtrar)
+    if(faturas_filtrar.length >0) {
+        if(faturas_filtrar.length == 1) {
+            faturas = faturas_filtrar[0]
         } else {
-            faturas = faturas.filter((fatura) => fatura.status_pagamento == status)
+            faturas = faturas_filtrar[0].concat(faturas_filtrar[1])
+            faturas.sort(function(a,b) {
+                if(a.id_fatura > b.id_fatura) {
+                    return 1
+                }
+                if(a.id_fatura < b.id_fatura) {
+                    return -1
+                }                 
+                return 0                
+            })
         }
     }
+    
+
+
+
+
+
 
     // Para cada fatura inclui a respectiva div na tela principal
     if(faturas.length > 0) {
@@ -277,19 +372,17 @@ function filtrar_fatura() {
     let status_vencido = document.getElementById("status_vencido").checked ? document.getElementById("status_vencido").value : null
 
 
-    let status
-    if (status_todos == "todos") {
-        status = null
-    } else {
+    let status = []
+    if (status_todos != "todos") {
         if (status_aberto == "aberto") {
-            status = true
+            status.push('aberto')
         }
         if (status_quitado == "quitado") {
-            status = false
+            status.push("quitado")
         }
-        // if (status_vencido == "vencido") {
-        //     status = false
-        // }
+        if (status_vencido == "vencido") {
+            status.push("vencido")
+        }
     }
     console.log(status)
    
@@ -436,8 +529,9 @@ function salvar_data_pagamento() {
 
     
     localStorage.setItem("faturas", JSON.stringify(faturasList))
+    faturas(id_fatura_alterar, null, null, [])
 
-    fechar_popup_dados_fatura()
+    // fechar_popup_dados_fatura()
         
 
 }
