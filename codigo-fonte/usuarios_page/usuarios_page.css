@@ -104,5 +104,50 @@
     grid-area: nome;
 }
 
+@media only screen and (max-device-width: 480px) {
+    .table_name{
+        /* min-width: fit-content; */
+        /* border: 1px solid black; */
+        width: 35%;
+        overflow-wrap: break-word;
+    }
+           
+    .table_property{
+        min-width: fit-content;
+        /* border: 1px solid black; */
+        width: 25%;
+    }
+    
+    .table_status{
+        min-width: fit-content;
+        /*border: 1px solid black;*/
+        width: 20%;
+    }
+
+    .status_active {
+       padding: 0px 10px;
+       width: 100%;
+    
+    }
+    
+    .status_inactive{
+        padding: 0px 10px;
+        width: 100%;
+    }
+
+    #div_dados_usuarios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #popup_filtrar , #popup_add , #popup_dados_usuarios {
+        width: 80%;
+
+    }
+
+
+
+}
+
 
 
