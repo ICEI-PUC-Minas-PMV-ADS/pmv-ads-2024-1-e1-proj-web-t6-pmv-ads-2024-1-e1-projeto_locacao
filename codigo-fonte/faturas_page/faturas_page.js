@@ -379,7 +379,7 @@ function abrir_popup_dados_fatura(e) {
                 </button>
                 <button onclick="informar_pagamento()">
                     <img class="icon" src="../src/icones/icon_alterar.png" alt="">
-                    ALTERAR
+                    INFORMAR PAGAMENTO
                 </button>
             </div>
             
