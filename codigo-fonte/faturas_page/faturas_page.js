@@ -530,9 +530,8 @@ function salvar_data_pagamento() {
     
     localStorage.setItem("faturas", JSON.stringify(faturasList))
     faturas(id_fatura_alterar, null, null, [])
-
+    
     // fechar_popup_dados_fatura()
-        
 
 }
 

@@ -2,14 +2,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faturas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="faturas_page.css">
     <link rel="stylesheet" href="../utils/snackbar.css">
     <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../utils/global.css" media="screen" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <script src="faturas_page.js"></script>
 </head>
+
 <body onload="faturas_init()">
     <!-- CABEÇALHO -->
     <header>
@@ -89,7 +92,7 @@
         </nav>
     
         <!-- CONTEÚDO -->
-        <main>
+        <main id="table_owners">
             <!-- Cabeçalho do Conteúdo -->
             <div class="div_table_faturas">
                 <p>Faturas</p>
@@ -118,30 +121,6 @@
             <!-- o HTML está no javascript -->
         </main>
     </div>
-
-
-    <!-- POPUP DADOS FATURA -->
-    <!-- <dialog id="popup_dados_fatura" class="popup">
-        <div>
-            <h1>Dados da Fatura 1/2/3</h1>
-            <p><br>LOCATÁRIO</p>
-        </div>
-        <hr>
-        <Section class="section_locatario">
-            <div class="div_nome">
-                <label for="nome">NOME</label>
-                <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="${dados_locatario.nome}" onblur="return set_input_success(this)" readonly>
-            </div>
-        </Section>
-        <Section class="section_imovel">
-            <div class="div_imovel">
-                <label for="imovel">IMÓVEL</label>
-                <input type="text" name="imovel" id="imovel" class="inputSuccess" value="Rua Riograndense, 2 - Jardins - Ouro Preto - MG">
-            </div>
-            <hr>
-        </Section>
-    </dialog> -->
-
 <!-- POPUP FILTRAR FATURAS -->
 <dialog id="popup_filtrar" class="popup">
     <div>
@@ -163,7 +142,6 @@
             </div>
         </div>
     
-            
         <!-- Status  -->
         <section class="section_status">           
             <div class="status">
