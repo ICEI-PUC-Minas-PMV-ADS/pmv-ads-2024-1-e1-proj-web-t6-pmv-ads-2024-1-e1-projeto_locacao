@@ -251,6 +251,7 @@ main {
     color: var(--dark-grey);
     font-size: 12px;
     font-weight: bold;
+    width: 100%;
 }
 
 .div_table_row{
@@ -434,7 +435,19 @@ input[type="checkbox"]{
         height: calc(92vh - 9px);
     }
 
+    header {
+        height: 10vh;
+    }
+
     .div_logo {
+        display: none;
+    }
+
+    .button_menu {
+        padding: 0px;
+    }
+
+    .div_titulo {
         display: none;
     }
     
@@ -463,6 +476,24 @@ input[type="checkbox"]{
 
     nav .button_menu {
         display: none;
+    }
+
+    main {
+        height: 84vh;
+    }
+
+    .table_icon, .table_icon img{
+        /* display: none; */
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .table_button {
+        width: 20%;
+    }
+
+    .popup {
+        max-height: 90%;
     }
 } 
 

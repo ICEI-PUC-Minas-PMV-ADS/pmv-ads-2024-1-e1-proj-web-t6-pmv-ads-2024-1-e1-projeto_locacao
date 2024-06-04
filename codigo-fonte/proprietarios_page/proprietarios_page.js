@@ -70,9 +70,6 @@ function proprietarios(id, nome, cpf, status) {
                         <div class="table_icon">
                             <img class="icon" src="../src/icones/icon_proprietarios_selecionado.png" alt="">
                         </div>
-                        <div class="table_id">
-                            ${proprietario.id}
-                        </div>
                         <div class="table_name">
                             ${proprietario.nome}
                         </div>
