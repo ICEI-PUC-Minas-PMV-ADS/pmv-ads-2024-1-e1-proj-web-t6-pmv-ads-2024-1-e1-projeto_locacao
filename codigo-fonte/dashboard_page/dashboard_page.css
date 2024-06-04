@@ -65,7 +65,7 @@
     grid-template-areas: 
         "bar bar"
         "doughnut faturas";
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 50%;
     background-color: var(--light-grey);
     width: 100%;
@@ -149,7 +149,6 @@
     
 }
 
-
 .table_dashboard{
     display: flex;
     flex-direction: row;
@@ -160,17 +159,17 @@
     height: 5px;
 }
 
-.table_id{
+/* .table_id{
     min-width: fit-content;
     width: 10%;
    
   
-}
+} */
 
 .table_locatario{
     min-width: fit-content;
    
-    width: 30%;
+    width: 40%;
 }
 
 .table_periodo{
@@ -192,7 +191,7 @@
 }
 
 #table_list{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
@@ -204,3 +203,46 @@
        
 } 
 
+.div_table_header_dash{ 
+    margin: 20px 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--dark-grey);
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media only screen  and (max-device-width: 480px){
+    #main_dashboard {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--light-grey);
+        width: 50% ;
+        /* min-width: fit-content; */
+        height: auto;
+        /* padding: 15px; */
+        /* margin: 0 10px 10px 0; */
+        gap: 5px;
+    }
+
+
+
+
+
+
+
+}
+    /* #bar_chart {
+        display: flex;
+    }
+    
+    #doughnut_chart {
+        display: flex;
+    }
+    
+    #table_faturas {
+        display: flex;
+    }
+} */

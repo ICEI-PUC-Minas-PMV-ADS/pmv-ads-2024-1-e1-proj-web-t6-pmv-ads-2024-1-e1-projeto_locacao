@@ -342,11 +342,7 @@ function alerta_vencimento() {
 function addLinhaNaTabela(alerta) {
   let table = document.getElementById('table_list')
   table.innerHTML += `
-      <div class="div_table_row"> 
-
-          <div class="table_id">
-              ${alerta.id}
-          </div>
+      <div class="div_table_row">       
           <div class="table_locatario">
             ${alerta.locatario}
           </div>
