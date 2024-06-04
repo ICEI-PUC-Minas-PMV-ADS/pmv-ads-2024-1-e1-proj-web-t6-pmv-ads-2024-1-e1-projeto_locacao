@@ -174,3 +174,44 @@ function iniciar_banco_imoveis(){
         localStorage.setItem("imoveis", JSON.stringify(imoveis));
       }
 }
+
+function inicia_banco_contratos(){
+    let valid_contratos = JSON.parse(localStorage.getItem("contratos"))
+
+    contratos = [
+        {
+            id: 1,
+            locatario: "josé da silva",
+            endereco: "rua são josé, centro",
+            periodo: "12",
+            valor_mensal: 600.00,
+            data_inicio: "2024-03-23",
+            status: "ativo",
+            proprietario: "marcos"
+        },
+        {
+            id: 2,
+            locatario: "fernando abreu",
+            endereco: "rua das nações, observatorio",
+            periodo: "6",
+            valor_mensal: 1600.00,
+            data_inicio: "2020-05-06",
+            status: "inativo",
+            proprietario: "vinicius"
+        },
+        {
+            id: 3,
+            locatario: "Mariilia pereira",
+            endereco: "rua laranjal, paulista",
+            periodo: "24",
+            valor_mensal: 600.00,
+            data_inicio: "2018-09-08",
+            status: "ativo",
+            proprietario: "joana"
+        }
+    
+    ]
+    if (valid_contratos == null) {
+        localStorage.setItem("contratos", JSON.stringify(contratos));
+      }
+}
