@@ -1,4 +1,4 @@
-var imoveis = [
+/*var imoveis = [
   {
     id: 1,
     tipo_imovel: "comercial",
@@ -44,7 +44,7 @@ var imoveis = [
     status: "ativo"
   }
 
-]
+]*/
 
 
 //coletando elemento fade:
@@ -68,6 +68,7 @@ var dialog = document.getElementById("modal");
 
 
 function fecharModal() {
+
   ElementoFade.classList.remove('escuro');
   dialog.close()
 
@@ -427,10 +428,13 @@ function novoImovel() {
 
 
 function abrirModalAlteracao(identifier) {
+
+  var imoveis = JSON.parse(localStorage.getItem("imoveis"));
+  
   dialog.innerHTML = ""
   ElementoFade.classList.add("escuro");
-  dialog.setAttribute('open', 'true');
   dialog.classList.add('adicao');
+  dialog.setAttribute('open', 'true');
   dialog.innerHTML = `
 
     <header>
@@ -494,7 +498,6 @@ function abrirModalAlteracao(identifier) {
 
     </div>
 
-
     <div class="d">
         <h4>TIPO
             <hr>
@@ -527,7 +530,8 @@ function abrirModalAlteracao(identifier) {
 
   `
   checkbox = document.getElementById('slider')
-  h4 = document.getElementById('s')
+
+  let h4 = document.getElementById('s')
   if (imoveis[identifier - 1].status == "ativo") {
     checkbox.checked = true;
     h4.innerHTML = "ativo"
@@ -537,7 +541,6 @@ function abrirModalAlteracao(identifier) {
     h4.innerHTML = "inativo"
 
   }
-
 
   var selectComecial = document.getElementById('comercial');
   var selectResidencial = document.getElementById('residencial')
@@ -552,25 +555,30 @@ function abrirModalAlteracao(identifier) {
 
 function valorSlider(identifier) {
 
+  var imoveis = JSON.parse(localStorage.getItem("imoveis"));
   var checkbox = document.getElementById('slider')
   var h4 = document.getElementById('s');
+
 
   if (checkbox.checked == true) {
     h4.innerHTML = "ativo"
     imoveis[identifier - 1].status = "ativo"
+    localStorage.setItem("imoveis", JSON.stringify(imoveis));
   }
 
-  else {
 
-    h4.textContent = "inativo"
+  else {
+    h4.innerHTML = "inativo"
     imoveis[identifier - 1].status = "inativo"
+    localStorage.setItem("imoveis", JSON.stringify(imoveis));
+    console.log()
   }
 
 }
 
 
 function salvarAlteracaoImovel(identifier) {
-
+  var imoveis = JSON.parse(localStorage.getItem("imoveis"));
   var tipoLogradouro = document.getElementById('tipoLogradouro').value;
   var logradouro = document.getElementById('Logradouro').value
   var tipo_imovel = document.getElementById('tipo').value;
@@ -614,9 +622,7 @@ function salvarAlteracaoImovel(identifier) {
 
 function carregar_banco_imoveis() {
 
-  //const resposta = await fetch('imoveis.json');
-  //const imoveis = await resposta.json()
-  let imoveis = JSON.parse(localStorage.getItem("imoveis"));
+  var imoveis = JSON.parse(localStorage.getItem("imoveis"));
   let elemento = document.getElementById('table_list');
   let texto = '';
 
@@ -637,7 +643,7 @@ function carregar_banco_imoveis() {
 
         <div class="table_property">${imoveis[i].tipo_logradouro} ${imoveis[i].logradouro}, ${imoveis[i].numero}, ${imoveis[i].complemento}</div>
 
-        <div class="table_status">${imoveis[i].vacancia}</div>
+        <div class="table_status" id="vacancia">${imoveis[i].vacancia}</div>
 
         <div class="table_status">${imoveis[i].status}</div>
 
@@ -653,7 +659,9 @@ function carregar_banco_imoveis() {
           </button>
         </div>
       </div>`
+    
   }
+
 
   elemento.innerHTML = texto;
 

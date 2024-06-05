@@ -292,6 +292,12 @@ main {
     width: 25%;
 }
 
+.table_status.verde{
+    background-color: #5BB800;
+
+}
+
+
 .table_button {
     display: flex;
     min-width: fit-content;
@@ -788,9 +794,6 @@ dialog .container .checkmark:after {
     top: 3px;
     left: 6px;
 }
-
-
-
 
 
 /* botoes de filtrar e voltar*/
