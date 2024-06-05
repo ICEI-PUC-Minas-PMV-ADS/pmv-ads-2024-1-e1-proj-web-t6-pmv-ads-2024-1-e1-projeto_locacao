@@ -1,9 +1,10 @@
 
 
+
 iniciar_banco_geral();
 
 function iniciar_banco_geral() {
-    localStorage.clear();
+    //localStorage.clear();
     iniciar_banco_usuarios();
     iniciar_banco_proprietarios();
     iniciar_banco_imoveis();
@@ -129,7 +130,7 @@ function iniciar_banco_proprietarios() {
 function iniciar_banco_imoveis() {
 
     let valid_imoveis = JSON.parse(localStorage.getItem("imoveis"));
-    
+
     var imoveis = [
         {
             id: 1,
@@ -177,16 +178,18 @@ function iniciar_banco_imoveis() {
         }
 
     ]
+
     if (valid_imoveis == null) {
         localStorage.setItem("imoveis", JSON.stringify(imoveis));
     }
+
 }
 
 function iniciar_banco_contratos() {
 
     let valid_contratos = JSON.parse(localStorage.getItem("contratos"));
 
-    var contratos = [
+    let contratos = [
         {
             id: 1,
             locatario: "josé da silva",

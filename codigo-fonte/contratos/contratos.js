@@ -266,9 +266,8 @@ function filtrarContratos() {
 function carregarBancoContratos() {
 
     // localStorage.setItem("contratos", JSON.stringify(contratos));
-
+    //localStorage.setItem("imoveis", JSON.stringify(imoveis));
     let contratos = JSON.parse(localStorage.getItem("contratos"));
-    console.log(contratos);
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratos.length; i++) {
         var identifier = contratos[i].id
