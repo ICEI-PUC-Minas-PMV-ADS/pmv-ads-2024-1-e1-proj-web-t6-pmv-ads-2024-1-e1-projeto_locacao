@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700, 600, 500, 400, 200');
 
-*{
+* {
     margin: 0;
 }
 
@@ -28,8 +28,8 @@ body {
 }
 
 
-dialog{
-    
+dialog {
+
     border-color: white;
     border-radius: 25px;
     z-index: 30;
@@ -40,12 +40,12 @@ dialog{
     max-width: fit-content;
     justify-items: center;
     margin-bottom: 10px;
-   
+
 }
 
 
 
-#fade.escuro{
+#fade.escuro {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -65,7 +65,7 @@ header {
     /* border: 1px solid black; */
 }
 
-.oculto{
+.oculto {
 
     background-color: red;
     color: #F8F9FA;
@@ -82,7 +82,7 @@ header {
 
 .control {
     color: var(--green);
-    font-weight:600;
+    font-weight: 600;
     font-size: 25px;
 }
 
@@ -129,10 +129,12 @@ nav {
     height: 88vh;
     /* border: 1px solid black; */
 }
+
 .sidebar_superior {
 
     width: 100%;
 }
+
 .sidebar_inferior {
     width: 100%;
     margin-bottom: 10px;
@@ -147,7 +149,7 @@ hr.divisor {
     width: 35px;
 }
 
-.open_icon{
+.open_icon {
     height: 20px;
     width: 20px;
 }
@@ -218,13 +220,13 @@ main {
     align-items: center;
 }
 
-.div_table_properties_group_buttons{
+.div_table_properties_group_buttons {
     display: flex;
     flex-direction: row;
     gap: 15px;
 }
 
-.div_table_properties_button{
+.div_table_properties_button {
     display: flex;
     padding: 0px;
     border-radius: 10px;
@@ -245,7 +247,7 @@ main {
     font-weight: bold;
 }
 
-.div_table_row{
+.div_table_row {
     margin: 10px 0 2px 0;
     display: flex;
     flex-direction: row;
@@ -253,44 +255,44 @@ main {
     column-gap: 5px;
     min-width: fit-content;
     justify-content: space-between
-    
 }
 
-.table_icon > img{
+.table_icon>img {
     display: flex;
     width: 35px;
     /* border: 1px solid black; */
-    
+
 }
-.table_icon1{
+
+.table_icon1 {
     width: 80px
 }
 
-.table_id{
+.table_id {
     min-width: fit-content;
     /* border: 1px solid black; */
     width: 5%;
 }
 
-.table_name{
+.table_name {
     min-width: fit-content;
     /* border: 1px solid black; */
     width: 25%
 }
 
-.table_property{
+.table_property {
     min-width: fit-content;
     /* border: 1px solid black; */
     width: 25%;
 }
 
-.table_status{
+.table_status {
     min-width: fit-content;
     /*border: 1px solid black;*/
     width: 25%;
 }
 
-.table_button{
+.table_button {
     display: flex;
     min-width: fit-content;
     /* border: 1px solid black; */
@@ -313,7 +315,7 @@ main {
 
 }
 
-.status_inactive{
+.status_inactive {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -325,10 +327,10 @@ main {
     height: 35px;
     border-radius: 10px;
     align-items: center;
-    
+
 }
 
-.open_button{
+.open_button {
     display: flex;
     padding: 10px;
     border-radius: 20px;
@@ -336,19 +338,19 @@ main {
     background-color: var(--white);
 }
 
-.open_button:hover{
+.open_button:hover {
     background-color: var(--grey);
 }
 
-#popup_filtrar{
+#popup_filtrar {
     width: 30%;
 }
 
-#popup_dados_proprietario{
+#popup_dados_proprietario {
     width: 50%;
 }
 
-.popup {    
+.popup {
     justify-self: center;
     align-self: center;
     background-color: var(--light-grey);
@@ -363,25 +365,26 @@ main {
     background-color: var(--light-black);
 }
 
-.popup div{
+.popup div {
     display: flex;
     flex-direction: column;
-    align-items:normal;
+    align-items: normal;
 }
 
-.popup hr{
+.popup hr {
     margin-bottom: 10px;
     border-top: 1px solid var(--green);
     margin: 10;
 }
 
-.popup p,label{
+.popup p,
+label {
     font-size: 12px;
     font-weight: bold;
     padding-left: 10px;
 }
 
-.popup h1{
+.popup h1 {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
@@ -415,7 +418,7 @@ main {
     padding-left: 10px;
 }
 
-.popup .inputError{
+.popup .inputError {
     height: 30px;
     margin-bottom: 10px;
     color: var(--black);
@@ -424,7 +427,7 @@ main {
     padding-left: 10px;
 }
 
-.popup .status{
+.popup .status {
     margin-left: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -433,7 +436,7 @@ main {
     gap: 10px;
 }
 
-.popup .buttons{
+.popup .buttons {
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -441,7 +444,7 @@ main {
     margin-top: 15px;
 }
 
-.popup .icon{
+.popup .icon {
     height: 20px;
     width: 20px;
 }
@@ -466,121 +469,121 @@ main {
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     border: 1px solid #5BB800;
 }
 
-.status div{
+.status div {
     display: flex;
     flex-direction: row;
 }
 
-#table_list{
+#table_list {
     overflow-y: auto;
     height: 85%;
 
 }
 
-.popup .dados_pessoais{
+.popup .dados_pessoais {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "nome nome"
-    "cpf estado_civil";
+    grid-template-areas:
+        "nome nome"
+        "cpf estado_civil";
     column-gap: 15px;
 }
 
-.popup .div_nome{
+.popup .div_nome {
     display: flex;
     flex-direction: column;
     grid-area: nome;
 }
 
-.popup .div_cpf{
+.popup .div_cpf {
     display: flex;
     flex-direction: column;
     grid-area: cpf;
 }
 
-.popup .div_estado_civil{
+.popup .div_estado_civil {
     display: flex;
     flex-direction: column;
     grid-area: estado_civil;
 }
 
-.popup .endereco{
+.popup .endereco {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "tipo_logradouro logradouro logradouro logradouro numero"
-    "complemento bairro bairro cidade cidade"
-    "cep uf . . .";
+    grid-template-areas:
+        "tipo_logradouro logradouro logradouro logradouro numero"
+        "complemento bairro bairro cidade cidade"
+        "cep uf . . .";
     column-gap: 15px;
-    
+
 }
 
-.popup .div_tipo_logradouro{
+.popup .div_tipo_logradouro {
     display: flex;
     flex-direction: column;
     grid-area: tipo_logradouro;
 }
 
-.popup .div_logradouro{
+.popup .div_logradouro {
     display: flex;
     flex-direction: column;
     grid-area: logradouro;
 }
 
-.popup .div_numero{
+.popup .div_numero {
     display: flex;
     flex-direction: column;
     grid-area: numero;
 }
 
-.popup .div_complemento{
+.popup .div_complemento {
     display: flex;
     flex-direction: column;
     grid-area: complemento;
 }
 
-.popup .div_bairro{
+.popup .div_bairro {
     display: flex;
     flex-direction: column;
     grid-area: bairro;
 }
 
-.popup .div_cidade{
+.popup .div_cidade {
     display: flex;
     flex-direction: column;
     grid-area: cidade;
 }
 
-.popup .div_cep{
+.popup .div_cep {
     display: flex;
     flex-direction: column;
     grid-area: cep;
 }
 
-.popup .div_uf{
+.popup .div_uf {
     display: flex;
     flex-direction: column;
     grid-area: uf;
 }
 
-.popup .contato{
+.popup .contato {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "telefone email";
     column-gap: 15px;
 }
 
-.popup .div_telefone{
+.popup .div_telefone {
     display: flex;
     flex-direction: column;
     grid-area: telefone;
 }
 
-.popup .div_email{
+.popup .div_email {
     display: flex;
     flex-direction: column;
     grid-area: email;
@@ -595,112 +598,121 @@ input[type="checkbox"]{
 
 
 
-dialog *{
-    font-family:'Roboto';
-    
+dialog * {
+    font-family: 'Roboto';
+    color: #5BB800;
+
+
 }
-dialog{
-    
+
+dialog {
+
     padding: 25px;
-    height: 600px
-    fit-content
+    height: 600px;
+
 }
 
 
 
-dialog h1{
+dialog h1 {
     display: flex;
-    font-family:'Roboto';
+    font-family: 'Roboto';
     color: #5bb800;
     justify-content: center;
     justify-items: center;
-    
+
 }
- dialog h4{
-    font-family:'Roboto';
+
+dialog h4 {
+    font-family: 'Roboto';
     display: block;
     color: #5bb800;
     margin-bottom: 0px;
 }
 
- dialog hr{
+dialog hr {
 
     color: #5bb800;
-    height: 1px;
-    background-color: #5bb800;   
-    margin-top: 5px; 
+    height: 2px;
+    border: none;
+    background-color: #5bb800;
+    margin-top: 5px;
     margin-bottom: 10px;
-    
+
 }
 
-dialog label{
+dialog label {
     color: #5bb800;
     font-size: small;
-    font-style:normal;
+    font-style: normal;
     font-family: 'Roboto';
 }
 
-dialog .id_tipo{
+dialog .id_tipo {
     display: flex;
     width: 50%;
     gap: 50px;
     margin-bottom: 10px;
 }
 
-dialog .Logradouro{
+dialog .Logradouro {
     display: flexbox;
     width: 100%;
     gap: 10px;
     margin-bottom: 10px;
 
 }
-dialog .Logradouro input{
+
+dialog .Logradouro input {
     width: 100%;
 }
 
-dialog input{
-    height: 35px;
+dialog input {
+    height: 25px;
     border-radius: 7px;
     border: solid;
-    color: #5bb800;
+    border-color: #5BB800;
+    color: #080808
 }
 
-dialog .cidade_cep{
+dialog .cidade_cep {
     display: flex;
     width: 100%;
     gap: 10px;
     margin-bottom: 10px;
 }
 
-dialog .status_vacancia{
+dialog .status_vacancia {
     margin-top: 50PX;
     display: flex;
     width: 100%;
     gap: 20%;
-    margin:0px;
+    margin: 0px;
     justify-content: center;
-    
+
 
 }
 
-dialog .status,.vacancia{
+dialog .status,
+.vacancia {
     width: 200px;
 }
 
-dialog .status_vacancia .status div{
+dialog .status_vacancia .status div {
     display: flex;
-    
+
 }
-dialog .status_vacancia .status div label{
+
+dialog .status_vacancia .status div label {
     margin-left: 10px;
     margin-top: 14px;
 }
 
-dialog .status_vacancia .vacancia div{
+dialog .status_vacancia .vacancia div {
     display: flex;
 }
 
-dialog .status_vacancia .vacancia div label{
+dialog .status_vacancia .vacancia div label {
     margin-left: 10px;
     margin-top: 14px;
 }
@@ -711,75 +723,86 @@ dialog .container {
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
-    cursor: pointer;
+    cursor: auto;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
- dialog .container input {
+}
+
+/* Hide the browser's default radio button */
+dialog .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom radio button */
- dialog .checkmark {
+}
+
+/* Create a custom radio button */
+dialog .checkmark {
     position: absolute;
     top: 0;
     left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
- dialog .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  dialog .container input:checked ~ .checkmark {
-    background-color: #5bb800;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  dialog .checkmark:after {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(221, 222, 221);
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+dialog .container:hover input~.checkmark {
+    background-color: #ccc
+}
+
+/* When the radio button is checked, add a blue background */
+dialog .container input:checked~.checkmark {
+    background-color: #5BB800;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+dialog .checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  dialog .container input:checked ~ .checkmark:after {
+}
+
+/* Show the indicator (dot/circle) when checked */
+dialog .container input:checked~.checkmark:after {
     display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  dialog .container .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-  }
+}
 
-  /* botoes de filtrar e voltar*/
+/* Style the indicator (dot/circle) */
+dialog .container .checkmark:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
 
-  dialog > button {
+
+
+
+
+/* botoes de filtrar e voltar*/
+
+dialog>button {
     border-radius: 5px;
     width: 200px;
     display: grid;
     margin-top: 20px;
     margin-left: 0%;
-    background-color: #5bb800; /* Green */
+    background-color: #5bb800;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 25px;
@@ -788,39 +811,41 @@ dialog .container {
     display: inline-block;
     font-size: 16px;
     margin-right: 20px;
-  }
+}
 
-  dialog .alinhar_botoes{
+dialog .alinhar_botoes {
     display: flex;
     margin: 0px;
     justify-content: center;
 
-  }
+}
 
-  dialog .alinhar_botoes button img{
+dialog .alinhar_botoes button img {
     width: 70%;
-  }
+}
 
-  dialog button:hover {
-    background: #69D303; /* Green */
+dialog button:hover {
+    background: #69D303;
+    /* Green */
     color: white;
-  }
+}
 
-  dialog button:active {
+dialog button:active {
     background-color: #69D303;
     box-shadow: 0 3px rgb(202, 200, 200);
     transform: translateY(4px);
     transform: translateX(4px);
-  }
+}
 
-  /* estilizando botões*/
- dialog button {
+/* estilizando botões*/
+dialog button {
     border-radius: 5px;
     width: 200px;
     display: grid;
     margin-top: 20px;
     margin-left: 0%;
-    background-color: #5bb800; /* Green */
+    background-color: #5bb800;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 25px;
@@ -829,116 +854,117 @@ dialog .container {
     display: inline-block;
     font-size: 16px;
     margin-right: 20px;
-  }
+}
 
-  .alinhar_botoes img{
+.alinhar_botoes img {
     width: 50%;
-  }
+}
 
- dialog button:hover {
-    background: #69D303; /* Green */
+dialog button:hover {
+    background: #69D303;
+    /* Green */
     color: white;
-  }
+}
 
-  button:active {
+button:active {
     background-color: #69D303;
     box-shadow: 0 3px gainsboro;
     transform: translateY(4px);
-  }
+}
 
-  /***********************************************************************
+/***********************************************************************
   ************************************************************************
   **********************************************************************
   **************************************************************************/
-  /* ADIÇÃO-------------------------------------------------*/
+/* ADIÇÃO-------------------------------------------------*/
 
 
 
-  
-.adicao .proprietario input{
+
+.adicao .proprietario input {
     width: 75%;
 
 }
 
 .adicao .a {
-    display:flex;
+    display: flex;
     column-gap: 10px;
     flex-wrap: wrap;
-  
-}
-
-.adicao .a .a1 label input{
-  width: 80px;
-}
-
-.adicao .a .a2 label input{
-  width: 290px;
-}
-
-.adicao .a .a3 label input{
-  width: 40px;
-}
-
-.adicao .b{
-  
-  display:flex;
-  width: 100%;
-  column-gap: 15px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
 
 }
 
-
-.adicao .c{
-  display:flex;
-  column-gap: 15%;
-  margin-right: 10px;
-   
+.adicao .a .a1 label input {
+    width: 80px;
 }
 
-.adicao .c input{
+.adicao .a .a2 label input {
+    width: 290px;
+}
+
+.adicao .a .a3 label input {
+    width: 40px;
+}
+
+.adicao .b {
+
+    display: flex;
+    width: 100%;
+    column-gap: 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+
+.adicao .c {
+    display: flex;
+    column-gap: 15%;
+    margin-right: 10px;
+
+}
+
+.adicao .c input {
     width: 100px;
 
 }
 
-.adicao .d{
+.adicao .d {
     display: flex;
     width: 100%;
     align-items: center;
-    
-  
+
+
 }
 
-.adicao .d h4{
-  width: 100%;
+.adicao .d h4 {
+    width: 100%;
 }
 
-.adicao header{
+.adicao header {
     display: flex;
     justify-content: center;
     height: 40px;
 }
 
-.adicao input{
+.adicao input {
     border-radius: 6px;
-    height: 25px; 
+    height: 25px;
     border: solid #5bb800 2px;
     font-family: "Roboto";
     margin: 5px;
 }
 
-.adicao hr{
+.adicao hr {
     color: #5bb800;
     border-color: #5bb800;
     border-color: 3px;
-    
+
 }
 
-.adicao select{
-    width: 50%;  
+.adicao select {
+    width: 50%;
     border-radius: 6px;
-    height: 25px; 
+    height: 25px;
     border: solid #5bb800 2px;
     padding: 2px;
     height: 35px;
@@ -952,17 +978,17 @@ dialog .container {
     width: 60px;
     height: 34px;
     margin-top: 0px
-  }
-  
-  /* Hide default HTML checkbox */
+}
+
+/* Hide default HTML checkbox */
 .adicao .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-    
-  }
-  
-  /* The slider */
+
+}
+
+/* The slider */
 .adicao .slider {
     position: absolute;
     cursor: pointer;
@@ -973,9 +999,9 @@ dialog .container {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
- .adicao .slider:before {
+}
+
+.adicao .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -985,50 +1011,52 @@ dialog .container {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
- .adicao input:checked + .slider {
+}
+
+.adicao input:checked+.slider {
     background-color: #5bb800;
-  }
-  
- .adicao input:focus + .slider { 
+}
+
+.adicao input:focus+.slider {
     box-shadow: 0 0 1px #5bb800;
-  }
-  
-  .adicao input:checked + .slider:before {
+}
+
+.adicao input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(30px);
     transform: translateX(35px);
-  }
-  
-  /* Rounded sliders */
-  .adicao .slider.round {   
+}
+
+/* Rounded sliders */
+.adicao .slider.round {
     border-radius: 34px;
-  }
-  
-  .adicao .slider.round:before {
+}
+
+.adicao .slider.round:before {
     border-radius: 50%;
     margin-top: 0px;
-  }
+}
 
- .adicao .espacamento{
+.adicao .espacamento {
     display: flex;
     width: 100%;
     text-align: center;
-    
-  }
-.adicao .espacamento h4{
+
+}
+
+.adicao .espacamento h4 {
     margin-left: 10px;
     margin-top: 6px;
 }
-  
+
 .adicao button {
     border-radius: 5px;
     width: 200px;
     display: grid;
     margin-top: 20px;
     margin-left: 0%;
-    background-color: #5bb800; /* Green */
+    background-color: #5bb800;
+    /* Green */
     border: none;
     color: white;
     padding: 15px 25px;
@@ -1037,29 +1065,30 @@ dialog .container {
     display: inline-block;
     font-size: 16px;
     margin-right: 20px;
-    
-  }
 
-.adicao .alinhar_botoes{
+}
+
+.adicao .alinhar_botoes {
     display: flex;
     justify-content: center;
-  }
+}
 
-.adicao  .alinhar_botoes img{
+.adicao .alinhar_botoes img {
     width: 50%;
-  }
+}
 
-.adicao  button:hover {
-    background: #69D303; /* Green */
+.adicao button:hover {
+    background: #69D303;
+    /* Green */
     color: white;
-  }
+}
 
 .adicao button:active {
     background-color: #69D303;
     box-shadow: 0 3px gainsboro;
     transform: translateY(4px);
-  }
+}
 
-.adicao header{
+.adicao header {
     color: #5BB800;
 }

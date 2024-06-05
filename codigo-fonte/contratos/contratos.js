@@ -38,13 +38,17 @@ ElementoFade = document.getElementById('fade')
 var elementoLista = document.getElementById('table_list')
 
 function fecharModal() {
+    dialog.removeAttribute('open');
+    dialog.classList.remove('popUpFiltro');
+    dialog.classList.remove('PopUpAdicaoContrato');
+    dialog.classList.remove('PopUpAlterar')
     ElementoFade.classList.remove('escuro');
     dialog.close()
 
 }
 
 function abrirModalFiltro() {
-
+    
     ElementoFade.classList.add("escuro");
     dialog.classList.add("popUpFiltro")
     dialog.setAttribute('open', 'true');
@@ -56,7 +60,7 @@ function abrirModalFiltro() {
 
     <div class="alinhamento" >
         <label class="titulos" for="id">ID<br>
-            <input type="text" name="id" id="id">
+            <input type="number" name="id" id="id">
 
         </label>
         
@@ -189,12 +193,6 @@ function vazio(nome) {
     alert("O " + nome + " está vazio")
 }
 
-
-
-
-function abrirModalAlteracao() {
-
-}
 
 function filtrarContratos() {
     //var elementoLista = document.getElementById('table_list');
