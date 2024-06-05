@@ -692,3 +692,16 @@ function set_input_success(e) {
     }
     
 } 
+
+function abrir_sidebar() {
+    let sanduiche = document.getElementById("sanduiche")
+    let nav = document.querySelector("nav")
+
+    if(sanduiche.innerHTML == "menu") {
+        nav.className = "open_nav"
+        sanduiche.innerHTML = "close"
+    } else {
+        nav.className = ""
+        sanduiche.innerHTML = "menu"
+    }
+}

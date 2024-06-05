@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <title>Requisições</title>
-    <link rel="stylesheet" type="text/css" href="requisicoes_page.css" media="screen">
+    <!-- <link rel="stylesheet" type="text/css" href="requisicoes_page.css" media="screen"> -->
     <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../utils/toggle_button.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <script src="requisicoes_page.js"></script>
     <script src="../utils/toggle_button.js"></script>
+    <link rel="stylesheet" type="text/css" href="../utils/global.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body onload="requisicao_init()">
     <header>
+        <button class="button_menu" onclick="abrir_sidebar()">
+            <div class="icon">
+              <i id="sanduiche" class="material-icons">menu</i>
+            </div>
+          </button>
         <div class="div_logo">
             <p><span class="immo">Immo</span><span class="control">Control</span></p>
         </div>
@@ -36,47 +42,52 @@
           </div>
     </header>
     <div class="content">
-        <nav>
+        <nav id="sibebar">
             <div class="sidebar_superior">
-                <hr class="divisor">
-                <button class="sidebar_button" onclick = "location.href ='../dashboard_page/dashboard_page.html'">
-                    <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
-                    <p>Dashboard</p>
-                  </button>
-                  <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
-                    <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
-                    <p>Proprietários</p>
-                  </button>
-                  <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
-                    <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
-                    <p>Locatários</p>
-                  </button>
-                  <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
-                    <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
-                    <p>Imóveis</p>
-                  </button>
-                  <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
-                    <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
-                    <p>Contratos</p>
-                  </button>
-                  <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
-                    <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
-                    <p>Faturas</p>
-                  </button>
-                  <button class="sidebar_button_selected" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
-                    <img class="icon" src="../src/icones/icon_requisicoes_selecionado.png" alt="" />
-                    <p>Requisições</p>
-                  </button>
+              <button class="button_menu" onclick="abrir_sidebar()">
+                <div class="icon">
+                  <i id="sanduiche" class="material-icons">menu</i>
+                </div>
+              </button>
+              <hr class="divisor" />
+              <button class="sidebar_button" onclick="location.href = '../dashboard_page/dashboard_page.html'">
+                <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
+                <p class="descricao">Dashboard</p>
+              </button>
+              <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
+                <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
+                <p class="descricao">Proprietários</p>
+              </button>
+              <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
+                <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
+                <p class="descricao">Locatários</p>
+              </button>
+              <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
+                <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
+                <p class="descricao">Imóveis</p>
+              </button>
+              <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
+                <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
+                <p class="descricao">Contratos</p>
+              </button>
+              <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
+                <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
+                <p class="descricao">Faturas</p>
+              </button>
+              <button class="sidebar_button_selected" >
+                <img class="icon" src="../src/icones/icon_requisicoes_selecionado.png" alt="" />
+                <p class="descricao">Requisições</p>
+              </button>
             </div>
             <div class="sidebar_inferior">
-                <hr class="divisor">
-                <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> 
-                    <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
-                    <p>Usuários</p>
-                </button>
+              <hr class="divisor" />
+              <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'">
+                <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
+                <p class="descricao">Usuários</p>
+              </button>
             </div>
-        </nav>
-        <main id="table_owners">
+          </nav>
+        <main id="main_table">
             <div class="div_table_properties">
                 <p>Requisições</p>
                 <div class="div_table_properties_group_buttons">
