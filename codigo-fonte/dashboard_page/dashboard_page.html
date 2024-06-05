@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <title>Página Modelo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="dashboard_page.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../utils/global.css" media="screen" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -14,6 +16,11 @@
 
 <body onload="iniciar_dashboard()">
   <header>
+    <button class="button_menu" onclick="abrir_sidebar()">
+      <div class="icon">
+        <i id="sanduiche" class="material-icons">menu</i>
+      </div>
+    </button>
     <div class="div_logo">
       <p>
         <span class="immo">Immo</span><span class="control">Control</span>
@@ -34,47 +41,52 @@
     </div>
   </header>
   <div class="content">
-    <nav>
+    <nav id="sibebar">
       <div class="sidebar_superior">
+        <button class="button_menu" onclick="abrir_sidebar()">
+          <div class="icon">
+            <i id="sanduiche" class="material-icons">menu</i>
+          </div>
+        </button>
         <hr class="divisor" />
-        <button class="sidebar_button_selected" onclick="">
+        <button class="sidebar_button_selected">
           <img class="icon" src="../src/icones/icon_dashboard_selecionado.png" alt="" />
-          <p>Dashboard</p>
+          <p class="descricao">Dashboard</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
           <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
-          <p>Proprietários</p>
+          <p class="descricao">Proprietários</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
           <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
-          <p>Locatários</p>
+          <p class="descricao">Locatários</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../imoveis/imoveis.html'">
           <img class="icon" src="../src/icones/icon_imoveis.png" alt="" />
-          <p>Imóveis</p>
+          <p class="descricao">Imóveis</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
           <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
-          <p>Contratos</p>
+          <p class="descricao">Contratos</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
           <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
-          <p>Faturas</p>
+          <p class="descricao">Faturas</p>
         </button>
         <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
           <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
-          <p>Requisições</p>
+          <p class="descricao">Requisições</p>
         </button>
       </div>
       <div class="sidebar_inferior">
         <hr class="divisor" />
         <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'">
           <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
-          <p>Usuários</p>
+          <p class="descricao">Usuários</p>
         </button>
       </div>
     </nav>
-    <main>
+    <main id="main_dashboard">
       <div id="bar_chart" class="contentMain">
         <p>Faturamento</p>
         <canvas id="myChart" style="max-height: 90%"></canvas>
@@ -88,8 +100,8 @@
           <p>Faturas Vencidas ou a Vencer na Próxima Semana</p>
         </div>
 
-        <div class="div_table_header">
-          <div class="table_id">ID</div>
+        <div class="div_table_header_dash">
+          <!-- <div class="table_id">ID</div> -->
           <div class="table_locatario">LOCATÁRIO</div>
           <div class="table_periodo">VENCIMENTO</div>
           <div class="table_valor">VALOR</div>

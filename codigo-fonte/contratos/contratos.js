@@ -1,37 +1,37 @@
 
-contratos = [
-    {
-        id: 1,
-        locatario: "josé da silva",
-        endereco: "rua são josé, centro",
-        periodo: "12",
-        valor_mensal: 600.00,
-        data_inicio: "2024-03-23",
-        status: "ativo",
-        proprietario: "marcos"
-    },
-    {
-        id: 2,
-        locatario: "fernando abreu",
-        endereco: "rua das nações, observatorio",
-        periodo: "6",
-        valor_mensal: 1600.00,
-        data_inicio: "2020-05-06",
-        status: "inativo",
-        proprietario: "vinicius"
-    },
-    {
-        id: 3,
-        locatario: "Mariilia pereira",
-        endereco: "rua laranjal, paulista",
-        periodo: "24",
-        valor_mensal: 600.00,
-        data_inicio: "2018-09-08",
-        status: "ativo",
-        proprietario: "joana"
-    }
+// contratos = [
+//     {
+//         id: 1,
+//         locatario: "josé da silva",
+//         endereco: "rua são josé, centro",
+//         periodo: "12",
+//         valor_mensal: 600.00,
+//         data_inicio: "2024-03-23",
+//         status: "ativo",
+//         proprietario: "marcos"
+//     },
+//     {
+//         id: 2,
+//         locatario: "fernando abreu",
+//         endereco: "rua das nações, observatorio",
+//         periodo: "6",
+//         valor_mensal: 1600.00,
+//         data_inicio: "2020-05-06",
+//         status: "inativo",
+//         proprietario: "vinicius"
+//     },
+//     {
+//         id: 3,
+//         locatario: "Mariilia pereira",
+//         endereco: "rua laranjal, paulista",
+//         periodo: "24",
+//         valor_mensal: 600.00,
+//         data_inicio: "2018-09-08",
+//         status: "ativo",
+//         proprietario: "joana"
+//     }
 
-]
+// ]
 
 dialog = document.getElementById('modal')
 ElementoFade = document.getElementById('fade')
@@ -155,6 +155,7 @@ function abrirModalAdicao() {
 }
 
 function adicionarContrato() {
+    let contratos = JSON.parse(localStorage.getItem("contratos"))
     let locatario = document.getElementById('locatario').value.toLowerCase()
     let endereco = document.getElementById('endereco').value.toLowerCase()
     let periodo = document.getElementById('periodo').value.toLowerCase()
@@ -195,7 +196,7 @@ function vazio(nome) {
 
 
 function filtrarContratos() {
-    //var elementoLista = document.getElementById('table_list');
+     //var elementoLista = document.getElementById('table_list');
     var contratosfiltrados = JSON.parse(localStorage.getItem("contratos"));
     var id = document.getElementById('id').value;
     var proprietario = document.getElementById('proprietario').value.toLowerCase();
@@ -264,7 +265,8 @@ function filtrarContratos() {
 
 function carregarBancoContratos() {
 
-    localStorage.setItem("contratos", JSON.stringify(contratos));
+    // localStorage.setItem("contratos", JSON.stringify(contratos));
+    let contratos = JSON.parse(localStorage.getItem("contratos"))
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratos.length; i++) {
         var identifier = contratos[i].id
@@ -406,7 +408,7 @@ function verificarCheckbox(identifier) {
 }
 
 function alterarContrato(identifier) {
-
+    let contratos = JSON.parse(localStorage.getItem("contratos"))
     console.log(identifier)
     let locatario = document.getElementById('locatario').value.toLowerCase()
     let endereco = document.getElementById('endereco').value.toLowerCase()
@@ -414,7 +416,6 @@ function alterarContrato(identifier) {
     let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
     let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
     let status = document.getElementById('checkbox').checked
-
 
     if (locatario == "" || endereco == "" || periodo == "" || valor_mensal == null || data_inicio == "") {
         alert("Existem um ou mais campos vazios")
@@ -431,12 +432,10 @@ function alterarContrato(identifier) {
         else {
             contratos[identifier-1].status = "inativo"
         }
+        localStorage.setItem('contratos',JSON.stringify(contratos))
         fecharModal()
         carregarBancoContratos()
     }
-
-
-
 
 
 }

@@ -90,3 +90,10 @@
         opacity: 0;
     }
 }
+
+@media only screen and (max-device-width: 480px) {
+    .snackbar {
+        width: 91.5%;
+        left: 0;
+    }
+}

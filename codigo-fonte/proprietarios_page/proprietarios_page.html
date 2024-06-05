@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Proprietários</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="../src/images/favicon.ico">
-
   <link rel="stylesheet" type="text/css" href="proprietarios_page.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="../utils/snackbar.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="../utils/dropdown.css" media="screen" />
@@ -17,6 +17,11 @@
 
 <body onload="proprietarios_init()">
   <header>
+    <button class="button_menu" onclick="abrir_sidebar()">
+      <div class="icon">
+        <i id="sanduiche" class="material-icons">menu</i>
+      </div>
+    </button>
     <div class="div_logo">
       <p>
         <span class="immo">Immo</span><span class="control">Control</span>
@@ -84,7 +89,7 @@
         </button>
       </div>
     </nav>
-    <main id="table_owners">
+    <main id="main_table">
       <div class="div_table_properties">
         <p>Proprietários</p>
         <div class="div_table_properties_group_buttons">
@@ -98,7 +103,6 @@
       </div>
       <div class="div_table_header">
         <div class="table_icon"></div>
-        <div class="table_id">ID</div>
         <div class="table_name">NOME</div>
         <div class="table_property">IMÓVEIS</div>
         <div class="table_status">STATUS</div>

@@ -59,10 +59,7 @@ function usuarios(id, nome, tipo, status){
             <div class="table_icon">
               <img class="icon" src="../src/icones/icon_usuario_logado.png"
                 alt="ícone com desenho da silueta de um boneco" />
-            </div>
-            <div class="table_id">
-            ${usuario.id}
-            </div>
+            </div>           
             <div class="table_name">
             ${usuario.nome}            
             </div>

@@ -37,6 +37,15 @@ body {
     justify-content: center;
 }
 
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+}
+
 /* LINHAS DE DIVISÃO */
 hr.divisor {
     border-top: 1px solid var(--grey);
@@ -52,14 +61,7 @@ hr.divisor {
 }
 
 /* CABEÇALHO (header)*/
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 12vh;
-}
+
 
 /* div Icone ImmoControl */
 .div_logo {
@@ -210,7 +212,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5em;
 }
 
 .div_table_faturas_group_buttons{
