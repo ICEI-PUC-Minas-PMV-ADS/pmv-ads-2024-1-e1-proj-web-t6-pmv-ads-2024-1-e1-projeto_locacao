@@ -76,9 +76,6 @@ function requisicoes(id, requisitante, tipo, status) {
                         <div class="table_icon">
                             <img class="icon" src="../src/icones/icon_requisicoes_selecionado.png" alt="">
                         </div>
-                        <div class="table_id">
-                            ${requisicao.id}
-                        </div>
                         <div class="table_requisitante">
                             ${requisicao.requisitante}
                         </div>
