@@ -1,9 +1,5 @@
 function requisicao_init() { 
-    usuario()
-    localStorage.clear()
-
-    iniciar_banco()
-
+    usuario()    
     requisicoes(null, null, null, false)
 }
 
@@ -559,45 +555,6 @@ function salvar_nova_requisicao() {
 
         fechar_popup_nova_requisicao()
     }
-}
-
-function iniciar_banco_requisicoes() {
-    let requisicoes = [
-        {
-            id: 1,
-            requisitante: "Requisitante 1",
-            tipo: "Locatário",
-            data: "09/04/2024",
-            status_atendimento: true,
-            requisicao: "requisicao 1",
-            
-        },
-        {
-            id: 2,
-            requisitante: "Requisitante 2",
-            tipo: "Proprietário",
-            data: "20/03/2024",
-            status_atendimento: false,
-            requisicao: "requisicao 2",
-            
-        },
-        {
-            id: 3,
-            requisitante: "Requisitante 3",
-            tipo: "Locatário",
-            data: "13/03/2024",
-            status_atendimento: false,
-            requisicao: "requisicao 3",
-            
-        }
-        
-    ]
-
-    localStorage.setItem("requisicoes", JSON.stringify(requisicoes))
-}
-
-function iniciar_banco() {
-    iniciar_banco_requisicoes()
 }
 
 function show_snackbar(element, message) {

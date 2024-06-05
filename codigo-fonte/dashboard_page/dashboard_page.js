@@ -1,7 +1,6 @@
 function iniciar_dashboard() {
   iniciar_banco_imoveis();
-  iniciar_banco_faturas();
-  // usuario()
+   // usuario()
   my_bar_chart();
   my_doughnut_chart();
   alerta_vencimento();
@@ -70,10 +69,10 @@ function my_bar_chart() {
   };
 
   faturas.map((fatura) => {
-    if (fatura.status_pgto) {
+    if (fatura.status_pagamento) {
       Object.keys(meses).map((mes) => {
-        if (meses[mes].text == fatura.data_pgto.split("/")[1]) {
-          meses[mes].value += fatura.valor;
+        if (meses[mes].text == fatura.data_pagamento.split("/")[1]) {
+          meses[mes].value += parseFloat(fatura.valor);
         }
       });
     }
@@ -134,7 +133,7 @@ function my_doughnut_chart() {
   let vago = 0;
 
   dados_imoveis.map((imovel) => {
-    if (imovel.statusLocacao) {
+    if (imovel.vacancia == 'locado') {
       locado++;
     } else {
       vago++;
@@ -163,99 +162,6 @@ function my_doughnut_chart() {
   });
 }
 
-function iniciar_banco_faturas() {
-  let valid_faturas = JSON.parse(localStorage.getItem("faturas"));
-  let faturas = [
-    {
-      id: 1,
-      locatario: 'Locatário 1',
-      data_pgto: "05/01/2024",
-      valor: 1000,
-      status_pgto: false,
-    },
-    {
-      id: 2,
-      locatario: 'Locatário 2',
-      data_pgto: "05/02/2024",
-      valor: 2000,
-      status_pgto: true,
-    },
-    {
-      id: 3,
-      locatario: 'Locatário 3',
-      data_pgto: "06/06/2024",
-      valor: 3000,
-      status_pgto: false,
-    },
-    {
-      id: 4,
-      locatario: 'Locatário 4',
-      data_pgto: "05/04/2024",
-      valor: 4000,
-      status_pgto: true,
-    },
-    {
-      id: 5,
-      locatario: 'Locatário 5',
-      data_pgto: "05/05/2024",
-      valor: 3500,
-      status_pgto: true,
-    },
-    {
-      id: 6,
-      locatario: 'Locatário 6',
-      data_pgto: "08/05/2024",
-      valor: 2500,
-      status_pgto: true,
-    },
-    {
-      id: 7,
-      locatario: 'Locatário 7',
-      data_pgto: "05/07/2024",
-      valor: 5500,
-      status_pgto: true,
-    },
-    {
-      id: 8,
-      locatario: 'Locatário 8',
-      data_pgto: "13/05/2024",
-      valor: 5000,
-      status_pgto: true,
-    },
-    {
-      id: 9,
-      locatario: 'Locatário 9',
-      data_pgto: "11/05/2024",
-      valor: 4000,
-      status_pgto: true,
-    },
-    {
-      id: 10,
-      locatario: 'Locatário 10',
-      data_pgto: "12/05/2024",
-      valor: 4500,
-      status_pgto: true,
-    },
-    {
-      id: 11,
-      locatario: 'Locatário 11',
-      data_pgto: "05/11/2024",
-      valor: 3000,
-      status_pgto: true,
-    },
-    {
-      id: 12,
-      locatario: 'Locatário 12',
-      data_pgto: "05/12/2024",
-      valor: 4500,
-      status_pgto: true,
-    },
-  ];
-
-  if (valid_faturas == null) {
-    localStorage.setItem("faturas", JSON.stringify(faturas));
-  }
-}
 
 function iniciar_banco_imoveis() {
   let valid_imoveis = JSON.parse(localStorage.getItem("imoveis"));
@@ -319,7 +225,7 @@ function alerta_vencimento() {
   let fatura = JSON.parse(localStorage.getItem("faturas"));
 
   fatura.map((alerta) => {
-    let splitData = alerta.data_pgto.split("/");
+    let splitData = alerta.data_vencimento.split("/");
     let newDate = [splitData[1], splitData[0], splitData[2]];
 
     let data = new Date(newDate.join("/"));
@@ -327,14 +233,12 @@ function alerta_vencimento() {
 
     let emAberto = new Date();
     emAberto.setDate(emAberto.getDate() + 5);
-    console.log(data)
-    console.log(emAberto)
-    if (data < hoje && !alerta.status_pgto) {
+    if (data < hoje && !alerta.status_pagamento) {
       addLinhaNaTabela(alerta, true)
-      console.log(alerta.data_pgto);
+      
     } else if (data > hoje && data < emAberto) {
       addLinhaNaTabela(alerta, false)
-      console.log(alerta.data_pgto);
+      
     }
        
   });
@@ -342,17 +246,16 @@ function alerta_vencimento() {
 
 function addLinhaNaTabela(alerta, Vencida) {
   let table = document.getElementById('table_list')
-  console.log(alerta.status_pgto)
-  table.innerHTML += `
+   table.innerHTML += `
       <div class="div_table_row">       
           <div class="table_locatario">
-            ${alerta.locatario}
+            ${alerta.nome_locatario}
           </div>
           <div class="table_periodo">
-            ${alerta.data_pgto}
+            ${alerta.data_vencimento}
           </div>
           <div class="table_valor">
-            ${alerta.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}
+            ${parseFloat(alerta.valor).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}
           </div>
           <div class="table_status">
             <div class=${!Vencida ? "status_active" : "status_inactive"}>

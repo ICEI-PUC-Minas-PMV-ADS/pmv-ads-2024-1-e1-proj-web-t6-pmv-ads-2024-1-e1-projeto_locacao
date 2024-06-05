@@ -80,109 +80,11 @@ function status_vencido() {
 // BANCO DE DADOS DE FATURAS (TEMPORÁRIO)
 
 function faturas_init() {
-    localStorage.clear()
-
-    iniciar_banco_fat()
-    // USUÁRIO
+       // USUÁRIO
     usuario()
 
     faturas(null, null, null, [])
     // faturas(id_fatura, data_vencimento, nome_locatario, status)
-}
-
-
-function iniciar_banco_faturas() {
-    let faturas = [
-        {
-            id_fatura: 1,
-            id_locatario: 1,
-            id_contrato:1,
-            id_imovel: 1,
-            nome_locatario: "Locatário 01",
-            periodo_inicio: "10/01/2024",
-            periodo_fim: "10/02/2024",
-            data_vencimento: "20/06/2024",
-            data_pagamento: null,
-            valor: "400,00",
-            status_pagamento: false,
-            // EM ABERTO
-        },
-        {
-            id_fatura: 2,
-            id_locatario: 2,
-            id_contrato:2,
-            id_imovel: 2,
-            nome_locatario: "Locatário 02",
-            periodo_inicio: "15/02/2024",
-            periodo_fim: "15/03/2024",
-            data_vencimento: "25/03/2024",
-            data_pagamento: null,
-            valor: "1650,00",
-            status_pagamento: false,
-            // VENCIDO
-        },
-        {
-            id_fatura: 3,
-            id_locatario: 3,
-            id_contrato:3,
-            id_imovel: 3,
-            nome_locatario: "Locatário 03",
-            periodo_inicio: "25/04/2024",
-            periodo_fim: "25/05/2024",
-            data_vencimento: "30/05/2024",
-            data_pagamento: "25/05/2024",
-            valor: "1000,00",
-            status_pagamento: true,
-            // PAGO
-        },
-        {
-            id_fatura: 4,
-            id_locatario: 4,
-            id_contrato:1,
-            id_imovel: 1,
-            nome_locatario: "Locatário 04",
-            periodo_inicio: "10/01/2024",
-            periodo_fim: "10/02/2024",
-            data_vencimento: "20/06/2024",
-            data_pagamento: null,
-            valor: "400,00",
-            status_pagamento: false,
-            // EM ABERTO
-        },
-        {
-            id_fatura: 5,
-            id_locatario: 2,
-            id_contrato:2,
-            id_imovel: 2,
-            nome_locatario: "Locatário 05",
-            periodo_inicio: "15/02/2024",
-            periodo_fim: "15/03/2024",
-            data_vencimento: "25/03/2024",
-            data_pagamento: null,
-            valor: "1650,00",
-            status_pagamento: false,
-            // VENCIDO
-        },
-        {
-            id_fatura: 6,
-            id_locatario: 3,
-            id_contrato:3,
-            id_imovel: 3,
-            nome_locatario: "Locatário 06",
-            periodo_inicio: "20/04/2024",
-            periodo_fim: "29/05/2024",
-            data_vencimento: "30/05/2024",
-            data_pagamento: "25/05/2024",
-            valor: "1000,00",
-            status_pagamento: true,
-            // PAGO
-        }
-    ]
-    localStorage.setItem("faturas", JSON.stringify(faturas))
-}
-    
-function iniciar_banco_fat() {
-    iniciar_banco_faturas()
 }
 
 function faturas(id_fatura, data_vencimento, nome_locatario, status){
