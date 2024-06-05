@@ -48,7 +48,7 @@ function fecharModal() {
 }
 
 function abrirModalFiltro() {
-    
+
     ElementoFade.classList.add("escuro");
     dialog.classList.add("popUpFiltro")
     dialog.setAttribute('open', 'true');
@@ -80,14 +80,14 @@ function abrirModalFiltro() {
 
     <div class="checar">
         
-        <label  >
-            <input type="radio" name="escolha" value="todos" checked ><h7>TODOS</h7>
+        <label>
+            <input type="radio" name="escolha" value="todos" checked id="checkmark" ><h7>TODOS</h7>
         </label>
-        <label  >
-            <input type="radio" name="escolha" value="ativo"><h7>ATIVO</h7>
+        <label>
+            <input type="radio" name="escolha" value="ativo" id="checkmark"><h7>ATIVO</h7>
         </label>
-        <label  >
-            <input type="radio" name="escolha" value="inativo"><h7>INATIVO</h7>
+        <label>
+            <input type="radio" name="escolha" value="inativo" id="checkmark"><h7>INATIVO</h7>
         </label>  
           
     </div>
@@ -164,7 +164,7 @@ function adicionarContrato() {
     tamanho = contratos.length
 
     if (locatario == "" || endereco == "" || periodo == "" || valor_mensal == "" || data_inicio == "") {
-       
+
         alert("falta preencher algum campo")
     }
 
@@ -196,7 +196,7 @@ function vazio(nome) {
 
 
 function filtrarContratos() {
-     //var elementoLista = document.getElementById('table_list');
+    //var elementoLista = document.getElementById('table_list');
     var contratosfiltrados = JSON.parse(localStorage.getItem("contratos"));
     var id = document.getElementById('id').value;
     var proprietario = document.getElementById('proprietario').value.toLowerCase();
@@ -266,43 +266,45 @@ function filtrarContratos() {
 function carregarBancoContratos() {
 
     // localStorage.setItem("contratos", JSON.stringify(contratos));
-    let contratos = JSON.parse(localStorage.getItem("contratos"))
+    //localStorage.setItem("imoveis", JSON.stringify(imoveis));
+    let contratos = JSON.parse(localStorage.getItem("contratos"));
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratos.length; i++) {
         var identifier = contratos[i].id
         elementoLista.innerHTML += `
-    <div class="div_table_row">
+        
+        <div class="div_table_row">
   
-      <div class="table_icon1">
-          <img class="icon" src="../src/icones/icon_contratos_selecionado.png" alt="">
-      </div>
+        <div class="table_icon1">
+            <img class="icon" src="../src/icones/icon_contratos_selecionado.png" alt="">
+        </div>
+    
+        <div class="table_id" id="id">
+            ${contratos[i].id}
+        </div>
+    
+        <div class="table_name" id="name">
+            ${contratos[i].locatario}
+        </div>  
+    
+        <div class="table_property" id="tempo">
+            ${contratos[i].periodo} Meses
+        </div>
+    
+        <div class="table_status" id="mensalidade">
+            ${contratos[i].valor_mensal}
+        </div>
+        <div class="table_status" id="situacao">
+            ${contratos[i].status}
+        </div>
+    
+        <div class="table_button">
+            <button class="open_button" onclick="abrirModalAlteracaoContratos(${identifier})">
+                <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
+            </button>
+        </div>
   
-      <div class="table_id" id="id">
-          ${contratos[i].id}
-      </div>
-  
-      <div class="table_name" id="name">
-          ${contratos[i].locatario}
-      </div>  
-  
-      <div class="table_property" id="tempo">
-          ${contratos[i].periodo} Meses
-      </div>
-  
-      <div class="table_status" id="mensalidade">
-          ${contratos[i].valor_mensal}
-      </div>
-      <div class="table_status" id="situacao">
-          ${contratos[i].status}
-      </div>
-  
-      <div class="table_button">
-          <button class="open_button" onclick="abrirModalAlteracaoContratos(${identifier})">
-              <img class="open_icon" src="../src/icones/icon_ver_dados.png" alt="">
-          </button>
-      </div>
-  
-    </div>`
+        </div>`
 
     }
 
@@ -310,7 +312,7 @@ function carregarBancoContratos() {
 }
 
 function abrirModalAlteracaoContratos(identifier) {
-    let contratos=JSON.parse(localStorage.getItem("contratos"));
+    let contratos = JSON.parse(localStorage.getItem("contratos"));
     var status = contratos[identifier - 1].status
     ElementoFade.classList.add("escuro");
     dialog.setAttribute('open', 'true');
@@ -321,22 +323,22 @@ function abrirModalAlteracaoContratos(identifier) {
         <hr>
     </h4>
     <label for="locatario">Nome</label>
-    <input class="longo" type="text" name="locatario" id="locatario" value="${contratos[identifier-1].locatario}">
+    <input class="longo" type="text" name="locatario" id="locatario" value="${contratos[identifier - 1].locatario}">
     <h4 class="titulos">IMÓVEL
         <hr>
     </h4>
 
     <div class="alinhamento">
         <label class="titulos" for="endereco">ID - ENDEREÇO <br></label>
-        <input class="longo" type="text" name="endereco" id="endereco" value="${contratos[identifier-1].endereco}">
+        <input class="longo" type="text" name="endereco" id="endereco" value="${contratos[identifier - 1].endereco}">
     </div>
 
     <div class="alinhamento-a">
         <label class="titulos" for="endereco">Período <br>
-            <input type="number" name="periodo" id="periodo" placeholder="Período em meses" value="${contratos[identifier-1].periodo}">
+            <input type="number" name="periodo" id="periodo" placeholder="Período em meses" value="${contratos[identifier - 1].periodo}">
         </label>
         <label class="titulos" for="valor_mensal">Valor Mensal <br>
-            <input type="number" name="valor_mensal" id="valor_mensal" value="${contratos[identifier-1].valor_mensal}">
+            <input type="number" name="valor_mensal" id="valor_mensal" value="${contratos[identifier - 1].valor_mensal}">
         </label>
     </div>
 
@@ -344,7 +346,7 @@ function abrirModalAlteracaoContratos(identifier) {
     <div class="alinhamento-a">
         
         <label class="titulos" for="data_inicio">Data de início <hr>
-            <input type="date" name="data_inicio" id="data_inicio" value="${contratos[identifier-1].data_inicio}">
+            <input type="date" name="data_inicio" id="data_inicio" value="${contratos[identifier - 1].data_inicio}">
         </label>
         
         <label class="titulos descer" for="valor_mensal">Status <hr>
@@ -421,18 +423,18 @@ function alterarContrato(identifier) {
         alert("Existem um ou mais campos vazios")
     }
     else {
-        contratos[identifier-1].locatario = locatario
-        contratos[identifier-1].endereco = endereco
-        contratos[identifier-1].periodo = periodo
-        contratos[identifier-1].valor_mensal = valor_mensal
-        contratos[identifier-1].data_inicio = data_inicio
+        contratos[identifier - 1].locatario = locatario
+        contratos[identifier - 1].endereco = endereco
+        contratos[identifier - 1].periodo = periodo
+        contratos[identifier - 1].valor_mensal = valor_mensal
+        contratos[identifier - 1].data_inicio = data_inicio
         if (status) {
-            contratos[identifier-1].status = "ativo"
+            contratos[identifier - 1].status = "ativo"
         }
         else {
-            contratos[identifier-1].status = "inativo"
+            contratos[identifier - 1].status = "inativo"
         }
-        localStorage.setItem('contratos',JSON.stringify(contratos))
+        localStorage.setItem('contratos', JSON.stringify(contratos))
         fecharModal()
         carregarBancoContratos()
     }

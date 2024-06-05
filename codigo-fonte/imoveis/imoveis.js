@@ -224,7 +224,7 @@ function filtrarImoveis() {
   if (filtrado.length == 0) {
     fecharModal()
     alert('imóveis não encontrados')
-    iniciar_banco_imoveis()
+    carregar_banco_imoveis()
   }
 
   else {
@@ -418,7 +418,7 @@ function novoImovel() {
     );
     localStorage.setItem("imoveis", JSON.stringify(imoveis));
     fecharModal();
-    iniciar_banco_imoveis();
+    carregar_banco_imoveis();
   }
 
   else alert("falta preencher algum campo")
@@ -604,7 +604,7 @@ function salvarAlteracaoImovel(identifier) {
     }
 
     fecharModal()
-    iniciar_banco_imoveis()
+    carregar_banco_imoveis()
     alert('Alteração realizada com sucesso!')
   }
 
@@ -612,11 +612,11 @@ function salvarAlteracaoImovel(identifier) {
 }
 
 
-function iniciar_banco_imoveis() {
+function carregar_banco_imoveis() {
 
   //const resposta = await fetch('imoveis.json');
   //const imoveis = await resposta.json()
-  localStorage.setItem("imoveis", JSON.stringify(imoveis));
+  let imoveis = JSON.parse(localStorage.getItem("imoveis"));
   let elemento = document.getElementById('table_list');
   let texto = '';
 

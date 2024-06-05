@@ -1,16 +1,24 @@
+
+
+
 iniciar_banco_geral();
+
 
 function iniciar_banco_geral(){  
 
     iniciar_banco_usuarios();
+    iniciar_banco_proprietarios();
+    iniciar_banco_imoveis();
+    iniciar_banco_contratos();
     iniciar_banco_proprietarios()
     iniciar_banco_imoveis()
-    inicia_banco_contratos()
+    iniciar_banco_contratos()
 }
 
 function iniciar_banco_usuarios() {
+
     let valid_usuario = JSON.parse(localStorage.getItem("usuarios"));
-  
+
     let usuarios = [
         {
             id: 1,
@@ -41,12 +49,13 @@ function iniciar_banco_usuarios() {
         },
 
     ]
-  
+
     if (valid_usuario == null) {
-      localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
     }
-  }
-  function iniciar_banco_proprietarios() {
+}
+
+function iniciar_banco_proprietarios() {
     let valid_proprietarios = JSON.parse(localStorage.getItem("proprietarios"));
     let proprietarios = [
         {
@@ -114,72 +123,77 @@ function iniciar_banco_usuarios() {
             },
             status: false
         },
-       
+
     ]
 
     if (valid_proprietarios == null) {
         localStorage.setItem("proprietarios", JSON.stringify(proprietarios));
-      }
+    }
 }
 
-function iniciar_banco_imoveis(){
+function iniciar_banco_imoveis() {
+
     let valid_imoveis = JSON.parse(localStorage.getItem("imoveis"));
+
     var imoveis = [
         {
-          id: 1,
-          tipo_imovel: "comercial",
-          tipo_logradouro: "avenida",
-          logradouro: "beatriz alvarenga",
-          numero: "319",
-          complemento: "APTO 208",
-          bairro: "centro",
-          cidade: "belo horizonte",
-          uf: "mg",
-          cep: "31140-259",
-          vacancia: "locado",
-          status: "ativo"
+            id: 1,
+            tipo_imovel: "comercial",
+            tipo_logradouro: "avenida",
+            logradouro: "beatriz alvarenga",
+            numero: "319",
+            complemento: "APTO 208",
+            bairro: "centro",
+            cidade: "belo horizonte",
+            uf: "mg",
+            cep: "31140-259",
+            vacancia: "locado",
+            status: "ativo"
         },
-      
+
         {
-          id: 2,
-          tipo_imovel: "residencial",
-          tipo_logradouro: "rua",
-          logradouro: "SÃO JOÃO",
-          numero: "39",
-          complemento: "apto",
-          bairro: "SAGRADA FAMILIA",
-          cidade: "belo horizonte",
-          uf: "MG",
-          cep: "31140-258",
-          vacancia: "locado",
-          status: "inativo"
+            id: 2,
+            tipo_imovel: "residencial",
+            tipo_logradouro: "rua",
+            logradouro: "SÃO JOÃO",
+            numero: "39",
+            complemento: "apto",
+            bairro: "SAGRADA FAMILIA",
+            cidade: "belo horizonte",
+            uf: "MG",
+            cep: "31140-258",
+            vacancia: "locado",
+            status: "inativo"
         },
-      
+
         {
-          id: 3,
-          tipo_imovel: "residencial",
-          tipo_logradouro: "rua",
-          logradouro: "ipiranga",
-          numero: "500",
-          complemento: "casa",
-          bairro: "centro",
-          cidade: "franca",
-          uf: "SP",
-          cep: "31140-420",
-          vacancia: "locado",
-          status: "ativo"
+            id: 3,
+            tipo_imovel: "residencial",
+            tipo_logradouro: "rua",
+            logradouro: "ipiranga",
+            numero: "500",
+            complemento: "casa",
+            bairro: "centro",
+            cidade: "franca",
+            uf: "SP",
+            cep: "31140-420",
+            vacancia: "locado",
+            status: "ativo"
         }
-      
-      ]
-      if (valid_imoveis == null) {
+
+    ]
+
+    if (valid_imoveis == null) {
         localStorage.setItem("imoveis", JSON.stringify(imoveis));
-      }
+    }
+
 }
 
-function inicia_banco_contratos(){
-    let valid_contratos = JSON.parse(localStorage.getItem("contratos"))
+function iniciar_banco_contratos() {
 
-    contratos = [
+    let valid_contratos = JSON.parse(localStorage.getItem("contratos"));
+
+    let contratos = [
         {
             id: 1,
             locatario: "josé da silva",
@@ -210,9 +224,9 @@ function inicia_banco_contratos(){
             status: "ativo",
             proprietario: "joana"
         }
-    
     ]
+
     if (valid_contratos == null) {
         localStorage.setItem("contratos", JSON.stringify(contratos));
-      }
+    }
 }
