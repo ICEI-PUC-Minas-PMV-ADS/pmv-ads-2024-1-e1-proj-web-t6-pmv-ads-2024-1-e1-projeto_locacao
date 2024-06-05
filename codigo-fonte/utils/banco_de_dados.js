@@ -3,8 +3,7 @@
 
 iniciar_banco_geral();
 
-function iniciar_banco_geral() {
-    //localStorage.clear();
+
 function iniciar_banco_geral(){  
 
     iniciar_banco_usuarios();
