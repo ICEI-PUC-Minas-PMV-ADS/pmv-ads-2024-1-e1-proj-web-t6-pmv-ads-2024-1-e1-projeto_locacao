@@ -183,7 +183,7 @@ function iniciar_banco_faturas() {
     {
       id: 3,
       locatario: 'Locatário 3',
-      data_pgto: "05/03/2024",
+      data_pgto: "05/06/2024",
       valor: 3000,
       status_pgto: false,
     },
@@ -327,20 +327,22 @@ function alerta_vencimento() {
 
     let emAberto = new Date();
     emAberto.setDate(emAberto.getDate() + 5);
-
+    console.log(data)
+    console.log(emAberto)
     if (data < hoje && !alerta.status_pgto) {
-      addLinhaNaTabela(alerta)
+      addLinhaNaTabela(alerta, true)
       console.log(alerta.data_pgto);
     } else if (data > hoje && data < emAberto) {
-      addLinhaNaTabela(alerta)
+      addLinhaNaTabela(alerta, false)
       console.log(alerta.data_pgto);
     }
        
   });
 }
 
-function addLinhaNaTabela(alerta) {
+function addLinhaNaTabela(alerta, Vencida) {
   let table = document.getElementById('table_list')
+  console.log(alerta.status_pgto)
   table.innerHTML += `
       <div class="div_table_row">       
           <div class="table_locatario">
@@ -353,9 +355,9 @@ function addLinhaNaTabela(alerta) {
             ${alerta.valor.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}
           </div>
           <div class="table_status">
-            <div class=${alerta.status_pgto ? "status_active" : "status_inactive"}>
+            <div class=${!Vencida ? "status_active" : "status_inactive"}>
               <p>
-                ${alerta.status_pgto ? "Em Aberto" : "Vencida"}
+                ${!Vencida ? "Em Aberto" : "Vencida"}
               </p>
             </div>
           </div>          

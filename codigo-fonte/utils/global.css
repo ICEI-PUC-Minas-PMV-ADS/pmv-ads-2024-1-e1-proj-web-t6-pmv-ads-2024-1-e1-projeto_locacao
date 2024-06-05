@@ -203,7 +203,7 @@ hr.divisor {
     height: 88vh;
 }
 
-main {
+#main_table {
     position: fixed;
     z-index: 1;
     background-color: var(--white);
@@ -212,7 +212,7 @@ main {
     height: calc(84vh - 9px);
     padding: 15px;
     margin: 0px 10px 10px 69px;
-    /* border: 1px solid black; */
+    
     border-radius: 12px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -424,7 +424,7 @@ input[type="checkbox"]{
         height: 6vh;
     }
 
-    main {
+    #main_table  {
         background-color: var(--white);
         width: calc(100% - 50px);
         min-width: fit-content;
@@ -432,7 +432,7 @@ input[type="checkbox"]{
         margin: 0px 10px 10px 10px;
         border-radius: 12px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-        height: calc(92vh - 9px);
+        height: 84vh;
     }
 
     header {
@@ -476,10 +476,6 @@ input[type="checkbox"]{
 
     nav .button_menu {
         display: none;
-    }
-
-    main {
-        height: 84vh;
     }
 
     .table_icon, .table_icon img{
