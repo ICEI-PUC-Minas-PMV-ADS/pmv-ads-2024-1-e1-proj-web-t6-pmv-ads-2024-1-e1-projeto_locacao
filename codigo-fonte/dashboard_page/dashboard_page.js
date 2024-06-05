@@ -183,7 +183,7 @@ function iniciar_banco_faturas() {
     {
       id: 3,
       locatario: 'Locatário 3',
-      data_pgto: "05/06/2024",
+      data_pgto: "06/06/2024",
       valor: 3000,
       status_pgto: false,
     },

@@ -5,10 +5,15 @@ iniciar_banco_geral();
 
 function iniciar_banco_geral() {
     //localStorage.clear();
+function iniciar_banco_geral(){  
+
     iniciar_banco_usuarios();
     iniciar_banco_proprietarios();
     iniciar_banco_imoveis();
     iniciar_banco_contratos();
+    iniciar_banco_proprietarios()
+    iniciar_banco_imoveis()
+    iniciar_banco_contratos()
 }
 
 function iniciar_banco_usuarios() {
