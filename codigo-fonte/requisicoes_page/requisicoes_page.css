@@ -110,6 +110,32 @@
     grid-area: requisitante;
 }
 
-
+@media only screen and (max-device-width: 480px) {
+    .table_requisitante{
+        min-width: fit-content;
+        /* border: 1px solid black; */
+        width: 50%;
+    }
+    
+    .table_tipo{
+       display: none;
+    }
+    .table_data{
+    display: none;
+    }
+    
+    .table_status{
+        min-width: fit-content;
+        /*border: 1px solid black;*/
+        width: 30%;
+    }
+    #popup_filtrar,#popup_nova_requisicao,#popup_dados_requisicao{
+        width: 80%;
+    }
+    .popup .dados_pessoais{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 
