@@ -267,7 +267,7 @@ hr.divisor {
     display: flex;
     min-width: fit-content;
     /* border: 1px solid black; */
-    width: 3%;
+    width: 6%;
 }
 
 .table_button{
@@ -322,6 +322,28 @@ hr.divisor {
     font-weight: bold;
     font-size: 25px;
     padding: 0px 0px 20px 0px;
+}
+
+.popup .textareaSuccess {
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--green);
+    padding-left: 10px;
+    max-height: 250px;
+    min-height: 100px;
+}
+
+.popup .textareaError {
+    height: 30px;
+    margin-bottom: 10px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 2px solid var(--red);
+    padding-left: 10px;
+    max-height: 250px;
+    min-height: 100px;
 }
 
 .popup .selectSuccess {
