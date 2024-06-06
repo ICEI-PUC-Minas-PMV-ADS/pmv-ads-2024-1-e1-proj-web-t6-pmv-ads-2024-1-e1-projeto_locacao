@@ -90,7 +90,7 @@ function abrirModalAdicao() {
     <h4 class="titulos">LOCATÁRIO
         <hr>
     </h4>
-    
+
     <div class="div_tipo_logradouro">
     <label for="locatario">Nome</label>
     <select name="locatario" class="selectSuccess" id ="locatario">

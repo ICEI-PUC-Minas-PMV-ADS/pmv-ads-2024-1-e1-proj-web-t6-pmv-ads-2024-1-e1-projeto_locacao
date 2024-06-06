@@ -655,10 +655,15 @@ dialog label {
 }
 
 dialog .id_tipo {
-    display: flex;
-    width: 50%;
-    gap: 50px;
-    margin-bottom: 10px;
+    display:flex;
+    max-width:fit-content;
+    margin-bottom:10px;
+    gap: 30px;
+    
+}
+dialog .id_tipo .id {
+   
+
 }
 
 dialog .Logradouro {
