@@ -1,38 +1,4 @@
 
-// contratos = [
-//     {
-//         id: 1,
-//         locatario: "josé da silva",
-//         endereco: "rua são josé, centro",
-//         periodo: "12",
-//         valor_mensal: 600.00,
-//         data_inicio: "2024-03-23",
-//         status: "ativo",
-//         proprietario: "marcos"
-//     },
-//     {
-//         id: 2,
-//         locatario: "fernando abreu",
-//         endereco: "rua das nações, observatorio",
-//         periodo: "6",
-//         valor_mensal: 1600.00,
-//         data_inicio: "2020-05-06",
-//         status: "inativo",
-//         proprietario: "vinicius"
-//     },
-//     {
-//         id: 3,
-//         locatario: "Mariilia pereira",
-//         endereco: "rua laranjal, paulista",
-//         periodo: "24",
-//         valor_mensal: 600.00,
-//         data_inicio: "2018-09-08",
-//         status: "ativo",
-//         proprietario: "joana"
-//     }
-
-// ]
-
 dialog = document.getElementById('modal')
 ElementoFade = document.getElementById('fade')
 var elementoLista = document.getElementById('table_list')
@@ -105,17 +71,33 @@ function abrirModalFiltro() {
 }
 
 function abrirModalAdicao() {
-
+    locatarios = JSON.parse(localStorage.getItem('locatarios'))
     ElementoFade.classList.add("escuro");
     dialog.classList.add('PopUpAdicaoContrato')
     dialog.setAttribute('open', 'true');
+    filtradosLocatarios = locatarios.filter((locatario)=>{
+        if(!locatario.status){
+            return true
+        }
+        else return false
+    }).map((locatario)=>{
+        return `<option value="${locatario.nome}">${locatario.nome}</option>`
+    }).join('')
+    console.log(filtradosLocatarios)
+
     dialog.innerHTML = `
     <h1>Novo Contrato</h1>
     <h4 class="titulos">LOCATÁRIO
         <hr>
     </h4>
+    
+    <div class="div_tipo_logradouro">
     <label for="locatario">Nome</label>
-    <input class="longo" type="text" name="locatario" id="locatario">
+    <select name="locatario" class="selectSuccess" id ="locatario">
+                            ${filtradosLocatarios}
+    </select>
+    </div>
+
     <h4 class="titulos">IMÓVEL
         <hr>
     </h4>
@@ -193,7 +175,6 @@ function adicionarContrato() {
 function vazio(nome) {
     alert("O " + nome + " está vazio")
 }
-
 
 function filtrarContratos() {
     //var elementoLista = document.getElementById('table_list');
@@ -304,7 +285,9 @@ function carregarBancoContratos() {
             </button>
         </div>
   
-        </div>`
+        </div>
+        <hr class="divisor">
+        `
 
     }
 
@@ -441,3 +424,18 @@ function alterarContrato(identifier) {
 
 
 }
+
+function abrir_sidebar() {
+    let sanduiche = document.getElementById("sanduiche")
+    let nav = document.querySelector("nav")
+  
+    if(sanduiche.innerHTML == "menu") {
+        nav.className = "open_nav"
+        sanduiche.innerHTML = "close"
+    } else {
+        nav.className = ""
+        sanduiche.innerHTML = "menu"
+    }
+  }
+  
+  

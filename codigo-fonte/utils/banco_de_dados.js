@@ -8,11 +8,11 @@ function iniciar_banco_geral() {
   iniciar_banco_contratos();
   iniciar_banco_requisicoes();
   iniciar_banco_faturas();
+  iniciar_banco_locatarios();
 }
 
 function iniciar_banco_usuarios() {
   let valid_usuario = JSON.parse(localStorage.getItem("usuarios"));
-
   let usuarios = [
     {
       id: 1,
@@ -339,4 +339,71 @@ function iniciar_banco_faturas() {
   if (valid_faturas == null) {
     localStorage.setItem("faturas", JSON.stringify(faturas));
   }
+}
+
+function iniciar_banco_locatarios() {
+    let locatarios = [
+        {
+            id: 1,
+            nome: "Locatário 01",
+            cpf: "19999999999",
+            estado_civil: "solteiro",
+            telefone: "31999999999",
+            email: "pedro@exemplo.com",
+            endereco: {
+                tipo_logradouro: "rua",
+                logradouro: "Afonço Pena",
+                numero: "1",
+                complemento: "A",
+                bairro: "Centro",
+                cidade: "Belo Horizonte",
+                cep: "00000000",
+                uf: "MG"
+            },
+            status: true,
+            situacao: false
+        },
+        {
+            id: 2,
+            nome: "Locatário 02",
+            cpf: "29999999999",
+            estado_civil: "casado",
+            telefone: "31999999999",
+            email: "pedro@exemplo.com",
+            endereco: {
+                tipo_logradouro: "praça",
+                logradouro: "Afonço Pena",
+                numero: "1",
+                complemento: "A",
+                bairro: "Centro",
+                cidade: "Belo Horizonte",
+                cep: "00000000",
+                uf: "MG"
+            },
+            status: false,
+            situacao: true
+        },
+        {
+            id: 3,
+            nome: "Locatário 03",
+            cpf: "39999999999",
+            estado_civil: "solteiro",
+            telefone: "31999999999",
+            email: "pedro@exemplo.com",
+            endereco: {
+                tipo_logradouro: "avenida",
+                logradouro: "Afonço Pena",
+                numero: "1",
+                complemento: "A",
+                bairro: "Centro",
+                cidade: "Belo Horizonte",
+                cep: "00000000",
+                uf: "MG"
+            },
+            status: false,
+            situacao: false
+        }
+
+    ]
+    localStorage.setItem("locatarios", JSON.stringify(locatarios))
 }

@@ -378,7 +378,7 @@ label {
     padding: 0px 0px 20px 0px;
 }
 
-.popup .selectSuccess {
+ .selectSuccess {
     height: 36px;
     margin-bottom: 10px;
     color: var(--black);
@@ -509,7 +509,7 @@ input[type="checkbox"] {
 
 }
 
-.popup .div_tipo_logradouro {
+ .div_tipo_logradouro {
     display: flex;
     flex-direction: column;
     grid-area: tipo_logradouro;

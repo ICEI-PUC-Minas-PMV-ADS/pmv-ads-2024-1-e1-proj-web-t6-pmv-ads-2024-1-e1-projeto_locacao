@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proprietários</title>
     <link rel="stylesheet" type="text/css" href="imoveis_page.css" />
     <link
@@ -17,12 +18,19 @@
     />
     <script src="imoveis.js" defer></script>
     <script src="../utils/banco_de_dados.js" defer></script>
+    <link rel="stylesheet" href="../utils/global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
 
   <body onload="carregar_banco_imoveis()">
     <div id="fade"></div>
     <header>
+      <button class="button_menu" onclick="abrir_sidebar()">
+        <div class="icon">
+          <i id="sanduiche" class="material-icons">menu</i>
+        </div>
+      </button>
       <div class="div_logo">
         <p>
           <span class="immo">Immo</span><span class="control">Control</span>
@@ -39,45 +47,48 @@
       </div>
     </header>
     <div class="content">
-      <nav>
+      <nav id="sibebar">
         <div class="sidebar_superior">
-          <hr class="divisor" />
-          <button class="sidebar_button" onclick = "location.href ='../dashboard_page/dashboard_page.html'">
-            <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
-            <p>Dashboard</p>
+          <button class="button_menu" onclick="abrir_sidebar()">
+            <div class="icon">
+              <i id="sanduiche" class="material-icons">menu</i>
+            </div>
           </button>
-          <button class="sidebar_button" onclick="location.href = '../proprietarios_page/proprietarios_page.html'">
+          <hr class="divisor" />
+          <button class="sidebar_button" onclick="location.href = '../dashboard_page/dashboard_page.html'">
+            <img class="icon" src="../src/icones/icon_dashboard.png" alt="" />
+            <p class="descricao">Dashboard</p>
+          </button>
+          <button class="sidebar_button" onclick="location.href='../proprietarios_page/proprietarios_page.html'">
             <img class="icon" src="../src/icones/icon_proprietarios.png" alt="" />
-            <p>Proprietários</p>
+            <p class="descricao">Proprietários</p>
           </button>
           <button class="sidebar_button" onclick="location.href = '../locatarios_page/locatarios_page.html'">
             <img class="icon" src="../src/icones/icon_locatarios.png" alt="" />
-            <p>Locatários</p>
+            <p class="descricao">Locatários</p>
           </button>
-          <button class="sidebar_button_selected" onclick="location.href = '../imoveis/imoveis.html'">
+          <button class="sidebar_button_selected">
             <img class="icon" src="../src/icones/icon_imoveis_selecionado.png" alt="" />
-            <p>Imóveis</p>
+            <p class="descricao">Imóveis</p>
           </button>
           <button class="sidebar_button" onclick="location.href = '../contratos/contratos.html'">
             <img class="icon" src="../src/icones/icon_contratos.png" alt="" />
-            <p>Contratos</p>
+            <p class="descricao">Contratos</p>
           </button>
           <button class="sidebar_button" onclick="location.href = '../faturas_page/faturas_page.html'">
             <img class="icon" src="../src/icones/icon_faturas.png" alt="" />
-            <p>Faturas</p>
+            <p class="descricao">Faturas</p>
           </button>
           <button class="sidebar_button" onclick="location.href = '../requisicoes_page/requisicoes_page.html'">
             <img class="icon" src="../src/icones/icon_requisicoes.png" alt="" />
-            <p>Requisições</p>
+            <p class="descricao">Requisições</p>
           </button>
-
-          </div>
-
-          <div class="sidebar_inferior">
-          <hr class="divisor">
-          <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'"> 
-              <img class="icon" src="../src/icones/icon_usuarios.png" alt="Usuário">
-              <p>Usuários</p>
+        </div>
+        <div class="sidebar_inferior">
+          <hr class="divisor" />
+          <button class="sidebar_button" onclick="location.href = '../usuarios_page/usuarios_page.html'">
+            <img class="icon" src="../src/icones/icon_usuarios.png" alt="" />
+            <p class="descricao">Usuários</p>
           </button>
         </div>
       </nav>
@@ -87,7 +98,7 @@
       </dialog>
 
 
-      <main id="table_owners">
+      <main id="main_table">
         <h1 id="alert"></h1>
         <div class="div_table_properties">
           <p>Imóveis</p>

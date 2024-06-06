@@ -58,11 +58,6 @@ var dialog = document.getElementById("modal");
 
 //-------------------------------------------------------------
 
-//coletando os iframes dos dialog:
-//var iframe1 = document.getElementById("meuIframeFiltrar");
-//var iframe2 = document.getElementById("meuIframeadicionar");
-//var iframe3 = document.getElementById('meuIframeAlterar')
-//-------------------------------------------------------------
 
 // Ações dos botões:
 
@@ -385,6 +380,7 @@ const zipCodeMask = (value) => {
 
 
 function novoImovel() {
+  imoveis = JSON.parse(localStorage.getItem('imoveis'))
   var lenghtImoveis = imoveis.length
   var label1 = document.getElementById('label1');
   var label2 = document.getElementById('label2');
@@ -658,8 +654,9 @@ function carregar_banco_imoveis() {
             />
           </button>
         </div>
-      </div>`
-    
+        
+      </div>
+      <hr class="divisor">`
   }
 
 
@@ -667,9 +664,20 @@ function carregar_banco_imoveis() {
 
 }
 
+//abrir side bar
 
+function abrir_sidebar() {
+  let sanduiche = document.getElementById("sanduiche")
+  let nav = document.querySelector("nav")
 
-
+  if(sanduiche.innerHTML == "menu") {
+      nav.className = "open_nav"
+      sanduiche.innerHTML = "close"
+  } else {
+      nav.className = ""
+      sanduiche.innerHTML = "menu"
+  }
+}
 
 
 
