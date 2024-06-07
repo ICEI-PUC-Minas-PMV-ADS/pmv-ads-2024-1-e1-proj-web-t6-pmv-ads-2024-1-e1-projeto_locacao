@@ -192,6 +192,7 @@ dialog label {
 dialog .id_tipo {
     display:flex;
     margin-bottom: 5px;
+    gap: 10px;
     
 }
 
@@ -246,7 +247,7 @@ dialog input {
 dialog .cidade_cep {
     display: flex;
     width: 100%;
-    
+    gap: 10px;
     margin-bottom: 10px;
 }
 

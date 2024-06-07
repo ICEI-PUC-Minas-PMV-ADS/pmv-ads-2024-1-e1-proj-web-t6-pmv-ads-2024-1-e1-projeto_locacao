@@ -681,12 +681,10 @@ input[type="checkbox"] {
 
     }
 
-
     h5.titulos {
 
         color: #5BB800;
     }
-
 
     h4.titulos {
         font-size: medium;
@@ -705,7 +703,7 @@ input[type="checkbox"] {
         margin-bottom: 10px;
         width: 100%;
         flex-wrap: wrap;
-        align-items: center;
+        align-items:center;
     }
 
     #checkmark,
@@ -849,13 +847,13 @@ input[type="checkbox"] {
     .centro {
         display: flex;
         align-items: center;
-        margin-top: 0px;
-        padding: 0px;
+      
+    
 
     }
 
-    .centro h5 {
-        margin: 0px;
+    .centro>h5 {
+        margin:0;
     }
 
     .longo {
@@ -1075,7 +1073,7 @@ input[type="checkbox"] {
 
     .centro h5 {
         font-size: medium;
-        margin-top: 10px;
+        
 
 
 
