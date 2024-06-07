@@ -190,17 +190,36 @@ dialog label {
 
 
 dialog .id_tipo {
-   
-    display:grid;
+    display:flex;
     margin-bottom: 5px;
-    grid-template-columns: 1fr 1fr;
     
 }
 
+dialog .id_tipo label{
+    padding-left: 0;
+}
 
-dialog .id_tipo .id {
+dialog .id_tipo #id {
+    padding-left: none;
     display: flex;
-    width: max-content;
+    width: 200px;
+}
+dialog .id_tipo #tipo {
+    padding-left: none;
+    display: flex;
+    width: 200px;
+}
+
+dialog .cidade_cep #cidade {
+    padding-left: none;
+    display: flex;
+    width: 200px;
+}
+dialog .cidade_cep #cep {
+    padding-left: none;
+    display: flex;
+    width: 200px;
+    justify-self: end;
 }
 
 
@@ -228,7 +247,7 @@ dialog input {
 dialog .cidade_cep {
     display: flex;
     width: 100%;
-    gap:20px;
+    
     margin-bottom: 10px;
 }
 
