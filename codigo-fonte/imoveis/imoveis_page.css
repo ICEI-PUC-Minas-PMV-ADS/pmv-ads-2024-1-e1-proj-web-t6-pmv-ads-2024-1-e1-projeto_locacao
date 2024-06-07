@@ -125,9 +125,15 @@ dialog {
     color: white;
 
 }
+#statuss.verde,#statuss.cinza:active{
+    transform: none;
+    box-shadow: none;
+}
 
-
-
+#vacancia.cinza,#vacancia.verde{
+    transform: none;
+    box-shadow: none;
+}
 
 
 /*-------------------------------------------------------*/

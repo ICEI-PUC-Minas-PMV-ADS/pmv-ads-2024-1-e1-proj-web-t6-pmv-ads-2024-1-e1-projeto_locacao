@@ -597,6 +597,18 @@ input[type="checkbox"] {
 }
 
 
+#statuss.verde:active {
+    background-color:#5BB800;
+    transform: none;
+    box-shadow: none;
+}
+#statuss.cinza:active{
+    transform: none;
+    box-shadow: none;
+    
+
+}
+
 
 
 /*-------------------------------------------------*/
