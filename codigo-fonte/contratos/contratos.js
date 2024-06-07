@@ -82,7 +82,7 @@ function abrirModalAdicao() {
     }).map((locatario)=>{
         return `<option value="${locatario.nome}">${locatario.nome}</option>`
     }).join('')
-    
+
     console.log(filtradosLocatarios)
 
     dialog.innerHTML = `
@@ -286,7 +286,7 @@ function carregarBancoContratos() {
         </div>
 
         <div class="table_status">
-            <button class="${cor}" id="statuss">${contratos[i].status}</button>
+            <button class="${cor}" id="statuss">${contratos[i].status.toUpperCase()}</button>
             
         </div>
     
