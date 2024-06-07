@@ -27,7 +27,6 @@ function abrirModalFiltro() {
     <div class="alinhamento" >
         <label class="titulos" for="id">ID<br>
             <input type="number" name="id" id="id">
-
         </label>
         
         <label class="titulos" for="proprietario">Proprietário <br>
@@ -83,6 +82,7 @@ function abrirModalAdicao() {
     }).map((locatario)=>{
         return `<option value="${locatario.nome}">${locatario.nome}</option>`
     }).join('')
+    
     console.log(filtradosLocatarios)
 
     dialog.innerHTML = `

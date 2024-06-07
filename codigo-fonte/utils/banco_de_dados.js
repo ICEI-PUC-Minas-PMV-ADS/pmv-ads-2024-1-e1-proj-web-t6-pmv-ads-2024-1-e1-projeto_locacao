@@ -89,7 +89,7 @@ function iniciar_banco_proprietarios() {
         cep: "11111111",
         uf: "SC",
       },
-      status: true,
+      status: false,
     },
     {
       id: 3,

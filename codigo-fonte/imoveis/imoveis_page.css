@@ -162,6 +162,11 @@ dialog h4 {
     display: block;
     color: #5bb800;
     margin-bottom: 0px;
+    margin-top: 10px;
+}
+#locatario{
+    margin-top: 10px;
+    width: 100%;
 }
 
 dialog hr {
@@ -424,7 +429,7 @@ button:active {
 
 
 .adicao .proprietario input {
-    width: 75%;
+    width: 100%;
 
 }
 

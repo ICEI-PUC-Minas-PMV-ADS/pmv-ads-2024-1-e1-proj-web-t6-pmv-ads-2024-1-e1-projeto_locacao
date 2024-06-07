@@ -226,6 +226,19 @@ function abrirModalAdicao() {
   ElementoFade.classList.add("escuro");
   dialog.classList.add('adicao')
   dialog.setAttribute('open', 'true');
+
+  proprietarios = JSON.parse(localStorage.getItem('proprietarios'));
+
+  filtradosProprietarios = proprietarios.filter((proprietario)=>{
+    if(!proprietario.status){
+      return true
+  }
+  else return false
+}).map((proprietario)=>{
+  return `<option value="${proprietario.nome}">${proprietario.nome}</option>`
+}).join('')
+
+
   dialog.innerHTML = `
 
         <header>
@@ -238,7 +251,9 @@ function abrirModalAdicao() {
 
         <div class="proprietario">
             <h4>Nome</h4>
-            <input name="proprietario" , id="proprietario" , placeholder="pesquisar...">
+            <select name="locatario" class="selectSuccess" id ="locatario">
+                            ${filtradosProprietarios}
+            </select>
         </div>
 
         <h4>ENDEREÇO
@@ -332,7 +347,6 @@ const zipCodeMask = (value) => {
   return value
 }
 
-
 function novoImovel() {
   imoveis = JSON.parse(localStorage.getItem('imoveis'))
   var lenghtImoveis = imoveis.length
@@ -375,7 +389,6 @@ function novoImovel() {
   else alert("falta preencher algum campo")
 
 }
-
 
 function abrirModalAlteracao(identifier) {
 
@@ -526,7 +539,6 @@ function valorSlider(identifier) {
 
 }
 
-
 function salvarAlteracaoImovel(identifier) {
   var imoveis = JSON.parse(localStorage.getItem("imoveis"));
   var tipoLogradouro = document.getElementById('tipoLogradouro').value;
@@ -568,7 +580,6 @@ function salvarAlteracaoImovel(identifier) {
 
 
 }
-
 
 function carregar_banco_imoveis() {
 
@@ -633,8 +644,6 @@ function carregar_banco_imoveis() {
 
 
 }
-
-
 
 function abrir_sidebar() {
   let sanduiche = document.getElementById("sanduiche")
