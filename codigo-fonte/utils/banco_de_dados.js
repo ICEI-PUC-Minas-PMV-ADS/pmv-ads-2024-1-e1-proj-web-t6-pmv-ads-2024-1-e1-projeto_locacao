@@ -213,7 +213,7 @@ function iniciar_banco_contratos() {
     },
     {
       id: 3,
-      locatario: "Mariilia pereira",
+      locatario: "Marília pereira",
       endereco: "rua laranjal, paulista",
       periodo: "24",
       valor_mensal: 600.0,

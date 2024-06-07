@@ -20,7 +20,7 @@ function abrirModalFiltro() {
     dialog.setAttribute('open', 'true');
 
     dialog.innerHTML = `
-    <h1 class="fil">Filtros</h1>
+    <h1 class="fil">FILTROS</h1>
     <h5 class="titulos">Dados do Contrato<hr class="hr"></h5>
     
 
@@ -201,6 +201,7 @@ function filtrarContratos() {
     }
 
     console.log(contratosfiltrados)
+    if(contratosfiltrados.length!=0){
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratosfiltrados.length; i++) {
         identifier = contratosfiltrados[i].id
@@ -239,7 +240,12 @@ function filtrarContratos() {
   </div>`
 
     }
-    fecharModal()
+    fecharModal()}
+    else{
+        fecharModal()
+        alert("Nenhum encontrado!");
+        carregarBancoContratos()
+    }
 
 
 }
