@@ -1,50 +1,4 @@
-/*var imoveis = [
-  {
-    id: 1,
-    tipo_imovel: "comercial",
-    tipo_logradouro: "avenida",
-    logradouro: "beatriz alvarenga",
-    numero: "319",
-    complemento: "APTO 208",
-    bairro: "centro",
-    cidade: "belo horizonte",
-    uf: "mg",
-    cep: "31140-259",
-    vacancia: "locado",
-    status: "ativo"
-  },
 
-  {
-    id: 2,
-    tipo_imovel: "residencial",
-    tipo_logradouro: "rua",
-    logradouro: "SÃO JOÃO",
-    numero: "39",
-    complemento: "apto",
-    bairro: "SAGRADA FAMILIA",
-    cidade: "belo horizonte",
-    uf: "MG",
-    cep: "31140-258",
-    vacancia: "locado",
-    status: "inativo"
-  },
-
-  {
-    id: 3,
-    tipo_imovel: "residencial",
-    tipo_logradouro: "rua",
-    logradouro: "ipiranga",
-    numero: "500",
-    complemento: "casa",
-    bairro: "centro",
-    cidade: "franca",
-    uf: "SP",
-    cep: "31140-420",
-    vacancia: "locado",
-    status: "ativo"
-  }
-
-]*/
 
 
 //coletando elemento fade:
@@ -623,7 +577,7 @@ function carregar_banco_imoveis() {
   let texto = '';
 
   for (let i = 0; i < imoveis.length; i++) {
-    let cor;
+    let cor,cor2;
     cor="";
 
     if(imoveis[i].vacancia=="vago") {
@@ -632,6 +586,14 @@ function carregar_banco_imoveis() {
     else{
       cor='cinza';
     }
+
+    if(imoveis[i].status=="ativo") {
+      cor2="verde";
+    }
+    else{
+      cor2='cinza';
+    }
+    
 
     identifier = imoveis[i].id
     texto = texto + `<div class="div_table_row"> 
@@ -650,22 +612,15 @@ function carregar_banco_imoveis() {
         <div class="table_property">${imoveis[i].tipo_logradouro} ${imoveis[i].logradouro}, ${imoveis[i].numero}, ${imoveis[i].complemento}</div>
 
         <div class="table_status"><button class="${cor}" id="vacancia">${imoveis[i].vacancia}</button></div>
-
-        <div class="table_status" ><button id="statuss">${imoveis[i].status}<button></div>
+        <div class="table_status" ><button id="statuss" class="${cor2}">${imoveis[i].status}</button></div> 
 
         <div class="table_button">
-          <button
-            class="open_button"
-            onclick="abrirModalAlteracao(${identifier})">
-            <img
-              class="open_icon"
-              src="../src/icones/icon_ver_dados.png"
-              alt=""
-            />
+          <button class="open_button" onclick="abrirModalAlteracao(${identifier})"><img class="open_icon" src="../src/icones/icon_ver_dados.png" alt=""/>
           </button>
         </div>
         
       </div>
+
       <hr class="divisor">`
 
       elemento.innerHTML = texto;

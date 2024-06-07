@@ -576,6 +576,26 @@ input[type="checkbox"] {
     grid-area: email;
 }
 
+#statuss.verde{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color:#5BB800;
+    color: white;
+
+}
+#statuss.cinza{
+    
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color:#bbbbb8;
+    color: white;
+
+}
+
 
 
 

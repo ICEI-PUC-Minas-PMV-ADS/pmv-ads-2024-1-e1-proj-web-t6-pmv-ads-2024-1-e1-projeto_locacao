@@ -251,6 +251,9 @@ function carregarBancoContratos() {
     let contratos = JSON.parse(localStorage.getItem("contratos"));
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratos.length; i++) {
+        let cor = "";
+        if(contratos[i].status=="ativo") cor='verde'
+        else cor = "cinza"
         var identifier = contratos[i].id
         elementoLista.innerHTML += `
         
@@ -275,8 +278,10 @@ function carregarBancoContratos() {
         <div class="table_status" id="mensalidade">
             ${contratos[i].valor_mensal}
         </div>
-        <div class="table_status" id="situacao">
-            ${contratos[i].status}
+
+        <div class="table_status">
+            <button class="${cor}" id="statuss">${contratos[i].status}</button>
+            
         </div>
     
         <div class="table_button">
