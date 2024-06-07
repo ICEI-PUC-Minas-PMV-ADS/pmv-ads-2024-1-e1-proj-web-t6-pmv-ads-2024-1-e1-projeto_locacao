@@ -166,6 +166,20 @@ function iniciar_banco_imoveis() {
       vacancia: "vago",
       status: "ativo",
     },
+    {
+      id: 4,
+      tipo_imovel: "comercial",
+      tipo_logradouro: "Avenida",
+      logradouro: "carlos turner",
+      numero: "8800",
+      complemento: "apto",
+      bairro: "centro",
+      cidade: "São paulo",
+      uf: "SP",
+      cep: "46400-000",
+      vacancia: "locado",
+      status: "ativo",
+    }
   ];
 
   if (valid_imoveis == null) {

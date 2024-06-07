@@ -81,16 +81,16 @@ function abrirModalFiltro() {
   <hr>
 
   <div class="id_tipo">
-      <div class="id">
-          <label for="id">ID</label><br>
+
+          
+          <label for="id">ID <br>
           <input type="number" id="id" name="id">
-      </div>
-
-
-      <div class="tipo">
-          <label for="tipo">TIPO</label><br>
+          </label>
+        
+          <label for="tipo">TIPO<br>
           <input type="text" name="tipo" id="tipo">
-      </div>
+          </label>
+    
 
   </div>
 
@@ -426,7 +426,7 @@ function novoImovel() {
 function abrirModalAlteracao(identifier) {
 
   var imoveis = JSON.parse(localStorage.getItem("imoveis"));
-  
+
   dialog.innerHTML = ""
   ElementoFade.classList.add("escuro");
   dialog.classList.add('adicao');
@@ -606,7 +606,7 @@ function salvarAlteracaoImovel(identifier) {
     else {
       imoveis[identifier - 1].status = "inativo";
     }
-
+    localStorage.setItem('imoveis', JSON.stringify(imoveis))
     fecharModal()
     carregar_banco_imoveis()
     alert('Alteração realizada com sucesso!')
@@ -623,8 +623,18 @@ function carregar_banco_imoveis() {
   let texto = '';
 
   for (let i = 0; i < imoveis.length; i++) {
+    let cor;
+    cor="";
+
+    if(imoveis[i].vacancia=="vago") {
+      cor="verde";
+    }
+    else{
+      cor='cinza';
+    }
+
     identifier = imoveis[i].id
-    texto += `<div class="div_table_row"> 
+    texto = texto + `<div class="div_table_row"> 
         <div class="table_icon1">
           <img 
             class="icon"
@@ -639,9 +649,9 @@ function carregar_banco_imoveis() {
 
         <div class="table_property">${imoveis[i].tipo_logradouro} ${imoveis[i].logradouro}, ${imoveis[i].numero}, ${imoveis[i].complemento}</div>
 
-        <div class="table_status" id="vacancia">${imoveis[i].vacancia}</div>
+        <div class="table_status"><button class="${cor}" id="vacancia">${imoveis[i].vacancia}</button></div>
 
-        <div class="table_status">${imoveis[i].status}</div>
+        <div class="table_status" ><button id="statuss">${imoveis[i].status}<button></div>
 
         <div class="table_button">
           <button
@@ -657,25 +667,30 @@ function carregar_banco_imoveis() {
         
       </div>
       <hr class="divisor">`
+
+      elemento.innerHTML = texto;
+      
+
+
   }
 
+  //elemento.innerHTML = texto;
 
-  elemento.innerHTML = texto;
 
 }
 
-//abrir side bar
+
 
 function abrir_sidebar() {
   let sanduiche = document.getElementById("sanduiche")
   let nav = document.querySelector("nav")
 
-  if(sanduiche.innerHTML == "menu") {
-      nav.className = "open_nav"
-      sanduiche.innerHTML = "close"
+  if (sanduiche.innerHTML == "menu") {
+    nav.className = "open_nav"
+    sanduiche.innerHTML = "close"
   } else {
-      nav.className = ""
-      sanduiche.innerHTML = "menu"
+    nav.className = ""
+    sanduiche.innerHTML = "menu"
   }
 }
 
