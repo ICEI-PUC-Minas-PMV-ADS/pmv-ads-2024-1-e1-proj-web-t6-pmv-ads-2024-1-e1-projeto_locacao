@@ -2,9 +2,20 @@
 
 function usuarios_init(){
     iniciar_banco_usuarios()
+    usuario()
     usuarios(null, null, null, true)
 }
 
+function usuario() {
+    let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
+    let usuario_autenticado = document.querySelector("#usuario_autenticado p")
+  
+    if(usuario == null) {
+        usuario_autenticado.innerHTML = "Usuário não identificado"
+    } else {
+        usuario_autenticado.innerHTML = usuario.nome
+    }
+}
 // popular a tabela
 
 function usuarios(id, nome, tipo, status){
