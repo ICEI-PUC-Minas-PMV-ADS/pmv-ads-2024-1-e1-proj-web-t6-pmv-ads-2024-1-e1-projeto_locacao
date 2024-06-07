@@ -333,6 +333,7 @@ hr.divisor {
     padding-left: 10px;
     max-height: 250px;
     min-height: 100px;
+    font-family: 'Roboto';
 }
 
 .popup .textareaError {
@@ -344,6 +345,7 @@ hr.divisor {
     padding-left: 10px;
     max-height: 250px;
     min-height: 100px;
+    font-family: 'Roboto';
 }
 
 .popup .selectSuccess {

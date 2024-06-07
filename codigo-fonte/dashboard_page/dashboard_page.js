@@ -1,6 +1,6 @@
 function iniciar_dashboard() {
   iniciar_banco_imoveis();
-   // usuario()
+  usuario()
   my_bar_chart();
   my_doughnut_chart();
   alerta_vencimento();
@@ -8,9 +8,13 @@ function iniciar_dashboard() {
 
 function usuario() {
   let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
+  let usuario_autenticado = document.querySelector("#usuario_autenticado p")
 
-  let usuario_autenticado = document.getElementById("usuario_autenticado")
-  usuario_autenticado.innerHTML = usuario.nome
+  if(usuario == null) {
+      usuario_autenticado.innerHTML = "Usuário não identificado"
+  } else {
+      usuario_autenticado.innerHTML = usuario.nome
+  }
 }
 
 function my_bar_chart() {

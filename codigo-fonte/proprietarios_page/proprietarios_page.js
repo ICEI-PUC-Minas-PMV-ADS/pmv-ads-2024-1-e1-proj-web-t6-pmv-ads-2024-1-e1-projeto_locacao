@@ -15,7 +15,7 @@ function usuario() {
     } else {
         usuario_autenticado.innerHTML = usuario.nome
     }
-  }
+}
 
 function proprietarios(id, nome, cpf, status) {
     var node = document.getElementById('table_list')

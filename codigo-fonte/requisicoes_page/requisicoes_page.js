@@ -4,7 +4,7 @@ function requisicao_init() {
 }
 
 function usuario() {
-    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
     let usuario_autenticado = document.querySelector("#usuario_autenticado p")
   
     if(usuario == null) {
@@ -12,7 +12,7 @@ function usuario() {
     } else {
         usuario_autenticado.innerHTML = usuario.nome
     }
-  }
+}
 
 function requisicoes(id, requisitante, tipo, status) {
     var node = document.getElementById('table_list')
