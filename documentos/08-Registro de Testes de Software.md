@@ -4,6 +4,8 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. 
 
+&nbsp;
+
 ## RF-01 USUÁRIOS (Executor: ISMARLEI)		
 |Caso de Teste    |	CT-01 - Verificar Funcionamento dos Links do Módulo Usuários	|
 |:---|:---|		
@@ -33,6 +35,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | ISMARLEI|		
+
+&nbsp;
         
 ## RF-02 LOGIN / PRIMEIRO ACESSO  (Executor: ZANDER)		
 |Caso de Teste    |	CT-06 - Verificar funcionamento do link Esqueci Minha Senha na tela de Login	|
@@ -45,6 +49,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | ZANDER|		
+
+&nbsp;
         
 ## RF-03 IMÓVEIS (Executor: THÁSSIA)		
 |Caso de Teste    |	CT-08 - Verificar Funcionamento dos Links do Módulo Imóveis	|
@@ -70,7 +76,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
         
-        
+&nbsp;
+
 ## RF-04 PROPRIETÁRIOS		
 |Caso de Teste    |	CT-12 - Verificar Funcionamento dos botões na Página de Proprietários	|
 |:---|:---|		
@@ -102,7 +109,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/7ccd39bc-c418-4f54-b524-db1b77ea731b
 
-        
+&nbsp;
+
 ## RF-05 LOCATÁRIOS  (Executor: ZANDER)		
 |Caso de Teste    |	CT-16 - Verificar Funcionamento dos Links do Módulo Locatários	|
 |:---|:---|		
@@ -125,6 +133,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | ZANDER|		
         
+&nbsp;
+
 ## RF-06 CONTRATOS (Executor: PEDRO)		
 |Caso de Teste    |	CT-20 - Verificar Funcionamento dos Links do Módulo Contratos	|
 |:---|:---|		
@@ -146,6 +156,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
         
+&nbsp;
+
 ## RF-07 FATURAS (Executor: ISMARLEI)		
 |Caso de Teste    |	CT-24 - Verificar Funcionamento dos Links do Módulo Faturas	|
 |:---|:---|		
@@ -157,12 +169,16 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | ISMARLEI|		
         
+&nbsp;
+
 ## RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (Executor: THÁSSIA)		
 |Caso de Teste    |	CT-26 - Verificar a geração de alertas das faturas com vencimentos próximos e faturas 	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
-        
+
+&nbsp;
+
 ## RF-09 REQUISIÇÕES (Executor: SÓCRATIS)		
 |Caso de Teste    |	CT-27 - Verificar Funcionamento dos Links do Módulo Requisições	|
 |:---|:---|		
@@ -191,6 +207,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/f32ba0cf-2a16-4470-b0c2-fb136139d7e2
+
+&nbsp;
 
 ## RF-10 DASHBOARD		
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|

@@ -4,6 +4,8 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 ---
 
+&nbsp;
+
 ### RF-01 USUÁRIOS (THÁSSIA)
 
 Acesso para a tela Usuários através da barra lateral esquerda:
@@ -35,6 +37,8 @@ Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-p
 Thássia Campos
 
 ---
+
+&nbsp;
 
 ### RF-02 LOGIN / PRIMEIRO ACESSO
 
@@ -71,6 +75,8 @@ Ao clicar em “ENTRAR” na parte inferior, será direcionado para a tela de pr
 Socratis Gomes da Silva
 
 ---
+
+&nbsp;
 
 ### RF-03 IMÓVEIS 
 
@@ -112,6 +118,8 @@ Zander Vasconcelos Pereira
 
 ---
 
+&nbsp;
+
 ### RF-04 PROPRIETÁRIOS (PEDRO)
 
 O acesso a tela de proprietários poderá ser feito através da opção "Proprietários" no menu lateral a esquerda de qualquer página após o login.
@@ -146,6 +154,8 @@ Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-p
 Pedro Francis Maia Coelho
 
 ---
+
+&nbsp;
 
 ### RF-05 LOCATÁRIOS
 
@@ -185,6 +195,8 @@ Após o login acessar o módulo Locatários através do menu lateral esquerdo.
 Eduardo Wollinger
 
 ---
+
+&nbsp;
 
 ### RF-06 CONTRATOS 
 
@@ -227,6 +239,8 @@ Zander Vasconcelos Pereira
 
 ---
 
+&nbsp;
+
 ### RF-07 FATURAS
 
 Após o login o acesso a tela de gestão de faturas é apresentada através do menu lateral esquerdo na opção "Faturas" mostrando dados dos inquilinos.
@@ -266,6 +280,7 @@ Eduardo Wollinger
 
 ---
 
+&nbsp;
 
 ### RF-09 REQUISIÇÕES (ISMARLEI)
 
@@ -296,7 +311,10 @@ Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-p
 #### Responsável
 
 Ismarlei Magela de Jesus
+
 ---
+
+&nbsp;
 
 ### RF-PRÓXIMA ETAPA
 
