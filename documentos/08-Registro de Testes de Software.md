@@ -157,8 +157,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ## RF-09 REQUISIÇÕES (Executor: SÓCRATIS)		
 |Caso de Teste    |	CT-27 - Verificar Funcionamento dos Links do Módulo Requisições	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|
+| Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |		
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/814c795e-7484-46a8-9134-ee533fa97cfd
         		
