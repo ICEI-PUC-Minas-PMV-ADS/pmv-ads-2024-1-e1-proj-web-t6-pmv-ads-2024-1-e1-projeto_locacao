@@ -75,36 +75,33 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |Caso de Teste    |	CT-12 - Verificar Funcionamento dos botões na Página de Proprietários	|
 |:---|:---|		
 | Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |
+| Responsável pela execução do caso de Teste | Eduardo Wollinger |		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/b97bef21-ac82-498a-b95e-68dcaae31a6c
 
-| Responsável pela execução do caso de Teste | EDUARDO|		
         
 |Caso de Teste    |	CT-13 - Verificar Funcionamento do Filtro de Proprietários|
 |:---|:---|		
 | Resultados obtidos | Todas as formas de filtrar retornaram o resultado esperado  |	
+| Responsável pela execução do caso de Teste | Eduardo Wollinger |		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/efd59d6a-8bfd-4074-a794-a4233fd96d5a
 
-| Responsável pela execução do caso de Teste | EDUARDO|		
-        
         
 |Caso de Teste    |	CT-14 - Verificar Funcionamento do Cadastro de Proprietários 	|
 |:---|:---|		
 | Resultados obtidos | O cadastro de novo proprietário foi executado com sucesso.  |
+| Responsável pela execução do caso de Teste | Eduardo Wollinger |		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/40bfdf80-324a-4a8a-baf6-340d395406fa
-
-| Responsável pela execução do caso de Teste | EDUARDO|		
-        
         
 |Caso de Teste    |	CT-15 - Verificar Funcionamento da Alteração de Proprietários	|
 |:---|:---|		
-| Resultados obtidos | Alteração de proprietário existente foi executada com sucesso. |	
+| Resultados obtidos | Alteração de proprietário existente foi executada com sucesso. |
+| Responsável pela execução do caso de Teste | Eduardo Wollinger |		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/7ccd39bc-c418-4f54-b524-db1b77ea731b
 
-| Responsável pela execução do caso de Teste | EDUARDO|		
         
 ## RF-05 LOCATÁRIOS  (Executor: ZANDER)		
 |Caso de Teste    |	CT-16 - Verificar Funcionamento dos Links do Módulo Locatários	|
@@ -199,7 +196,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|
 |:---|:---|		
 | Resultados obtidos | O Daschboard apresentou as informações conforme banco de dados e todos os linkis funcionaram como esperado.  |
+| Responsável pela execução do caso de Teste | Eduardo Wollinger |	
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/d6817078-11f3-4b5d-8c8e-1d6ead9cfe39
 
-| Responsável pela execução do caso de Teste | EDUARDO|		
+---
