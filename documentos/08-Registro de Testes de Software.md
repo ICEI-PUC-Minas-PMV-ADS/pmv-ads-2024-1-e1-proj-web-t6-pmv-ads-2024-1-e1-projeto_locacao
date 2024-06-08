@@ -174,7 +174,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Resultados obtidos | A função cadastrar nova requisição funcionou perfeitamente no teste  |		
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/bb2d36a2-58c9-403c-93ca-3f5911206197
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/c30f2429-d15d-4dc3-8890-865f8628e945
 
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
