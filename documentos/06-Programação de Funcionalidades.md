@@ -176,7 +176,9 @@ A Estrutura de dados está localizada em: [locatarios_page](https://github.com/I
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/locatarios_page/locatarios_page.html
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/login_page/login_page.html
+
+Após o login acessar o módulo Locatários através do menu lateral esquerdo.
 
 #### Responsável
 
@@ -188,7 +190,7 @@ Eduardo Wollinger
 
 Acesso à tela inicial de Contratos através da barra de navegação lateral esquerda:
 
- <figure> 
+<figure> 
   <img src="img/tela_contrato.PNG">
     <figcaption>Figura 6 - Tela - Requisicoes</figcaption>
 </figure>
@@ -224,6 +226,46 @@ Na parte superior direita escontram-se os botões para pesquisar algum contrato 
 Zander Vasconcelos Pereira
 
 ---
+
+### RF-07 FATURAS
+
+Após o login o acesso a tela de gestão de faturas é apresentada através do menu lateral esquerdo na opção "Faturas" mostrando dados dos inquilinos.
+
+Exemplo da Tela principal "Faturas"
+
+<figure> 
+  <img src="img/RF-07_Tela_Principal_Faturas.png">
+    <figcaption>Figura 7 - Tela - Faturas</figcaption>
+</figure>
+
+#### Requisito atendido
+
+RF-07: A aplicação deve permitir cadastrar os pagamentos.
+
+#### Artefatos da funcionalidade
+
+Foram criados os seguintes artefatos:
+
+- faturas_page.html <br>
+- faturas_page.css <br>
+- faturas_page.js <br>
+
+#### Estrutura de Dados
+
+A Estrutura de dados está localizada em: [locatarios_page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/tree/main/codigo-fonte/faturas_page)
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/login_page/login_page.html
+
+Após o login acessar o módulo faturas através do menu lateral esquerdo.
+
+#### Responsável
+
+Eduardo Wollinger
+
+---
+
 
 ### RF-09 REQUISIÇÕES (ISMARLEI)
 
