@@ -19,3 +19,14 @@ function troca_texto_usuarios() {
         texto.innerHTML = "INATIVO"
     }
 }
+
+function troca_texto_contratos() {
+    let toggle = document.querySelector("#checkbox input")
+    let texto = document.querySelector("#checkbox label")
+    
+    if(toggle.checked) {
+        texto.innerHTML = "ATIVO"
+    } else {
+        texto.innerHTML = "INATIVO"
+    }
+}

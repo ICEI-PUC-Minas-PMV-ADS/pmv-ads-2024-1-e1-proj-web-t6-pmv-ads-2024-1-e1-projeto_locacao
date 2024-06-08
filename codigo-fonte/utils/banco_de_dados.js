@@ -149,7 +149,7 @@ function iniciar_banco_imoveis() {
       uf: "MG",
       cep: "31140-258",
       vacancia: "vago",
-      status: "inativo",
+      status: "ativo",
     },
 
     {
