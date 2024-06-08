@@ -165,19 +165,21 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
 | Resultados obtidos | Função filtro atendeu perfeitamente com o objeto testado |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/197309b1-d0e7-49a7-8862-544216487160
 
 |Caso de Teste    |	CT-29 - Verificar Funcionamento Módulo Requisições: Função Cadastrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
-        
+| Resultados obtidos | A função cadastrar nova requisição funcionou perfeitamente no teste  |		
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/bb2d36a2-58c9-403c-93ca-3f5911206197
+
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
         
 ## RF-10 DASHBOARD (Executor: EDUARDO)		
