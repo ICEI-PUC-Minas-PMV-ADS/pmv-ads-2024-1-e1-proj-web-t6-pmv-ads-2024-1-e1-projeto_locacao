@@ -192,7 +192,7 @@ function locatarios(id, nome, cpf, status, situacao) {
                     </div>
                 </div>
 
-                <div class="table_status">
+                <div class="table_situacao">
                     <div class=${locatario.situacao ? "status_active" : "status_inactive"}>
                         <p>
                             ${locatario.situacao ? "Adimplente" : "Inadimplente"}

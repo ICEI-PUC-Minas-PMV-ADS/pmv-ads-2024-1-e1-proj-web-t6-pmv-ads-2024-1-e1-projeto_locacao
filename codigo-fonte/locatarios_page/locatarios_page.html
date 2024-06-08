@@ -112,7 +112,7 @@
                 <div class="table_telefone">TELEFONE</div>
                 <div class="table_email">E-MAIL</div>
                 <div class="table_status">STATUS</div>
-                <div class="table_status">SITUAÇÃO</div>
+                <div class="table_situacao">SITUAÇÃO</div>
                 <div class="table_button"></div>
             </div>
             <hr class="divisor">
@@ -128,39 +128,20 @@
             <h1>Filtros</h1>
             <p><br>DADOS PESSOAIS</p>
             <hr>
-            <label for="nome">ID</label>
-            <input type="text" name="id" id="id_filtro" class="inputSuccess">
-            <label for="nome">NOME</label>
-            <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf_filtro" class="inputSuccess" maxlength="14" onkeyup="return mascara_cpf(this)" placeholder="xxx.xxx.xxx-xx">
-            
-            <!-- <div class="status">
+            <div>
+              <label for="nome">ID</label>
+              <input type="text" name="id" id="id_filtro" class="inputSuccess">
+              <label for="nome">NOME</label>
+              <input type="text" name="nome" id="nome_filtro" class="inputSuccess">
+              <label for="cpf">CPF</label>
+              <input type="text" name="cpf" id="cpf_filtro" class="inputSuccess" maxlength="14" onkeyup="return mascara_cpf(this)" placeholder="xxx.xxx.xxx-xx">
+            </div>
+
+            <div id="section_status">
+              <div id="status_filtro">
                 <p><br>STATUS</p>
-                <hr />
-
-                <div>
-                    <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
-                    <label for="todos">TODOS</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="ativo" id="status_ativo" value="ativo" onchange="status_ativo()">
-                    <label for="ativo">ATIVO</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="inativo" id="status_inativo" value="inativo" onchange="status_inativo()">
-                    <label for="inativo">INATIVO</label>
-                </div>
-            </div> -->
-
-
-
-
-            <div class="section_status">
-                <div class="status" id="status_filtro">
-                    <p><br>STATUS</p>
-                    <hr/>
-
+                <hr/>
+                <div class="status">
                     <div>
                         <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
                         <label for="todos">TODOS</label>
@@ -174,12 +155,12 @@
                         <label for="inativo">INATIVO</label>
                     </div>
                 </div>
+              </div>
 
-        
-                <div class="status" id="status_situacao">
-                    <p><br>SITUAÇÃO</p>
-                    <hr>
-
+              <div id="status_situacao">
+                <p><br>SITUAÇÃO</p>
+                <hr>
+                <div class="status" >
                     <div>
                         <input type="checkbox" name="todos" id="situacao_todos" value="todos" onchange="situacao_todos()">
                         <label for="todos">TODOS</label>
@@ -190,9 +171,10 @@
                     </div>
                     <div>
                         <input type="checkbox" name="inadimplente" id="situacao_inadimplente" value="inadimplente" onchange="situacao_inadimplente()">
-                        <label for="inadimplente">INADIMPLENTE</label>
+                        <label for="ina dimplente">INADIMPLENTE</label>
                     </div>
                 </div>
+              </div>
             </div>
 
             <div class="buttons">
