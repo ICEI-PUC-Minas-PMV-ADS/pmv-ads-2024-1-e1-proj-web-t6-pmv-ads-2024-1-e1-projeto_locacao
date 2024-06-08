@@ -1,6 +1,4 @@
 
-
-
 //coletando elemento fade:
 var ElementoFade = document.getElementById("fade")
 
@@ -19,6 +17,9 @@ var dialog = document.getElementById("modal");
 function fecharModal() {
 
   ElementoFade.classList.remove('escuro');
+  dialog.classList.remove('adicao')
+  dialog.classList.remove('filtro')
+  
   dialog.close()
 
 }
@@ -26,6 +27,8 @@ function fecharModal() {
 function abrirModalFiltro() {
 
   ElementoFade.classList.add("escuro");
+  dialog.classList.add('filtro')
+
   dialog.setAttribute('open', 'true');
   dialog.innerHTML = `
 
@@ -95,15 +98,15 @@ function abrirModalFiltro() {
           <h4>VACÂNCIA</h4>
           <hr>
 
-          <label class="container">Todos
+          <label class="container">TODOS
               <input type="radio" checked="checked" name="radio2" id="radio2" value="todos">
               <span class="checkmark"></span>
           </label>
-          <label class="container">Locado
+          <label class="container">LOCADO
               <input type="radio" name="radio2" id="radio2" value="locado">
               <span class="checkmark"></span>
           </label>
-          <label class="container">Vago
+          <label class="container">VAGO
               <input type="radio" name="radio2" id="radio2" value="vago">
               <span class="checkmark"></span>
           </label>
@@ -113,9 +116,12 @@ function abrirModalFiltro() {
   </div>
 
   <div class="alinhar_botoes">
-      <button id="voltar_principal" onclick="fecharModal()"> <img src="../src/icones/voltar.png" alt=""></button>
-      <button id="filtrar_imoveis"onclick="filtrarImoveis()"><img src="../src/icones/filtrar.png" alt=""></button>
-  </div>`
+      <button class="buttons" onclick="fecharModal()"> <img class="icon2" src="../src/icones/icon_voltar.png" alt="" />
+      VOLTAR</button>
+      <button id="filtrar_imoveis"onclick="filtrarImoveis()"><img class="icon2" src="../src/icones/icon_filtrar.png" alt="" />
+      FILTRAR</button>
+  </div>
+  `
 
 }
 
@@ -179,6 +185,23 @@ function filtrarImoveis() {
 
   else {
     for (let i = 0; i < filtrado.length; i++) {
+
+    let cor,cor2;
+    cor="";
+
+    if(filtrado[i].vacancia=="vago") {
+      cor="verde";
+    }
+    else{
+      cor='cinza';
+    }
+
+    if(filtrado[i].status=="ativo") {
+      cor2="verde";
+    }
+    else{
+      cor2='cinza';
+    }
       identifier = filtrado[i].id
       elementoLista.innerHTML += `<div class="div_table_row"> 
         <div class="table_icon1">
@@ -195,9 +218,9 @@ function filtrarImoveis() {
   
         <div class="table_property">${filtrado[i].tipo_logradouro} ${filtrado[i].logradouro}, ${filtrado[i].numero}, ${filtrado[i].complemento}</div>
   
-        <div class="table_status">${filtrado[i].vacancia}</div>
+        <div class="table_status"><button class="${cor}" id="vacancia">${filtrado[i].vacancia.toUpperCase()}</button></div>
   
-        <div class="table_status">${filtrado[i].status}</div>
+        <div class="table_status"><button id="statuss" class="${cor2}">${filtrado[i].status.toUpperCase()}</button></div>
   
         <div class="table_button">
           <button
@@ -211,7 +234,8 @@ function filtrarImoveis() {
             />
           </button>
         </div>
-        </div>`
+        </div>
+        <hr class="divisor">`
 
     }
     fecharModal()
@@ -328,8 +352,10 @@ function abrirModalAdicao() {
         </div>
 
         <div class="alinhar_botoes">
-            <button id="voltar_principal" onclick="fecharModal()"> <img src="../src/icones/voltar.png" alt=""> </button>
-            <button onclick="novoImovel()"> <img src="../src/icones/salvar.png" alt=""> </button>
+            <button id="voltar_principal" class="buttons" onclick="fecharModal()"><img class="icon2" src="../src/icones/icon_voltar.png" alt="" />
+            VOLTAR </button>
+            <button onclick="novoImovel()" class="buttons"><img class="icon2" src="../src/icones/icon_salvar.png" alt="" />
+            ALTERAR</button>
         </div>`
 
 
@@ -487,8 +513,10 @@ function abrirModalAlteracao(identifier) {
     </div>
 
     <div class="alinhar_botoes">
-        <button onclick="fecharModal()"><img src="../src/icones/voltar.png" alt=""></button>
-        <button onclick="salvarAlteracaoImovel(${identifier})"><img src="../src/icones/alterar.png" alt=""></button>
+        <button class="buttons" onclick="fecharModal()"><img class="icon2" src="../src/icones/icon_voltar.png" alt="" />
+        VOLTAR</button>
+        <button onclick="salvarAlteracaoImovel(${identifier})"><img class="icon2" src="../src/icones/icon_alterar.png" alt="" />
+        ALTERAR</button></button>
     </div>
 
   `
@@ -622,8 +650,8 @@ function carregar_banco_imoveis() {
 
         <div class="table_property">${imoveis[i].tipo_logradouro} ${imoveis[i].logradouro}, ${imoveis[i].numero}, ${imoveis[i].complemento}</div>
 
-        <div class="table_status"><button class="${cor}" id="vacancia">${imoveis[i].vacancia}</button></div>
-        <div class="table_status" ><button id="statuss" class="${cor2}">${imoveis[i].status}</button></div> 
+        <div class="table_status"><button class="${cor}" id="vacancia">${imoveis[i].vacancia.toUpperCase()}</button></div>
+        <div class="table_status" ><button id="statuss" class="${cor2}">${imoveis[i].status.toUpperCase()}</button></div> 
 
         <div class="table_button">
           <button class="open_button" onclick="abrirModalAlteracao(${identifier})"><img class="open_icon" src="../src/icones/icon_ver_dados.png" alt=""/>

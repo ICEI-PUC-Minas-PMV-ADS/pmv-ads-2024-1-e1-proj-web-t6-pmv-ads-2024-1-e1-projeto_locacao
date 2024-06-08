@@ -45,11 +45,6 @@ dialog {
     font-size: 25px;
 }
 
-.icon {
-    height: 35px;
-    width: 35px;
-}
-
 .open_icon {
     height: 20px;
     width: 20px;
@@ -144,7 +139,7 @@ dialog {
     font-family: 'Roboto';
     color: #5BB800;
     padding: 25px;
-    height: 600px;
+    height: 550px;
 
 }
 
@@ -288,16 +283,19 @@ dialog .status_vacancia .vacancia div label {
 
 /* Customize the label (the container) */
 dialog .container {
-    display: block;
+    display:block;
     position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
+    margin-left: 0px;
+    gap: 50px;
+    padding-left: 25px;
+    margin-bottom: 8px;
     cursor: auto;
-    font-size: 22px;
-    -webkit-user-select: none;
+    font-size: small;
+    -webkit-user-select:auto;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    align-items: center
 }
 
 /* Hide the browser's default radio button */
@@ -361,14 +359,13 @@ dialog .container .checkmark:after {
 
 /* botoes de filtrar e voltar*/
 
-dialog>button {
-    border-radius: 5px;
+/* dialog>button {
+      border-radius: 5px;
     width: 200px;
     display: grid;
     margin-top: 20px;
     margin-left: 0%;
     background-color: #5bb800;
-    /* Green */
     border: none;
     color: white;
     padding: 15px 25px;
@@ -376,42 +373,47 @@ dialog>button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-right: 20px;
-}
+    margin-right: 20px; 
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px; 
+} */
 
 dialog .alinhar_botoes {
     display: flex;
     margin: 0px;
     justify-content: center;
-
+    gap: 10px;
 }
 
-dialog .alinhar_botoes button img {
-    width: 70%;
+
+.icon2 {
+    height: 20px ;
+    width: 20px ;
 }
+
 
 dialog button:hover {
-    background: #69D303;
-    /* Green */
-    color: white;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6) !important;
 }
 
 dialog button:active {
-    background-color: #69D303;
+   
     box-shadow: 0 3px rgb(202, 200, 200);
     transform: translateY(4px);
-    transform: translateX(4px);
+    
 }
 
 /* estilizando botões*/
 dialog button {
-    border-radius: 5px;
+    /* border-radius: 5px;
     width: 200px;
     display: grid;
     margin-top: 20px;
     margin-left: 0%;
     background-color: #5bb800;
-    /* Green */
     border: none;
     color: white;
     padding: 15px 25px;
@@ -419,23 +421,28 @@ dialog button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-right: 20px;
-}
-
-.alinhar_botoes img {
+    margin-right: 20px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-}
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    
 
-dialog button:hover {
-    background: #69D303;
-    /* Green */
-    color: white;
-}
 
-button:active {
-    background-color: #69D303;
-    box-shadow: 0 3px gainsboro;
-    transform: translateY(4px);
 }
 
 /***********************************************************************
@@ -458,6 +465,7 @@ button:active {
     flex-wrap: wrap;
 
 }
+
 
 .adicao .a .a1 label input {
     width: 80px;
@@ -615,45 +623,31 @@ button:active {
     margin-top: 6px;
 }
 
-.adicao button {
-    border-radius: 5px;
-    width: 200px;
-    display: grid;
-    margin-top: 20px;
-    margin-left: 0%;
-    background-color: #5bb800;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 20px;
-
-}
 
 .adicao .alinhar_botoes {
     display: flex;
     justify-content: center;
 }
 
-.adicao .alinhar_botoes img {
-    width: 50%;
+
+
+/* .adicao button:hover {
+    background: #69D303;
+    
+    color: white;
+}  */
+
+.adicao button:active {
+    box-shadow: 0 3px rgb(202, 200, 200);
+    transform: translateY(4px);
 }
 
 .adicao button:hover {
-    background: #69D303;
-    /* Green */
-    color: white;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
-.adicao button:active {
-    background-color: #69D303;
-    box-shadow: 0 3px gainsboro;
-    transform: translateY(4px);
-}
+
+
 
 .adicao header {
     color: #5BB800;
