@@ -71,32 +71,39 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Responsável pela execução do caso de Teste | THÁSSIA|		
         
         
-## RF-04 PROPRIETÁRIOS  (Executor: EDUARDO)		
+## RF-04 PROPRIETÁRIOS		
 |Caso de Teste    |	CT-12 - Verificar Funcionamento dos botões na Página de Proprietários	|
 |:---|:---|		
 | Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |
 
-
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/246d4984-aaf1-4c80-9fa2-d6a9d893bbb1
-
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/b97bef21-ac82-498a-b95e-68dcaae31a6c
 
 | Responsável pela execução do caso de Teste | EDUARDO|		
         
 |Caso de Teste    |	CT-13 - Verificar Funcionamento do Filtro de Proprietários|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Todas as formas de filtrar retornaram o resultado esperado  |	
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/efd59d6a-8bfd-4074-a794-a4233fd96d5a
+
 | Responsável pela execução do caso de Teste | EDUARDO|		
         
         
 |Caso de Teste    |	CT-14 - Verificar Funcionamento do Cadastro de Proprietários 	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | O cadastro de novo proprietário foi executado com sucesso.  |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/40bfdf80-324a-4a8a-baf6-340d395406fa
+
 | Responsável pela execução do caso de Teste | EDUARDO|		
         
         
 |Caso de Teste    |	CT-15 - Verificar Funcionamento da Alteração de Proprietários	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Alteração de proprietário existente foi executada com sucesso. |	
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/7ccd39bc-c418-4f54-b524-db1b77ea731b
+
 | Responsável pela execução do caso de Teste | EDUARDO|		
         
 ## RF-05 LOCATÁRIOS  (Executor: ZANDER)		
@@ -188,8 +195,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/f32ba0cf-2a16-4470-b0c2-fb136139d7e2
 
-## RF-10 DASHBOARD (Executor: EDUARDO)		
+## RF-10 DASHBOARD		
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | O Daschboard apresentou as informações conforme banco de dados e todos os linkis funcionaram como esperado.  |
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/d6817078-11f3-4b5d-8c8e-1d6ead9cfe39
+
 | Responsável pela execução do caso de Teste | EDUARDO|		
