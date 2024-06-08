@@ -1155,13 +1155,6 @@ input[type="checkbox"] {
         }
 
 
-        button:hover {
-            background: #69D303;
-            /* Green */
-            color: white;
-        }
-
-
         img {
          
             height: 25px;
@@ -1245,7 +1238,7 @@ input[type="checkbox"] {
 
 
 @media only screen and (max-device-width: 480px){
-    
+
     .table_status{
         display: none;
     }
