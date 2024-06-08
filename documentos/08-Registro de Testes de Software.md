@@ -75,7 +75,11 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |Caso de Teste    |	CT-12 - Verificar Funcionamento dos botões na Página de Proprietários	|
 |:---|:---|		
 | Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |
+
+
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/246d4984-aaf1-4c80-9fa2-d6a9d893bbb1
+
+
 | Responsável pela execução do caso de Teste | EDUARDO|		
         
 |Caso de Teste    |	CT-13 - Verificar Funcionamento do Filtro de Proprietários|
