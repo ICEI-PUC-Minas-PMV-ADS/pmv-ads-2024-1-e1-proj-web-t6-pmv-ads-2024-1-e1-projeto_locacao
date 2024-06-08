@@ -125,7 +125,7 @@
 <dialog id="popup_filtrar" class="popup">
     <div>
         <h1>Filtros</h1>
-        <p><br>DADOS PESSOAIS</p>
+        <p>DADOS PESSOAIS</p>
         <hr>    
         <div class="div_identificacao">
             <div id="div_id">
@@ -142,11 +142,10 @@
             </div>
         </div>
     
-        <!-- Status  -->
-        <section class="section_status">           
+        <!-- Status  -->        
+            <p>STATUS FATURA</p>
+            <hr>
             <div class="status">
-                <p><br>STATUS FATURA</p>
-                <hr>
                 <div>
                     <input type="checkbox" name="todos" id="status_todos" value="todos" onchange="status_todos()">
                     <label for="todos">TODOS</label>
@@ -164,7 +163,6 @@
                     <label for="quitado">QUITADA</label>
                 </div>
             </div>
-        </section>
 
         <div class="buttons">
             <button onclick="fechar_popup_filtrar_fatura()">
