@@ -178,10 +178,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | A função alterar funcionou perfeitamente no teste realizado |		
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
-        
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/f32ba0cf-2a16-4470-b0c2-fb136139d7e2
+
 ## RF-10 DASHBOARD (Executor: EDUARDO)		
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|
 |:---|:---|		
