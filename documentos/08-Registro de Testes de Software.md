@@ -160,6 +160,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | SÓCRATIS|
 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/814c795e-7484-46a8-9134-ee533fa97cfd
         		
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
