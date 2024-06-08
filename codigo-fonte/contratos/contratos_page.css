@@ -1243,6 +1243,12 @@ input[type="checkbox"] {
 
 @media only screen and (max-device-width: 480px){
 
+    .popUpFiltro{
+        width:70%;
+        left: 10%;
+    }
+
+
     .table_status{
         display: none;
     }
@@ -1254,6 +1260,58 @@ input[type="checkbox"] {
         display: none;
     }
 
+    .PopUpAdicaoContrato{
+        width: 70%;
+        height: 600px;
+    }
+    
+    label{
+        margin-top: 5px;
+        column-gap: 30px;
+    }
 
+    .PopUpAdicaoContrato hr,h1{
+        margin-bottom: 10px;
+    }
 
+    .PopUpAdicaoContrato label.titulos{
+        padding-left: 0;
+        margin-right: 10px;
+    }
+    .PopUpAdicaoContrato input#periodo{
+        width: 90%;
+        
+        
+    }
+    .PopUpAlterar{
+        width: 80%;
+        padding: 15px;
+    }
+    .PopUpAlterar .alinhamento{
+        margin-bottom: 5px;
+    }
+
+    .PopUpAlterar label.titulos{
+        padding-left: 0;
+    }
+    .PopUpAlterar .alinhamento-a{
+        flex-wrap: wrap;
+    }
+    .PopUpAlterar label.titulos.descer{
+        
+    }
+    .PopUpAlterar .centro{
+       align-items:center;
+    }
+    .PopUpAlterar hr{
+        margin-top: 5px;
+    }
+    .PopUpAlterar h5{
+        width:fit-content;
+    }
+    .PopUpAlterar .slider.round{
+        margin-left: none;
+        
+       
+    }
 }
