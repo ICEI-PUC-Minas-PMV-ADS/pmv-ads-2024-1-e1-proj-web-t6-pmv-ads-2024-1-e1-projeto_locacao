@@ -25,186 +25,6 @@
     margin: 0;
 }
 
-/* Fonte e Fundo */
-body {
-    background-color: var(--light-grey);
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 12vh;
-}
-
-/* LINHAS DE DIVISÃO */
-hr.divisor {
-    border-top: 1px solid var(--grey);
-}
-
-.sidebar_superior {
-    width: 100%;
-}
-
-.sidebar_inferior {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-/* CABEÇALHO (header)*/
-
-
-/* div Icone ImmoControl */
-.div_logo {
-    padding: 0px 22px;
-    display: flex;
-    align-items: center;
-    min-width: fit-content;
-    max-width: fit-content;
-    justify-content: center;
-}
-.immo {
-    color: var(--black);
-    font-weight: normal;
-    font-size: 25px;
-}
-
-.control {
-    color: var(--green);
-    font-weight:600;
-    font-size: 25px;
-}
-
-.div_titulo {
-    color: var(--green);
-    font-size: 25px;
-    font-weight: 600;
-}
-
-
-.div_usuario {
-    padding-right: 20px;
-    display: flex;
-    direction: row;
-    align-items: center;
-    gap: 10px;
-    color: var(--green);
-    font-weight: bold;
-}
-
-/* SIDEBAR (content) */
-.content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    height: 88vh;
-}
-
-nav {
-    padding: 0px 10px 0px 10px;
-    /* width: 20%; */
-    min-width: fit-content;
-    max-width: fit-content;
-    min-height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 88vh;
-    z-index: 2;
-    background-color: var(--light-grey);
-    /* border: 1px solid black; */
-}
-
-/* BOTÕES MENU */
-/* Botão Inativo */
-.sidebar_button {
-    padding: 7px;
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: var(--font-size-button);
-    background-color: var(--light-grey);
-    border: none;
-    border-radius: 12px;
-    align-items: center;
-    color: var(--dark-grey);
-}
-/* Destaque  de botões clicáveis ao passar o mouse */
-.sidebar_button:hover {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    color: var(--black);
-    background-color: var(--white);
-}
-
-/* Botão selecionado */
-.sidebar_button_selected {
-    padding: 7px;
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-size: var(--font-size-button);
-    background-color: var(--white);
-    border: none;
-    border-radius: 12px;
-    align-items: center;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    color: var(--black);
-}
-
-.icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 35px;
-    width: 35px;
-}
-
-
-.open_icon{
-    height: 20px;
-    width: 20px;
-}
-
-/* CONTEÚDO */
-main {
-    position: fixed;
-    z-index: 1;
-    background-color: var(--white);
-    width: calc(100% - 109px);
-    min-width: fit-content;
-    height: calc(84vh - 9px);
-    padding: 15px;
-    margin: 0px 10px 10px 69px;
-    /* border: 1px solid black; */
-    border-radius: 12px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-
-#table_list{
-   overflow: scroll;
-    height: 90%;
-    overflow-y: auto;
-    overflow-x: hidden;
-
-}
-
 .div_table_faturas {
     display: flex;
     color: var(--green);
@@ -231,34 +51,6 @@ main {
     box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
 }
 
-/* Cabeçalho da Tabela */
-.div_table_header {
-    margin: 20px 0 5px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    color: var(--dark-grey);
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.div_table_row{
-    margin: 10px 0 10px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    min-width: fit-content;
-    /* font-weight: bold; */
-}
-
-.table_icon{
-    display: flex;
-    min-width: fit-content;
-    /* border: 1px solid black; */
-    width: 5%;
-}
-
 .table_locatario{
     min-width: fit-content;
     /* border: 1px solid black; */
@@ -283,29 +75,20 @@ main {
     width: 20%;
 }
 
-.table_button{
-    display: flex;
-    min-width: fit-content;
-    /* border: 1px solid black; */
-    width: 20%;
-    justify-content: end;
-}
-
-
 /* DESTAQUE STATUS  (FALTA O JAVA SCRIPT) */
-
 .status_aberto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 35%;
+    width: 70%;
     background-color: var(--green);
     color: var(--white);
     font-weight: 600;
     height: 35px;
     border-radius: 10px;
     align-items: center;
+    padding: 0px 10px;
 
 }
 
@@ -314,13 +97,14 @@ main {
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 35%;
+    width: 70%;
     background-color: var(--dark-grey);
     color: var(--white);
     font-weight: 600;
     height: 35px;
     border-radius: 10px;
     align-items: center;
+    padding: 0px 10px;
     
 }
 
@@ -329,44 +113,15 @@ main {
     flex-direction: row;
     justify-content: center;
     min-width: fit-content;
-    width: 35%;
+    width: 70%;
     background-color: var(--red);
     color: var(--white);
     font-weight: 600;
     height: 35px;
     border-radius: 10px;
     align-items: center;
+    padding: 0px 10px;
     
-}
-
-/* DESTAQUE BOTÃO AO PASSAR MOUSE */
-.open_button{
-    display: flex;
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--white);
-}
-
-.open_button:hover{
-    background-color: var(--grey);
-}
-
-
-/* Estilo da Popup */
-.popup {    
-    justify-self: center;
-    align-self: center;
-    background-color: var(--light-grey);
-    color: var(--green);
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    min-width: fit-content;
-}
-
-.popup::backdrop {
-    background-color: var(--light-black);
 }
 
 .popup div{
@@ -381,100 +136,15 @@ main {
     grid-area: nome;
 }
 
-.popup hr{
-    margin-bottom: 10px;
-    border-top: 1px solid var(--green);
-    margin: 10;
-}
-
-.popup p,label{
-    font-size: 12px;
-    font-weight: bold;
-    padding-left: 10px;
-}
-
-.popup h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 0px 0px 20px 0px;
-}
-
-.popup .selectSuccess {
-    height: 36px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--green);
-    padding-left: 10px;
-}
-
-.popup .selectError {
-    height: 36px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--red);
-    padding-left: 10px;
-}
-
-.popup .inputSuccess {
-    height: 30px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--green);
-    padding-left: 10px;
-}
-
-.popup .inputError{
-    height: 30px;
-    margin-bottom: 10px;
-    color: var(--black);
-    border-radius: 10px;
-    border: 2px solid var(--red);
-    padding-left: 10px;
-}
-
-.popup .buttons{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.popup .icon{
-    height: 20px;
-    width: 20px;
-}
-
-.buttons button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--green);
-    color: var(--white);
-    font-size: 12px;
-    font-weight: bold;
-    gap: 10px;
-}
-
-.buttons button:hover {
-    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
-}
-
-
 /* POPUP FILTRAR*/
 #popup_filtrar{
     width: 20%;
 }
 
+/* POPUP DADOS/ALTERAR FATURA */
+#popup_dados_fatura{
+    width: 30%;
+}
 
 /* Seção Status */
 .status div{
@@ -509,12 +179,6 @@ main {
     grid-area: nome;
 }
 
-/* POPUP DADOS/ALTERAR FATURA */
-#popup_dados_fatura{
-    width: 30%;
-}
-
-
 .popup #section_imovel_contrato {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -523,7 +187,6 @@ main {
     "imov imov imov contr";
 }
 
-
 .popup #div_imov{
     grid-area: imov;
 }
@@ -531,7 +194,6 @@ main {
 .popup #div_contr{
     grid-area: contr;
 }
-
 
 .popup .section_dados_fatura {
     display: grid;
@@ -549,24 +211,6 @@ main {
     grid-area: id;
 }
 
-.popup .div_inicio{
-    grid-area: inicio;
-}
-
-.popup .div_fim{
-    grid-area: fim;
-}
-
-.popup .div_vencimento{
-    grid-area: vencimento;
-}
-
-.popup .div_pagamento{
-    grid-area: pagamento;
-}
-
-
-
 .popup #section_datas {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -576,7 +220,6 @@ main {
     "vencimento pagamento";
 }
 
-
 .popup .div_inicio{
     grid-area: inicio;
 }
@@ -593,99 +236,39 @@ main {
     grid-area: pagamento;
 }
 
-
-
-/* RESPONSIVIDADE */
-
-.button_menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 7px 7px 7px 7px;
-    width: 100%;
-    border: none;
-    border-radius: 12px;
-    background-color: var(--light-grey);
-    color: var(--green);
-}
-
-header .button_menu {
-    display: none;
-}
-
-.button_menu .icon {
-    background-color: var(--white);
-    border-radius: 12px;
-}
-
-.button_menu:hover .icon{
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    color: var(--white);
-    border-radius: 12px;
-    background-color: var(--green);
-}
-
-.descricao {
-    display: none;
-    padding-right: 7px;
-}
-
-.open_nav .descricao {
-    display: block; 
-}
-
 /* RESPONSIVIDADE MOBILE */
 @media only screen and (max-device-width: 480px) {
- 
-    header {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        height: 6vh;
-    }
-
-    main {
-        background-color: var(--white);
-        width: calc(100% - 50px);
+    .table_locatario {
         min-width: fit-content;
-        padding: 15px;
-        margin: 0px 10px 10px 10px;
-        border-radius: 12px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-        height: calc(92vh - 9px);
+        /* border: 1px solid black; */
+        width: 50%;
     }
 
-    .div_logo {
+    .table_vencimento {
         display: none;
-    }
     
-    nav {
+    }
+    .table_valor {
         display: none;
+
+    }
+    .table_status {
+        min-width: fit-content;
+        /* border: 1px solid black; */
+        width: 30%;
+
+    }
+    .status_aberto, .status_quitado, .status_vencido {
+        width: 100%;
     }
 
-    .open_nav {
-        display: block;
-        height: 100vh;
-    }
-
-    header .button_menu {
+    .popup .div_identificacao, .popup .section_imovel_contrato, .popup .section_dados_fatura,  .popup #section_datas {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 7px 7px 7px 7px;
-        margin-left: 10px;
-        width: fit-content;
-        border: none;
-        border-radius: 12px;
-        background-color: var(--light-grey);
-        color: var(--green);
+        flex-direction: column;
     }
 
-    nav .button_menu {
-        display: none;
+    #popup_filtrar, #popup_dados_fatura {
+        width: 80%;
     }
-} 
+}
+
