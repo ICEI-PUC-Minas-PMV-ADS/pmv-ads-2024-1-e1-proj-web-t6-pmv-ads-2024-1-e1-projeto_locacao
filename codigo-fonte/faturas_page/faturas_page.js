@@ -223,7 +223,7 @@ function faturas(id_fatura, data_vencimento, nome_locatario, status){
                 </div>
                 <div class="table_locatario">${fatura.nome_locatario}</div>
                 <div class="table_vencimento">${fatura.data_vencimento}</div>
-                <div class="table_valor">${fatura.valor}</div>
+                <div class="table_valor">${parseFloat(fatura.valor).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</div>
                 <div class="table_status">
                     <div class="${classe}">
                         <p>
@@ -327,26 +327,24 @@ function abrir_popup_dados_fatura(e) {
                 <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="${dados_fatura.nome_locatario}" onblur="return set_input_success(this)" readonly>
             </div>
             
-            <Section id="section_imovel_contrato">
-                <div id="div_imov">
-                    <label for="imov">IMOVEL</label>
-                </div>
-                <div id="div_contr">
-                    <label for="contr">CONTRATO</label>
-                </div>
-            </Section>       
-            <hr>
             <Section class="section_dados_fatura">
                 <div class="div_end_imovel">
-                    <label for="nome">ID ENDEREÇO</label>
-                    <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="CONFIRMAR SE É DO IMOVEL OU DO LOCATÁRIO" onblur="return set_input_success(this)" readonly>
+                    <p><br>IMÓVEL</p>
+                    <hr>    
+                    <div>
+                        <label for="nome">ID - ENDEREÇO</label>
+                        <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="CONFIRMAR SE É DO IMOVEL OU DO LOCATÁRIO" onblur="return set_input_success(this)" readonly>
+                    </div>
                 </div>
                 <div class="div_id_imovel">
-                    <label for="id">ID IMÓVEL</label>
-                    <input type="text" name="imovel" id="imovel" class="inputSuccess" value="${dados_fatura.id_imovel}" onblur="return set_input_success(this)" readonly>
+                    <p><br>CONTRATO</p>
+                    <hr>
+                    <div >
+                        <label for="id">ID CONTRATO</label>
+                        <input type="text" name="imovel" id="imovel" class="inputSuccess" value="${dados_fatura.id_imovel}" onblur="return set_input_success(this)" readonly>
+                    </div>
                 </div>
-            </Section>
-                
+            </Section>   
             <p><br>PERIODO</p>
             <hr>
             <Section id="section_datas">
@@ -459,7 +457,7 @@ function abrir_sidebar() {
 
 // USUÁRIO
 function usuario() {
-    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
     let usuario_autenticado = document.querySelector("#usuario_autenticado p")
   
     if(usuario == null) {

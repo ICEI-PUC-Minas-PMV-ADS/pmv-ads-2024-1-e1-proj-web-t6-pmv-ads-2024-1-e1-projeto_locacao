@@ -1022,7 +1022,7 @@ function abrir_sidebar() {
 
 // USUÁRIO
 function usuario() {
-    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario = JSON.parse(localStorage.getItem("usuario_autenticado"))
     let usuario_autenticado = document.querySelector("#usuario_autenticado p")
   
     if(usuario == null) {
