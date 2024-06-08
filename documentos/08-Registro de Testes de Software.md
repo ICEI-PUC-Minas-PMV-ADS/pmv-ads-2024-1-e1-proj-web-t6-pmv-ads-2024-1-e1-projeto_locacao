@@ -164,9 +164,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         		
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
-        
+| Resultados obtidos | Função filtro atendeu perfeitamente com o objeto testado |		
+| Responsável pela execução do caso de Teste | SÓCRATIS|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/197309b1-d0e7-49a7-8862-544216487160
+
 |Caso de Teste    |	CT-29 - Verificar Funcionamento Módulo Requisições: Função Cadastrar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
