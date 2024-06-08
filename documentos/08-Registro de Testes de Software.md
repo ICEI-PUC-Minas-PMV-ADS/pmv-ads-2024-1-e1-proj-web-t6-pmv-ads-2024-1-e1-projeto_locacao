@@ -37,6 +37,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 | Responsável pela execução do caso de Teste | ISMARLEI|		
 
 &nbsp;
+
+&nbsp;
         
 ## RF-02 LOGIN / PRIMEIRO ACESSO  (Executor: ZANDER)		
 |Caso de Teste    |	CT-06 - Verificar funcionamento do link Esqueci Minha Senha na tela de Login	|
@@ -49,6 +51,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | ZANDER|		
+
+&nbsp;
 
 &nbsp;
         
@@ -78,6 +82,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
         
 &nbsp;
 
+&nbsp;
+
 ## RF-04 PROPRIETÁRIOS		
 |Caso de Teste    |	CT-12 - Verificar Funcionamento dos botões na Página de Proprietários	|
 |:---|:---|		
@@ -87,6 +93,10 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/b97bef21-ac82-498a-b95e-68dcaae31a6c
 
         
+&nbsp;
+
+---
+
 |Caso de Teste    |	CT-13 - Verificar Funcionamento do Filtro de Proprietários|
 |:---|:---|		
 | Resultados obtidos | Todas as formas de filtrar retornaram o resultado esperado  |	
@@ -94,6 +104,9 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/efd59d6a-8bfd-4074-a794-a4233fd96d5a
 
+&nbsp;
+
+---
         
 |Caso de Teste    |	CT-14 - Verificar Funcionamento do Cadastro de Proprietários 	|
 |:---|:---|		
@@ -101,13 +114,19 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Responsável pela execução do caso de Teste | Eduardo Wollinger |		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/40bfdf80-324a-4a8a-baf6-340d395406fa
-        
+
+&nbsp;
+
+---
+
 |Caso de Teste    |	CT-15 - Verificar Funcionamento da Alteração de Proprietários	|
 |:---|:---|		
 | Resultados obtidos | Alteração de proprietário existente foi executada com sucesso. |
 | Responsável pela execução do caso de Teste | Eduardo Wollinger |		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/7ccd39bc-c418-4f54-b524-db1b77ea731b
+
+&nbsp;
 
 &nbsp;
 
@@ -135,6 +154,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         
 &nbsp;
 
+&nbsp;
+
 ## RF-06 CONTRATOS (Executor: PEDRO)		
 |Caso de Teste    |	CT-20 - Verificar Funcionamento dos Links do Módulo Contratos	|
 |:---|:---|		
@@ -158,6 +179,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         
 &nbsp;
 
+&nbsp;
+
 ## RF-07 FATURAS (Executor: ISMARLEI)		
 |Caso de Teste    |	CT-24 - Verificar Funcionamento dos Links do Módulo Faturas	|
 |:---|:---|		
@@ -171,11 +194,15 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         
 &nbsp;
 
+&nbsp;
+
 ## RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (Executor: THÁSSIA)		
 |Caso de Teste    |	CT-26 - Verificar a geração de alertas das faturas com vencimentos próximos e faturas 	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
+
+&nbsp;
 
 &nbsp;
 
@@ -186,7 +213,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/814c795e-7484-46a8-9134-ee533fa97cfd
-        		
+
+&nbsp;
+
+---
+
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
 | Resultados obtidos | Função filtro atendeu perfeitamente com o objeto testado |		
@@ -194,12 +225,20 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/197309b1-d0e7-49a7-8862-544216487160
 
+&nbsp;
+
+---
+
 |Caso de Teste    |	CT-29 - Verificar Funcionamento Módulo Requisições: Função Cadastrar	|
 |:---|:---|		
 | Resultados obtidos | A função cadastrar nova requisição funcionou perfeitamente no teste  |		
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/c30f2429-d15d-4dc3-8890-865f8628e945
+
+&nbsp;
+
+---
 
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
@@ -210,6 +249,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
 
+&nbsp;
+
 ## RF-10 DASHBOARD		
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|
 |:---|:---|		
@@ -217,5 +258,6 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Responsável pela execução do caso de Teste | Eduardo Wollinger |	
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/134973621/d6817078-11f3-4b5d-8c8e-1d6ead9cfe39
+
 
 ---
