@@ -378,7 +378,7 @@ label {
     padding: 0px 0px 20px 0px;
 }
 
- .selectSuccess {
+.selectSuccess {
     height: 36px;
     margin-bottom: 10px;
     color: var(--black);
@@ -432,8 +432,8 @@ label {
 }
 
 /* .popup .icon { */
-    /* height: 20px; */
-    /* width: 20px; */
+/* height: 20px; */
+/* width: 20px; */
 /* } */
 
 .buttons button {
@@ -509,7 +509,7 @@ input[type="checkbox"] {
 
 }
 
- .div_tipo_logradouro {
+.div_tipo_logradouro {
     display: flex;
     flex-direction: column;
     grid-area: tipo_logradouro;
@@ -576,36 +576,38 @@ input[type="checkbox"] {
     grid-area: email;
 }
 
-#statuss.verde{
+#statuss.verde {
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 100px;
-    background-color:#5BB800;
+    background-color: #5BB800;
     color: white;
 
 }
-#statuss.cinza{
-    
+
+#statuss.cinza {
+
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 100px;
-    background-color:#bbbbb8;
+    background-color: #bbbbb8;
     color: white;
 
 }
 
 
 #statuss.verde:active {
-    background-color:#5BB800;
+    background-color: #5BB800;
     transform: none;
     box-shadow: none;
 }
-#statuss.cinza:active{
+
+#statuss.cinza:active {
     transform: none;
     box-shadow: none;
-    
+
 
 }
 
@@ -632,6 +634,7 @@ input[type="checkbox"] {
         color: #5BB800;
         font-size: large;
         margin-bottom: 15px;
+        margin-top: 15px;
     }
 
 
@@ -654,7 +657,7 @@ input[type="checkbox"] {
     }
 
     .alinhamento>label>input {
-       
+
         width: 90%;
         color: #000000;
         border-radius: 6px;
@@ -692,7 +695,8 @@ input[type="checkbox"] {
         margin-bottom: 0px;
         color: #5BB800;
     }
-    #valor_mensal{
+
+    #valor_mensal {
         border-width: 2px;
     }
 
@@ -703,7 +707,7 @@ input[type="checkbox"] {
         margin-bottom: 10px;
         width: 100%;
         flex-wrap: wrap;
-        align-items:center;
+        align-items: center;
     }
 
     #checkmark,
@@ -713,11 +717,11 @@ input[type="checkbox"] {
 
     }
 
-    #checkmark{
-       
+    #checkmark {
+
         appearance: none;
         cursor: pointer;
-        border:2px solid;
+        border: 2px solid;
         border-radius: 6px;
         width: 20px;
         height: 20px;
@@ -727,10 +731,10 @@ input[type="checkbox"] {
         align-items: center;
         justify-content: center;
 
-        
+
     }
 
-    #checkmark:before{
+    #checkmark:before {
         content: "";
         border-radius: 50%;
         width: 10px;
@@ -739,7 +743,8 @@ input[type="checkbox"] {
         background: #5BB800;
         opacity: 0;
     }
-    #checkmark:checked:before{
+
+    #checkmark:checked:before {
         opacity: 1;
     }
 
@@ -750,7 +755,7 @@ input[type="checkbox"] {
 
     /* botoes*/
     .botoes {
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -760,7 +765,7 @@ input[type="checkbox"] {
     margin-left: 35%;
     margin-right: 25%;*/
         button {
-            justify-content: center;
+            /* justify-content: center;
             column-gap: 30px;
             border-radius: 7px;
             width: 150px;
@@ -773,7 +778,25 @@ input[type="checkbox"] {
             font-size: 14px;
             height: 45px;
             align-items: center;
-            margin-bottom: 0px;
+            margin-bottom: 0px; */
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--green);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: bold;
+            gap: 10px;
         }
 
         .flutuar {
@@ -781,16 +804,10 @@ input[type="checkbox"] {
         }
 
         button:hover {
-            background: #69D303;
-            /* Green */
-            color: white;
+            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
         }
 
-        button:active {
-            background-color: #69D303;
-            box-shadow: 0 3px gainsboro;
-            transform: translateY(4px);
-        }
+        button:active {}
 
 
     }
@@ -847,13 +864,13 @@ input[type="checkbox"] {
     .centro {
         display: flex;
         align-items: center;
-      
-    
+
+
 
     }
 
     .centro>h5 {
-        margin:0;
+        margin: 0;
     }
 
     .longo {
@@ -868,10 +885,10 @@ input[type="checkbox"] {
 
     }
 
-    .alinhamento-a input{
+    .alinhamento-a input {
         border-width: 2px;
     }
-    
+
     label {
         width: 50%;
 
@@ -899,40 +916,33 @@ input[type="checkbox"] {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 20px;
 
         button {
-            column-gap: 30px;
-            border-radius: 7px;
-            width: 150px;
+
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
             display: flex;
-            /*margin-top: 20px;*/
-            margin-left: 5%;
-            background-color: #5bb800;
-            border: none;
-            color: white;
-            padding-bottom: 10px;
-            display: inline-block;
-            text-align: center;
-            font-size: 14px;
-            margin-right: 15px;
-            height: 35px;
+            flex-direction: row;
             align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--green);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: bold;
+
         }
 
 
         button:hover {
-            background: #69D303;
-            /* Green */
-            color: white;
+            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
         }
-
-        button:active {
-            background-color: #69D303;
-            box-shadow: 0 3px gainsboro;
-            transform: translateY(4px);
-        }
-
-
 
         img {
             margin-top: 5px;
@@ -1034,7 +1044,7 @@ input[type="checkbox"] {
 
     }
 
-  
+
 
     h1 {
         display: flex;
@@ -1073,7 +1083,7 @@ input[type="checkbox"] {
 
     .centro h5 {
         font-size: medium;
-        
+
 
 
 
@@ -1123,24 +1133,25 @@ input[type="checkbox"] {
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 25px;
 
         button {
-            column-gap: 30px;
-            border-radius: 7px;
-            width: 150px;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
             display: flex;
-            margin-top: 20px;
-            margin-left: 5%;
-            background-color: #5bb800;
-            border: none;
-            color: white;
-            padding-bottom: 10px;
-            display: inline-block;
-            text-align: center;
-            font-size: 14px;
-            margin-right: 15px;
-            height: 45px;
+            flex-direction: row;
             align-items: center;
+            justify-content: center;
+            width: 50%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: var(--green);
+            color: var(--white);
+            font-size: 12px;
+            font-weight: bold;
         }
 
 
@@ -1150,16 +1161,9 @@ input[type="checkbox"] {
             color: white;
         }
 
-        button:active {
-            background-color: #69D303;
-            box-shadow: 0 3px gainsboro;
-            transform: translateY(4px);
-        }
-
-
 
         img {
-            margin-top: 10px;
+         
             height: 25px;
         }
 
@@ -1237,4 +1241,12 @@ input[type="checkbox"] {
 
 
 
+}
+
+
+@media only screen and (max-device-width: 480px){
+    
+    .table_status{
+        display: none;
+    }
 }

@@ -287,19 +287,19 @@ function abrirModalAdicao() {
         <div class="a">
 
             <div class="a1">
-                <label for="tipoLogradouro" id="label1">Tipo Logradouro <br>
+                <label for="tipoLogradouro" id="label1">Tipo Logradouro<br>
                     <input type="text" ,id="tipoLogradouro">
                 </label>
             </div>
 
             <div class="a2">
-                <label for="Logradouro" id="label2">Logradouro <br>
+                <label for="Logradouro" id="label2">Logradouro<br>
                     <input type="text" , id="Logradouro">
                 </label>
             </div>
 
             <div class="a3">
-                <label for="numero" id="label3">Número <br>
+                <label for="numero" id="label3">Número<br>
                     <input type="text" , id="numero">
                 </label>        
             </div>
@@ -355,7 +355,7 @@ function abrirModalAdicao() {
             <button id="voltar_principal" class="buttons" onclick="fecharModal()"><img class="icon2" src="../src/icones/icon_voltar.png" alt="" />
             VOLTAR </button>
             <button onclick="novoImovel()" class="buttons"><img class="icon2" src="../src/icones/icon_salvar.png" alt="" />
-            ALTERAR</button>
+            SALVAR</button>
         </div>`
 
 

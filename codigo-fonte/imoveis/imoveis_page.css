@@ -461,23 +461,26 @@ dialog button {
 
 .adicao .a {
     display: flex;
-    column-gap: 10px;
-    flex-wrap: wrap;
+    max-width: fit-content;
+}
 
+.adicao label {
+  
 }
 
 
-.adicao .a .a1 label input {
-    width: 80px;
+.adicao >.a>.a1  {
+    flex-grow: 1;    
 }
 
-.adicao .a .a2 label input {
-    width: 290px;
+.adicao>.a>.a2  {
+    flex-grow: 2;
 }
 
-.adicao .a .a3 label input {
-    width: 40px;
+.adicao>.a>.a3  {
+    flex-grow: 1;   
 }
+
 
 .adicao .b {
 

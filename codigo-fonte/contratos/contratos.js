@@ -59,8 +59,8 @@ function abrirModalFiltro() {
 
 
     <div class="botoes">
-        <button id="voltar_principal" onclick="fecharModal()"><img src="../src/icones/voltar.png" alt=""></button>
-        <button class="flutuar" onclick="filtrarContratos()"><img src="../src/icones/filtrar.png" alt=""></button>
+        <button id="voltar_principal" onclick="fecharModal()"><img src="../src/icones/icon_voltar.png" alt="">VOLTAR</button>
+        <button class="flutuar" onclick="filtrarContratos()"><img src="../src/icones/icon_filtrar.png" alt="">FILTRAR</button>
     </div>
 
 
@@ -126,8 +126,8 @@ function abrirModalAdicao() {
     </div>
 
     <div class="botoes">
-        <button onclick="fecharModal()"><img src="../src/icones/voltar.png" alt=""></button>
-        <button class="flutuar" onclick="adicionarContrato()"><img src="../src/icones/salvar.png" alt=""></button>
+        <button onclick="fecharModal()"><img src="../src/icones/icon_voltar.png" alt="">VOLTAR</button>
+        <button class="flutuar" onclick="adicionarContrato()"><img src="../src/icones/icon_salvar.png" alt="">SALVAR</button>
     </div>
     
     
@@ -204,6 +204,10 @@ function filtrarContratos() {
     if(contratosfiltrados.length!=0){
     elementoLista.innerHTML = ""
     for (let i = 0; i < contratosfiltrados.length; i++) {
+        let cor = "";
+        if(contratosfiltrados[i].status=="ativo") cor='verde'
+        else cor = "cinza"
+        var identifier = contratosfiltrados[i].id
         identifier = contratosfiltrados[i].id
         elementoLista.innerHTML += `
         <div class="div_table_row">
@@ -227,8 +231,8 @@ function filtrarContratos() {
       <div class="table_status" id="mensalidade">
           ${contratosfiltrados[i].valor_mensal}
       </div>
-      <div class="table_status" id="situacao">
-          ${contratosfiltrados[i].status}
+      <div class="table_status"  id="situacao">
+        <button class="${cor}" id="statuss">${contratosfiltrados[i].status.toUpperCase()}</button>
       </div>
   
       <div class="table_button">
@@ -358,7 +362,8 @@ function abrirModalAlteracaoContratos(identifier) {
     </div>
 
     <div class="botoes">
-        <button id="voltar_principal" onclick='fecharModal()'><img src="../src/icones/voltar.png" alt=""></button>
+        <button id="voltar_principal" onclick='fecharModal()'><img class="icon2" src="../src/icones/icon_voltar.png" alt="" />
+        VOLTAR</button>
         <button class="flutuar" onclick="alterarContrato(${identifier})"><img src="../src/icones/alterar.png" alt=""></button>
     </div>
     `
