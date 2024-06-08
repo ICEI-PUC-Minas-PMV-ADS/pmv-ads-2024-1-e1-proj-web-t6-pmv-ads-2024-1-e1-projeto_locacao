@@ -174,7 +174,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
+| Responsável pela execução do caso de Teste | SÓCRATIS|
+
         
 ## RF-10 DASHBOARD (Executor: EDUARDO)		
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|
