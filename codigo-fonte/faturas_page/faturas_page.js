@@ -80,7 +80,7 @@ function status_vencido() {
 // BANCO DE DADOS DE FATURAS (TEMPORÁRIO)
 
 function faturas_init() {
-       // USUÁRIO
+    // USUÁRIO
     usuario()
 
     faturas(null, null, null, [])

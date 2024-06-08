@@ -100,83 +100,8 @@ function situacao_inadimplente() {
 // BANCO DE DADOS DE LOCATÁRIOS
 
 function locatarios_init() {
-    localStorage.clear()
-
-    iniciar_banco()
-
+    usuario()
     locatarios(null, null, null, true, null)
-}
-
-
-function iniciar_banco_locatarios() {
-    let locatarios = [
-        {
-            id: 1,
-            nome: "Locatário 01",
-            cpf: "19999999999",
-            estado_civil: "solteiro",
-            telefone: "31999999999",
-            email: "pedro@exemplo.com",
-            endereco: {
-                tipo_logradouro: "rua",
-                logradouro: "Afonço Pena",
-                numero: "1",
-                complemento: "A",
-                bairro: "Centro",
-                cidade: "Belo Horizonte",
-                cep: "00000000",
-                uf: "MG"
-            },
-            status: true,
-            situacao: false
-        },
-        {
-            id: 2,
-            nome: "Locatário 02",
-            cpf: "29999999999",
-            estado_civil: "casado",
-            telefone: "31999999999",
-            email: "pedro@exemplo.com",
-            endereco: {
-                tipo_logradouro: "praça",
-                logradouro: "Afonço Pena",
-                numero: "1",
-                complemento: "A",
-                bairro: "Centro",
-                cidade: "Belo Horizonte",
-                cep: "00000000",
-                uf: "MG"
-            },
-            status: true,
-            situacao: true
-        },
-        {
-            id: 3,
-            nome: "Locatário 03",
-            cpf: "39999999999",
-            estado_civil: "solteiro",
-            telefone: "31999999999",
-            email: "pedro@exemplo.com",
-            endereco: {
-                tipo_logradouro: "avenida",
-                logradouro: "Afonço Pena",
-                numero: "1",
-                complemento: "A",
-                bairro: "Centro",
-                cidade: "Belo Horizonte",
-                cep: "00000000",
-                uf: "MG"
-            },
-            status: false,
-            situacao: false
-        }
-
-    ]
-    localStorage.setItem("locatarios", JSON.stringify(locatarios))
-}
-
-function iniciar_banco() {
-    iniciar_banco_locatarios()
 }
 
 // Funcão para povoar a tela com o banco de dados
@@ -249,9 +174,7 @@ function locatarios(id, nome, cpf, status, situacao) {
                 <div class="table_icon">
                     <img src="../src/icones/icon_locatarios_selecionado.png" alt="" class="icon">
                 </div>
-                <div class="table_id">
-                    ${locatario.id}
-                </div>
+                
                 <div class="table_name">
                     ${locatario.nome}    
                 </div>
@@ -1081,3 +1004,30 @@ function fechar_popup_cadastrar_locatario() {
 
     popup.close()
 }
+
+
+// SIDEBAR
+function abrir_sidebar() {
+    let sanduiche = document.getElementById("sanduiche")
+    let nav = document.querySelector("nav")
+
+    if(sanduiche.innerHTML == "menu") {
+        nav.className = "open_nav"
+        sanduiche.innerHTML = "close"
+    } else {
+        nav.className = ""
+        sanduiche.innerHTML = "menu"
+    }
+}
+
+// USUÁRIO
+function usuario() {
+    let usuario = JSON.parse(sessionStorage.getItem("usuario_autenticado"))
+    let usuario_autenticado = document.querySelector("#usuario_autenticado p")
+  
+    if(usuario == null) {
+        usuario_autenticado.innerHTML = "Usuário não identificado"
+    } else {
+        usuario_autenticado.innerHTML = usuario.nome
+    }
+  }
