@@ -344,7 +344,7 @@ function abrirModalAlteracaoContratos(identifier) {
                 </div>
                 
                 <div class="buttons">
-                    <button onclick="fecharModalAdicionar()">
+                    <button onclick="fechaModalDados()">
                         <img class="icon" src="../src/icones/icon_voltar.png" alt="">
                         VOLTAR
                     </button>
@@ -362,6 +362,12 @@ function abrirModalAlteracaoContratos(identifier) {
     let popup = document.getElementById("PopUpAlteraContrato")
 
     popup.showModal()
+}
+
+function fechaModalDados() {
+    let popup = document.getElementById("PopUpAlteraContrato")
+
+    popup.close()
 }
 
 function habilitaAlteracao(identifier) {
