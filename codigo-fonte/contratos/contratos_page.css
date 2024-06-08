@@ -1154,6 +1154,10 @@ input[type="checkbox"] {
             font-weight: bold;
         }
 
+        button:hover{
+            box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
+        }
+
 
         img {
          
