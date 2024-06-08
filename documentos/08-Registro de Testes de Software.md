@@ -157,24 +157,32 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ## RF-09 REQUISIÇÕES (Executor: SÓCRATIS)		
 |Caso de Teste    |	CT-27 - Verificar Funcionamento dos Links do Módulo Requisições	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
+| Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |		
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/814c795e-7484-46a8-9134-ee533fa97cfd
         		
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
-        
+| Resultados obtidos | Função filtro atendeu perfeitamente com o objeto testado |		
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/197309b1-d0e7-49a7-8862-544216487160
+
 |Caso de Teste    |	CT-29 - Verificar Funcionamento Módulo Requisições: Função Cadastrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
-        
+| Resultados obtidos | A função cadastrar nova requisição funcionou perfeitamente no teste  |		
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/c30f2429-d15d-4dc3-8890-865f8628e945
+
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
-        
+| Resultados obtidos | A função alterar funcionou perfeitamente no teste realizado |		
+| Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/f32ba0cf-2a16-4470-b0c2-fb136139d7e2
+
 ## RF-10 DASHBOARD (Executor: EDUARDO)		
 |Caso de Teste    |	CT-31 - Vizualização das principais informações e verificar se os botões do sidebar localizado à esquerda do Dashboard estão encaminhando para as respectivas telas corretamente	|
 |:---|:---|		
