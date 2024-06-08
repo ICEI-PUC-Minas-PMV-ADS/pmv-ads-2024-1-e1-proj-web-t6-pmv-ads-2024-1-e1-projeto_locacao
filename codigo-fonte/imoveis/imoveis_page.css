@@ -79,53 +79,57 @@ dialog {
     width: 20%;
 }
 
-#vacancia.verde{
+#vacancia.verde {
 
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 100px;
-    background-color:#5BB800;
+    background-color: #5BB800;
     color: white;
-    
+
 }
 
-#vacancia.cinza{
+#vacancia.cinza {
 
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 100px;
-    background-color:#bbbbb8;
+    background-color: #bbbbb8;
     color: white;
-    
+
 }
 
-#statuss.verde{
+#statuss.verde {
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 100px;
-    background-color:#5BB800;
+    background-color: #5BB800;
     color: white;
 
 }
-#statuss.cinza{
-    
+
+#statuss.cinza {
+
     border: none;
     border-radius: 10px;
     height: 40px;
     width: 100px;
-    background-color:#bbbbb8;
+    background-color: #bbbbb8;
     color: white;
 
 }
-#statuss.verde,#statuss.cinza:active{
+
+#statuss.verde,
+#statuss.cinza:active {
     transform: none;
     box-shadow: none;
 }
 
-#vacancia.cinza,#vacancia.verde{
+#vacancia.cinza,
+#vacancia.verde {
     transform: none;
     box-shadow: none;
 }
@@ -159,7 +163,8 @@ dialog h4 {
     margin-bottom: 0px;
     margin-top: 10px;
 }
-#locatario{
+
+#locatario {
     margin-top: 10px;
     width: 100%;
 }
@@ -185,13 +190,13 @@ dialog label {
 
 
 dialog .id_tipo {
-    display:flex;
+    display: flex;
     margin-bottom: 5px;
     gap: 5px;
-    
+
 }
 
-dialog .id_tipo label{
+dialog .id_tipo label {
     padding-left: 0;
 }
 
@@ -200,6 +205,7 @@ dialog .id_tipo #id {
     display: flex;
     width: 200px;
 }
+
 dialog .id_tipo #tipo {
     padding-left: none;
     display: flex;
@@ -211,6 +217,7 @@ dialog .cidade_cep #cidade {
     display: flex;
     width: 200px;
 }
+
 dialog .cidade_cep #cep {
     padding-left: none;
     display: flex;
@@ -283,7 +290,7 @@ dialog .status_vacancia .vacancia div label {
 
 /* Customize the label (the container) */
 dialog .container {
-    display:block;
+    display: block;
     position: relative;
     margin-left: 0px;
     gap: 50px;
@@ -291,7 +298,7 @@ dialog .container {
     margin-bottom: 8px;
     cursor: auto;
     font-size: small;
-    -webkit-user-select:auto;
+    -webkit-user-select: auto;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -390,8 +397,8 @@ dialog .alinhar_botoes {
 
 
 .icon2 {
-    height: 20px ;
-    width: 20px ;
+    height: 20px;
+    width: 20px;
 }
 
 
@@ -400,10 +407,10 @@ dialog button:hover {
 }
 
 dialog button:active {
-   
+
     box-shadow: 0 3px rgb(202, 200, 200);
     transform: translateY(4px);
-    
+
 }
 
 /* estilizando botões*/
@@ -440,7 +447,7 @@ dialog button {
     gap: 15px;
     justify-content: center;
     margin-top: 15px;
-    
+
 
 
 }
@@ -464,21 +471,19 @@ dialog button {
     max-width: fit-content;
 }
 
-.adicao label {
-  
+.adicao label {}
+
+
+.adicao>.a>.a1 {
+    flex-grow: 1;
 }
 
-
-.adicao >.a>.a1  {
-    flex-grow: 1;    
-}
-
-.adicao>.a>.a2  {
+.adicao>.a>.a2 {
     flex-grow: 2;
 }
 
-.adicao>.a>.a3  {
-    flex-grow: 1;   
+.adicao>.a>.a3 {
+    flex-grow: 1;
 }
 
 
@@ -654,4 +659,58 @@ dialog button {
 
 .adicao header {
     color: #5BB800;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+
+    body{
+        max-height: fit-content;
+       
+    }
+    
+    dialog{
+        height: 800px;
+    }
+
+    .table_status {
+        display: none;
+    }
+
+    .table_id {
+        display: none;
+    }
+
+    .table_icon1 {
+        display: none;
+    }
+
+    .table_name {
+        display: none;
+    }
+
+    .id_tipo{
+        flex-wrap: wrap;
+    }
+    .cidade_cep{
+        flex-wrap: wrap;
+    }
+
+    .a{
+        flex-wrap: wrap;
+    }
+    dialog#modal.adicao{
+        padding: none;
+    }
+
+
+
+
+
+
+
+
+
+
 }

@@ -1246,4 +1246,14 @@ input[type="checkbox"] {
     .table_status{
         display: none;
     }
+    .table_id{
+        display: none;
+    }
+
+    .table_icon1{
+        display: none;
+    }
+
+
+
 }
