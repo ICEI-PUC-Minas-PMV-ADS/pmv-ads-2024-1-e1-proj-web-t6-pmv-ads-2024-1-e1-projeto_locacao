@@ -158,7 +158,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |Caso de Teste    |	CT-27 - Verificar Funcionamento dos Links do Módulo Requisições	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | SÓCRATIS|		
+| Responsável pela execução do caso de Teste | SÓCRATIS|
+
         		
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
