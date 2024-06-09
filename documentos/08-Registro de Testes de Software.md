@@ -43,14 +43,14 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ## RF-02 LOGIN / PRIMEIRO ACESSO  (Executor: ZANDER)		
 |Caso de Teste    |	CT-06 - Verificar funcionamento do link Esqueci Minha Senha na tela de Login	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ZANDER|		
+| Resultados obtidos | E-mail de restauração de senha enviado com sucesso  |		
+| Responsável pela execução do caso de Teste |Zander Vasconcelos|		
         
         
 |Caso de Teste    |	CT-07 - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário 	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ZANDER|		
+| Resultados obtidos |Troca de senha com requisitos atendidos com sucesso |		
+| Responsável pela execução do caso de Teste |Zander Vasconcelos|		
 
 &nbsp;
 
