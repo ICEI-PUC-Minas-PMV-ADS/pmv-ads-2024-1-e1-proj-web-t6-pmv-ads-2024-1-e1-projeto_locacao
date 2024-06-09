@@ -88,7 +88,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | Passos                                       | Seguir os seguintes passos:                                                                                 |
 |                                              | 01 - Acessar o navegador.                                                                                   |
 |                                              | 02 - Informar o endereço da aplicação                                                                       |
-|                                              | 03 - Informar o e-mail do usuário cadastrado e senha padrão (123)                                           |
+|                                              | 03 - Informar o e-mail do usuário cadastrado e senha padrão (123456)                                           |
 |                                              | 04 - Clicar no botão ENTRAR para acessar a tela de Primeiro Acesso                                          |
 |                                              | 05 - Informar a senha padrão novamente e cadastrar a senha personalizada conforme os critérios de segurança |
 | Critérios de êxito                           | Após o cadastramento da nova senha, o usuário poderá acessar a tela de Dashboard da aplicação.              |
