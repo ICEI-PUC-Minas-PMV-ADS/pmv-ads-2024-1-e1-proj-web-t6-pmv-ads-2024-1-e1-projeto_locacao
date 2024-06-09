@@ -97,7 +97,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Responsável pela execução do caso de Teste | THÁSSIA|		
 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/ac5f4f8f-519f-4009-86be-e513dcc9ef06
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/106298ae-d354-472b-82ab-db4806f0e2fd
+
+
         
         
 |Caso de Teste    |	CT-09 - Verificar Funcionamento Módulo imóveis: Função Filtrar	|
@@ -108,7 +112,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/8aa64fe7-8e75-4f61-80e3-e37bcb739c44
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/4ecc9d46-1105-47b4-9dae-99b5f2a52f9c
+
+
+
 
 
         
@@ -120,7 +128,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/a1ffa6bb-9952-4b51-bb85-c07115389f09
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/52c9019b-fed5-44b4-8fb5-448677d2524d
+
+
+
         
         
 |Caso de Teste    |	CT-11 - Verificar Funcionamento Módulo imóveis: Função Alterar	|
@@ -130,7 +142,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/9e5941ea-6f07-48c7-b004-826274abd29c
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/1f525d67-057b-4488-b811-ad78cc57ce02
+
+
+
 
 
         
