@@ -124,7 +124,7 @@ function iniciar_banco_imoveis() {
   var imoveis = [
     {
       id: 1,
-      tipo_imovel: "comercial",
+      tipo_imovel: "Comercial",
       tipo_logradouro: "avenida",
       logradouro: "beatriz alvarenga",
       numero: "319",
@@ -139,7 +139,7 @@ function iniciar_banco_imoveis() {
 
     {
       id: 2,
-      tipo_imovel: "residencial",
+      tipo_imovel: "Residencial",
       tipo_logradouro: "rua",
       logradouro: "SÃO JOÃO",
       numero: "39",
@@ -149,12 +149,12 @@ function iniciar_banco_imoveis() {
       uf: "MG",
       cep: "31140-258",
       vacancia: "vago",
-      status: "ativo",
+      status: "inativo",
     },
 
     {
       id: 3,
-      tipo_imovel: "residencial",
+      tipo_imovel: "Residencial",
       tipo_logradouro: "rua",
       logradouro: "ipiranga",
       numero: "500",
@@ -168,7 +168,7 @@ function iniciar_banco_imoveis() {
     },
     {
       id: 4,
-      tipo_imovel: "comercial",
+      tipo_imovel: "Comercial",
       tipo_logradouro: "Avenida",
       logradouro: "carlos turner",
       numero: "8800",

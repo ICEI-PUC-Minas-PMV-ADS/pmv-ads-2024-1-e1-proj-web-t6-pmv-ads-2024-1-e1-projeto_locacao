@@ -134,532 +134,217 @@ dialog {
     box-shadow: none;
 }
 
-
-/*-------------------------------------------------------*/
-/*MODAl*/
-
-
-dialog {
-    font-family: 'Roboto';
-    color: #5BB800;
-    padding: 25px;
-    height: 550px;
-
-}
-
-dialog h1 {
-    display: flex;
-    font-family: 'Roboto';
-    color: #5bb800;
-    justify-content: center;
-    justify-items: center;
-
-}
-
-dialog h4 {
-    font-family: 'Roboto';
-    display: block;
-    color: #5bb800;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-#locatario {
-    margin-top: 10px;
-    width: 100%;
-}
-
-dialog hr {
-
-    color: #5bb800;
-    height: 2px;
-    border: none;
-    background-color: #5bb800;
-    margin-top: 5px;
-    margin-bottom: 10px;
-
-}
-
-dialog label {
-    color: #5bb800;
-    font-size: small;
-    font-style: normal;
-    font-family: 'Roboto';
-}
-
-
-
-dialog .id_tipo {
-    display: flex;
-    margin-bottom: 5px;
-    gap: 5px;
-
-}
-
-dialog .id_tipo label {
-    padding-left: 0;
-}
-
-dialog .id_tipo #id {
-    padding-left: none;
-    display: flex;
-    width: 200px;
-}
-
-dialog .id_tipo #tipo {
-    padding-left: none;
-    display: flex;
-    width: 200px;
-}
-
-dialog .cidade_cep #cidade {
-    padding-left: none;
-    display: flex;
-    width: 200px;
-}
-
-dialog .cidade_cep #cep {
-    padding-left: none;
-    display: flex;
-    width: 200px;
-    justify-self: end;
-}
-
-
-dialog .Logradouro {
-    display: flexbox;
-    width: 95%;
-    gap: 10px;
-    margin-bottom: 10px;
-
-}
-
-dialog .Logradouro input {
-    width: 100%;
-}
-
-dialog input {
-    height: 30px;
-    border-radius: 7px;
-    border: 2px solid;
-    border-color: #5BB800;
-    color: #080808
-}
-
-dialog .cidade_cep {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-    margin-bottom: 10px;
-}
-
-dialog .status_vacancia {
-    margin-top: 50PX;
-    display: flex;
-    width: 100%;
-    gap: 20%;
-    margin: 0px;
-    justify-content: center;
-
-
-}
-
-dialog .status,
-.vacancia {
-    width: 200px;
-}
-
-dialog .status_vacancia .status div {
-    display: flex;
-
-}
-
-dialog .status_vacancia .status div label {
-    margin-left: 10px;
-    margin-top: 14px;
-}
-
-dialog .status_vacancia .vacancia div {
-    display: flex;
-}
-
-dialog .status_vacancia .vacancia div label {
-    margin-left: 10px;
-    margin-top: 14px;
-}
-
-/* Customize the label (the container) */
-dialog .container {
-    display: block;
-    position: relative;
-    margin-left: 0px;
-    gap: 50px;
-    padding-left: 25px;
-    margin-bottom: 8px;
-    cursor: auto;
-    font-size: small;
-    -webkit-user-select: auto;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    align-items: center
-}
-
-/* Hide the browser's default radio button */
-dialog .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-/* Create a custom radio button */
-dialog .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: rgb(221, 222, 221);
-    border-radius: 5px;
-}
-
-/* On mouse-over, add a grey background color */
-dialog .container:hover input~.checkmark {
-    background-color: #ccc
-}
-
-/* When the radio button is checked, add a blue background */
-dialog .container input:checked~.checkmark {
-    background-color: #5BB800;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-dialog .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-dialog .container input:checked~.checkmark:after {
-    display: block;
-}
-
-/* Style the indicator (dot/circle) */
-dialog .container .checkmark:after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: 3px;
-    left: 6px;
-}
-
-
-/* botoes de filtrar e voltar*/
-
-/* dialog>button {
-      border-radius: 5px;
-    width: 200px;
-    display: grid;
-    margin-top: 20px;
-    margin-left: 0%;
-    background-color: #5bb800;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 20px; 
+.status_active {
     display: flex;
     flex-direction: row;
-    gap: 15px;
     justify-content: center;
-    margin-top: 15px; 
-} */
-
-dialog .alinhar_botoes {
-    display: flex;
-    margin: 0px;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-.icon2 {
-    height: 20px;
-    width: 20px;
-}
-
-
-dialog button:hover {
-    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6) !important;
-}
-
-dialog button:active {
-
-    box-shadow: 0 3px rgb(202, 200, 200);
-    transform: translateY(4px);
-
-}
-
-/* estilizando botões*/
-dialog button {
-    /* border-radius: 5px;
-    width: 200px;
-    display: grid;
-    margin-top: 20px;
-    margin-left: 0%;
-    background-color: #5bb800;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 20px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
+    min-width: fit-content;
+    width: 60%;
     background-color: var(--green);
     color: var(--white);
-    font-size: 12px;
-    font-weight: bold;
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
-
-
-
-}
-
-/***********************************************************************
-  ************************************************************************
-  **********************************************************************
-  **************************************************************************/
-/* ADIÇÃO-------------------------------------------------*/
-
-
-
-
-.adicao .proprietario input {
-    width: 100%;
-
-}
-
-.adicao .a {
-    display: flex;
-    max-width: fit-content;
-}
-
-.adicao label {}
-
-
-.adicao>.a>.a1 {
-    flex-grow: 1;
-}
-
-.adicao>.a>.a2 {
-    flex-grow: 2;
-}
-
-.adicao>.a>.a3 {
-    flex-grow: 1;
-}
-
-
-.adicao .b {
-
-    display: flex;
-    width: 100%;
-    column-gap: 15px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-
-}
-
-
-.adicao .c {
-    display: flex;
-    column-gap: 15%;
-    margin-right: 10px;
-
-}
-
-.adicao .c input {
-    width: 100px;
-
-}
-
-.adicao .d {
-    display: flex;
-    width: 100%;
+    font-weight: 600;
+    height: 35px;
+    border-radius: 10px;
     align-items: center;
 
-
 }
 
-.adicao .d h4 {
-    width: 100%;
-}
-
-.adicao header {
+.status_inactive {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: 40px;
-}
-
-.adicao input {
-    border-radius: 6px;
-    height: 25px;
-    border: solid #5bb800 2px;
-    font-family: "Roboto";
-    margin: 5px;
-}
-
-.adicao hr {
-    color: #5bb800;
-    border-color: #5bb800;
-    border-color: 3px;
-
-}
-
-.adicao select {
-    width: 50%;
-    border-radius: 6px;
-    height: 25px;
-    border: solid #5bb800 2px;
-    padding: 2px;
+    min-width: fit-content;
+    width: 60%;
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-weight: 600;
     height: 35px;
-    margin-right: 10px;
-    margin-top: 0px;
-}
-
-.adicao .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin-top: 0px
-}
-
-/* Hide default HTML checkbox */
-.adicao .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+    border-radius: 10px;
+    align-items: center;
 
 }
 
-/* The slider */
-.adicao .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.adicao .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.adicao input:checked+.slider {
-    background-color: #5bb800;
-}
-
-.adicao input:focus+.slider {
-    box-shadow: 0 0 1px #5bb800;
-}
-
-.adicao input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(30px);
-    transform: translateX(35px);
-}
-
-/* Rounded sliders */
-.adicao .slider.round {
-    border-radius: 34px;
-}
-
-.adicao .slider.round:before {
-    border-radius: 50%;
-    margin-top: 0px;
-}
-
-.adicao .espacamento {
+.checar>label {
+    column-gap: 5px;
     display: flex;
+    margin-bottom: 10px;
     width: 100%;
-    text-align: center;
-
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.adicao .espacamento h4 {
-    margin-left: 10px;
-    margin-top: 6px;
-}
+#checkmark {
 
-
-.adicao .alinhar_botoes {
+    appearance: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    border-color: #5BB800;
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
+
+
 }
 
+#checkmark:before {
+    content: "";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #5BB800;
+    opacity: 0;
+}
+
+#checkmark:checked:before {
+    opacity: 1;
+}
+
+#radio2 {
+
+    appearance: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+    border-color: #5BB800;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
-/* .adicao button:hover {
-    background: #69D303;
+}
+
+#radio2:before {
+    content: "";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #5BB800;
+    opacity: 0;
+}
+
+#radio2:checked:before {
+    opacity: 1;
+}
+
+#div_dados_imovel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "id tipo"
+    "logradouro logradouro"
+    "cidade cep";
+    column-gap: 15px;
+}
+
+#div_id{
+    display: flex;
+    flex-direction: column;
+    grid-area: id;
+}
+
+#div_tipo{
+    display: flex;
+    flex-direction: column;
+    grid-area: tipo;
+}
+
+#div_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: logradouro;
+}
+
+#div_cidade {
+    display: flex;
+    flex-direction: column;
+    grid-area: cidade;
+}
+
+#div_cep {
+    display: flex;
+    flex-direction: column;
+    grid-area: cep;
+}
+
+#div_checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+}
+
+.popup #div_proprietario{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup #endereco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "tipo_logradouro logradouro logradouro logradouro numero"
+    "complemento bairro bairro cidade cidade"
+    "cep uf . . .";
+    column-gap: 15px;
     
-    color: white;
-}  */
-
-.adicao button:active {
-    box-shadow: 0 3px rgb(202, 200, 200);
-    transform: translateY(4px);
 }
 
-.adicao button:hover {
-    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.6);
+.popup .div_tipo_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: tipo_logradouro;
 }
 
-
-
-
-.adicao header {
-    color: #5BB800;
+.popup .div_logradouro{
+    display: flex;
+    flex-direction: column;
+    grid-area: logradouro;
 }
+
+.popup .div_numero{
+    display: flex;
+    flex-direction: column;
+    grid-area: numero;
+}
+
+.popup .div_complemento{
+    display: flex;
+    flex-direction: column;
+    grid-area: complemento;
+}
+
+.popup .div_bairro{
+    display: flex;
+    flex-direction: column;
+    grid-area: bairro;
+}
+
+.popup .div_cidade{
+    display: flex;
+    flex-direction: column;
+    grid-area: cidade;
+}
+
+.popup .div_cep{
+    display: flex;
+    flex-direction: column;
+    grid-area: cep;
+}
+
+.popup .div_uf{
+    display: flex;
+    flex-direction: column;
+    grid-area: uf;
+}
+
 
 
 @media only screen and (max-device-width: 480px) {
