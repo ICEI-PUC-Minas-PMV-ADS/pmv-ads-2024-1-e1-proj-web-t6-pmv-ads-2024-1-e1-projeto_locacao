@@ -242,7 +242,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/fa645a28-ca78-4124-a5dc-fbfb0520122d
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/7f3579e9-2c64-45e9-94ac-b5e5d1fae95d
 
 |Caso de Teste    |	CT-22 - Verificar Funcionamento Módulo imóveis: Função Cadastrar	|
 |:---|:---|		
