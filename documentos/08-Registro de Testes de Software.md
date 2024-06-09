@@ -279,11 +279,17 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 ---
 
-## RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (Executor: THÁSSIA)		
+## RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS 		
 |Caso de Teste    |	CT-26 - Verificar a geração de alertas das faturas com vencimentos próximos e faturas 	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/3d524e75-6fc9-4376-b559-17897be652a1
+
+
 
 &nbsp;
 
