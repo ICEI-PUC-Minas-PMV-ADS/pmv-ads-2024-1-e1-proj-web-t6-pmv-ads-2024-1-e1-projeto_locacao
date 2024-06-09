@@ -90,7 +90,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
         
-## RF-03 IMÓVEIS (Executor: THÁSSIA)		
+## RF-03 IMÓVEIS 		
 |Caso de Teste    |	CT-08 - Verificar Funcionamento dos Links do Módulo Imóveis	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
@@ -106,7 +106,11 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Responsável pela execução do caso de Teste | THÁSSIA|		
 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/251f1b36-08db-4f1e-9d94-97c8840a7fc7
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/8aa64fe7-8e75-4f61-80e3-e37bcb739c44
+
+
         
         
 |Caso de Teste    |	CT-10 - Verificar Funcionamento Módulo imóveis: Função Cadastrar	|
