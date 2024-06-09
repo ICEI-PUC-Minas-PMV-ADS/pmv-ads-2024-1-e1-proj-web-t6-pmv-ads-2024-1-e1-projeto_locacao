@@ -184,17 +184,27 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 ## RF-07 FATURAS (Executor: ISMARLEI)		
 |Caso de Teste    |	CT-24 - Verificar Funcionamento dos Links do Módulo Faturas	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ISMARLEI|		
+| Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |		
+| Responsável pela execução do caso de Teste | ISMARLEI|
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/19593109-4b1b-4b25-a9bb-23ec4482c6b3
+
+
+&nbsp;
+
+---
         
 |Caso de Teste    |	CT-25 - Verificar Funcionamento Módulo Faturas: Função Filtrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ISMARLEI|		
+| Resultados obtidos | Função filtro atendeu com o objeto proposto   |		
+| Responsável pela execução do caso de Teste | ISMARLEI|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/e5459673-7a42-43c4-b7dd-c788ea9c2999
         
 &nbsp;
 
-&nbsp;
+---
 
 ## RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (Executor: THÁSSIA)		
 |Caso de Teste    |	CT-26 - Verificar a geração de alertas das faturas com vencimentos próximos e faturas 	|
