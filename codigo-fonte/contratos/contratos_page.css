@@ -675,7 +675,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-device-width: 480px){
 
-    #popup_filtrar {
+    #popup_filtrar, #PopUpAdicaoContrato, #PopUpAlteraContrato {
         width: 80%;
     }
 
