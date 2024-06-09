@@ -249,12 +249,16 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
 
-        
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/52b3f963-8801-42f1-bb00-e78d1697ff9e
+
 |Caso de Teste    |	CT-23 - Verificar Funcionamento Módulo imóveis: Função Alterar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
-        
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/b2906461-0ca5-4bba-83f3-00c38a74c022
+
+    
 &nbsp;
 
 &nbsp;
