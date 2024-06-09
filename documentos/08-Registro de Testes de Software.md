@@ -167,7 +167,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 ## RF-05 LOCATÁRIOS  (Executor: ZANDER)		
 |Caso de Teste    |	CT-16 - Verificar Funcionamento dos Links do Módulo Locatários	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos |Os pop Up´s de adição, filtro e alteração funcionam normalmente.  |		
 | Responsável pela execução do caso de Teste |Zander Vasconcelos|		
    
 
@@ -177,7 +177,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         
 |Caso de Teste    |	CT-17 - Verificar Funcionamento Módulo Locatários: Função Filtrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | filtragem foi realizada com sucesso. |		
 | Responsável pela execução do caso de Teste |Zander Vasconcelos|		
 
 
@@ -187,7 +187,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         
 |Caso de Teste    |	CT-18 - Verificar Funcionamento Módulo Locatários: Função Cadastrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Cadastro de novos locatários realizado com sucesso.  |		
 | Responsável pela execução do caso de Teste | Zander Vasconcelos|		
 
 
@@ -197,7 +197,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
         
 |Caso de Teste    |	CT-19 - Verificar Funcionamento Módulo Locatários: Função Alterar  	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Alteração dos locatários realizada com sucesso  |		
 | Responsável pela execução do caso de Teste | Zander Vasconcelos|		
 
  
