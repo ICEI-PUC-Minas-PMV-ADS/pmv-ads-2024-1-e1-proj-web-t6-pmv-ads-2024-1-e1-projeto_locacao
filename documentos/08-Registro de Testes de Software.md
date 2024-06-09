@@ -64,7 +64,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
         
-## RF-02 LOGIN / PRIMEIRO ACESSO  (Executor: ZANDER)		
+## RF-02 LOGIN / PRIMEIRO ACESSO  		
 |Caso de Teste    |	CT-06 - Verificar funcionamento do link Esqueci Minha Senha na tela de Login	|
 |:---|:---|		
 | Resultados obtidos | E-mail de restauração de senha enviado com sucesso  |		
@@ -164,7 +164,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
 
-## RF-05 LOCATÁRIOS  (Executor: ZANDER)		
+## RF-05 LOCATÁRIOS  	
 |Caso de Teste    |	CT-16 - Verificar Funcionamento dos Links do Módulo Locatários	|
 |:---|:---|		
 | Resultados obtidos |Os pop Up´s de adição, filtro e alteração funcionam normalmente.  |		
