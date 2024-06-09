@@ -220,7 +220,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 |Caso de Teste    |	CT-28 - Verificar Funcionamento Módulo Requisições: Função Filtrar	|
 |:---|:---|		
-| Resultados obtidos | Função filtro atendeu perfeitamente com o objeto testado |		
+| Resultados obtidos | Função filtro atendeu com o objeto proposto |		
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/197309b1-d0e7-49a7-8862-544216487160
@@ -231,7 +231,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 |Caso de Teste    |	CT-29 - Verificar Funcionamento Módulo Requisições: Função Cadastrar	|
 |:---|:---|		
-| Resultados obtidos | A função cadastrar nova requisição funcionou perfeitamente no teste  |		
+| Resultados obtidos | A função cadastrar nova requisição funcionou como esperado  |		
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/c30f2429-d15d-4dc3-8890-865f8628e945
@@ -242,7 +242,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 |Caso de Teste    |	CT-30 - Verificar Funcionamento Módulo Requisições: Função Alterar	|
 |:---|:---|		
-| Resultados obtidos | A função alterar funcionou perfeitamente no teste realizado |		
+| Resultados obtidos | A função alterar cumpriu com a funcionalidade desejada com êxito |		
 | Responsável pela execução do caso de Teste | Sócratis Gomes da Silva|
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164081143/f32ba0cf-2a16-4470-b0c2-fb136139d7e2
