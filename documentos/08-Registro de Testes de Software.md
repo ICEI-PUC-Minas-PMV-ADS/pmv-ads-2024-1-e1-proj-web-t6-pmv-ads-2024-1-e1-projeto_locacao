@@ -95,24 +95,40 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/ac5f4f8f-519f-4009-86be-e513dcc9ef06
         
         
 |Caso de Teste    |	CT-09 - Verificar Funcionamento Módulo imóveis: Função Filtrar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/251f1b36-08db-4f1e-9d94-97c8840a7fc7
         
         
 |Caso de Teste    |	CT-10 - Verificar Funcionamento Módulo imóveis: Função Cadastrar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/a1ffa6bb-9952-4b51-bb85-c07115389f09
         
         
 |Caso de Teste    |	CT-11 - Verificar Funcionamento Módulo imóveis: Função Alterar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | THÁSSIA|		
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164564380/9e5941ea-6f07-48c7-b004-826274abd29c
+
+
         
 &nbsp;
 
