@@ -329,12 +329,8 @@ main {
     background-color: var(--grey);
 }
 
-#popup_filtrar {
+#popup_filtrar, #PopUpAdicaoContrato, #PopUpAlteraContrato {
     width: 30%;
-}
-
-#popup_dados_proprietario {
-    width: 50%;
 }
 
 .popup {
