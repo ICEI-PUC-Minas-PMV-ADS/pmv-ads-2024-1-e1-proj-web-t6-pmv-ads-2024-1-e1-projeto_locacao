@@ -6,7 +6,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 &nbsp;
 
-## RF-01 USUÁRIOS (Executor: ISMARLEI)		
+## RF-01 USUÁRIOS
 |Caso de Teste    |	CT-01 - Verificar Funcionamento dos Links do Módulo Usuários	|
 |:---|:---|		
 | Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |	
@@ -229,21 +229,26 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
 
-## RF-06 CONTRATOS (Executor: PEDRO)		
+## RF-06 CONTRATOS	
 |Caso de Teste    |	CT-20 - Verificar Funcionamento dos Links do Módulo Contratos	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
-        
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/ea88ec6c-b2ca-435b-8d12-19b2d804465b
+    
 |Caso de Teste    |	CT-21 - Verificar Funcionamento Módulo imóveis: Função Filtrar   	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
-        
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/fa645a28-ca78-4124-a5dc-fbfb0520122d
+
 |Caso de Teste    |	CT-22 - Verificar Funcionamento Módulo imóveis: Função Cadastrar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
+
         
 |Caso de Teste    |	CT-23 - Verificar Funcionamento Módulo imóveis: Função Alterar	|
 |:---|:---|		
@@ -254,7 +259,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
 
-## RF-07 FATURAS (Executor: ISMARLEI)		
+## RF-07 FATURAS
 |Caso de Teste    |	CT-24 - Verificar Funcionamento dos Links do Módulo Faturas	|
 |:---|:---|		
 | Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |		
@@ -295,7 +300,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 
 &nbsp;
 
-## RF-09 REQUISIÇÕES (Executor: SÓCRATIS)		
+## RF-09 REQUISIÇÕES
 |Caso de Teste    |	CT-27 - Verificar Funcionamento dos Links do Módulo Requisições	|
 |:---|:---|		
 | Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |		
