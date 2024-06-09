@@ -69,12 +69,22 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 |:---|:---|		
 | Resultados obtidos | E-mail de restauração de senha enviado com sucesso  |		
 | Responsável pela execução do caso de Teste |Zander Vasconcelos|		
+
         
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164264116/712cd406-943b-4c89-9418-102ce5308dc5
+
+
         
 |Caso de Teste    |	CT-07 - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário 	|
 |:---|:---|		
 | Resultados obtidos |Troca de senha com requisitos atendidos com sucesso |		
 | Responsável pela execução do caso de Teste |Zander Vasconcelos|		
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164264116/5ad2375d-f718-4624-9744-2528844ddec7
+
 
 &nbsp;
 
