@@ -9,34 +9,58 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 ## RF-01 USUÁRIOS (Executor: ISMARLEI)		
 |Caso de Teste    |	CT-01 - Verificar Funcionamento dos Links do Módulo Usuários	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ISMARLEI|		
-        
-        
+| Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste  |	
+| Responsável pela execução do caso de Teste | ISMARLEI|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/84725a0c-aebd-4363-a3d2-a822578d46fe
+
+&nbsp;
+
+---
+
 |Caso de Teste    |	CT-02 - Verificar Funcionamento Módulo Usuários: Função Filtrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Todas as opções de filtrar retornaram o resultado esperado  |		
 | Responsável pela execução do caso de Teste | ISMARLEI|		
-        
+ 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/f70ae613-1a4b-43ff-b139-fd3cd91c0b2e
+
+&nbsp;
+
+===
         
 |Caso de Teste    |	CT-03 - Verificar Funcionamento Módulo Usuários: Função Cadastrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | O cadastro de novo usuário foi executado com sucesso  |		
 | Responsável pela execução do caso de Teste | ISMARLEI|		
-        
-        
+ 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/539196ed-a6c3-4cfd-90a0-55dd2b293502
+
+&nbsp;
+
+-----
+  
 |Caso de Teste    |	CT-04 - Verificar Funcionamento Módulo Usuários: Função Alterar 	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | A Função de alterar usuário foi executado com sucesso  |		
 | Responsável pela execução do caso de Teste | ISMARLEI|		
-        
+ 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/f37fea0a-b668-4df6-968a-826480078cf6
+
+&nbsp;
+
+-----     
         
 |Caso de Teste    |	CT-05 - Verificar Funcionamento Módulo Usuários: Função Nova Senha  	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Na função Alterar senha realizado com sucesso.  |		
 | Responsável pela execução do caso de Teste | ISMARLEI|		
 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/86267465/e4169aeb-37c0-4010-b336-27c4b4316b08
+
 &nbsp;
+
+-----
 
 &nbsp;
         
