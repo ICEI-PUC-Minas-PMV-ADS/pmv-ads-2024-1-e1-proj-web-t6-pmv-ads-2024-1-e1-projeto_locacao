@@ -1,7 +1,7 @@
 iniciar_banco_geral();
 
 function iniciar_banco_geral() {
-  // localStorage.clear()
+  localStorage.clear()
   iniciar_banco_usuarios();
   iniciar_banco_proprietarios();
   iniciar_banco_imoveis();
@@ -269,7 +269,7 @@ function iniciar_banco_faturas() {
       id_fatura: 1,
       id_locatario: 1,
       id_contrato: 1,
-      id_imovel: 1,
+      id_endereco: "1 - Rua",
       nome_locatario: "Locatário 01",
       periodo_inicio: "10/01/2024",
       periodo_fim: "10/02/2024",
@@ -283,7 +283,7 @@ function iniciar_banco_faturas() {
       id_fatura: 2,
       id_locatario: 2,
       id_contrato: 2,
-      id_imovel: 2,
+      id_endereco: "1 - Rua",
       nome_locatario: "Locatário 02",
       periodo_inicio: "15/02/2024",
       periodo_fim: "15/03/2024",
@@ -297,7 +297,7 @@ function iniciar_banco_faturas() {
       id_fatura: 3,
       id_locatario: 3,
       id_contrato: 3,
-      id_imovel: 3,
+      id_endereco: "1 - Rua",
       nome_locatario: "Locatário 03",
       periodo_inicio: "25/04/2024",
       periodo_fim: "25/05/2024",
@@ -311,7 +311,7 @@ function iniciar_banco_faturas() {
       id_fatura: 4,
       id_locatario: 4,
       id_contrato: 1,
-      id_imovel: 1,
+      id_endereco: "1 - Rua",
       nome_locatario: "Locatário 04",
       periodo_inicio: "10/01/2024",
       periodo_fim: "10/02/2024",
@@ -325,7 +325,7 @@ function iniciar_banco_faturas() {
       id_fatura: 5,
       id_locatario: 2,
       id_contrato: 2,
-      id_imovel: 2,
+      id_endereco: "1 - Rua",
       nome_locatario: "Locatário 05",
       periodo_inicio: "15/02/2024",
       periodo_fim: "15/03/2024",
@@ -339,7 +339,7 @@ function iniciar_banco_faturas() {
       id_fatura: 6,
       id_locatario: 3,
       id_contrato: 3,
-      id_imovel: 3,
+      id_endereco: "1 - Rua",
       nome_locatario: "Locatário 06",
       periodo_inicio: "20/04/2024",
       periodo_fim: "29/05/2024",

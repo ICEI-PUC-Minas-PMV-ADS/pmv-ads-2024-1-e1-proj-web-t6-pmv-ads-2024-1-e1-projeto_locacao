@@ -333,7 +333,7 @@ function abrir_popup_dados_fatura(e) {
                     <hr>    
                     <div>
                         <label for="nome">ID - ENDEREÇO</label>
-                        <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="CONFIRMAR SE É DO IMOVEL OU DO LOCATÁRIO" onblur="return set_input_success(this)" readonly>
+                        <input type="text" name="nome" id="nome_dados" class="inputSuccess" value="${dados_fatura.id_endereco}" onblur="return set_input_success(this)" readonly>
                     </div>
                 </div>
                 <div class="div_id_imovel">
@@ -341,7 +341,7 @@ function abrir_popup_dados_fatura(e) {
                     <hr>
                     <div >
                         <label for="id">ID CONTRATO</label>
-                        <input type="text" name="imovel" id="imovel" class="inputSuccess" value="${dados_fatura.id_imovel}" onblur="return set_input_success(this)" readonly>
+                        <input type="text" name="imovel" id="imovel" class="inputSuccess" value="${dados_fatura.id_contrato}" onblur="return set_input_success(this)" readonly>
                     </div>
                 </div>
             </Section>   

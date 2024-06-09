@@ -33,7 +33,8 @@ function abrirModalAdicao() {
         }
         else return false
     }).map((locatario)=>{
-        return `<option value="${locatario.nome}">${locatario.nome}</option>`
+        let locatario_dados = `${locatario.id} - ${locatario.nome}`
+        return `<option value="${locatario_dados}">${locatario_dados}</option>`
     }).join('')
 
     let imoveis = JSON.parse(localStorage.getItem('imoveis'))
@@ -43,7 +44,7 @@ function abrirModalAdicao() {
         }
         else return false
     }).map((imovel)=>{
-        let endereco = `${imovel.tipo_logradouro} ${imovel.logradouro}, ${imovel.numero}, ${imovel.complemento}, ${imovel.bairro}, ${imovel.cidade}`
+        let endereco = `${imovel.id} - ${imovel.tipo_logradouro} ${imovel.logradouro}, ${imovel.numero}, ${imovel.complemento}, ${imovel.bairro}, ${imovel.cidade}`
         return `<option value="${endereco}">${endereco}</option>`
     }).join('')
     
@@ -57,7 +58,7 @@ function abrirModalAdicao() {
                 <p>LOCATÁRIO</p>
                 <hr>
                 <div class="div_tipo_logradouro">
-                    <label for="locatario_novo">NOME</label>
+                    <label for="locatario_novo">ID - NOME</label>
                     <select name="locatario_novo" class="selectSuccess" id ="locatario_novo">
                         <option value="vazio">-</option>
                         ${filtradosLocatarios}
@@ -66,7 +67,7 @@ function abrirModalAdicao() {
                 <p>IMÓVEL</p>
                 <hr>
                 <div class="div_imovel">
-                    <label for="endereco">ENDEREÇO</label>
+                    <label for="endereco">ID - ENDEREÇO</label>
                     <select name="endereco" class="selectSuccess" id ="endereco">
                         <option value="vazio">-</option>
                         ${filtradosImoveis}
@@ -117,13 +118,67 @@ function fecharModalAdicionar() {
     popup.close()
 }
 
+function adicionarFaturas(dados) {
+    console.log(dados)
+    let faturas = JSON.parse(localStorage.getItem("faturas"))
+
+    let periodo_inicio = new Date(dados.inicio)
+
+    let periodo_fim = new Date(dados.inicio)
+    periodo_fim.setMonth(periodo_fim.getMonth()+1)
+
+    let data_vencimento = new Date(dados.inicio)
+    data_vencimento.setMonth(data_vencimento.getMonth()+1)
+    data_vencimento.setDate(data_vencimento.getDate()+5)
+
+
+    for(let i = 0; i < dados.periodo; i++) {
+        let fatura = {
+            id_fatura: faturas.length + 1,
+            id_locatario: dados.id_locatario,
+            id_contrato: dados.id_contrato,
+            id_endereco: dados.id_endereco,
+            nome_locatario: dados.locatario,
+            periodo_inicio: `${periodo_inicio.getDate()+1}/${periodo_inicio.getMonth()+1}/${periodo_inicio.getFullYear()}`,
+            periodo_fim: `${periodo_fim.getDate()}/${periodo_fim.getMonth()+1}/${periodo_fim.getFullYear()}`,   
+            data_vencimento: `${data_vencimento.getDate()}/${data_vencimento.getMonth()+1}/${data_vencimento.getFullYear()}`,
+            data_pagamento: null,
+            valor: dados.valor,
+            status_pagamento: false,
+        }
+        periodo_inicio.setMonth(periodo_inicio.getMonth()+1)
+        periodo_fim.setMonth(periodo_fim.getMonth()+1)
+        data_vencimento.setMonth(data_vencimento.getMonth()+1)
+
+        faturas.push(fatura)
+        console.log(fatura)
+    }
+
+    localStorage.setItem("faturas", JSON.stringify(faturas))
+}
+
+function imovelLocado(id) {
+    let imoveis = JSON.parse(localStorage.getItem("imoveis"))
+
+    imoveis = imoveis.map((imovel) => {
+        if(imovel.id == id) {
+            imovel.vacancia = "locado"
+            return imovel
+        }
+
+        return imovel
+    })
+
+    localStorage.setItem("imoveis", JSON.stringify(imoveis))
+}
+
 function adicionarContrato() {
     let contratos = JSON.parse(localStorage.getItem("contratos"))
-    let locatario = document.getElementById('locatario_novo').value.toLowerCase()
-    let endereco = document.getElementById('endereco').value.toLowerCase()
-    let periodo = document.getElementById('periodo').value.toLowerCase()
-    let valor_mensal = document.getElementById('valor_mensal').value.toLowerCase()
-    let data_inicio = document.getElementById('data_inicio').value.toLowerCase()
+    let locatario_dados = document.getElementById('locatario_novo').value
+    let endereco = document.getElementById('endereco').value
+    let periodo = document.getElementById('periodo').value
+    let valor_mensal = parseFloat(document.getElementById('valor_mensal').value)
+    let data_inicio = document.getElementById('data_inicio').value
     tamanho = contratos.length
 
     console.log(valor_mensal)
@@ -132,18 +187,34 @@ function adicionarContrato() {
         show_snackbar("#PopUpAdicaoContrato #snackbar_error", "Preencha todos os campos para salvar.")
     }
     else {
+        let id_contrato = tamanho + 1
+        let id_locatario = parseInt(locatario_dados.split(" - ")[0])
+        let locatario = locatario_dados.split(" - ")[1]
         contratos.push(
             {
                 "id": tamanho + 1,
                 "locatario": locatario,
                 "endereco": endereco,
                 "periodo": periodo,
-                "valor_mensal": parseFloat(valor_mensal),
+                "valor_mensal": valor_mensal,
                 "data_inicio": data_inicio,
                 "status": "ativo"
             }
         )
+
+        let dados_fatura = {
+            id_contrato: id_contrato,
+            id_locatario: id_locatario,
+            locatario: locatario,
+            id_endereco: endereco,
+            inicio: data_inicio,
+            periodo: parseInt(periodo),
+            valor: valor_mensal
+        }
+
         localStorage.setItem("contratos", JSON.stringify(contratos));
+        adicionarFaturas(dados_fatura)
+        imovelLocado(parseInt(endereco.split(" - ")[0]))
         fecharModalAdicionar()
         carregarBancoContratos()
         show_snackbar("body #snackbar_success", "Contrato salvo com sucesso.")
@@ -158,20 +229,16 @@ function filtrarContratos() {
     var elementoLista = document.getElementById('table_list');
     var contratosfiltrados = JSON.parse(localStorage.getItem("contratos"));
     var id = document.getElementById('id').value;
-    var proprietario = document.getElementById('proprietario').value.toLowerCase();
-    var locatario = document.getElementById('locatario').value.toLowerCase();
-    var status = document.querySelector('input[type="radio"]:checked').value.toLowerCase();
+    var locatario = document.getElementById('locatario').value;
+    var status = document.querySelector('input[type="radio"]:checked').value;
 
 
     if (id != 0) {
         contratosfiltrados = contratosfiltrados.filter((contrato) => contrato.id == id);
     }
 
-    if (proprietario != "") {
-        contratosfiltrados = contratosfiltrados.filter((contrato) => contrato.proprietario.includes(proprietario));
-    }
     if (locatario != "") {
-        contratosfiltrados = contratosfiltrados.filter((contrato) => contrato.locatario.includes(locatario));
+        contratosfiltrados = contratosfiltrados.filter((contrato) => contrato.locatario.toLowerCase().includes(locatario.toLowerCase()));
     }
     if (status == 'ativo' || status == 'inativo') {
         contratosfiltrados = contratosfiltrados.filter((contrato) => contrato.status == status);
@@ -299,7 +366,6 @@ function abrirModalAlteracaoContratos(identifier) {
     }
 
     let contratos = JSON.parse(localStorage.getItem("contratos"));
-    var status = contratos[identifier - 1].status
 
     body.innerHTML += `
         <dialog id="PopUpAlteraContrato" class="popup">
