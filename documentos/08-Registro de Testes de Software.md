@@ -168,24 +168,43 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 |Caso de Teste    |	CT-16 - Verificar Funcionamento dos Links do Módulo Locatários	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ZANDER|		
-        
+| Responsável pela execução do caso de Teste |Zander Vasconcelos|		
+   
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164264116/a2df4a98-4265-450f-bc3f-4a23b35a3c7e
+
+     
         
 |Caso de Teste    |	CT-17 - Verificar Funcionamento Módulo Locatários: Função Filtrar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ZANDER|		
+| Responsável pela execução do caso de Teste |Zander Vasconcelos|		
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164264116/5808b7d8-1aca-416b-8f1e-e8f43959ef46
+
+
         
 |Caso de Teste    |	CT-18 - Verificar Funcionamento Módulo Locatários: Função Cadastrar	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ZANDER|		
+| Responsável pela execução do caso de Teste | Zander Vasconcelos|		
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164264116/7cf5fefe-370f-4368-b97f-29c46591b89c
+
+
         
 |Caso de Teste    |	CT-19 - Verificar Funcionamento Módulo Locatários: Função Alterar  	|
 |:---|:---|		
 | Resultados obtidos | Descrever resultados do teste  |		
-| Responsável pela execução do caso de Teste | ZANDER|		
-        
+| Responsável pela execução do caso de Teste | Zander Vasconcelos|		
+
+ 
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/164264116/246b9aa1-27e7-469b-a98b-e60da72a936c
+
+       
 &nbsp;
 
 &nbsp;
