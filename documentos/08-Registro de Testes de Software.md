@@ -248,28 +248,28 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-
 ## RF-06 CONTRATOS	
 |Caso de Teste    |	CT-20 - Verificar Funcionamento dos Links do Módulo Contratos	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | A navegabilidade dos botões cumpriram perfeitamente seu objetivo no teste.  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/ea88ec6c-b2ca-435b-8d12-19b2d804465b
     
 |Caso de Teste    |	CT-21 - Verificar Funcionamento Módulo imóveis: Função Filtrar   	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | Os filtros funcionaram perfeitamente, assim como a mensagem de erro quando não for encontrado contrato que atenda aos filtros.  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/7f3579e9-2c64-45e9-94ac-b5e5d1fae95d
 
 |Caso de Teste    |	CT-22 - Verificar Funcionamento Módulo imóveis: Função Cadastrar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | O cadastro do contrato ocorreu perfeitamente, bem como a mensagem de erro ao faltar dados a serem informados. |		
 | Responsável pela execução do caso de Teste | PEDRO|		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/52b3f963-8801-42f1-bb00-e78d1697ff9e
 
 |Caso de Teste    |	CT-23 - Verificar Funcionamento Módulo imóveis: Função Alterar	|
 |:---|:---|		
-| Resultados obtidos | Descrever resultados do teste  |		
+| Resultados obtidos | A alteração dos dados ocorreu perfeitamente.  |		
 | Responsável pela execução do caso de Teste | PEDRO|		
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/assets/146393110/b2906461-0ca5-4bba-83f3-00c38a74c022
