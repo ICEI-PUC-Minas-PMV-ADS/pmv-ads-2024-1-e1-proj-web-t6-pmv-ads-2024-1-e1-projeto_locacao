@@ -294,9 +294,9 @@ function abrirModalAdicao() {
                         <label for="tipo_logradouro">TIPO LOGRADOURO*</label>
                         <select name="tipo_logradouro" id="tipo_logradouro_novo" class="selectSuccess" onblur="return set_input_success(this)">
                             <option value="vazio">-</option>
-                            <option value="avenida">Avenida</option>
-                            <option value="praça">Praça</option>
-                            <option value="rua">Rua</option>
+                            <option value="Avenida">Avenida</option>
+                            <option value="Praça">Praça</option>
+                            <option value="Rua">Rua</option>
                         </select>
                     </div>
                     <div class="div_logradouro">
@@ -564,9 +564,9 @@ function abrirModalAlteracao(identifier) {
                         <label for="tipo_logradouro_dados">TIPO LOGRADOURO*</label>
                         <select name="tipo_logradouro_dados" id="tipo_logradouro_dados" class="selectSuccess" onblur="return set_input_success(this)" disabled>
                             <option value="vazio">-</option>
-                            <option value="avenida" ${imoveis[identifier - 1].tipo_logradouro == "avenida" ? "selected" : ""}>Avenida</option>
-                            <option value="praça" ${imoveis[identifier - 1].tipo_logradouro == "praca" ? "selected" : ""}>Praça</option>
-                            <option value="rua" ${imoveis[identifier - 1].tipo_logradouro == "rua" ? "selected" : ""}>Rua</option>
+                            <option value="Avenida" ${imoveis[identifier - 1].tipo_logradouro == "Avenida" ? "selected" : ""}>Avenida</option>
+                            <option value="Praça" ${imoveis[identifier - 1].tipo_logradouro == "Praça" ? "selected" : ""}>Praça</option>
+                            <option value="Rua" ${imoveis[identifier - 1].tipo_logradouro == "Rua" ? "selected" : ""}>Rua</option>
                         </select>
                     </div>
                     <div class="div_logradouro">

@@ -380,7 +380,7 @@ function abrirModalAlteracaoContratos(identifier) {
                 <p>IMÓVEL</p>
                 <hr>
                 <div class="div_imovel">
-                    <label for="endereco_dados">ENDEREÇO</label>
+                    <label for="endereco_dados">ID - ENDEREÇO</label>
                     <input type="text" name="endereco_dados" id="endereco_dados"class="inputSuccess" value="${contratos[identifier - 1].endereco}" readonly>
                 </div>
                 <div id="div_dados_contrato">

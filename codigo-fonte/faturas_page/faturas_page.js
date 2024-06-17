@@ -421,7 +421,7 @@ function salvar_data_pagamento() {
         faturasList = faturasList.map((fatura) => {
             if (fatura.id_fatura == id_fatura_alterar) {
                 fatura.data_pagamento = data_pagamento_informado
-
+                fatura.status_pagamento = true
                 return fatura
             }
         return fatura

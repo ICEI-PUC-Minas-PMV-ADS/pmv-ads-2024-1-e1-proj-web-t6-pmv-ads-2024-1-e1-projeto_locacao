@@ -1,7 +1,6 @@
 // função para iniciar JS no HTML
 
 function usuarios_init(){
-    iniciar_banco_usuarios()
     usuario()
     usuarios(null, null, null, true)
 }
