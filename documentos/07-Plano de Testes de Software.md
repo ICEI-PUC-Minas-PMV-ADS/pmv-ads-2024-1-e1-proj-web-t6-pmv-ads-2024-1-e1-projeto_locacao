@@ -79,7 +79,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 |                                              | 03 - Informar o e-mail do usuário cadastrado                                                                                                        |
 |                                              | 04 - Clicar no link Esqueci Minha Senha                                                                                                             |
 |                                              | 05 - Informar o e-mail cadastrado novamente e clicar em Enviar Senha                                                                                |
-| Critérios de êxito                           | Ao informar que esqueceu a senha e clicar em Enviar Senha, a senha esquecida será resetada e enviada a senha padrão (123456) para o e-mail cadastrado (usuario1@gmail.com). |
+| Critérios de êxito                           | Ao informar que esqueceu a senha e clicar em Enviar Senha, a senha esquecida será resetada e enviada a senha padrão (123456) para o e-mail cadastrado (usuario01@immocontrol.com.br). |
 | Responsável pela elaboração do caso de Teste | Sócratis Gomes da Silva                                                                                                                             |
 
 | Caso de Teste                                | CT-07 - Verificar Funcionamento da troca da senha padrão pela senha de preferência do usuário                |
