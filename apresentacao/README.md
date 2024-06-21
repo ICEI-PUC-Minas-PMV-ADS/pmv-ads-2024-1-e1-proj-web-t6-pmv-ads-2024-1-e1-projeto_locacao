@@ -18,12 +18,11 @@ A apresentação do projeto consiste na geração de um conjunto de slides em um
 
 ## Vídeo de apresentação
 <figure> 
-  <img src="img/capa_da_apresentacao.png">
+  <img src="img/capa_da_apresentacao.png"
+    <figcaption>Capa do video da apresentação</figcaption>
 </figure>
-  
-- O vídeo da apresentação do projeto está disponível no link: [https://www.youtube.com/watch?v=mYqbm16bwig](https://www.youtube.com/watch?v=mYqbm16bwig)
 
-[Vídeo de apresentação.]
+- O vídeo da apresentação do projeto está disponível no link: [https://www.youtube.com/watch?v=mYqbm16bwig](https://www.youtube.com/watch?v=mYqbm16bwig)
 
 ## Hospedagem
 
