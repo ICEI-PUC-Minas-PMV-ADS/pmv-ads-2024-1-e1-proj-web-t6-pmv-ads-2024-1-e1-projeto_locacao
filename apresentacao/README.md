@@ -18,7 +18,7 @@ A apresentação do projeto consiste na geração de um conjunto de slides em um
 
 ## Vídeo de apresentação
 <figure> 
-  <img src="/documentos/img/capavideo.png"
+  <img src="/documentos/img/capa.png"
     <figcaption>Capa do video da apresentação</figcaption>
 </figure>
 
