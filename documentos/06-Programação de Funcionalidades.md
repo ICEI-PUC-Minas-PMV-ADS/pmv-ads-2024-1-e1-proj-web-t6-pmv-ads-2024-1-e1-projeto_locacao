@@ -318,6 +318,35 @@ Ismarlei Magela de Jesus
 
 ### RF-PRÓXIMA ETAPA
 
-RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS (????)
+Após o login o acesso a tela de Dashboard é apresentada informando dados resumidos do banco de dados.
 
-RF-10 DASHBOARD (SÓCRATIS/PEDRO)
+Exemplo da Tela principal "Dashboard"
+
+<figure> 
+  <img src="img/dashboard_page.html">
+    <figcaption>Figura 26 - Tela - Dashboard</figcaption>
+</figure>
+
+#### Requisitos atendidos
+
+RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS
+RF-10 DASHBOARD
+
+#### Artefatos da funcionalidade
+- dashboard.html <br>
+
+#### Estrutura de Dados
+
+A Estrutura de dados está localizada em: [dasbhboar-page](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/blob/main/codigo-fonte/dashboard_page/dashboard_page.html)
+
+#### Instruções de acesso
+
+Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao/codigo-fonte/dashboard_page/dashboard_page.html
+
+#### Responsável
+
+Sócratis Gomes e Pedro Francis
+
+
+
+
