@@ -323,7 +323,7 @@ Após o login o acesso a tela de Dashboard é apresentada informando dados resum
 Exemplo da Tela principal "Dashboard"
 
 <figure> 
-  <img src="img/dashboard_page.html">
+  <img src="/documentos/img/dashboard_page.html">
     <figcaption>Figura 26 - Tela - Dashboard</figcaption>
 </figure>
 
