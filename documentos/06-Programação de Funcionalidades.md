@@ -329,8 +329,8 @@ Exemplo da Tela principal "Dashboard"
 
 #### Requisitos atendidos
 
-RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS
-RF-10 DASHBOARD
+- RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS
+- RF-10 DASHBOARD
 
 #### Artefatos da funcionalidade
 - dashboard.html <br>
