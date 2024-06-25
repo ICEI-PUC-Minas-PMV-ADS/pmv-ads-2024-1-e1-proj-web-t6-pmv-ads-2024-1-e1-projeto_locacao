@@ -1,0 +1,26 @@
+message: Please cite this software using these metadata.
+title: ImmoControl - Gestão de Imobiliárias
+authors:
+  - family-names: Wollinger
+    given-names: Eduardo
+  - family-names: Magela de Jesus
+    given-names: Ismarlei
+  - family-names: Maia Coelho
+    given-names: Pedro Francis
+  - family-names: Gomes da Silva
+    given-names: Sócratis
+  - family-names: Míriam Torres Campos Drumond
+    given-names: Thássia
+  - family-names: Vasconcelos Pereira
+    given-names: Zander
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: de Assis Alves da Silva
+    given-names: Simone
+keywords:
+  - Gestão
+  - Imóveis
+  - Empreender
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_locacao
+version: 1.0.0
+date-released: 2024-06-24
