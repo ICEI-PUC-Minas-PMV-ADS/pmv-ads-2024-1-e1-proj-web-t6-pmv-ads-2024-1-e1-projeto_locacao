@@ -6,7 +6,7 @@ Pré-requisitos: [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-
 
 &nbsp;
 
-### RF-01 USUÁRIOS (THÁSSIA)
+### RF-01 USUÁRIOS
 
 Acesso para a tela Usuários através da barra lateral esquerda:
 
@@ -120,7 +120,7 @@ Zander Vasconcelos Pereira
 
 &nbsp;
 
-### RF-04 PROPRIETÁRIOS (PEDRO)
+### RF-04 PROPRIETÁRIOS
 
 O acesso a tela de proprietários poderá ser feito através da opção "Proprietários" no menu lateral a esquerda de qualquer página após o login.
 
@@ -316,7 +316,7 @@ Ismarlei Magela de Jesus
 
 &nbsp;
 
-### RF-PRÓXIMA ETAPA
+### RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS E RF-10 DASHBOARD
 
 Após o login o acesso a tela de Dashboard é apresentada informando dados resumidos do banco de dados.
 
@@ -329,8 +329,8 @@ Exemplo da Tela principal "Dashboard"
 
 #### Requisitos atendidos
 
-- RF-08 CONTROLE DE VENCIMENTO DE ALUGUÉIS
-- RF-10 DASHBOARD
+- RF-08: A aplicação deve gerar alerta sobre vencimentos próximos e atrasos de aluguel
+- RF-10: A aplicação deve apresentar um Dashboard com as principais informações sobre os contratos gerenciados pela imobiliária
 
 #### Artefatos da funcionalidade
 - dashboard.html <br>
